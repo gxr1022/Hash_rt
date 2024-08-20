@@ -1,0 +1,3 @@
+repository='https://github.com/microsoft/snmalloc'
+module=''
+tag='origin'
