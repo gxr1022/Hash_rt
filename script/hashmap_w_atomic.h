@@ -2,7 +2,7 @@
 #include <atomic>
 #include <utility>
 #include <cassert>
-#include "verona-rt/src/rt/object/object.h"
+#include "../object/object.h"
 
 namespace verona::rt
 {

@@ -1,17 +1,12 @@
 Performing C++ SOURCE FILE Test SNMALLOC_LINKER_SUPPORT_NOSTDLIBXX failed with the following output:
 Change Dir: /mnt/nvme0/home/gxr/hash_rt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7adcb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7adcb.dir/build.make CMakeFiles/cmTC_7adcb.dir/build
-gmake[1]: Entering directory '/mnt/nvme0/home/gxr/hash_rt/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7adcb.dir/src.cxx.o
-/usr/bin/c++ -DSNMALLOC_LINKER_SUPPORT_NOSTDLIBXX   -o CMakeFiles/cmTC_7adcb.dir/src.cxx.o -c /mnt/nvme0/home/gxr/hash_rt/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_7adcb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7adcb.dir/link.txt --verbose=1
-/usr/bin/c++ -nostdlib++ CMakeFiles/cmTC_7adcb.dir/src.cxx.o -o cmTC_7adcb 
+Run Build Command(s):/usr/bin/ninja cmTC_dc394 && [1/2] Building CXX object CMakeFiles/cmTC_dc394.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_dc394
+FAILED: cmTC_dc394 
+: && /usr/bin/c++  -nostdlib++ CMakeFiles/cmTC_dc394.dir/src.cxx.o -o cmTC_dc394   && :
 c++: error: unrecognized command-line option '-nostdlib++'; did you mean '-nostdlib'?
-gmake[1]: *** [CMakeFiles/cmTC_7adcb.dir/build.make:99: cmTC_7adcb] Error 1
-gmake[1]: Leaving directory '/mnt/nvme0/home/gxr/hash_rt/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_7adcb/fast] Error 2
+ninja: build stopped: subcommand failed.
 
 
 Source file was:

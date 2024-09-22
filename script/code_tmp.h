@@ -1,19 +1,30 @@
+// Copyright Microsoft and Project Verona Contributors.
+// SPDX-License-Identifier: MIT
 #pragma once
-#include <atomic>
-#include <utility>
-#include <cassert>
-#include "verona-rt/src/rt/object/object.h"
+
+#include "../object/object.h"
+#include <mutex>  // Include the mutex header
 
 namespace verona::rt
 {
+  /**
+   * Robin Hood hash map where the key type is `K*`, where `K` is derived from
+   * `Object`. The `Entry` type must be either `K*` or `std::pair<K*, Value>`.
+   */
   template<typename Entry>
   class ObjectMap
   {
-    std::atomic<Entry*> slots;
-    std::atomic<size_t> filled_slots;
-    std::atomic<uint8_t> capacity_shift;
-    std::atomic<uint8_t> longest_probe;
+    Entry* slots;
+    size_t filled_slots = 0;
+    uint8_t capacity_shift;
+    uint8_t longest_probe = 0;
+    std::mutex map_mutex;  // Mutex for thread safety
 
+    /**
+     * The key type must be derived from `Object` because the low bits are used
+     * to encode a mark bit and the probe length of the entry from its ideal
+     * slot.
+     */
     static constexpr uintptr_t MARK_MASK = Object::ALIGNMENT >> 1;
     static constexpr uintptr_t PROBE_MASK = MARK_MASK - 1;
 
@@ -52,6 +63,9 @@ namespace verona::rt
     using EntryView = typename inspect_entry_type<Entry>::entry_view;
     static constexpr bool is_set = inspect_entry_type<Entry>::is_set;
 
+    /**
+     * Return a reference to the entry key.
+     */
     static uintptr_t& key_of(Entry& entry)
     {
       if constexpr (is_set)
@@ -60,66 +74,113 @@ namespace verona::rt
         return (uintptr_t&)std::get<0>(entry);
     }
 
+    /**
+     * Return the original key value, where the low bits have been cleared.
+     */
     static uintptr_t unmark_key(uintptr_t key)
     {
       return key & ~Object::MASK;
     }
 
+    /**
+     * Return the probe index of the entry.
+     */
     static uint8_t probe_index(uintptr_t key)
     {
       return (uint8_t)(key & PROBE_MASK);
     }
 
+    /**
+     * Allocate enough slots for 8 entries.
+     */
     void init_alloc(Alloc& alloc)
     {
       static constexpr size_t init_capacity = 8;
-      capacity_shift.store((uint8_t)bits::ctz(init_capacity), std::memory_order_relaxed);
-      slots.store((Entry*)alloc.alloc<init_capacity * sizeof(Entry), YesZero>(), std::memory_order_relaxed);
-      filled_slots.store(0, std::memory_order_relaxed);
-      longest_probe.store(0, std::memory_order_relaxed);
+      capacity_shift = (uint8_t)bits::ctz(init_capacity);
+      slots = (Entry*)alloc.alloc<init_capacity * sizeof(Entry), YesZero>();
     }
 
+    /**
+     * Double the allocation size. The entries in the previous allocation will
+     * be reinserted.
+     */
+    // void resize(Alloc& alloc)
+    // {
+    //   // auto prev = *this;
+    //   auto prev = std::move(*this);
     void resize(Alloc& alloc)
+{
+    // Save the current state
+    Entry* old_slots = slots;
+    size_t old_capacity = capacity();
+    uint8_t old_longest_probe = longest_probe;
+
+    // Increase capacity
+    capacity_shift++;
+    slots = (Entry*)alloc.alloc<YesZero>(capacity() * sizeof(Entry));
+    filled_slots = 0;
+    longest_probe = 0;
+
+    // Reinsert entries into the new slots
+    for (size_t i = 0; i < old_capacity; i++)
     {
-      auto old_slots = slots.load(std::memory_order_relaxed);
-      auto old_capacity = capacity();
-      auto old_longest_probe = longest_probe.load(std::memory_order_relaxed);
-
-      capacity_shift.fetch_add(1, std::memory_order_relaxed);
-      auto new_capacity = capacity();
-      auto new_slots = (Entry*)alloc.alloc<YesZero>(new_capacity * sizeof(Entry));
-      slots.store(new_slots, std::memory_order_release);
-      filled_slots.store(0, std::memory_order_relaxed);
-      longest_probe.store(0, std::memory_order_relaxed);
-
-      for (size_t i = 0; i < old_capacity; i++)
-      {
         auto& entry = old_slots[i];
         if (key_of(entry) != 0)
         {
-          if constexpr (is_set)
-            insert(alloc, entry);
-          else
-            insert(alloc, std::make_pair(std::move(std::get<0>(entry)), std::move(std::get<1>(entry))));
-          key_of(entry) = 0;
-        }
-      }
+            if constexpr (is_set)
+                insert(alloc, entry);
+            else
+                insert(alloc, std::make_pair(
+                    std::move(std::get<0>(entry)), 
+                    std::move(std::get<1>(entry))
+                ));
 
-      alloc.dealloc(old_slots, old_capacity * sizeof(Entry));
+            key_of(entry) = 0;  // Clear the old entry
+        }
     }
 
+    // Deallocate the old slots
+    alloc.dealloc(old_slots, old_capacity * sizeof(Entry));
+}
+
+
+
+    //   capacity_shift++;
+    //   slots = (Entry*)alloc.alloc<YesZero>(capacity() * sizeof(Entry));
+    //   filled_slots = 0;
+    //   longest_probe = 0;
+
+    //   for (auto it = prev.begin(); it != prev.end(); ++it)
+    //   {
+    //     if constexpr (is_set)
+    //       insert(alloc, it.key());
+    //     else
+    //       insert(alloc, std::make_pair(it.key(), std::move(it.value())));
+
+    //     key_of(it.entry()) = 0;
+    //   }
+    // }
+
+    /**
+     * Place an entry into the map at the given index, overwriting any existing
+     * entry. The probe bits of the key are set to `probe_len` and the
+     * `longest_probe` value is updated if `probe_len` is greater.
+     */
     template<typename E>
     void place_entry(E entry, size_t index, uint8_t probe_len)
     {
-      auto& key = key_of(entry);
+      slots[index] = std::forward<E>(entry);
+      auto& key = key_of(slots[index]);
       assert(probe_len <= PROBE_MASK);
       key = (key & ~PROBE_MASK) | probe_len;
-      slots.load(std::memory_order_acquire)[index] = std::forward<E>(entry);
-      if (probe_len > longest_probe.load(std::memory_order_relaxed))
-        longest_probe.store(probe_len, std::memory_order_relaxed);
+      if (probe_len > longest_probe)
+        longest_probe = probe_len;
     }
 
   public:
+    /**
+     * Iterator over the entries in an `ObjectMap`, starting from a slot index.
+     */
     class Iterator
     {
       template<typename _Entry>
@@ -190,8 +251,11 @@ namespace verona::rt
       {
         return !(*this == other);
       }
-    }; //end of iterator
+    }; // end of iterator
 
+    /**
+     * Create an `ObjectMap` with an initial capacity for at least 8 entries.
+     */
     ObjectMap(Alloc& alloc)
     {
       init_alloc(alloc);
@@ -202,6 +266,15 @@ namespace verona::rt
       dealloc(ThreadAlloc::get());
     }
 
+
+        // Disable copying
+    ObjectMap(const ObjectMap&) = delete;
+    ObjectMap& operator=(const ObjectMap&) = delete;
+
+    // Disable moving
+    ObjectMap(ObjectMap&&) = delete;
+    ObjectMap& operator=(ObjectMap&&) = delete;
+
     static ObjectMap<Entry>* create(Alloc& alloc)
     {
       return new (alloc.alloc<sizeof(ObjectMap<Entry>)>()) ObjectMap(alloc);
@@ -210,23 +283,30 @@ namespace verona::rt
     void dealloc(Alloc& alloc)
     {
       clear(alloc, true);
-      alloc.dealloc(slots.load(std::memory_order_relaxed), capacity() * sizeof(Entry));
+      alloc.dealloc(slots, capacity() * sizeof(Entry));
     }
 
+    /**
+     * Return the amount of entries in this map.
+     */
     size_t size() const
     {
-      return filled_slots.load(std::memory_order_acquire);
+      return filled_slots;
     }
 
+    /**
+     * Return the capacity for entries in the map. Note that this should not be
+     * used to approximate when the map will resize.
+     */
     size_t capacity() const
     {
-      return ((size_t)1 << capacity_shift.load(std::memory_order_relaxed));
+      return ((size_t)1 << capacity_shift);
     }
 
     Iterator begin() const
     {
       auto it = Iterator(this, 0);
-      if (unmark_key(key_of(slots.load(std::memory_order_acquire)[0])) == 0)
+      if (unmark_key(key_of(slots[0])) == 0)
         ++it;
 
       return it;
@@ -237,6 +317,11 @@ namespace verona::rt
       return Iterator(this, capacity());
     }
 
+    /**
+     * Find an entry in the map with the given key and return an iterator to the
+     * corresponding entry. If no entry exists, the return value will be equal
+     * to the return value of `end()`.
+     */
     Iterator find(const KeyType* key) const
     {
       if (key == nullptr)
@@ -244,9 +329,9 @@ namespace verona::rt
 
       const auto hash = bits::hash(key->id());
       auto index = hash & (capacity() - 1);
-      for (size_t probe_len = 0; probe_len <= longest_probe.load(std::memory_order_acquire); probe_len++)
+      for (size_t probe_len = 0; probe_len <= longest_probe; probe_len++)
       {
-        const auto k = unmark_key(key_of(slots.load(std::memory_order_acquire)[index]));
+        const auto k = unmark_key(key_of(slots[index]));
         if (k == (uintptr_t)key)
           return Iterator(this, index);
 
@@ -257,9 +342,17 @@ namespace verona::rt
       return end();
     }
 
+    /**
+     * Insert an entry into the map. The first element of the returned pair will
+     * be true if a new key is inserted, and false if an existing entry is
+     * updated. The second element of the returned pair is an iterator to the
+     * inserted entry. The key of the inserted entry must not be null.
+     */
     template<typename E>
     std::pair<bool, Iterator> insert(Alloc& alloc, E entry)
     {
+      std::lock_guard<std::mutex> lock(map_mutex);  // Lock the mutex
+
       if (SNMALLOC_UNLIKELY(size() == capacity()))
         resize(alloc);
 
@@ -271,10 +364,10 @@ namespace verona::rt
 
       for (uint8_t probe_len = 0; probe_len <= PROBE_MASK; probe_len++)
       {
-        const auto k = key_of(slots.load(std::memory_order_acquire)[index]);
+        const auto k = key_of(slots[index]);
 
         if (unmark_key(k) == key)
-        {
+        { // Update existing entry.
           if constexpr (!is_set)
             entry.second = std::forward<E>(entry).second;
 
@@ -285,9 +378,10 @@ namespace verona::rt
         }
 
         if (k == 0)
-        {
+        { // Place into empty slot.
           place_entry(std::forward<E>(entry), index, probe_len);
-          filled_slots.fetch_add(1, std::memory_order_release);
+          assert(!(key_of(slots[index]) & MARK_MASK));
+          filled_slots++;
           if (iter_index == ~(size_t)0)
             iter_index = index;
 
@@ -295,11 +389,11 @@ namespace verona::rt
         }
 
         if (probe_index(k) < probe_len)
-        {
+        { // Robin Hood time. Swap with current slot and continue.
           if (iter_index == ~(size_t)0)
             iter_index = index;
 
-          Entry swap = std::move(slots.load(std::memory_order_acquire)[index]);
+          Entry swap = std::move(slots[index]);
           place_entry(std::forward<E>(entry), index, probe_len);
           entry = swap;
           probe_len = probe_index(key_of(entry));
@@ -309,7 +403,9 @@ namespace verona::rt
           index = 0;
       }
 
+      // Maximum probe length reached, resize and retry.
       resize(alloc);
+      // Entry may have been swapped prior to resize.
       auto it = insert(alloc, std::forward<E>(entry)).second;
       if ((uintptr_t)it.key() != key)
         it = find((const KeyType*)key);
@@ -317,8 +413,14 @@ namespace verona::rt
       return std::make_pair(true, std::move(it));
     }
 
+    /**
+     * Remove an entry from the map corresponding to the given key. The return
+     * value is false if no entry was found for the key and true otherwise.
+     */
     bool erase(const KeyType* key)
     {
+      std::lock_guard<std::mutex> lock(map_mutex);  // Lock the mutex
+
       auto it = find(key);
       if (it == end())
         return false;
@@ -327,41 +429,61 @@ namespace verona::rt
       return true;
     }
 
+    /**
+     * Remove an entry from the map at the given iterator position. The iterator
+     * must be valid. This operation will not invalidate the iterator.
+     */
     void erase(Iterator& it)
     {
       assert(key_of(it.entry()) != 0);
+
+      // No tombstones are necessary because our insertion algorithm relies on
+      // the minimum probe length determined by the maximum value we can
+      // stash in the lower bits of the key.
+
       it.entry().~Entry();
       key_of(it.entry()) = 0;
-      filled_slots.fetch_sub(1, std::memory_order_release);
+      filled_slots--;
     }
 
+    /**
+     * Empty the map, removing all entries. If skip_deallocate is false, the
+     * capacity will be reset to the initial allocation size. Resetting the
+     * allocation size may significantly improve iteration performance.
+     */
     void clear(Alloc& alloc, bool skip_deallocate = false)
     {
+      std::lock_guard<std::mutex> lock(map_mutex);  // Lock the mutex
+
       for (auto it = begin(); it != end(); ++it)
         erase(it);
 
-      longest_probe.store(0, std::memory_order_relaxed);
+      longest_probe = 0;
 
       if (!skip_deallocate && (capacity() > 8))
       {
-        alloc.dealloc(slots.load(std::memory_order_acquire), capacity() * sizeof(Entry));
+        alloc.dealloc(slots, capacity() * sizeof(Entry));
         init_alloc(alloc);
       }
     }
 
+    /**
+     * Return a string representation of the map showing empty slots (`∅`),
+     * key positions, and probe lengths.
+     */
     template<typename OutStream>
     OutStream& debug_layout(OutStream& out) const
     {
       out << "{";
       for (size_t i = 0; i < capacity(); i++)
       {
-        const auto key = key_of(slots.load(std::memory_order_acquire)[i]);
+        const auto key = key_of(slots[i]);
         if (key == 0)
         {
           out << " ∅";
           continue;
         }
-        out << " (" << ((const KeyType*)unmark_key(key_of(slots.load(std::memory_order_acquire)[i])))->id()
+        out << " (" << ((const KeyType*)unmark_key(key_of(slots[i])))->id()
             << ", probe " << (size_t)probe_index(key) << ")";
       }
       out << " } cap: " << capacity();
