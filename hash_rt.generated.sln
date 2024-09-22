@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{8337F692-5734-44EB-91B7-CB7A4CE449B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "verona-rt", "verona-rt", "{C329D328-6C4D-4110-ACC0-9ACFD7FFC75F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{9FB6F280-C83E-4ADD-B710-6AEDAAF1FE82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "internal", "internal", "{529D5749-12CC-465C-9E8F-3B98E6894933}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "concurrency", "concurrency", "{7B17BFC0-A646-455F-B17A-767E37A7ACD6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "verona-csharp", "include\verona-rt\docs\internal\concurrency\modelimpl\verona-csharp.csproj", "{1A3AF1FD-452E-4146-BA47-499FDB68A7E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A3AF1FD-452E-4146-BA47-499FDB68A7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A3AF1FD-452E-4146-BA47-499FDB68A7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A3AF1FD-452E-4146-BA47-499FDB68A7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A3AF1FD-452E-4146-BA47-499FDB68A7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C329D328-6C4D-4110-ACC0-9ACFD7FFC75F} = {8337F692-5734-44EB-91B7-CB7A4CE449B2}
+		{9FB6F280-C83E-4ADD-B710-6AEDAAF1FE82} = {C329D328-6C4D-4110-ACC0-9ACFD7FFC75F}
+		{529D5749-12CC-465C-9E8F-3B98E6894933} = {9FB6F280-C83E-4ADD-B710-6AEDAAF1FE82}
+		{7B17BFC0-A646-455F-B17A-767E37A7ACD6} = {529D5749-12CC-465C-9E8F-3B98E6894933}
+		{1A3AF1FD-452E-4146-BA47-499FDB68A7E8} = {7B17BFC0-A646-455F-B17A-767E37A7ACD6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63335C9A-795D-4A47-AD09-8EC952358266}
+	EndGlobalSection
+EndGlobal
