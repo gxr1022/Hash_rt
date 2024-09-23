@@ -63,6 +63,9 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "thread": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "optional": "cpp",
+        "span": "cpp",
+        "shared_mutex": "cpp"
     }
 }
