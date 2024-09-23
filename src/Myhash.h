@@ -1,254 +1,440 @@
-// #include <verona.h>
+// Copyright Microsoft and Project Verona Contributors.
+// SPDX-License-Identifier: MIT
 #pragma once
-#include <vector>
-#include <string>
-#include <optional>
-#include <cmath>
-#include <iostream>
-#include <cstdint>
-#include <atomic>
-#include <thread>
-#include <mutex>
-#include "mm.h"
-#include "../util/util.hpp"
-#include "../util/bitmap.hpp"
-#include "../util/checksum.hpp"
 
-#define HASH_GLOBAL_DEPTH              (5)
-#define HASH_INIT_LOCAL_DEPTH          (5)
-#define HASH_SUBTABLE_NUM              (1 << HASH_GLOBAL_DEPTH)
-#define HASH_INIT_SUBTABLE_NUM         (1 << HASH_INIT_LOCAL_DEPTH)
-#define HASH_MAX_GLOBAL_DEPTH          (5)
-#define HASH_MAX_SUBTABLE_NUM          (1 << HASH_MAX_GLOBAL_DEPTH)
-#define HASH_ASSOC_NUM                 (7)
-#define MAX_REP_NUM                    (10)
-#define HASH_INIT_SUBTABLE_NUM         (1 << HASH_INIT_LOCAL_DEPTH)
-#define HASH_ADDRESSABLE_BUCKET_NUM    (30000ULL)
-#define HASH_SUBTABLE_BUCKET_NUM       (HASH_ADDRESSABLE_BUCKET_NUM * 3 / 2) //Combined buckets
-#define SUBTABLE_LEN          (HASH_ADDRESSABLE_BUCKET_NUM * sizeof(Bucket))
-#define SUBTABLE_RES_LEN      (HASH_MAX_SUBTABLE_NUM * SUBTABLE_LEN)
-#define SUBTABLE_USED_HASH_BIT_NUM          (32)
-#define HASH_MASK(n)                   ((1 << n) - 1)
+#include "../object/object.h"
 
-
-struct Slot
+namespace verona::rt
 {
-  uint8_t fp;
-  uint8_t len;
-  uint8_t pointer[6];
-};
+  /**
+   * Robin Hood hash map where the key type is `K*`, where `K` is derrived from
+   * `Object`. The `Entry` type must be either `K*` or `std::pair<K*, Value>`.
+   */
+  template<typename Entry>
+  class ObjectMap
+  {
+    Entry* slots;
+    size_t filled_slots = 0;
+    uint8_t capacity_shift;
+    uint8_t longest_probe = 0;
 
-struct Header
-{
-  uint32_t local_depth;
-  uint32_t prefix;
-};
+    /**
+     * The key type must be derrived from `Object` because the low bits are used
+     * to encode a mark bit and the probe length of the entry from its ideal
+     * slot.
+     */
+    static constexpr uintptr_t MARK_MASK = Object::ALIGNMENT >> 1;
+    static constexpr uintptr_t PROBE_MASK = MARK_MASK - 1;
 
-struct Bucket 
-{
-  Slot slots[HASH_ASSOC_NUM];
-  Header h;
-};
+    static_assert((MARK_MASK & PROBE_MASK) == 0);
+    static_assert(((MARK_MASK | PROBE_MASK) & ~Object::MASK) == 0);
 
-struct Subtable
-{  
-  uint8_t lock;  // it is used for resize operation
-  uint8_t local_depth;
-  uint8_t pointer[6];
-};
+    template<typename>
+    struct inspect_entry_type : std::false_type
+    {};
+    template<typename K>
+    struct inspect_entry_type<K*> : std::true_type
+    {
+      static_assert(std::is_base_of_v<Object, K>);
+      using key_type = K;
+      using value_type = key_type*;
+      using entry_view = value_type;
+      static constexpr bool is_set = true;
+    };
+    template<typename K, typename V>
+    struct inspect_entry_type<std::pair<K*, V>> : std::true_type
+    {
+      static_assert(std::is_base_of_v<Object, K>);
+      using key_type = K;
+      using value_type = V;
+      using entry_view = std::pair<key_type*, V*>;
+      static constexpr bool is_set = false;
+    };
 
-struct KVInfo {
-    void   * key_addr;
-    void   * value_addr;
-    uint16_t key_len;
-    uint32_t value_len;
-    uint8_t ops_type;
-    uint8_t ops_id;
-};
+    static_assert(
+      inspect_entry_type<Entry>(),
+      "Map Entry must be K* or std::pair<K*, V>"
+      " where K is derrived from Object");
 
-struct KVHashInfo {
-    uint64_t hash_value;
-    uint64_t prefix; // index the subtable
-    uint8_t  fp; 
-    uint8_t  local_depth;
-};
+    using KeyType = typename inspect_entry_type<Entry>::key_type;
+    using ValueType = typename inspect_entry_type<Entry>::value_type;
+    using EntryView = typename inspect_entry_type<Entry>::entry_view;
+    static constexpr bool is_set = inspect_entry_type<Entry>::is_set;
 
-struct KVTableAddrInfo {
-    uint64_t    f_bucket_addr;
-    uint64_t    s_bucket_addr; // they are calculated by s_idx; represents the start address of the combined buckets.
-
-    uint32_t    f_main_idx;
-    uint32_t    s_main_idx;
-
-    uint32_t    f_idx;
-    uint32_t    s_idx;
-};
-
-struct KVRWAddr {
-    uint64_t addr;
-    uint32_t len; // the number of KVblocks
-};
-
-struct HashRoot{
-    std::atomic<uint64_t> global_depth;
-    uint64_t max_global_depth;
-    uint64_t init_local_depth;
-
-    uint64_t prefix_num;
-
-    uint64_t subtable_init_num;
-    uint64_t subtable_hash_range;
-    uint64_t subtable_bucket_num;
-    uint64_t seed;
-
-    uint64_t kv_offset; 
-    // uint64_t kv_len; 
-    Subtable subtable_entry[HASH_MAX_SUBTABLE_NUM]; // it's like a directory of a extensible hash
-};
-
-enum KVRequestType {
-    KV_REQ_SEARCH,
-    KV_REQ_INSERT,
-    KV_REQ_UPDATE,
-    KV_REQ_DELETE,
-};
-
-enum KVOpsRetCode {
-    KV_OPS_SUCCESS = 0,
-    KV_OPS_FAIL_RETURN,
-};
-
-struct KVReqCtx {
-    // bucket_info
-    Bucket * f_com_bucket; 
-    Bucket * s_com_bucket;
-    Slot   * slot_arr[4]; 
-    uint64_t checksum;
-
-    KVInfo * kv_info;
-
-    KVHashInfo      hash_info;
-    KVTableAddrInfo tbl_addr_info;
-
-    // for kv block allocation
-    MMAllocCtx mm_alloc_ctx;
-
-    // for insert
-    int32_t bucket_idx;
-    int32_t slot_idx;
-
-    union {
-        void * value_addr;    // for search return value
-        int    ret_code;
-    } ret_val;
-};
-
-class Myhash{
-private:
-    MemoryPool * mm_;
-    HashRoot * root_; // get the directory address and  KV block address.
-
-    void get_comb_bucket_info(KVReqCtx * ctx);
-    void get_comb_bucket_info(KVTableAddrInfo *tbl_addr_info,Bucket* f_com_bucket, Bucket* s_com_bucket );
-    void get_kv_addr_info(KVHashInfo * a_kv_hash_info, KVTableAddrInfo * a_kv_addr_info);
-    void get_kv_hash_info( uint64_t* key_addr, uint64_t key_len, KVHashInfo * a_kv_hash_info);
-    int fill_slot(MMAllocCtx * mm_alloc_ctx, KVHashInfo * a_kv_hash_info, Slot* target_slot);
-    int fill_slot(uint64_t iter_kv_subblock_addr, uint8_t iter_kv_subblock_num,  KVHashInfo * a_kv_hash_info, Slot* target_slot);
-    void find_empty_slot(KVReqCtx * ctx);
-    void find_empty_slot(KVTableAddrInfo *tbl_addr_info, Bucket* f_com_bucket,Bucket* s_com_bucket,int32_t &bucket_idx,int32_t &slot_idx);
-    void find_kv_in_buckets(KVReqCtx * ctx);
-    void check_kv_in_candidate_buckets(KVReqCtx * ctx);
-    int find_slot_in_buckets(KVReqCtx * ctx, Slot* target_slot);
-    int atomic_write_to_slot(Slot* target_slot,uint64_t expected, uint64_t new_value);
-    int atomic_write_to_subtable(Subtable* target_subtable,uint64_t expected, uint64_t new_value);
-    int atomic_cas_to_bucket_header(Header* target_header,uint64_t expected, uint64_t new_value);
-    int atomic_write_to_bucket_header(Header* target_header, uint64_t new_value);
-    uint32_t GetFreeSlotNum(Bucket * bucket, uint32_t * free_idx);
-
-    inline char * get_key(KVInfo * kv_info) {
-        return (char *)((uint64_t)kv_info->key_addr);
+    /**
+     * Return a reference to the entry key.
+     */
+    static uintptr_t& key_of(Entry& entry)
+    {
+      if constexpr (is_set)
+        return (uintptr_t&)entry;
+      else
+        return (uintptr_t&)std::get<0>(entry);
     }
 
-    inline char * get_value(KVInfo * kv_info) {
-        return (char *)((uint64_t)kv_info->key_addr + kv_info->key_len);
+    /**
+     * Return the original key value, where the low bits have been cleared.
+     */
+    static uintptr_t unmark_key(uintptr_t key)
+    {
+      return key & ~Object::MASK;
     }
 
-public:
-    Myhash(){};
-    Myhash(size_t chunk_size, size_t num_chunks);
-    ~Myhash(){}
-
-    KVInfo   * kv_info_list_;
-    KVReqCtx * kv_req_ctx_list_;
-    uint32_t   num_total_operations_;
-    std::mutex subtable_entry_mutex;
-
-    void init_hash_table();
-    void init_root();
-    void init_subtable();
-
-    void free_batch();
-
-    int kv_update(KVInfo * kv_info);
-    int kv_insert(KVInfo * kv_info);
-    void kv_insert_read_buckets_and_write_kv(KVReqCtx * ctx);
-    void * kv_search(KVInfo * kv_info);
-    int kv_delete(KVInfo * kv_info);
-    void kv_resize(uint64_t cur_prefix, uint8_t cur_local_depth);
-    void kv_resize_update_slot(uint64_t iter_kv_subblock_addr, uint8_t iter_kv_subblock_num, KVHashInfo *kv_hash_info, KVTableAddrInfo *tbl_addr_info );
-
-    inline MemoryPool * get_mm() {
-        return mm_;
+    /**
+     * Return the probe index of the entry.
+     */
+    static uint8_t probe_index(uintptr_t key)
+    {
+      return (uint8_t)(key & PROBE_MASK);
     }
-};
 
-static inline void ConvertSlotToAddr(Slot * slot, KVRWAddr * kv_addr) {
+    /**
+     * Allocate enough slots for 8 entries.
+     */
+    void init_alloc(Alloc& alloc)
+    {
+      //eturns the number of trailing zero bits in the binary representation of init_capacity. For 8 (which in binary is 1000), the result would be 3 because there are three trailing zeros.
+      static constexpr size_t init_capacity = 8;
+      capacity_shift = (uint8_t)bits::ctz(init_capacity);
+      slots = (Entry*)alloc.alloc<init_capacity * sizeof(Entry), YesZero>();
+    }
 
-    kv_addr->addr = HashIndexConvert48To64Bits(slot->pointer);
+    /**
+     * Double the allocation size. The entries in the previous allocation will
+     * be reinserted.
+     */
+    void resize(Alloc& alloc)
+    {
+      auto prev = *this;
+
+      capacity_shift++;
+      slots = (Entry*)alloc.alloc<YesZero>(capacity() * sizeof(Entry));
+      filled_slots = 0;
+      longest_probe = 0;
+
+      for (auto it = prev.begin(); it != prev.end(); ++it)
+      {
+        if constexpr (is_set)
+          insert(alloc, it.key());
+        else
+          insert(alloc, std::make_pair(it.key(), std::move(it.value())));
+
+        key_of(it.entry()) = 0;
+      }
+    }
+
+    /**
+     * Place an entry into the map at the given index, overwriting any existing
+     * entry. The probe bits of the key are set to `probe_len` and the
+     * `longest_probe` value is updated if `probe_len` is greater.
+     */
+    template<typename E>
+    void place_entry(E entry, size_t index, uint8_t probe_len)
+    {
+      slots[index] = std::forward<E>(entry);
+      auto& key = key_of(slots[index]);
+      assert(probe_len <= PROBE_MASK);
+      key = (key & ~PROBE_MASK) | probe_len;
+      if (probe_len > longest_probe)
+        longest_probe = probe_len;
+    }
+
+  public:
+    /**
+     * Iterator over the entries in an `ObjectMap`, starting from a slot index.
+     */
+    class Iterator
+    {
+      template<typename _Entry>
+      friend class ObjectMap;
+
+      const ObjectMap* map;
+      size_t index;
+
+      Entry& entry()
+      {
+        return map->slots[index];
+      }
+
+      Iterator(const ObjectMap* m, size_t i) : map(m), index(i) {}
+
+    public:
+      KeyType* key()
+      {
+        return (KeyType*)unmark_key(key_of(entry()));
+      }
+
+      template<bool v = !is_set, typename = typename std::enable_if_t<v>>
+      ValueType& value()
+      {
+        return entry().second;
+      }
+
+      bool is_marked()
+      {
+        return key_of(entry()) & MARK_MASK;
+      }
+
+      void mark()
+      {
+        key_of(entry()) |= MARK_MASK;
+      }
+
+      void unmark()
+      {
+        key_of(entry()) &= ~MARK_MASK;
+      }
+
+      EntryView operator*()
+      {
+        if constexpr (is_set)
+          return key();
+        else
+          return std::make_pair(key(), &value());
+      }
+
+      Iterator& operator++()
+      {
+        while (++index < map->capacity())
+        {
+          const auto key = key_of(map->slots[index]);
+          if (key != 0)
+            break;
+        }
+        return *this;
+      }
+
+      bool operator==(const Iterator& other) const
+      {
+        return (index == other.index) && (map == other.map);
+      }
+
+      bool operator!=(const Iterator& other) const
+      {
+        return !(*this == other);
+      }
+    }; //end of iterator
+
+    /**
+     * Create an `ObjectMap` with an initial capacity for at least 8 entries.
+     */
+    ObjectMap(Alloc& alloc)
+    {
+      init_alloc(alloc);
+    }
+
+    ~ObjectMap()
+    {
+      dealloc(ThreadAlloc::get());
+    }
+
+    static ObjectMap<Entry>* create(Alloc& alloc)
+    {
+      return new (alloc.alloc<sizeof(ObjectMap<Entry>)>()) ObjectMap(alloc);
+    }
+
+    void dealloc(Alloc& alloc)
+    {
+      clear(alloc, true);
+      alloc.dealloc(slots, capacity() * sizeof(Entry));
+    }
+
+    /**
+     * Return the amount of entries in this map.
+     */
+    size_t size() const
+    {
+      return filled_slots;
+    }
+
+    /**
+     * Return the capacity for entries in the map. Note that this should not be
+     * used to approximate when the map will resize.
+     */
+    size_t capacity() const
+    {
+      return ((size_t)1 << capacity_shift);
+    }
+
+    Iterator begin() const
+    {
+      auto it = Iterator(this, 0);
+      if (unmark_key(key_of(slots[0])) == 0)
+        ++it;
+
+      return it;
+    }
+
+    Iterator end() const
+    {
+      return Iterator(this, capacity());
+    }
+
+    /**
+     * Find an entry in the map with the given key and return an iterator to the
+     * corresponding entry. If no entry exitsts, the return value will be equal
+     * to the return value of `end()`.
+     */
+    Iterator find(const KeyType* key) const
+    {
+      if (key == nullptr)
+        return end();
+
+      const auto hash = bits::hash(key->id());
+      auto index = hash & (capacity() - 1);
+      for (size_t probe_len = 0; probe_len <= longest_probe; probe_len++)
+      {
+        const auto k = unmark_key(key_of(slots[index]));
+        if (k == (uintptr_t)key)
+          return Iterator(this, index);
+
+        if (++index == capacity())
+          index = 0;
+      }
+
+      return end();
+    }
+
+    /**
+     * Insert an entry into the map. The first element of the returned pair will
+     * be true if a new key is inserted, and false if an existing entry is
+     * updated. The second element of the returned pair is an iterator to the
+     * inserted entry. The key of the inserted entry must not be null.
+     */
+    template<typename E>
+    std::pair<bool, Iterator> insert(Alloc& alloc, E entry)
+    {
+      if (SNMALLOC_UNLIKELY(size() == capacity()))
+        resize(alloc);
+
+      assert(key_of(entry) != 0);
+      const auto key = unmark_key(key_of(entry));
+      const auto hash = bits::hash(((const Object*)key)->id());
+      auto index = hash & (capacity() - 1);
+      size_t iter_index = ~(size_t)0;
+
+      for (uint8_t probe_len = 0; probe_len <= PROBE_MASK; probe_len++)
+      {
+        const auto k = key_of(slots[index]);
+
+        if (unmark_key(k) == key)
+        { // Update existing entry.
+          if constexpr (!is_set)
+            entry.second = std::forward<E>(entry).second;
+
+          if (iter_index == ~(size_t)0)
+            iter_index = index;
+
+          return std::make_pair(false, Iterator(this, iter_index));
+        }
+
+        if (k == 0)
+        { // Place into empty slot.
+          place_entry(std::forward<E>(entry), index, probe_len);
+          assert(!(key_of(slots[index]) & MARK_MASK));
+          filled_slots++;
+          if (iter_index == ~(size_t)0)
+            iter_index = index;
+
+          return std::make_pair(true, Iterator(this, iter_index));
+        }
+
+        if (probe_index(k) < probe_len)
+        { // Robin Hood time. Swap with current slot and continue.
+          if (iter_index == ~(size_t)0)
+            iter_index = index;
+
+          Entry swap = std::move(slots[index]);
+          place_entry(std::forward<E>(entry), index, probe_len);
+          entry = swap;
+          probe_len = probe_index(key_of(entry));
+        }
+
+        if (++index == capacity())
+          index = 0;
+      }
+
+      // Maximum probe length reached, resize and retry.
+      resize(alloc);
+      // Entry may have been swapped prior to resize.
+      auto it = insert(alloc, std::forward<E>(entry)).second;
+      if ((uintptr_t)it.key() != key)
+        it = find((const KeyType*)key);
+
+      return std::make_pair(true, std::move(it));
+    }
+
+    /**
+     * Remove an entry from the map corresponding to the given key. The return
+     * value is false if no entry was found for the key and true otherwise.
+     */
+    bool erase(const KeyType* key)
+    {
+      auto it = find(key);
+      if (it == end())
+        return false;
+
+      erase(it);
+      return true;
+    }
+
+    /**
+     * Remove an entry from the map at the given iterator position. The iterator
+     * must be valid. This operation will not invalidate the iterator.
+     */
+    void erase(Iterator& it)
+    {
+      assert(key_of(it.entry()) != 0);
+
+      // No tombstones are necessary because our insertion algorithm relies on
+      // the the minimum probe length determined by the maximum value we can
+      // stash in the lower bits of the key.
+
+      it.entry().~Entry();
+      key_of(it.entry()) = 0;
+      filled_slots--;
+    }
+
+    /**
+     * Empty the map, removing all entries. If skip_deallocate is false, the
+     * capacity will be reset to the initial allocation size. Resetting the
+     * allocation size may significantly improve iteration performance.
+     */
+    void clear(Alloc& alloc, bool skip_deallocate = false)
+    {
+      for (auto it = begin(); it != end(); ++it)
+        erase(it);
+
+      longest_probe = 0;
+
+      if (!skip_deallocate && (capacity() > 8))
+      {
+        alloc.dealloc(slots, capacity() * sizeof(Entry));
+        init_alloc(alloc);
+      }
+    }
+
+    /**
+     * Return a string representation of the map showing empty slots (`∅`),
+     * key positions, and probe lengths.
+     */
+    template<typename OutStream>
+    OutStream& debug_layout(OutStream& out) const
+    {
+      out << "{";
+      for (size_t i = 0; i < capacity(); i++)
+      {
+        const auto key = key_of(slots[i]);
+        if (key == 0)
+        {
+          out << " ∅";
+          continue;
+        }
+        out << " (" << ((const KeyType*)unmark_key(key_of(slots[i])))->id()
+            << ", probe " << (size_t)probe_index(key) << ")";
+      }
+      out << " } cap: " << capacity();
+      return out;
+    }
+  };
 }
-
-static inline uint64_t ConvertSlotTo64Bits(const Slot& slot) {
-    uint64_t packed = 0;
-    packed |= static_cast<uint64_t>(slot.fp);
-    packed |= static_cast<uint64_t>(slot.len) << 8;
-    for (int i = 0; i < 6; ++i) {
-        packed |= static_cast<uint64_t>(slot.pointer[i]) << (16 + 8 * i);
-    }
-
-    return packed;
-}
-
-static inline uint64_t pack_subtable(const Subtable& subtable) {
-    uint64_t packed = 0;
-    packed |= (static_cast<uint64_t>(subtable.lock));          // Pack lock (1 byte)
-    packed |= (static_cast<uint64_t>(subtable.local_depth) << 8);    // Pack local_depth (1 byte)
-    
-    // Pack pointer (6 bytes)
-    for (int i = 0; i < 6; ++i) {
-        packed |= static_cast<uint64_t>(subtable.pointer[i]) << (16 + 8 * i);
-    }
-    return packed;
-}
-
-static inline uint64_t pack_subtable_modified_fields(uint8_t locked,uint8_t new_local_depth,uint8_t pointer[6]) {
-    uint64_t packed = 0;
-    packed |= (static_cast<uint64_t>(locked));
-    packed |= (static_cast<uint64_t>(new_local_depth) << 8);
-
-    for (int i = 0; i < 6; ++i) {
-        packed |= static_cast<uint64_t>(pointer[i]) << (16 + 8 * i);
-    }
-    return packed;
-}
-
-static inline uint64_t pack_header_fields(uint32_t local_depth, uint32_t prefix) {
-    uint64_t result = 0;
-    result |= static_cast<uint64_t>(local_depth);
-
-    result |= static_cast<uint64_t>(prefix) << 32;
-    
-    return result;
-}
-
-
-
