@@ -27,7 +27,7 @@ public:
     }
 
     bool insert(int key, int value) {
-        lock_guard<mutex> lock(mtx);  
+        // lock_guard<mutex> lock(mtx);  
         if (!kvStore.empty() && kvStore.find(key) != kvStore.end()) {
             kvStore[key] = value;  
             return true;
@@ -71,6 +71,7 @@ private:
     int bucketCapacity;
     vector<shared_ptr<Directory>> directory;
     mutex globalMutex;   
+    mutex accessMutex;
     condition_variable resizeCondVar;
     atomic<bool> isResizing;
     // thread resizeThread;
@@ -101,31 +102,29 @@ private:
     }
 
     void splitBucket(int dir_prefix) {
-
-
-        unique_lock<mutex> lock(globalMutex);
+        // unique_lock<mutex> lock(globalMutex);
         if(directory[dir_prefix]->localDepth == globalDepth && !isResizing.load())
         {
             isResizing.store(true);
             int cap = directory.size();
             directory.resize(cap * 2);  
             for (int i = 0; i < cap; ++i) {
+                
                 directory[i + cap] = make_shared<Directory>();
+                // unique_lock<shared_mutex> dirLock(directory[i + cap]->directoryMutex);
                 directory[i + cap]->bucket = directory[i]->bucket;
                 directory[i + cap]->prefix = i + cap;
-                directory[i + cap]->localDepth.store(directory[i]->localDepth.load());;
+                directory[i + cap]->localDepth.store(directory[i]->localDepth.load());
             }
             globalDepth++;
-
-            isResizing.store(false);
-            resizeCondVar.notify_all();
-
         }
+        // isResizing.store(false);
+        // resizeCondVar.notify_all();
         
         int localDepth;
         shared_ptr<Bucket> oldBucket;
         {
-            shared_lock<shared_mutex> readLock(directory[dir_prefix]->directoryMutex);
+            // shared_lock<shared_mutex> readLock(directory[dir_prefix]->directoryMutex);
             localDepth = directory[dir_prefix]->localDepth;
             oldBucket = directory[dir_prefix]->bucket;
         }
@@ -142,7 +141,7 @@ private:
 
         //Re-assign kv pairs into two new buckets 
         {
-            std::unique_lock<std::mutex> oldBucketLock(oldBucket->mtx); // exclusive lock
+            // std::unique_lock<std::mutex> oldBucketLock(oldBucket->mtx); // exclusive lock
             for (auto& pair : oldBucket->kvStore) {
                 int newHash = hashFunction(pair.first);
                 if (newHash == oldBucket->prefix) {
@@ -161,7 +160,7 @@ private:
                 continue;
             }
             if (directory[i]->bucket == oldBucket) {
-                std::unique_lock<std::shared_mutex> dirLock(directory[i]->directoryMutex);
+                // std::unique_lock<std::shared_mutex> dirLock(directory[i]->directoryMutex);
                 if (i & (1 << localDepth)) {
                     directory[i]->bucket = newBucket_o;
                 } else {
@@ -196,21 +195,24 @@ public:
     // }
 
     void insert(int key, int value) {
-        {
-            unique_lock<mutex> lock(globalMutex);
-            resizeCondVar.wait(lock, [this]() { return !isResizing.load(); });
-        }
+        // {
+        //     unique_lock<mutex> lock(globalMutex);// resize mutex
+        //     resizeCondVar.wait(lock, [this]() { return !isResizing.load(); }); // 等待resize完成
+        // }
+        unique_lock<mutex> lock(globalMutex);// resize mutex
         int hashValue = hashFunction(key);
         {
+            
             if (!directory[hashValue] ) {
                 std::cerr << "Error: directory at hashValue " << hashValue << " is null." << std::endl;
                 return;
             }
+            // shared_lock<shared_mutex> readLock(directory[hashValue]->directoryMutex);
             if(!directory[hashValue]->bucket){
                 std::cerr << "Error: Bucket at hashValue " << hashValue << " is null." << std::endl;
                 return;
             }
-            shared_lock<shared_mutex> readLock(directory[hashValue]->directoryMutex);
+            // lock_guard<mutex> dirLock(directory[hashValue]->bucket->mtx);
             bool ret = directory[hashValue]->bucket->insert(key, value);
             if(ret)
                 return;    
