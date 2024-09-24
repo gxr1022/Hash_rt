@@ -15,6 +15,7 @@ using namespace verona::rt;
 
 struct Key : public VCown<Key>
 {
+  
 };
 
 auto& alloc = ThreadAlloc::get();
