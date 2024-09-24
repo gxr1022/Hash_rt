@@ -1,0 +1,62 @@
+class ExtendibleHash {
+    // ... 其他成员保持不变 ...
+
+public:
+    ExtendibleHash(int initialDepth, int bucketCap) : globalDepth(initialDepth), bucketCapacity(bucketCap) {
+        // ... 初始化目录的代码 ...
+        isResizing.store(false);
+        // 创建后台线程
+        resizeThread = thread(&ExtendibleHash::resizeDirectory, this);
+    }
+
+    ~ExtendibleHash() {
+        {
+            unique_lock<mutex> lock(globalMutex);
+            isResizing.store(true);
+            resizeCondVar.notify_all(); // 唤醒线程以结束
+        }
+        if (resizeThread.joinable()) {
+            resizeThread.join(); 
+        }
+    }
+
+    void insert(int key, int value) {
+        {
+            unique_lock<mutex> lock(globalMutex);
+            resizeCondVar.wait(lock, [this]() { return !isResizing.load(); });
+        }
+        int hashValue = hashFunction(key);
+        // ... 检查目录和桶的有效性 ...
+        
+        {
+            shared_lock<shared_mutex> readLock(directory[hashValue]->directoryMutex);
+            bool ret = directory[hashValue]->bucket->insert(key, value);
+            if (ret) return;    
+        }
+
+        // 将分裂操作放入条件变量中
+        {
+            unique_lock<mutex> lock(globalMutex);
+            pendingSplit = hashValue; // 记录需要分裂的桶
+            resizeCondVar.notify_one(); // 唤醒后台线程进行分裂
+        }
+    }
+
+private:
+    void resizeDirectory() {
+        while (true) {
+            unique_lock<mutex> lock(globalMutex);
+            resizeCondVar.wait(lock, [this]() { return isResizing.load() || pendingSplit != -1; });
+
+            if (isResizing.load()) break; // 结束线程
+
+            int dir_prefix = pendingSplit;
+            pendingSplit = -1; // 重置
+
+            // 调用分裂函数
+            splitBucket(dir_prefix);
+        }
+    }
+
+    // ... 其他成员和函数保持不变 ...
+};
