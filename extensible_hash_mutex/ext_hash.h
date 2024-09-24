@@ -80,27 +80,6 @@ private:
         return key & ((1 << globalDepth) - 1);
     }
 
-    // void resizeDirectory() {
-    //     while (true) {
-    //         unique_lock<mutex> lock(globalMutex);
-    //         resizeCondVar.wait(lock, [this]() { return isResizing.load(); });
-
-    //         int cap = directory.size();
-    //         directory.resize(cap * 2);  
-    //         for (int i = 0; i < cap; ++i) {
-    //             directory[i + cap] = make_shared<Directory>();
-    //             directory[i + cap]->bucket = directory[i]->bucket;
-    //             directory[i + cap]->prefix = i + cap;
-    //             directory[i + cap]->localDepth.store(directory[i]->localDepth.load());;
-    //         }
-    //         globalDepth++;
-
-    //         isResizing.store(false);
-    //         resizeCondVar.notify_all();
-    //         break;
-    //     }
-    // }
-
     void splitBucket(int dir_prefix) {
         
         if(directory[dir_prefix]->localDepth == globalDepth && !isResizing.load())
