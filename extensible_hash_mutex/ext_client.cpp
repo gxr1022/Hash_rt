@@ -12,9 +12,10 @@
 #include <iomanip>
 #include <thread>
 #include <gflags/gflags.h>
+// #include "hash_split.h"
 #include "ext_hash.h"
 
-DEFINE_uint64(num_threads, 1, "the number of threads");
+DEFINE_uint64(num_threads, 32, "the number of threads");
 DEFINE_uint64(num_of_ops, 1000000, "the number of operations");
 DEFINE_uint64(time_interval, 10, "the time interval of insert operations");
 DEFINE_string(report_prefix, "[report] ", "prefix of report data");

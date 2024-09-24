@@ -5,11 +5,11 @@
 #include <cmath>
 #include <thread>
 #include <mutex>
-#include <memory> 
+#include <memory>
 #include <shared_mutex>
 #include <condition_variable>
+#include <queue>
 #include <atomic>
-
 
 using namespace std;
 
@@ -18,26 +18,24 @@ public:
     unordered_map<int, int> kvStore;
     int capacity;
     int prefix;
-    mutex mtx; 
+    mutex mtx;
 
     Bucket(int cap, int pfix) : capacity(cap), prefix(pfix) {}
 
     bool isFull() {
-        // lock_guard<mutex> lock(mtx); 
         return kvStore.size() >= capacity;
     }
 
     bool insert(int key, int value) {
-        // lock_guard<mutex> lock(mtx);  
         if (!kvStore.empty() && kvStore.find(key) != kvStore.end()) {
-            kvStore[key] = value;  
+            kvStore[key] = value;
             return true;
         }
         if (!isFull()) {
             kvStore[key] = value;
             return true;
         }
-        return false;  
+        return false;
     }
 
     bool remove(int key) {
@@ -46,20 +44,19 @@ public:
             kvStore.erase(key);
             return true;
         }
-        return false; 
+        return false;
     }
 
     int get(int key) {
-        lock_guard<mutex> lock(mtx);  
+        lock_guard<mutex> lock(mtx);
         if (kvStore.find(key) != kvStore.end()) {
             return kvStore[key];
         }
-        return -1; 
+        return -1;
     }
 };
 
-struct Directory
-{
+struct Directory {
     shared_ptr<Bucket> bucket;
     int prefix;
     std::atomic<int> localDepth;
@@ -71,66 +68,58 @@ private:
     std::atomic<int> globalDepth;
     int bucketCapacity;
     vector<shared_ptr<Directory>> directory;
-    shared_mutex globalMutex;   
-    condition_variable resizeCondVar;
+    mutex globalMutex;
+    mutex taskQueueMutex;
+    condition_variable taskCondVar;
     atomic<bool> isResizing;
-    // thread resizeThread;
+    thread splitWorker;
+    queue<int> taskQueue; // Task queue for bucket splits
+    bool stopWorker;
 
     int hashFunction(int key) {
         return key & ((1 << globalDepth) - 1);
     }
 
-    // void resizeDirectory() {
-    //     while (true) {
-    //         unique_lock<mutex> lock(globalMutex);
-    //         resizeCondVar.wait(lock, [this]() { return isResizing.load(); });
+    void workerThread() {
+        while (!stopWorker) {
+            int dir_prefix;
+            {
+                unique_lock<mutex> lock(taskQueueMutex);
+                taskCondVar.wait(lock, [this]() { return !taskQueue.empty() || stopWorker; });
 
-    //         int cap = directory.size();
-    //         directory.resize(cap * 2);  
-    //         for (int i = 0; i < cap; ++i) {
-    //             directory[i + cap] = make_shared<Directory>();
-    //             directory[i + cap]->bucket = directory[i]->bucket;
-    //             directory[i + cap]->prefix = i + cap;
-    //             directory[i + cap]->localDepth.store(directory[i]->localDepth.load());;
-    //         }
-    //         globalDepth++;
+                if (stopWorker) break;
 
-    //         isResizing.store(false);
-    //         resizeCondVar.notify_all();
-    //         break;
-    //     }
-    // }
+                dir_prefix = taskQueue.front();
+                taskQueue.pop();
+            }
+            splitBucket(dir_prefix); // Process split task
+        }
+    }
 
     void splitBucket(int dir_prefix) {
-        
-        if(directory[dir_prefix]->localDepth == globalDepth && !isResizing.load())
-        {
-            unique_lock<shared_mutex> lock(globalMutex);
+        if (directory[dir_prefix]->localDepth == globalDepth && !isResizing.load()) {
+            unique_lock<mutex> lock(globalMutex);
             isResizing.store(true);
             int cap = directory.size();
-            directory.resize(cap * 2);  
-            
+            directory.resize(cap * 2);
+
             for (int i = 0; i < cap; ++i) {
-                
                 directory[i + cap] = make_shared<Directory>();
-                // unique_lock<shared_mutex> dirLock(directory[i + cap]->directoryMutex);
                 directory[i + cap]->bucket = directory[i]->bucket;
                 directory[i + cap]->prefix = i + cap;
                 directory[i + cap]->localDepth.store(directory[i]->localDepth.load());
             }
             globalDepth++;
+            isResizing.store(false);
         }
-        // isResizing.store(false);
-        // resizeCondVar.notify_all();
-        
+
         int localDepth;
         shared_ptr<Bucket> oldBucket;
         {
-            shared_lock<shared_mutex> readLock(directory[dir_prefix]->directoryMutex);
             localDepth = directory[dir_prefix]->localDepth;
             oldBucket = directory[dir_prefix]->bucket;
         }
-        
+
         if (!oldBucket) {
             std::cerr << "Error: oldBucket is null!" << std::endl;
             return;
@@ -141,29 +130,26 @@ private:
         shared_ptr<Bucket> newBucket = make_shared<Bucket>(bucketCapacity, new_bucket_prefix);
         shared_ptr<Bucket> newBucket_o = make_shared<Bucket>(bucketCapacity, cur_bucket_prefix);
 
-        //Re-assign kv pairs into two new buckets 
+        // Re-assign kv pairs into two new buckets
         {
-            std::unique_lock<std::mutex> oldBucketLock(oldBucket->mtx); // exclusive lock
             for (auto& pair : oldBucket->kvStore) {
                 int newHash = hashFunction(pair.first);
                 if (newHash == oldBucket->prefix) {
-                    newBucket_o->insert(pair.first, pair.second);  
+                    newBucket_o->insert(pair.first, pair.second);
                 } else {
-                    newBucket->insert(pair.first, pair.second);  
+                    newBucket->insert(pair.first, pair.second);
                 }
             }
             oldBucket->kvStore.clear();
         }
 
-        // modify the bucket pointer of directory entry.
-        unique_lock<shared_mutex> lock(globalMutex);
+        // modify the bucket pointer of directory entry
         for (int i = 0; i < directory.size(); ++i) {
             if (!directory[i] || !directory[i]->bucket) {
                 std::cerr << "Error: Directory or Bucket is null!" << std::endl;
                 continue;
             }
             if (directory[i]->bucket == oldBucket) {
-                // std::unique_lock<std::shared_mutex> dirLock(directory[i]->directoryMutex); //exlusive lock
                 if (i & (1 << localDepth)) {
                     directory[i]->bucket = newBucket_o;
                 } else {
@@ -171,60 +157,69 @@ private:
                 }
                 directory[i]->localDepth++;
             }
-            
         }
-       
     }
 
 public:
-
-    void insert(int key, int value) {
-        int hashValue = hashFunction(key);
-        {
-            shared_lock<shared_mutex> readlock(globalMutex);
-            {
-                
-                if (!directory[hashValue] ) {
-                    std::cerr << "Error: directory at hashValue " << hashValue << " is null." << std::endl;
-                    return;
-                }
-                // shared_lock<shared_mutex> readLock(directory[hashValue]->directoryMutex);
-                if(!directory[hashValue]->bucket){
-                    std::cerr << "Error: Bucket at hashValue " << hashValue << " is null." << std::endl;
-                    return;
-                }
-                lock_guard<mutex> dirLock(directory[hashValue]->bucket->mtx);
-                bool ret = directory[hashValue]->bucket->insert(key, value);
-                if(ret)
-                    return;    
-            }
-        }
-        
-        splitBucket(hashValue);
-    }
-
-    ExtendibleHash(int initialDepth, int bucketCap) : globalDepth(initialDepth), bucketCapacity(bucketCap) {
+    ExtendibleHash(int initialDepth, int bucketCap) : globalDepth(initialDepth), bucketCapacity(bucketCap), stopWorker(false) {
         directory.resize(1 << initialDepth);
         for (int i = 0; i < (1 << initialDepth); ++i) {
-
             directory[i] = make_shared<Directory>();
-            directory[i]->bucket = make_shared<Bucket>(bucketCap,i);
-            
+            directory[i]->bucket = make_shared<Bucket>(bucketCap, i);
             directory[i]->prefix = i;
             directory[i]->localDepth = initialDepth;
         }
         isResizing.store(false);
-        // resizeThread = thread(&ExtendibleHash::resizeDirectory, this);
+        splitWorker = thread(&ExtendibleHash::workerThread, this); // Start background worker thread
     }
 
-    //  ~ExtendibleHash() {
-    //     if (resizeThread.joinable()) {
-    //         resizeThread.join(); 
-    //     }
-    // }
+    ~ExtendibleHash() {
+        {
+            unique_lock<mutex> lock(taskQueueMutex);
+            stopWorker = true;
+        }
+        taskCondVar.notify_all();
+        if (splitWorker.joinable()) {
+            splitWorker.join();
+        }
+    }
+
+    void insert(int key, int value) {
+        int hashValue = hashFunction(key);
+        {
+            // if (!directory[hashValue]) {
+            //     std::cerr << "Error: directory at hashValue " << hashValue << " is null." << std::endl;
+            //     return;
+            // }
+            if(directory[hashValue])
+            {
+                shared_lock<shared_mutex> readLock(directory[hashValue]->directoryMutex);
+                if(directory[hashValue]->bucket)
+                {
+                    lock_guard<mutex> dirLock(directory[hashValue]->bucket->mtx);
+                    bool ret = directory[hashValue]->bucket->insert(key, value);
+                    if (ret) return;
+                }
+            }
+            
+            // if (!directory[hashValue]->bucket) {
+            //     std::cerr << "Error: Bucket at hashValue " << hashValue << " is null." << std::endl;
+            //     return;
+            // }
+            
+            
+        }
+
+        // If insert failed, enqueue a bucket split task
+        {
+            lock_guard<mutex> lock(taskQueueMutex);
+            taskQueue.push(hashValue);
+        }
+        taskCondVar.notify_one(); // Notify worker thread
+    }
 
     void printStatus() {
-        // lock_guard<mutex> lock(globalMutex); 
+        lock_guard<mutex> lock(globalMutex);
         cout << "Global Depth: " << globalDepth << endl;
         for (int i = 0; i < directory.size(); ++i) {
             cout << "Bucket " << i << " (Local Depth: " << directory[i]->localDepth << "): ";
@@ -235,7 +230,3 @@ public:
         }
     }
 };
-
-
-
-
