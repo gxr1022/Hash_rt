@@ -167,3 +167,31 @@ public:
         }
     }
 };
+
+
+// 将 Directory 和 Bucket 都改为 Cown 类型
+struct Directory : public VCown<Directory>
+{
+    cown_ptr<Bucket> bucket;  // 改为 Cown
+    std::atomic<int> localDepth;
+};
+
+struct Bucket : public VCown<Bucket>
+{
+    std::unordered_map<int, int> kvStore;
+    int capacity;
+    int prefix;
+    std::mutex mtx; // 不再需要这个锁
+
+    Bucket(int cap, int pfix) : capacity(cap), prefix(pfix) {}
+
+    bool insert(int key, int value) {
+        if (kvStore.size() >= capacity) {
+            return false;
+        }
+        kvStore[key] = value;
+        return true;
+    }
+};
+
+

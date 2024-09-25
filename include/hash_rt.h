@@ -16,7 +16,8 @@ using namespace verona::rt;
 using namespace verona::cpp;
 using namespace std;
 
-class Bucket {
+class Bucket
+{
 public:
     unordered_map<int, int> kvStore;
     int capacity;
@@ -24,128 +25,179 @@ public:
 
     Bucket(int cap, int pfix) : capacity(cap), prefix(pfix) {}
 
-    bool isFull() {
+    bool isFull()
+    {
         return kvStore.size() >= capacity;
     }
 
-    bool insert(int key, int value) {
-        if (kvStore.find(key) != kvStore.end()) {
-            kvStore[key] = value; 
+    bool insert(int key, int value)
+    {
+        if (kvStore.find(key) != kvStore.end())
+        {
+            kvStore[key] = value;
             return true;
         }
-        if (!isFull()) {
-            kvStore[key] = value;  
+        if (!isFull())
+        {
+            kvStore[key] = value;
             return true;
         }
-        return false;  
+        return false;
     }
 
-    bool remove(int key) {
+    bool remove(int key)
+    {
         auto it = kvStore.find(key);
-        if (it != kvStore.end()) {
+        if (it != kvStore.end())
+        {
             kvStore.erase(it);
             return true;
         }
         return false;
     }
 
-    int get(int key) {
+    int get(int key)
+    {
         auto it = kvStore.find(key);
-        if (it != kvStore.end()) {
+        if (it != kvStore.end())
+        {
             return it->second;
         }
-        return -1;  
+        return -1;
     }
 };
-
 
 struct Directory
 {
-    cown_ptr<Bucket> bucket; 
+    cown_ptr<Bucket> bucket;
     int localDepth;
 };
 
+static inline int hashFunction(int key, int globalDepth)
+{
+    return key & ((1 << globalDepth) - 1);
+}
 
 // class ExtendibleHash : public VCown<ExtendibleHash>{
-class ExtendibleHash {
+class ExtendibleHash
+{
 private:
     int globalDepth;
     int bucketCapacity;
-    vector<cown_ptr<Directory>> directory;  // 使用 cown_ptr 管理目录
-
-    int hashFunction(int key) {
-        return key & ((1 << globalDepth) - 1);
-    }
+    vector<cown_ptr<Directory>> directory; 
+    // cown_ptr<ExtendibleHash> self_cown;
 
 public:
-    ExtendibleHash(int initialDepth, int bucketCap) 
-    : globalDepth(initialDepth), bucketCapacity(bucketCap) {
+    ExtendibleHash(ExtendibleHash&& other) noexcept
+    : globalDepth(other.globalDepth), bucketCapacity(other.bucketCapacity),
+      directory(std::move(other.directory))
+    {
+        // Clear the state of the other object
+        other.globalDepth = 0;
+        other.bucketCapacity = 0;
+        other.directory.clear();
+    }
+    ExtendibleHash(int initialDepth, int bucketCap)
+        : globalDepth(initialDepth), bucketCapacity(bucketCap)
+    {
         directory.resize(1 << initialDepth);
-        for (int i = 0; i < (1 << initialDepth); ++i) {
+        for (int i = 0; i < (1 << initialDepth); ++i)
+        {
             directory[i] = make_cown<Directory>();
-            when(directory[i]) << [=](acquired_cown<Directory> dirAcq) mutable {
-                dirAcq->bucket = make_cown<Bucket>(bucketCap, i); 
-                dirAcq->localDepth = initialDepth; 
+            when(directory[i]) << [=](acquired_cown<Directory> dirAcq) mutable
+            {
+                dirAcq->bucket = make_cown<Bucket>(bucketCap, i);
+                dirAcq->localDepth = initialDepth;
             };
         }
     }
 
-    void insert(int key, int value) {
-        int hashValue = hashFunction(key);
-        when(directory[hashValue]) << [=](acquired_cown<Directory> dirAcq) mutable {
-            auto& bucket = dirAcq->bucket;
-            
-            when(bucket) << [=](acquired_cown<Bucket> bucketAcq) mutable {
-                bool inserted = bucketAcq->insert(key, value);
-                if (!inserted) {
-                    // to do……  split bucket
-                    std::cerr << "Bucket is full, consider splitting" << std::endl;
-                }
+    // static cown_ptr<ExtendibleHash> create(int initialDepth, int bucketCap)
+    // {
+    //     auto self = make_cown<ExtendibleHash>(initialDepth, bucketCap);
+    //     when(self) << [=](acquired_cown<ExtendibleHash> selfAcq) mutable {
+    //         selfAcq->self_cown = self;
+    //     };
+    //     return self;
+    // }
+
+    void insert(int key, int value, ExtendibleHash* ht_acq)
+    {
+        int hashValue = hashFunction(key, globalDepth);
+        bool inserted;
+        when(directory[hashValue]) << [=](acquired_cown<Directory> dirAcq) mutable
+        {
+            auto &bucket = dirAcq->bucket;
+            int localDepth = dirAcq->localDepth;
+            when(bucket) << [=](acquired_cown<Bucket> bucketAcq) mutable
+            {
+                inserted = bucketAcq->insert(key, value);
             };
         };
+        if (!inserted)
+        {
+            // cown_ptr self = make_cown<ExtendibleHash>(); // It's weird
+            cown_ptr<ExtendibleHash> self_cown = make_cown<ExtendibleHash>(std::move(*ht_acq)); 
+            splitBucket(directory[hashValue], self_cown);
+            std::cerr << "Bucket is full, consider splitting" << std::endl;
+        }
     }
 
-    int find(int key) {
-        int hashValue = hashFunction(key);
-        when(directory[hashValue]) << [=](acquired_cown<Directory> dirAcq) mutable {
-            auto& bucket = dirAcq->bucket;
+    int find(int key)
+    {
+        int hashValue = hashFunction(key, globalDepth);
+        when(directory[hashValue]) << [=](acquired_cown<Directory> dirAcq) mutable
+        {
+            auto &bucket = dirAcq->bucket;
 
-            when(bucket) << [=](acquired_cown<Bucket> bucketAcq) mutable {
+            when(bucket) << [=](acquired_cown<Bucket> bucketAcq) mutable
+            {
                 int result = bucketAcq->get(key);
-                if (result != -1) {
-                    return result; 
-                } else {
-                    return -1;  
+                if (result != -1)
+                {
+                    return result;
+                }
+                else
+                {
+                    return -1;
                 }
             };
         };
         return -1;
     }
 
+    void erase(int key)
+    {
+        int hashValue = hashFunction(key, globalDepth);
+        when(directory[hashValue]) << [=](acquired_cown<Directory> dirAcq) mutable
+        {
+            auto &bucket = dirAcq->bucket;
 
-    void erase(int key) {
-        int hashValue = hashFunction(key);
-        when(directory[hashValue]) << [=](acquired_cown<Directory> dirAcq) mutable {
-            auto& bucket = dirAcq->bucket;
-
-            when(bucket) << [=](acquired_cown<Bucket> bucketAcq) mutable {
+            when(bucket) << [=](acquired_cown<Bucket> bucketAcq) mutable
+            {
                 bool removed = bucketAcq->remove(key);
-                if (!removed) {
+                if (!removed)
+                {
                     std::cerr << "Key not found in bucket" << std::endl;
                 }
             };
         };
     }
 
-    void printStatus() {
+    void printStatus()
+    {
         std::cout << "Global Depth: " << globalDepth << std::endl;
 
-        for (size_t i = 0; i < directory.size(); ++i) {
-            when(directory[i]) << [i](acquired_cown<Directory> dirAcq) mutable {
+        for (size_t i = 0; i < directory.size(); ++i)
+        {
+            when(directory[i]) << [i](acquired_cown<Directory> dirAcq) mutable
+            {
                 std::cout << "Bucket " << i << " (Local Depth: " << dirAcq->localDepth << "): ";
-                when(dirAcq->bucket) << [i](acquired_cown<Bucket> bucketAcq) mutable {
+                when(dirAcq->bucket) << [i](acquired_cown<Bucket> bucketAcq) mutable
+                {
                     std::stringstream output;
-                    for (const auto& kv : bucketAcq->kvStore) {
+                    for (const auto &kv : bucketAcq->kvStore)
+                    {
                         output << "{" << kv.first << ": " << kv.second << "} ";
                     }
                     std::cout << "Bucket " << i << ": " << output.str() << std::endl;
@@ -154,80 +206,88 @@ public:
         }
     }
 
-    // void splitBucket(int dir_prefix) {    
-    //     if(directory[dir_prefix]->localDepth == globalDepth && !isResizing.load())
-    //     {
-    //         unique_lock<shared_mutex> lock(globalMutex);
-    //         isResizing.store(true);
-    //         int cap = directory.size();
-    //         directory.resize(cap * 2);  
-            
-    //         for (int i = 0; i < cap; ++i) {
-                
-    //             directory[i + cap] = make_shared<Directory>();
-    //             // unique_lock<shared_mutex> dirLock(directory[i + cap]->directoryMutex);
-    //             directory[i + cap]->bucket = directory[i]->bucket;
-    //             directory[i + cap]->prefix = i + cap;
-    //             directory[i + cap]->localDepth.store(directory[i]->localDepth.load());
-    //         }
-    //         globalDepth++;
-    //     }
-    //     // isResizing.store(false);
-    //     // resizeCondVar.notify_all();
-        
-    //     int localDepth;
-    //     shared_ptr<Bucket> oldBucket;
-    //     {
-    //         shared_lock<shared_mutex> readLock(directory[dir_prefix]->directoryMutex);
-    //         localDepth = directory[dir_prefix]->localDepth;
-    //         oldBucket = directory[dir_prefix]->bucket;
-    //     }
-        
-    //     if (!oldBucket) {
-    //         std::cerr << "Error: oldBucket is null!" << std::endl;
-    //         return;
-    //     }
+    void splitBucket(cown_ptr<Directory> splitDir, cown_ptr<ExtendibleHash> hashTable)
+    {
+        int localDepth;
+        int cap;
+        cown_ptr<Bucket> oldBucket;
+        when(splitDir) << [=](acquired_cown<Directory> dirAcq) mutable
+        {
+            localDepth = dirAcq->localDepth; // 只有在resize的时候才会修改localDepth
+            oldBucket = dirAcq->bucket;
+        };
 
-    //     int cur_bucket_prefix = oldBucket->prefix;
-    //     int new_bucket_prefix = cur_bucket_prefix + (1 << localDepth);
-    //     shared_ptr<Bucket> newBucket = make_shared<Bucket>(bucketCapacity, new_bucket_prefix);
-    //     shared_ptr<Bucket> newBucket_o = make_shared<Bucket>(bucketCapacity, cur_bucket_prefix);
+        // resize hashtable
+        when(hashTable) << [=](acquired_cown<ExtendibleHash> ht_acq) mutable
+        {
+            if (localDepth == ht_acq->globalDepth)
+            {
+                cap = ht_acq->directory.size();
+                ht_acq->directory.resize(cap * 2);
 
-    //     //Re-assign kv pairs into two new buckets 
-    //     {
-    //         std::unique_lock<std::mutex> oldBucketLock(oldBucket->mtx); // exclusive lock
-    //         for (auto& pair : oldBucket->kvStore) {
-    //             int newHash = hashFunction(pair.first);
-    //             if (newHash == oldBucket->prefix) {
-    //                 newBucket_o->insert(pair.first, pair.second);  
-    //             } else {
-    //                 newBucket->insert(pair.first, pair.second);  
-    //             }
-    //         }
-    //         oldBucket->kvStore.clear();
-    //     }
+                for (int i = 0; i < cap; ++i)
+                {
+                    ht_acq->directory[i + cap] = make_cown<Directory>();
+                    when(ht_acq->directory[i + cap], ht_acq->directory[i]) << [=](acquired_cown<Directory> dirAcq_cap, acquired_cown<Directory> dirAcq_i)
+                    {
+                        dirAcq_cap->bucket = dirAcq_i->bucket;
+                        dirAcq_cap->localDepth = dirAcq_i->localDepth;
+                    };
+                }
 
-    //     // modify the bucket pointer of directory entry.
-    //     unique_lock<shared_mutex> lock(globalMutex);
-    //     for (int i = 0; i < directory.size(); ++i) {
-    //         if (!directory[i] || !directory[i]->bucket) {
-    //             std::cerr << "Error: Directory or Bucket is null!" << std::endl;
-    //             continue;
-    //         }
-    //         if (directory[i]->bucket == oldBucket) {
-    //             // std::unique_lock<std::shared_mutex> dirLock(directory[i]->directoryMutex); //exlusive lock
-    //             if (i & (1 << localDepth)) {
-    //                 directory[i]->bucket = newBucket_o;
-    //             } else {
-    //                 directory[i]->bucket = newBucket;
-    //             }
-    //             directory[i]->localDepth++;
-    //         }
-            
-    //     }
-       
-    // }
+                ht_acq->globalDepth++;
+            }
+      
+        };
 
+        // move kv pairs in oldBucket to new oldBucket.
+        when(oldBucket) << [=](acquired_cown<Bucket> oldBucketAcq) mutable
+        {
+            int cur_bucket_prefix = oldBucketAcq->prefix;
+            int new_bucket_prefix = cur_bucket_prefix + (1 << localDepth);
 
+            auto newBucket = make_cown<Bucket>(bucketCapacity, new_bucket_prefix);
+            auto newBucket_o = make_cown<Bucket>(bucketCapacity, cur_bucket_prefix);
 
+            for (auto &pair : oldBucketAcq->kvStore)
+            {
+                int newHash = hashFunction(pair.first, globalDepth);
+                if (newHash == oldBucketAcq->prefix)
+                {
+                    when(newBucket_o) << [=](acquired_cown<Bucket> newBucketAcq) mutable
+                    {
+                        newBucketAcq->insert(pair.first, pair.second);
+                    };
+                }
+                else
+                {
+                    when(newBucket) << [=](acquired_cown<Bucket> newBucketAcq) mutable
+                    {
+                        newBucketAcq->insert(pair.first, pair.second);
+                    };
+                }
+            }
+            oldBucketAcq->kvStore.clear();
+
+            // modify the the bucket and local_depth of target directory
+            for (int i = 0; i < directory.size(); ++i)
+            {
+                when(directory[i]) << [=](acquired_cown<Directory> subDirAcq) mutable
+                {
+                    if (subDirAcq->bucket == oldBucket)
+                    {
+                        if (i & (1 << localDepth))
+                        {
+                            subDirAcq->bucket = newBucket_o;
+                        }
+                        else
+                        {
+                            subDirAcq->bucket = newBucket;
+                        }
+                        subDirAcq->localDepth++;
+                    }
+                };
+            }
+        };
+    }
 };
