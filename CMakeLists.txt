@@ -6,7 +6,7 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/include/verona-rt)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-set(SOURCES src/hashmap.cpp)
+set(SOURCES src/hash_rt.cpp)
 
 add_executable(hash_rt ${SOURCES})
 
