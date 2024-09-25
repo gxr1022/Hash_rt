@@ -1,7 +1,6 @@
 // Copyright Microsoft and Project Verona Contributors.
 // SPDX-License-Identifier: MIT
-#include "verona-rt/src/rt/ds/hashmap.h"
-
+#include "verona-rt/src/hash_rt.h"
 #include "debug/harness.h"
 #include "test/opt.h"
 #include "test/xoroshiro.h"

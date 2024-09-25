@@ -8,7 +8,7 @@ mkdir -p ${LOG_PATH}
 
 pushd ${BINARY_PATH}
 
-cmake -B ${BINARY_PATH} -GNinja -DCMAKE_BUILD_TYPE=Release ${RUN_PATH}  2>&1 | tee ${RUN_PATH}/configure.log
+cmake -B ${BINARY_PATH} -GNinja -DCMAKE_BUILD_TYPE=Debug ${RUN_PATH}  2>&1 | tee ${RUN_PATH}/configure.log
 if [[ "$?" != 0  ]];then
 	exit
 fi
@@ -16,17 +16,46 @@ cmake --build .
 
 TEST_PATH=${BINARY_PATH}
 
+
+threads=(64)
+# for ((i = 4; i <= 64; i += 4)); do
+#     threads+=($i)
+# done
+
+h_name="myhash"
+
+kv_sizes=(
+	# "16 16"
+	# "16 64"
+	# "8 42"
+    "16 1024"
+)
+
+num_of_ops_set=(1000)
+
+cores=(1)
+for ((i = 4; i <= 64; i += 4)); do
+    cores+=($i)
+done
+
 # test_name=(func-sys-hashmap func-con-hashmap)
 test_name=(hash_rt)
 
+for t in ${threads[*]};do
+for num_of_ops in ${num_of_ops_set[*]};do
 for tn in ${test_name[*]};do
-	this_log_path=${LOG_PATH}/${tn}.log
-	cmd="${TEST_PATH}/${tn}"
+	
+	cmd="${TEST_PATH}/${tn} \
+	--cores ${t} \
+	--number of ops ${num_of_ops}
+	"
+	this_log_path=${LOG_PATH}/${tn}.${t}.thread.${num_of_ops}.ops.log
 	echo ${cmd} 2>&1 | tee -a ${this_log_path}
 	timeout -v 3600 stdbuf -o0 ${cmd} 2>&1 | tee -a ${this_log_path}
     echo "Log file in: ${this_log_path}"
 done
-
+done 
+done
 popd
 
 
