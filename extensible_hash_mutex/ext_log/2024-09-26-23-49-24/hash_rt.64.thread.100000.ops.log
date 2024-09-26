@@ -1,0 +1,2 @@
+/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex//build/hash_rt --num_of_ops 100000 --num_threads 64
+stdbuf: failed to run command ‘/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex//build/hash_rt’: No such file or directory
