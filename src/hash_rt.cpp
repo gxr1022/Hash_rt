@@ -20,7 +20,7 @@ void performInsertions(ExtendibleHash* ht_acq, size_t num_of_ops)
     for (int i = 0; i < num_of_ops; i++) {
         int value = i * 100;
         ht_acq->insert(i, value, ht_acq);
-        std::cout << "Inserted key: " << i << " value: " << value << std::endl;
+        // std::cout << "Inserted key: " << i << " value: " << value << std::endl;
     }
 }
 
@@ -64,13 +64,15 @@ void runTest(size_t cores, size_t num_of_ops)
     sched.run();  
     double duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::system_clock::now() - start_time).count();
     std::cout << "Execution Time: " << duration_ns << " ns" << std::endl;
+    std::cout << "Execution Time: " << duration_ns / 1000000000 << " s" << std::endl;
+
 }
 
 int main(int argc, char** argv)
 {
     opt::Opt opt(argc, argv);
     const auto cores = opt.is<size_t>("--cores", 4); 
-    size_t num_of_ops = opt.is<size_t>("--number_of_ops", 100);
+    size_t num_of_ops = opt.is<size_t>("--number_of_ops", 100000);
     std::cout << "Running with " << cores << " cores" << std::endl;
 
     runTest(cores,num_of_ops);

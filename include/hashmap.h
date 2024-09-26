@@ -1,371 +1,307 @@
 #pragma once
+#include <cpp/when.h>
+#include <unordered_map>
+#include <vector>
+#include <iostream>
+#include <memory>
 #include <atomic>
-#include <utility>
-#include <cassert>
-#include "verona-rt/src/rt/object/object.h"
 
-namespace verona::rt
+#include "debug/harness.h"
+#include "test/opt.h"
+#include "test/xoroshiro.h"
+#include "verona.h"
+#include "test/opt.h"
+
+using namespace verona::rt;
+using namespace verona::cpp;
+using namespace std;
+
+class Bucket
 {
-  template<typename Entry>
-  class ObjectMap
-  {
-    std::atomic<Entry*> slots;
-    std::atomic<size_t> filled_slots;
-    std::atomic<uint8_t> capacity_shift;
-    std::atomic<uint8_t> longest_probe;
+public:
+    unordered_map<int, int> kvStore;
+    int capacity;
+    int prefix;
 
-    static constexpr uintptr_t MARK_MASK = Object::ALIGNMENT >> 1;
-    static constexpr uintptr_t PROBE_MASK = MARK_MASK - 1;
+    Bucket(int cap, int pfix) : capacity(cap), prefix(pfix) {}
 
-    static_assert((MARK_MASK & PROBE_MASK) == 0);
-    static_assert(((MARK_MASK | PROBE_MASK) & ~Object::MASK) == 0);
-
-    template<typename>
-    struct inspect_entry_type : std::false_type
-    {};
-    template<typename K>
-    struct inspect_entry_type<K*> : std::true_type
+    bool isFull()
     {
-      static_assert(std::is_base_of_v<Object, K>);
-      using key_type = K;
-      using value_type = key_type*;
-      using entry_view = value_type;
-      static constexpr bool is_set = true;
-    };
-    template<typename K, typename V>
-    struct inspect_entry_type<std::pair<K*, V>> : std::true_type
-    {
-      static_assert(std::is_base_of_v<Object, K>);
-      using key_type = K;
-      using value_type = V;
-      using entry_view = std::pair<key_type*, V*>;
-      static constexpr bool is_set = false;
-    };
-
-    static_assert(
-      inspect_entry_type<Entry>(),
-      "Map Entry must be K* or std::pair<K*, V>"
-      " where K is derived from Object");
-
-    using KeyType = typename inspect_entry_type<Entry>::key_type;
-    using ValueType = typename inspect_entry_type<Entry>::value_type;
-    using EntryView = typename inspect_entry_type<Entry>::entry_view;
-    static constexpr bool is_set = inspect_entry_type<Entry>::is_set;
-
-    static uintptr_t& key_of(Entry& entry)
-    {
-      if constexpr (is_set)
-        return (uintptr_t&)entry;
-      else
-        return (uintptr_t&)std::get<0>(entry);
+        return kvStore.size() >= capacity;
     }
 
-    static uintptr_t unmark_key(uintptr_t key)
+    bool insert(int key, int value)
     {
-      return key & ~Object::MASK;
-    }
-
-    static uint8_t probe_index(uintptr_t key)
-    {
-      return (uint8_t)(key & PROBE_MASK);
-    }
-
-    void init_alloc(Alloc& alloc)
-    {
-      static constexpr size_t init_capacity = 8;
-      capacity_shift.store((uint8_t)bits::ctz(init_capacity), std::memory_order_relaxed);
-      slots.store((Entry*)alloc.alloc<init_capacity * sizeof(Entry), YesZero>(), std::memory_order_relaxed);
-      filled_slots.store(0, std::memory_order_relaxed);
-      longest_probe.store(0, std::memory_order_relaxed);
-    }
-
-    void resize(Alloc& alloc)
-    {
-      auto old_slots = slots.load(std::memory_order_relaxed);
-      auto old_capacity = capacity();
-      auto old_longest_probe = longest_probe.load(std::memory_order_relaxed);
-
-      capacity_shift.fetch_add(1, std::memory_order_relaxed);
-      auto new_capacity = capacity();
-      auto new_slots = (Entry*)alloc.alloc<YesZero>(new_capacity * sizeof(Entry));
-      slots.store(new_slots, std::memory_order_release);
-      filled_slots.store(0, std::memory_order_relaxed);
-      longest_probe.store(0, std::memory_order_relaxed);
-
-      for (size_t i = 0; i < old_capacity; i++)
-      {
-        auto& entry = old_slots[i];
-        if (key_of(entry) != 0)
+        if (kvStore.find(key) != kvStore.end())
         {
-          if constexpr (is_set)
-            insert(alloc, entry);
-          else
-            insert(alloc, std::make_pair(std::move(std::get<0>(entry)), std::move(std::get<1>(entry))));
-          key_of(entry) = 0;
+            kvStore[key] = value;
+            return true;
         }
-      }
-
-      alloc.dealloc(old_slots, old_capacity * sizeof(Entry));
-    }
-
-    template<typename E>
-    void place_entry(E entry, size_t index, uint8_t probe_len)
-    {
-      auto& key = key_of(entry);
-      assert(probe_len <= PROBE_MASK);
-      key = (key & ~PROBE_MASK) | probe_len;
-      slots.load(std::memory_order_acquire)[index] = std::forward<E>(entry);
-      if (probe_len > longest_probe.load(std::memory_order_relaxed))
-        longest_probe.store(probe_len, std::memory_order_relaxed);
-    }
-
-  public:
-    class Iterator
-    {
-      template<typename _Entry>
-      friend class ObjectMap;
-
-      const ObjectMap* map;
-      size_t index;
-
-      Entry& entry()
-      {
-        return map->slots[index];
-      }
-
-      Iterator(const ObjectMap* m, size_t i) : map(m), index(i) {}
-
-    public:
-      KeyType* key()
-      {
-        return (KeyType*)unmark_key(key_of(entry()));
-      }
-
-      template<bool v = !is_set, typename = typename std::enable_if_t<v>>
-      ValueType& value()
-      {
-        return entry().second;
-      }
-
-      bool is_marked()
-      {
-        return key_of(entry()) & MARK_MASK;
-      }
-
-      void mark()
-      {
-        key_of(entry()) |= MARK_MASK;
-      }
-
-      void unmark()
-      {
-        key_of(entry()) &= ~MARK_MASK;
-      }
-
-      EntryView operator*()
-      {
-        if constexpr (is_set)
-          return key();
-        else
-          return std::make_pair(key(), &value());
-      }
-
-      Iterator& operator++()
-      {
-        while (++index < map->capacity())
+        if (!isFull())
         {
-          const auto key = key_of(map->slots[index]);
-          if (key != 0)
-            break;
+            kvStore[key] = value;
+            return true;
         }
-        return *this;
-      }
-
-      bool operator==(const Iterator& other) const
-      {
-        return (index == other.index) && (map == other.map);
-      }
-
-      bool operator!=(const Iterator& other) const
-      {
-        return !(*this == other);
-      }
-    }; //end of iterator
-
-    ObjectMap(Alloc& alloc)
-    {
-      init_alloc(alloc);
-    }
-
-    ~ObjectMap()
-    {
-      dealloc(ThreadAlloc::get());
-    }
-
-    static ObjectMap<Entry>* create(Alloc& alloc)
-    {
-      return new (alloc.alloc<sizeof(ObjectMap<Entry>)>()) ObjectMap(alloc);
-    }
-
-    void dealloc(Alloc& alloc)
-    {
-      clear(alloc, true);
-      alloc.dealloc(slots.load(std::memory_order_relaxed), capacity() * sizeof(Entry));
-    }
-
-    size_t size() const
-    {
-      return filled_slots.load(std::memory_order_acquire);
-    }
-
-    size_t capacity() const
-    {
-      return ((size_t)1 << capacity_shift.load(std::memory_order_relaxed));
-    }
-
-    Iterator begin() const
-    {
-      auto it = Iterator(this, 0);
-      if (unmark_key(key_of(slots.load(std::memory_order_acquire)[0])) == 0)
-        ++it;
-
-      return it;
-    }
-
-    Iterator end() const
-    {
-      return Iterator(this, capacity());
-    }
-
-    Iterator find(const KeyType* key) const
-    {
-      if (key == nullptr)
-        return end();
-
-      const auto hash = bits::hash(key->id());
-      auto index = hash & (capacity() - 1);
-      for (size_t probe_len = 0; probe_len <= longest_probe.load(std::memory_order_acquire); probe_len++)
-      {
-        const auto k = unmark_key(key_of(slots.load(std::memory_order_acquire)[index]));
-        if (k == (uintptr_t)key)
-          return Iterator(this, index);
-
-        if (++index == capacity())
-          index = 0;
-      }
-
-      return end();
-    }
-
-    template<typename E>
-    std::pair<bool, Iterator> insert(Alloc& alloc, E entry)
-    {
-      if (SNMALLOC_UNLIKELY(size() == capacity()))
-        resize(alloc);
-
-      assert(key_of(entry) != 0);
-      const auto key = unmark_key(key_of(entry));
-      const auto hash = bits::hash(((const Object*)key)->id());
-      auto index = hash & (capacity() - 1);
-      size_t iter_index = ~(size_t)0;
-
-      for (uint8_t probe_len = 0; probe_len <= PROBE_MASK; probe_len++)
-      {
-        const auto k = key_of(slots.load(std::memory_order_acquire)[index]);
-
-        if (unmark_key(k) == key)
-        {
-          if constexpr (!is_set)
-            entry.second = std::forward<E>(entry).second;
-
-          if (iter_index == ~(size_t)0)
-            iter_index = index;
-
-          return std::make_pair(false, Iterator(this, iter_index));
-        }
-
-        if (k == 0)
-        {
-          place_entry(std::forward<E>(entry), index, probe_len);
-          filled_slots.fetch_add(1, std::memory_order_release);
-          if (iter_index == ~(size_t)0)
-            iter_index = index;
-
-          return std::make_pair(true, Iterator(this, iter_index));
-        }
-
-        if (probe_index(k) < probe_len)
-        {
-          if (iter_index == ~(size_t)0)
-            iter_index = index;
-
-          Entry swap = std::move(slots.load(std::memory_order_acquire)[index]);
-          place_entry(std::forward<E>(entry), index, probe_len);
-          entry = swap;
-          probe_len = probe_index(key_of(entry));
-        }
-
-        if (++index == capacity())
-          index = 0;
-      }
-
-      resize(alloc);
-      auto it = insert(alloc, std::forward<E>(entry)).second;
-      if ((uintptr_t)it.key() != key)
-        it = find((const KeyType*)key);
-
-      return std::make_pair(true, std::move(it));
-    }
-
-    bool erase(const KeyType* key)
-    {
-      auto it = find(key);
-      if (it == end())
         return false;
-
-      erase(it);
-      return true;
     }
 
-    void erase(Iterator& it)
+    bool remove(int key)
     {
-      assert(key_of(it.entry()) != 0);
-      it.entry().~Entry();
-      key_of(it.entry()) = 0;
-      filled_slots.fetch_sub(1, std::memory_order_release);
-    }
-
-    void clear(Alloc& alloc, bool skip_deallocate = false)
-    {
-      for (auto it = begin(); it != end(); ++it)
-        erase(it);
-
-      longest_probe.store(0, std::memory_order_relaxed);
-
-      if (!skip_deallocate && (capacity() > 8))
-      {
-        alloc.dealloc(slots.load(std::memory_order_acquire), capacity() * sizeof(Entry));
-        init_alloc(alloc);
-      }
-    }
-
-    template<typename OutStream>
-    OutStream& debug_layout(OutStream& out) const
-    {
-      out << "{";
-      for (size_t i = 0; i < capacity(); i++)
-      {
-        const auto key = key_of(slots.load(std::memory_order_acquire)[i]);
-        if (key == 0)
+        auto it = kvStore.find(key);
+        if (it != kvStore.end())
         {
-          out << " ∅";
-          continue;
+            kvStore.erase(it);
+            return true;
         }
-        out << " (" << ((const KeyType*)unmark_key(key_of(slots.load(std::memory_order_acquire)[i])))->id()
-            << ", probe " << (size_t)probe_index(key) << ")";
-      }
-      out << " } cap: " << capacity();
-      return out;
+        return false;
     }
-  };
+
+    int get(int key)
+    {
+        auto it = kvStore.find(key);
+        if (it != kvStore.end())
+        {
+            return it->second;
+        }
+        return -1;
+    }
+};
+
+struct Directory
+{
+    cown_ptr<Bucket> bucket;
+    int localDepth;
+};
+
+static inline int hashFunction(int key, int globalDepth)
+{
+    return key & ((1 << globalDepth) - 1);
 }
+
+// class ExtendibleHash : public VCown<ExtendibleHash>{
+class ExtendibleHash
+{
+private:
+    atomic<int> globalDepth;
+    // cown_ptr<int> globalDepth;
+    int bucketCapacity;
+    vector<cown_ptr<Directory>> directory;
+    // cown_ptr<ExtendibleHash> self_cown;
+
+public:
+    ExtendibleHash(int initialDepth, int bucketCap)
+        : globalDepth(initialDepth), bucketCapacity(bucketCap)
+    {
+        directory.resize(1 << initialDepth);
+        for (int i = 0; i < (1 << initialDepth); ++i)
+        {
+            directory[i] = make_cown<Directory>();
+            when(directory[i]) << [=](acquired_cown<Directory> dirAcq) mutable
+            {
+                dirAcq->bucket = make_cown<Bucket>(bucketCap, i);
+                dirAcq->localDepth = initialDepth;
+            };
+        }
+    }
+
+    // static cown_ptr<ExtendibleHash> create(int initialDepth, int bucketCap)
+    // {
+    //     auto self = make_cown<ExtendibleHash>(initialDepth, bucketCap);
+    //     when(self) << [=](acquired_cown<ExtendibleHash> selfAcq) mutable {
+    //         selfAcq->self_cown = self;
+    //     };
+    //     return self;
+    // }
+
+    void insert(int key, int value, ExtendibleHash *ht_acq)
+    {
+        int hashValue = hashFunction(key, globalDepth);
+        bool inserted;
+        if(hashValue < directory.size()){
+        when(directory[hashValue]) << [=](acquired_cown<Directory> dirAcq) mutable
+        {
+            auto &bucket = dirAcq->bucket;
+            int localDepth = dirAcq->localDepth;
+            when(bucket) << [=](acquired_cown<Bucket> bucketAcq) mutable
+            {
+                inserted = bucketAcq->insert(key, value);
+            };
+            if (!inserted)
+            {
+                // cown_ptr self = make_cown<ExtendibleHash>(); // It's weird
+                // cown_ptr<ExtendibleHash> self_cown = make_cown<ExtendibleHash>(std::move(*ht_acq));
+                splitBucket(dirAcq->bucket, dirAcq->localDepth, hashValue);
+                // std::cerr << "Bucket is full, consider splitting" << std::endl;
+            }
+        };
+        }
+    }
+
+    int find(int key)
+    {
+        int hashValue = hashFunction(key, globalDepth);
+        when(directory[hashValue]) << [=](acquired_cown<Directory> dirAcq) mutable
+        {
+            auto &bucket = dirAcq->bucket;
+
+            when(bucket) << [=](acquired_cown<Bucket> bucketAcq) mutable
+            {
+                int result = bucketAcq->get(key);
+                if (result != -1)
+                {
+                    return result;
+                }
+                else
+                {
+                    return -1;
+                }
+            };
+        };
+        return -1;
+    }
+
+    void erase(int key)
+    {
+        int hashValue = hashFunction(key, globalDepth);
+        when(directory[hashValue]) << [=](acquired_cown<Directory> dirAcq) mutable
+        {
+            auto &bucket = dirAcq->bucket;
+
+            when(bucket) << [=](acquired_cown<Bucket> bucketAcq) mutable
+            {
+                bool removed = bucketAcq->remove(key);
+                if (!removed)
+                {
+                    std::cerr << "Key not found in bucket" << std::endl;
+                }
+            };
+        };
+    }
+
+    void printStatus()
+    {
+        std::cout << "Global Depth: " << globalDepth.load() << std::endl;
+
+        for (size_t i = 0; i < directory.size(); ++i)
+        {
+            // if(directory[i]!=nullptr)
+            {
+            when(directory[i]) << [i](acquired_cown<Directory> dirAcq) mutable
+            {
+                std::cout << "Bucket " << i << " (Local Depth: " << dirAcq->localDepth << "): ";
+                when(dirAcq->bucket) << [i](acquired_cown<Bucket> bucketAcq) mutable
+                {
+                    std::stringstream output;
+                    for (const auto &kv : bucketAcq->kvStore)
+                    {
+                        output << "{" << kv.first << ": " << kv.second << "} ";
+                    }
+                    std::cout << "Bucket " << i << ": " << output.str() << std::endl;
+                };
+            };
+            }
+        }
+    }
+
+    void splitBucket(cown_ptr<Bucket> oldBucket, int localDepth, int dir_indx)
+    {
+
+        // cown_array<Directory> dir_array(directory.data(), directory.size());
+        // when(dir_array) << [=](acquired_cown_span<Directory> dirs_acq) mutable
+        {
+            // int localDepth = dirs_acq.array[dir_indx]->localDepth;
+            int cap = directory.size();
+            bool resized = 0;
+            if (localDepth == globalDepth)
+            {
+                directory.resize(cap * 2);
+                for (int i = 0; i < cap; ++i)
+                {
+                    directory[i + cap] = make_cown<Directory>();
+                    if (i == dir_indx)
+                    {
+                        // if (directory[i + cap] != nullptr)
+                        {   
+                            when(directory[i + cap]) << [=](acquired_cown<Directory> dirAcq_cap)
+                            {
+                                dirAcq_cap->bucket = oldBucket;
+                                dirAcq_cap->localDepth = localDepth;
+                            };
+                        }
+                        
+                    }
+                    else
+                    {
+                        // if (directory[i + cap] != nullptr && directory[i] != nullptr)
+                        {
+                            when(directory[i + cap], directory[i]) << [=](acquired_cown<Directory> dirAcq_cap, acquired_cown<Directory> dirAcq_i)
+                            {
+                                dirAcq_cap->bucket = dirAcq_i->bucket;
+                                dirAcq_cap->localDepth = dirAcq_i->localDepth;
+                            };
+                        }
+
+                    }
+                }
+                globalDepth++;
+                cap = 2 * cap;
+                resized = 1;
+            }
+
+            // cown_ptr<Bucket> oldBucket;
+            // oldBucket = dirs_acq.array[dir_indx]->bucket;
+            // move kv pairs in oldBucket to new oldBucket.
+            // if (oldBucket != nullptr){
+            when(oldBucket) << [=](acquired_cown<Bucket> oldBucketAcq) mutable
+            {
+                int cur_bucket_prefix = oldBucketAcq->prefix;
+                int new_bucket_prefix = cur_bucket_prefix + (1 << localDepth);
+
+                auto newBucket = make_cown<Bucket>(bucketCapacity, new_bucket_prefix);
+                auto newBucket_o = make_cown<Bucket>(bucketCapacity, cur_bucket_prefix);
+
+                for (auto &pair : oldBucketAcq->kvStore)
+                {
+                    int newHash = hashFunction(pair.first, globalDepth);
+                    if (newHash == oldBucketAcq->prefix)
+                    {
+                        when(newBucket_o) << [=](acquired_cown<Bucket> newBucketAcq) mutable
+                        {
+                            newBucketAcq->insert(pair.first, pair.second);
+                        };
+                    }
+                    else
+                    {
+                        when(newBucket) << [=](acquired_cown<Bucket> newBucketAcq) mutable
+                        {
+                            newBucketAcq->insert(pair.first, pair.second);
+                        };
+                    }
+                }
+                oldBucketAcq->kvStore.clear();
+
+                for (int i = 0; i < directory.size(); ++i)
+                {
+                    // if(directory[i] != nullptr){
+                    when(directory[i]) << [=](acquired_cown<Directory> subDirAcq) mutable
+                    {
+                        if (subDirAcq->bucket == oldBucket)
+                        {
+                            if (i & (1 << localDepth))
+                            {
+                                subDirAcq->bucket = newBucket_o;
+                            }
+                            else
+                            {
+                                subDirAcq->bucket = newBucket;
+                            }
+                            subDirAcq->localDepth++;
+                        }
+                    };
+                    
+                }
+            };
+            
+        }
+    }
+};
