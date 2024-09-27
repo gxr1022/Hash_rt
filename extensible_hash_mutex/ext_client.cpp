@@ -45,7 +45,7 @@ public:
     }
     void init_myhash()
     {
-        hashTable =  std::make_unique<ExtendibleHash>(2,7);
+        hashTable =  std::make_unique<ExtendibleHash>(5,4);
     }
 };
 
@@ -92,7 +92,7 @@ void Client::load_and_run()
     // benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
     benchmark_report(load_benchmark_prefix, "overall_duration_s", std::to_string(duration_s));
     benchmark_report(load_benchmark_prefix, "overall_throughput", std::to_string(throughput));
-    benchmark_report(load_benchmark_prefix, "overall_average_latency_ns", std::to_string(average_latency_ns));
+    benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
 }
 
 void Client::client_ops_cnt(uint32_t ops_num) {
