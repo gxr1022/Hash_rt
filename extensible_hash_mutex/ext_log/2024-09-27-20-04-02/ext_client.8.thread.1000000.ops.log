@@ -1,0 +1,4 @@
+/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex//build/ext_client --num_of_ops 1000000 --num_threads 8
+[report] load_overall_duration_s : 6.733920
+[report] load_overall_throughput : 148501.907985
+[report] load_overall_duration_ns : 6733920214.000000

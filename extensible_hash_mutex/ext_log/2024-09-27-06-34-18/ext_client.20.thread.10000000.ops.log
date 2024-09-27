@@ -1,0 +1,2 @@
+/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex//build/ext_client --num_of_ops 10000000 --num_threads 20
+timeout: the monitored command dumped core

@@ -17,14 +17,14 @@ cmake --build .
 TEST_PATH=${BINARY_PATH}
 
 
-threads=(1)
-for ((i = 4; i <= 64; i += 4)); do
-    threads+=($i)
-done
+threads=(32)
+# for ((i = 4; i <= 64; i += 4)); do
+#     threads+=($i)
+# done
 
 
-num_of_ops_set=(100000 1000000 10000000)
-
+# num_of_ops_set=(100000 1000000 10000000)
+num_of_ops_set=(1000000)
 
 # test_name=(func-sys-hashmap func-con-hashmap)
 test_name=(ext_client)
