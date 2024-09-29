@@ -206,8 +206,8 @@ public:
     void splitBucket(cown_ptr<Bucket> oldBucket, int localDepth, int dir_indx)
     {
 
-        // cown_array<Directory> dir_array(directory.data(), directory.size());
-        // when(dir_array) << [=](acquired_cown_span<Directory> dirs_acq) mutable
+        cown_array<Directory> dir_array(directory.data(), directory.size());
+        when(dir_array) << [=](acquired_cown_span<Directory> dirs_acq) mutable
         {
             // int localDepth = dirs_acq.array[dir_indx]->localDepth;
             int cap = directory.size();
@@ -280,7 +280,7 @@ public:
                 }
                 oldBucketAcq->kvStore.clear();
 
-                for (int i = 0; i < directory.size(); ++i)
+                for (int i = 0; i < cap; ++i)
                 {
                     // if(directory[i] != nullptr){
                     when(directory[i]) << [=](acquired_cown<Directory> subDirAcq) mutable
@@ -302,6 +302,6 @@ public:
                 }
             };
             
-        }
+        };
     }
 };

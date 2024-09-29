@@ -181,7 +181,7 @@ struct Bucket : public VCown<Bucket>
     std::unordered_map<int, int> kvStore;
     int capacity;
     int prefix;
-    std::mutex mtx; // 不再需要这个锁
+    std::mutex mtx;
 
     Bucket(int cap, int pfix) : capacity(cap), prefix(pfix) {}
 

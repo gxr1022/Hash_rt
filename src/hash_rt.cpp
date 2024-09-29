@@ -1,7 +1,7 @@
 #include "verona.h"
 #include <iostream>
 #include <vector>
-#include "../include/hash_rt.h"
+#include "../include/hash_rt_tmp.h"
 #include "debug/harness.h"
 #include "test/opt.h"
 #include "test/xoroshiro.h"
@@ -15,11 +15,23 @@ using namespace std;
 
 enum OperationType { INSERT, UPDATE, DELETE, FIND };
 
-void performInsertions(ExtendibleHash* ht_acq, size_t num_of_ops)
+// void performInsertions(cown_ptr<ExtendibleHash> hashtable, size_t num_of_ops)
+// {
+//     for (int i = 0; i < num_of_ops; i++) {
+//         int value = i * 100;
+//         when(hashtable) << [=](acquired_cown<ExtendibleHash> ht_acq) mutable{
+//             ht_acq->insert(i, value, hashtable);
+//         };
+        
+//         // std::cout << "Inserted key: " << i << " value: " << value << std::endl;
+//     }
+// }
+
+void performInsertions(ExtendibleHash* hashtable, size_t num_of_ops)
 {
     for (int i = 0; i < num_of_ops; i++) {
         int value = i * 100;
-        ht_acq->insert(i, value, ht_acq);
+        hashtable->insert(i, value, hashtable);
         // std::cout << "Inserted key: " << i << " value: " << value << std::endl;
     }
 }
@@ -30,8 +42,8 @@ void runTest(size_t cores, size_t num_of_ops)
     sched.set_fair(true);
     sched.init(cores);    
 
-    // auto hashTable = std::make_shared<ExtendibleHash>(4, 1000);
-    auto hashTable = new ExtendibleHash(4, 1000);
+    // auto hashTable = make_cown<ExtendibleHash>(4, 1000);
+    auto hashTable = new ExtendibleHash(10, 4);
     // auto hashTable = ExtendibleHash::create(4, 1000); 
  
     performInsertions(hashTable,num_of_ops);
@@ -72,7 +84,7 @@ int main(int argc, char** argv)
 {
     opt::Opt opt(argc, argv);
     const auto cores = opt.is<size_t>("--cores", 4); 
-    size_t num_of_ops = opt.is<size_t>("--number_of_ops", 100000);
+    size_t num_of_ops = opt.is<size_t>("--number_of_ops", 1000000);
     std::cout << "Running with " << cores << " cores" << std::endl;
 
     runTest(cores,num_of_ops);
