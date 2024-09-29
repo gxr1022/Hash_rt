@@ -78,8 +78,8 @@ static inline int hashFunction(int key, int globalDepth)
     return key & ((1 << globalDepth) - 1);
 }
 
-// class ExtendibleHash : public VCown<ExtendibleHash>{
-class ExtendibleHash
+// class ExtendibleHash : public VCown<ExtendibleHash>
+class ExtendibleHash 
 {
 private:
     atomic<int> globalDepth;
@@ -104,16 +104,7 @@ public:
         }
     }
 
-    // static cown_ptr<ExtendibleHash> create(int initialDepth, int bucketCap)
-    // {
-    //     auto self = make_cown<ExtendibleHash>(initialDepth, bucketCap);
-    //     when(self) << [=](acquired_cown<ExtendibleHash> selfAcq) mutable {
-    //         selfAcq->self_cown = self;
-    //     };
-    //     return self;
-    // }
-
-    void insert(int key, int value, ExtendibleHash *ht_acq)
+    void insert(int key, int value,  cown_ptr<ExtendibleHash> ht_acq)
     {
         int hashValue = hashFunction(key, globalDepth);
         bool inserted;
@@ -130,7 +121,7 @@ public:
             {
                 // cown_ptr self = make_cown<ExtendibleHash>(); // It's weird
                 // cown_ptr<ExtendibleHash> self_cown = make_cown<ExtendibleHash>(std::move(*ht_acq));
-                splitBucket(dirAcq->bucket, dirAcq->localDepth, hashValue);
+                splitBucket(dirAcq->bucket, dirAcq->localDepth, hashValue, ht_acq);
                 // std::cerr << "Bucket is full, consider splitting" << std::endl;
             }
         };
@@ -203,26 +194,27 @@ public:
         }
     }
 
-    void splitBucket(cown_ptr<Bucket> oldBucket, int localDepth, int dir_indx)
+    void splitBucket(cown_ptr<Bucket> oldBucket, int localDepth, int dir_indx, cown_ptr<ExtendibleHash> hashtable)
     {
 
+        // cown_ptr<ExtendibleHash> ht_cown = make_cown<ExtendibleHash>(*hashtable);
         // cown_array<Directory> dir_array(directory.data(), directory.size());
-        // when(dir_array) << [=](acquired_cown_span<Directory> dirs_acq) mutable
+        when(hashtable) << [=](acquired_cown<ExtendibleHash> hs_acq) mutable
         {
             // int localDepth = dirs_acq.array[dir_indx]->localDepth;
-            int cap = directory.size();
+            int cap = hs_acq->directory.size();
             bool resized = 0;
             if (localDepth == globalDepth)
             {
-                directory.resize(cap * 2);
+                hs_acq->directory.resize(cap * 2);
                 for (int i = 0; i < cap; ++i)
                 {
-                    directory[i + cap] = make_cown<Directory>();
+                    hs_acq->directory[i + cap] = make_cown<Directory>();
                     if (i == dir_indx)
                     {
                         // if (directory[i + cap] != nullptr)
                         {   
-                            when(directory[i + cap]) << [=](acquired_cown<Directory> dirAcq_cap)
+                            when(hs_acq->directory[i + cap]) << [=](acquired_cown<Directory> dirAcq_cap)
                             {
                                 dirAcq_cap->bucket = oldBucket;
                                 dirAcq_cap->localDepth = localDepth;
@@ -234,7 +226,7 @@ public:
                     {
                         // if (directory[i + cap] != nullptr && directory[i] != nullptr)
                         {
-                            when(directory[i + cap], directory[i]) << [=](acquired_cown<Directory> dirAcq_cap, acquired_cown<Directory> dirAcq_i)
+                            when(hs_acq->directory[i + cap], directory[i]) << [=](acquired_cown<Directory> dirAcq_cap, acquired_cown<Directory> dirAcq_i)
                             {
                                 dirAcq_cap->bucket = dirAcq_i->bucket;
                                 dirAcq_cap->localDepth = dirAcq_i->localDepth;
@@ -247,12 +239,15 @@ public:
                 cap = 2 * cap;
                 resized = 1;
             }
+        }; 
 
+        when(hashtable, oldBucket) << [=](acquired_cown<ExtendibleHash> hs_acq, acquired_cown<Bucket> oldBucketAcq) mutable
+        {
             // cown_ptr<Bucket> oldBucket;
             // oldBucket = dirs_acq.array[dir_indx]->bucket;
             // move kv pairs in oldBucket to new oldBucket.
             // if (oldBucket != nullptr){
-            when(oldBucket) << [=](acquired_cown<Bucket> oldBucketAcq) mutable
+            // when(oldBucket) << [=](acquired_cown<Bucket> oldBucketAcq) mutable
             {
                 int cur_bucket_prefix = oldBucketAcq->prefix;
                 int new_bucket_prefix = cur_bucket_prefix + (1 << localDepth);
@@ -280,10 +275,10 @@ public:
                 }
                 oldBucketAcq->kvStore.clear();
 
-                for (int i = 0; i < directory.size(); ++i)
+                for (int i = 0; i < hs_acq->directory.size(); ++i)
                 {
                     // if(directory[i] != nullptr){
-                    when(directory[i]) << [=](acquired_cown<Directory> subDirAcq) mutable
+                    when(hs_acq->directory[i]) << [=](acquired_cown<Directory> subDirAcq) mutable
                     {
                         if (subDirAcq->bucket == oldBucket)
                         {
@@ -300,8 +295,8 @@ public:
                     };
                     
                 }
-            };
-            
-        }
+            }
+        }; 
+        
     }
 };
