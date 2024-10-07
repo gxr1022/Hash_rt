@@ -10,12 +10,16 @@
 #include <condition_variable>
 #include <atomic>
 
+#define HASH_INIT_LOCAL_DEPTH          (10)
+#define HASH_INIT_BUCKET_NUM           (1 << HASH_INIT_LOCAL_DEPTH)
+#define HASH_ASSOC_NUM                 (8)
+
 
 using namespace std;
 
 class Bucket {
 public:
-    unordered_map<int, int> kvStore;
+    unordered_map<string, string> kvStore;
     int capacity;
     int prefix;
     mutex mtx; 
@@ -27,7 +31,7 @@ public:
         return kvStore.size() >= capacity;
     }
 
-    bool insert(int key, int value) {
+    bool insert(string key, string value) {
         // lock_guard<mutex> lock(mtx);  
         if (!kvStore.empty() && kvStore.find(key) != kvStore.end()) {
             kvStore[key] = value;  
@@ -40,7 +44,7 @@ public:
         return false;  
     }
 
-    bool remove(int key) {
+    bool remove(string key) {
         lock_guard<mutex> lock(mtx);
         if (kvStore.find(key) != kvStore.end()) {
             kvStore.erase(key);
@@ -49,12 +53,12 @@ public:
         return false; 
     }
 
-    int get(int key) {
+    string get(string key) {
         lock_guard<mutex> lock(mtx);  
         if (kvStore.find(key) != kvStore.end()) {
             return kvStore[key];
         }
-        return -1; 
+        return "not found"; 
     }
 };
 
@@ -74,6 +78,7 @@ private:
     shared_mutex globalMutex;   
     condition_variable resizeCondVar;
     atomic<bool> isResizing;
+    
     // thread resizeThread;
 
     int hashFunction(int key) {
@@ -124,7 +129,7 @@ private:
         {
             std::unique_lock<std::mutex> oldBucketLock(oldBucket->mtx); // exclusive lock
             for (auto& pair : oldBucket->kvStore) {
-                int newHash = hashFunction(pair.first);
+                int newHash = hashFunction(std::stoi(pair.first));
                 if (newHash == oldBucket->prefix) {
                     newBucket_o->insert(pair.first, pair.second);  
                 } else {
@@ -156,13 +161,11 @@ private:
     }
 
 public:
-
-    void insert(int key, int value) {
-        int hashValue = hashFunction(key);
+    void insert(string key, string value) {
+        int hashValue = hashFunction(std::stoi(key));
         {
             shared_lock<shared_mutex> readlock(globalMutex);
             {
-                
                 if (!directory[hashValue] ) {
                     std::cerr << "Error: directory at hashValue " << hashValue << " is null." << std::endl;
                     return;

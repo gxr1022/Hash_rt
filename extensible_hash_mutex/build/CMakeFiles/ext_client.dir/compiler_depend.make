@@ -69,6 +69,7 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/11/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
   /usr/include/stdint.h \
@@ -137,8 +138,11 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
   /usr/include/stdio.h \
@@ -147,6 +151,8 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -239,6 +245,7 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/linux/close_range.h \
   /usr/include/c++/11/cassert \
@@ -285,8 +292,20 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   /usr/include/c++/11/shared_mutex \
-  /usr/include/c++/11/condition_variable
+  /usr/include/c++/11/condition_variable \
+  ../affinity.hpp \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h
 
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
+/usr/include/strings.h:
+
+../affinity.hpp:
 
 /usr/include/c++/11/shared_mutex:
 
@@ -310,6 +329,8 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
+
 /usr/include/c++/11/memory:
 
 /usr/include/c++/11/bits/unordered_map.h:
@@ -324,7 +345,15 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 
 /usr/local/include/gflags/gflags.h:
 
-/usr/include/stdlib.h:
+/usr/include/c++/11/bits/refwrap.h:
+
+/usr/local/include/gflags/gflags_gflags.h:
+
+/usr/include/c++/11/sstream:
+
+/usr/include/c++/11/bits/quoted_string.h:
+
+/usr/include/c++/11/bits/unique_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
@@ -366,12 +395,6 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/c++/11/backward/binders.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
 /usr/include/c++/11/fstream:
@@ -406,6 +429,14 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
+/usr/include/c++/11/backward/binders.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/c++/11/bits/specfun.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
@@ -419,8 +450,6 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
-
-/usr/include/c++/11/cwchar:
 
 /usr/include/unistd.h:
 
@@ -542,6 +571,8 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
@@ -570,6 +601,12 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 
 /usr/include/ctype.h:
 
+/usr/include/c++/11/bits/std_thread.h:
+
+/usr/include/c++/11/bits/cpp_type_traits.h:
+
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
@@ -587,12 +624,6 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 /usr/include/c++/11/iosfwd:
 
 /usr/include/c++/11/initializer_list:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/c++/11/bits/stl_bvector.h:
 
 /usr/include/c++/11/bits/move.h:
 
@@ -624,6 +655,8 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
+/usr/include/stdlib.h:
+
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/c++/11/ext/aligned_buffer.h:
@@ -644,7 +677,21 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
+/usr/include/c++/11/cwchar:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
 /usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
+/usr/include/c++/11/cwctype:
 
 /usr/include/c++/11/bits/std_abs.h:
 
@@ -655,6 +702,16 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 /usr/include/c++/11/chrono:
 
 /usr/include/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -694,11 +751,11 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 
 /usr/include/c++/11/bits/nested_exception.h:
 
+/usr/include/c++/11/cstring:
+
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/math.h:
-
-/usr/include/c++/11/bits/quoted_string.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
@@ -713,6 +770,8 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
@@ -734,8 +793,6 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
-/usr/include/c++/11/bits/specfun.h:
-
 /usr/include/c++/11/limits:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
@@ -747,6 +804,8 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/usr/include/string.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
@@ -792,17 +851,9 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 
 /usr/include/c++/11/bits/basic_ios.h:
 
-/usr/include/c++/11/cwctype:
-
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/c++/11/bits/codecvt.h:
 
@@ -811,8 +862,6 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 /usr/include/c++/11/bits/basic_ios.tcc:
 
 /usr/include/c++/11/ostream:
-
-/usr/include/c++/11/bits/unique_ptr.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 
@@ -836,6 +885,8 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
@@ -845,15 +896,3 @@ CMakeFiles/ext_client.dir/ext_client.cpp.o: ../ext_client.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
 
 /usr/include/c++/11/bits/locale_conv.h:
-
-/usr/local/include/gflags/gflags_gflags.h:
-
-/usr/include/c++/11/sstream:
-
-/usr/include/c++/11/bits/cpp_type_traits.h:
-
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/11/bits/std_thread.h:
-
-/usr/include/c++/11/bits/refwrap.h:

@@ -6,7 +6,7 @@ project(ExtHashProject)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
-
+set(CMAKE_CXX_FLAGS_RELEASE "-O2 -DNDEBUG")
 
 add_executable(ext_client ext_client.cpp)
 

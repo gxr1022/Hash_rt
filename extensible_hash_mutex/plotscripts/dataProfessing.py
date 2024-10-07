@@ -1,49 +1,68 @@
 import os
 import re
 import csv
+from collections import defaultdict
 
+# Directory containing log files
+# directory = '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/ext_log/2024-10-01-06-08-29'
+directory = '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/ext_log/2024-10-06-23-46-06'
 
-# directory = '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/ext_log/2024-09-27-06-14-10'  
-# directory = '/mnt/nvme0/home/gxr/hash_rt/hashmap_log/2024-09-27-06-37-50'
-directory = '/mnt/nvme0/home/gxr/Myhash/log/2024-09-27-07-39-15'
+# Patterns to match filenames and extract data
+file_pattern = re.compile(r'ext_client\.(\d+)\.thread\.(true|false)\.(\d+)\.(\d+)\.(1024)\.ops\.log')
 
-# file_pattern = re.compile(r'ext_client\.(\d+)\.thread\.1000000\.ops')
-# file_pattern = re.compile(r'hash_rt\.(\d+)\.thread\.10000000\.ops\.log')
+# file_pattern = re.compile(r'ext_client\.(\d+)\.thread\.(true|false)\.(\d+)\.(\d+)\.(\d+)\.s\.log')
 
+# time_pattern = re.compile(r'\[report\] load_overall_throughput\s*:\s*([\d\.]+)')
+time_pattern = re.compile(r'\[report\] load_overall_duration_ns\s*:\s*(\d+)')
+# Results dictionary to store throughput for each combination of params
+results = defaultdict(lambda: defaultdict(dict))
 
-file_pattern = re.compile(r'myhash\.(\d+)\.thread\.16\.4096\.1000000\.ops\.log')
-# time_pattern = re.compile(r'Execution Time:\s*([\d\.e\+]+)\s*s')
-
-time_pattern = re.compile(r'\[report\] load_overall_duration_s\s*:\s*([\d\.]+)')
-
-results = []
-
+# Read and process each file in the directory
 for filename in os.listdir(directory):
-    print(filename)
+    print(f'Processing: {filename}')
     match = file_pattern.match(filename)
+
     if match:
-        thread_count = int(match.group(1))  
+        # Extract thread count, true/false, and unique combination
+        thread_count = int(match.group(1))
+        true_or_false = match.group(2)
+        combo = f"{match.group(3)}_{match.group(4)}"  # e.g., "8_100" or "8_1024"
+        
         filepath = os.path.join(directory, filename)
         
-
+        # Read file content and extract throughput
         with open(filepath, 'r') as file:
             content = file.read()
-            print(content)
-
             time_match = time_pattern.search(content)
             if time_match:
-                execution_time = time_match.group(1)
-                results.append((thread_count, execution_time))
+                throughput = time_match.group(1)
+                results[combo][thread_count][true_or_false] = throughput
 
+# Prepare output base directory
+csv_base_dir = '../data'
+folder_name = directory.split('/')[-1]
+combined_dir = os.path.join(csv_base_dir, folder_name)
+os.makedirs(combined_dir, exist_ok=True)
 
-results.sort(key=lambda x: x[0])
-print(results)
+# Write results to CSV files, one per unique combo
+for combo, thread_results in results.items():
+    # Construct the output CSV path
+    csv_filename = f'{combo}_mutex_overall_throughput.csv'
+    combined_path = os.path.join(combined_dir, csv_filename)
 
-# csv_filename = 'mutex_execution_times.csv'
-csv_filename = 'free_execution_times_4096.csv'
-with open(csv_filename, 'w', newline='') as csvfile:
-    writer = csv.writer(csvfile)
-    writer.writerow(['Thread Count', 'Execution Time (s)'])
-    writer.writerows(results)
+    # Write the results to CSV
+    with open(combined_path, 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        # Header row
+        writer.writerow(['Thread Count', 'true Latency', 'false Latency'])
+        
+        # Sort thread results by thread count
+        sorted_thread_results = sorted(thread_results.items())
+        
+        # Data rows
+        for thread_count, throughputs in sorted_thread_results:
+            true_value = throughputs.get('true', 'N/A')
+            false_value = throughputs.get('false', 'N/A')
+            writer.writerow([thread_count, true_value, false_value])
 
-print(f'Results have been saved to {csv_filename}')
+    print(f'Results for {combo} have been saved to {combined_path}')

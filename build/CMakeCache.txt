@@ -34,7 +34,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Debug
+CMAKE_BUILD_TYPE:STRING=Release
 
 //CXX compiler
 CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
@@ -288,6 +288,9 @@ SNMALLOC_TRACING:BOOL=OFF
 
 //Build as C++17 for legacy support.
 SNMALLOC_USE_CXX17:BOOL=ON
+
+//The directory containing a CMake configuration file for gflags.
+gflags_DIR:PATH=/usr/local/lib/cmake/gflags
 
 //Value Computed by CMake
 snmalloc_BINARY_DIR:STATIC=/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-build

@@ -9,44 +9,92 @@
 #include "test/opt.h"
 #include <unordered_map>
 #include <vector>
+#include <gflags/gflags.h>
+
+#define HASH_INIT_LOCAL_DEPTH          (16)
+#define HASH_ASSOC_NUM                 (4)
 
 using namespace verona::rt;
 using namespace std;
 
-enum OperationType { INSERT, UPDATE, DELETE, FIND };
 
-// void performInsertions(cown_ptr<ExtendibleHash> hashtable, size_t num_of_ops)
-// {
-//     for (int i = 0; i < num_of_ops; i++) {
-//         int value = i * 100;
-//         when(hashtable) << [=](acquired_cown<ExtendibleHash> ht_acq) mutable{
-//             ht_acq->insert(i, value, hashtable);
-//         };
-        
-//         // std::cout << "Inserted key: " << i << " value: " << value << std::endl;
-//     }
-// }
+string load_benchmark_prefix;
 
-void performInsertions(ExtendibleHash* hashtable, size_t num_of_ops)
+DEFINE_uint64(str_key_size, 16, "size of key (bytes)");
+DEFINE_uint64(str_value_size, 1024, "size of value (bytes)");
+DEFINE_uint64(num_threads, 1, "the number of threads");
+DEFINE_uint64(time_interval, 10, "the time interval of insert operations");
+DEFINE_uint64(num_ops, 10000, "the number of insert operations");
+DEFINE_string(report_prefix, "[report] ", "prefix of report data");
+DEFINE_bool(first_mode, false, "fist mode start multiply clients on the same key value server");
+
+enum OperationType
 {
-    for (int i = 0; i < num_of_ops; i++) {
-        int value = i * 100;
-        hashtable->insert(i, value, hashtable);
-        // std::cout << "Inserted key: " << i << " value: " << value << std::endl;
+    INSERT,
+    UPDATE,
+    DELETE,
+    FIND
+};
+
+std::string from_uint64_to_string(uint64_t value, uint64_t value_size)
+{
+    std::stringstream ss;
+    ss << std::setfill('0') << std::setw(value_size) << std::hex << value;
+    std::string str = ss.str();
+    
+    if (str.length() > value_size) {
+        str = str.substr(str.length() - value_size);
     }
+    
+    return str; 
 }
 
-void runTest(size_t cores, size_t num_of_ops)
+void standard_report(const std::string &prefix, const std::string &name, const std::string &value)
 {
-    auto& sched = verona::rt::Scheduler::get();
+    std::cout << FLAGS_report_prefix << prefix + "_" << name << " : " << value << std::endl;
+}
+
+void benchmark_report(const std::string benchmark_prefix, const std::string &name, const std::string &value)
+{
+    standard_report(benchmark_prefix, name, value);
+}
+
+void performInsertions(ExtendibleHash *hashtable, size_t num_of_ops, size_t key_size, size_t value_size)
+{
+    
+    int i = 0;
+    while (true)
+    {
+        if (i >= num_of_ops)
+        {
+            break;
+        }
+        string key = from_uint64_to_string(i,key_size);
+        string common_value;
+        for (int i = 0; i < value_size; i++)
+        {
+            common_value += (char)('a' + (i % 26));
+        }
+        hashtable->insert(key, common_value, hashtable);
+        // std::cout<<hashtable->find(key)<<std::endl;
+        i++;
+    }
+    return;
+
+}
+
+void runTest(size_t cores, size_t num_of_ops, size_t key_size, size_t value_size)
+{
+    
+    auto &sched = verona::rt::Scheduler::get();
     sched.set_fair(true);
-    sched.init(cores);    
+    sched.init(cores);
 
     // auto hashTable = make_cown<ExtendibleHash>(4, 1000);
-    auto hashTable = new ExtendibleHash(10, 4);
-    // auto hashTable = ExtendibleHash::create(4, 1000); 
- 
-    performInsertions(hashTable,num_of_ops);
+    
+
+    auto hashTable = new ExtendibleHash(HASH_INIT_LOCAL_DEPTH, HASH_ASSOC_NUM);
+    performInsertions(hashTable, num_of_ops, key_size, value_size);
 
     // for (int i = 0; i < 10; i++) {
     //     schedule_lambda(hashTable, [i, value = i * 100](acquired_cown<ExtendibleHash> ht_acq) mutable {
@@ -71,22 +119,53 @@ void runTest(size_t cores, size_t num_of_ops)
     //         ht_acq->printStatus();
     //     });
     // });
-
-    auto start_time = std::chrono::high_resolution_clock::now();
-    sched.run();  
-    double duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::system_clock::now() - start_time).count();
-    std::cout << "Execution Time: " << duration_ns << " ns" << std::endl;
-    std::cout << "Execution Time: " << duration_ns / 1000000000 << " s" << std::endl;
-
+    sched.run();
 }
 
-int main(int argc, char** argv)
-{
-    opt::Opt opt(argc, argv);
-    const auto cores = opt.is<size_t>("--cores", 4); 
-    size_t num_of_ops = opt.is<size_t>("--number_of_ops", 1000000);
-    std::cout << "Running with " << cores << " cores" << std::endl;
 
-    runTest(cores,num_of_ops);
+
+int main(int argc, char **argv)
+{
+    // opt::Opt opt(argc, argv);
+    // const auto cores = opt.is<size_t>("--cores", 4);
+    // size_t num_of_ops = opt.is<size_t>("--number_of_ops", 1000000);
+
+    google::ParseCommandLineFlags(&argc, &argv, false);
+
+    const auto cores = FLAGS_num_threads;
+    uint64_t num_of_ops = FLAGS_num_ops;
+    size_t key_size = FLAGS_str_key_size;
+    size_t value_size = FLAGS_str_value_size;
+    size_t time_interval = FLAGS_time_interval;
+    bool first_mode = FLAGS_first_mode;
+    load_benchmark_prefix = FLAGS_report_prefix;
+
+    std::cout << "Running with " << cores << " cores" << std::endl;
+    if(first_mode)
+    {
+        auto start_time = std::chrono::steady_clock::now();
+        runTest(cores, num_of_ops,key_size,value_size);
+        auto current_time = std::chrono::steady_clock::now();
+        auto duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
+        double throughput = num_of_ops / duration_ns;
+        benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
+        benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));
+        benchmark_report(load_benchmark_prefix, "overall_throughput", std::to_string(throughput));
+    }
+    else
+    {
+        int num_of_ops_per_ins = num_of_ops / cores;
+        auto start_time = std::chrono::steady_clock::now();
+        for (int i=1; i<=cores; i++)
+        {
+            runTest(i, num_of_ops_per_ins,key_size,value_size);
+        }
+        auto current_time = std::chrono::steady_clock::now();
+        auto duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
+        double throughput = num_of_ops / duration_ns;
+        benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
+        benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));
+        benchmark_report(load_benchmark_prefix, "overall_throughput", std::to_string(throughput));
+    }    
     return 0;
 }

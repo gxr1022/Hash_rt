@@ -4,13 +4,18 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/include/verona-rt)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${GFLAGS_INCLUDE_DIRS}
+)
 
 set(SOURCES src/hash_rt.cpp)
 
+find_package(gflags REQUIRED)
+
 add_executable(hash_rt ${SOURCES})
 
-target_link_libraries(hash_rt verona_rt)
+target_link_libraries(hash_rt verona_rt ${GFLAGS_LIBRARIES})
 
 set(INCLUDEDIR ${CMAKE_CURRENT_SOURCE_DIR}/include/verona_rt/src/rt)
 subdirlist(INCLUDE_CATEGORIES ${INCLUDEDIR})

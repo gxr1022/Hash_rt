@@ -1,0 +1,3 @@
+/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex//build/ext_client --num_threads=4 --str_key_size=8 --str_value_size=1024 --time_interval=60 --first_mode=true
+malloc(): unaligned tcache chunk detected
+timeout: the monitored command dumped core
