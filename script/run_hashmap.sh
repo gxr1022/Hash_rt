@@ -16,7 +16,9 @@ cmake --build .
 
 TEST_PATH=${BINARY_PATH}
 
-num_of_ops_set=(128 1024 10240 102400 1024000)
+# num_of_ops_set=(128 1024 10240 102400 1024000)
+# num_of_ops_set=(32 64 128)
+num_of_ops_set=(1000000)
 modes=(true)
 
 kv_sizes=(

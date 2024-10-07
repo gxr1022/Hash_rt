@@ -1,35 +1,67 @@
-import pandas as pd
+import os
+import re
+import csv
+from collections import defaultdict
 
-# 文件路径
-# file_paths = {
-#     'boc': '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/plotscripts/boc_execution_times.csv',
-#     'lockfree': '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/plotscripts/lockfree_execution_times_4.csv',
-#     'mutex': '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/plotscripts/mutex_execution_times.csv'
-# }
+# Directory containing log files
+directory = '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/ext_log/2024-10-07-22-41-55'
 
-file_paths = {
-    'size=4': '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/plotscripts/lockfree_execution_times_4.csv',
-    'size=8': '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/plotscripts/lockfree_execution_times_8.csv',
-    'size=1024': '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/plotscripts/lockfree_execution_times_1024.csv',
-    'size=4096': '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/plotscripts/lockfree_execution_times_4096.csv'
-}
+# Patterns to match filenames and extract data
+file_pattern = re.compile(r'ext_client\.(\d+)\.thread\.(true|false)\.(\d+)\.(\d+)\.(\d+)\.ops\.log')
+time_pattern = re.compile(r'\[report\] load_overall_duration_ns\s*:\s*(\d+)')
 
-# 读取每个 CSV 文件并存储到 DataFrame 字典中
-dfs = {name: pd.read_csv(path) for name, path in file_paths.items()}
+# Results dictionary to store throughput for each combination of thread count and ops
+results = defaultdict(lambda: defaultdict(dict))
 
-# 假设所有文件的线程数列相同，以第一个文件的线程数为基准
-threads = dfs['size=4'].iloc[:, 0]
+# Read and process each file in the directory
+for filename in os.listdir(directory):
+    print(f'Processing: {filename}')
+    match = file_pattern.match(filename)
 
-# 构建合并后的 DataFrame
-combined_df = pd.DataFrame({'thread': threads})
+    if match:
+        # Extract thread count, true/false, and unique combination of ops
+        thread_count = int(match.group(1))
+        true_or_false = match.group(2)
+        ops_combo = f"{match.group(3)}_{match.group(4)}_{match.group(5)}"  # Capture all components of ops combination
+        
+        # Only consider "true" Throughput
+        if true_or_false == 'true':
+            filepath = os.path.join(directory, filename)
+            
+            # Read file content and extract throughput
+            with open(filepath, 'r') as file:
+                content = file.read()
+                time_match = time_pattern.search(content)
+                if time_match:
+                    throughput = time_match.group(1)
+                    results[thread_count][ops_combo] = throughput
 
-# 将每个文件对应的执行时间数据添加到合并后的 DataFrame 中
-for name, df in dfs.items():
-    combined_df[name] = df.iloc[:, 1]  # 假设执行时间在每个文件的第二列
+# Prepare output base directory
+csv_base_dir = '../data'
+folder_name = directory.split('/')[-1]
+combined_dir = os.path.join(csv_base_dir, folder_name)
+os.makedirs(combined_dir, exist_ok=True)
 
-# 保存合并后的 DataFrame 到新的 CSV 文件
-output_file = '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/plotscripts/diff_size_execution_times.csv'
-combined_df.to_csv(output_file, index=False)
+# Combine different ops into a single CSV file
+combined_csv_filename = f'combined_true_latency.csv'
+combined_csv_path = os.path.join(combined_dir, combined_csv_filename)
 
-print(f'Results have been saved to {output_file}')
+# Write the combined results to a single CSV
+with open(combined_csv_path, 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    
+    # Collect all ops combinations to create column headers
+    all_ops = set()
+    for thread_results in results.values():
+        all_ops.update(thread_results.keys())
+    all_ops = sorted(all_ops)
+    
+    # Write header row
+    writer.writerow(['Thread Count'] + [f'Latency_{ops}' for ops in all_ops])
+    
+    # Sort thread counts and write data rows
+    for thread_count in sorted(results.keys()):
+        row = [thread_count] + [results[thread_count].get(ops, 'N/A') for ops in all_ops]
+        writer.writerow(row)
 
+print(f'Combined results have been saved to {combined_csv_path}')

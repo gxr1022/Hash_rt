@@ -5,13 +5,13 @@ from collections import defaultdict
 
 # Directory containing log files
 # directory = '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/ext_log/2024-10-01-06-08-29'
-directory = '/mnt/nvme0/home/gxr/hash_rt/hashmap_log/2024-10-07-03-55-45'
+directory = '/mnt/nvme0/home/gxr/hash_rt/hashmap_log/2024-10-08-00-39-54'
 
 # Patterns to match filenames and extract data
 # file_pattern = re.compile(r'ext_client\.(\d+)\.thread\.(true|false)\.(\d+)\.(\d+)\.(\d+s)\.log')
 # file_pattern = re.compile(r'ext_client\.(\d+)\.thread\.(true|false)\.(\d+)\.(\d+)\.(\d+)\.s\.log')
 # file_pattern = re.compile(r'hash_rt\.(\d+)\.thread\.(true|false)\.(\d+)\.(\d+)\.1000000\.ops\.log')
-file_pattern = re.compile(r'hash_rt\.(\d+)\.thread\.(true|false)\.(\d+)\.(\d+)\.1024\.ops\.log')
+file_pattern = re.compile(r'hash_rt\.(\d+)\.thread\.(true|false)\.(\d+)\.(\d+)\.1000000\.ops\.log')
 
 # time_pattern = re.compile(r'\[report\] \[report\] _overall_throughput\s*:\s*([\d\.]+)')
 time_pattern = re.compile(r'\[report\] \[report\] _overall_duration_ns\s*:\s*(\d+)')

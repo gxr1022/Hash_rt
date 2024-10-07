@@ -10,7 +10,7 @@
 #include <condition_variable>
 #include <atomic>
 
-#define HASH_INIT_LOCAL_DEPTH          (10)
+#define HASH_INIT_LOCAL_DEPTH          (4)
 #define HASH_INIT_BUCKET_NUM           (1 << HASH_INIT_LOCAL_DEPTH)
 #define HASH_ASSOC_NUM                 (8)
 
