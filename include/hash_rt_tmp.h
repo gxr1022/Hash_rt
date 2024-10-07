@@ -130,7 +130,7 @@ public:
             {
                 // cown_ptr self = make_cown<ExtendibleHash>(); // It's weird
                 // cown_ptr<ExtendibleHash> self_cown = make_cown<ExtendibleHash>(std::move(*ht_acq));
-                // splitBucket(dirAcq->bucket, dirAcq->localDepth, hashValue);
+                splitBucket(dirAcq->bucket, dirAcq->localDepth, hashValue);
                 // std::cerr << "Bucket is full, consider splitting" << std::endl;
             }
         };
@@ -147,17 +147,17 @@ public:
             when(bucket) << [=](acquired_cown<Bucket> bucketAcq) mutable
             {
                 string result = bucketAcq->get(key);
-                if (result != "not found")
+                if (result != string("not found"))
                 {
                     return result;
                 }
                 else
                 {
-                    return "not found";
+                    return string("not found");
                 }
             };
         };
-        return "not found";
+        return string("not found");
     }
 
     void erase(string key)

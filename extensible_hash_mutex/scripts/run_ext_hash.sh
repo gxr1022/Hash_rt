@@ -16,9 +16,10 @@ cmake --build .
 
 TEST_PATH=${BINARY_PATH}
 
-num_of_ops_set=(1024  4096 8192)
+# num_of_ops_set=(1024  4096 8192)
+num_of_ops_set=(32  64 128)
 time_interval=10
-modes=(true false)
+modes=(true)
 
 threads=(1)
 for ((i = 4; i <= 32; i += 4)); do
