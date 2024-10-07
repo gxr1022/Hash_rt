@@ -1,0 +1,1 @@
+/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex//build/ext_client --num_threads=1 --str_key_size=8 --str_value_size=1024 --time_interval=5 --first_mode=true

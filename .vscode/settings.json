@@ -67,6 +67,7 @@
         "optional": "cpp",
         "span": "cpp",
         "shared_mutex": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "bitset": "cpp"
     }
 }

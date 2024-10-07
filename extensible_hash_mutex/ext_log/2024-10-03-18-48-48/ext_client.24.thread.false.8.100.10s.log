@@ -1,0 +1,2 @@
+/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex//build/ext_client --num_threads=24 --str_key_size=8 --str_value_size=100 --core_binding=0,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143 --time_interval=10 --first_mode=false
+timeout: the monitored command dumped core

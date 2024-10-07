@@ -19,7 +19,7 @@ using namespace std;
 class Bucket
 {
 public:
-    unordered_map<int, int> kvStore;
+    unordered_map<string, string> kvStore;
     int capacity;
     int prefix;
 
@@ -30,7 +30,7 @@ public:
         return kvStore.size() >= capacity;
     }
 
-    bool insert(int key, int value)
+    bool insert(string key, string value)
     {
         if (kvStore.find(key) != kvStore.end())
         {
@@ -45,7 +45,7 @@ public:
         return false;
     }
 
-    bool remove(int key)
+    bool remove(string key)
     {
         auto it = kvStore.find(key);
         if (it != kvStore.end())
@@ -56,14 +56,14 @@ public:
         return false;
     }
 
-    int get(int key)
+    string get(string key)
     {
         auto it = kvStore.find(key);
         if (it != kvStore.end())
         {
             return it->second;
         }
-        return -1;
+        return "not found";
     }
 };
 
@@ -73,9 +73,9 @@ struct Directory
     int localDepth;
 };
 
-static inline int hashFunction(int key, int globalDepth)
+static inline int hashFunction(string key, int globalDepth)
 {
-    return key & ((1 << globalDepth) - 1);
+    return stoi(key) & ((1 << globalDepth) - 1);
 }
 
 // class ExtendibleHash : public VCown<ExtendibleHash>{
@@ -113,7 +113,7 @@ public:
     //     return self;
     // }
 
-    void insert(int key, int value, ExtendibleHash *ht_acq)
+    void insert(string key, string value, ExtendibleHash *ht_acq)
     {
         int hashValue = hashFunction(key, globalDepth);
         bool inserted;
@@ -130,14 +130,14 @@ public:
             {
                 // cown_ptr self = make_cown<ExtendibleHash>(); // It's weird
                 // cown_ptr<ExtendibleHash> self_cown = make_cown<ExtendibleHash>(std::move(*ht_acq));
-                splitBucket(dirAcq->bucket, dirAcq->localDepth, hashValue);
+                // splitBucket(dirAcq->bucket, dirAcq->localDepth, hashValue);
                 // std::cerr << "Bucket is full, consider splitting" << std::endl;
             }
         };
         }
     }
 
-    int find(int key)
+    string find(string key)
     {
         int hashValue = hashFunction(key, globalDepth);
         when(directory[hashValue]) << [=](acquired_cown<Directory> dirAcq) mutable
@@ -146,21 +146,21 @@ public:
 
             when(bucket) << [=](acquired_cown<Bucket> bucketAcq) mutable
             {
-                int result = bucketAcq->get(key);
-                if (result != -1)
+                string result = bucketAcq->get(key);
+                if (result != "not found")
                 {
                     return result;
                 }
                 else
                 {
-                    return -1;
+                    return "not found";
                 }
             };
         };
-        return -1;
+        return "not found";
     }
 
-    void erase(int key)
+    void erase(string key)
     {
         int hashValue = hashFunction(key, globalDepth);
         when(directory[hashValue]) << [=](acquired_cown<Directory> dirAcq) mutable

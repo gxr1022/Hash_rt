@@ -1,0 +1,8 @@
+/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex//build/ext_client --num_threads=28 --str_key_size=8 --str_value_size=10240 --time_interval=60 --first_mode=true
+[report] load_overall_duration_s : 60.000000
+[report] load_overall_operation_number : 1603407
+[report] load_overall_throughput : 26723.450000
+/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex//build/ext_client --num_threads=28 --str_key_size=8 --str_value_size=10240 --time_interval=60 --first_mode=false
+[report] load_overall_duration_s : 60.000000
+[report] load_overall_operation_number : 37430334
+[report] load_overall_throughput : 623838.900000

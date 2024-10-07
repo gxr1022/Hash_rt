@@ -1,0 +1,6 @@
+/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex//build/ext_client --num_threads=16 --str_key_size=8 --str_value_size=1024 --time_interval=60 --first_mode=true
+timeout: the monitored command dumped core
+/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex//build/ext_client --num_threads=16 --str_key_size=8 --str_value_size=1024 --time_interval=60 --first_mode=false
+[report] load_overall_duration_s : 60.000000
+[report] load_overall_operation_number : 55628856
+[report] load_overall_throughput : 927147.600000
