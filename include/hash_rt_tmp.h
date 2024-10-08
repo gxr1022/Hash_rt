@@ -104,24 +104,16 @@ public:
         }
     }
 
-    // static cown_ptr<ExtendibleHash> create(int initialDepth, int bucketCap)
-    // {
-    //     auto self = make_cown<ExtendibleHash>(initialDepth, bucketCap);
-    //     when(self) << [=](acquired_cown<ExtendibleHash> selfAcq) mutable {
-    //         selfAcq->self_cown = self;
-    //     };
-    //     return self;
-    // }
-
     void insert(string key, string value, ExtendibleHash *ht_acq)
     {
         int hashValue = hashFunction(key, globalDepth);
-        bool inserted;
+        
         if(hashValue < directory.size()){
         when(directory[hashValue]) << [=](acquired_cown<Directory> dirAcq) mutable
         {
             auto &bucket = dirAcq->bucket;
             int localDepth = dirAcq->localDepth;
+            bool inserted;
             when(bucket) << [=](acquired_cown<Bucket> bucketAcq) mutable
             {
                 inserted = bucketAcq->insert(key, value);
@@ -130,7 +122,7 @@ public:
             {
                 // cown_ptr self = make_cown<ExtendibleHash>(); // It's weird
                 // cown_ptr<ExtendibleHash> self_cown = make_cown<ExtendibleHash>(std::move(*ht_acq));
-                splitBucket(dirAcq->bucket, dirAcq->localDepth, hashValue);
+                // splitBucket(dirAcq->bucket, dirAcq->localDepth, hashValue);
                 // std::cerr << "Bucket is full, consider splitting" << std::endl;
             }
         };
@@ -205,7 +197,6 @@ public:
 
     void splitBucket(cown_ptr<Bucket> oldBucket, int localDepth, int dir_indx)
     {
-
         cown_array<Directory> dir_array(directory.data(), directory.size());
         when(dir_array) << [=](acquired_cown_span<Directory> dirs_acq) mutable
         {

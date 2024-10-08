@@ -12,12 +12,14 @@
 #include <gflags/gflags.h>
 
 #define HASH_INIT_LOCAL_DEPTH (5)
-#define HASH_ASSOC_NUM (1000)
+#define HASH_ASSOC_NUM (4)
 
 using namespace verona::rt;
 using namespace std;
 
 string load_benchmark_prefix;
+string common_value;
+    
 
 DEFINE_uint64(str_key_size, 16, "size of key (bytes)");
 DEFINE_uint64(str_value_size, 1024, "size of value (bytes)");
@@ -61,23 +63,11 @@ void benchmark_report(const std::string benchmark_prefix, const std::string &nam
 
 void performInsertions(ExtendibleHash *hashtable, size_t num_of_ops, size_t key_size, size_t value_size)
 {
-
-    int i = 0;
-    while (true)
+    for (int i = 0; i < num_of_ops; i++)
     {
-        if (i >= num_of_ops)
-        {
-            break;
-        }
         string key = from_uint64_to_string(i, key_size);
-        string common_value;
-        for (int j = 0; j < value_size; j++)
-        {
-            common_value += (char)('a' + (j % 26));
-        }
         hashtable->insert(key, common_value, hashtable);
-        // std::cout<<hashtable->find(key)<<std::endl;
-        i++;
+
     }
     return;
 }
@@ -118,15 +108,14 @@ void runTest(size_t cores, size_t num_of_ops, size_t key_size, size_t value_size
     //     });
     // });
 
-    
-    auto start_time = std::chrono::steady_clock::now();
+    // auto start_time = std::chrono::steady_clock::now();
     sched.run();
-    auto current_time = std::chrono::steady_clock::now();
-    auto duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
-    double throughput = num_of_ops / duration_ns;
-    benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
-    benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));
-    benchmark_report(load_benchmark_prefix, "overall_throughput", std::to_string(throughput));
+    // auto current_time = std::chrono::steady_clock::now();
+    // auto duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
+    // double throughput = num_of_ops / duration_ns;
+    // benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
+    // benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));
+    // benchmark_report(load_benchmark_prefix, "overall_throughput", std::to_string(throughput));
 }
 
 int main(int argc, char **argv)
@@ -144,18 +133,21 @@ int main(int argc, char **argv)
     size_t time_interval = FLAGS_time_interval;
     bool first_mode = FLAGS_first_mode;
     load_benchmark_prefix = FLAGS_report_prefix;
+    for (int j = 0; j < value_size; j++)
+    {
+        common_value += (char)('a' + (j % 26));
+    }
 
     std::cout << "Running with " << cores << " cores" << std::endl;
     if (first_mode)
     {
-        // auto start_time = std::chrono::steady_clock::now();
+        auto start_time = std::chrono::high_resolution_clock::now();
         runTest(cores, num_of_ops, key_size, value_size);
-        // auto current_time = std::chrono::steady_clock::now();
-        // auto duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
-        // double throughput = num_of_ops / duration_ns;
-        // benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
-        // benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));
-        // benchmark_report(load_benchmark_prefix, "overall_throughput", std::to_string(throughput));
+        double duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::system_clock::now() - start_time).count();
+        double throughput = num_of_ops / duration_ns;
+        benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
+        benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));
+        benchmark_report(load_benchmark_prefix, "overall_throughput", std::to_string(throughput));
     }
     else
     {
