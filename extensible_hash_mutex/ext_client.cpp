@@ -1,4 +1,3 @@
-
 #include <vector>
 #include <string>
 #include <optional>
@@ -13,7 +12,7 @@
 #include <thread>
 #include <gflags/gflags.h>
 // #include "hash_split.h"
-#include "ext_hash.h"
+#include "chained_hash.h"
 #include "affinity.hpp"
 
 DEFINE_uint64(str_key_size, 8, "size of key (bytes)");
@@ -118,7 +117,8 @@ void Client::load_and_run()
     }
     auto current_time = std::chrono::steady_clock::now();
     auto duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
-    double throughput = num_of_ops_ / duration_ns;
+    // double throughput = num_of_ops_ / duration_ns;
+    double throughput = num_of_ops_ / (duration_ns / 1e9);
    
     // double duration_s = double(time_interval_);
     // double duration_ns = duration_s * 1000000000;

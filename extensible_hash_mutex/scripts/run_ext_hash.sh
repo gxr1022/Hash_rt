@@ -17,7 +17,7 @@ cmake --build .
 TEST_PATH=${BINARY_PATH}
 
 # num_of_ops_set=(1024  4096 8192)
-num_of_ops_set=(32  64 128)
+num_of_ops_set=(1024000)
 time_interval=10
 modes=(true)
 
@@ -35,10 +35,10 @@ done
 test_name=(ext_client)
 
 kv_sizes=(
-	"8 100"
-	# "8 1024"
-	# "8 10240"
-	# "8 102400"
+	# "8 100"
+	"8 1024"
+	"8 10240"
+	"8 102400"
 	# "8 1048576"
 )
 

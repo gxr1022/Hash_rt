@@ -4,7 +4,7 @@ import csv
 from collections import defaultdict
 
 # Directory containing log files
-directory = '/mnt/nvme0/home/gxr/hash_rt/hashmap_log/2024-10-08-21-31-52'
+directory = '/mnt/nvme0/home/gxr/hash_rt/hashmap_log/2024-10-09-20-13-24'
 
 # Patterns to match filenames and extract data
 file_pattern = re.compile(r'hash_rt\.(\d+)\.thread\.(true|false)\.(\d+)\.(\d+)\.(\d+)\.ops\.log')
