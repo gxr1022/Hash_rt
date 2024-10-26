@@ -5,15 +5,15 @@ from collections import defaultdict
 
 # Directory containing log files
 # directory = '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/ext_log/2024-10-01-06-08-29'
-directory = '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/ext_log/2024-10-06-23-46-06'
+directory = '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/ext_log/2024-10-12-00-08-25'
 
 # Patterns to match filenames and extract data
-file_pattern = re.compile(r'ext_client\.(\d+)\.thread\.(true|false)\.(\d+)\.(\d+)\.(1024)\.ops\.log')
+file_pattern = re.compile(r'ext_client\.(\d+)\.thread\.(true|false)\.(\d+)\.(102400)\.(1024000)\.ops\.log')
 
 # file_pattern = re.compile(r'ext_client\.(\d+)\.thread\.(true|false)\.(\d+)\.(\d+)\.(\d+)\.s\.log')
 
-# time_pattern = re.compile(r'\[report\] load_overall_throughput\s*:\s*([\d\.]+)')
-time_pattern = re.compile(r'\[report\] load_overall_duration_ns\s*:\s*(\d+)')
+time_pattern = re.compile(r'\[report\] load_overall_throughput\s*:\s*([\d\.]+)')
+# time_pattern = re.compile(r'\[report\] load_overall_duration_ns\s*:\s*(\d+)')
 # Results dictionary to store throughput for each combination of params
 results = defaultdict(lambda: defaultdict(dict))
 
@@ -39,7 +39,7 @@ for filename in os.listdir(directory):
                 results[combo][thread_count][true_or_false] = throughput
 
 # Prepare output base directory
-csv_base_dir = '../data'
+csv_base_dir = '/mnt/nvme0/home/gxr/hash_rt/extensible_hash_mutex/data'
 folder_name = directory.split('/')[-1]
 combined_dir = os.path.join(csv_base_dir, folder_name)
 os.makedirs(combined_dir, exist_ok=True)
@@ -54,7 +54,7 @@ for combo, thread_results in results.items():
     with open(combined_path, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         # Header row
-        writer.writerow(['Thread Count', 'true Latency', 'false Latency'])
+        writer.writerow(['Thread Count', 'true Throughput', 'false Throughput'])
         
         # Sort thread results by thread count
         sorted_thread_results = sorted(thread_results.items())

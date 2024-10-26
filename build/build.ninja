@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: HashIndexProject
-# Configurations: Release
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.8
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Release
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -49,10 +49,10 @@ cmake_ninja_workdir = /mnt/nvme0/home/gxr/hash_rt/build/
 
 build cmake_object_order_depends_target_hash_rt: phony || CMakeFiles/hash_rt.dir
 
-build CMakeFiles/hash_rt.dir/src/hash_rt.cpp.o: CXX_COMPILER__hash_rt_Release /mnt/nvme0/home/gxr/hash_rt/src/hash_rt.cpp || cmake_object_order_depends_target_hash_rt
-  DEFINES = -DGFLAGS_IS_A_DLL=0 -DMALLOC_USABLE_SIZE_QUALIFIER=const -DSNMALLOC_CHEAP_CHECKS -DSNMALLOC_HAS_LINUX_RANDOM_H -DSNMALLOC_NO_REALLOCARR -DSNMALLOC_NO_REALLOCARRAY -DSNMALLOC_PLATFORM_HAS_GETENTROPY -DSNMALLOC_USE_CXX17
+build CMakeFiles/hash_rt.dir/src/hash_rt.cpp.o: CXX_COMPILER__hash_rt_Debug /mnt/nvme0/home/gxr/hash_rt/src/hash_rt.cpp || cmake_object_order_depends_target_hash_rt
+  DEFINES = -DGFLAGS_IS_A_DLL=0 -DMALLOC_USABLE_SIZE_QUALIFIER=const -DSNMALLOC_BACKTRACE_HEADER=\"execinfo.h\" -DSNMALLOC_CHEAP_CHECKS -DSNMALLOC_HAS_LINUX_RANDOM_H -DSNMALLOC_NO_REALLOCARR -DSNMALLOC_NO_REALLOCARRAY -DSNMALLOC_PLATFORM_HAS_GETENTROPY -DSNMALLOC_USE_CXX17
   DEP_FILE = CMakeFiles/hash_rt.dir/src/hash_rt.cpp.o.d
-  FLAGS = -O3 -DNDEBUG -mcx16
+  FLAGS = -g -mcx16
   INCLUDES = -I/mnt/nvme0/home/gxr/hash_rt/include -I/mnt/nvme0/home/gxr/hash_rt/include/verona-rt/src/rt/. -I/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src
   OBJECT_DIR = CMakeFiles/hash_rt.dir
   OBJECT_FILE_DIR = CMakeFiles/hash_rt.dir/src
@@ -65,9 +65,10 @@ build CMakeFiles/hash_rt.dir/src/hash_rt.cpp.o: CXX_COMPILER__hash_rt_Release /m
 #############################################
 # Link the executable hash_rt
 
-build hash_rt: CXX_EXECUTABLE_LINKER__hash_rt_Release CMakeFiles/hash_rt.dir/src/hash_rt.cpp.o | /usr/local/lib/libgflags.so.2.2.2
-  FLAGS = -O3 -DNDEBUG
-  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libgflags.so.2.2.2  -latomic
+build hash_rt: CXX_EXECUTABLE_LINKER__hash_rt_Debug CMakeFiles/hash_rt.dir/src/hash_rt.cpp.o | /usr/local/lib/libgflags.so.2.2.2
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libgflags.so.2.2.2  -rdynamic  -latomic
   OBJECT_DIR = CMakeFiles/hash_rt.dir
   POST_BUILD = :
   PRE_LINK = :
