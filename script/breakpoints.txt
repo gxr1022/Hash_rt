@@ -1,0 +1,10 @@
+break /mnt/nvme0/home/gxr/hash_rt/include/verona-rt/src/rt/debug/systematic.h:145
+  commands
+    silent
+    set $count = $count + 1
+    if $count == 4000
+      printf "Hit breakpoint 4000 times. Stopping.\n"
+    else
+      continue
+    end
+  end
