@@ -1,0 +1,17 @@
+Thread ID counts:
+Thread 9: 11129 times
+Thread 8: 14670 times
+Thread 7: 10725 times
+Thread 6: 11206 times
+Thread 5: 10984 times
+Thread 4: 11295 times
+Thread 3: 14634 times
+Thread 2: 10969 times
+Thread 1: 142974 times
+Thread 12: 19855 times
+Thread 13: 10645 times
+Thread 10: 11363 times
+Thread 11: 11032 times
+Thread 16: 26619 times
+Thread 14: 12984 times
+Thread 15: 10715 times

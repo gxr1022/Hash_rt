@@ -8,7 +8,7 @@ mkdir -p ${LOG_PATH}
 
 pushd ${BINARY_PATH}
 
-cmake -B ${BINARY_PATH} -GNinja -DCMAKE_BUILD_TYPE=Debug ${RUN_PATH}  2>&1 | tee ${RUN_PATH}/configure.log
+cmake -B ${BINARY_PATH} -GNinja -DCMAKE_BUILD_TYPE=Release ${RUN_PATH}  2>&1 | tee ${RUN_PATH}/configure.log
 if [[ "$?" != 0  ]];then
 	exit
 fi
@@ -20,7 +20,7 @@ TEST_PATH=${BINARY_PATH}
 # num_of_ops_set=(1000000 10000000 100000000 1000000000)
 # num_of_ops_set=(1024 4096 8192 10240)
 # num_of_ops_set=(10000 100000 1000000 10000000 10000000)
-num_of_ops_set=(100000000)
+num_of_ops_set=(1000000)
 modes=(true)
 
 kv_sizes=(
@@ -31,8 +31,8 @@ kv_sizes=(
 	# "8 1048576"
 )
 
-threads=(12)
-for ((i = 24; i <= 36; i += 12)); do
+threads=(1)
+for ((i = 4; i <= 32; i += 4)); do
     threads+=($i)
 done
 
@@ -56,10 +56,10 @@ for tn in ${test_name[*]};do
 	"
 	this_log_path=${LOG_PATH}/${tn}.${t}.thread.${mode}.${key_size}.${value_size}.${num_of_ops}.ops.log
 
-	echo ${cmd} 
+	# echo ${cmd} 
 	# echo ${cmd} 2>&1 | tee -a ${this_log_path}
-	# timeout -v 3600 stdbuf -o0 ${cmd} 2>&1 | tee -a ${this_log_path}
-	timeout -v 3600 stdbuf -o0 ${cmd}
+	timeout -v 3600 stdbuf -o0 ${cmd} 2>&1 | tee -a ${this_log_path}
+	# timeout -v 3600 stdbuf -o0 ${cmd}
     echo "Log file in: ${this_log_path}"
 	echo 3 | sudo tee /proc/sys/vm/drop_caches > /dev/null
 done

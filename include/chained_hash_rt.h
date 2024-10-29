@@ -5,7 +5,7 @@
 #include <iostream>
 #include <memory>
 #include <atomic>
-
+#include "../util/util.hpp"
 #include "debug/harness.h"
 #include "test/opt.h"
 #include "test/xoroshiro.h"
@@ -68,6 +68,8 @@ public:
 
 static inline int hashFunction(string key, int dirCap)
 {
+    // uint64_t hashValue = VariableLengthHash(key.data(), key.size(), 0);
+    // return hashValue % dirCap;
     return stoi(key) % dirCap;
 }
 
@@ -96,15 +98,32 @@ public:
     {
         int hashValue = hashFunction(key, dirCapacity);
         // cout<< hashValue<<endl;
-        bool inserted;
+        bool inserted = false;
         if (hashValue < directory.size())
         {
             when(directory[hashValue]) << [=](acquired_cown<Bucket> bucketAcq) mutable
             {
                 inserted = bucketAcq->insert(key, value);
+                // if (inserted)
+                // {
+                //     std::cout << "successful!" << std::endl;
+                //     std::cout << "Inside Lambda: key=" << key << ", value=" << value << std::endl;
+                //     when(directory[hashValue]) << [hashValue](acquired_cown<Bucket> bucketAcq) mutable
+                //     {
+                //         std::stringstream output;
+                //         for (const auto &kv : bucketAcq->kvStore)
+                //         {
+                //             output << "{" << kv.first << ": " << kv.second << "} ";
+                //         }
+                //         std::cout << "Bucket " << hashValue << ": " << output.str() << std::endl;
+                //     };
+                // }
+                // else
+                // {
+                //     // std::cout<<"failed!"<<std::endl;
+                //     // std::cout << "Inside Lambda: key=" << key << ", value=" << value << std::endl;
+                // }
             };
-            // schedule_lambda(directory[hashValue], [key,value](acquired_cown<Bucket> bucketAcq) mutable
-            //                 // { bucketAcq->insert(key, value); });
         }
         return;
     }

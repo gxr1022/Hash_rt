@@ -1,0 +1,33 @@
+Thread ID counts from /mnt/nvme0/home/gxr/hash_rt/hashmap_log/2024-10-29-00-52-34/hash_rt.30.thread.true.8.100.100000.ops.log:
+Thread 30: 742 times
+Thread 9: 775 times
+Thread 8: 818 times
+Thread 7: 735 times
+Thread 6: 754 times
+Thread 5: 751 times
+Thread 4: 836 times
+Thread 3: 746 times
+Thread 2: 756 times
+Thread 1: 729 times
+Thread 27: 726 times
+Thread 26: 1610 times
+Thread 25: 710 times
+Thread 24: 891 times
+Thread 23: 914 times
+Thread 22: 869 times
+Thread 21: 1002 times
+Thread 20: 714 times
+Thread 29: 753 times
+Thread 28: 720 times
+Thread 18: 730 times
+Thread 19: 715 times
+Thread 12: 732 times
+Thread 13: 799 times
+Thread 10: 735 times
+Thread 11: 7041 times
+Thread 16: 713 times
+Thread 17: 698 times
+Thread 14: 1130 times
+Thread 15: 694 times
+
+Total 'Set running thread' calls: 30538
