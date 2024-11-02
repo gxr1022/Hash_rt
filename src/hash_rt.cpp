@@ -7,7 +7,6 @@
 #include "test/xoroshiro.h"
 #include "verona.h"
 #include "test/opt.h"
-
 #include <unordered_map>
 #include <vector>
 #include <gflags/gflags.h>
@@ -22,14 +21,13 @@ using namespace verona::rt;
 using namespace std;
 
 string load_benchmark_prefix;
-string common_value;
-// int seed=65536;
+char* common_value;
 
 DEFINE_uint64(str_key_size, 8, "size of key (bytes)");
 DEFINE_uint64(str_value_size, 100, "size of value (bytes)");
 DEFINE_uint64(num_threads, 16, "the number of threads");
 DEFINE_uint64(time_interval, 10, "the time interval of insert operations");
-DEFINE_uint64(num_ops, 10000, "the number of insert operations");
+DEFINE_uint64(num_ops, 100000, "the number of insert operations");
 DEFINE_string(report_prefix, "[report]: ", "prefix of report data");
 DEFINE_bool(first_mode, true, "fist mode start multiply clients on the same key value server");
 
@@ -55,6 +53,25 @@ std::string from_uint64_to_string(uint64_t value, uint64_t value_size)
     return str;
 }
 
+char *from_uint64_to_char(uint64_t value, uint64_t value_size)
+{
+
+    char *buffer = new char[value_size + 1];
+    std::memset(buffer, '0', value_size);
+
+    // std::snprintf(buffer, value_size + 1, "%0*llx", static_cast<int>(value_size), value);
+    buffer[value_size] = '\0';
+
+    size_t len = std::strlen(buffer);
+    if (len > value_size)
+    {
+        std::memmove(buffer, buffer + (len - value_size), value_size);
+        buffer[value_size] = '\0';
+    }
+
+    return buffer;
+}
+
 void standard_report(const std::string &prefix, const std::string &name, const std::string &value)
 {
     std::cout << FLAGS_report_prefix << prefix + "_" << name << " : " << value << std::endl;
@@ -70,7 +87,7 @@ void performInsertions(ExtendibleHash *hashtable, size_t num_of_ops, size_t key_
     for (int i = 0; i < num_of_ops; i++)
     {
         int r = rand() % HASH_INIT_BUCKET_NUM;
-        string key = from_uint64_to_string(r, key_size);
+        char *key = from_uint64_to_char(r, key_size);
         hashtable->insert(key, common_value);
     }
     return;
@@ -83,6 +100,7 @@ void runTest(ExtendibleHash *hashTable, size_t cores, size_t num_of_ops, size_t 
     auto &sched = verona::rt::Scheduler::get();
     sched.set_fair(true);
     sched.init(cores);
+    
 
     auto current_time = std::chrono::steady_clock::now();
     auto duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
@@ -95,35 +113,12 @@ void runTest(ExtendibleHash *hashTable, size_t cores, size_t num_of_ops, size_t 
     duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
     std::cout << "Insert time:" << duration_ns << std::endl;
 
-    // for (int i = 0; i < 10; i++) {
-    //     schedule_lambda(hashTable, [i, value = i * 100](acquired_cown<ExtendibleHash> ht_acq) mutable {
-    //     int result = ht_acq->find(i);  // 使用 acquired_cown 来访问 hashTable
-    //     if (result != -1)
-    //         std::cout << "Found key: " << i << " value: " << result << std::endl;
-    //     else
-    //         std::cout << "Key not found: " << i << std::endl;
-    // }
-
-    // schedule_lambda([=]() mutable {
-    //     for (int i = 0; i < 10; i++) {
-    //         schedule_lambda(hashTable, [=](acquired_cown<ExtendibleHash> ht_acq) mutable {
-    //             ht_acq->erase(i);
-    //             std::cout << "Erased key: " << i << std::endl;
-    //         });
-    //     }
-    // });
-
-    // schedule_lambda([=]() mutable {
-    //     schedule_lambda(hashTable, [=](acquired_cown<ExtendibleHash> ht_acq) mutable {
-    //         ht_acq->printStatus();
-    //     });
-    // });
-    // hashTable->printStatus();
     start_time = std::chrono::steady_clock::now();
     sched.run();
     current_time = std::chrono::steady_clock::now();
     duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
     std::cout << "Run time:" << duration_ns << std::endl;
+
     double throughput = num_of_ops / (duration_ns / 1e9);
     benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
     benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));
@@ -132,9 +127,7 @@ void runTest(ExtendibleHash *hashTable, size_t cores, size_t num_of_ops, size_t 
 
 int main(int argc, char **argv)
 {
-    // opt::Opt opt(argc, argv);
-    // const auto cores = opt.is<size_t>("--cores", 4);
-    // size_t num_of_ops = opt.is<size_t>("--number_of_ops", 1000000);
+
     // Logging::enable_logging();
     google::ParseCommandLineFlags(&argc, &argv, false);
 
@@ -146,39 +139,26 @@ int main(int argc, char **argv)
     size_t time_interval = FLAGS_time_interval;
     bool first_mode = FLAGS_first_mode;
     load_benchmark_prefix = "insert";
+
+    common_value = new char[value_size + 1];
     for (int j = 0; j < value_size; j++)
     {
-        common_value += (char)('a' + (j % 26));
+        common_value[j] = 'a' + (j % 26);
     }
+    common_value[value_size] = '\0';
+
 
     std::cout << "Running with " << cores << " cores" << std::endl;
-    if (first_mode)
-    {
 
-        auto hashTable = new ExtendibleHash(HASH_INIT_BUCKET_NUM, HASH_ASSOC_NUM);
+    auto hashTable = new ExtendibleHash(HASH_INIT_BUCKET_NUM, HASH_ASSOC_NUM);
 
-        // auto start_time = std::chrono::high_resolution_clock::now();
-        runTest(hashTable, cores, num_of_ops, key_size, value_size);
-        // double duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::system_clock::now() - start_time).count();
-        // double throughput = num_of_ops / (duration_ns / 1e9);
-        // benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
-        // benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));
-        // benchmark_report(load_benchmark_prefix, "overall_throughput", std::to_string(throughput));
-    }
-    // else
-    // {
-    //     int num_of_ops_per_ins = num_of_ops / cores;
-    //     auto start_time = std::chrono::steady_clock::now();
-    //     for (int i = 1; i <= cores; i++)
-    //     {
-    //         runTest(1, num_of_ops_per_ins, key_size, value_size);
-    //     }
-    //     auto current_time = std::chrono::steady_clock::now();
-    //     auto duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
-    //     double throughput = num_of_ops / (duration_ns / 1e9);
-    //     benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
-    //     benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));
-    //     benchmark_report(load_benchmark_prefix, "overall_throughput", std::to_string(throughput));
-    // }
+    // auto start_time = std::chrono::high_resolution_clock::now();
+    runTest(hashTable, cores, num_of_ops, key_size, value_size);
+    // double duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::system_clock::now() - start_time).count();
+    // double throughput = num_of_ops / (duration_ns / 1e9);
+    // benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
+    // benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));
+    // benchmark_report(load_benchmark_prefix, "overall_throughput", std::to_string(throughput));
+
     return 0;
 }
