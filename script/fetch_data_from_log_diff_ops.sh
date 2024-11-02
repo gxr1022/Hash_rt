@@ -24,7 +24,7 @@ for log_file in "$logs_folder"/*.log; do
     thread_num=$(echo "$log_file" | awk -F'.' '{print $2}')
     ops_num=$(echo "$log_file" | awk -F'.' '{print $7}')
     
-    throughput=$(grep "_overall_throughput" "$log_file" | awk -F': ' '{print $2}')
+    throughput=$(grep "_overall_throughput" "$log_file" | awk -F': ' '{print $3}')
    
     if [ -z "$throughput" ]; then
         echo "No throughput data found in $log_file"

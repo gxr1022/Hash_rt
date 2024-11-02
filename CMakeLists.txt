@@ -15,7 +15,8 @@ find_package(gflags REQUIRED)
 
 add_executable(hash_rt ${SOURCES})
 
-target_link_libraries(hash_rt verona_rt ${GFLAGS_LIBRARIES})
+target_link_libraries(hash_rt PUBLIC verona_rt PUBLIC ${GFLAGS_LIBRARIES} INTERFACE snmalloc-new-override)
+
 
 set(INCLUDEDIR ${CMAKE_CURRENT_SOURCE_DIR}/include/verona_rt/src/rt)
 subdirlist(INCLUDE_CATEGORIES ${INCLUDEDIR})

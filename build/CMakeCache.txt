@@ -290,7 +290,7 @@ SNMALLOC_TRACING:BOOL=OFF
 SNMALLOC_USE_CXX17:BOOL=ON
 
 //No help, variable specified on the command line.
-USE_SYSTEMATIC_TESTING:UNINITIALIZED=ON
+USE_SYSTEMATIC_TESTING:UNINITIALIZED=OFF
 
 //The directory containing a CMake configuration file for gflags.
 gflags_DIR:PATH=/usr/local/lib/cmake/gflags
