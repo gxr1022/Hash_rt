@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include "../include/chained_hash_rt.h"
+// #include "../include/slot_hash_rt.h"
 #include "debug/harness.h"
 #include "test/opt.h"
 #include "test/xoroshiro.h"
@@ -14,8 +15,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define HASH_INIT_BUCKET_NUM (1000000)
-#define HASH_ASSOC_NUM (1)
 
 using namespace verona::rt;
 using namespace std;
@@ -55,11 +54,8 @@ std::string from_uint64_to_string(uint64_t value, uint64_t value_size)
 
 char *from_uint64_to_char(uint64_t value, uint64_t value_size)
 {
-
     char *buffer = new char[value_size + 1];
-    std::memset(buffer, '0', value_size);
-
-    // std::snprintf(buffer, value_size + 1, "%0*llx", static_cast<int>(value_size), value);
+    snprintf(buffer, value_size + 1, "%0*lx", static_cast<int>(value_size), value);
     buffer[value_size] = '\0';
 
     size_t len = std::strlen(buffer);
@@ -88,8 +84,11 @@ void performInsertions(ExtendibleHash *hashtable, size_t num_of_ops, size_t key_
     {
         int r = rand() % HASH_INIT_BUCKET_NUM;
         char *key = from_uint64_to_char(r, key_size);
+        // std::cout << "Inserting key: " << key << std::endl;
         hashtable->insert(key, common_value);
+        // hashtable->printStatus();
     }
+
     return;
 }
 
@@ -118,11 +117,12 @@ void runTest(ExtendibleHash *hashTable, size_t cores, size_t num_of_ops, size_t 
     current_time = std::chrono::steady_clock::now();
     duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
     std::cout << "Run time:" << duration_ns << std::endl;
-
+    
     double throughput = num_of_ops / (duration_ns / 1e9);
     benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
     benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));
     benchmark_report(load_benchmark_prefix, "overall_throughput", std::to_string(throughput));
+    return;
 }
 
 int main(int argc, char **argv)

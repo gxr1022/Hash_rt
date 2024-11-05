@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/nvme0/home/gxr/hash_rt/include/verona-rt/src/rt
+# Install script for directory: /users/Xuran/hash_rt/include/verona-rt/src/rt
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

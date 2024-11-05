@@ -5,31 +5,43 @@
 #include <iostream>
 #include <memory>
 #include <atomic>
-#include "../util/util.hpp"
 #include "debug/harness.h"
 #include "test/opt.h"
 #include "test/xoroshiro.h"
+#include "../util/util.hpp"
 #include "verona.h"
 #include "test/opt.h"
 #include <utility>
+#include <string_view>
+#include <cstring>
 
 #define HASH_INIT_BUCKET_NUM (1000000)
-#define HASH_ASSOC_NUM (1)
+#define HASH_ASSOC_NUM (2)
+#define MAX_KEY_LENGTH 8
+#define MAX_VALUE_LENGTH 100 
 
 using namespace verona::rt;
 using namespace verona::cpp;
 using namespace std;
 
-inline size_t WORK_USEC = 0;
+
+struct KeyValue {
+    char key[MAX_KEY_LENGTH];
+    char value[MAX_VALUE_LENGTH];
+    bool occupied;  
+
+    KeyValue() : occupied(false) {
+        key[0] = '\0';
+        value[0] = '\0';
+    }
+};
 
 class Bucket
 {
 public:
-    std::pair<char *, char *> slots[HASH_ASSOC_NUM];
+    KeyValue slots[HASH_ASSOC_NUM];
     uint64_t idx;
-
     Bucket() : idx(0) {}
-
     bool isFull() const
     {
         return idx >= HASH_ASSOC_NUM;
@@ -42,80 +54,29 @@ public:
             return false;
         }
 
-        char *key_copy = new char[strlen(key) + 1];
-        std::strcpy(key_copy, key);
+        if (strlen(key) >= MAX_KEY_LENGTH || strlen(value) >= MAX_VALUE_LENGTH) {
+            return false;
+        }
 
-        char *value_copy = new char[strlen(value) + 1];
-        std::strcpy(value_copy, value);
-
-        slots[idx] = std::make_pair(key_copy, value_copy);
+        strncpy(slots[idx].key, key, MAX_KEY_LENGTH - 1);
+        strncpy(slots[idx].value, value, MAX_VALUE_LENGTH - 1);
+        
+        slots[idx].key[MAX_KEY_LENGTH - 1] = '\0';
+        slots[idx].value[MAX_VALUE_LENGTH - 1] = '\0';
+        
+        slots[idx].occupied = true;
+        // cout << "inserted successfully:" << slots[idx].key << " value:" << slots[idx].value << endl;
         idx++;
         return true;
     }
 
     ~Bucket()
     {
-
-        for (uint64_t i = 0; i < idx; ++i)
-        {
-            delete[] slots[i].first;  
-            delete[] slots[i].second; 
-        }
     }
 };
 
-// class Bucket
-// {
-// public:
-//     unordered_map<string, string> kvStore;
-//     int capacity;
-//     Bucket(int cap) : capacity(cap) {}
-
-//     bool isFull()
-//     {
-//         return kvStore.size() >= capacity;
-//     }
-
-//     bool insert(string key, string value)
-//     {
-//         if (kvStore.find(key) != kvStore.end())
-//         {
-//             kvStore[key] = value;
-//             return true;
-//         }
-//         if (!isFull())
-//         {
-//             kvStore[key] = value;
-//             return true;
-//         }
-//         return false;
-//     }
-
-//     bool remove(string key)
-//     {
-//         auto it = kvStore.find(key);
-//         if (it != kvStore.end())
-//         {
-//             kvStore.erase(it);
-//             return true;
-//         }
-//         return false;
-//     }
-
-//     string get(string key)
-//     {
-//         auto it = kvStore.find(key);
-//         if (it != kvStore.end())
-//         {
-//             return it->second;
-//         }
-//         return "not found";
-//     }
-// };
-
 static inline int hashFunction(char* key, int dirCap)
 {
-    // return stoi(key) % dirCap;
     size_t key_len = strlen(key);
     uint64_t hashValue = string_key_hash_computation(key,key_len , 0, 0);
     return hashValue % dirCap;
@@ -152,8 +113,10 @@ public:
         {
             when(directory[hashValue]) << [=](acquired_cown<Bucket> bucketAcq) mutable
             {
+                // std::cout<< "inserting key:" << key << " value:" << value << endl;
                 inserted = bucketAcq->insert(key, value);
-                // busy_loop(WORK_USEC);
+                
+                // printStatus();
             };
         }
         return;
@@ -192,6 +155,7 @@ public:
 
     void printStatus()
     {
+        // std::cout<< "dirCapacity:" << dirCapacity << endl;
         for (size_t i = 0; i < directory.size(); ++i)
         {
             when(directory[i]) << [i](acquired_cown<Bucket> bucketAcq) mutable
@@ -199,7 +163,7 @@ public:
                 std::stringstream output;
                 for (const auto &kv : bucketAcq->slots)
                 {
-                    output << "{" << kv.first << ": " << kv.second << "} ";
+                    output << "{" << kv.key << ": " << kv.value << "} ";
                 }
                 std::cout << "Bucket " << i << ": " << output.str() << std::endl;
             };

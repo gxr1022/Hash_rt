@@ -1,3 +1,39 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test SNMALLOC_LINKER_SUPPORT_NOSTDLIBXX
+-- Performing Test SNMALLOC_LINKER_SUPPORT_NOSTDLIBXX - Failed
+-- Performing Test CONST_QUALIFIED_MALLOC_USABLE_SIZE
+-- Performing Test CONST_QUALIFIED_MALLOC_USABLE_SIZE - Success
+-- Performing Test SNMALLOC_PLATFORM_HAS_GETENTROPY
+-- Performing Test SNMALLOC_PLATFORM_HAS_GETENTROPY - Success
+-- Looking for C++ include linux/random.h
+-- Looking for C++ include linux/random.h - found
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Performing Test SNMALLOC_COMPILER_SUPPORT_MCX16
+-- Performing Test SNMALLOC_COMPILER_SUPPORT_MCX16 - Success
+-- Looking for backtrace
+-- Looking for backtrace - found
+-- backtrace facility detected in default set of libraries
+-- Found Backtrace: /usr/include  
+-- Performing Test SNMALLOC_LINKER_SUPPORT_NO_ALLOW_SHLIB_UNDEF
+-- Performing Test SNMALLOC_LINKER_SUPPORT_NO_ALLOW_SHLIB_UNDEF - Success
+-- The C compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Generating clangformat target using /usr/bin/clang-format-15
+-- Found Git: /usr/bin/git (found version "2.34.1") 
+-- Generating copyright/license target
 -- Configuring done
 -- Generating done
--- Build files have been written to: /mnt/nvme0/home/gxr/hash_rt/build
+-- Build files have been written to: /users/Xuran/hash_rt/build

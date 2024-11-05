@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src
+# Install script for directory: /users/Xuran/hash_rt/build/_deps/snmalloc-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,44 +43,44 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc" TYPE DIRECTORY FILES "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/snmalloc/aal")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc" TYPE DIRECTORY FILES "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/snmalloc/aal")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc" TYPE DIRECTORY FILES "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/snmalloc/ds")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc" TYPE DIRECTORY FILES "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/snmalloc/ds")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc" TYPE DIRECTORY FILES "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/snmalloc/override")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc" TYPE DIRECTORY FILES "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/snmalloc/override")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc" TYPE DIRECTORY FILES "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/snmalloc/backend")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc" TYPE DIRECTORY FILES "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/snmalloc/backend")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc" TYPE DIRECTORY FILES "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/snmalloc/mem")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc" TYPE DIRECTORY FILES "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/snmalloc/mem")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc" TYPE DIRECTORY FILES "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/snmalloc/pal")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc" TYPE DIRECTORY FILES "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/snmalloc/pal")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc/test" TYPE FILE FILES
-    "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/test/measuretime.h"
-    "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/test/opt.h"
-    "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/test/setup.h"
-    "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/test/usage.h"
-    "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/test/xoroshiro.h"
+    "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/test/measuretime.h"
+    "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/test/opt.h"
+    "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/test/setup.h"
+    "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/test/usage.h"
+    "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/test/xoroshiro.h"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/snmalloc" TYPE FILE FILES
-    "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/snmalloc/snmalloc.h"
-    "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/snmalloc/snmalloc_core.h"
-    "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src/src/snmalloc/snmalloc_front.h"
+    "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/snmalloc/snmalloc.h"
+    "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/snmalloc/snmalloc_core.h"
+    "/users/Xuran/hash_rt/build/_deps/snmalloc-src/src/snmalloc/snmalloc_front.h"
     )
 endif()
 
@@ -88,7 +88,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/snmalloc/snmalloc-config.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/snmalloc/snmalloc-config.cmake"
-         "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-build/CMakeFiles/Export/share/snmalloc/snmalloc-config.cmake")
+         "/users/Xuran/hash_rt/build/_deps/snmalloc-build/CMakeFiles/Export/share/snmalloc/snmalloc-config.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/snmalloc/snmalloc-config-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -97,6 +97,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/snmalloc" TYPE FILE FILES "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-build/CMakeFiles/Export/share/snmalloc/snmalloc-config.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/snmalloc" TYPE FILE FILES "/users/Xuran/hash_rt/build/_deps/snmalloc-build/CMakeFiles/Export/share/snmalloc/snmalloc-config.cmake")
 endif()
 
