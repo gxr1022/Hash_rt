@@ -1,10 +1,12 @@
 #!/bin/bash
 
-RUN_PATH="/mnt/nvme0/home/gxr/hash_rt"
+RUN_PATH="/users/Xuran/hash_rt"
 cur_date=$1
 
-logs_folder="$RUN_PATH/hashmap_log/$cur_date"
-output_csv="throughput_report.csv"
+logs_folder="$RUN_PATH/log/$cur_date"
+output_csv="$RUN_PATH/data/$cur_date/throughput_report.csv"
+
+mkdir -p "$RUN_PATH/data/$cur_date"
 
 tmp_file=$(mktemp)
 
@@ -52,7 +54,6 @@ for thread_num in $thread_nums; do
         row="$row,${value:-}"
     done
     
-    # Write the complete row to the CSV file (each row corresponds to one thread_num)
     echo "$row" >> "$output_csv"
 done
 

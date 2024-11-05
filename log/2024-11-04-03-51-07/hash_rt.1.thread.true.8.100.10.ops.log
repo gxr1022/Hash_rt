@@ -1,0 +1,29 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=1 --str_key_size=8 --str_value_size=100 --num_ops=10 --first_mode=true
+Running with 1 cores
+Init time:543707101
+Schedule time:34500
+Inserting key: 00000000
+bucketID:59617
+Inserting key: 00000000
+bucketID:59617
+Inserting key: 00000000
+bucketID:59617
+Inserting key: 00000000
+bucketID:59617
+Inserting key: 00000000
+bucketID:59617
+Inserting key: 00000000
+bucketID:59617
+Inserting key: 00000000
+bucketID:59617
+Inserting key: 00000000
+bucketID:59617
+Inserting key: 00000000
+bucketID:59617
+Inserting key: 00000000
+bucketID:59617
+Insert time:83506
+Run time:534304
+[report]: insert_overall_duration_ns : 534304
+[report]: insert_overall_operation_number : 10
+[report]: insert_overall_throughput : 18715.936995

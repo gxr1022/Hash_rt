@@ -22,8 +22,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(snmalloc-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/microsoft/snmalloc" "GIT_TAG" "d8f174c717500a834229da5f1f6bfe888442e81a"
-                    SOURCE_DIR          "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-src"
-                    BINARY_DIR          "/mnt/nvme0/home/gxr/hash_rt/build/_deps/snmalloc-build"
+                    SOURCE_DIR          "/users/Xuran/hash_rt/build/_deps/snmalloc-src"
+                    BINARY_DIR          "/users/Xuran/hash_rt/build/_deps/snmalloc-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""
