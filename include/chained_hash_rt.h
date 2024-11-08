@@ -103,7 +103,7 @@ public:
         std::cout << "Init time:" << duration_ns << std::endl;
     }
 
-    void insert(char* key, char* value)
+    void insert(char* key, char* value, uint64_t work_usec)
     {
         int hashValue = hashFunction(key, dirCapacity);
         // cout<< "bucketID:" << hashValue<<endl;
@@ -116,6 +116,7 @@ public:
                 // std::cout<< "inserting key:" << key << " value:" << value << endl;
                 inserted = bucketAcq->insert(key, value);
                 
+                busy_loop(work_usec);
                 // printStatus();
             };
         }

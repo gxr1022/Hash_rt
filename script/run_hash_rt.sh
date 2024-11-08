@@ -19,17 +19,14 @@ cmake -B ${BINARY_PATH} -GNinja -DUSE_SYSTEMATIC_TESTING=OFF -DCMAKE_BUILD_TYPE=
 if [[ "$?" != 0  ]];then
 	exit
 fi
-cmake --build . --clean-first
+cmake --build . 
 
 TEST_PATH=${BINARY_PATH}
 
-# num_of_ops_set=(128 1024 10240 102400)
-# num_of_ops_set=(1000000 10000000 100000000 1000000000)
-# num_of_ops_set=(1024 4096 8192 10240)
-# num_of_ops_set=(10000 100000 1000000 10000000 10000000)
-num_of_ops_set=(1000000)
+# num_of_ops_set=(1000 10000 100000 1000000)
+num_of_ops_set=(1000)
 modes=(true)
-
+work_usec=(0 1 10 100 1000)
 kv_sizes=(
 	# "8 100"
 	# "8 1024"
@@ -49,8 +46,12 @@ for kv_size in "${kv_sizes[@]}";do
     kv_size_array=( ${kv_size[*]} )
     key_size=${kv_size_array[0]}
     value_size=${kv_size_array[1]}
+for work in "${work_usec[@]}"; do
 for mode in "${modes[@]}"; do
 for num_of_ops in ${num_of_ops_set[*]};do
+    ops_log_path=${LOG_PATH}/ops_${num_of_ops}
+    mkdir -p ${ops_log_path}
+    
 for t in ${threads[*]};do
 for tn in ${test_name[*]};do
 
@@ -59,9 +60,10 @@ for tn in ${test_name[*]};do
 	--str_key_size=${key_size} \
 	--str_value_size=${value_size} \
 	--num_ops=${num_of_ops} \
-    --first_mode=${mode}
+    --first_mode=${mode} \
+    --work_usec=${work}
 	"
-	this_log_path=${LOG_PATH}/${tn}.${t}.thread.${mode}.${key_size}.${value_size}.${num_of_ops}.ops.log
+	this_log_path=${ops_log_path}/${tn}.${t}.thread.${mode}.${key_size}.${value_size}.${num_of_ops}.ops.log
 
 	echo ${cmd} 2>&1 | tee -a ${this_log_path}
 	timeout -v 3600 stdbuf -o0 ${cmd} 2>&1 | tee -a ${this_log_path}
@@ -72,5 +74,8 @@ done
 done
 done
 done
+done
 popd
 
+# ${RUN_PATH}/script/extract_partitioned_time.sh ${current}
+# python ${RUN_PATH}/script/plot_combined_bar_diff_cores.py ${current}

@@ -3,7 +3,7 @@
 RUN_PATH="/users/Xuran/hash_rt"
 cur_date=$1
 
-logs_folder="$RUN_PATH/log/$cur_date"
+logs_folder="$RUN_PATH/log/$cur_date/ops_1000000"
 output_csv="$RUN_PATH/data/$cur_date/throughput_report.csv"
 
 mkdir -p "$RUN_PATH/data/$cur_date"
