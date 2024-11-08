@@ -1,0 +1,9 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=2 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true
+Running with 2 cores
+Init time:235608541
+Init scheduler time:46031
+Schedule behaviours time:627211210
+Run behaviours time:158592324
+[report]: insert_overall_duration_ns : 158592324
+[report]: insert_overall_operation_number : 1000000
+[report]: insert_overall_throughput : 6305475.415065

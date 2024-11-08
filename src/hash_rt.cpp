@@ -29,7 +29,7 @@ DEFINE_uint64(time_interval, 10, "the time interval of insert operations");
 DEFINE_uint64(num_ops, 100000, "the number of insert operations");
 DEFINE_string(report_prefix, "[report]: ", "prefix of report data");
 DEFINE_bool(first_mode, true, "fist mode start multiply clients on the same key value server");
-
+DEFINE_uint64(work_usec, 0, "the time interval of insert operations");
 enum OperationType
 {
     INSERT,
@@ -78,21 +78,21 @@ void benchmark_report(const std::string benchmark_prefix, const std::string &nam
     standard_report(benchmark_prefix, name, value);
 }
 
-void performInsertions(ExtendibleHash *hashtable, size_t num_of_ops, size_t key_size, size_t value_size)
+void performInsertions(ExtendibleHash *hashtable, size_t num_of_ops, size_t key_size, size_t value_size, uint64_t work_usec)
 {
     for (int i = 0; i < num_of_ops; i++)
     {
         int r = rand() % HASH_INIT_BUCKET_NUM;
         char *key = from_uint64_to_char(r, key_size);
         // std::cout << "Inserting key: " << key << std::endl;
-        hashtable->insert(key, common_value);
+        hashtable->insert(key, common_value, work_usec);
         // hashtable->printStatus();
     }
 
     return;
 }
 
-void runTest(ExtendibleHash *hashTable, size_t cores, size_t num_of_ops, size_t key_size, size_t value_size)
+void runTest(ExtendibleHash *hashTable, size_t cores, size_t num_of_ops, size_t key_size, size_t value_size, uint64_t work_usec)
 {
 
     auto start_time = std::chrono::steady_clock::now();
@@ -103,20 +103,20 @@ void runTest(ExtendibleHash *hashTable, size_t cores, size_t num_of_ops, size_t 
 
     auto current_time = std::chrono::steady_clock::now();
     auto duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
-    std::cout << "Schedule time:" << duration_ns << std::endl;
+    std::cout << "Init scheduler time:" << duration_ns << std::endl;
 
     start_time = std::chrono::steady_clock::now();
-    performInsertions(hashTable, num_of_ops, key_size, value_size);
+    performInsertions(hashTable, num_of_ops, key_size, value_size, work_usec);
 
     current_time = std::chrono::steady_clock::now();
     duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
-    std::cout << "Insert time:" << duration_ns << std::endl;
+    std::cout << "Schedule behaviours time:" << duration_ns << std::endl;
 
     start_time = std::chrono::steady_clock::now();
     sched.run();
     current_time = std::chrono::steady_clock::now();
     duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
-    std::cout << "Run time:" << duration_ns << std::endl;
+    std::cout << "Run behaviours time:" << duration_ns << std::endl;
     
     double throughput = num_of_ops / (duration_ns / 1e9);
     benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
@@ -138,6 +138,7 @@ int main(int argc, char **argv)
     size_t value_size = FLAGS_str_value_size;
     size_t time_interval = FLAGS_time_interval;
     bool first_mode = FLAGS_first_mode;
+    uint64_t work_usec = FLAGS_work_usec;
     load_benchmark_prefix = "insert";
 
     common_value = new char[value_size + 1];
@@ -153,7 +154,7 @@ int main(int argc, char **argv)
     auto hashTable = new ExtendibleHash(HASH_INIT_BUCKET_NUM, HASH_ASSOC_NUM);
 
     // auto start_time = std::chrono::high_resolution_clock::now();
-    runTest(hashTable, cores, num_of_ops, key_size, value_size);
+    runTest(hashTable, cores, num_of_ops, key_size, value_size, work_usec);
     // double duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::system_clock::now() - start_time).count();
     // double throughput = num_of_ops / (duration_ns / 1e9);
     // benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
