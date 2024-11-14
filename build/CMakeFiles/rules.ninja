@@ -7,14 +7,14 @@
 
 # =============================================================================
 # Project: HashIndexProject
-# Configurations: Release
+# Configurations: Debug
 # =============================================================================
 # =============================================================================
 
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__hash_rt_Release
+rule CXX_COMPILER__hash_rt_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule CXX_COMPILER__hash_rt_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__hash_rt_Release
+rule CXX_EXECUTABLE_LINKER__hash_rt_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -41,7 +41,7 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-asymlock_Release
+rule CXX_COMPILER__func-sys-asymlock_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -51,7 +51,7 @@ rule CXX_COMPILER__func-sys-asymlock_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-asymlock_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-asymlock_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -60,7 +60,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-asymlock_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-atomic-sched_Release
+rule CXX_COMPILER__func-sys-atomic-sched_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -70,7 +70,7 @@ rule CXX_COMPILER__func-sys-atomic-sched_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-atomic-sched_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-atomic-sched_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -79,7 +79,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-atomic-sched_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-backpressure_Release
+rule CXX_COMPILER__func-sys-backpressure_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -89,7 +89,7 @@ rule CXX_COMPILER__func-sys-backpressure_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-backpressure_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-backpressure_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -98,7 +98,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-backpressure_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-bag_Release
+rule CXX_COMPILER__func-sys-bag_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -108,7 +108,7 @@ rule CXX_COMPILER__func-sys-bag_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-bag_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-bag_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -117,7 +117,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-bag_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-cown_weak_ref_Release
+rule CXX_COMPILER__func-sys-cown_weak_ref_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -127,7 +127,7 @@ rule CXX_COMPILER__func-sys-cown_weak_ref_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-cown_weak_ref_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-cown_weak_ref_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -136,7 +136,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-cown_weak_ref_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-cownchain_Release
+rule CXX_COMPILER__func-sys-cownchain_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -146,7 +146,7 @@ rule CXX_COMPILER__func-sys-cownchain_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-cownchain_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-cownchain_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -155,7 +155,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-cownchain_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-cowngc1_Release
+rule CXX_COMPILER__func-sys-cowngc1_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -165,7 +165,7 @@ rule CXX_COMPILER__func-sys-cowngc1_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-cowngc1_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-cowngc1_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -174,7 +174,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-cowngc1_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-cowngc4_Release
+rule CXX_COMPILER__func-sys-cowngc4_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -184,7 +184,7 @@ rule CXX_COMPILER__func-sys-cowngc4_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-cowngc4_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-cowngc4_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -193,7 +193,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-cowngc4_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-diningphilosophers_Release
+rule CXX_COMPILER__func-sys-diningphilosophers_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -203,7 +203,7 @@ rule CXX_COMPILER__func-sys-diningphilosophers_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-diningphilosophers_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-diningphilosophers_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -212,7 +212,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-diningphilosophers_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-dynamic-cownset_Release
+rule CXX_COMPILER__func-sys-dynamic-cownset_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -222,7 +222,7 @@ rule CXX_COMPILER__func-sys-dynamic-cownset_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-dynamic-cownset_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-dynamic-cownset_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -231,7 +231,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-dynamic-cownset_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-dynamic-cownset-readonly_Release
+rule CXX_COMPILER__func-sys-dynamic-cownset-readonly_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -241,7 +241,7 @@ rule CXX_COMPILER__func-sys-dynamic-cownset-readonly_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-dynamic-cownset-readonly_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-dynamic-cownset-readonly_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -250,7 +250,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-dynamic-cownset-readonly_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-early_release_Release
+rule CXX_COMPILER__func-sys-early_release_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -260,7 +260,7 @@ rule CXX_COMPILER__func-sys-early_release_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-early_release_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-early_release_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -269,7 +269,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-early_release_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-ext_ref_Release
+rule CXX_COMPILER__func-sys-ext_ref_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -279,7 +279,7 @@ rule CXX_COMPILER__func-sys-ext_ref_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-ext_ref_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-ext_ref_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -288,7 +288,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-ext_ref_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-ext_ref_freeze_Release
+rule CXX_COMPILER__func-sys-ext_ref_freeze_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -298,7 +298,7 @@ rule CXX_COMPILER__func-sys-ext_ref_freeze_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-ext_ref_freeze_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-ext_ref_freeze_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -307,7 +307,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-ext_ref_freeze_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-external_event_source_Release
+rule CXX_COMPILER__func-sys-external_event_source_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -317,7 +317,7 @@ rule CXX_COMPILER__func-sys-external_event_source_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-external_event_source_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-external_event_source_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -326,7 +326,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-external_event_source_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-external_threading_Release
+rule CXX_COMPILER__func-sys-external_threading_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -336,7 +336,7 @@ rule CXX_COMPILER__func-sys-external_threading_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-external_threading_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-external_threading_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -345,7 +345,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-external_threading_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-fair_Release
+rule CXX_COMPILER__func-sys-fair_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -355,7 +355,7 @@ rule CXX_COMPILER__func-sys-fair_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-fair_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-fair_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -364,7 +364,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-fair_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-fair_variance_Release
+rule CXX_COMPILER__func-sys-fair_variance_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -374,7 +374,7 @@ rule CXX_COMPILER__func-sys-fair_variance_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-fair_variance_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-fair_variance_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -383,7 +383,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-fair_variance_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-finalisers_Release
+rule CXX_COMPILER__func-sys-finalisers_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -393,7 +393,7 @@ rule CXX_COMPILER__func-sys-finalisers_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-finalisers_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-finalisers_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -402,7 +402,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-finalisers_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-freeze_Release
+rule CXX_COMPILER__func-sys-freeze_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -412,7 +412,7 @@ rule CXX_COMPILER__func-sys-freeze_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-freeze_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-freeze_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -421,7 +421,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-freeze_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-hashmap_Release
+rule CXX_COMPILER__func-sys-hashmap_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -431,7 +431,7 @@ rule CXX_COMPILER__func-sys-hashmap_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-hashmap_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-hashmap_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -440,7 +440,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-hashmap_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-lambdabehaviour_Release
+rule CXX_COMPILER__func-sys-lambdabehaviour_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -450,7 +450,7 @@ rule CXX_COMPILER__func-sys-lambdabehaviour_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-lambdabehaviour_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-lambdabehaviour_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -459,7 +459,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-lambdabehaviour_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-memory_Release
+rule CXX_COMPILER__func-sys-memory_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -469,7 +469,7 @@ rule CXX_COMPILER__func-sys-memory_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-memory_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-memory_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -478,7 +478,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-memory_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-multimessage_Release
+rule CXX_COMPILER__func-sys-multimessage_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -488,7 +488,7 @@ rule CXX_COMPILER__func-sys-multimessage_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-multimessage_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-multimessage_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -497,7 +497,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-multimessage_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-noticeboard_Release
+rule CXX_COMPILER__func-sys-noticeboard_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -507,7 +507,7 @@ rule CXX_COMPILER__func-sys-noticeboard_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-noticeboard_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-noticeboard_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -516,7 +516,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-noticeboard_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-noticeboard_weak_memory_Release
+rule CXX_COMPILER__func-sys-noticeboard_weak_memory_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -526,7 +526,7 @@ rule CXX_COMPILER__func-sys-noticeboard_weak_memory_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-noticeboard_weak_memory_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-noticeboard_weak_memory_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -535,7 +535,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-noticeboard_weak_memory_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-notify_Release
+rule CXX_COMPILER__func-sys-notify_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -545,7 +545,7 @@ rule CXX_COMPILER__func-sys-notify_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-notify_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-notify_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -554,7 +554,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-notify_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-promise_Release
+rule CXX_COMPILER__func-sys-promise_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -564,7 +564,7 @@ rule CXX_COMPILER__func-sys-promise_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-promise_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-promise_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -573,7 +573,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-promise_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-readonly_Release
+rule CXX_COMPILER__func-sys-readonly_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -583,7 +583,7 @@ rule CXX_COMPILER__func-sys-readonly_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-readonly_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-readonly_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -592,7 +592,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-readonly_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-rememberedset_Release
+rule CXX_COMPILER__func-sys-rememberedset_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -602,7 +602,7 @@ rule CXX_COMPILER__func-sys-rememberedset_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-rememberedset_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-rememberedset_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -611,7 +611,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-rememberedset_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-run-at-termination_Release
+rule CXX_COMPILER__func-sys-run-at-termination_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -621,7 +621,7 @@ rule CXX_COMPILER__func-sys-run-at-termination_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-run-at-termination_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-run-at-termination_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -630,7 +630,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-run-at-termination_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-runtimepause_Release
+rule CXX_COMPILER__func-sys-runtimepause_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -640,7 +640,7 @@ rule CXX_COMPILER__func-sys-runtimepause_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-runtimepause_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-runtimepause_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -649,7 +649,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-runtimepause_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-sched_Release
+rule CXX_COMPILER__func-sys-sched_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -659,7 +659,7 @@ rule CXX_COMPILER__func-sys-sched_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-sched_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-sched_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -668,7 +668,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-sched_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-scramble_Release
+rule CXX_COMPILER__func-sys-scramble_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -678,7 +678,7 @@ rule CXX_COMPILER__func-sys-scramble_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-scramble_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-scramble_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -687,7 +687,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-scramble_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-simp1_Release
+rule CXX_COMPILER__func-sys-simp1_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -697,7 +697,7 @@ rule CXX_COMPILER__func-sys-simp1_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-simp1_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-simp1_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -706,7 +706,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-simp1_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-simp2_Release
+rule CXX_COMPILER__func-sys-simp2_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -716,7 +716,7 @@ rule CXX_COMPILER__func-sys-simp2_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-simp2_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-simp2_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -725,7 +725,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-simp2_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-simp3_Release
+rule CXX_COMPILER__func-sys-simp3_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -735,7 +735,7 @@ rule CXX_COMPILER__func-sys-simp3_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-simp3_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-simp3_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -744,7 +744,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-simp3_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-simp4_Release
+rule CXX_COMPILER__func-sys-simp4_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -754,7 +754,7 @@ rule CXX_COMPILER__func-sys-simp4_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-simp4_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-simp4_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -763,7 +763,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-simp4_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-simp5_Release
+rule CXX_COMPILER__func-sys-simp5_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -773,7 +773,7 @@ rule CXX_COMPILER__func-sys-simp5_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-simp5_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-simp5_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -782,7 +782,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-simp5_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-simp6_Release
+rule CXX_COMPILER__func-sys-simp6_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -792,7 +792,7 @@ rule CXX_COMPILER__func-sys-simp6_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-simp6_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-simp6_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -801,7 +801,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-simp6_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-simp_read_Release
+rule CXX_COMPILER__func-sys-simp_read_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -811,7 +811,7 @@ rule CXX_COMPILER__func-sys-simp_read_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-simp_read_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-simp_read_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -820,7 +820,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-simp_read_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-simp_weak1_Release
+rule CXX_COMPILER__func-sys-simp_weak1_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -830,7 +830,7 @@ rule CXX_COMPILER__func-sys-simp_weak1_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-simp_weak1_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-simp_weak1_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -839,7 +839,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-simp_weak1_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-simp_weak2_Release
+rule CXX_COMPILER__func-sys-simp_weak2_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -849,7 +849,7 @@ rule CXX_COMPILER__func-sys-simp_weak2_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-simp_weak2_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-simp_weak2_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -858,7 +858,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-simp_weak2_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-simp_weak3_Release
+rule CXX_COMPILER__func-sys-simp_weak3_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -868,7 +868,7 @@ rule CXX_COMPILER__func-sys-simp_weak3_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-simp_weak3_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-simp_weak3_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -877,7 +877,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-simp_weak3_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-stackarray_Release
+rule CXX_COMPILER__func-sys-stackarray_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -887,7 +887,7 @@ rule CXX_COMPILER__func-sys-stackarray_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-stackarray_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-stackarray_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -896,7 +896,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-stackarray_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-steal_Release
+rule CXX_COMPILER__func-sys-steal_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -906,7 +906,7 @@ rule CXX_COMPILER__func-sys-steal_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-steal_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-steal_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -915,7 +915,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-steal_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-weak_leak_bug_Release
+rule CXX_COMPILER__func-sys-weak_leak_bug_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -925,7 +925,7 @@ rule CXX_COMPILER__func-sys-weak_leak_bug_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-weak_leak_bug_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-weak_leak_bug_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -934,7 +934,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-weak_leak_bug_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-when-repeated-cown_Release
+rule CXX_COMPILER__func-sys-when-repeated-cown_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -944,7 +944,7 @@ rule CXX_COMPILER__func-sys-when-repeated-cown_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-when-repeated-cown_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-when-repeated-cown_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -953,7 +953,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-when-repeated-cown_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-when-transfer_Release
+rule CXX_COMPILER__func-sys-when-transfer_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -963,7 +963,7 @@ rule CXX_COMPILER__func-sys-when-transfer_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-when-transfer_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-when-transfer_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -972,7 +972,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-when-transfer_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-work_Release
+rule CXX_COMPILER__func-sys-work_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -982,7 +982,7 @@ rule CXX_COMPILER__func-sys-work_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-work_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-work_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -991,7 +991,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-work_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-sys-yield_Release
+rule CXX_COMPILER__func-sys-yield_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1001,7 +1001,7 @@ rule CXX_COMPILER__func-sys-yield_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-sys-yield_Release
+rule CXX_EXECUTABLE_LINKER__func-sys-yield_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1010,7 +1010,7 @@ rule CXX_EXECUTABLE_LINKER__func-sys-yield_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-asymlock_Release
+rule CXX_COMPILER__func-con-asymlock_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1020,7 +1020,7 @@ rule CXX_COMPILER__func-con-asymlock_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-asymlock_Release
+rule CXX_EXECUTABLE_LINKER__func-con-asymlock_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1029,7 +1029,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-asymlock_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-atomic-sched_Release
+rule CXX_COMPILER__func-con-atomic-sched_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1039,7 +1039,7 @@ rule CXX_COMPILER__func-con-atomic-sched_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-atomic-sched_Release
+rule CXX_EXECUTABLE_LINKER__func-con-atomic-sched_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1048,7 +1048,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-atomic-sched_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-backpressure_Release
+rule CXX_COMPILER__func-con-backpressure_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1058,7 +1058,7 @@ rule CXX_COMPILER__func-con-backpressure_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-backpressure_Release
+rule CXX_EXECUTABLE_LINKER__func-con-backpressure_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1067,7 +1067,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-backpressure_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-bag_Release
+rule CXX_COMPILER__func-con-bag_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1077,7 +1077,7 @@ rule CXX_COMPILER__func-con-bag_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-bag_Release
+rule CXX_EXECUTABLE_LINKER__func-con-bag_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1086,7 +1086,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-bag_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-cown_weak_ref_Release
+rule CXX_COMPILER__func-con-cown_weak_ref_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1096,7 +1096,7 @@ rule CXX_COMPILER__func-con-cown_weak_ref_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-cown_weak_ref_Release
+rule CXX_EXECUTABLE_LINKER__func-con-cown_weak_ref_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1105,7 +1105,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-cown_weak_ref_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-cownchain_Release
+rule CXX_COMPILER__func-con-cownchain_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1115,7 +1115,7 @@ rule CXX_COMPILER__func-con-cownchain_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-cownchain_Release
+rule CXX_EXECUTABLE_LINKER__func-con-cownchain_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1124,7 +1124,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-cownchain_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-cowngc1_Release
+rule CXX_COMPILER__func-con-cowngc1_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1134,7 +1134,7 @@ rule CXX_COMPILER__func-con-cowngc1_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-cowngc1_Release
+rule CXX_EXECUTABLE_LINKER__func-con-cowngc1_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1143,7 +1143,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-cowngc1_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-cowngc4_Release
+rule CXX_COMPILER__func-con-cowngc4_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1153,7 +1153,7 @@ rule CXX_COMPILER__func-con-cowngc4_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-cowngc4_Release
+rule CXX_EXECUTABLE_LINKER__func-con-cowngc4_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1162,7 +1162,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-cowngc4_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-diningphilosophers_Release
+rule CXX_COMPILER__func-con-diningphilosophers_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1172,7 +1172,7 @@ rule CXX_COMPILER__func-con-diningphilosophers_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-diningphilosophers_Release
+rule CXX_EXECUTABLE_LINKER__func-con-diningphilosophers_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1181,7 +1181,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-diningphilosophers_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-dynamic-cownset_Release
+rule CXX_COMPILER__func-con-dynamic-cownset_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1191,7 +1191,7 @@ rule CXX_COMPILER__func-con-dynamic-cownset_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-dynamic-cownset_Release
+rule CXX_EXECUTABLE_LINKER__func-con-dynamic-cownset_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1200,7 +1200,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-dynamic-cownset_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-dynamic-cownset-readonly_Release
+rule CXX_COMPILER__func-con-dynamic-cownset-readonly_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1210,7 +1210,7 @@ rule CXX_COMPILER__func-con-dynamic-cownset-readonly_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-dynamic-cownset-readonly_Release
+rule CXX_EXECUTABLE_LINKER__func-con-dynamic-cownset-readonly_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1219,7 +1219,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-dynamic-cownset-readonly_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-early_release_Release
+rule CXX_COMPILER__func-con-early_release_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1229,7 +1229,7 @@ rule CXX_COMPILER__func-con-early_release_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-early_release_Release
+rule CXX_EXECUTABLE_LINKER__func-con-early_release_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1238,7 +1238,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-early_release_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-ext_ref_Release
+rule CXX_COMPILER__func-con-ext_ref_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1248,7 +1248,7 @@ rule CXX_COMPILER__func-con-ext_ref_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-ext_ref_Release
+rule CXX_EXECUTABLE_LINKER__func-con-ext_ref_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1257,7 +1257,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-ext_ref_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-ext_ref_freeze_Release
+rule CXX_COMPILER__func-con-ext_ref_freeze_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1267,7 +1267,7 @@ rule CXX_COMPILER__func-con-ext_ref_freeze_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-ext_ref_freeze_Release
+rule CXX_EXECUTABLE_LINKER__func-con-ext_ref_freeze_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1276,7 +1276,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-ext_ref_freeze_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-external_event_source_Release
+rule CXX_COMPILER__func-con-external_event_source_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1286,7 +1286,7 @@ rule CXX_COMPILER__func-con-external_event_source_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-external_event_source_Release
+rule CXX_EXECUTABLE_LINKER__func-con-external_event_source_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1295,7 +1295,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-external_event_source_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-external_threading_Release
+rule CXX_COMPILER__func-con-external_threading_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1305,7 +1305,7 @@ rule CXX_COMPILER__func-con-external_threading_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-external_threading_Release
+rule CXX_EXECUTABLE_LINKER__func-con-external_threading_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1314,7 +1314,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-external_threading_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-fair_Release
+rule CXX_COMPILER__func-con-fair_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1324,7 +1324,7 @@ rule CXX_COMPILER__func-con-fair_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-fair_Release
+rule CXX_EXECUTABLE_LINKER__func-con-fair_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1333,7 +1333,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-fair_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-fair_variance_Release
+rule CXX_COMPILER__func-con-fair_variance_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1343,7 +1343,7 @@ rule CXX_COMPILER__func-con-fair_variance_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-fair_variance_Release
+rule CXX_EXECUTABLE_LINKER__func-con-fair_variance_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1352,7 +1352,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-fair_variance_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-finalisers_Release
+rule CXX_COMPILER__func-con-finalisers_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1362,7 +1362,7 @@ rule CXX_COMPILER__func-con-finalisers_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-finalisers_Release
+rule CXX_EXECUTABLE_LINKER__func-con-finalisers_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1371,7 +1371,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-finalisers_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-freeze_Release
+rule CXX_COMPILER__func-con-freeze_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1381,7 +1381,7 @@ rule CXX_COMPILER__func-con-freeze_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-freeze_Release
+rule CXX_EXECUTABLE_LINKER__func-con-freeze_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1390,7 +1390,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-freeze_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-hashmap_Release
+rule CXX_COMPILER__func-con-hashmap_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1400,7 +1400,7 @@ rule CXX_COMPILER__func-con-hashmap_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-hashmap_Release
+rule CXX_EXECUTABLE_LINKER__func-con-hashmap_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1409,7 +1409,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-hashmap_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-lambdabehaviour_Release
+rule CXX_COMPILER__func-con-lambdabehaviour_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1419,7 +1419,7 @@ rule CXX_COMPILER__func-con-lambdabehaviour_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-lambdabehaviour_Release
+rule CXX_EXECUTABLE_LINKER__func-con-lambdabehaviour_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1428,7 +1428,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-lambdabehaviour_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-memory_Release
+rule CXX_COMPILER__func-con-memory_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1438,7 +1438,7 @@ rule CXX_COMPILER__func-con-memory_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-memory_Release
+rule CXX_EXECUTABLE_LINKER__func-con-memory_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1447,7 +1447,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-memory_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-multimessage_Release
+rule CXX_COMPILER__func-con-multimessage_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1457,7 +1457,7 @@ rule CXX_COMPILER__func-con-multimessage_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-multimessage_Release
+rule CXX_EXECUTABLE_LINKER__func-con-multimessage_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1466,7 +1466,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-multimessage_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-noticeboard_Release
+rule CXX_COMPILER__func-con-noticeboard_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1476,7 +1476,7 @@ rule CXX_COMPILER__func-con-noticeboard_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-noticeboard_Release
+rule CXX_EXECUTABLE_LINKER__func-con-noticeboard_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1485,7 +1485,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-noticeboard_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-noticeboard_weak_memory_Release
+rule CXX_COMPILER__func-con-noticeboard_weak_memory_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1495,7 +1495,7 @@ rule CXX_COMPILER__func-con-noticeboard_weak_memory_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-noticeboard_weak_memory_Release
+rule CXX_EXECUTABLE_LINKER__func-con-noticeboard_weak_memory_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1504,7 +1504,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-noticeboard_weak_memory_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-notify_Release
+rule CXX_COMPILER__func-con-notify_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1514,7 +1514,7 @@ rule CXX_COMPILER__func-con-notify_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-notify_Release
+rule CXX_EXECUTABLE_LINKER__func-con-notify_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1523,7 +1523,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-notify_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-promise_Release
+rule CXX_COMPILER__func-con-promise_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1533,7 +1533,7 @@ rule CXX_COMPILER__func-con-promise_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-promise_Release
+rule CXX_EXECUTABLE_LINKER__func-con-promise_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1542,7 +1542,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-promise_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-readonly_Release
+rule CXX_COMPILER__func-con-readonly_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1552,7 +1552,7 @@ rule CXX_COMPILER__func-con-readonly_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-readonly_Release
+rule CXX_EXECUTABLE_LINKER__func-con-readonly_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1561,7 +1561,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-readonly_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-rememberedset_Release
+rule CXX_COMPILER__func-con-rememberedset_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1571,7 +1571,7 @@ rule CXX_COMPILER__func-con-rememberedset_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-rememberedset_Release
+rule CXX_EXECUTABLE_LINKER__func-con-rememberedset_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1580,7 +1580,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-rememberedset_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-run-at-termination_Release
+rule CXX_COMPILER__func-con-run-at-termination_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1590,7 +1590,7 @@ rule CXX_COMPILER__func-con-run-at-termination_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-run-at-termination_Release
+rule CXX_EXECUTABLE_LINKER__func-con-run-at-termination_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1599,7 +1599,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-run-at-termination_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-runtimepause_Release
+rule CXX_COMPILER__func-con-runtimepause_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1609,7 +1609,7 @@ rule CXX_COMPILER__func-con-runtimepause_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-runtimepause_Release
+rule CXX_EXECUTABLE_LINKER__func-con-runtimepause_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1618,7 +1618,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-runtimepause_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-sched_Release
+rule CXX_COMPILER__func-con-sched_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1628,7 +1628,7 @@ rule CXX_COMPILER__func-con-sched_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-sched_Release
+rule CXX_EXECUTABLE_LINKER__func-con-sched_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1637,7 +1637,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-sched_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-scramble_Release
+rule CXX_COMPILER__func-con-scramble_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1647,7 +1647,7 @@ rule CXX_COMPILER__func-con-scramble_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-scramble_Release
+rule CXX_EXECUTABLE_LINKER__func-con-scramble_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1656,7 +1656,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-scramble_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-simp1_Release
+rule CXX_COMPILER__func-con-simp1_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1666,7 +1666,7 @@ rule CXX_COMPILER__func-con-simp1_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-simp1_Release
+rule CXX_EXECUTABLE_LINKER__func-con-simp1_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1675,7 +1675,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-simp1_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-simp2_Release
+rule CXX_COMPILER__func-con-simp2_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1685,7 +1685,7 @@ rule CXX_COMPILER__func-con-simp2_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-simp2_Release
+rule CXX_EXECUTABLE_LINKER__func-con-simp2_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1694,7 +1694,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-simp2_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-simp3_Release
+rule CXX_COMPILER__func-con-simp3_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1704,7 +1704,7 @@ rule CXX_COMPILER__func-con-simp3_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-simp3_Release
+rule CXX_EXECUTABLE_LINKER__func-con-simp3_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1713,7 +1713,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-simp3_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-simp4_Release
+rule CXX_COMPILER__func-con-simp4_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1723,7 +1723,7 @@ rule CXX_COMPILER__func-con-simp4_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-simp4_Release
+rule CXX_EXECUTABLE_LINKER__func-con-simp4_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1732,7 +1732,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-simp4_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-simp5_Release
+rule CXX_COMPILER__func-con-simp5_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1742,7 +1742,7 @@ rule CXX_COMPILER__func-con-simp5_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-simp5_Release
+rule CXX_EXECUTABLE_LINKER__func-con-simp5_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1751,7 +1751,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-simp5_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-simp6_Release
+rule CXX_COMPILER__func-con-simp6_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1761,7 +1761,7 @@ rule CXX_COMPILER__func-con-simp6_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-simp6_Release
+rule CXX_EXECUTABLE_LINKER__func-con-simp6_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1770,7 +1770,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-simp6_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-simp_read_Release
+rule CXX_COMPILER__func-con-simp_read_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1780,7 +1780,7 @@ rule CXX_COMPILER__func-con-simp_read_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-simp_read_Release
+rule CXX_EXECUTABLE_LINKER__func-con-simp_read_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1789,7 +1789,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-simp_read_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-simp_weak1_Release
+rule CXX_COMPILER__func-con-simp_weak1_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1799,7 +1799,7 @@ rule CXX_COMPILER__func-con-simp_weak1_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-simp_weak1_Release
+rule CXX_EXECUTABLE_LINKER__func-con-simp_weak1_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1808,7 +1808,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-simp_weak1_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-simp_weak2_Release
+rule CXX_COMPILER__func-con-simp_weak2_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1818,7 +1818,7 @@ rule CXX_COMPILER__func-con-simp_weak2_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-simp_weak2_Release
+rule CXX_EXECUTABLE_LINKER__func-con-simp_weak2_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1827,7 +1827,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-simp_weak2_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-simp_weak3_Release
+rule CXX_COMPILER__func-con-simp_weak3_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1837,7 +1837,7 @@ rule CXX_COMPILER__func-con-simp_weak3_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-simp_weak3_Release
+rule CXX_EXECUTABLE_LINKER__func-con-simp_weak3_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1846,7 +1846,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-simp_weak3_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-stackarray_Release
+rule CXX_COMPILER__func-con-stackarray_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1856,7 +1856,7 @@ rule CXX_COMPILER__func-con-stackarray_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-stackarray_Release
+rule CXX_EXECUTABLE_LINKER__func-con-stackarray_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1865,7 +1865,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-stackarray_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-steal_Release
+rule CXX_COMPILER__func-con-steal_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1875,7 +1875,7 @@ rule CXX_COMPILER__func-con-steal_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-steal_Release
+rule CXX_EXECUTABLE_LINKER__func-con-steal_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1884,7 +1884,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-steal_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-weak_leak_bug_Release
+rule CXX_COMPILER__func-con-weak_leak_bug_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1894,7 +1894,7 @@ rule CXX_COMPILER__func-con-weak_leak_bug_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-weak_leak_bug_Release
+rule CXX_EXECUTABLE_LINKER__func-con-weak_leak_bug_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1903,7 +1903,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-weak_leak_bug_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-when-repeated-cown_Release
+rule CXX_COMPILER__func-con-when-repeated-cown_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1913,7 +1913,7 @@ rule CXX_COMPILER__func-con-when-repeated-cown_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-when-repeated-cown_Release
+rule CXX_EXECUTABLE_LINKER__func-con-when-repeated-cown_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1922,7 +1922,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-when-repeated-cown_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-when-transfer_Release
+rule CXX_COMPILER__func-con-when-transfer_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1932,7 +1932,7 @@ rule CXX_COMPILER__func-con-when-transfer_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-when-transfer_Release
+rule CXX_EXECUTABLE_LINKER__func-con-when-transfer_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1941,7 +1941,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-when-transfer_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-work_Release
+rule CXX_COMPILER__func-con-work_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1951,7 +1951,7 @@ rule CXX_COMPILER__func-con-work_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-work_Release
+rule CXX_EXECUTABLE_LINKER__func-con-work_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1960,7 +1960,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-work_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__func-con-yield_Release
+rule CXX_COMPILER__func-con-yield_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1970,7 +1970,7 @@ rule CXX_COMPILER__func-con-yield_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__func-con-yield_Release
+rule CXX_EXECUTABLE_LINKER__func-con-yield_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1979,7 +1979,7 @@ rule CXX_EXECUTABLE_LINKER__func-con-yield_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-sys-backpressure1_Release
+rule CXX_COMPILER__perf-sys-backpressure1_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -1989,7 +1989,7 @@ rule CXX_COMPILER__perf-sys-backpressure1_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-sys-backpressure1_Release
+rule CXX_EXECUTABLE_LINKER__perf-sys-backpressure1_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1998,7 +1998,7 @@ rule CXX_EXECUTABLE_LINKER__perf-sys-backpressure1_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-sys-backpressure2_Release
+rule CXX_COMPILER__perf-sys-backpressure2_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2008,7 +2008,7 @@ rule CXX_COMPILER__perf-sys-backpressure2_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-sys-backpressure2_Release
+rule CXX_EXECUTABLE_LINKER__perf-sys-backpressure2_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2017,7 +2017,7 @@ rule CXX_EXECUTABLE_LINKER__perf-sys-backpressure2_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-sys-backpressure3_Release
+rule CXX_COMPILER__perf-sys-backpressure3_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2027,7 +2027,7 @@ rule CXX_COMPILER__perf-sys-backpressure3_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-sys-backpressure3_Release
+rule CXX_EXECUTABLE_LINKER__perf-sys-backpressure3_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2036,7 +2036,7 @@ rule CXX_EXECUTABLE_LINKER__perf-sys-backpressure3_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-sys-banking_Release
+rule CXX_COMPILER__perf-sys-banking_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2046,7 +2046,7 @@ rule CXX_COMPILER__perf-sys-banking_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-sys-banking_Release
+rule CXX_EXECUTABLE_LINKER__perf-sys-banking_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2055,7 +2055,7 @@ rule CXX_EXECUTABLE_LINKER__perf-sys-banking_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-sys-dining_phil_Release
+rule CXX_COMPILER__perf-sys-dining_phil_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2065,7 +2065,7 @@ rule CXX_COMPILER__perf-sys-dining_phil_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-sys-dining_phil_Release
+rule CXX_EXECUTABLE_LINKER__perf-sys-dining_phil_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2074,7 +2074,7 @@ rule CXX_EXECUTABLE_LINKER__perf-sys-dining_phil_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-sys-epoch_Release
+rule CXX_COMPILER__perf-sys-epoch_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2084,7 +2084,7 @@ rule CXX_COMPILER__perf-sys-epoch_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-sys-epoch_Release
+rule CXX_EXECUTABLE_LINKER__perf-sys-epoch_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2093,7 +2093,7 @@ rule CXX_EXECUTABLE_LINKER__perf-sys-epoch_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-sys-hashtable_Release
+rule CXX_COMPILER__perf-sys-hashtable_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2103,7 +2103,7 @@ rule CXX_COMPILER__perf-sys-hashtable_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-sys-hashtable_Release
+rule CXX_EXECUTABLE_LINKER__perf-sys-hashtable_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2112,7 +2112,7 @@ rule CXX_EXECUTABLE_LINKER__perf-sys-hashtable_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-sys-immutablescc_Release
+rule CXX_COMPILER__perf-sys-immutablescc_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2122,7 +2122,7 @@ rule CXX_COMPILER__perf-sys-immutablescc_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-sys-immutablescc_Release
+rule CXX_EXECUTABLE_LINKER__perf-sys-immutablescc_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2131,7 +2131,7 @@ rule CXX_EXECUTABLE_LINKER__perf-sys-immutablescc_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-sys-schedule_Release
+rule CXX_COMPILER__perf-sys-schedule_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2141,7 +2141,7 @@ rule CXX_COMPILER__perf-sys-schedule_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-sys-schedule_Release
+rule CXX_EXECUTABLE_LINKER__perf-sys-schedule_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2150,7 +2150,7 @@ rule CXX_EXECUTABLE_LINKER__perf-sys-schedule_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-sys-smallbank_Release
+rule CXX_COMPILER__perf-sys-smallbank_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2160,7 +2160,7 @@ rule CXX_COMPILER__perf-sys-smallbank_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-sys-smallbank_Release
+rule CXX_EXECUTABLE_LINKER__perf-sys-smallbank_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2169,7 +2169,7 @@ rule CXX_EXECUTABLE_LINKER__perf-sys-smallbank_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-sys-ubench_Release
+rule CXX_COMPILER__perf-sys-ubench_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2179,7 +2179,7 @@ rule CXX_COMPILER__perf-sys-ubench_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-sys-ubench_Release
+rule CXX_EXECUTABLE_LINKER__perf-sys-ubench_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2188,7 +2188,7 @@ rule CXX_EXECUTABLE_LINKER__perf-sys-ubench_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-sys-worksteal_Release
+rule CXX_COMPILER__perf-sys-worksteal_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2198,7 +2198,7 @@ rule CXX_COMPILER__perf-sys-worksteal_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-sys-worksteal_Release
+rule CXX_EXECUTABLE_LINKER__perf-sys-worksteal_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2207,7 +2207,7 @@ rule CXX_EXECUTABLE_LINKER__perf-sys-worksteal_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-con-backpressure1_Release
+rule CXX_COMPILER__perf-con-backpressure1_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2217,7 +2217,7 @@ rule CXX_COMPILER__perf-con-backpressure1_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-con-backpressure1_Release
+rule CXX_EXECUTABLE_LINKER__perf-con-backpressure1_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2226,7 +2226,7 @@ rule CXX_EXECUTABLE_LINKER__perf-con-backpressure1_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-con-backpressure2_Release
+rule CXX_COMPILER__perf-con-backpressure2_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2236,7 +2236,7 @@ rule CXX_COMPILER__perf-con-backpressure2_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-con-backpressure2_Release
+rule CXX_EXECUTABLE_LINKER__perf-con-backpressure2_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2245,7 +2245,7 @@ rule CXX_EXECUTABLE_LINKER__perf-con-backpressure2_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-con-backpressure3_Release
+rule CXX_COMPILER__perf-con-backpressure3_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2255,7 +2255,7 @@ rule CXX_COMPILER__perf-con-backpressure3_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-con-backpressure3_Release
+rule CXX_EXECUTABLE_LINKER__perf-con-backpressure3_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2264,7 +2264,7 @@ rule CXX_EXECUTABLE_LINKER__perf-con-backpressure3_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-con-banking_Release
+rule CXX_COMPILER__perf-con-banking_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2274,7 +2274,7 @@ rule CXX_COMPILER__perf-con-banking_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-con-banking_Release
+rule CXX_EXECUTABLE_LINKER__perf-con-banking_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2283,7 +2283,7 @@ rule CXX_EXECUTABLE_LINKER__perf-con-banking_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-con-dining_phil_Release
+rule CXX_COMPILER__perf-con-dining_phil_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2293,7 +2293,7 @@ rule CXX_COMPILER__perf-con-dining_phil_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-con-dining_phil_Release
+rule CXX_EXECUTABLE_LINKER__perf-con-dining_phil_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2302,7 +2302,7 @@ rule CXX_EXECUTABLE_LINKER__perf-con-dining_phil_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-con-epoch_Release
+rule CXX_COMPILER__perf-con-epoch_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2312,7 +2312,7 @@ rule CXX_COMPILER__perf-con-epoch_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-con-epoch_Release
+rule CXX_EXECUTABLE_LINKER__perf-con-epoch_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2321,7 +2321,7 @@ rule CXX_EXECUTABLE_LINKER__perf-con-epoch_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-con-hashtable_Release
+rule CXX_COMPILER__perf-con-hashtable_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2331,7 +2331,7 @@ rule CXX_COMPILER__perf-con-hashtable_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-con-hashtable_Release
+rule CXX_EXECUTABLE_LINKER__perf-con-hashtable_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2340,7 +2340,7 @@ rule CXX_EXECUTABLE_LINKER__perf-con-hashtable_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-con-immutablescc_Release
+rule CXX_COMPILER__perf-con-immutablescc_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2350,7 +2350,7 @@ rule CXX_COMPILER__perf-con-immutablescc_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-con-immutablescc_Release
+rule CXX_EXECUTABLE_LINKER__perf-con-immutablescc_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2359,7 +2359,7 @@ rule CXX_EXECUTABLE_LINKER__perf-con-immutablescc_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-con-schedule_Release
+rule CXX_COMPILER__perf-con-schedule_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2369,7 +2369,7 @@ rule CXX_COMPILER__perf-con-schedule_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-con-schedule_Release
+rule CXX_EXECUTABLE_LINKER__perf-con-schedule_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2378,7 +2378,7 @@ rule CXX_EXECUTABLE_LINKER__perf-con-schedule_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-con-smallbank_Release
+rule CXX_COMPILER__perf-con-smallbank_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2388,7 +2388,7 @@ rule CXX_COMPILER__perf-con-smallbank_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-con-smallbank_Release
+rule CXX_EXECUTABLE_LINKER__perf-con-smallbank_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2397,7 +2397,7 @@ rule CXX_EXECUTABLE_LINKER__perf-con-smallbank_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-con-ubench_Release
+rule CXX_COMPILER__perf-con-ubench_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2407,7 +2407,7 @@ rule CXX_COMPILER__perf-con-ubench_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-con-ubench_Release
+rule CXX_EXECUTABLE_LINKER__perf-con-ubench_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -2416,7 +2416,7 @@ rule CXX_EXECUTABLE_LINKER__perf-con-ubench_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__perf-con-worksteal_Release
+rule CXX_COMPILER__perf-con-worksteal_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -2426,7 +2426,7 @@ rule CXX_COMPILER__perf-con-worksteal_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__perf-con-worksteal_Release
+rule CXX_EXECUTABLE_LINKER__perf-con-worksteal_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
