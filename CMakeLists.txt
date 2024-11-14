@@ -9,7 +9,7 @@ include_directories(
     ${GFLAGS_INCLUDE_DIRS}
 )
 
-set(SOURCES src/hash_rt.cpp util/util.hpp)
+set(SOURCES util/util.hpp src/hash_main.cpp)
 
 find_package(gflags REQUIRED)
 
