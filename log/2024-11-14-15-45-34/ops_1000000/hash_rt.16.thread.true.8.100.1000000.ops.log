@@ -1,0 +1,6 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=16 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=16 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --seed 963879058
+Init time:926314557
+scheduler_cores: 8
+hash_rt: /users/Xuran/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/mpmcq.h:211: verona::rt::MPMCQ<T>::~MPMCQ() [with T = verona::rt::Work]: Assertion `is_empty()' failed.

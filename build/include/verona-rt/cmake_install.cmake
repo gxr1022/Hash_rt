@@ -45,7 +45,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/users/Xuran/hash_rt/build/include/verona-rt/src/cmake_install.cmake")
-  include("/users/Xuran/hash_rt/build/include/verona-rt/test/cmake_install.cmake")
 
 endif()
 

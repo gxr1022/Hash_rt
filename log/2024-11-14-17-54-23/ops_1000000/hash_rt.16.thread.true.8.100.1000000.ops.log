@@ -1,0 +1,69 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=16 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=16 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --seed 2544505026
+Init time:902595892
+Pending when ops: 0, Queue size: 4
+Processing batch, queue size: 14
+Pending when ops: 0, Queue size: 84
+Processing batch, queue size: 85
+Pending when ops: 0, Queue size: 150
+Processing batch, queue size: 190
+Pending when ops: 0, Queue size: 396
+Processing batch, queue size: 399
+Pending when ops: 0, Queue size: 1024
+Processing batch, queue size: 1039
+Pending when ops: 0, Queue size: 2719
+Processing batch, queue size: 2720
+Pending when ops: 0, Queue size: 4218
+Processing batch, queue size: 4237
+Pending when ops: 0, Queue size: 6068
+Processing batch, queue size: 6070
+Pending when ops: 0, Queue size: 8063
+Processing batch, queue size: 8064
+Pending when ops: 0, Queue size: 9311
+Processing batch, queue size: 9314
+Pending when ops: 0, Queue size: 11637
+Processing batch, queue size: 11641
+Pending when ops: 0, Queue size: 13639
+Processing batch, queue size: 13641
+Pending when ops: 0, Queue size: 15494
+Processing batch, queue size: 15496
+Pending when ops: 0, Queue size: 16384
+Processing batch, queue size: 16452
+Pending when ops: 0, Queue size: 18219
+Processing batch, queue size: 18233
+Pending when ops: 0, Queue size: 20081
+Processing batch, queue size: 20094
+Pending when ops: 0, Queue size: 21885
+Processing batch, queue size: 21887
+Pending when ops: 0, Queue size: 23840
+Processing batch, queue size: 23840
+Pending when ops: 0, Queue size: 25913
+Processing batch, queue size: 25917
+Pending when ops: 0, Queue size: 27750
+Processing batch, queue size: 27752
+Pending when ops: 0, Queue size: 29760
+Processing batch, queue size: 29763
+Pending when ops: 0, Queue size: 31506
+Processing batch, queue size: 31510
+Pending when ops: 0, Queue size: 32768
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 73833894
+[report]: scheduler_total_when_schedules : 18688
+[report]: scheduler_avg_when_time_ns : 20929.505512
+[report]: scheduler_total_when_time_ns : 391130599
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 18685
+[report]: timing_run_time_ns : 73833894
+[report]: timing_avg_when_time_ns : 20929.505512
+[report]: timing_total_when_time_ns : 391130599
+completed_ops: 18685
+hash_rt: tpp.c:83: __pthread_tpp_change_priority: Assertion `new_prio == -1 || (new_prio >= fifo_min_prio && new_prio <= fifo_max_prio)' failed.

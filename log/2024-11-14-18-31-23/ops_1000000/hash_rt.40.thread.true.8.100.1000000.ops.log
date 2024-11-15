@@ -1,0 +1,56 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=40 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=40 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --seed 2768101158
+Init time:907021834
+Pending when ops: 0, Queue size: 82
+Processing batch, queue size: 87
+Pending when ops: 0, Queue size: 249
+Processing batch, queue size: 252
+Pending when ops: 0, Queue size: 414
+Processing batch, queue size: 433
+Pending when ops: 0, Queue size: 777
+Processing batch, queue size: 795
+Pending when ops: 0, Queue size: 1947
+Processing batch, queue size: 1949
+Pending when ops: 0, Queue size: 3580
+Processing batch, queue size: 3583
+Pending when ops: 0, Queue size: 5082
+Processing batch, queue size: 5111
+Pending when ops: 0, Queue size: 6753
+Processing batch, queue size: 6904
+Pending when ops: 0, Queue size: 8155
+Processing batch, queue size: 8175
+Pending when ops: 0, Queue size: 8839
+Processing batch, queue size: 8841
+Pending when ops: 0, Queue size: 10395
+Processing batch, queue size: 10417
+Pending when ops: 0, Queue size: 12128
+Processing batch, queue size: 12189
+Pending when ops: 0, Queue size: 13517
+Processing batch, queue size: 13520
+Pending when ops: 0, Queue size: 15318
+Processing batch, queue size: 15322
+Pending when ops: 0, Queue size: 16384
+Pausing: active threads: 20
+Pausing: active threads: 19
+Pausing: active threads: 18
+Pausing: active threads: 17
+Pausing: active threads: 16
+Pausing: active threads: 15
+Pausing: active threads: 14
+Pausing: active threads: 13
+Pausing: active threads: 12
+Pausing: active threads: 11
+Pausing: active threads: 10
+Pausing: active threads: 9
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Processing batch, queue size: 16518
+Pausing: active threads: 1
+Teardown: all threads stopped
+hash_rt: /users/Xuran/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/mpmcq.h:211: verona::rt::MPMCQ<T>::~MPMCQ() [with T = verona::rt::Work]: Assertion `is_empty()' failed.

@@ -1,0 +1,9 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=38 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=38 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --seed 192171086
+Init time:910376860
+Run behaviours time:2753661
+[report]: [report]: _overall_duration_ns : 2753661
+[report]: [report]: _overall_operation_number : 100000
+[report]: [report]: _overall_throughput : 36315290.807401
+double free or corruption (out)

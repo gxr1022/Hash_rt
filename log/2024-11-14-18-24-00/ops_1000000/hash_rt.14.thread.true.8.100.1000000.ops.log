@@ -1,0 +1,81 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=14 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=14 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --seed 2029922088
+Init time:896039859
+Pending when ops: 0, Queue size: 16
+Processing batch, queue size: 17
+Pending when ops: 0, Queue size: 73
+Processing batch, queue size: 75
+Pending when ops: 0, Queue size: 128
+Processing batch, queue size: 148
+Pending when ops: 0, Queue size: 296
+Processing batch, queue size: 308
+Pending when ops: 0, Queue size: 650
+Processing batch, queue size: 652
+Pending when ops: 0, Queue size: 1504
+Processing batch, queue size: 1505
+Pending when ops: 0, Queue size: 2649
+Processing batch, queue size: 2652
+Pending when ops: 0, Queue size: 3997
+Processing batch, queue size: 3999
+Pending when ops: 0, Queue size: 4997
+Processing batch, queue size: 5011
+Pending when ops: 0, Queue size: 6414
+Processing batch, queue size: 6417
+Pending when ops: 0, Queue size: 7838
+Processing batch, queue size: 7849
+Pending when ops: 0, Queue size: 8275
+Processing batch, queue size: 8276
+Pending when ops: 0, Queue size: 9768
+Processing batch, queue size: 9769
+Pending when ops: 0, Queue size: 11266
+Processing batch, queue size: 11267
+Pending when ops: 0, Queue size: 12774
+Processing batch, queue size: 12774
+Pending when ops: 0, Queue size: 14239
+Processing batch, queue size: 14253
+Pending when ops: 0, Queue size: 15578
+Processing batch, queue size: 15585
+Pending when ops: 0, Queue size: 16384
+Processing batch, queue size: 16427
+Pending when ops: 0, Queue size: 17796
+Processing batch, queue size: 17799
+Pending when ops: 0, Queue size: 19246
+Processing batch, queue size: 19248
+Pending when ops: 0, Queue size: 20778
+Processing batch, queue size: 20781
+Pending when ops: 0, Queue size: 22195
+Processing batch, queue size: 22197
+Pending when ops: 0, Queue size: 23548
+Processing batch, queue size: 23550
+Pending when ops: 0, Queue size: 24858
+Processing batch, queue size: 24860
+Pending when ops: 0, Queue size: 26266
+Processing batch, queue size: 26268
+Pending when ops: 0, Queue size: 27647
+Processing batch, queue size: 27648
+Pending when ops: 0, Queue size: 29081
+Processing batch, queue size: 29083
+Pending when ops: 0, Queue size: 30460
+Processing batch, queue size: 30463
+Pending when ops: 0, Queue size: 31817
+Processing batch, queue size: 31829
+Pending when ops: 0, Queue size: 32768
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 86920730
+[report]: scheduler_total_when_schedules : 25200
+[report]: scheduler_total_when_time_ns : 439572815
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 25198
+[report]: insert_overall_throughput : 289896.322776
+[report]: scheduler_avg_when_time_ns : 17443.365675
+[report]: insert_avg_insert_time_ns : 3449.000000
+completed_ops: 25198
+Processing batch, queue size: 32773

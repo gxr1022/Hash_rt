@@ -1,0 +1,61 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=18 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=18 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --seed 3573303998
+Init time:903942525
+Pending when ops: 0, Queue size: 8
+Processing batch, queue size: 9
+Pending when ops: 0, Queue size: 78
+Processing batch, queue size: 82
+Pending when ops: 0, Queue size: 200
+Processing batch, queue size: 201
+Pending when ops: 0, Queue size: 512
+Processing batch, queue size: 528
+Pending when ops: 0, Queue size: 1679
+Processing batch, queue size: 1683
+Pending when ops: 0, Queue size: 3849
+Processing batch, queue size: 3856
+Pending when ops: 0, Queue size: 5718
+Processing batch, queue size: 5722
+Pending when ops: 0, Queue size: 8099
+Processing batch, queue size: 8101
+Pending when ops: 0, Queue size: 9481
+Processing batch, queue size: 9483
+Pending when ops: 0, Queue size: 12300
+Processing batch, queue size: 12326
+Pending when ops: 0, Queue size: 15167
+Processing batch, queue size: 15168
+Pending when ops: 0, Queue size: 16384
+Processing batch, queue size: 16421
+Pending when ops: 0, Queue size: 18746
+Processing batch, queue size: 18757
+Pending when ops: 0, Queue size: 21105
+Processing batch, queue size: 21109
+Pending when ops: 0, Queue size: 23423
+Processing batch, queue size: 23437
+Pending when ops: 0, Queue size: 25713
+Processing batch, queue size: 25717
+Pending when ops: 0, Queue size: 28096
+Processing batch, queue size: 28098
+Pending when ops: 0, Queue size: 30810
+Processing batch, queue size: 30815
+Pending when ops: 0, Queue size: 32768
+Pausing: active threads: 9
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 59515456
+[report]: scheduler_total_when_schedules : 14820
+[report]: scheduler_total_when_time_ns : 366599937
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 14820
+[report]: insert_overall_throughput : 249010.945997
+[report]: scheduler_avg_when_time_ns : 24736.837854
+[report]: insert_avg_insert_time_ns : 4015.000000
+completed_ops: 14820
+Processing batch, queue size: 32776

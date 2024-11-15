@@ -1,0 +1,88 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=28 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=28 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --seed 3208028808
+Init time:898732635
+Pending when ops: 0, Queue size: 19
+Processing batch, queue size: 22
+Pending when ops: 0, Queue size: 128
+Processing batch, queue size: 165
+Pending when ops: 0, Queue size: 325
+Processing batch, queue size: 344
+Pending when ops: 0, Queue size: 649
+Processing batch, queue size: 670
+Pending when ops: 0, Queue size: 1454
+Processing batch, queue size: 1459
+Pending when ops: 0, Queue size: 2627
+Processing batch, queue size: 2628
+Pending when ops: 0, Queue size: 4095
+Processing batch, queue size: 4157
+Pending when ops: 0, Queue size: 5435
+Processing batch, queue size: 5436
+Pending when ops: 0, Queue size: 6915
+Processing batch, queue size: 6916
+Pending when ops: 0, Queue size: 8192
+Processing batch, queue size: 8258
+Pending when ops: 0, Queue size: 9498
+Processing batch, queue size: 9503
+Pending when ops: 0, Queue size: 10818
+Processing batch, queue size: 10820
+Pending when ops: 0, Queue size: 12223
+Processing batch, queue size: 12239
+Pending when ops: 0, Queue size: 13416
+Processing batch, queue size: 13418
+Pending when ops: 0, Queue size: 14831
+Processing batch, queue size: 14833
+Pending when ops: 0, Queue size: 16082
+Processing batch, queue size: 16083
+Pending when ops: 0, Queue size: 16384
+Processing batch, queue size: 16415
+Pending when ops: 0, Queue size: 17571
+Processing batch, queue size: 17573
+Pending when ops: 0, Queue size: 18862
+Processing batch, queue size: 18864
+Pending when ops: 0, Queue size: 20184
+Processing batch, queue size: 20237
+Pending when ops: 0, Queue size: 21565
+Processing batch, queue size: 21580
+Pending when ops: 0, Queue size: 22950
+Processing batch, queue size: 22956
+Pending when ops: 0, Queue size: 24317
+Processing batch, queue size: 24331
+Pending when ops: 0, Queue size: 25622
+Processing batch, queue size: 25623
+Pending when ops: 0, Queue size: 26896
+Processing batch, queue size: 26902
+Pending when ops: 0, Queue size: 28239
+Processing batch, queue size: 28241
+Pending when ops: 0, Queue size: 29430
+Processing batch, queue size: 29440
+Pending when ops: 0, Queue size: 30822
+Processing batch, queue size: 30828
+Pending when ops: 0, Queue size: 32043
+Processing batch, queue size: 32043
+Pending when ops: 0, Queue size: 32768
+Pausing: active threads: 14
+Pausing: active threads: 13
+Pausing: active threads: 12
+Pausing: active threads: 11
+Pausing: active threads: 10
+Pausing: active threads: 9
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 106688445
+[report]: scheduler_total_when_schedules : 26201
+[report]: scheduler_total_when_time_ns : 697330235
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 26199
+[report]: insert_overall_throughput : 245565.487434
+[report]: scheduler_avg_when_time_ns : 26614.641998
+[report]: insert_avg_insert_time_ns : 4072.000000
+completed_ops: 26199
+hash_rt: tpp.c:83: __pthread_tpp_change_priority: Assertion `new_prio == -1 || (new_prio >= fifo_min_prio && new_prio <= fifo_max_prio)' failed.
