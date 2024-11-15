@@ -31,9 +31,6 @@
 -- Check for working C compiler: /usr/bin/cc - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
--- Generating clangformat target using /usr/bin/clang-format-15
--- Found Git: /usr/bin/git (found version "2.34.1") 
--- Generating copyright/license target
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /users/Xuran/hash_rt/build

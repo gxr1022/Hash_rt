@@ -6,141 +6,134 @@
 
 DEFINE_uint64(num_ops, 100000, "the number of insert operations");
 
-class BatchTracker
-{
-public:
-    explicit BatchTracker(size_t size) : remaining_(size) {}
-    void on_schedule() {}
-    void on_complete() { remaining_--; }
-    bool is_complete() const { return remaining_ == 0; }
+DEFINE_uint64(str_key_size, 8, "size of key (bytes)");
+DEFINE_uint64(str_value_size, 100, "size of value (bytes)");
+DEFINE_uint64(num_threads, 8, "the number of threads");
+DEFINE_uint64(time_interval, 10, "the time interval of insert operations");
+DEFINE_string(report_prefix, "[report]: ", "prefix of report data");
+DEFINE_bool(first_mode, true, "fist mode start multiply clients on the same key value server");
+DEFINE_uint64(work_usec, 0, "the time interval of insert operations");
 
-private:
-    std::atomic<size_t> remaining_;
-};
+void standard_report(const std::string &prefix, const std::string &name, const std::string &value)
+{
+    std::cout << FLAGS_report_prefix << prefix + "_" << name << " : " << value << std::endl;
+}
+
+void benchmark_report(const std::string benchmark_prefix, const std::string &name, const std::string &value)
+{
+    standard_report(benchmark_prefix, name, value);
+}
 
 class HashTableServer
 {
+public:
+    ExtendibleHash* hash_table;
 private:
-    static constexpr size_t BATCH_SIZE = 1000;
-    static constexpr size_t MAX_PENDING_BATCHES = 3;
-
-    cown_ptr<ExtendibleHash> hash_table;
+    static constexpr size_t MAX_BATCH_SIZE = 1000;
+    SystematicTestHarness& harness;
     std::atomic<bool> running{true};
     std::atomic<size_t> completed_ops{0};
-    size_t target_ops{FLAGS_num_ops};
+    const size_t target_ops = FLAGS_num_ops;
 
-    std::queue<HashRequest> request_queue;
+    std::vector<HashRequest> request_queue;
 
     std::mutex queue_mutex;
     std::condition_variable cv;
 
-    std::vector<std::thread> external_threads; // 改用vector存储
-    std::atomic<size_t> next_thread_id{0};
-    size_t scheduler_core_start;
-    size_t scheduler_core_count;
+    std::atomic<bool> scheduler_started{false};
+    std::atomic<size_t> pending_when_ops{0};
 
-public:
-    HashTableServer() : hash_table(make_cown<ExtendibleHash>(HASH_INIT_BUCKET_NUM, HASH_ASSOC_NUM)) {}
-
-    template <typename F>
-    void external_thread(F &&f)
-    {
-        size_t thread_id = next_thread_id.fetch_add(1);
-
-        external_threads.emplace_back([this, thread_id, f = std::forward<F>(f)]()
-                                      {
-            size_t core_id = scheduler_core_start + (thread_id % scheduler_core_count);
-            cpu::set_affinity(core_id);
-            f(); });
-    }
-
-    void start(size_t cores)
-    {
-        auto &sched = verona::rt::Scheduler::get();
-        sched.init(cores);
-
-        when(hash_table) << [this](acquired_cown<ExtendibleHash> hash_table_acq)
-        {
-            verona::rt::ThreadPool<verona::rt::SchedulerThread>::add_external_event_source();
-        };
-
-        sched.run();
-        // while(!sched.has_started()) {
-        //     std::this_thread::yield();
-        // }
-
-        external_thread([this]()
-                        { scheduler_loop(); });
-    }
-
-    ~HashTableServer()
-    {
-        running = false;
-
-        for (auto &thread : external_threads)
-        {
-            if (thread.joinable())
-            {
-                thread.join();
-            }
-        }
-    }
-
-    bool is_running() const
-    {
-        return running && completed_ops < target_ops;
-    }
-
-    void handle_insert(const char *key, const char *value, size_t client_id, uint64_t &work_usec);
-
-private:
     void scheduler_loop()
     {
-        std::vector<HashRequest> current_batch;
-
-        while (is_running())
+        std::vector<HashRequest> batch;
+        size_t batch_size = 0;
+        
+   
+        while (running && completed_ops < target_ops)
         {
-            // 收集请求形成批次
+            std::cout << "Pending when ops: " << pending_when_ops.load() 
+                      << ", Queue size: " << request_queue.size() 
+                      << std::endl;
             {
                 std::unique_lock<std::mutex> lock(queue_mutex);
-                while (!request_queue.empty() &&
-                       current_batch.size() < BATCH_SIZE)
+                if (request_queue.empty())
                 {
-                    current_batch.push_back(request_queue.front());
-                    request_queue.pop();
+                    cv.wait_for(lock, std::chrono::milliseconds(10));
+                    continue;
                 }
+                         
+                std::cout << "Processing batch, queue size: " 
+                          << request_queue.size() << std::endl;
+                batch_size = std::min<size_t>(request_queue.size(), MAX_BATCH_SIZE);
+                batch.insert(batch.end(),
+                             request_queue.begin(),
+                             request_queue.begin() + batch_size);
+                request_queue.erase(
+                    request_queue.begin(),
+                    request_queue.begin() + batch_size);
             }
-
-            if (!current_batch.empty())
+     
+            if (!batch.empty())
             {
-                // 创建when语句
-                when(hash_table) << [this, batch = std::move(current_batch)](acquired_cown<ExtendibleHash> hash_table_acq)
+                for (auto& req : batch)
                 {
-                    for (auto req : batch)
-                    {
-                        hash_table_acq->insert(req.key, req.value, req.work_usec);
-                        completed_ops.fetch_add(1);
-                    }
-                };
-
-                current_batch.clear();
+                    hash_table->insert(req.key, req.value, req.work_usec);
+                }
+                completed_ops += batch_size;
             }
+            
+            batch.clear();
+        }
+        
+        std::cout << "completed_ops: " << hash_table->get_completed_inserts() << std::endl;
+        running = false;
+    }
 
-            // 避免空转
-            if (current_batch.empty())
-            {
-                std::this_thread::yield();
-            }
+    void start_scheduler() {
+        bool expected = false;
+        if (scheduler_started.compare_exchange_strong(expected, true)) {
+            harness.external_thread([this]() {
+                scheduler_loop();
+            });
         }
     }
-};
 
-void HashTableServer::handle_insert(const char *key, const char *value, size_t client_id, uint64_t &work_usec)
-{
-    HashRequest request{key, value, client_id, work_usec};
+public:
+    HashTableServer(SystematicTestHarness& h) : harness(h)
     {
-        std::unique_lock<std::mutex> lock(queue_mutex);
-        request_queue.push(request);
+        hash_table = new ExtendibleHash(HASH_INIT_BUCKET_NUM, HASH_ASSOC_NUM);
     }
-    cv.notify_one();
-}
+
+    ~HashTableServer() {
+        std::cout<< "completed_ops: " << hash_table->get_completed_inserts() << std::endl;
+        delete hash_table;
+    }
+
+    void handle_insert(const char* key, const char* value, 
+                      size_t client_id, uint64_t work_usec)
+    {
+        if (!running.load()) return;
+        
+        if (!scheduler_started.load()) {
+            start_scheduler();
+        }
+
+        try {
+            std::lock_guard<std::mutex> lock(queue_mutex);
+            if (!running) return;
+            
+            // std::cout << "Adding work to queue: " << key << std::endl;
+            
+            request_queue.emplace_back(key, value, client_id, work_usec);
+            cv.notify_one();
+        } catch (const std::system_error& e) {
+            return;
+        }
+    }
+
+    bool is_running() const { return running; }
+
+    bool has_pending_work() const {
+        return pending_when_ops > 0 || !request_queue.empty();
+    }
+};

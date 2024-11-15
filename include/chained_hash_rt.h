@@ -47,7 +47,7 @@ public:
         return idx >= HASH_ASSOC_NUM;
     }
 
-    bool insert(const char *key, const char *value)
+    bool insert(char *key, char *value)
     {
         if (isFull())
         {
@@ -88,6 +88,9 @@ private:
     int dirCapacity;
     int bucketCapacity;
     vector<cown_ptr<Bucket>> directory;
+    static inline std::atomic<uint64_t> completed_inserts{0};
+    static inline std::atomic<uint64_t> when_schedule_time{0};
+    static inline std::atomic<uint64_t> when_schedule_count{0};
 
 public:
     ExtendibleHash(int dirCap, int bucketCap) : dirCapacity(dirCap), bucketCapacity(bucketCap)
@@ -106,21 +109,30 @@ public:
     void insert(char* key, char* value, uint64_t work_usec)
     {
         int hashValue = hashFunction(key, dirCapacity);
-        // cout<< "bucketID:" << hashValue<<endl;
         bool inserted = false;
 
         if (hashValue < directory.size())
         {
+            auto start_time = std::chrono::steady_clock::now();
+            
             when(directory[hashValue]) << [=](acquired_cown<Bucket> bucketAcq) mutable
             {
-                // std::cout<< "inserting key:" << key << " value:" << value << endl;
-                inserted = bucketAcq->insert(key, value);
+                auto end_time = std::chrono::steady_clock::now();
+                auto schedule_time = std::chrono::duration_cast<std::chrono::nanoseconds>
+                                   (end_time - start_time).count();
+                when_schedule_time.fetch_add(schedule_time);
+                when_schedule_count.fetch_add(1);
                 
-                busy_loop(work_usec);
-                // printStatus();
+                inserted = bucketAcq->insert(key, value);
+                if (inserted) {
+                    completed_inserts.fetch_add(1);
+                }
             };
         }
-        return;
+    }
+
+    std::pair<uint64_t, uint64_t> get_when_stats() const {
+        return {when_schedule_time.load(), when_schedule_count.load()};
     }
 
     // string find(string key)
@@ -170,4 +182,6 @@ public:
             };
         }
     }
+
+    size_t get_completed_inserts() const { return completed_inserts.load(); }
 };

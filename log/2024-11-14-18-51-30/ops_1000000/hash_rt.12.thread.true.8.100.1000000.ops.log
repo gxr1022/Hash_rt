@@ -1,0 +1,22 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=12 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Running with 12 cores
+Init time:883868561
+Init scheduler time:137464
+Schedule behaviours time:3301560925
+Pausing: active threads: 12
+Pausing: active threads: 11
+Pausing: active threads: 10
+Pausing: active threads: 9
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+Run behaviours time:155824800
+[report]: insert_overall_duration_ns : 155824800
+[report]: insert_overall_operation_number : 1000000
+[report]: insert_overall_throughput : 6417463.715660

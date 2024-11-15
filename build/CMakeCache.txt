@@ -14,9 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//Path to a program.
-BASH:FILEPATH=/usr/bin/bash
-
 //Build test programs as well as shims
 BUILD_TESTING:BOOL=ON
 
@@ -28,9 +25,6 @@ Backtrace_INCLUDE_DIR:PATH=/usr/include
 
 //Library providing backtrace(3), empty for default set of libraries
 Backtrace_LIBRARY:FILEPATH=
-
-//Path to a program.
-CLANG_FORMAT:FILEPATH=/usr/bin/clang-format-15
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -262,15 +256,6 @@ HashIndexProject_SOURCE_DIR:STATIC=/users/Xuran/hash_rt
 //Path to a library.
 LIBEXECINFO:FILEPATH=LIBEXECINFO-NOTFOUND
 
-//Path to a program.
-LLDB:FILEPATH=LLDB-NOTFOUND
-
-//Path to a program.
-ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
-
-//Path to a program.
-ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
-
 //Build tests and ld_preload for individual mitigations
 SNMALLOC_BENCHMARK_INDIVIDUAL_MITIGATIONS:BOOL=OFF
 
@@ -306,6 +291,9 @@ SNMALLOC_USE_CXX17:BOOL=ON
 
 //No help, variable specified on the command line.
 USE_SYSTEMATIC_TESTING:UNINITIALIZED=OFF
+
+//Only build header library
+VERONA_RT_ONLY_HEADER_LIBRARY:BOOL=ON
 
 //The directory containing a CMake configuration file for gflags.
 gflags_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/gflags
@@ -450,7 +438,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -497,16 +485,10 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 CONST_QUALIFIED_MALLOC_USABLE_SIZE:INTERNAL=1
 //Details about finding Backtrace
 FIND_PACKAGE_MESSAGE_DETAILS_Backtrace:INTERNAL=[/usr/include][v()]
-//Details about finding Git
-FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.34.1()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: ProcessorCount_cmd_nproc
-ProcessorCount_cmd_nproc-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: ProcessorCount_cmd_sysctl
-ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
 //Test SNMALLOC_COMPILER_SUPPORT_MCX16
 SNMALLOC_COMPILER_SUPPORT_MCX16:INTERNAL=1
 //Have include linux/random.h

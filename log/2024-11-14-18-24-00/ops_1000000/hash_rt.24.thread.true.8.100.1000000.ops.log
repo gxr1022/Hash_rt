@@ -1,0 +1,60 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=24 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=24 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --seed 4230052446
+Init time:907779917
+Pending when ops: 0, Queue size: 2
+Processing batch, queue size: 8
+Pending when ops: 0, Queue size: 93
+Processing batch, queue size: 96
+Pending when ops: 0, Queue size: 148
+Processing batch, queue size: 150
+Pending when ops: 0, Queue size: 326
+Processing batch, queue size: 330
+Pending when ops: 0, Queue size: 757
+Processing batch, queue size: 759
+Pending when ops: 0, Queue size: 1900
+Processing batch, queue size: 1919
+Pending when ops: 0, Queue size: 3262
+Processing batch, queue size: 3277
+Pending when ops: 0, Queue size: 4341
+Processing batch, queue size: 4344
+Pending when ops: 0, Queue size: 5758
+Processing batch, queue size: 5770
+Pending when ops: 0, Queue size: 7263
+Processing batch, queue size: 7265
+Pending when ops: 0, Queue size: 8192
+Processing batch, queue size: 8246
+Pending when ops: 0, Queue size: 9517
+Processing batch, queue size: 9550
+Pending when ops: 0, Queue size: 11089
+Processing batch, queue size: 11091
+Pending when ops: 0, Queue size: 12393
+Processing batch, queue size: 12395
+Pending when ops: 0, Queue size: 13888
+Processing batch, queue size: 13888
+Pending when ops: 0, Queue size: 15249
+Processing batch, queue size: 15262
+Pending when ops: 0, Queue size: 16384
+Pausing: active threads: 12
+Pausing: active threads: 11
+Pausing: active threads: 10
+Pausing: active threads: 9
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+Processing batch, queue size: 16427
+[report]: scheduler_run_time_ns : 48826404
+[report]: scheduler_total_when_schedules : 12343
+[report]: scheduler_total_when_time_ns : 484352760
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 12343
+[report]: insert_overall_throughput : 252793.549982
+[report]: scheduler_avg_when_time_ns : 39241.088876
+[report]: insert_avg_insert_time_ns : 3955.000000
+completed_ops: 12343

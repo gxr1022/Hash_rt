@@ -1,0 +1,58 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=20 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=20 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --seed 572292090
+Init time:901555308
+Pending when ops: 0, Queue size: 48
+Processing batch, queue size: 53
+Pending when ops: 0, Queue size: 207
+Processing batch, queue size: 210
+Pending when ops: 0, Queue size: 545
+Processing batch, queue size: 549
+Pending when ops: 0, Queue size: 2015
+Processing batch, queue size: 2038
+Pending when ops: 0, Queue size: 4194
+Processing batch, queue size: 4198
+Pending when ops: 0, Queue size: 6954
+Processing batch, queue size: 6960
+Pending when ops: 0, Queue size: 8658
+Processing batch, queue size: 8662
+Pending when ops: 0, Queue size: 11439
+Processing batch, queue size: 11442
+Pending when ops: 0, Queue size: 14147
+Processing batch, queue size: 14152
+Pending when ops: 0, Queue size: 16384
+Processing batch, queue size: 16427
+Pausing: active threads: 10
+Pausing: active threads: 9
+Pending when ops: 0, Queue size: 19119
+Processing batch, queue size: 19143
+Pending when ops: 0, Queue size: 21860
+Processing batch, queue size: 21864
+Pending when ops: 0, Queue size: 24613
+Processing batch, queue size: 24617
+Pending when ops: 0, Queue size: 27465
+Processing batch, queue size: 27469
+Pending when ops: 0, Queue size: 30151
+Processing batch, queue size: 30153
+Pending when ops: 0, Queue size: 32768
+Pausing: active threads: 10
+Pausing: active threads: 9
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 53902332
+[report]: scheduler_total_when_schedules : 12812
+[report]: scheduler_total_when_time_ns : 414753280
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 12811
+[report]: insert_overall_throughput : 237670.607646
+[report]: scheduler_avg_when_time_ns : 32372.251015
+[report]: insert_avg_insert_time_ns : 4207.000000
+completed_ops: 12811
+Processing batch, queue size: 32777

@@ -1,0 +1,102 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=8 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=8 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --seed 3359312154
+Init time:895857629
+Pending when ops: 0, Queue size: 20
+Processing batch, queue size: 21
+Pending when ops: 0, Queue size: 128
+Processing batch, queue size: 135
+Pending when ops: 0, Queue size: 281
+Processing batch, queue size: 283
+Pending when ops: 0, Queue size: 521
+Processing batch, queue size: 522
+Pending when ops: 0, Queue size: 1041
+Processing batch, queue size: 1044
+Pending when ops: 0, Queue size: 2048
+Processing batch, queue size: 2054
+Pending when ops: 0, Queue size: 3225
+Processing batch, queue size: 3228
+Pending when ops: 0, Queue size: 4096
+Processing batch, queue size: 4103
+Pending when ops: 0, Queue size: 5253
+Processing batch, queue size: 5257
+Pending when ops: 0, Queue size: 6473
+Processing batch, queue size: 6477
+Pending when ops: 0, Queue size: 7250
+Processing batch, queue size: 7252
+Pending when ops: 0, Queue size: 7871
+Processing batch, queue size: 7872
+Pending when ops: 0, Queue size: 8192
+Processing batch, queue size: 8224
+Pending when ops: 0, Queue size: 9328
+Processing batch, queue size: 9331
+Pending when ops: 0, Queue size: 10500
+Processing batch, queue size: 10503
+Pending when ops: 0, Queue size: 11515
+Processing batch, queue size: 11517
+Pending when ops: 0, Queue size: 12123
+Processing batch, queue size: 12124
+Pending when ops: 0, Queue size: 12762
+Processing batch, queue size: 12762
+Pending when ops: 0, Queue size: 13334
+Processing batch, queue size: 13337
+Pending when ops: 0, Queue size: 13965
+Processing batch, queue size: 13966
+Pending when ops: 0, Queue size: 14824
+Processing batch, queue size: 14826
+Pending when ops: 0, Queue size: 15967
+Processing batch, queue size: 15968
+Pending when ops: 0, Queue size: 16384
+Processing batch, queue size: 16406
+Pending when ops: 0, Queue size: 17525
+Processing batch, queue size: 17528
+Pending when ops: 0, Queue size: 18462
+Processing batch, queue size: 18473
+Pending when ops: 0, Queue size: 19136
+Processing batch, queue size: 19137
+Pending when ops: 0, Queue size: 19757
+Processing batch, queue size: 19759
+Pending when ops: 0, Queue size: 20535
+Processing batch, queue size: 20536
+Pending when ops: 0, Queue size: 21645
+Processing batch, queue size: 21648
+Pending when ops: 0, Queue size: 22810
+Processing batch, queue size: 22813
+Pending when ops: 0, Queue size: 23934
+Processing batch, queue size: 23934
+Pending when ops: 0, Queue size: 25088
+Processing batch, queue size: 25091
+Pending when ops: 0, Queue size: 26208
+Processing batch, queue size: 26209
+Pending when ops: 0, Queue size: 27368
+Processing batch, queue size: 27368
+Pending when ops: 0, Queue size: 27965
+Processing batch, queue size: 27966
+Pending when ops: 0, Queue size: 28587
+Processing batch, queue size: 28588
+Pending when ops: 0, Queue size: 29113
+Processing batch, queue size: 29114
+Pending when ops: 0, Queue size: 29696
+Processing batch, queue size: 29697
+Pending when ops: 0, Queue size: 30420
+Processing batch, queue size: 30422
+Pending when ops: 0, Queue size: 31530
+Processing batch, queue size: 31532
+Pending when ops: 0, Queue size: 32619
+Processing batch, queue size: 32621
+Pending when ops: 0, Queue size: 32768
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+Processing batch, queue size: 32811
+[report]: scheduler_run_time_ns : 125185162
+[report]: scheduler_total_when_schedules : 37961
+[report]: scheduler_total_when_time_ns : 343131659
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 37954
+[report]: insert_overall_throughput : 303182.896388
+[report]: scheduler_avg_when_time_ns : 9039.057427
+[report]: insert_avg_insert_time_ns : 3298.000000
+completed_ops: 37954

@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.10.0)
 project(HashIndexProject CXX)
 set(CMAKE_CXX_STANDARD 17)
 
+# 添加选项来禁用测试
+set(VERONA_RT_ONLY_HEADER_LIBRARY ON CACHE BOOL "Only build header library")
+
+# 添加 verona-rt
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/include/verona-rt)
 
 include_directories(
@@ -10,6 +14,7 @@ include_directories(
 )
 
 set(SOURCES util/util.hpp src/hash_main.cpp)
+# set(SOURCES util/util.hpp src/hash_rt.cpp)
 
 find_package(gflags REQUIRED)
 
