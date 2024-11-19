@@ -47,7 +47,7 @@ public:
         return idx >= HASH_ASSOC_NUM;
     }
 
-    bool insert(char *key, char *value)
+    bool insert(const char* key, const char* value)
     {
         if (isFull())
         {
@@ -75,7 +75,7 @@ public:
     }
 };
 
-static inline int hashFunction(char* key, int dirCap)
+static inline int hashFunction(const char* key, int dirCap)
 {
     size_t key_len = strlen(key);
     uint64_t hashValue = string_key_hash_computation(key,key_len , 0, 0);
@@ -106,7 +106,7 @@ public:
         std::cout << "Init time:" << duration_ns << std::endl;
     }
 
-    void insert(char* key, char* value, uint64_t work_usec)
+    void insert(const char* key, const char* value)
     {
         int hashValue = hashFunction(key, dirCapacity);
         bool inserted = false;
