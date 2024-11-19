@@ -2,12 +2,14 @@
 #include "hash_server.h"
 #include <random>
 #include <thread>
+#include "spsc.h"
 
 class HashTableClient 
 {
 private:
-    size_t client_id;
+    SPSCQueue<HashRequest, 1024> request_queue;  // Client owns the queue
     HashTableServer& server;
+    size_t client_id;
     std::mt19937 rng;
     
     void generate_random_string(char* buffer, size_t length) 
@@ -21,7 +23,25 @@ private:
 
 public:
     HashTableClient(size_t id, HashTableServer& srv) 
-        : client_id(id), server(srv), rng(std::random_device{}()) {}
+        : client_id(id)
+        , server(srv)
+        , rng(std::random_device{}()) 
+    {
+        // Register client queue with server
+        server.register_client_queue(&request_queue, client_id);
+    }
+    
+    ~HashTableClient() {
+        // Unregister from server
+        server.unregister_client_queue(client_id);
+    }
+    
+    void submit_request(const char* key, const char* value) {
+        HashRequest req(key, value, client_id);
+        while (!request_queue.try_push(std::move(req))) {
+            std::this_thread::yield();
+        }
+    }
     
     void run() 
     {
@@ -32,11 +52,8 @@ public:
             
             generate_random_string(key, MAX_KEY_LENGTH);
             generate_random_string(value, MAX_VALUE_LENGTH);
-            
-            // uint64_t work_usec = rng() % 1000;
-            uint64_t work_usec = 0; 
-            
-            server.handle_insert(key, value, client_id, work_usec);
+
+            submit_request(key, value); 
         }
     }
 };

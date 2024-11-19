@@ -1,10 +1,10 @@
 Performing C++ SOURCE FILE Test SNMALLOC_LINKER_SUPPORT_NOSTDLIBXX failed with the following output:
 Change Dir: /users/Xuran/hash_rt/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_df464 && [1/2] Building CXX object CMakeFiles/cmTC_df464.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_df464
-FAILED: cmTC_df464 
-: && /usr/bin/c++  -nostdlib++ CMakeFiles/cmTC_df464.dir/src.cxx.o -o cmTC_df464   && :
+Run Build Command(s):/usr/bin/ninja cmTC_77fa2 && [1/2] Building CXX object CMakeFiles/cmTC_77fa2.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_77fa2
+FAILED: cmTC_77fa2 
+: && /usr/bin/c++  -nostdlib++ CMakeFiles/cmTC_77fa2.dir/src.cxx.o -o cmTC_77fa2   && :
 c++: error: unrecognized command-line option '-nostdlib++'; did you mean '-nostdlib'?
 ninja: build stopped: subcommand failed.
 

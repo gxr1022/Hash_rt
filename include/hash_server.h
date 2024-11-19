@@ -4,8 +4,7 @@
 #include "hash_request.h"
 #include <verona.h>
 
-DEFINE_uint64(num_ops, 100000, "the number of insert operations");
-
+DEFINE_uint64(num_ops, 1000000, "the number of insert operations");
 DEFINE_uint64(str_key_size, 8, "size of key (bytes)");
 DEFINE_uint64(str_value_size, 100, "size of value (bytes)");
 DEFINE_uint64(num_threads, 8, "the number of threads");
@@ -26,114 +25,88 @@ void benchmark_report(const std::string benchmark_prefix, const std::string &nam
 
 class HashTableServer
 {
-public:
-    ExtendibleHash* hash_table;
 private:
     static constexpr size_t MAX_BATCH_SIZE = 1000;
     SystematicTestHarness& harness;
     std::atomic<bool> running{true};
     std::atomic<size_t> completed_ops{0};
     const size_t target_ops = FLAGS_num_ops;
-
-    std::vector<HashRequest> request_queue;
-
-    std::mutex queue_mutex;
-    std::condition_variable cv;
-
-    std::atomic<bool> scheduler_started{false};
-    std::atomic<size_t> pending_when_ops{0};
+    
+    ExtendibleHash* hash_table;
+    
+    // Fixed-size array for client queues
+    static constexpr size_t MAX_CLIENTS = 64;  // Or other suitable size
+    std::array<SPSCQueue<HashRequest, 1024>*, MAX_CLIENTS> client_queues{};
+    std::atomic<bool> active_clients[MAX_CLIENTS]{};  // Track active clients
 
     void scheduler_loop()
     {
         std::vector<HashRequest> batch;
-        size_t batch_size = 0;
+        batch.reserve(MAX_BATCH_SIZE);
+        size_t current_client = 0;
         
-   
         while (running && completed_ops < target_ops)
         {
-            std::cout << "Pending when ops: " << pending_when_ops.load() 
-                      << ", Queue size: " << request_queue.size() 
-                      << std::endl;
+            // Round-robin through client slots
+            for (size_t i = 0; i < MAX_CLIENTS; i++) 
             {
-                std::unique_lock<std::mutex> lock(queue_mutex);
-                if (request_queue.empty())
-                {
-                    cv.wait_for(lock, std::chrono::milliseconds(10));
-                    continue;
+                current_client = (current_client + 1) % MAX_CLIENTS;
+                
+                if (!active_clients[current_client]) {
+                    continue;  // Skip inactive slots
                 }
-                         
-                std::cout << "Processing batch, queue size: " 
-                          << request_queue.size() << std::endl;
-                batch_size = std::min<size_t>(request_queue.size(), MAX_BATCH_SIZE);
-                batch.insert(batch.end(),
-                             request_queue.begin(),
-                             request_queue.begin() + batch_size);
-                request_queue.erase(
-                    request_queue.begin(),
-                    request_queue.begin() + batch_size);
-            }
-     
-            if (!batch.empty())
-            {
-                for (auto& req : batch)
-                {
-                    hash_table->insert(req.key, req.value, req.work_usec);
+
+                auto* queue = client_queues[current_client];
+                if (queue) {
+                    while (batch.size() < MAX_BATCH_SIZE) {
+                        HashRequest req;
+                        if (!queue->try_pop(req)) break;
+                        batch.push_back(std::move(req));
+                    }
                 }
-                completed_ops += batch_size;
             }
             
-            batch.clear();
+            if (!batch.empty()) {
+                for (const auto& req : batch) {
+                    hash_table->insert(req.key, req.value);
+                    completed_ops++;
+                }
+                batch.clear();
+            } else {
+                // verona::rt::Cown::yield();
+            }
         }
         
-        std::cout << "completed_ops: " << hash_table->get_completed_inserts() << std::endl;
         running = false;
     }
 
-    void start_scheduler() {
-        bool expected = false;
-        if (scheduler_started.compare_exchange_strong(expected, true)) {
-            harness.external_thread([this]() {
-                scheduler_loop();
-            });
-        }
-    }
-
 public:
-    HashTableServer(SystematicTestHarness& h) : harness(h)
+    HashTableServer(SystematicTestHarness& h) 
+        : harness(h)
     {
         hash_table = new ExtendibleHash(HASH_INIT_BUCKET_NUM, HASH_ASSOC_NUM);
+        harness.external_thread([this]() {
+            scheduler_loop(); 
+        });
     }
 
-    ~HashTableServer() {
-        std::cout<< "completed_ops: " << hash_table->get_completed_inserts() << std::endl;
-        delete hash_table;
-    }
-
-    void handle_insert(const char* key, const char* value, 
-                      size_t client_id, uint64_t work_usec)
-    {
-        if (!running.load()) return;
-        
-        if (!scheduler_started.load()) {
-            start_scheduler();
+    size_t register_client_queue(SPSCQueue<HashRequest, 1024>* queue, size_t client_id) {
+        for (size_t i = 0; i < MAX_CLIENTS; i++) {
+            bool expected = false;
+            if (active_clients[i].compare_exchange_strong(expected, true)) {
+                client_queues[i] = queue;
+                return i; 
+            }
         }
+        throw std::runtime_error("Max clients reached");
+    }
 
-        try {
-            std::lock_guard<std::mutex> lock(queue_mutex);
-            if (!running) return;
-            
-            // std::cout << "Adding work to queue: " << key << std::endl;
-            
-            request_queue.emplace_back(key, value, client_id, work_usec);
-            cv.notify_one();
-        } catch (const std::system_error& e) {
-            return;
+    void unregister_client_queue(size_t client_id) {
+        if (client_id < MAX_CLIENTS) {
+            client_queues[client_id] = nullptr;
+            active_clients[client_id] = false;
         }
     }
 
     bool is_running() const { return running; }
-
-    bool has_pending_work() const {
-        return pending_when_ops > 0 || !request_queue.empty();
-    }
 };

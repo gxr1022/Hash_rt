@@ -1,0 +1,417 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=32 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=32 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --seed 1204345794
+Init time:896912898
+Scheduler cores: 16
+Pending when ops: 0, Queue size: 11
+Processing batch, queue size: 13
+Pending when ops: 0, Queue size: 94
+Processing batch, queue size: 97
+Pending when ops: 0, Queue size: 152
+Processing batch, queue size: 218
+Pending when ops: 0, Queue size: 576
+Processing batch, queue size: 676
+Pending when ops: 0, Queue size: 1400
+Processing batch, queue size: 1408
+Pending when ops: 0, Queue size: 2566
+Processing batch, queue size: 2599
+Pending when ops: 0, Queue size: 3974
+Processing batch, queue size: 4017
+Pending when ops: 0, Queue size: 4910
+Processing batch, queue size: 4919
+Pending when ops: 0, Queue size: 6283
+Processing batch, queue size: 6302
+Pending when ops: 0, Queue size: 7671
+Processing batch, queue size: 7673
+Pending when ops: 0, Queue size: 8192
+Processing batch, queue size: 8230
+Pending when ops: 0, Queue size: 9570
+Processing batch, queue size: 9572
+Pending when ops: 0, Queue size: 10914
+Processing batch, queue size: 10916
+Pending when ops: 0, Queue size: 12312
+Processing batch, queue size: 12314
+Pending when ops: 0, Queue size: 13610
+Processing batch, queue size: 13664
+Pending when ops: 0, Queue size: 14968
+Processing batch, queue size: 14970
+Pending when ops: 0, Queue size: 16224
+Processing batch, queue size: 16226
+Pending when ops: 0, Queue size: 16384
+Processing batch, queue size: 16434
+Pending when ops: 0, Queue size: 17703
+Processing batch, queue size: 17741
+Pending when ops: 0, Queue size: 19083
+Processing batch, queue size: 19092
+Pending when ops: 0, Queue size: 20426
+Processing batch, queue size: 20429
+Pending when ops: 0, Queue size: 21784
+Processing batch, queue size: 21790
+Pending when ops: 0, Queue size: 23157
+Processing batch, queue size: 23178
+Pending when ops: 0, Queue size: 24496
+Processing batch, queue size: 24516
+Pending when ops: 0, Queue size: 25776
+Processing batch, queue size: 25778
+Pending when ops: 0, Queue size: 27149
+Processing batch, queue size: 27156
+Pending when ops: 0, Queue size: 28405
+Processing batch, queue size: 28407
+Pending when ops: 0, Queue size: 29730
+Processing batch, queue size: 29733
+Pending when ops: 0, Queue size: 31007
+Processing batch, queue size: 31010
+Pending when ops: 0, Queue size: 32318
+Processing batch, queue size: 32321
+Pending when ops: 0, Queue size: 32768
+Processing batch, queue size: 32817
+Pending when ops: 0, Queue size: 33945
+Processing batch, queue size: 33962
+Pending when ops: 0, Queue size: 35270
+Processing batch, queue size: 35271
+Pending when ops: 0, Queue size: 36548
+Processing batch, queue size: 36593
+Pending when ops: 0, Queue size: 37924
+Processing batch, queue size: 37929
+Pending when ops: 0, Queue size: 39197
+Processing batch, queue size: 39205
+Pending when ops: 0, Queue size: 40585
+Processing batch, queue size: 40607
+Pending when ops: 0, Queue size: 41819
+Processing batch, queue size: 41874
+Pending when ops: 0, Queue size: 43231
+Processing batch, queue size: 43234
+Pending when ops: 0, Queue size: 44479
+Processing batch, queue size: 44542
+Pending when ops: 0, Queue size: 45890
+Processing batch, queue size: 45908
+Pending when ops: 0, Queue size: 47268
+Processing batch, queue size: 47270
+Pending when ops: 0, Queue size: 48625
+Processing batch, queue size: 48627
+Pending when ops: 0, Queue size: 49894
+Processing batch, queue size: 49900
+Pending when ops: 0, Queue size: 51295
+Processing batch, queue size: 51296
+Pending when ops: 0, Queue size: 52625
+Processing batch, queue size: 52632
+Pending when ops: 0, Queue size: 53953
+Processing batch, queue size: 53966
+Pending when ops: 0, Queue size: 55241
+Processing batch, queue size: 55268
+Pending when ops: 0, Queue size: 56618
+Processing batch, queue size: 56644
+Pending when ops: 0, Queue size: 57896
+Processing batch, queue size: 57899
+Pending when ops: 0, Queue size: 59214
+Processing batch, queue size: 59216
+Pending when ops: 0, Queue size: 60487
+Processing batch, queue size: 60494
+Pending when ops: 0, Queue size: 61831
+Processing batch, queue size: 61851
+Pending when ops: 0, Queue size: 63135
+Processing batch, queue size: 63137
+Pending when ops: 0, Queue size: 64493
+Processing batch, queue size: 64495
+Pending when ops: 0, Queue size: 65536
+Processing batch, queue size: 65692
+Pending when ops: 0, Queue size: 66784
+Processing batch, queue size: 66787
+Pending when ops: 0, Queue size: 68019
+Processing batch, queue size: 68046
+Pending when ops: 0, Queue size: 69291
+Processing batch, queue size: 69294
+Pending when ops: 0, Queue size: 70648
+Processing batch, queue size: 70650
+Pending when ops: 0, Queue size: 71928
+Processing batch, queue size: 71947
+Pending when ops: 0, Queue size: 73251
+Processing batch, queue size: 73267
+Pending when ops: 0, Queue size: 74507
+Processing batch, queue size: 74512
+Pending when ops: 0, Queue size: 75812
+Processing batch, queue size: 75815
+Pending when ops: 0, Queue size: 77099
+Processing batch, queue size: 77121
+Pending when ops: 0, Queue size: 78428
+Processing batch, queue size: 78438
+Pending when ops: 0, Queue size: 79719
+Processing batch, queue size: 79726
+Pending when ops: 0, Queue size: 81068
+Processing batch, queue size: 81071
+Pending when ops: 0, Queue size: 82326
+Processing batch, queue size: 82349
+Pending when ops: 0, Queue size: 83721
+Processing batch, queue size: 83738
+Pending when ops: 0, Queue size: 84995
+Processing batch, queue size: 85015
+Pending when ops: 0, Queue size: 86359
+Processing batch, queue size: 86370
+Pending when ops: 0, Queue size: 87681
+Processing batch, queue size: 87687
+Pending when ops: 0, Queue size: 89059
+Processing batch, queue size: 89082
+Pending when ops: 0, Queue size: 90377
+Processing batch, queue size: 90407
+Pending when ops: 0, Queue size: 91718
+Processing batch, queue size: 91721
+Pending when ops: 0, Queue size: 93027
+Processing batch, queue size: 93029
+Pending when ops: 0, Queue size: 94320
+Processing batch, queue size: 94322
+Pending when ops: 0, Queue size: 95696
+Processing batch, queue size: 95700
+Pending when ops: 0, Queue size: 97000
+Processing batch, queue size: 97016
+Pending when ops: 0, Queue size: 98302
+Processing batch, queue size: 98306
+Pending when ops: 0, Queue size: 99629
+Processing batch, queue size: 99646
+Pending when ops: 0, Queue size: 100954
+Processing batch, queue size: 100957
+Pending when ops: 0, Queue size: 102190
+Processing batch, queue size: 102200
+Pending when ops: 0, Queue size: 103459
+Processing batch, queue size: 103491
+Pending when ops: 0, Queue size: 104799
+Processing batch, queue size: 104801
+Pending when ops: 0, Queue size: 106097
+Processing batch, queue size: 106100
+Pending when ops: 0, Queue size: 107392
+Processing batch, queue size: 107395
+Pending when ops: 0, Queue size: 108706
+Processing batch, queue size: 108708
+Pending when ops: 0, Queue size: 110042
+Processing batch, queue size: 110052
+Pending when ops: 0, Queue size: 111352
+Processing batch, queue size: 111356
+Pending when ops: 0, Queue size: 112652
+Processing batch, queue size: 112671
+Pending when ops: 0, Queue size: 113968
+Processing batch, queue size: 113988
+Pending when ops: 0, Queue size: 115330
+Processing batch, queue size: 115337
+Pending when ops: 0, Queue size: 116658
+Processing batch, queue size: 116661
+Pending when ops: 0, Queue size: 117978
+Processing batch, queue size: 117997
+Pending when ops: 0, Queue size: 119319
+Processing batch, queue size: 119321
+Pending when ops: 0, Queue size: 120607
+Processing batch, queue size: 120637
+Pending when ops: 0, Queue size: 121981
+Processing batch, queue size: 121994
+Pending when ops: 0, Queue size: 123290
+Processing batch, queue size: 123309
+Pending when ops: 0, Queue size: 124638
+Processing batch, queue size: 124667
+Pending when ops: 0, Queue size: 126003
+Processing batch, queue size: 126005
+Pending when ops: 0, Queue size: 127345
+Processing batch, queue size: 127360
+Pending when ops: 0, Queue size: 128673
+Processing batch, queue size: 128675
+Pending when ops: 0, Queue size: 129982
+Processing batch, queue size: 129988
+Pending when ops: 0, Queue size: 131072
+Processing batch, queue size: 131147
+Pending when ops: 0, Queue size: 132274
+Processing batch, queue size: 132276
+Pending when ops: 0, Queue size: 133623
+Processing batch, queue size: 133631
+Pending when ops: 0, Queue size: 134994
+Processing batch, queue size: 134997
+Pending when ops: 0, Queue size: 136383
+Processing batch, queue size: 136416
+Pending when ops: 0, Queue size: 137729
+Processing batch, queue size: 137732
+Pending when ops: 0, Queue size: 139035
+Processing batch, queue size: 139041
+Pending when ops: 0, Queue size: 140396
+Processing batch, queue size: 140418
+Pending when ops: 0, Queue size: 141750
+Processing batch, queue size: 141771
+Pending when ops: 0, Queue size: 143095
+Processing batch, queue size: 143105
+Pending when ops: 0, Queue size: 144503
+Processing batch, queue size: 144506
+Pending when ops: 0, Queue size: 145860
+Processing batch, queue size: 145862
+Pending when ops: 0, Queue size: 147202
+Processing batch, queue size: 147208
+Pending when ops: 0, Queue size: 148575
+Processing batch, queue size: 148577
+Pending when ops: 0, Queue size: 149949
+Processing batch, queue size: 149998
+Pending when ops: 0, Queue size: 151397
+Processing batch, queue size: 151408
+Pending when ops: 0, Queue size: 152802
+Processing batch, queue size: 152815
+Pending when ops: 0, Queue size: 154191
+Processing batch, queue size: 154195
+Pending when ops: 0, Queue size: 155538
+Processing batch, queue size: 155580
+Pending when ops: 0, Queue size: 156993
+Processing batch, queue size: 156999
+Pending when ops: 0, Queue size: 158365
+Processing batch, queue size: 158367
+Pending when ops: 0, Queue size: 159791
+Processing batch, queue size: 159811
+Pending when ops: 0, Queue size: 161168
+Processing batch, queue size: 161174
+Pending when ops: 0, Queue size: 162538
+Processing batch, queue size: 162540
+Pending when ops: 0, Queue size: 163896
+Processing batch, queue size: 163899
+Pending when ops: 0, Queue size: 165306
+Processing batch, queue size: 165310
+Pending when ops: 0, Queue size: 166719
+Processing batch, queue size: 166723
+Pending when ops: 0, Queue size: 168142
+Processing batch, queue size: 168144
+Pending when ops: 0, Queue size: 169567
+Processing batch, queue size: 169568
+Pending when ops: 0, Queue size: 171002
+Processing batch, queue size: 171077
+Pending when ops: 0, Queue size: 172562
+Processing batch, queue size: 172565
+Pending when ops: 0, Queue size: 173887
+Processing batch, queue size: 173933
+Pending when ops: 0, Queue size: 175385
+Processing batch, queue size: 175417
+Pending when ops: 0, Queue size: 176829
+Processing batch, queue size: 176831
+Pending when ops: 0, Queue size: 178232
+Processing batch, queue size: 178255
+Pending when ops: 0, Queue size: 179715
+Processing batch, queue size: 179719
+Pending when ops: 0, Queue size: 181171
+Processing batch, queue size: 181174
+Pending when ops: 0, Queue size: 182619
+Processing batch, queue size: 182623
+Pending when ops: 0, Queue size: 184063
+Processing batch, queue size: 184065
+Pending when ops: 0, Queue size: 185472
+Processing batch, queue size: 185496
+Pending when ops: 0, Queue size: 186945
+Processing batch, queue size: 186956
+Pending when ops: 0, Queue size: 188458
+Processing batch, queue size: 188475
+Pending when ops: 0, Queue size: 189911
+Processing batch, queue size: 189916
+Pending when ops: 0, Queue size: 191358
+Processing batch, queue size: 191360
+Pending when ops: 0, Queue size: 192850
+Processing batch, queue size: 192877
+Pending when ops: 0, Queue size: 194279
+Processing batch, queue size: 194283
+Pending when ops: 0, Queue size: 195741
+Processing batch, queue size: 195779
+Pending when ops: 0, Queue size: 197267
+Processing batch, queue size: 197280
+Pending when ops: 0, Queue size: 198786
+Processing batch, queue size: 198788
+Pending when ops: 0, Queue size: 200312
+Processing batch, queue size: 200326
+Pending when ops: 0, Queue size: 201831
+Processing batch, queue size: 201839
+Pending when ops: 0, Queue size: 203330
+Processing batch, queue size: 203333
+Pending when ops: 0, Queue size: 204836
+Processing batch, queue size: 204923
+Pending when ops: 0, Queue size: 206434
+Processing batch, queue size: 206445
+Pending when ops: 0, Queue size: 208085
+Processing batch, queue size: 208099
+Pending when ops: 0, Queue size: 209566
+Processing batch, queue size: 209617
+Pending when ops: 0, Queue size: 211115
+Processing batch, queue size: 211118
+Pending when ops: 0, Queue size: 212627
+Processing batch, queue size: 212645
+Pending when ops: 0, Queue size: 214127
+Processing batch, queue size: 214131
+Pending when ops: 0, Queue size: 215587
+Processing batch, queue size: 215605
+Pending when ops: 0, Queue size: 217046
+Processing batch, queue size: 217050
+Pending when ops: 0, Queue size: 218558
+Processing batch, queue size: 218560
+Pending when ops: 0, Queue size: 220059
+Processing batch, queue size: 220097
+Pending when ops: 0, Queue size: 221550
+Processing batch, queue size: 221554
+Pending when ops: 0, Queue size: 223046
+Processing batch, queue size: 223051
+Pending when ops: 0, Queue size: 224505
+Processing batch, queue size: 224509
+Pending when ops: 0, Queue size: 226087
+Processing batch, queue size: 226095
+Pending when ops: 0, Queue size: 227582
+Processing batch, queue size: 227588
+Pending when ops: 0, Queue size: 229091
+Processing batch, queue size: 229118
+Pending when ops: 0, Queue size: 230550
+Processing batch, queue size: 230570
+Pending when ops: 0, Queue size: 232043
+Processing batch, queue size: 232048
+Pending when ops: 0, Queue size: 233523
+Processing batch, queue size: 233541
+Pending when ops: 0, Queue size: 235057
+Processing batch, queue size: 235072
+Pending when ops: 0, Queue size: 236545
+Processing batch, queue size: 236562
+Pending when ops: 0, Queue size: 238067
+Processing batch, queue size: 238072
+Pending when ops: 0, Queue size: 239577
+Processing batch, queue size: 239619
+Pending when ops: 0, Queue size: 241135
+Processing batch, queue size: 241140
+Pending when ops: 0, Queue size: 242632
+Processing batch, queue size: 242673
+Pending when ops: 0, Queue size: 244079
+Processing batch, queue size: 244120
+Pending when ops: 0, Queue size: 245533
+Processing batch, queue size: 245543
+Pending when ops: 0, Queue size: 246983
+Processing batch, queue size: 246987
+Pending when ops: 0, Queue size: 248465
+Processing batch, queue size: 248469
+Pending when ops: 0, Queue size: 249887
+Processing batch, queue size: 249890
+Pending when ops: 0, Queue size: 254965
+Processing batch, queue size: 254972
+Pausing: active threads: 16
+Pausing: active threads: 16
+Pausing: active threads: 15
+Pausing: active threads: 16
+Pausing: active threads: 16
+Pausing: active threads: 16
+Pausing: active threads: 16
+Pausing: active threads: 16
+Pausing: active threads: 15
+Pausing: active threads: 14
+Pausing: active threads: 13
+Pausing: active threads: 12
+Pausing: active threads: 11
+Pausing: active threads: 10
+Pausing: active threads: 9
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 41105030
+[report]: scheduler_total_when_schedules : 185131
+[report]: scheduler_total_when_time_ns : 111601227598573
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 184172
+[report]: insert_overall_throughput : 4480522.213461
+[report]: scheduler_avg_when_time_ns : 602823015.046497
+[report]: insert_avg_insert_time_ns : 223.000000
+completed_ops: 184172
+malloc(): mismatching next->prev_size (unsorted)
