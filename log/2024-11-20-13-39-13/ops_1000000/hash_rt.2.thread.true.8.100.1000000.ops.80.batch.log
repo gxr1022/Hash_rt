@@ -1,0 +1,135 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 88134814
+Init time:894946237
+Scheduler cores: 2
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 16423841
+[report]: scheduler_total_when_schedules : 2720
+[report]: scheduler_total_when_time_ns : 18910260
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 2720
+[report]: insert_overall_throughput : 165612.903827
+[report]: scheduler_avg_when_time_ns : 6952.301471
+[report]: insert_avg_insert_time_ns : /users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 3903156722
+Init time:902044433
+Scheduler cores: 2
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+hash_rt: /users/Xuran/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/mpmcq.h:211: verona::rt::MPMCQ<T>::~MPMCQ() [with T = verona::rt::Work]: Assertion `is_empty()' failed.
+/users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 3822812494
+Init time:896023488
+Scheduler cores: 2
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 15716791
+[report]: scheduler_total_when_schedules : 4064
+[report]: scheduler_total_when_time_ns : 25063369
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 4064
+/users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 3945860450
+Init time:898154706
+Scheduler cores: 2
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 1366814
+[report]: scheduler_total_when_schedules : 220
+[report]: scheduler_total_when_time_ns : 9389364
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 220
+[report]: insert_overall_throughput/users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 248514282
+Init time:898011907
+Scheduler cores: 2
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 1646321
+[report]: scheduler_total_when_schedules : 292
+[report]: scheduler_total_when_time_ns : 7784064
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 292
+[report]: insert_overall_throughput : 177365.167546
+[report]: scheduler_avg_when_time_ns : 26657.753425
+[report]: insert_avg_insert_time_ns : 5638.000000
+/users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 2403694236
+Init time:897132533
+Scheduler cores: 2
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 1961997
+[report]: scheduler_total_when_schedules : 378
+[report]: scheduler_total_when_time_ns : 7636088
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 378
+/users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 4027465382
+Init time:900048415
+Scheduler cores: 2
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 1261895
+[report]: scheduler_total_when_schedules : 194
+[report]: scheduler_total_when_time_ns : 9979507
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 194
+[report]: insert_overall_throughput : 153737.038343
+/users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 3358828546
+Init time:896644051
+Scheduler cores: 2
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 16511344
+[report]: scheduler_total_when_schedules : 4288
+[report]: scheduler_total_when_time_ns : 25931563
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 4288
+/users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 2748935112
+Init time:895352435
+Scheduler cores: 2
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 1530395
+[report]: scheduler_total_when_schedules : 268
+[report]: scheduler_total_when_time_ns : 11112945
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 268
+[report]: /users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 2080265972
+Init time:896185270
+Scheduler cores: 2
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: scheduler_run_time_ns : 1721764
+[report]: scheduler_total_when_schedules : 320
+[report]: scheduler_total_when_time_ns : 11024932
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 320
+[report]: insert_overall_throughput : 185855.901273
+[report]: scheduler_avg_when_time_ns : 34452.912500
+[report]: insert_avg_insert_time_ns : 5380.000000

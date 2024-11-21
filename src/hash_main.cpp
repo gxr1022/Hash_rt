@@ -15,7 +15,10 @@ int main(int argc, char **argv)
 
     harness.external_core_start = scheduler_cores;
     harness.external_core_count = external_cores;
-
+    
+    auto &sched = verona::rt::Scheduler::get();
+    sched.set_fair(true);
+    sched.init(scheduler_cores);
     HashTableServer server(harness);
 
     size_t client_threads = external_cores - 1;
@@ -23,9 +26,7 @@ int main(int argc, char **argv)
     std::vector<std::unique_ptr<HashTableClient>> clients;
 
     auto start_time = std::chrono::steady_clock::now();
-    auto &sched = verona::rt::Scheduler::get();
-    sched.set_fair(true);
-    sched.init(scheduler_cores);
+    
     std::cout << "Scheduler cores: " << scheduler_cores << std::endl;
     for (size_t i = 0; i < client_threads; i++)
     {
@@ -34,7 +35,7 @@ int main(int argc, char **argv)
                                 { clients[i]->run(); });
     }
 
-    std::this_thread::sleep_for(std::chrono::microseconds(1000000));
+    // std::this_thread::sleep_for(std::chrono::microseconds(1000000));
 
     auto run_start = std::chrono::steady_clock::now();
     sched.run();
@@ -44,7 +45,7 @@ int main(int argc, char **argv)
 
     auto [when_total_time, when_count] = server.hash_table->get_when_stats();
     double avg_when_time = when_count > 0 ? static_cast<double>(when_total_time) / when_count : 0;
-    benchmark_report("scheduler", "run_time_ns", std::to_string(run_time));
+    benchmark_report("insert", "run_time_ns", std::to_string(run_time));
     benchmark_report("scheduler", "total_when_schedules", std::to_string(when_count));
     benchmark_report("scheduler", "total_when_time_ns", std::to_string(when_total_time));
 
