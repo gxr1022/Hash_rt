@@ -1,0 +1,13 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=1 --str_key_size=8 --str_value_size=100 --num_ops=100 --first_mode=true --work_usec=0
+Running with 1 cores
+Init time:2349197247
+Init scheduler time:37184
+Schedule behaviours time:110127
+[report]: insert_sched_avg_time : 1101.000000
+Pausing: active threads: 1
+Teardown: all threads stopped
+Run behaviours time:831247
+[report]: insert_run_avg_time : 8312.000000
+[report]: insert_overall_duration_ns : 831247
+[report]: insert_overall_operation_number : 100
+[report]: insert_overall_throughput : 120301.186049

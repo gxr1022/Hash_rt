@@ -1,0 +1,14 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=32 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=32 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 1277930164
+Init time:2352726742
+Scheduler cores: 23
+External thread 0 is running on core 23
+External thread 1 is running on core 24
+External thread 2 is running on core 25
+External thread 3 is running on core 26
+External thread 4 is running on core 27
+External thread 5 is running on core 28
+External thread 6 is running on core 29
+External thread 7 is running on core 30
+External thread 8 is running on core 31

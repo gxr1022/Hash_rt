@@ -15,22 +15,23 @@
 #include <string_view>
 #include <cstring>
 
-#define HASH_INIT_BUCKET_NUM (5000000)
+#define HASH_INIT_BUCKET_NUM (10000000)
 #define HASH_ASSOC_NUM (2)
 #define MAX_KEY_LENGTH 8
-#define MAX_VALUE_LENGTH 100 
+#define MAX_VALUE_LENGTH 100
 
 using namespace verona::rt;
 using namespace verona::cpp;
 using namespace std;
 
-
-struct KeyValue {
+struct KeyValue
+{
     char key[MAX_KEY_LENGTH];
     char value[MAX_VALUE_LENGTH];
-    bool occupied;  
+    bool occupied;
 
-    KeyValue() : occupied(false) {
+    KeyValue() : occupied(false)
+    {
         key[0] = '\0';
         value[0] = '\0';
     }
@@ -47,7 +48,7 @@ public:
         return idx >= HASH_ASSOC_NUM;
     }
 
-    bool insert(const char* key, const char* value)
+    bool insert(const char *key, const char *value)
     {
         if (isFull())
         {
@@ -55,16 +56,17 @@ public:
             return false;
         }
 
-        if (strlen(key) >= MAX_KEY_LENGTH || strlen(value) >= MAX_VALUE_LENGTH) {
+        if (strlen(key) >= MAX_KEY_LENGTH || strlen(value) >= MAX_VALUE_LENGTH)
+        {
             return false;
         }
 
         strncpy(slots[idx].key, key, MAX_KEY_LENGTH - 1);
         strncpy(slots[idx].value, value, MAX_VALUE_LENGTH - 1);
-        
+
         slots[idx].key[MAX_KEY_LENGTH - 1] = '\0';
         slots[idx].value[MAX_VALUE_LENGTH - 1] = '\0';
-        
+
         slots[idx].occupied = true;
         // cout << "inserted successfully:" << slots[idx].key << " value:" << slots[idx].value << endl;
         idx++;
@@ -76,10 +78,10 @@ public:
     }
 };
 
-static inline int hashFunction(const char* key, int dirCap)
+static inline int hashFunction(const char *key, int dirCap)
 {
     size_t key_len = strlen(key);
-    uint64_t hashValue = string_key_hash_computation(key,key_len , 0, 0);
+    uint64_t hashValue = string_key_hash_computation(key, key_len, 0, 0);
     return hashValue % dirCap;
 }
 
@@ -107,7 +109,7 @@ public:
         std::cout << "Init time:" << duration_ns << std::endl;
     }
 
-    void insert(const char* key, const char* value)
+    void insert(const char *key, const char *value)
     {
         int hashValue = hashFunction(key, dirCapacity);
         bool inserted = false;
@@ -115,24 +117,25 @@ public:
         if (hashValue < directory.size())
         {
             auto start_time = std::chrono::steady_clock::now();
-            
+
             when(directory[hashValue]) << [=](acquired_cown<Bucket> bucketAcq) mutable
             {
-                auto end_time = std::chrono::steady_clock::now();
-                auto schedule_time = std::chrono::duration_cast<std::chrono::nanoseconds>
-                                   (end_time - start_time).count();
-                when_schedule_time.fetch_add(schedule_time);
-                when_schedule_count.fetch_add(1);
-                
                 inserted = bucketAcq->insert(key, value);
-                if (inserted) {
+                if (inserted)
+                {
                     completed_inserts.fetch_add(1);
                 }
             };
+            auto end_time = std::chrono::steady_clock::now();
+            auto schedule_time = std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time);
+            cout << "one when time: " << schedule_time.count() << endl;
+            when_schedule_time.fetch_add(schedule_time.count());
+            when_schedule_count.fetch_add(1);
         }
     }
 
-    std::pair<uint64_t, uint64_t> get_when_stats() const {
+    std::pair<uint64_t, uint64_t> get_when_stats() const
+    {
         return {when_schedule_time.load(), when_schedule_count.load()};
     }
 

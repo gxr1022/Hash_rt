@@ -8,11 +8,11 @@ int main(int argc, char **argv)
     google::ParseCommandLineFlags(&argc, &argv, false);
     // Logging::enable_logging();
     size_t total_cores = FLAGS_num_threads;
-    size_t scheduler_cores = total_cores / 2;
+    // size_t scheduler_cores = total_cores / 2;
+    size_t scheduler_cores = total_cores - 9;
     size_t external_cores = total_cores - scheduler_cores;
 
     SystematicTestHarness harness(argc, argv);
-
     harness.external_core_start = scheduler_cores;
     harness.external_core_count = external_cores;
     
@@ -21,7 +21,8 @@ int main(int argc, char **argv)
     sched.init(scheduler_cores);
     HashTableServer server(harness);
 
-    size_t client_threads = external_cores - 1;
+    // size_t client_threads = external_cores - 1;
+    size_t client_threads = 8;
 
     std::vector<std::unique_ptr<HashTableClient>> clients;
 
@@ -35,8 +36,14 @@ int main(int argc, char **argv)
                                 { clients[i]->run(); });
     }
 
-    // std::this_thread::sleep_for(std::chrono::microseconds(1000000));
+    auto [before_sleep_when_time, before_sleep_when_count] = server.hash_table->get_when_stats();
+    
+    std::this_thread::sleep_for(std::chrono::microseconds(5000000));
 
+    auto [after_sleep_when_time, after_sleep_when_count] = server.hash_table->get_when_stats();
+    size_t sleep_period_when_count = after_sleep_when_count - before_sleep_when_count;
+    std::cout << "When schedules during sleep: " << sleep_period_when_count << std::endl;
+    
     auto run_start = std::chrono::steady_clock::now();
     sched.run();
     auto run_end = std::chrono::steady_clock::now();

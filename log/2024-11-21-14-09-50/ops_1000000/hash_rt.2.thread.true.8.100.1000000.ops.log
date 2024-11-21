@@ -1,0 +1,29 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=4 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Running with 4 cores
+Init time:8950100049
+Init scheduler time:130752
+Schedule behaviours time:3352313079
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+Run behaviours time:392697069
+[report]: insert_overall_duration_ns : 392697069
+[report]: insert_overall_operation_number : 1000000
+[report]: insert_overall_throughput : 2546492.140994
+/users/Xuran/hash_rt/build/hash_rt --num_threads=5 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Running with 5 cores
+Init time:9057739179
+Init scheduler time:119988
+Schedule behaviours time:3453896147
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+Run behaviours time:316839427
+[report]: insert_overall_duration_ns : 316839427
+[report]: insert_overall_operation_number : 1000000
+[report]: insert_overall_throughput : 3156172.858500

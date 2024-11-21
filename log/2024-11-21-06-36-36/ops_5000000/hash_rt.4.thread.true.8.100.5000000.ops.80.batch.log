@@ -1,0 +1,76 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=8 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=8 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 362967736
+Init time:1185248927
+Scheduler cores: 4
+External thread 0 is running on core 4
+External thread 1 is running on core 5
+External thread 2 is running on core 6
+External thread 3 is running on core 7
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+
+=== Thread 4 Steal Statistics ===
+Total work items processed: 0
+Steal attempts: 114498587
+Successful steals: 1
+Success rate: 8.73373e-07%
+
+Steals from each victim:
+  From thread 3: 1 steals
+===========================
+
+=== Thread 3 Steal Statistics ===
+Total work items processed: 838852
+Steal attempts: 118995340
+Successful steals: 669372
+Success rate: 0.562519%
+
+Steals from each victim:
+  From thread 1: 147021 steals
+  From thread 2: 166852 steals
+  From thread 4: 355499 steals
+===========================
+
+=== Thread 2 Steal Statistics ===
+Total work items processed: 854822
+Steal attempts: 120821002
+Successful steals: 722823
+Success rate: 0.598259%
+
+Steals from each victim:
+  From thread 1: 94719 steals
+  From thread 3: 150364 steals
+  From thread 4: 477740 steals
+===========================
+
+=== Thread 1 Steal Statistics ===
+Total work items processed: 949969
+Steal attempts: 128506038
+Successful steals: 773497
+Success rate: 0.601915%
+
+Steals from each victim:
+  From thread 2: 174498 steals
+  From thread 3: 182273 steals
+  From thread 4: 416726 steals
+===========================
+
+=== Summary ===
+Total work items: 2643643
+Total steal attempts: 482820967
+Total successful steals: 2165693
+Overall success rate: 0.44855%
+====================
+[report]: insert_run_time_ns : 14088490506
+[report]: scheduler_total_when_schedules : 5000000
+[report]: scheduler_total_when_time_ns : 12922473926
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 4482205
+[report]: insert_overall_throughput : 318146.574900
+[report]: scheduler_avg_when_time_ns : 2584.494785
+[report]: insert_avg_insert_time_ns : 3143.000000
+terminate called without an active exception

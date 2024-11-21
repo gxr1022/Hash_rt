@@ -1,0 +1,71 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=20 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=20 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 547257034
+Init time:2360059633
+Scheduler cores: 11
+External thread 0 is running on core 11
+External thread 1 is running on core 12
+External thread 2 is running on core 13
+External thread 3 is running on core 14
+External thread 4 is running on core 15
+External thread 5 is running on core 16
+External thread 6 is running on core 17
+External thread 7 is running on core 18
+External thread 8 is running on core 19
+Total scheduler time:5319054193
+Pausing: active threads: 11
+Pausing: active threads: 10
+Pausing: active threads: 9
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: insert_run_time_ns : 1073053390
+[report]: scheduler_total_when_schedules : 5000000
+[report]: scheduler_total_when_time_ns : 4862449494
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 4836378
+[report]: insert_overall_throughput : 4507117.767924
+[report]: scheduler_avg_when_time_ns : 972.489899
+[report]: insert_avg_insert_time_ns : 221.000000
+/users/Xuran/hash_rt/build/hash_rt --num_threads=21 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=21 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 2769867834
+Init time:2337526931
+Scheduler cores: 12
+External thread 0 is running on core 12
+External thread 1 is running on core 13
+External thread 2 is running on core 14
+External thread 3 is running on core 15
+External thread 4 is running on core 16
+External thread 5 is running on core 17
+External thread 6 is running on core 18
+External thread 7 is running on core 19
+External thread 8 is running on core 20
+Total scheduler time:5423461438
+Pausing: active threads: 12
+Pausing: active threads: 11
+Pausing: active threads: 10
+Pausing: active threads: 9
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: insert_run_time_ns : 1054551200
+[report]: scheduler_total_when_schedules : 5000000
+[report]: scheduler_total_when_time_ns : 4879686645
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 4836922
+[report]: insert_overall_throughput : 4586711.389641
+[report]: scheduler_avg_when_time_ns : 975.937329
+[report]: insert_avg_insert_time_ns : 218.000000

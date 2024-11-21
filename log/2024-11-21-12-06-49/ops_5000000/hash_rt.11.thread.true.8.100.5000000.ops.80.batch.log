@@ -1,0 +1,264 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=22 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=22 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 3675211922
+Init time:2332455816
+Scheduler cores: 13
+External thread 0 is running on core 13
+External thread 1 is running on core 14
+External thread 2 is running on core 15
+External thread 3 is running on core 16
+External thread 4 is running on core 17
+External thread 5 is running on core 18
+External thread 6 is running on core 19
+External thread 7 is running on core 20
+External thread 8 is running on core 21
+Pausing: active threads: 13
+Pausing: active threads: 12
+Pausing: active threads: 11
+Pausing: active threads: 10
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 13
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 13
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 12
+Pausing: active threads: 13
+Pausing: active threads: 12
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 13
+Pausing: active threads: 12
+Pausing: active threads: 11
+Pausing: active threads: 10
+Pausing: active threads: 9
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 4
+Pausing: active threads: 9
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: insert_run_time_ns : 47390673
+[report]: scheduler_total_when_schedules : 17545
+[report]: scheduler_total_when_time_ns : 36695500
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 17509
+[report]: insert_overall_throughput : 369460.885267
+[report]: scheduler_avg_when_time_ns : 2091.507552
+[report]: insert_avg_insert_time_ns : 2706.000000
+terminate called without an active exception
+/users/Xuran/hash_rt/build/hash_rt --num_threads=23 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=23 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 2873036506
+Init time:2334631544
+Scheduler cores: 14
+External thread 0 is running on core 14
+External thread 1 is running on core 15
+External thread 2 is running on core 16
+External thread 3 is running on core 17
+External thread 4 is running on core 18
+External thread 5 is running on core 19
+External thread 6 is running on core 20
+External thread 7 is running on core 21
+External thread 8 is running on core 22
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 13
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 14
+Pausing: active threads: 13
+Pausing: active threads: 12
+Pausing: active threads: 11
+Pausing: active threads: 10
+Pausing: active threads: 9
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: insert_run_time_ns : 77788279
+[report]: scheduler_total_when_schedules : 25424
+[report]: scheduler_total_when_time_ns : 62984802
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 25383
+[report]: insert_overall_throughput : 326308.800327
+[report]: scheduler_avg_when_time_ns : 2477.375787
+[report]: insert_avg_insert_time_ns : 3064.000000
+terminate called without an active exception

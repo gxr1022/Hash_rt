@@ -1,8 +1,8 @@
 # ninja log v5
 1	11	0	/users/Xuran/hash_rt/build/CMakeFiles/cmake.verify_globs	5517737f608d4af7
 0	12	0	clean	a31eedcededa8236
-9229	9382	1732185475651833379	hash_rt	d2608e9fcc4407f1
-3	9229	1732185475499832970	CMakeFiles/hash_rt.dir/src/hash_main.cpp.o	7fbc4d63593a83c8
-0	12	0	/users/Xuran/hash_rt/build/CMakeFiles/cmake.verify_globs	5517737f608d4af7
-2	9451	1732186042429329277	CMakeFiles/hash_rt.dir/src/hash_main.cpp.o	7fbc4d63593a83c8
-9451	9604	1732186042585329687	hash_rt	d2608e9fcc4407f1
+8638	8783	1732221548513788761	hash_rt	fcec2cccbe88a28a
+2	8632	1732221548361788264	CMakeFiles/hash_rt.dir/src/hash_rt.cpp.o	bbc35a07a987ace6
+0	11	0	/users/Xuran/hash_rt/build/CMakeFiles/cmake.verify_globs	5517737f608d4af7
+3	8593	1732222034903384045	CMakeFiles/hash_rt.dir/src/hash_rt.cpp.o	bbc35a07a987ace6
+8593	8762	1732222035071384601	hash_rt	fcec2cccbe88a28a

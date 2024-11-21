@@ -37,10 +37,10 @@ kv_sizes=(
 	# "8 1048576"
 )
 
-threads=(8)
-# for ((i =5; i <= 40; i += 2)); do
-#     threads+=($i)
-# done
+threads=(12)
+for ((i =13; i <= 39; i += 1)); do
+    threads+=($i)
+done
 
 test_name=(hash_rt)
 # for i in {1..10}; do
@@ -67,7 +67,7 @@ for tn in ${test_name[*]};do
     --work_usec=${work} \
     --batch_size=${batch}
 	"
-	this_log_path=${ops_log_path}/${tn}.$(($t/2)).thread.${mode}.${key_size}.${value_size}.${num_of_ops}.ops.${batch}.batch.log
+	this_log_path=${ops_log_path}/${tn}.${t}.thread.${mode}.${key_size}.${value_size}.${num_of_ops}.ops.${batch}.batch.log
 
 	echo ${cmd} 2>&1 | tee -a ${this_log_path}
 	timeout -v 3600 stdbuf -o0 ${cmd} 2>&1 | tee -a ${this_log_path}

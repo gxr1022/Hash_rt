@@ -1,0 +1,63 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=1 --str_key_size=8 --str_value_size=100 --num_ops=10 --first_mode=true --work_usec=0
+Running with 1 cores
+Init time:2347174093
+Init scheduler time:46358
+create_behaviour time: 12143
+sort indexes time: 233
+first phase time: 562
+second phase time: 107
+resolve time: 291
+create_behaviour time: 89
+sort indexes time: 58
+first phase time: 209
+second phase time: 42
+resolve time: 107
+create_behaviour time: 34
+sort indexes time: 66
+first phase time: 358
+second phase time: 42
+resolve time: 62
+create_behaviour time: 36
+sort indexes time: 53
+first phase time: 370
+second phase time: 41
+resolve time: 65
+create_behaviour time: 35
+sort indexes time: 52
+first phase time: 265
+second phase time: 42
+resolve time: 69
+create_behaviour time: 34
+sort indexes time: 55
+first phase time: 292
+second phase time: 42
+resolve time: 68
+create_behaviour time: 34
+sort indexes time: 53
+first phase time: 360
+second phase time: 40
+resolve time: 69
+create_behaviour time: 49
+sort indexes time: 53
+first phase time: 352
+second phase time: 40
+resolve time: 63
+create_behaviour time: 37
+sort indexes time: 53
+first phase time: 275
+second phase time: 42
+resolve time: 68
+create_behaviour time: 37
+sort indexes time: 53
+first phase time: 355
+second phase time: 40
+resolve time: 68
+Schedule behaviours time:241377
+[report]: insert_sched_avg_time : 24137.000000
+Pausing: active threads: 1
+Teardown: all threads stopped
+Run behaviours time:804947
+[report]: insert_run_avg_time : 80494.000000
+[report]: insert_overall_duration_ns : 804947
+[report]: insert_overall_operation_number : 10
+[report]: insert_overall_throughput : 12423.178172

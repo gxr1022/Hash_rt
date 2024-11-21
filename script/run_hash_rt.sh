@@ -15,7 +15,7 @@ pushd ${BINARY_PATH}
 
 clean_build
 
-cmake -B ${BINARY_PATH} -GNinja -DUSE_SYSTEMATIC_TESTING=OFF -DCMAKE_BUILD_TYPE=Debug ${RUN_PATH}  2>&1 | tee ${RUN_PATH}/configure.log
+cmake -B ${BINARY_PATH} -GNinja -DUSE_SYSTEMATIC_TESTING=OFF -DCMAKE_BUILD_TYPE=Release ${RUN_PATH}  2>&1 | tee ${RUN_PATH}/configure.log
 if [[ "$?" != 0  ]];then
 	exit
 fi
@@ -23,8 +23,8 @@ cmake --build .
 
 TEST_PATH=${BINARY_PATH}
 
-# num_of_ops_set=(1000 10000 100000 1000000)
-num_of_ops_set=(1000000)
+num_of_ops_set=(100)
+# num_of_ops_set=(100 1000 10000 100000 1000000)
 modes=(true)
 work_usec=(0)
 kv_sizes=(
@@ -35,10 +35,10 @@ kv_sizes=(
 	# "8 1048576"
 )
 
-threads=(3)
-for ((i =4; i <= 40; i += 2)); do
-    threads+=($i)
-done
+threads=(8)
+# for ((i =2; i <= 16; i += 1)); do
+#     threads+=($i)
+# done
 
 test_name=(hash_rt)
 

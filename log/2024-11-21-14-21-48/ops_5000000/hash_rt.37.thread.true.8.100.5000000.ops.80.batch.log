@@ -1,0 +1,52 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=37 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=37 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 2019780848
+Init time:2374378616
+Scheduler cores: 28
+External thread 0 is running on core 28
+External thread 1 is running on core 29
+External thread 2 is running on core 30
+External thread 3 is running on core 31
+External thread 4 is running on core 32
+External thread 5 is running on core 33
+External thread 6 is running on core 34
+External thread 7 is running on core 35
+External thread 8 is running on core 36
+When schedules during sleep: 4737574
+Pausing: active threads: 28
+Pausing: active threads: 27
+Pausing: active threads: 26
+Pausing: active threads: 25
+Pausing: active threads: 24
+Pausing: active threads: 23
+Pausing: active threads: 22
+Pausing: active threads: 21
+Pausing: active threads: 20
+Pausing: active threads: 19
+Pausing: active threads: 18
+Pausing: active threads: 17
+Pausing: active threads: 16
+Pausing: active threads: 15
+Pausing: active threads: 14
+Pausing: active threads: 13
+Pausing: active threads: 12
+Pausing: active threads: 11
+Pausing: active threads: 10
+Pausing: active threads: 9
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: insert_run_time_ns : 368200050
+[report]: scheduler_total_when_schedules : 4740989
+[report]: scheduler_total_when_time_ns : 3006843993
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 4599541
+[report]: insert_overall_throughput : 12491961.910380
+[report]: scheduler_avg_when_time_ns : 634.222942
+[report]: insert_avg_insert_time_ns : 80.000000

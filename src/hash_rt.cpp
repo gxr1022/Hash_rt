@@ -26,7 +26,7 @@ DEFINE_uint64(str_key_size, 8, "size of key (bytes)");
 DEFINE_uint64(str_value_size, 100, "size of value (bytes)");
 DEFINE_uint64(num_threads, 16, "the number of threads");
 DEFINE_uint64(time_interval, 10, "the time interval of insert operations");
-DEFINE_uint64(num_ops, 100000, "the number of insert operations");
+DEFINE_uint64(num_ops, 1000000, "the number of insert operations");
 DEFINE_string(report_prefix, "[report]: ", "prefix of report data");
 DEFINE_bool(first_mode, true, "fist mode start multiply clients on the same key value server");
 DEFINE_uint64(work_usec, 0, "the time interval of insert operations");
@@ -85,7 +85,7 @@ void performInsertions(ExtendibleHash *hashtable, size_t num_of_ops, size_t key_
         int r = rand() % HASH_INIT_BUCKET_NUM;
         char *key = from_uint64_to_char(r, key_size);
         // std::cout << "Inserting key: " << key << std::endl;
-        hashtable->insert(key, common_value, work_usec);
+        hashtable->insert(key, common_value);
         // hashtable->printStatus();
     }
 
@@ -112,12 +112,16 @@ void runTest(ExtendibleHash *hashTable, size_t cores, size_t num_of_ops, size_t 
     duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
     std::cout << "Schedule behaviours time:" << duration_ns << std::endl;
 
+    double sched_avg_time = duration_ns / num_of_ops;
+    benchmark_report(load_benchmark_prefix, "sched_avg_time", std::to_string(sched_avg_time));
+    
     start_time = std::chrono::steady_clock::now();
     sched.run();
     current_time = std::chrono::steady_clock::now();
     duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
     std::cout << "Run behaviours time:" << duration_ns << std::endl;
-    
+    double run_avg_time = duration_ns / num_of_ops;
+    benchmark_report(load_benchmark_prefix, "run_avg_time", std::to_string(run_avg_time));
     double throughput = num_of_ops / (duration_ns / 1e9);
     benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
     benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));

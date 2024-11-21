@@ -1,0 +1,73 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=1 --str_key_size=8 --str_value_size=100 --num_ops=10 --first_mode=true --work_usec=0
+Running with 1 cores
+Init time:2372574257
+Init scheduler time:36504
+create_behaviour time: 12542
+sort indexes time: 280
+first phase time: 480
+second phase time: 93
+resolve time: 228
+one when time: 66840
+create_behaviour time: 80
+sort indexes time: 61
+first phase time: 379
+second phase time: 42
+resolve time: 108
+one when time: 20203
+create_behaviour time: 55
+sort indexes time: 64
+first phase time: 374
+second phase time: 40
+resolve time: 66
+one when time: 19460
+create_behaviour time: 61
+sort indexes time: 56
+first phase time: 377
+second phase time: 42
+resolve time: 64
+one when time: 19506
+create_behaviour time: 64
+sort indexes time: 56
+first phase time: 353
+second phase time: 40
+resolve time: 79
+one when time: 19190
+create_behaviour time: 72
+sort indexes time: 56
+first phase time: 265
+second phase time: 35
+resolve time: 66
+one when time: 18929
+create_behaviour time: 60
+sort indexes time: 58
+first phase time: 354
+second phase time: 36
+resolve time: 63
+one when time: 20989
+create_behaviour time: 55
+sort indexes time: 55
+first phase time: 267
+second phase time: 34
+resolve time: 66
+one when time: 19200
+create_behaviour time: 66
+sort indexes time: 54
+first phase time: 368
+second phase time: 40
+resolve time: 78
+one when time: 19333
+create_behaviour time: 55
+sort indexes time: 55
+first phase time: 358
+second phase time: 36
+resolve time: 66
+one when time: 19328
+Schedule behaviours time:289441
+[report]: insert_sched_avg_time : 28944.000000
+Pausing: active threads: 1
+Teardown: all threads stopped
+Run behaviours time:825366
+[report]: insert_run_avg_time : 82536.000000
+[report]: insert_overall_duration_ns : 825366
+[report]: insert_overall_operation_number : 10
+[report]: insert_overall_throughput : 12115.837095

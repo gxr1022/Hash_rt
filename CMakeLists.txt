@@ -13,8 +13,8 @@ include_directories(
     ${GFLAGS_INCLUDE_DIRS}
 )
 
-set(SOURCES util/util.hpp src/hash_main.cpp)
-# set(SOURCES util/util.hpp src/hash_rt.cpp)
+# set(SOURCES util/util.hpp src/hash_main.cpp)
+set(SOURCES util/util.hpp src/hash_rt.cpp)
 
 find_package(gflags REQUIRED)
 
@@ -28,4 +28,9 @@ subdirlist(INCLUDE_CATEGORIES ${INCLUDEDIR})
 foreach(INCLUDE_CATEGORY ${INCLUDE_CATEGORIES})
     target_include_directories(hash_rt PUBLIC ${INCLUDEDIR}/${INCLUDE_CATEGORY})
 endforeach()
+
+add_definitions(-DFORCE_LOGGING)
+
+
+# add_definitions(-DUSE_SYSTEMATIC_TESTING)
 

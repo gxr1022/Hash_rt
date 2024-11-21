@@ -49,9 +49,9 @@ cmake_ninja_workdir = /users/Xuran/hash_rt/build/
 
 build cmake_object_order_depends_target_hash_rt: phony || CMakeFiles/hash_rt.dir
 
-build CMakeFiles/hash_rt.dir/src/hash_main.cpp.o: CXX_COMPILER__hash_rt_Release /users/Xuran/hash_rt/src/hash_main.cpp || cmake_object_order_depends_target_hash_rt
-  DEFINES = -DGFLAGS_IS_A_DLL=0 -DMALLOC_USABLE_SIZE_QUALIFIER=const -DSNMALLOC_CHEAP_CHECKS -DSNMALLOC_HAS_LINUX_RANDOM_H -DSNMALLOC_NO_REALLOCARR -DSNMALLOC_NO_REALLOCARRAY -DSNMALLOC_PLATFORM_HAS_GETENTROPY -DSNMALLOC_USE_CXX17
-  DEP_FILE = CMakeFiles/hash_rt.dir/src/hash_main.cpp.o.d
+build CMakeFiles/hash_rt.dir/src/hash_rt.cpp.o: CXX_COMPILER__hash_rt_Release /users/Xuran/hash_rt/src/hash_rt.cpp || cmake_object_order_depends_target_hash_rt
+  DEFINES = -DFORCE_LOGGING -DGFLAGS_IS_A_DLL=0 -DMALLOC_USABLE_SIZE_QUALIFIER=const -DSNMALLOC_CHEAP_CHECKS -DSNMALLOC_HAS_LINUX_RANDOM_H -DSNMALLOC_NO_REALLOCARR -DSNMALLOC_NO_REALLOCARRAY -DSNMALLOC_PLATFORM_HAS_GETENTROPY -DSNMALLOC_USE_CXX17
+  DEP_FILE = CMakeFiles/hash_rt.dir/src/hash_rt.cpp.o.d
   FLAGS = -O3 -DNDEBUG -mcx16
   INCLUDES = -I/users/Xuran/hash_rt/include -I/users/Xuran/hash_rt/include/verona-rt/src/rt/. -I/users/Xuran/hash_rt/build/_deps/snmalloc-src/src
   OBJECT_DIR = CMakeFiles/hash_rt.dir
@@ -67,7 +67,7 @@ build CMakeFiles/hash_rt.dir/src/hash_main.cpp.o: CXX_COMPILER__hash_rt_Release 
 #############################################
 # Link the executable hash_rt
 
-build hash_rt: CXX_EXECUTABLE_LINKER__hash_rt_Release CMakeFiles/hash_rt.dir/src/hash_main.cpp.o | /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2
+build hash_rt: CXX_EXECUTABLE_LINKER__hash_rt_Release CMakeFiles/hash_rt.dir/src/hash_rt.cpp.o | /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2
   FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2  -latomic  -lpthread
   OBJECT_DIR = CMakeFiles/hash_rt.dir

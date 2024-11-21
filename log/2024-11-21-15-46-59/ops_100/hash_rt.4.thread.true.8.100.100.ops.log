@@ -1,0 +1,1220 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=8 --str_key_size=8 --str_value_size=100 --num_ops=100 --first_mode=true --work_usec=0
+Running with 8 cores
+Init time:2346451821
+Init scheduler time:43349
+When creation time: 309 ns
+create_behaviour time: 12704
+sort indexes time: 442
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 59ns
+Duplicate handling: 76ns
+Status setting: 402ns
+Slot linking: 66ns
+second phase time: 88
+resolve time: 64
+one when time: 81987
+When creation time: 291 ns
+create_behaviour time: 99
+sort indexes time: 46
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 48ns
+Duplicate handling: 32ns
+Status setting: 407ns
+Slot linking: 44ns
+second phase time: 40
+resolve time: 46
+one when time: 33335
+When creation time: 667 ns
+create_behaviour time: 53
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 31ns
+Status setting: 300ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 48
+one when time: 33291
+When creation time: 149 ns
+create_behaviour time: 51
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 49ns
+Duplicate handling: 33ns
+Status setting: 256ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 47
+one when time: 33442
+When creation time: 219 ns
+create_behaviour time: 40
+sort indexes time: 45
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 312ns
+Slot linking: 44ns
+second phase time: 45
+resolve time: 48
+one when time: 33121
+When creation time: 304 ns
+create_behaviour time: 38
+sort indexes time: 43
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 325ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 33074
+When creation time: 213 ns
+create_behaviour time: 40
+sort indexes time: 45
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 31ns
+Status setting: 308ns
+Slot linking: 45ns
+second phase time: 42
+resolve time: 47
+one when time: 32933
+When creation time: 227 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 33ns
+Status setting: 303ns
+Slot linking: 44ns
+second phase time: 44
+resolve time: 46
+one when time: 32198
+When creation time: 204 ns
+create_behaviour time: 38
+sort indexes time: 46
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 31ns
+Status setting: 313ns
+Slot linking: 43ns
+second phase time: 44
+resolve time: 47
+one when time: 33342
+When creation time: 327 ns
+create_behaviour time: 53
+sort indexes time: 46
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 49ns
+Duplicate handling: 33ns
+Status setting: 223ns
+Slot linking: 44ns
+second phase time: 40
+resolve time: 51
+one when time: 32353
+When creation time: 211 ns
+create_behaviour time: 38
+sort indexes time: 47
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 48ns
+Duplicate handling: 31ns
+Status setting: 404ns
+Slot linking: 43ns
+second phase time: 40
+resolve time: 49
+one when time: 32340
+When creation time: 216 ns
+create_behaviour time: 40
+sort indexes time: 45
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 254ns
+Slot linking: 46ns
+second phase time: 40
+resolve time: 47
+one when time: 32836
+When creation time: 208 ns
+create_behaviour time: 40
+sort indexes time: 47
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 32ns
+Status setting: 386ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 47
+one when time: 33505
+When creation time: 206 ns
+create_behaviour time: 40
+sort indexes time: 45
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 31ns
+Status setting: 360ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 32857
+When creation time: 216 ns
+create_behaviour time: 40
+sort indexes time: 43
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 311ns
+Slot linking: 46ns
+second phase time: 41
+resolve time: 47
+one when time: 32007
+When creation time: 209 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 31ns
+Status setting: 316ns
+Slot linking: 46ns
+second phase time: 38
+resolve time: 47
+one when time: 31669
+When creation time: 209 ns
+create_behaviour time: 40
+sort indexes time: 43
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 305ns
+Slot linking: 44ns
+second phase time: 39
+resolve time: 47
+one when time: 32427
+When creation time: 201 ns
+create_behaviour time: 40
+sort indexes time: 43
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 325ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 45
+one when time: 31936
+When creation time: 202 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 32ns
+Status setting: 309ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 32397
+When creation time: 318 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 32ns
+Status setting: 313ns
+Slot linking: 43ns
+second phase time: 45
+resolve time: 47
+one when time: 32735
+When creation time: 220 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 321ns
+Slot linking: 44ns
+second phase time: 46
+resolve time: 47
+one when time: 32851
+When creation time: 211 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 49ns
+Duplicate handling: 33ns
+Status setting: 303ns
+Slot linking: 44ns
+second phase time: 46
+resolve time: 47
+one when time: 32139
+When creation time: 210 ns
+create_behaviour time: 38
+sort indexes time: 46
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 234ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 48
+one when time: 32036
+When creation time: 211 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 48ns
+Duplicate handling: 31ns
+Status setting: 313ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 47
+one when time: 33097
+When creation time: 211 ns
+create_behaviour time: 40
+sort indexes time: 43
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 31ns
+Status setting: 315ns
+Slot linking: 45ns
+second phase time: 41
+resolve time: 47
+one when time: 32231
+When creation time: 204 ns
+create_behaviour time: 40
+sort indexes time: 43
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 300ns
+Slot linking: 45ns
+second phase time: 42
+resolve time: 47
+one when time: 32282
+When creation time: 202 ns
+create_behaviour time: 40
+sort indexes time: 42
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 31ns
+Status setting: 307ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 51
+one when time: 32086
+When creation time: 209 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 311ns
+Slot linking: 45ns
+second phase time: 40
+resolve time: 45
+one when time: 32622
+When creation time: 467 ns
+create_behaviour time: 40
+sort indexes time: 46
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 31ns
+Status setting: 322ns
+Slot linking: 44ns
+second phase time: 40
+resolve time: 47
+one when time: 33215
+When creation time: 213 ns
+create_behaviour time: 40
+sort indexes time: 42
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 32ns
+Status setting: 228ns
+Slot linking: 46ns
+second phase time: 40
+resolve time: 48
+one when time: 31884
+When creation time: 226 ns
+create_behaviour time: 40
+sort indexes time: 46
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 30ns
+Status setting: 313ns
+Slot linking: 45ns
+second phase time: 40
+resolve time: 48
+one when time: 32741
+When creation time: 209 ns
+create_behaviour time: 40
+sort indexes time: 46
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 33ns
+Status setting: 302ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 48
+one when time: 31809
+When creation time: 289 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 33ns
+Status setting: 329ns
+Slot linking: 44ns
+second phase time: 43
+resolve time: 48
+one when time: 32293
+When creation time: 204 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 31ns
+Status setting: 325ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 31931
+When creation time: 213 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 31ns
+Status setting: 312ns
+Slot linking: 44ns
+second phase time: 38
+resolve time: 46
+one when time: 32879
+When creation time: 218 ns
+create_behaviour time: 40
+sort indexes time: 46
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 31ns
+Status setting: 304ns
+Slot linking: 44ns
+second phase time: 39
+resolve time: 46
+one when time: 33100
+When creation time: 382 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 224ns
+Slot linking: 44ns
+second phase time: 44
+resolve time: 47
+one when time: 32673
+When creation time: 209 ns
+create_behaviour time: 40
+sort indexes time: 43
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 31ns
+Status setting: 458ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 48
+one when time: 32370
+When creation time: 208 ns
+create_behaviour time: 38
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 49ns
+Duplicate handling: 33ns
+Status setting: 332ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 32320
+When creation time: 211 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 327ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 47
+one when time: 32853
+When creation time: 205 ns
+create_behaviour time: 40
+sort indexes time: 45
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 305ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 32776
+When creation time: 357 ns
+create_behaviour time: 40
+sort indexes time: 45
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 234ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 32004
+When creation time: 206 ns
+create_behaviour time: 39
+sort indexes time: 43
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 32ns
+Status setting: 309ns
+Slot linking: 44ns
+second phase time: 38
+resolve time: 45
+one when time: 31873
+When creation time: 206 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 307ns
+Slot linking: 44ns
+second phase time: 44
+resolve time: 47
+one when time: 31901
+When creation time: 200 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 304ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 32275
+When creation time: 212 ns
+create_behaviour time: 40
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 318ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 32336
+When creation time: 212 ns
+create_behaviour time: 38
+sort indexes time: 44
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 311ns
+Slot linking: 43ns
+second phase time: 43
+resolve time: 48
+one when time: 32494
+When creation time: 216 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 322ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 47
+one when time: 32031
+When creation time: 205 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 307ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 48
+one when time: 32051
+When creation time: 204 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 311ns
+Slot linking: 45ns
+second phase time: 39
+resolve time: 47
+one when time: 33038
+When creation time: 200 ns
+create_behaviour time: 41
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 313ns
+Slot linking: 43ns
+second phase time: 40
+resolve time: 47
+one when time: 33071
+When creation time: 207 ns
+create_behaviour time: 38
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 49ns
+Duplicate handling: 33ns
+Status setting: 236ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 51
+one when time: 32798
+When creation time: 204 ns
+create_behaviour time: 40
+sort indexes time: 49
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 33ns
+Status setting: 310ns
+Slot linking: 46ns
+second phase time: 42
+resolve time: 46
+one when time: 32931
+When creation time: 211 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 225ns
+Slot linking: 46ns
+second phase time: 42
+resolve time: 47
+one when time: 32333
+When creation time: 209 ns
+create_behaviour time: 38
+sort indexes time: 49
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 33ns
+Status setting: 237ns
+Slot linking: 43ns
+second phase time: 40
+resolve time: 47
+one when time: 33167
+When creation time: 209 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 240ns
+Slot linking: 43ns
+second phase time: 41
+resolve time: 48
+one when time: 32603
+When creation time: 198 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 31ns
+Status setting: 316ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 32778
+When creation time: 215 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 227ns
+Slot linking: 45ns
+second phase time: 38
+resolve time: 47
+one when time: 31948
+When creation time: 209 ns
+create_behaviour time: 40
+sort indexes time: 50
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 238ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 46
+one when time: 31869
+When creation time: 199 ns
+create_behaviour time: 40
+sort indexes time: 53
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 233ns
+Slot linking: 43ns
+second phase time: 43
+resolve time: 47
+one when time: 32522
+When creation time: 327 ns
+create_behaviour time: 40
+sort indexes time: 52
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 53ns
+Duplicate handling: 32ns
+Status setting: 335ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 48
+one when time: 32333
+When creation time: 204 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 31ns
+Status setting: 234ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 32444
+When creation time: 256 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 309ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 47
+one when time: 32605
+When creation time: 209 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 30ns
+Status setting: 313ns
+Slot linking: 45ns
+second phase time: 42
+resolve time: 47
+one when time: 32285
+When creation time: 201 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 839ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 47
+one when time: 32505
+When creation time: 200 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 30ns
+Status setting: 226ns
+Slot linking: 45ns
+second phase time: 42
+resolve time: 48
+one when time: 32664
+When creation time: 202 ns
+create_behaviour time: 40
+sort indexes time: 53
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 228ns
+Slot linking: 44ns
+second phase time: 40
+resolve time: 47
+one when time: 32406
+When creation time: 211 ns
+create_behaviour time: 40
+sort indexes time: 53
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 229ns
+Slot linking: 43ns
+second phase time: 38
+resolve time: 48
+one when time: 32425
+When creation time: 203 ns
+create_behaviour time: 40
+sort indexes time: 50
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 307ns
+Slot linking: 43ns
+second phase time: 40
+resolve time: 46
+one when time: 32093
+When creation time: 202 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 33ns
+Status setting: 315ns
+Slot linking: 45ns
+second phase time: 42
+resolve time: 47
+one when time: 33249
+When creation time: 200 ns
+create_behaviour time: 40
+sort indexes time: 50
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 31ns
+Status setting: 320ns
+Slot linking: 46ns
+second phase time: 41
+resolve time: 47
+one when time: 32419
+When creation time: 210 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 33ns
+Status setting: 331ns
+Slot linking: 44ns
+second phase time: 40
+resolve time: 48
+one when time: 31974
+When creation time: 213 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 33ns
+Status setting: 333ns
+Slot linking: 43ns
+second phase time: 40
+resolve time: 46
+one when time: 32495
+When creation time: 203 ns
+create_behaviour time: 39
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 33ns
+Status setting: 307ns
+Slot linking: 44ns
+second phase time: 40
+resolve time: 47
+one when time: 32422
+When creation time: 209 ns
+create_behaviour time: 40
+sort indexes time: 49
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 305ns
+Slot linking: 44ns
+second phase time: 43
+resolve time: 45
+one when time: 32733
+When creation time: 203 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 315ns
+Slot linking: 44ns
+second phase time: 41
+resolve time: 46
+one when time: 33004
+When creation time: 209 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 227ns
+Slot linking: 43ns
+second phase time: 41
+resolve time: 47
+one when time: 32382
+When creation time: 474 ns
+create_behaviour time: 39
+sort indexes time: 50
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 308ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 48
+one when time: 32465
+When creation time: 211 ns
+create_behaviour time: 38
+sort indexes time: 49
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 311ns
+Slot linking: 46ns
+second phase time: 42
+resolve time: 47
+one when time: 32291
+When creation time: 209 ns
+create_behaviour time: 38
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 32ns
+Status setting: 309ns
+Slot linking: 46ns
+second phase time: 42
+resolve time: 47
+one when time: 31864
+When creation time: 133 ns
+create_behaviour time: 39
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 48ns
+Duplicate handling: 33ns
+Status setting: 407ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 45
+one when time: 32218
+When creation time: 122 ns
+create_behaviour time: 39
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 234ns
+Slot linking: 44ns
+second phase time: 41
+resolve time: 53
+one when time: 32886
+When creation time: 204 ns
+create_behaviour time: 38
+sort indexes time: 49
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 326ns
+Slot linking: 43ns
+second phase time: 40
+resolve time: 46
+one when time: 32090
+When creation time: 125 ns
+create_behaviour time: 38
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 31ns
+Status setting: 232ns
+Slot linking: 44ns
+second phase time: 40
+resolve time: 46
+one when time: 32063
+When creation time: 207 ns
+create_behaviour time: 38
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 31ns
+Status setting: 309ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 56
+one when time: 39904
+When creation time: 237 ns
+create_behaviour time: 40
+sort indexes time: 59
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 50ns
+Duplicate handling: 31ns
+Status setting: 318ns
+Slot linking: 46ns
+second phase time: 40
+resolve time: 45
+one when time: 32421
+When creation time: 481 ns
+create_behaviour time: 40
+sort indexes time: 57
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 31ns
+Status setting: 242ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 47
+one when time: 32600
+When creation time: 213 ns
+create_behaviour time: 40
+sort indexes time: 56
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 32ns
+Status setting: 315ns
+Slot linking: 43ns
+second phase time: 40
+resolve time: 46
+one when time: 31989
+When creation time: 204 ns
+create_behaviour time: 40
+sort indexes time: 55
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 33ns
+Status setting: 316ns
+Slot linking: 44ns
+second phase time: 41
+resolve time: 47
+one when time: 32591
+When creation time: 460 ns
+create_behaviour time: 38
+sort indexes time: 56
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 32ns
+Status setting: 238ns
+Slot linking: 44ns
+second phase time: 45
+resolve time: 47
+one when time: 33076
+When creation time: 205 ns
+create_behaviour time: 38
+sort indexes time: 56
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 33ns
+Status setting: 325ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 46
+one when time: 32900
+When creation time: 125 ns
+create_behaviour time: 38
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 31ns
+Status setting: 324ns
+Slot linking: 43ns
+second phase time: 41
+resolve time: 47
+one when time: 32127
+When creation time: 203 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 33ns
+Status setting: 486ns
+Slot linking: 43ns
+second phase time: 38
+resolve time: 46
+one when time: 32071
+When creation time: 205 ns
+create_behaviour time: 40
+sort indexes time: 51
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 48ns
+Duplicate handling: 32ns
+Status setting: 260ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 48
+one when time: 31898
+When creation time: 206 ns
+create_behaviour time: 40
+sort indexes time: 54
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 49ns
+Duplicate handling: 31ns
+Status setting: 307ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 47
+one when time: 31900
+When creation time: 202 ns
+create_behaviour time: 40
+sort indexes time: 57
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 48ns
+Duplicate handling: 32ns
+Status setting: 322ns
+Slot linking: 43ns
+second phase time: 42
+resolve time: 47
+one when time: 33407
+When creation time: 209 ns
+create_behaviour time: 40
+sort indexes time: 56
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 32ns
+Status setting: 309ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 31917
+When creation time: 204 ns
+create_behaviour time: 40
+sort indexes time: 56
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 45ns
+Duplicate handling: 33ns
+Status setting: 354ns
+Slot linking: 44ns
+second phase time: 41
+resolve time: 47
+one when time: 32315
+When creation time: 217 ns
+create_behaviour time: 38
+sort indexes time: 57
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 47ns
+Duplicate handling: 33ns
+Status setting: 323ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 32537
+When creation time: 221 ns
+create_behaviour time: 40
+sort indexes time: 53
+
+=== Phase 1 Timing Breakdown ===
+Slot info gathering: 46ns
+Duplicate handling: 30ns
+Status setting: 320ns
+Slot linking: 44ns
+second phase time: 42
+resolve time: 47
+one when time: 33014
+Schedule behaviours time:3651824
+[report]: insert_sched_avg_time : 36518.000000
+Pausing: active threads: 8
+Pausing: active threads: 7
+Pausing: active threads: 6
+Pausing: active threads: 5
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+Run behaviours time:1319465
+[report]: insert_run_avg_time : 13194.000000
+[report]: insert_overall_duration_ns : 1319465
+[report]: insert_overall_operation_number : 100
+[report]: insert_overall_throughput : 75788.292982

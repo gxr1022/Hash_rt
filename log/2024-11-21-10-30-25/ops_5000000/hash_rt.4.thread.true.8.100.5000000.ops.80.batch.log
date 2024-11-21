@@ -1,0 +1,24 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=9 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=9 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80 --seed 3021947698
+Init time:1183726177
+Scheduler cores: 4
+External thread 0 is running on core 4
+External thread 1 is running on core 5
+External thread 2 is running on core 6
+External thread 3 is running on core 7
+External thread 4 is running on core 8
+Total scheduler time:7351760445
+Pausing: active threads: 4
+Pausing: active threads: 3
+Pausing: active threads: 2
+Pausing: active threads: 1
+Teardown: all threads stopped
+[report]: insert_run_time_ns : 9759260519
+[report]: scheduler_total_when_schedules : 5000000
+[report]: scheduler_total_when_time_ns : 6287052541
+Teardown: all threads stopped
+[report]: insert_overall_operation_number : 4481535
+[report]: insert_overall_throughput : 459208.460649
+[report]: scheduler_avg_when_time_ns : 1257.410508
+[report]: insert_avg_insert_time_ns : 2177.000000

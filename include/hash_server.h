@@ -96,17 +96,23 @@ public:
 
     void scheduler_loop()
     {
+        size_t total_duration = 0;
         while (running && completed_ops < target_ops)
         {
             auto *batch = prepare_new_batch();
             current_batch.store(batch, std::memory_order_relaxed);
             if (!batch->requests.empty())
             {
+                auto start_time = std::chrono::steady_clock::now();
                 for (const auto &req : batch->requests)
                 {
                     hash_table->insert(req.key, req.value);
                     completed_ops++;
                 }
+                auto end_time = std::chrono::steady_clock::now();
+                auto duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time).count();
+                total_duration += duration_ns;
+                // std::cout << "Insert time of current batch:" << duration_ns << std::endl;
                 batch->requests.clear();
             }
             else
@@ -115,6 +121,7 @@ public:
                 continue;
             }
         }
+        std::cout << "Total scheduler time:" << total_duration << std::endl;
         Scheduler::get().has_scheduling = false;
         running = false;
     }
