@@ -3,6 +3,7 @@
 #include <chrono>
 #include <thread>
 #include <vector>
+#include "hash_request.h"
 
 template<typename T, size_t Size>
 class SPSCQueue {
@@ -52,22 +53,4 @@ public:
     }
 };
 
-// Example usage
-struct Request {
-    size_t hash;
-    // Other data members...
-};
 
-class Client {
-    SPSCQueue<Request, 1024> request_queue;
-public:
-    void submit_request(Request&& request) {
-        while (!request_queue.try_push(std::move(request))) {
-            std::this_thread::yield();
-        }
-    }
-
-    bool get_request(Request& request) {
-        return request_queue.try_pop(request);
-    }
-};

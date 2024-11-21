@@ -15,7 +15,7 @@
 #include <string_view>
 #include <cstring>
 
-#define HASH_INIT_BUCKET_NUM (1000000)
+#define HASH_INIT_BUCKET_NUM (5000000)
 #define HASH_ASSOC_NUM (2)
 #define MAX_KEY_LENGTH 8
 #define MAX_VALUE_LENGTH 100 
@@ -51,6 +51,7 @@ public:
     {
         if (isFull())
         {
+            // cout << "bucket is full" << endl;
             return false;
         }
 

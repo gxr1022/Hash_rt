@@ -6,8 +6,8 @@
 
 class HashTableClient 
 {
-private:
-    SPSCQueue<HashRequest, 1024> request_queue;  // Client owns the queue
+public:
+    SPSCQueue<HashRequest, QUEUE_SIZE> request_queue;  // Client owns the queue
     HashTableServer& server;
     size_t client_id;
     std::mt19937 rng;

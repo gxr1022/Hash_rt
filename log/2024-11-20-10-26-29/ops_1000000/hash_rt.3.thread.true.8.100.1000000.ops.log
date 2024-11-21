@@ -1,0 +1,13 @@
+/users/Xuran/hash_rt/build/hash_rt --num_threads=7 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0
+Harness starting.
+ /users/Xuran/hash_rt/build/hash_rt --num_threads=7 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --seed 158526370800
+a Set fair: 1
+a Init runtime
+a Scheduler Thread created
+a Scheduler Thread created
+a Scheduler Thread created
+a Runtime initialised
+Init time:900491191
+Scheduler cores: 3
+a Starting all threads
+a Set running thread:0
