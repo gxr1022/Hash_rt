@@ -6,7 +6,7 @@
 int main(int argc, char **argv)
 {
     google::ParseCommandLineFlags(&argc, &argv, false);
-    // Logging::enable_logging();
+    Logging::enable_logging();
     size_t total_cores = FLAGS_num_threads;
     size_t scheduler_cores = total_cores / 2;
     size_t external_cores = total_cores - scheduler_cores;
@@ -35,7 +35,7 @@ int main(int argc, char **argv)
                                 { clients[i]->run(); });
     }
 
-    // std::this_thread::sleep_for(std::chrono::microseconds(1000000));
+    std::this_thread::sleep_for(std::chrono::microseconds(1000000));
 
     auto run_start = std::chrono::steady_clock::now();
     sched.run();
