@@ -1,0 +1,4 @@
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt --num_threads_client=32 --num_threads_worker=1 --str_key_size=8 --str_value_size=100 --num_ops=100000 --first_mode=true --work_usec=0 --batch_size=80
+Init time:499352804
+*** buffer overflow detected ***: terminated
+timeout: the monitored command dumped core

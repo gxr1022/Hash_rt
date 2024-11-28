@@ -1,67 +1,98 @@
 #include "hash_server.h"
 #include "hash_client.h"
 // #include "/users/Xuran/hash_rt/include/verona-rt/src/rt/debug/harness.h"
-#include </users/Xuran/hash_rt/include/verona-rt/src/rt/verona.h>
+#include <verona-rt/src/rt/verona.h>
+#include <cstring>
+
+DEFINE_uint64(num_ops, 100, "the number of insert operations");
+DEFINE_uint64(str_key_size, 8, "size of key (bytes)");
+DEFINE_uint64(str_value_size, 100, "size of value (bytes)");
+DEFINE_uint64(num_threads_client, 8, "the number of threads");
+DEFINE_uint64(num_threads_worker, 8, "the number of threads");
+DEFINE_uint64(time_interval, 10, "the time interval of insert operations");
+DEFINE_string(report_prefix, "[report]: ", "prefix of report data");
+DEFINE_bool(first_mode, true, "fist mode start multiply clients on the same key value server");
+DEFINE_uint64(work_usec, 0, "the time interval of insert operations");
+
+void standard_report(const std::string &prefix, const std::string &name, const std::string &value)
+{
+    std::cout << FLAGS_report_prefix << prefix + "_" << name << " : " << value << std::endl;
+}
+
+void benchmark_report(const std::string benchmark_prefix, const std::string &name, const std::string &value)
+{
+    standard_report(benchmark_prefix, name, value);
+}
 
 int main(int argc, char **argv)
 {
+    Logging::enable_logging();
     google::ParseCommandLineFlags(&argc, &argv, false);
-    // Logging::enable_logging();
-    size_t total_cores = FLAGS_num_threads;
-    size_t scheduler_cores = total_cores / 2;
-    size_t external_cores = total_cores - scheduler_cores;
+    size_t num_ops = FLAGS_num_ops;
+    size_t scheduler_cores = FLAGS_num_threads_worker;
+    size_t client_threads = FLAGS_num_threads_client;
 
-    SystematicTestHarness harness(argc, argv);
+    std::vector<std::thread> ext_threads;
 
-    harness.external_core_start = scheduler_cores;
-    harness.external_core_count = external_cores;
-    
+    // init worker thread pool
     auto &sched = verona::rt::Scheduler::get();
     sched.set_fair(true);
     sched.init(scheduler_cores);
-    HashTableServer server(harness);
 
-    size_t client_threads = external_cores - 1;
+    // init server
+    HashTableServer *server = new HashTableServer(num_ops);
 
+    // init scheduler thread
+    std::thread scheduler_thread([&server]()
+                                 { server->scheduler_loop(); 
+                                 cpu::set_affinity(0);    
+                                 });
+    // init client threads
     std::vector<std::unique_ptr<HashTableClient>> clients;
 
-    auto start_time = std::chrono::steady_clock::now();
-    
-    std::cout << "Scheduler cores: " << scheduler_cores << std::endl;
     for (size_t i = 0; i < client_threads; i++)
     {
-        clients.push_back(std::make_unique<HashTableClient>(i, server));
-        harness.external_thread([&clients, i]()
-                                { clients[i]->run(); });
+        clients.push_back(std::make_unique<HashTableClient>(i, *server));
+        ext_threads.emplace_back([&clients, i]()
+                                 { clients[i]->run(); });
     }
 
-    std::this_thread::sleep_for(std::chrono::microseconds(1000000));
+    if (!server->is_running())
+    {
+        scheduler_thread.join();
+    }
+
+    // std::this_thread::sleep_for(std::chrono::microseconds(1000000));
 
     auto run_start = std::chrono::steady_clock::now();
     sched.run();
     auto run_end = std::chrono::steady_clock::now();
-
     auto run_time = std::chrono::duration_cast<std::chrono::nanoseconds>(run_end - run_start).count();
 
-    auto [when_total_time, when_count] = server.hash_table->get_when_stats();
-    double avg_when_time = when_count > 0 ? static_cast<double>(when_total_time) / when_count : 0;
-    benchmark_report("insert", "run_time_ns", std::to_string(run_time));
-    benchmark_report("scheduler", "total_when_schedules", std::to_string(when_count));
-    benchmark_report("scheduler", "total_when_time_ns", std::to_string(when_total_time));
+    if (!server->is_running())
+    {
+        for (auto &client : ext_threads)
+        {
+            client.join();
+        }
+    }
+    // auto [when_total_time, when_count] = server.hash_table->get_when_stats();
+    // double avg_when_time = when_count > 0 ? static_cast<double>(when_total_time) / when_count : 0;
+    // benchmark_report("scheduler", "total_when_schedules", std::to_string(when_count));
+    // benchmark_report("scheduler", "total_when_time_ns", std::to_string(when_total_time));
 
-    std::cout << "Teardown: all threads stopped" << std::endl;
-    // auto current_time = std::chrono::steady_clock::now();
-    // auto duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
-    // std::cout << "Run behaviours time:" << duration_ns << std::endl;
-    size_t completed_inserts = server.hash_table->get_completed_inserts();
-    double throughput = completed_inserts / (run_time / 1e9);
-    double avg_insert_time = run_time / completed_inserts;
+    // std::cout << "Teardown: all threads stopped" << std::endl;
+
+    // size_t completed_inserts = server->hash_table->get_completed_inserts();
+    // double throughput = completed_inserts / (run_time / 1e9);
+    // double avg_insert_time = run_time / completed_inserts;
     // benchmark_report("insert", "overall_duration_ns", std::to_string(duration_ns));
-    benchmark_report("insert", "overall_operation_number", std::to_string(completed_inserts));
-    benchmark_report("insert", "overall_throughput", std::to_string(throughput));
+    // benchmark_report("insert", "run_time_ns", std::to_string(run_time));
+    // benchmark_report("insert", "overall_operation_number", std::to_string(completed_inserts));
+    // benchmark_report("insert", "overall_throughput", std::to_string(throughput));
 
-    benchmark_report("scheduler", "avg_when_time_ns", std::to_string(avg_when_time));
-    benchmark_report("insert", "avg_insert_time_ns", std::to_string(avg_insert_time));
+    // benchmark_report("scheduler", "avg_when_time_ns", std::to_string(avg_when_time));
+    // benchmark_report("insert", "avg_insert_time_ns", std::to_string(avg_insert_time));
 
     return 0;
 }

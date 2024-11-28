@@ -14,7 +14,7 @@
 #include <random>
 #include <stdlib.h>
 #include <time.h>
-
+#include <cstring>
 
 using namespace verona::rt;
 using namespace std;
@@ -24,9 +24,9 @@ char* common_value;
 
 DEFINE_uint64(str_key_size, 8, "size of key (bytes)");
 DEFINE_uint64(str_value_size, 100, "size of value (bytes)");
-DEFINE_uint64(num_threads, 16, "the number of threads");
+DEFINE_uint64(num_threads, 1, "the number of threads");
 DEFINE_uint64(time_interval, 10, "the time interval of insert operations");
-DEFINE_uint64(num_ops, 100000, "the number of insert operations");
+DEFINE_uint64(num_ops, 100, "the number of insert operations");
 DEFINE_string(report_prefix, "[report]: ", "prefix of report data");
 DEFINE_bool(first_mode, true, "fist mode start multiply clients on the same key value server");
 DEFINE_uint64(work_usec, 0, "the time interval of insert operations");
@@ -82,10 +82,11 @@ void performInsertions(ExtendibleHash *hashtable, size_t num_of_ops, size_t key_
 {
     for (int i = 0; i < num_of_ops; i++)
     {
-        int r = rand() % HASH_INIT_BUCKET_NUM;
+        // int r = rand() % HASH_INIT_BUCKET_NUM;
+        int r = 101;
         char *key = from_uint64_to_char(r, key_size);
         // std::cout << "Inserting key: " << key << std::endl;
-        hashtable->insert(key, common_value, work_usec);
+        hashtable->insert(key, common_value);
         // hashtable->printStatus();
     }
 
@@ -118,10 +119,10 @@ void runTest(ExtendibleHash *hashTable, size_t cores, size_t num_of_ops, size_t 
     duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
     std::cout << "Run behaviours time:" << duration_ns << std::endl;
     
-    double throughput = num_of_ops / (duration_ns / 1e9);
-    benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
-    benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));
-    benchmark_report(load_benchmark_prefix, "overall_throughput", std::to_string(throughput));
+    // double throughput = num_of_ops / (duration_ns / 1e9);
+    // benchmark_report(load_benchmark_prefix, "overall_duration_ns", std::to_string(duration_ns));
+    // benchmark_report(load_benchmark_prefix, "overall_operation_number", std::to_string(num_of_ops));
+    // benchmark_report(load_benchmark_prefix, "overall_throughput", std::to_string(throughput));
     return;
 }
 

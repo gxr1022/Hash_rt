@@ -1,0 +1,7386 @@
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt --num_threads_client=8 --num_threads_worker=1 --str_key_size=8 --str_value_size=100 --num_ops=5000000 --first_mode=true --work_usec=0 --batch_size=80
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:472606444
+Exchange duration: 310
+Resolve phase duration: 430
+Exchange duration: 300
+Resolve phase duration: 160
+Exchange duration: 570
+Resolve phase duration: 30
+Exchange duration: 310
+Resolve phase duration: 40
+Exchange duration: 300
+Resolve phase duration: 40
+Exchange duration: 310
+Resolve phase duration: 40
+Exchange duration: 300
+Resolve phase duration: 40
+Exchange duration: 350
+Resolve phase duration: 40
+Exchange duration: 300
+Resolve phase duration: 40
+Exchange duration: 480
+Resolve phase duration: 40
+Exchange duration: 300
+Resolve phase duration: 30
+Exchange duration: 290
+Resolve phase duration: 40
+Exchange duration: 300
+Resolve phase duration: 30
+Exchange duration: 310
+Resolve phase duration: 40
+Exchange duration: 320
+Resolve phase duration: 40
+Exchange duration: 310
+Resolve phase duration: 30
+Exchange duration: 340
+Resolve phase duration: 30
+Exchange duration: 370
+Resolve phase duration: 30
+Exchange duration: 330
+Resolve phase duration: 40
+Exchange duration: 240
+Resolve phase duration: 30
+Exchange duration: 330
+Resolve phase duration: 30
+Exchange duration: 350
+Resolve phase duration: 40
+Exchange duration: 220
+Resolve phase duration: 30
+Exchange duration: 330
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 40
+Exchange duration: 240
+Resolve phase duration: 40
+Exchange duration: 610
+Resolve phase duration: 40
+Exchange duration: 250
+Resolve phase duration: 40
+Exchange duration: 320
+Resolve phase duration: 30
+Exchange duration: 320
+Resolve phase duration: 30
+Exchange duration: 300
+Resolve phase duration: 40
+Exchange duration: 320
+Resolve phase duration: 30
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 520
+Resolve phase duration: 40
+Exchange duration: 350
+Resolve phase duration: 30
+Exchange duration: 300
+Resolve phase duration: 40
+Exchange duration: 300
+Resolve phase duration: 40
+Exchange duration: 300
+Resolve phase duration: 40
+Exchange duration: 330
+Resolve phase duration: 30
+Exchange duration: 300
+Resolve phase duration: 30
+Exchange duration: 320
+Resolve phase duration: 40
+Exchange duration: 520
+Resolve phase duration: 40
+Exchange duration: 340
+Resolve phase duration: 40
+Exchange duration: 310
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 40
+Exchange duration: 210
+Resolve phase duration: 140
+Exchange duration: 290
+Resolve phase duration: 40
+Exchange duration: 310
+Resolve phase duration: 150
+Exchange duration: 310
+Resolve phase duration: 30
+Exchange duration: 220
+Resolve phase duration: 40
+Exchange duration: 340
+Resolve phase duration: 40
+Exchange duration: 290
+Resolve phase duration: 40
+Exchange duration: 410
+Resolve phase duration: 30
+Exchange duration: 200
+Resolve phase duration: 30
+Exchange duration: 530
+Resolve phase duration: 30
+Exchange duration: 310
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 40
+Exchange duration: 250
+Resolve phase duration: 40
+Exchange duration: 340
+Resolve phase duration: 40
+Exchange duration: 220
+Resolve phase duration: 40
+Exchange duration: 310
+Resolve phase duration: 40
+Exchange duration: 290
+Resolve phase duration: 40
+Exchange duration: 570
+Resolve phase duration: 30
+Exchange duration: 240
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 230
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 40
+Exchange duration: 210
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 30
+Exchange duration: 230
+Resolve phase duration: 30
+Exchange duration: 300
+Resolve phase duration: 30
+Exchange duration: 300
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 370
+Resolve phase duration: 30
+Exchange duration: 240
+Resolve phase duration: 40
+Exchange duration: 310
+Resolve phase duration: 150
+Exchange duration: 250
+Resolve phase duration: 160
+Exchange duration: 220
+Resolve phase duration: 30
+Exchange duration: 390
+Resolve phase duration: 40
+Exchange duration: 240
+Resolve phase duration: 40
+Exchange duration: 210
+Resolve phase duration: 30
+Exchange duration: 260
+Resolve phase duration: 30
+Exchange duration: 320
+Resolve phase duration: 30
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 340
+Starting all threads
+Resolve phase duration: 130
+Exchange duration: 260
+Resolve phase duration: 280
+Exchange duration: 330
+Resolve phase duration: 160
+Exchange duration: 200
+Resolve phase duration: 30
+Exchange duration: 310
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 30
+Exchange duration: 230
+Resolve phase duration: 30
+Exchange duration: 240
+Resolve phase duration: 30
+Exchange duration: 290
+Resolve phase duration: 40
+Exchange duration: 210
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 40
+Exchange duration: 300
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 30
+Exchange duration: 230
+Resolve phase duration: 30
+Exchange duration: 290
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 230
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 270
+Exchange duration: 290
+Resolve phase duration: 30
+Exchange duration: 200
+Resolve phase duration: 30
+Exchange duration: 380
+Resolve phase duration: 40
+Exchange duration: 230
+Resolve phase duration: 40
+Exchange duration: 310
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 30
+Exchange duration: 300
+Resolve phase duration: 30
+Exchange duration: 220
+Resolve phase duration: 30
+Exchange duration: 300
+Resolve phase duration: 30
+Exchange duration: 290
+Resolve phase duration: 30
+Exchange duration: 250
+Resolve phase duration: 40
+Exchange duration: 210
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 30
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 210
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 40
+Exchange duration: 370
+Resolve phase duration: 30
+Exchange duration: 330
+Resolve phase duration: 40
+Exchange duration: 210
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 240
+Resolve phase duration: 40
+Exchange duration: 260
+Resolve phase duration: 30
+Exchange duration: 240
+Resolve phase duration: 30
+Exchange duration: 240
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 30
+Exchange duration: 300
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 40
+Exchange duration: 210
+Resolve phase duration: 30
+Exchange duration: 250
+Resolve phase duration: 30
+Exchange duration: 300
+Resolve phase duration: 30
+Exchange duration: 220
+Resolve phase duration: 30
+Exchange duration: 640
+Resolve phase duration: 40
+Exchange duration: 210
+Resolve phase duration: 1200
+Exchange duration: 210
+Resolve phase duration: 1220
+Exchange duration: 220
+Resolve phase duration: 1090
+Exchange duration: 340
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 30
+Exchange duration: 240
+Resolve phase duration: 30
+Exchange duration: 220
+Resolve phase duration: 30
+Exchange duration: 240
+Resolve phase duration: 30
+Exchange duration: 200
+Resolve phase duration: 30
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 300
+Resolve phase duration: 40
+Exchange duration: 540
+Resolve phase duration: 40
+Exchange duration: 290
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 30
+Exchange duration: 200
+Resolve phase duration: 30
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 210
+Resolve phase duration: 40
+Exchange duration: 540
+Resolve phase duration: 30
+Exchange duration: 220
+Resolve phase duration: 40
+Exchange duration: 290
+Resolve phase duration: 30
+Exchange duration: 630
+Resolve phase duration: 40
+Exchange duration: 210
+Resolve phase duration: 730
+Exchange duration: 200
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 210
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 30
+Exchange duration: 450
+Resolve phase duration: 40
+Exchange duration: 210
+Resolve phase duration: 30
+Exchange duration: 210
+Resolve phase duration: 50
+Exchange duration: 200
+Resolve phase duration: 30
+Exchange duration: 220
+Resolve phase duration: 30
+Exchange duration: 220
+Resolve phase duration: 570
+Exchange duration: 200
+Resolve phase duration: 730
+Exchange duration: 250
+Resolve phase duration: 750
+Exchange duration: 520
+Resolve phase duration: 700
+Exchange duration: 420
+Resolve phase duration: 380
+Exchange duration: 540
+Resolve phase duration: 420
+Exchange duration: 530
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 250
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 720
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 400
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 410
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 730
+Exchange duration: 520
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 520
+Resolve phase duration: 840
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 330
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 390
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 260
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 410
+Exchange duration: 200
+Resolve phase duration: 720
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 570
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 360
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 390
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 520
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 720
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 430
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 290
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 710
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 510
+Resolve phase duration: 700
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 840
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 420
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 410
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 520
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 710
+Exchange duration: 200
+Resolve phase duration: 390
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 710
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 720
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 400
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 260
+Resolve phase duration: 760
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 750
+Exchange duration: 200
+Resolve phase duration: 750
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 400
+Exchange duration: 340
+Resolve phase duration: 780
+Exchange duration: 240
+Resolve phase duration: 760
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 420
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 260
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 850
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 250
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 700
+Exchange duration: 460
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 710
+Exchange duration: 190
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 760
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 700
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 210
+Resolve phase duration: 710
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 480
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 730
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 430
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 770
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 420
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 720
+Exchange duration: 530
+Resolve phase duration: 700
+Exchange duration: 240
+Resolve phase duration: 420
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 720
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 530
+Resolve phase duration: 410
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 740
+Exchange duration: 210
+Resolve phase duration: 420
+Exchange duration: 210
+Resolve phase duration: 730
+Exchange duration: 220
+Resolve phase duration: 750
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 750
+Exchange duration: 190
+Resolve phase duration: 390
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 720
+Exchange duration: 210
+Resolve phase duration: 990
+Exchange duration: 240
+Resolve phase duration: 740
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 1170
+Exchange duration: 210
+Resolve phase duration: 710
+Exchange duration: 210
+Resolve phase duration: 1760
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 1360
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 1350
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 1350
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 1350
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 560
+Resolve phase duration: 1350
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 1350
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 260
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 470
+Resolve phase duration: 680
+Exchange duration: 110
+Resolve phase duration: 680
+Exchange duration: 350
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 530
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 360
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 580
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 470
+Resolve phase duration: 390
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 260
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 410
+Exchange duration: 370
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 400
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 370
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 640
+Resolve phase duration: 370
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 980
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 100
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 270
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 390
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 500
+Resolve phase duration: 690
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 280
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 360
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 540
+Exchange duration: 210
+Resolve phase duration: 1120
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 240
+Resolve phase duration: 750
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 800
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 1220
+Exchange duration: 200
+Resolve phase duration: 800
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 740
+Exchange duration: 210
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 1020
+Exchange duration: 210
+Resolve phase duration: 450
+Exchange duration: 470
+Resolve phase duration: 770
+Exchange duration: 520
+Resolve phase duration: 840
+Exchange duration: 200
+Resolve phase duration: 920
+Exchange duration: 520
+Resolve phase duration: 710
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 480
+Resolve phase duration: 950
+Exchange duration: 230
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 420
+Resolve phase duration: 510
+Exchange duration: 250
+Resolve phase duration: 820
+Exchange duration: 210
+Resolve phase duration: 720
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 410
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 720
+Exchange duration: 200
+Resolve phase duration: 1320
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 390
+Exchange duration: 470
+Resolve phase duration: 1420
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 400
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 1360
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 1000
+Exchange duration: 190
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 1350
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1350
+Exchange duration: 210
+Resolve phase duration: 740
+Exchange duration: 220
+Resolve phase duration: 1670
+Exchange duration: 450
+Resolve phase duration: 810
+Exchange duration: 210
+Resolve phase duration: 740
+Exchange duration: 450
+Resolve phase duration: 2210
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1480
+Exchange duration: 290
+Resolve phase duration: 1340
+Exchange duration: 240
+Resolve phase duration: 740
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 1320
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 790
+Exchange duration: 400
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 470
+Resolve phase duration: 1440
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1460
+Exchange duration: 200
+Resolve phase duration: 650
+Exchange duration: 240
+Resolve phase duration: 1980
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1380
+Exchange duration: 200
+Resolve phase duration: 750
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 540
+Resolve phase duration: 1430
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 210
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 500
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 1630
+Exchange duration: 200
+Resolve phase duration: 860
+Exchange duration: 230
+Resolve phase duration: 1060
+Exchange duration: 200
+Resolve phase duration: 740
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 250
+Resolve phase duration: 1370
+Exchange duration: 800
+Resolve phase duration: 670
+Exchange duration: 750
+Resolve phase duration: 390
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 650
+Resolve phase duration: 790
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 930
+Exchange duration: 230
+Resolve phase duration: 820
+Exchange duration: 200
+Resolve phase duration: 1030
+Exchange duration: 240
+Resolve phase duration: 1350
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 110
+Resolve phase duration: 1540
+Exchange duration: 250
+Resolve phase duration: 770
+Exchange duration: 290
+Resolve phase duration: 1420
+Exchange duration: 230
+Resolve phase duration: 530
+Exchange duration: 210
+Resolve phase duration: 1520
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 550
+Resolve phase duration: 400
+Exchange duration: 210
+Resolve phase duration: 950
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 1690
+Exchange duration: 460
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 730
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 390
+Resolve phase duration: 1340
+Exchange duration: 250
+Resolve phase duration: 1020
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 290
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 840
+Exchange duration: 210
+Resolve phase duration: 420
+Exchange duration: 220
+Resolve phase duration: 1490
+Exchange duration: 230
+Resolve phase duration: 770
+Exchange duration: 200
+Resolve phase duration: 750
+Exchange duration: 210
+Resolve phase duration: 1340
+Exchange duration: 200
+Resolve phase duration: 490
+Exchange duration: 220
+Resolve phase duration: 1430
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1350
+Exchange duration: 720
+Resolve phase duration: 710
+Exchange duration: 200
+Resolve phase duration: 730
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 130
+Resolve phase duration: 1110
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 450
+Exchange duration: 250
+Resolve phase duration: 1260
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 1060
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 1380
+Exchange duration: 200
+Resolve phase duration: 2060
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 1790
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 1310
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 130
+Resolve phase duration: 680
+Exchange duration: 370
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 720
+Exchange duration: 200
+Resolve phase duration: 730
+Exchange duration: 290
+Resolve phase duration: 840
+Exchange duration: 230
+Resolve phase duration: 800
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 420
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 380
+Resolve phase duration: 780
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 650
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 780
+Exchange duration: 230
+Resolve phase duration: 410
+Exchange duration: 260
+Resolve phase duration: 780
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 750
+Exchange duration: 240
+Resolve phase duration: 360
+Exchange duration: 210
+Resolve phase duration: 770
+Exchange duration: 230
+Resolve phase duration: 1350
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 250
+Resolve phase duration: 1040
+Exchange duration: 240
+Resolve phase duration: 740
+Exchange duration: 250
+Resolve phase duration: 1350
+Exchange duration: 220
+Resolve phase duration: 860
+Exchange duration: 210
+Resolve phase duration: 1300
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 580
+Resolve phase duration: 970
+Exchange duration: 210
+Resolve phase duration: 1540
+Exchange duration: 210
+Resolve phase duration: 390
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 690
+Exchange duration: 250
+Resolve phase duration: 830
+Exchange duration: 210
+Resolve phase duration: 740
+Exchange duration: 420
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 500
+Resolve phase duration: 860
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 740
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 11640
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 120
+Resolve phase duration: 40
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 270
+Resolve phase duration: 1310
+Exchange duration: 220
+Resolve phase duration: 880
+Exchange duration: 210
+Resolve phase duration: 1260
+Exchange duration: 480
+Resolve phase duration: 680
+Exchange duration: 510
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 270
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 910
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 830
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 390
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 260
+Resolve phase duration: 750
+Exchange duration: 250
+Resolve phase duration: 820
+Exchange duration: 240
+Resolve phase duration: 410
+Exchange duration: 230
+Resolve phase duration: 930
+Exchange duration: 240
+Resolve phase duration: 850
+Exchange duration: 220
+Resolve phase duration: 760
+Exchange duration: 210
+Resolve phase duration: 630
+Exchange duration: 200
+Resolve phase duration: 470
+Exchange duration: 210
+Resolve phase duration: 750
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 1090
+Resolve phase duration: 680
+Exchange duration: 280
+Resolve phase duration: 390
+Exchange duration: 440
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 280
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 630
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 550
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 540
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 270
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 620
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 360
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 120
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 370
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 390
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 260
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 510
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 520
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 550
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 280
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 690
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 490
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 290
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 360
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 260
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 270
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 280
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 660
+Exchange duration: 530
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 1340
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 770
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 410
+Resolve phase duration: 1340
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 140
+Resolve phase duration: 380
+Exchange duration: 320
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 1350
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 380
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 280
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 1360
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 240
+Resolve phase duration: 1350
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 1370
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1350
+Exchange duration: 140
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1340
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 1330
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 290
+Resolve phase duration: 1350
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 1350
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 360
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 390
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1360
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 310
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 1320
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 510
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 1330
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 120
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 710
+Exchange duration: 210
+Resolve phase duration: 1330
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 1360
+Exchange duration: 510
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1370
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 1330
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 280
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 1350
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 1350
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 1360
+Exchange duration: 130
+Resolve phase duration: 690
+Exchange duration: 280
+Resolve phase duration: 1330
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 300
+Resolve phase duration: 1060
+Exchange duration: 500
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1380
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 470
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 1290
+Exchange duration: 330
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 1040
+Exchange duration: 260
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 1340
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 1070
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 420
+Resolve phase duration: 1330
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1310
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1320
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 710
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 1350
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1320
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 260
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 390
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 1340
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 340
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 490
+Resolve phase duration: 690
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 120
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 1030
+Exchange duration: 270
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 1350
+Exchange duration: 440
+Resolve phase duration: 380
+Exchange duration: 520
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 1040
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1320
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 1070
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 1350
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 1040
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 470
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 400
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 520
+Resolve phase duration: 680
+Exchange duration: 480
+Resolve phase duration: 360
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 690
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 270
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 390
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 690
+Exchange duration: 480
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 160
+Resolve phase duration: 670
+Exchange duration: 550
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 490
+Resolve phase duration: 370
+Exchange duration: 140
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 260
+Resolve phase duration: 680
+Exchange duration: 260
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 260
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 190230
+Exchange duration: 570
+Resolve phase duration: 730
+Exchange duration: 310
+Resolve phase duration: 720
+Exchange duration: 260
+Resolve phase duration: 400
+Exchange duration: 260
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 730
+Exchange duration: 310
+Resolve phase duration: 730
+Exchange duration: 280
+Resolve phase duration: 400
+Exchange duration: 240
+Resolve phase duration: 720
+Exchange duration: 590
+Resolve phase duration: 720
+Exchange duration: 270
+Resolve phase duration: 730
+Exchange duration: 300
+Resolve phase duration: 400
+Exchange duration: 260
+Resolve phase duration: 710
+Exchange duration: 510
+Resolve phase duration: 700
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 400
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 420
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 720
+Exchange duration: 260
+Resolve phase duration: 410
+Exchange duration: 280
+Resolve phase duration: 700
+Exchange duration: 150
+Resolve phase duration: 720
+Exchange duration: 140
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 400
+Exchange duration: 280
+Resolve phase duration: 710
+Exchange duration: 690
+Resolve phase duration: 700
+Exchange duration: 250
+Resolve phase duration: 390
+Exchange duration: 250
+Resolve phase duration: 730
+Exchange duration: 280
+Resolve phase duration: 420
+Exchange duration: 250
+Resolve phase duration: 700
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 410
+Exchange duration: 480
+Resolve phase duration: 720
+Exchange duration: 510
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 500
+Resolve phase duration: 410
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 270
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 270
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 730
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 490
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 280
+Resolve phase duration: 720
+Exchange duration: 280
+Resolve phase duration: 700
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 490
+Resolve phase duration: 710
+Exchange duration: 530
+Resolve phase duration: 400
+Exchange duration: 260
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 290
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 240
+Resolve phase duration: 720
+Exchange duration: 310
+Resolve phase duration: 410
+Exchange duration: 260
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 240
+Resolve phase duration: 730
+Exchange duration: 250
+Resolve phase duration: 1060
+Exchange duration: 480
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 280
+Resolve phase duration: 390
+Exchange duration: 560
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 720
+Exchange duration: 530
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 270
+Resolve phase duration: 730
+Exchange duration: 470
+Resolve phase duration: 710
+Exchange duration: 370
+Resolve phase duration: 380
+Exchange duration: 270
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 720
+Exchange duration: 820
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 270
+Resolve phase duration: 710
+Exchange duration: 480
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 330
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 1430
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 250
+Resolve phase duration: 390
+Exchange duration: 270
+Resolve phase duration: 700
+Exchange duration: 270
+Resolve phase duration: 710
+Exchange duration: 290
+Resolve phase duration: 1110
+Exchange duration: 280
+Resolve phase duration: 720
+Exchange duration: 230
+Resolve phase duration: 1420
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 340
+Resolve phase duration: 410
+Exchange duration: 480
+Resolve phase duration: 1440
+Exchange duration: 470
+Resolve phase duration: 740
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 630
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 270
+Resolve phase duration: 710
+Exchange duration: 260
+Resolve phase duration: 380
+Exchange duration: 460
+Resolve phase duration: 700
+Exchange duration: 470
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 760
+Exchange duration: 260
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 1430
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 1120
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 270
+Resolve phase duration: 1120
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 1390
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 1420
+Exchange duration: 230
+Resolve phase duration: 400
+Exchange duration: 480
+Resolve phase duration: 1400
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 200
+Resolve phase duration: 390
+Exchange duration: 500
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 410
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 280
+Resolve phase duration: 710
+Exchange duration: 450
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 1110
+Exchange duration: 510
+Resolve phase duration: 710
+Exchange duration: 280
+Resolve phase duration: 1400
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 1410
+Exchange duration: 440
+Resolve phase duration: 710
+Exchange duration: 160
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 260
+Resolve phase duration: 1380
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 260
+Resolve phase duration: 700
+Exchange duration: 250
+Resolve phase duration: 400
+Exchange duration: 590
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 490
+Resolve phase duration: 380
+Exchange duration: 280
+Resolve phase duration: 700
+Exchange duration: 570
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 1420
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 220
+Resolve phase duration: 1410
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 500
+Resolve phase duration: 700
+Exchange duration: 250
+Resolve phase duration: 400
+Exchange duration: 360
+Resolve phase duration: 700
+Exchange duration: 220
+Resolve phase duration: 720
+Exchange duration: 460
+Resolve phase duration: 1430
+Exchange duration: 490
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 1400
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 740
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 1140
+Exchange duration: 320
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 1410
+Exchange duration: 260
+Resolve phase duration: 400
+Exchange duration: 240
+Resolve phase duration: 1400
+Exchange duration: 270
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 260
+Resolve phase duration: 399
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 410
+Resolve phase duration: 710
+Exchange duration: 480
+Resolve phase duration: 400
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 1420
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 400
+Exchange duration: 490
+Resolve phase duration: 390
+Exchange duration: 250
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 250
+Resolve phase duration: 700
+Exchange duration: 480
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 220
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 480
+Resolve phase duration: 1420
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 490
+Resolve phase duration: 700
+Exchange duration: 270
+Resolve phase duration: 710
+Exchange duration: 860
+Resolve phase duration: 430
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 470
+Resolve phase duration: 750
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 490
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 270
+Resolve phase duration: 700
+Exchange duration: 460
+Resolve phase duration: 1430
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 720
+Exchange duration: 470
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 1380
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 470
+Resolve phase duration: 400
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 220
+Resolve phase duration: 700
+Exchange duration: 470
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 500
+Resolve phase duration: 710
+Exchange duration: 510
+Resolve phase duration: 1450
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 480
+Resolve phase duration: 400
+Exchange duration: 240
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 290
+Resolve phase duration: 720
+Exchange duration: 420
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 540
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 140
+Resolve phase duration: 710
+Exchange duration: 500
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 600
+Resolve phase duration: 400
+Exchange duration: 250
+Resolve phase duration: 720
+Exchange duration: 310
+Resolve phase duration: 420
+Exchange duration: 500
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 1440
+Exchange duration: 280
+Resolve phase duration: 390
+Exchange duration: 280
+Resolve phase duration: 1430
+Exchange duration: 290
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 1430
+Exchange duration: 490
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 1430
+Exchange duration: 460
+Resolve phase duration: 710
+Exchange duration: 470
+Resolve phase duration: 720
+Exchange duration: 310
+Resolve phase duration: 380
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 1410
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 270
+Resolve phase duration: 1410
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 290
+Resolve phase duration: 1420
+Exchange duration: 290
+Resolve phase duration: 380
+Exchange duration: 610
+Resolve phase duration: 390
+Exchange duration: 220
+Resolve phase duration: 390
+Exchange duration: 260
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 470
+Resolve phase duration: 700
+Exchange duration: 250
+Resolve phase duration: 390
+Exchange duration: 620
+Resolve phase duration: 690
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 300
+Resolve phase duration: 730
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 140
+Resolve phase duration: 700
+Exchange duration: 510
+Resolve phase duration: 720
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 270
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 250
+Resolve phase duration: 700
+Exchange duration: 520
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 400
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 270
+Resolve phase duration: 700
+Exchange duration: 490
+Resolve phase duration: 700
+Exchange duration: 450
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 270
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 250
+Resolve phase duration: 720
+Exchange duration: 560
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 400
+Exchange duration: 490
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 700
+Exchange duration: 150
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 400
+Exchange duration: 250
+Resolve phase duration: 390
+Exchange duration: 480
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 230
+Resolve phase duration: 400
+Exchange duration: 270
+Resolve phase duration: 730
+Exchange duration: 280
+Resolve phase duration: 710
+Exchange duration: 280
+Resolve phase duration: 710
+Exchange duration: 310
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 280
+Resolve phase duration: 720
+Exchange duration: 250
+Resolve phase duration: 700
+Exchange duration: 540
+Resolve phase duration: 400
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 480
+Resolve phase duration: 720
+Exchange duration: 500
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 390
+Exchange duration: 170
+Resolve phase duration: 720
+Exchange duration: 490
+Resolve phase duration: 710
+Exchange duration: 140
+Resolve phase duration: 380
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 150
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 260
+Resolve phase duration: 710
+Exchange duration: 370
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 270
+Resolve phase duration: 700
+Exchange duration: 490
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 250
+Resolve phase duration: 390
+Exchange duration: 280
+Resolve phase duration: 700
+Exchange duration: 260
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 270
+Resolve phase duration: 400
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 550
+Resolve phase duration: 410
+Exchange duration: 470
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 720
+Exchange duration: 140
+Resolve phase duration: 400
+Exchange duration: 150
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 400
+Exchange duration: 270
+Resolve phase duration: 400
+Exchange duration: 220
+Resolve phase duration: 700
+Exchange duration: 510
+Resolve phase duration: 710
+Exchange duration: 560
+Resolve phase duration: 710
+Exchange duration: 500
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 490
+Resolve phase duration: 720
+Exchange duration: 280
+Resolve phase duration: 390
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 510
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 400
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 260
+Resolve phase duration: 710
+Exchange duration: 480
+Resolve phase duration: 390
+Exchange duration: 480
+Resolve phase duration: 720
+Exchange duration: 680
+Resolve phase duration: 710
+Exchange duration: 650
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 440
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 170
+Resolve phase duration: 390
+Exchange duration: 480
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 270
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 730
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 530
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 140
+Resolve phase duration: 710
+Exchange duration: 130
+Resolve phase duration: 700
+Exchange duration: 220
+Resolve phase duration: 390
+Exchange duration: 260
+Resolve phase duration: 710
+Exchange duration: 400
+Resolve phase duration: 720
+Exchange duration: 210
+Resolve phase duration: 720
+Exchange duration: 300
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 270
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 290
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 480
+Resolve phase duration: 710
+Exchange duration: 460
+Resolve phase duration: 700
+Exchange duration: 220
+Resolve phase duration: 390
+Exchange duration: 220
+Resolve phase duration: 720
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 480
+Resolve phase duration: 710
+Exchange duration: 130
+Resolve phase duration: 390
+Exchange duration: 250
+Resolve phase duration: 720
+Exchange duration: 210
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 470
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 450
+Resolve phase duration: 700
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 520
+Resolve phase duration: 390
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 390
+Exchange duration: 210
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 480
+Resolve phase duration: 710
+Exchange duration: 130
+Resolve phase duration: 380
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 390
+Exchange duration: 510
+Resolve phase duration: 720
+Exchange duration: 280
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 410
+Resolve phase duration: 400
+Exchange duration: 250
+Resolve phase duration: 720
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 340
+Resolve phase duration: 390
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 270
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 720
+Exchange duration: 250
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 720
+Exchange duration: 220
+Resolve phase duration: 720
+Exchange duration: 210
+Resolve phase duration: 400
+Exchange duration: 230
+Resolve phase duration: 1390
+Exchange duration: 250
+Resolve phase duration: 700
+Exchange duration: 220
+Resolve phase duration: 420
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 720
+Exchange duration: 220
+Resolve phase duration: 1130
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 1430
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 270
+Resolve phase duration: 410
+Exchange duration: 480
+Resolve phase duration: 1130
+Exchange duration: 280
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 390
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 550
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 1450
+Exchange duration: 490
+Resolve phase duration: 400
+Exchange duration: 270
+Resolve phase duration: 720
+Exchange duration: 470
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 390
+Exchange duration: 220
+Resolve phase duration: 1440
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 550
+Resolve phase duration: 1420
+Exchange duration: 270
+Resolve phase duration: 390
+Exchange duration: 220
+Resolve phase duration: 1440
+Exchange duration: 210
+Resolve phase duration: 710
+Exchange duration: 490
+Resolve phase duration: 1430
+Exchange duration: 220
+Resolve phase duration: 390
+Exchange duration: 450
+Resolve phase duration: 690
+Exchange duration: 260
+Resolve phase duration: 1410
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 240
+Resolve phase duration: 1430
+Exchange duration: 490
+Resolve phase duration: 700
+Exchange duration: 270
+Resolve phase duration: 1430
+Exchange duration: 290
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 1430
+Exchange duration: 490
+Resolve phase duration: 720
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 310
+Resolve phase duration: 410
+Exchange duration: 520
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 720
+Exchange duration: 220
+Resolve phase duration: 400
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 370
+Resolve phase duration: 720
+Exchange duration: 230
+Resolve phase duration: 1440
+Exchange duration: 380
+Resolve phase duration: 400
+Exchange duration: 290
+Resolve phase duration: 1440
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 470
+Resolve phase duration: 1400
+Exchange duration: 240
+Resolve phase duration: 400
+Exchange duration: 260
+Resolve phase duration: 700
+Exchange duration: 150
+Resolve phase duration: 720
+Exchange duration: 220
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 1120
+Exchange duration: 220
+Resolve phase duration: 720
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 730
+Resolve phase duration: 700
+Exchange duration: 270
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 470
+Resolve phase duration: 1410
+Exchange duration: 240
+Resolve phase duration: 720
+Exchange duration: 230
+Resolve phase duration: 800
+Exchange duration: 830
+Resolve phase duration: 720
+Exchange duration: 480
+Resolve phase duration: 690
+Exchange duration: 590
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 480
+Resolve phase duration: 730
+Exchange duration: 220
+Resolve phase duration: 730
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 220
+Resolve phase duration: 730
+Exchange duration: 510
+Resolve phase duration: 770
+Exchange duration: 280
+Resolve phase duration: 400
+Exchange duration: 120
+Resolve phase duration: 790
+Exchange duration: 480
+Resolve phase duration: 710
+Exchange duration: 270
+Resolve phase duration: 710
+Exchange duration: 500
+Resolve phase duration: 1090
+Exchange duration: 260
+Resolve phase duration: 710
+Exchange duration: 580
+Resolve phase duration: 1450
+Exchange duration: 250
+Resolve phase duration: 710
+Exchange duration: 250
+Resolve phase duration: 770
+Exchange duration: 230
+Resolve phase duration: 730
+Exchange duration: 480
+Resolve phase duration: 1450
+Exchange duration: 280
+Resolve phase duration: 740
+Exchange duration: 250
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 1460
+Exchange duration: 530
+Resolve phase duration: 700
+Exchange duration: 250
+Resolve phase duration: 700
+Exchange duration: 250
+Resolve phase duration: 1460
+Exchange duration: 510
+Resolve phase duration: 390
+Exchange duration: 470
+Resolve phase duration: 1440
+Exchange duration: 330
+Resolve phase duration: 710
+Exchange duration: 490
+Resolve phase duration: 1430
+Exchange duration: 550
+Resolve phase duration: 740
+Exchange duration: 480
+Resolve phase duration: 720
+Exchange duration: 230
+Resolve phase duration: 720
+Exchange duration: 580
+Resolve phase duration: 410
+Exchange duration: 620
+Resolve phase duration: 710
+Exchange duration: 260
+Resolve phase duration: 730
+Exchange duration: 280
+Resolve phase duration: 1430
+Exchange duration: 330
+Resolve phase duration: 410
+Exchange duration: 390
+Resolve phase duration: 1050
+Exchange duration: 480
+Resolve phase duration: 1420
+Exchange duration: 230
+Resolve phase duration: 760
+Exchange duration: 250
+Resolve phase duration: 1110
+Exchange duration: 530
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 710
+Exchange duration: 240
+Resolve phase duration: 750
+Exchange duration: 250
+Resolve phase duration: 390
+Exchange duration: 430
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 720
+Exchange duration: 250
+Resolve phase duration: 730
+Exchange duration: 290
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 730
+Exchange duration: 270
+Resolve phase duration: 740
+Exchange duration: 280
+Resolve phase duration: 720
+Exchange duration: 360
+Resolve phase duration: 390
+Exchange duration: 230
+Resolve phase duration: 1350
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 320
+Resolve phase duration: 700
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 260
+Resolve phase duration: 370
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 1330
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 1360
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 120
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 440
+Resolve phase duration: 700
+Exchange duration: 430
+Resolve phase duration: 1390
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 1070
+Exchange duration: 450
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 1340
+Exchange duration: 240
+Resolve phase duration: 690
+Exchange duration: 480
+Resolve phase duration: 1350
+Exchange duration: 190
+Resolve phase duration: 370
+Exchange duration: 450
+Resolve phase duration: 1380
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1350
+Exchange duration: 210
+Resolve phase duration: 390
+Exchange duration: 210
+Resolve phase duration: 1360
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 670
+Resolve phase duration: 1370
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 450
+Resolve phase duration: 1330
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 490
+Resolve phase duration: 1370
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 750
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 250
+Resolve phase duration: 370
+Exchange duration: 470
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 480
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 110
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 370
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 720
+Exchange duration: 500
+Resolve phase duration: 390
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 750
+Exchange duration: 530
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 720
+Exchange duration: 240
+Resolve phase duration: 1010
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 420
+Resolve phase duration: 650
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 390
+Exchange duration: 130
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 210
+Resolve phase duration: 13710
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 290
+Resolve phase duration: 690
+Exchange duration: 140
+Resolve phase duration: 370
+Exchange duration: 470
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 390
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 140
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 620
+Exchange duration: 530
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 370
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 660
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 470
+Resolve phase duration: 370
+Exchange duration: 470
+Resolve phase duration: 680
+Exchange duration: 490
+Resolve phase duration: 660
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 390
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 390
+Exchange duration: 150
+Resolve phase duration: 680
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 700
+Exchange duration: 190
+Resolve phase duration: 690
+Exchange duration: 290
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 360
+Exchange duration: 480
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 360
+Exchange duration: 370
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 260
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 650
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 190
+Resolve phase duration: 1000
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 360
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 390
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 260
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 370
+Resolve phase duration: 680
+Exchange duration: 280
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 250
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 250
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 440
+Resolve phase duration: 390
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 300
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 140
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 460
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 390
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 270
+Resolve phase duration: 380
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 280
+Resolve phase duration: 380
+Exchange duration: 670
+Resolve phase duration: 400
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1050
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 700
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 750
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1340
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 790
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 1340
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 450
+Resolve phase duration: 660
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 490
+Resolve phase duration: 1350
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 250
+Resolve phase duration: 1350
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1360
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 710
+Exchange duration: 350
+Resolve phase duration: 1340
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 1040
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 1340
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 370
+Exchange duration: 260
+Resolve phase duration: 1340
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 1330
+Exchange duration: 420
+Resolve phase duration: 380
+Exchange duration: 420
+Resolve phase duration: 1350
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 750
+Exchange duration: 460
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 660
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 530
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 740
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1340
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 760
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 250
+Resolve phase duration: 1330
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 100
+Resolve phase duration: 390
+Exchange duration: 290
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 1350
+Exchange duration: 260
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 1360
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1050
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 360
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 1360
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 1340
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 1330
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 1360
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 1350
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 1360
+Exchange duration: 130
+Resolve phase duration: 660
+Exchange duration: 470
+Resolve phase duration: 370
+Exchange duration: 120
+Resolve phase duration: 1350
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1340
+Exchange duration: 160
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 1350
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 1350
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 1339
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1310
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 1350
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 390
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 480
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 1350
+Exchange duration: 120
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 660
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 1060
+Exchange duration: 440
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 1060
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 550
+Resolve phase duration: 790
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 1360
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 450
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 110
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 430
+Exchange duration: 190
+Resolve phase duration: 960
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 710
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 150
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 470
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 1340
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 1350
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 1340
+Exchange duration: 490
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 1350
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1070
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 1350
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 350
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 360
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 1340
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 730
+Exchange duration: 440
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 690
+Exchange duration: 420
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 450
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 250
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 460
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 260
+Resolve phase duration: 380
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 470
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 700
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 490
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 540
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 450
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 470
+Resolve phase duration: 380
+Exchange duration: 250
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 450
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 490
+Resolve phase duration: 670
+Exchange duration: 249
+Resolve phase duration: 690
+Exchange duration: 510
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 370
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 800
+Resolve phase duration: 660
+Exchange duration: 140
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 240
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 280
+Resolve phase duration: 690
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 660
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 720
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 710
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 270
+Resolve phase duration: 660
+Exchange duration: 120
+Resolve phase duration: 380
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 360
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 390
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 510
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 310
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 350
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 500
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 420
+Resolve phase duration: 680
+Exchange duration: 320
+Resolve phase duration: 660
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 1340
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 700
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 670
+Resolve phase duration: 740
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1350
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 430
+Resolve phase duration: 400
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 1370
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 260
+Resolve phase duration: 1330
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 1360
+Exchange duration: 510
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 1350
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 410
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 1370
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 1040
+Exchange duration: 410
+Resolve phase duration: 700
+Exchange duration: 160
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 1350
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 1350
+Exchange duration: 500
+Resolve phase duration: 380
+Exchange duration: 190
+Resolve phase duration: 1330
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 740
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 1340
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 1340
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 1310
+Exchange duration: 470
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 1350
+Exchange duration: 150
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 420
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1350
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 410
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 270
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 669
+Exchange duration: 200
+Resolve phase duration: 1310
+Exchange duration: 560
+Resolve phase duration: 690
+Exchange duration: 190
+Resolve phase duration: 1340
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 1340
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 520
+Resolve phase duration: 690
+Exchange duration: 420
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1360
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 1350
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 1330
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 1350
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 700
+Exchange duration: 490
+Resolve phase duration: 650
+Exchange duration: 440
+Resolve phase duration: 1350
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 1350
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 1360
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 1340
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 110
+Resolve phase duration: 1060
+Exchange duration: 200
+Resolve phase duration: 650
+Exchange duration: 510
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 150
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 370
+Exchange duration: 120
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 1360
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 440
+Resolve phase duration: 1070
+Exchange duration: 410
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 1330
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 390
+Resolve phase duration: 1330
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 30
+Exchange duration: 620
+Resolve phase duration: 990
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 560
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 1360
+Exchange duration: 510
+Resolve phase duration: 380
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1340
+Exchange duration: 470
+Resolve phase duration: 380
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1330
+Exchange duration: 450
+Resolve phase duration: 380
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 1340
+Exchange duration: 120
+Resolve phase duration: 400
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 490
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 400
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 300
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 650
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 1040
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 470
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 1330
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 1350
+Exchange duration: 330
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1330
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1050
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 730
+Exchange duration: 690
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 1350
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 480
+Resolve phase duration: 1350
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1360
+Exchange duration: 190
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 1350
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 360
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 360
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 390
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 520
+Resolve phase duration: 360
+Exchange duration: 460
+Resolve phase duration: 390
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 710
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 330
+Resolve phase duration: 680
+Exchange duration: 470
+Resolve phase duration: 660
+Exchange duration: 190
+Resolve phase duration: 370
+Exchange duration: 140
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 660
+Exchange duration: 450
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 410
+Resolve phase duration: 660
+Exchange duration: 470
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 110
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 500
+Resolve phase duration: 680
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 500
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 350
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 500
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 320
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 740
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 650
+Exchange duration: 220
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 540
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 120
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 410
+Resolve phase duration: 680
+Exchange duration: 510
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 190
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 700
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 480
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 140
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 140
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 620
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 420
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 650
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 480
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 580
+Resolve phase duration: 660
+Exchange duration: 140
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 360
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 160
+Resolve phase duration: 370
+Exchange duration: 110
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 470
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 450
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 710
+Exchange duration: 470
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 690
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 650
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 280
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 500
+Resolve phase duration: 760
+Exchange duration: 150
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1360
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 1350
+Exchange duration: 240
+Resolve phase duration: 700
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 110
+Resolve phase duration: 1399
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 1040
+Exchange duration: 320
+Resolve phase duration: 690
+Exchange duration: 300
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 250
+Resolve phase duration: 1340
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 1380
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 120
+Resolve phase duration: 1360
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 280
+Resolve phase duration: 1320
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 1060
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 1310
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 390
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 1040
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1300
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 1350
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1050
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 1340
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 1350
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 390
+Exchange duration: 480
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 1330
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 1050
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1360
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 260
+Resolve phase duration: 1340
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 1320
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 1050
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 1360
+Exchange duration: 470
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 1310
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 710
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 1340
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 450
+Resolve phase duration: 1350
+Exchange duration: 660
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 340
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 140
+Resolve phase duration: 1330
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 550
+Resolve phase duration: 1350
+Exchange duration: 130
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 1340
+Exchange duration: 680
+Resolve phase duration: 680
+Exchange duration: 580
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 510
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 140
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 420
+Resolve phase duration: 380
+Exchange duration: 450
+Resolve phase duration: 1360
+Exchange duration: 480
+Resolve phase duration: 680
+Exchange duration: 540
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 1340
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 430
+Resolve phase duration: 1330
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 400
+Exchange duration: 220
+Resolve phase duration: 1370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 410
+Exchange duration: 190
+Resolve phase duration: 660
+Exchange duration: 420
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 700
+Exchange duration: 170
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 1340
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 1050
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 1320
+Exchange duration: 530
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 1340
+Exchange duration: 130
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 420
+Resolve phase duration: 1330
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 1349
+Exchange duration: 440
+Resolve phase duration: 380
+Exchange duration: 480
+Resolve phase duration: 1360
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 110
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 700
+Exchange duration: 120
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 470
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 490
+Resolve phase duration: 680
+Exchange duration: 490
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 380
+Exchange duration: 240
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 650
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 540
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 480
+Resolve phase duration: 390
+Exchange duration: 130
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 390
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 380
+Exchange duration: 480
+Resolve phase duration: 360
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 700
+Exchange duration: 440
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 360
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 360
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 380
+Exchange duration: 450
+Resolve phase duration: 660
+Exchange duration: 680
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 130
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 420
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 360
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 270
+Resolve phase duration: 670
+Exchange duration: 140
+Resolve phase duration: 690
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 260
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 140
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 490
+Resolve phase duration: 680
+Exchange duration: 160
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 650
+Exchange duration: 190
+Resolve phase duration: 390
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 260
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 700
+Resolve phase duration: 370
+Exchange duration: 410
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 360
+Exchange duration: 420
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 660
+Exchange duration: 410
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 440
+Resolve phase duration: 380
+Exchange duration: 520
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 700
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 120
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 690
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 470
+Resolve phase duration: 670
+Exchange duration: 620
+Resolve phase duration: 380
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 230
+Resolve phase duration: 570
+Exchange duration: 530
+Resolve phase duration: 660
+Exchange duration: 490
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 150
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 360
+Exchange duration: 430
+Resolve phase duration: 1340
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 1020
+Exchange duration: 150
+Resolve phase duration: 660
+Exchange duration: 460
+Resolve phase duration: 1340
+Exchange duration: 310
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 1370
+Exchange duration: 150
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 1060
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 1340
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 700
+Exchange duration: 200
+Resolve phase duration: 700
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 1350
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 1370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 1360
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 640
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 1340
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1340
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 450
+Resolve phase duration: 1370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 700
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 660
+Exchange duration: 250
+Resolve phase duration: 1040
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1340
+Exchange duration: 270
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 1340
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 1360
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 1360
+Exchange duration: 210
+Resolve phase duration: 390
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 1350
+Exchange duration: 470
+Resolve phase duration: 680
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 260
+Resolve phase duration: 660
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 310
+Resolve phase duration: 1350
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 130
+Resolve phase duration: 1350
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 760
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 720
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 660
+Exchange duration: 190
+Resolve phase duration: 1060
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 650
+Exchange duration: 210
+Resolve phase duration: 1350
+Exchange duration: 120
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 1310
+Exchange duration: 140
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 1340
+Exchange duration: 460
+Resolve phase duration: 660
+Exchange duration: 260
+Resolve phase duration: 1350
+Exchange duration: 480
+Resolve phase duration: 390
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 1360
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 370
+Exchange duration: 300
+Resolve phase duration: 1360
+Exchange duration: 440
+Resolve phase duration: 660
+Exchange duration: 570
+Resolve phase duration: 1330
+Exchange duration: 200
+Resolve phase duration: 710
+Exchange duration: 110
+Resolve phase duration: 1330
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 500
+Resolve phase duration: 1340
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1360
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 280
+Resolve phase duration: 380
+Exchange duration: 470
+Resolve phase duration: 1320
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 1340
+Exchange duration: 260
+Resolve phase duration: 380
+Exchange duration: 500
+Resolve phase duration: 1350
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 550
+Resolve phase duration: 690
+Exchange duration: 430
+Resolve phase duration: 390
+Exchange duration: 420
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 400
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 260
+Resolve phase duration: 780
+Exchange duration: 200
+Resolve phase duration: 40
+Checking for pending work on thread 1
+Found pending work!
+Exchange duration: 240
+Resolve phase duration: 1030
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1050
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 260
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 1310
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 190
+Resolve phase duration: 700
+Exchange duration: 440
+Resolve phase duration: 360
+Exchange duration: 430
+Resolve phase duration: 1090
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 450
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 940
+Exchange duration: 110
+Resolve phase duration: 710
+Exchange duration: 260
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 1340
+Exchange duration: 480
+Resolve phase duration: 370
+Exchange duration: 460
+Resolve phase duration: 1350
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1340
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 490
+Resolve phase duration: 1350
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 1350
+Exchange duration: 480
+Resolve phase duration: 370
+Exchange duration: 130
+Resolve phase duration: 1310
+Exchange duration: 120
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 1350
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 1070
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 660
+Resolve phase duration: 1370
+Exchange duration: 480
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 1060
+Exchange duration: 430
+Resolve phase duration: 390
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 660
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 360
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 480
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 480
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 140
+Resolve phase duration: 680
+Exchange duration: 260
+Resolve phase duration: 380
+Exchange duration: 500
+Resolve phase duration: 660
+Exchange duration: 500
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 120
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 510
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 680
+Exchange duration: 490
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 690
+Exchange duration: 320
+Resolve phase duration: 660
+Exchange duration: 110
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 260
+Resolve phase duration: 680
+Exchange duration: 350
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 370
+Exchange duration: 440
+Resolve phase duration: 420
+Exchange duration: 230
+Resolve phase duration: 30
+Exchange duration: 420
+Resolve phase duration: 1020
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 140
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 690
+Exchange duration: 450
+Resolve phase duration: 370
+Exchange duration: 260
+Resolve phase duration: 670
+Exchange duration: 270
+Resolve phase duration: 690
+Exchange duration: 440
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 360
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 720
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 540
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 660
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 120
+Resolve phase duration: 660
+Exchange duration: 140
+Resolve phase duration: 360
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 150
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 380
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 660
+Exchange duration: 470
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 660
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 690
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 690
+Exchange duration: 520
+Resolve phase duration: 1020
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 390
+Exchange duration: 510
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 110
+Resolve phase duration: 380
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 470
+Resolve phase duration: 690
+Exchange duration: 450
+Resolve phase duration: 370
+Exchange duration: 410
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 660
+Exchange duration: 440
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 140
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 480
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 470
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 320
+Resolve phase duration: 710
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 490
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 690
+Exchange duration: 540
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 660
+Exchange duration: 190
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 220
+Resolve phase duration: 660
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 370
+Exchange duration: 130
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 510
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 370
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1320
+Exchange duration: 440
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 850
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 400
+Resolve phase duration: 1340
+Exchange duration: 130
+Resolve phase duration: 370
+Exchange duration: 620
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 470
+Resolve phase duration: 750
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 500
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 270
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 1370
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 350
+Resolve phase duration: 1340
+Exchange duration: 450
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 1340
+Exchange duration: 360
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 1360
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1350
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 1350
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 310
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 1060
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 660
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 240
+Resolve phase duration: 1340
+Exchange duration: 260
+Resolve phase duration: 660
+Exchange duration: 450
+Resolve phase duration: 1360
+Exchange duration: 200
+Resolve phase duration: 390
+Exchange duration: 450
+Resolve phase duration: 660
+Exchange duration: 140
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 450
+Resolve phase duration: 370
+Exchange duration: 550
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1340
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 1330
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 690
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 460
+Resolve phase duration: 1330
+Exchange duration: 190
+Resolve phase duration: 390
+Exchange duration: 470
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 740
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 1350
+Exchange duration: 740
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 810
+Exchange duration: 430
+Resolve phase duration: 1360
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1330
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 710
+Exchange duration: 470
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 730
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 300
+Resolve phase duration: 1350
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 1350
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 140
+Resolve phase duration: 1340
+Exchange duration: 140
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1350
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 1350
+Exchange duration: 240
+Resolve phase duration: 660
+Exchange duration: 460
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 1330
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 1350
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 1340
+Exchange duration: 260
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 260
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 360
+Exchange duration: 190
+Resolve phase duration: 840
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 1420
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 1330
+Exchange duration: 470
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 1340
+Exchange duration: 540
+Resolve phase duration: 650
+Exchange duration: 430
+Resolve phase duration: 1060
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 180
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 690
+Exchange duration: 130
+Resolve phase duration: 370
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 1350
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 140
+Resolve phase duration: 680
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 700
+Exchange duration: 440
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 130
+Resolve phase duration: 680
+Exchange duration: 110
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 110
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 160
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 660
+Exchange duration: 420
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 730
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 390
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 1340
+Exchange duration: 230
+Resolve phase duration: 360
+Exchange duration: 250
+Resolve phase duration: 1350
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 470
+Resolve phase duration: 1340
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 450
+Resolve phase duration: 1330
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1060
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 1340
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 1330
+Exchange duration: 350
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 1360
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 270
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 690
+Exchange duration: 130
+Resolve phase duration: 690
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 310
+Resolve phase duration: 370
+Exchange duration: 440
+Resolve phase duration: 690
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1030
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 390
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 140
+Resolve phase duration: 680
+Exchange duration: 170
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 540
+Resolve phase duration: 670
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 670
+Exchange duration: 140
+Resolve phase duration: 680
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 360
+Exchange duration: 130
+Resolve phase duration: 660
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 550
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 220
+Resolve phase duration: 380
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 400
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 660
+Exchange duration: 130
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 120
+Resolve phase duration: 680
+Exchange duration: 150
+Resolve phase duration: 370
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 300
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 660
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 110
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 360
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 520
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 370
+Exchange duration: 450
+Resolve phase duration: 400
+Exchange duration: 140
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 510
+Resolve phase duration: 390
+Exchange duration: 210
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 400
+Resolve phase duration: 670
+Exchange duration: 470
+Resolve phase duration: 670
+Exchange duration: 540
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 700
+Exchange duration: 260
+Resolve phase duration: 690
+Exchange duration: 190
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 110
+Resolve phase duration: 670
+Exchange duration: 420
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 740
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 710
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 690
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 520
+Resolve phase duration: 660
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 250
+Resolve phase duration: 370
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 130
+Resolve phase duration: 680
+Exchange duration: 450
+Resolve phase duration: 690
+Exchange duration: 510
+Resolve phase duration: 670
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 480
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 220
+Resolve phase duration: 680
+Exchange duration: 470
+Resolve phase duration: 670
+Exchange duration: 620
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 360
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 450
+Resolve phase duration: 690
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 100
+Resolve phase duration: 680
+Exchange duration: 130
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 230
+Resolve phase duration: 680
+Exchange duration: 250
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 680
+Exchange duration: 420
+Resolve phase duration: 390
+Exchange duration: 200
+Resolve phase duration: 690
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 380
+Exchange duration: 430
+Resolve phase duration: 370
+Exchange duration: 210
+Resolve phase duration: 1300
+Exchange duration: 210
+Resolve phase duration: 680
+Exchange duration: 440
+Resolve phase duration: 380
+Exchange duration: 470
+Resolve phase duration: 850
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 210
+Resolve phase duration: 1359
+Exchange duration: 150
+Resolve phase duration: 370
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 680
+Exchange duration: 490
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 650
+Exchange duration: 200
+Resolve phase duration: 370
+Exchange duration: 430
+Resolve phase duration: 670
+Exchange duration: 110
+Resolve phase duration: 670
+Exchange duration: 500
+Resolve phase duration: 680
+Exchange duration: 430
+Resolve phase duration: 680
+Exchange duration: 260
+Resolve phase duration: 750
+Exchange duration: 490
+Resolve phase duration: 680
+Exchange duration: 210
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 1350
+Exchange duration: 450
+Resolve phase duration: 680
+Exchange duration: 250
+Resolve phase duration: 1310
+Exchange duration: 440
+Resolve phase duration: 660
+Exchange duration: 230
+Resolve phase duration: 1340
+Exchange duration: 210
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 1050
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1350
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 370
+Exchange duration: 440
+Resolve phase duration: 1330
+Exchange duration: 220
+Resolve phase duration: 710
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 460
+Resolve phase duration: 1340
+Exchange duration: 230
+Resolve phase duration: 690
+Exchange duration: 200
+Resolve phase duration: 710
+Exchange duration: 150
+Resolve phase duration: 670
+Exchange duration: 470
+Resolve phase duration: 1360
+Exchange duration: 390
+Resolve phase duration: 680
+Exchange duration: 460
+Resolve phase duration: 370
+Exchange duration: 190
+Resolve phase duration: 680
+Exchange duration: 240
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 670
+Exchange duration: 450
+Resolve phase duration: 380
+Exchange duration: 200
+Resolve phase duration: 680
+Exchange duration: 410
+Resolve phase duration: 1350
+Exchange duration: 480
+Resolve phase duration: 670
+Exchange duration: 140
+Resolve phase duration: 1350
+Exchange duration: 230
+Resolve phase duration: 370
+Exchange duration: 450
+Resolve phase duration: 1310
+Exchange duration: 260
+Resolve phase duration: 670
+Exchange duration: 350
+Resolve phase duration: 1340
+Exchange duration: 430
+Resolve phase duration: 380
+Exchange duration: 240
+Resolve phase duration: 1350
+Exchange duration: 200
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 130
+Resolve phase duration: 700
+Exchange duration: 350
+Resolve phase duration: 370
+Exchange duration: 230
+Resolve phase duration: 670
+Exchange duration: 240
+Resolve phase duration: 690
+Exchange duration: 440
+Resolve phase duration: 680
+Exchange duration: 250
+Resolve phase duration: 370
+Exchange duration: 490
+Resolve phase duration: 670
+Exchange duration: 120
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1390
+Exchange duration: 140
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 440
+Resolve phase duration: 1330
+Exchange duration: 120
+Resolve phase duration: 680
+Exchange duration: 520
+Resolve phase duration: 380
+Exchange duration: 540
+Resolve phase duration: 1360
+Exchange duration: 190
+Resolve phase duration: 380
+Exchange duration: 220
+Resolve phase duration: 670
+Exchange duration: 220
+Resolve phase duration: 1340
+Exchange duration: 200
+Resolve phase duration: 380
+Exchange duration: 440
+Resolve phase duration: 670
+Exchange duration: 200
+Resolve phase duration: 1310
+Exchange duration: 430
+Resolve phase duration: 660
+Checking for pending work on thread 1
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Teardown beginning
+Exchange duration: 440
+Resolve phase duration: 730
+Exchange duration: 310
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Teardown: all threads beginning teardown
+Destroying core 1
+Resolve phase duration: 1350
+Exchange duration: 460
+Resolve phase duration: 30
+Exchange duration: 250
+Resolve phase duration: 40
+Exchange duration: 750
+Resolve phase duration: 40
+Exchange duration: 520
+Resolve phase duration: 50
+Exchange duration: 210
+Resolve phase duration: 40
+Exchange duration: 710
+Resolve phase duration: 30
+Exchange duration: 440
+Resolve phase duration: 40
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 220
+Resolve phase duration: 30
+Exchange duration: 420
+Resolve phase duration: 30
+Exchange duration: 430
+Resolve phase duration: 30
+Exchange duration: 430
+Resolve phase duration: 30
+Exchange duration: 230
+Resolve phase duration: 40
+Exchange duration: 520
+Resolve phase duration: 30
+Exchange duration: 200
+Resolve phase duration: 40
+Exchange duration: 230
+Resolve phase duration: 30
+Exchange duration: 220
+Resolve phase duration: 40
+Exchange duration: 230
+Resolve phase duration: 40
+Exchange duration: 510
+Resolve phase duration: 30
+Exchange duration: 480
+Resolve phase duration: 30
+Exchange duration: 420
+Resolve phase duration: 40
+Exchange duration: 420
+Resolve phase duration: 40
+Exchange duration: 430
+Resolve phase duration: 40
+Exchange duration: 240
+Resolve phase duration: 30
+Exchange duration: 480
+Resolve phase duration: 30
+Exchange duration: 450
+Resolve phase duration: 40
+Exchange duration: 600
+Resolve phase duration: 40
+Exchange duration: 790
+Resolve phase duration: 30
+Exchange duration: 460
+Resolve phase duration: 30
+All threads stopped
+All threads deallocated
+Exchange duration: 420
+[report]: insert_run_time_ns : 525482671
+[report]: insert_overall_operation_number : 3648
+[report]: insert_overall_throughput : 6942.188965
+[report]: insert_avg_insert_time_ns : 144046.000000
+timeout: the monitored command dumped core

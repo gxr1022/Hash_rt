@@ -5,35 +5,16 @@
 #include <verona.h>
 #include "spsc.h"
 
-#define QUEUE_SIZE 1048576  // 2^20, closest power of 2 above 1024000
+#define QUEUE_SIZE 1048576 // 2^20, closest power of 2 above 1024000
 
-DEFINE_uint64(num_ops, 2000000, "the number of insert operations");
-DEFINE_uint64(str_key_size, 8, "size of key (bytes)");
-DEFINE_uint64(str_value_size, 100, "size of value (bytes)");
-DEFINE_uint64(num_threads, 8, "the number of threads");
-DEFINE_uint64(time_interval, 10, "the time interval of insert operations");
-DEFINE_string(report_prefix, "[report]: ", "prefix of report data");
-DEFINE_bool(first_mode, true, "fist mode start multiply clients on the same key value server");
-DEFINE_uint64(work_usec, 0, "the time interval of insert operations");
-DEFINE_uint64(batch_size, 1000, "the size of batch");
+DEFINE_uint64(batch_size, 32, "the size of batch");
 
-void standard_report(const std::string &prefix, const std::string &name, const std::string &value)
-{
-    std::cout << FLAGS_report_prefix << prefix + "_" << name << " : " << value << std::endl;
-}
-
-void benchmark_report(const std::string benchmark_prefix, const std::string &name, const std::string &value)
-{
-    standard_report(benchmark_prefix, name, value);
-}
 
 class HashTableServer
 {
 public:
     size_t MAX_BATCH_SIZE;
     std::atomic<size_t> current_batch_id{0};
-
-    SystematicTestHarness &harness;
     std::atomic<bool> running{true};
     std::atomic<size_t> completed_ops{0};
     size_t target_ops;
@@ -59,7 +40,7 @@ public:
     Batch *prepare_new_batch()
     {
         auto *batch = new Batch(current_batch_id.fetch_add(1));
-        
+
         static size_t start_idx = 0;
         size_t current_idx = start_idx;
         size_t clients_checked = 0;
@@ -78,24 +59,25 @@ public:
                     }
                 }
             }
-            
+
             current_idx = (current_idx + 1) % MAX_CLIENTS;
             clients_checked++;
-            
+
             if (clients_checked == MAX_CLIENTS && batch->requests.size() < MAX_BATCH_SIZE)
             {
                 clients_checked = 0;
             }
         }
-        
+
         start_idx = (current_idx + 1) % MAX_CLIENTS;
-        
+
         batch->remaining_requests.store(batch->requests.size(), std::memory_order_relaxed);
         return batch;
     }
 
     void scheduler_loop()
     {
+        auto start = std::chrono::high_resolution_clock::now();
         while (running && completed_ops < target_ops)
         {
             auto *batch = prepare_new_batch();
@@ -115,34 +97,31 @@ public:
                 continue;
             }
         }
+        auto end = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
+        std::cout << "scheduler loop time: " << duration << std::endl;
         Scheduler::get().has_scheduling = false;
         running = false;
     }
 
 public:
-    HashTableServer(SystematicTestHarness &h)
-        : harness(h)
+    HashTableServer(size_t num_ops)
     {
         MAX_BATCH_SIZE = FLAGS_batch_size;
-        target_ops = FLAGS_num_ops;
+        target_ops = num_ops;
         hash_table = new ExtendibleHash(HASH_INIT_BUCKET_NUM, HASH_ASSOC_NUM);
-        harness.external_thread([this]()
-                                { scheduler_loop();
-                                });
     }
 
     size_t register_client_queue(SPSCQueue<HashRequest, QUEUE_SIZE> *queue, size_t client_id)
     {
-        for (size_t i = 0; i < MAX_CLIENTS; i++)
+
+        bool expected = false;
+        if (active_clients[client_id].compare_exchange_strong(expected, true))
         {
-            bool expected = false;
-            if (active_clients[i].compare_exchange_strong(expected, true))
-            {
-                client_queues[i] = queue;
-                return i;
-            }
+            client_queues[client_id] = queue;
+            return client_id;
         }
-        throw std::runtime_error("Max clients reached");
+        return -1;
     }
 
     void unregister_client_queue(size_t client_id)
@@ -155,4 +134,8 @@ public:
     }
 
     bool is_running() const { return running; }
+    ~HashTableServer()
+    {
+        delete hash_table;
+    }
 };

@@ -6,7 +6,7 @@ clean_build() {
     fi
 }
 current=`date "+%Y-%m-%d-%H-%M-%S"`
-RUN_PATH="/users/Xuran/hash_rt"
+RUN_PATH="/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt"
 BINARY_PATH=${RUN_PATH}/build
 LOG_PATH=${RUN_PATH}/log/${current}
 mkdir -p ${LOG_PATH}
@@ -21,10 +21,16 @@ if [[ "$?" != 0  ]];then
 fi
 cmake --build . 
 
+# popd
+
+pushd ${BINARY_PATH}
+
+gdb ./hash_rt
+
 # TEST_PATH=${BINARY_PATH}
 
 # # num_of_ops_set=(1000 10000 100000 1000000)
-# num_of_ops_set=(5000000)
+# num_of_ops_set=(100000)
 # modes=(true)
 # work_usec=(0)
 # batch_size=(80)
@@ -37,13 +43,17 @@ cmake --build .
 # 	# "8 1048576"
 # )
 
-# threads=(8)
-# # for ((i =5; i <= 40; i += 2)); do
-# #     threads+=($i)
+# threads_client=(32)
+# # for ((i =9; i <= 32; i += 1)); do
+# #     threads_client+=($i)
+# # done
+
+# threads_worker=(1)
+# # for ((i =2; i <= 16; i += 1)); do
+# #     threads_worker+=($i)
 # # done
 
 # test_name=(hash_rt)
-# # for i in {1..10}; do
 # for kv_size in "${kv_sizes[@]}";do
 #     kv_size_array=( ${kv_size[*]} )
 #     key_size=${kv_size_array[0]}
@@ -55,11 +65,13 @@ cmake --build .
 #     ops_log_path=${LOG_PATH}/ops_${num_of_ops}
 #     mkdir -p ${ops_log_path}
     
-# for t in ${threads[*]};do
+# for t_c in ${threads_client[*]};do
+# for t_w in ${threads_worker[*]};do
 # for tn in ${test_name[*]};do
 
 # 	cmd="${TEST_PATH}/${tn} \
-# 	--num_threads=${t} \
+# 	--num_threads_client=${t_c} \
+# 	--num_threads_worker=${t_w} \
 # 	--str_key_size=${key_size} \
 # 	--str_value_size=${value_size} \
 # 	--num_ops=${num_of_ops} \
@@ -67,7 +79,7 @@ cmake --build .
 #     --work_usec=${work} \
 #     --batch_size=${batch}
 # 	"
-# 	this_log_path=${ops_log_path}/${tn}.$(($t/2)).thread.${mode}.${key_size}.${value_size}.${num_of_ops}.ops.${batch}.batch.log
+# 	this_log_path=${ops_log_path}/${tn}.${t_c}.clientthread.${t_w}.workerthread.${mode}.${key_size}.${value_size}.${num_of_ops}.ops.${batch}.batch.log
 
 # 	echo ${cmd} 2>&1 | tee -a ${this_log_path}
 # 	timeout -v 3600 stdbuf -o0 ${cmd} 2>&1 | tee -a ${this_log_path}
@@ -80,8 +92,8 @@ cmake --build .
 # done
 # done
 # done
-# # done
-# #opd
+# done
+# popd
 
 # # Extract data and generate plot
 # # python ${RUN_PATH}/script/run_hash_rt_parl/extract_hash_rt_time.py ${LOG_PATH}/ops_1000000

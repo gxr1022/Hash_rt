@@ -114,15 +114,15 @@ public:
 
         if (hashValue < directory.size())
         {
-            auto start_time = std::chrono::steady_clock::now();
+            // auto start_time = std::chrono::steady_clock::now();
             
             when(directory[hashValue]) << [=](acquired_cown<Bucket> bucketAcq) mutable
             {
-                auto end_time = std::chrono::steady_clock::now();
-                auto schedule_time = std::chrono::duration_cast<std::chrono::nanoseconds>
-                                   (end_time - start_time).count();
-                when_schedule_time.fetch_add(schedule_time);
-                when_schedule_count.fetch_add(1);
+                // auto end_time = std::chrono::steady_clock::now();
+                // auto schedule_time = std::chrono::duration_cast<std::chrono::nanoseconds>
+                //                    (end_time - start_time).count();
+                // when_schedule_time.fetch_add(schedule_time);
+                // when_schedule_count.fetch_add(1);
                 
                 inserted = bucketAcq->insert(key, value);
                 if (inserted) {

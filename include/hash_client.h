@@ -3,7 +3,7 @@
 #include <random>
 #include <thread>
 #include "spsc.h"
-
+#include <cstring>
 class HashTableClient 
 {
 public:
@@ -38,9 +38,8 @@ public:
     
     void submit_request(const char* key, const char* value) {
         HashRequest req(key, value, client_id);
-        while (!request_queue.try_push(std::move(req))) {
-            std::this_thread::yield();
-        }
+
+        request_queue.try_push(std::move(req));
     }
     
     void run() 
@@ -49,11 +48,12 @@ public:
         {
             char key[MAX_KEY_LENGTH];
             char value[MAX_VALUE_LENGTH];
-            
-            generate_random_string(key, MAX_KEY_LENGTH);
+            strcpy(key, "1234568"); 
+            // generate_random_string(key, MAX_KEY_LENGTH);
             generate_random_string(value, MAX_VALUE_LENGTH);
 
             submit_request(key, value); 
-        }
+            }
+        
     }
 };
