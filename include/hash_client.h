@@ -48,8 +48,8 @@ public:
         {
             char key[MAX_KEY_LENGTH];
             char value[MAX_VALUE_LENGTH];
-            strcpy(key, "1234568"); 
-            // generate_random_string(key, MAX_KEY_LENGTH);
+            // strcpy(key, "1234568"); 
+            generate_random_string(key, MAX_KEY_LENGTH);
             generate_random_string(value, MAX_VALUE_LENGTH);
 
             submit_request(key, value); 

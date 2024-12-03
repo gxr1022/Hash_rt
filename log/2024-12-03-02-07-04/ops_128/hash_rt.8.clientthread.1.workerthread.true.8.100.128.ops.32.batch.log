@@ -1,0 +1,1046 @@
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt --num_threads_client=8 --num_threads_worker=1 --str_key_size=8 --str_value_size=100 --num_ops=128 --first_mode=true --work_usec=0 --batch_size=32
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:112750358
+Prepare phase duration: 50
+Acquire phase duration: 220
+Exchange duration: 150
+Release phase duration: 60
+Process phase duration: 80
+Enqueue time taken for schedule lifo: 150 ns
+Prepare phase duration: 50
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 40
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 60
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 20
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 40
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 60
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Starting all threads
+Exchange duration: 30
+Release phase duration: 50
+Process phase duration: 30
+Prepare phase duration: 60
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 40
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 780
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 60
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 20
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 100
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 90
+Exchange duration: 30
+Release phase duration: 30
+Process phase duration: 40
+scheduler loop time: 782198
+ Slot: 0x7f3d3fc90020 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039870064 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90070 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 60 ns
+ Slot: 0x7f3d3fc90080 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039870160 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc900d0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc900e0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039870256 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90130 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90140 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039870352 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90190 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc901a0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039870448 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc901f0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90200 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039870544 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90250 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90260 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039870640 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc902b0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc902c0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039870736 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90310 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90320 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039870832 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90370 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90380 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039870928 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc903d0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc903e0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039871024 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90430 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90440 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039871120 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90490 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc904a0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039871216 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc904f0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90500 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039871312 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90550 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90560 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039871408 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc905b0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc905c0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039871504 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90610 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90620 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039871600 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90670 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90680 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039871696 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc906d0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc906e0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039871792 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90730 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90740 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039871888 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90790 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc907a0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039871984 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc907f0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90800 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039872080 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90850 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc90860 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039872176 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc908b0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc908c0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039872272 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90910 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90920 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039872368 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90970 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90980 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039872464 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc909d0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc909e0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039872560 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90a30 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90a40 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039872656 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90a90 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc90aa0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039872752 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90af0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90b00 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039872848 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90b50 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc90b60 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039872944 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90bb0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc90bc0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039873040 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90c10 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90c20 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039873136 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90c70 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90c80 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039873232 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90cd0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90ce0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039873328 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90d30 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc90d40 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039873424 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90d90 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90da0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039873520 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90df0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90e00 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039873616 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90e50 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc90e60 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039873712 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90eb0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90ec0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039873808 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90f10 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90f20 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039873904 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90f70 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90f80 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039874000 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc90fd0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc90fe0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039874096 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91030 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc91040 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039874192 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91090 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc910a0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039874288 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc910f0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91100 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039874384 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91150 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91160 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039874480 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc911b0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc911c0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039874576 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91210 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91220 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039874672 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91270 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91280 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039874768 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc912d0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc912e0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039874864 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91330 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91340 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039874960 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91390 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc913a0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039875056 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc913f0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91400 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039875152 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91450 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91460 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039875248 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc914b0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc914c0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039875344 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91510 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91520 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039875440 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91570 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91580 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039875536 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc915d0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc915e0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039875632 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91630 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91640 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039875728 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91690 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc916a0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039875824 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc916f0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91700 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039875920 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91750 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91760 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039876016 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc917b0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc917c0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039876112 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91810 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91820 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039876208 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91870 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91880 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039876304 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc918d0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc918e0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039876400 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91930 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91940 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039876496 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91990 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc919a0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039876592 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc919f0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91a00 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039876688 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91a50 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91a60 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039876784 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91ab0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc91ac0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039876880 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91b10 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91b20 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039876976 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91b70 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91b80 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039877072 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91bd0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91be0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039877168 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91c30 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91c40 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039877264 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91c90 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91ca0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039877360 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91cf0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91d00 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039877456 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91d50 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91d60 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039877552 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91db0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91dc0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039877648 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91e10 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91e20 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039877744 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91e70 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc91e80 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039877840 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91ed0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91ee0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039877936 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91f30 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc91f40 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039878032 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91f90 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc91fa0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039878128 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc91ff0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92000 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039878224 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92050 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92060 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039878320 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc920b0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc920c0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039878416 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92110 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92120 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039878512 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92170 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92180 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039878608 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc921d0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc921e0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039878704 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92230 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92240 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039878800 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92290 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc922a0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039878896 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc922f0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc92300 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039878992 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92350 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92360 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039879088 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc923b0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc923c0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039879184 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92410 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc92420 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039879280 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92470 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92480 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039879376 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc924d0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc924e0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039879472 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92530 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92540 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039879568 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92590 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc925a0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039879664 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc925f0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92600 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039879760 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92650 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92660 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039879856 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc926b0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc926c0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039879952 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92710 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92720 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039880048 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92770 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92780 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039880144 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc927d0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc927e0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039880240 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92830 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92840 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039880336 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92890 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc928a0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039880432 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc928f0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92900 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039880528 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92950 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92960 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039880624 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc929b0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc929c0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039880720 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92a10 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92a20 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039880816 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92a70 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92a80 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039880912 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92ad0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92ae0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039881008 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92b30 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92b40 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039881104 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92b90 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92ba0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039881200 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92bf0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92c00 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039881296 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92c50 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92c60 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039881392 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92cb0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92cc0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039881488 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92d10 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 20 ns
+ Slot: 0x7f3d3fc92d20 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039881584 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92d70 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92d80 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039881680 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92dd0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92de0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039881776 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92e30 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92e40 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039881872 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92e90 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92ea0 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039881968 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92ef0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92f00 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039882064 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92f50 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+ Slot: 0x7f3d3fc92f60 Cown ptr: 139900806378512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 139901039882160 Is_next_reader: 0
+ Writer waking up next writer cown next slot  Behaviour: 0x7f3d3fc92fb0 Cowns: 1 Pending dependencies: 1 
+Time taken for schedule fifo: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Teardown: all threads beginning teardown
+Destroying core 1
+All threads stopped
+All threads deallocated
+[report]: insert_run_time_ns : 1576346
+[report]: insert_overall_operation_number : 128
+[report]: insert_overall_throughput : 81200.447110

@@ -1,0 +1,232 @@
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt --num_threads_client=8 --num_threads_worker=2 --str_key_size=8 --str_value_size=100 --num_ops=200 --first_mode=true --work_usec=0 --batch_size=32
+Init time:501252718
+scheduler loop time: 422629
+thread id: 2 work duration: 4850
+thread id: 2 work duration: 550
+thread id: 2 work duration: 670
+thread id: thread id: 1 work duration: 14610
+2thread id:  work duration: 540
+thread id: 2 work duration: 560
+1 work duration: 580
+thread id: 2 work duration: 490
+thread id: thread id: 2 work duration: 490
+1thread id: 2 work duration: 560
+ work duration: thread id: 650
+thread id: 1 work duration: 620
+thread id: 1 work duration: 440
+2thread id: 1 work duration: 570
+ work duration: 600
+thread id: 1 work duration: 460
+thread id: 2 work duration: 770
+thread id: 2thread id: 1 work duration: 810
+thread id: 1 work duration: 480
+ work duration: 540
+thread id: 2 work duration: 620
+thread id: 2 work duration: 670
+thread id: thread id: 1 work duration: 740
+2 work duration: 710
+thread id: thread id: 2 work duration: 730
+1thread id: 2 work duration: 480
+ work duration: 590
+thread id: 1 work duration: 510
+thread id: thread id: 2 work duration: 570
+1 work duration: 430
+thread id: 2 work duration: 530
+thread id: 1 work duration: 490
+thread id: 2 work duration: 790
+thread id: thread id: 2 work duration: 720
+1thread id: 2 work duration: 680
+ work duration: thread id: 2 work duration: 540
+490thread id: 2 work duration: 560
+
+thread id: 1 work duration: 720
+thread id: 1 work duration: 570
+thread id: 2 work duration: 420
+thread id: 1 work duration: 480
+thread id: 2 work duration: 590
+thread id: thread id: 1 work duration: 540
+2 work duration: 420
+thread id: thread id: 1 work duration: 510
+2 work duration: 760
+thread id: 2 work duration: 630
+thread id: 2thread id: 1 work duration: 580
+ work duration: thread id: 460
+thread id: 2 work duration: 550
+1 work duration: 450
+thread id: 2 work duration: 480
+thread id: 1 work duration: 660
+thread id: 1 work duration: 460
+thread id: 2 work duration: 650
+thread id: 1 work duration: 450
+thread id: 1 work duration: 620
+thread id: 2 work duration: 590
+thread id: 1 work duration: 430
+thread id: 1thread id: 2 work duration: 640
+ work duration: 630
+thread id: 1 work duration: 490
+thread id: 2 work duration: 670
+thread id: 2thread id: 1 work duration: 530
+ work duration: thread id: 1 work duration: 420
+490thread id: 1 work duration: 480
+
+thread id: 2thread id: 1 work duration: 530
+ work duration: 790
+thread id: 2 work duration: 800
+thread id: 2 work duration: 570
+thread id: thread id: 1 work duration: 780
+2 work duration: 580
+thread id: thread id: 2 work duration: 640
+1thread id: 2 work duration: 540
+ work duration: thread id: 2 work duration: 690
+590thread id: 2 work duration: 680
+
+thread id: 2 work duration: 590
+thread id: 1 work duration: 650
+thread id: 2 work duration: 560
+thread id: thread id: 1 work duration: 490
+thread id: 1 work duration: 540
+2 work duration: 700
+thread id: thread id: 2 work duration: 490
+1thread id: 2 work duration: 580
+ work duration: thread id: 450
+thread id: 12 work duration: 470
+ work duration: 500
+thread id: 1 work duration: 650
+thread id: thread id: 1 work duration: 520
+2thread id: 1 work duration: 420
+ work duration: thread id: 1 work duration: 500
+700thread id: 1 work duration: 460
+
+thread id: 2 work duration: 480
+thread id: 2thread id: 1 work duration: 410
+ work duration: 440
+thread id: 2thread id: 1 work duration: 510
+ work duration: 760
+thread id: 2thread id: 1 work duration: 500
+ work duration: thread id: 1 work duration: 460
+thread id: 1 work duration: 570
+670
+thread id: thread id: 1 work duration: 460
+2 work duration: 470
+thread id: 2thread id: 1 work duration: 690
+ work duration: 450
+thread id: 1 work duration: 480
+thread id: thread id: 1 work duration: 570
+2 work duration: 700
+thread id: thread id: 1 work duration: 510
+2 work duration: 720
+thread id: thread id: 2 work duration: 490
+1thread id: 2 work duration: 460
+ work duration: 470
+thread id: thread id: 2 work duration: 570
+1 work duration: 480
+thread id: 1 work duration: 670
+thread id: 2 work duration: 500
+thread id: thread id: 2 work duration: 610
+1 work duration: 690
+thread id: 1thread id: 2 work duration: 710
+ work duration: thread id: 570
+thread id: 12 work duration: 570
+thread id: 2 work duration: 520
+ work duration: thread id: 2 work duration: 590
+thread id: 2460
+ work duration: 570
+thread id: 1 work duration: 870
+thread id: 2 work duration: 700
+thread id: thread id: 1 work duration: 760
+2 work duration: 850
+thread id: 2thread id: 1 work duration: 510
+ work duration: 660
+thread id: 2thread id: 1 work duration: 540
+ work duration: thread id: 1 work duration: 490
+550
+thread id: thread id: 1 work duration: 510
+2 work duration: 620
+thread id: 2 work duration: 470
+thread id: 1 work duration: 520
+thread id: 2 work duration: 670
+thread id: 1 work duration: 540
+thread id: 1 work duration: thread id: 2 work duration: 970
+460
+thread id: 1 work duration: thread id: 2 work duration: 750
+thread id: 2540
+thread id: 1 work duration: 670
+ work duration: 560
+thread id: 2 work duration: 680
+thread id: 2 work duration: 470
+thread id: 2 work duration: 560
+thread id: 1 work duration: 500
+thread id: thread id: 2 work duration: 450
+1 work duration: 640
+thread id: 2 work duration: 500
+thread id: 1 work duration: 470
+thread id: 1 work duration: 520
+thread id: thread id: 1 work duration: 680
+2thread id:  work duration: 480
+thread id: 1 work duration: 490
+2 work duration: 460
+thread id: 1 work duration: 470
+thread id: thread id: 1 work duration: 450
+2thread id: 1 work duration: 590
+ work duration: thread id: 1 work duration: 480
+460
+thread id: 2 work duration: 510
+thread id: 1 work duration: 450
+thread id: 2 work duration: 450
+thread id: 2thread id: 1 work duration: 650
+ work duration: 540
+thread id: 2 work duration: 520
+thread id: 1 work duration: 430
+thread id: 2 work duration: 430
+thread id: 2 work duration: 520
+thread id: thread id: 2 work duration: 430
+1thread id: 2 work duration: 520
+ work duration: thread id: 2 work duration: 440
+540thread id: 
+thread id: 1 work duration: 520
+thread id: 2 work duration: 460
+1 work duration: 430
+thread id: 2 work duration: 470
+thread id: 1 work duration: 600
+thread id: 1 work duration: 400
+thread id: 1 work duration: 440
+thread id: 1 work duration: 510
+thread id: 2 work duration: 670
+thread id: thread id: 2 work duration: 550
+1thread id: 2 work duration: 430
+ work duration: thread id: 2 work duration: 420
+580thread id: 2 work duration: 500
+
+thread id: 1 work duration: thread id: 2 work duration: 450
+490thread id: 
+thread id: 1 work duration: 2 work duration: 450
+540
+thread id: 1 work duration: 470
+thread id: 1 work duration: 550
+thread id: 2 work duration: 630
+thread id: 1 work duration: 460
+thread id: 1thread id: 2 work duration: 480
+ work duration: thread id: 2 work duration: 440
+480
+thread id: 1 work duration: 470
+thread id: 2 work duration: 460
+thread id: 1 work duration: 460
+thread id: 1 work duration: 510
+thread id: 1 work duration: 440
+thread id: 2 work duration: 530
+thread id: 2 work duration: 500
+thread id: 1 work duration: 460
+thread id: thread id: 1 work duration: 440
+2thread id: 1 work duration: 460
+ work duration: 420
+thread id: 2 work duration: 460
+thread id: thread id: 2 work duration: 430
+1 work duration: 440
+thread id: thread id: 1 work duration: 890
+2thread id: 1 work duration: 470
+thread id: 1 work duration: 70
+ work duration: thread id: 420
+1 work duration: 70
+[report]: insert_run_time_ns : 1766227
+[report]: insert_overall_operation_number : 224
+[report]: insert_overall_throughput : 126824.015260

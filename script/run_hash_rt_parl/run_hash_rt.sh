@@ -21,7 +21,7 @@ if [[ "$?" != 0  ]];then
 fi
 cmake --build . 
 
-# popd
+popd
 
 pushd ${BINARY_PATH}
 
@@ -30,10 +30,10 @@ gdb ./hash_rt
 # TEST_PATH=${BINARY_PATH}
 
 # # num_of_ops_set=(1000 10000 100000 1000000)
-# num_of_ops_set=(100000)
+# num_of_ops_set=(1000)
 # modes=(true)
 # work_usec=(0)
-# batch_size=(80)
+# batch_size=(32)
 # # batch_size=(10 20 30 40 50 60 70 80 90 100) 
 # kv_sizes=(
 # 	# "8 100"
@@ -43,15 +43,15 @@ gdb ./hash_rt
 # 	# "8 1048576"
 # )
 
-# threads_client=(32)
+# threads_client=(8)
 # # for ((i =9; i <= 32; i += 1)); do
 # #     threads_client+=($i)
 # # done
 
 # threads_worker=(1)
-# # for ((i =2; i <= 16; i += 1)); do
-# #     threads_worker+=($i)
-# # done
+# for ((i =2; i <= 16; i += 1)); do
+#     threads_worker+=($i)
+# done
 
 # test_name=(hash_rt)
 # for kv_size in "${kv_sizes[@]}";do
@@ -82,7 +82,8 @@ gdb ./hash_rt
 # 	this_log_path=${ops_log_path}/${tn}.${t_c}.clientthread.${t_w}.workerthread.${mode}.${key_size}.${value_size}.${num_of_ops}.ops.${batch}.batch.log
 
 # 	echo ${cmd} 2>&1 | tee -a ${this_log_path}
-# 	timeout -v 3600 stdbuf -o0 ${cmd} 2>&1 | tee -a ${this_log_path}
+# 	# timeout -v 3600 stdbuf -o0 ${cmd} 2>&1 | tee -a ${this_log_path}
+# 	${cmd} 2>&1 | tee -a ${this_log_path}
 #     echo "Log file in: ${this_log_path}"
 # 	echo 3 | sudo tee /proc/sys/vm/drop_caches > /dev/null
 # done

@@ -1,0 +1,6302 @@
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt --num_threads_client=8 --num_threads_worker=8 --str_key_size=8 --str_value_size=100 --num_ops=1000 --first_mode=true --work_usec=0 --batch_size=32
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:10490
+Prepare phase duration: 150
+Acquire phase duration: 180
+Exchange duration: 40
+Time taken for load last slot: 40 ns
+Release phase duration: 110
+Process phase duration: 190
+Prepare phase duration: 30
+Acquire phase duration: 170
+Exchange duration: 30
+Time taken for load last slot: 50 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 50
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 50
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 50
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Starting all threads
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 170
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 510
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 140
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 50
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 480
+Exchange duration: 370
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 340
+Time taken for load last slot: 300 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 820
+Exchange duration: 410
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 170
+Exchange duration: 40
+Time taken for load last slot: 50 ns
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 60 ns
+Prepare phase duration: 40
+Acquire phase duration: 760
+Time taken for schedule fifo: 30 ns
+Exchange duration: 330
+Time taken for schedule fifo: 20 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 20 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 20 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 20 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 20 ns
+Time taken for load last slot: 330 ns
+Time taken for schedule fifo: 20 ns
+Time taken for schedule fifo: 30 ns
+Release phase duration: 30
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 40 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 30 ns
+Process phase duration: 40
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 40 ns
+Time taken for schedule fifo: 30 ns
+Prepare phase duration: 40
+Acquire phase duration: 770
+Time taken for schedule fifo: 30 ns
+Exchange duration: 340
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 20 ns
+Time taken for schedule fifo: 30 ns
+Time taken for schedule fifo: 30 ns
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 1590
+Exchange duration: 40
+Time taken for load last slot: 400 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 320
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 520
+Exchange duration: 400
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 780
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 390
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 820
+Exchange duration: 390
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 2420
+Exchange duration: 450
+Time taken for load last slot: 1600 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 1060
+Exchange duration: 30
+Time taken for load last slot: 440 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 800
+Exchange duration: 350
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 500
+Exchange duration: 40
+Time taken for load last slot: 390 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 780
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 490
+Exchange duration: 380
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 340
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 1100
+Exchange duration: 350
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 770
+Exchange duration: 360
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 1050
+Exchange duration: 360
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 480
+Exchange duration: 30
+Time taken for load last slot: 370 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 1060
+Exchange duration: 340
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 1040
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 470
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 1049
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 930
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1230
+Exchange duration: 340
+Time taken for load last slot: 480 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 1050
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 780
+Exchange duration: 360
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 340
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 330
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 720
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 330
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 350
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1050
+Exchange duration: 350
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 320
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 50
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 360
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 1040
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 780
+Exchange duration: 370
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1030
+Exchange duration: 330
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 470
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 490
+Exchange duration: 360
+Time taken for load last slot: 40 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 340
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 740
+Acquire phase duration: 740
+Exchange duration: 330
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 770
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 500
+Exchange duration: 30
+Time taken for load last slot: 370 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 1180
+Exchange duration: 420
+Time taken for load last slot: 380 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 350
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 770
+Exchange duration: 40
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 480
+Exchange duration: 30
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 580
+Acquire phase duration: 770
+Exchange duration: 340
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 470
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 530
+Exchange duration: 30
+Time taken for load last slot: 410 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 1120
+Exchange duration: 360
+Time taken for load last slot: 370 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 480
+Exchange duration: 360
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 330
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 1070
+Exchange duration: 360
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 330
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 790
+Exchange duration: 330
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 570
+Exchange duration: 40
+Time taken for load last slot: 440 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 60
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 310
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 1050
+Exchange duration: 340
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 480
+Exchange duration: 360
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 1100
+Exchange duration: 340
+Time taken for load last slot: 370 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 340
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 790
+Exchange duration: 30
+Time taken for load last slot: 380 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 590
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 340
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 330
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 360
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1040
+Exchange duration: 320
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 800
+Exchange duration: 30
+Time taken for load last slot: 370 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 330
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1040
+Exchange duration: 350
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 1040
+Exchange duration: 330
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 1040
+Exchange duration: 340
+Time taken for load last slot: 300 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 770
+Exchange duration: 350
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 770
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 770
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1060
+Exchange duration: 350
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 300 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 480
+Exchange duration: 40
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 770
+Exchange duration: 370
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1100
+Exchange duration: 340
+Time taken for load last slot: 380 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 330
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 470
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 480
+Exchange duration: 40
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 140
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 300 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 1050
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 480
+Exchange duration: 360
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 330
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 770
+Exchange duration: 40
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 800
+Exchange duration: 390
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 480
+Exchange duration: 30
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 330
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 730
+Exchange duration: 330
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 340
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 470
+Exchange duration: 360
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 350
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 520
+Exchange duration: 400
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 890
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 810
+Exchange duration: 330
+Time taken for load last slot: 390 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 30
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 1060
+Exchange duration: 340
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1070
+Exchange duration: 360
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 330
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 820
+Exchange duration: 350
+Time taken for load last slot: 380 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 480
+Exchange duration: 360
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 500
+Exchange duration: 30
+Time taken for load last slot: 380 ns
+Release phase duration: 330
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 800
+Exchange duration: 30
+Time taken for load last slot: 370 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 330
+Time taken for load last slot: 330 ns
+Release phase duration: 40
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 540
+Exchange duration: 40
+Time taken for load last slot: 410 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 860
+Exchange duration: 30
+Time taken for load last slot: 440 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 630
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 870
+Exchange duration: 30
+Time taken for load last slot: 400 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 1060
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 340
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 510
+Exchange duration: 400
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 29
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 480
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 980
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 330
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 330
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 780
+Exchange duration: 340
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 780
+Exchange duration: 30
+Time taken for load last slot: 370 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 320
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 490
+Exchange duration: 40
+Time taken for load last slot: 370 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 570
+Acquire phase duration: 460
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 770
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 1050
+Exchange duration: 360
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 1050
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 330
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 870
+Exchange duration: 40
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 770
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 1030
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 490
+Exchange duration: 30
+Time taken for load last slot: 370 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 670
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 540
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1040
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 840
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 330
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 860
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 550
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 340
+Time taken for load last slot: 300 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 770
+Exchange duration: 360
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 480
+Exchange duration: 30
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 530
+Exchange duration: 410
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 1050
+Exchange duration: 330
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 770
+Exchange duration: 360
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 470
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 940
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 40
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 780
+Exchange duration: 30
+Time taken for load last slot: 370 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 470
+Exchange duration: 30
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 1020
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 820
+Exchange duration: 40
+Time taken for load last slot: 370 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 970
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 770
+Exchange duration: 30
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 780
+Exchange duration: 350
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 330
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 800
+Exchange duration: 30
+Time taken for load last slot: 380 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 780
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 800
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 780
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 30
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 770
+Exchange duration: 350
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 770
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 510
+Exchange duration: 30
+Time taken for load last slot: 390 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 770
+Exchange duration: 40
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 480
+Exchange duration: 370
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 330
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 330
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 360
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 330
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 360
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 550
+Acquire phase duration: 750
+Exchange duration: 330
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 570
+Exchange duration: 30
+Time taken for load last slot: 450 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 520
+Exchange duration: 30
+Time taken for load last slot: 400 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1050
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 330
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 340
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 520
+Exchange duration: 30
+Time taken for load last slot: 400 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 730
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 340
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 350
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 770
+Exchange duration: 350
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 520
+Exchange duration: 30
+Time taken for load last slot: 400 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 560
+Exchange duration: 40
+Time taken for load last slot: 430 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 590
+Exchange duration: 30
+Time taken for load last slot: 470 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 490
+Exchange duration: 40
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 800
+Exchange duration: 330
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 790
+Exchange duration: 350
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 1030
+Exchange duration: 330
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 340
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 470
+Exchange duration: 30
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 350
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 520
+Exchange duration: 30
+Time taken for load last slot: 400 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 480
+Exchange duration: 30
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 330
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 870
+Exchange duration: 450
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 770
+Exchange duration: 30
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 340
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 30
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 360
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 640
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 800
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 870
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 790
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 360
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 350
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 330
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 640
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 630
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 860
+Exchange duration: 370
+Time taken for load last slot: 40 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 500
+Exchange duration: 40
+Time taken for load last slot: 370 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 30
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 1030
+Exchange duration: 330
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 340
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 330
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1080
+Exchange duration: 360
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 340
+Acquire phase duration: 160
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 140
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 780
+Exchange duration: 30
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 780
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 820
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 40 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 630
+Acquire phase duration: 430
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 350
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 860
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 790
+Exchange duration: 30
+Time taken for load last slot: 380 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 480
+Exchange duration: 30
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 470
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 360
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1060
+Exchange duration: 330
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1030
+Exchange duration: 330
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 490
+Exchange duration: 370
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 510
+Exchange duration: 40
+Time taken for load last slot: 390 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 330
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1050
+Exchange duration: 350
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 340
+Time taken for load last slot: 310 ns
+Release phase duration: 330
+Process phase duration: 40
+Prepare phase duration: 600
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 580
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 340
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 320
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 820
+Exchange duration: 30
+Time taken for load last slot: 400 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 480
+Exchange duration: 40
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 160
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 770
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 340
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 780
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 50
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 770
+Exchange duration: 360
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 40
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 50
+Prepare phase duration: 30
+Acquire phase duration: 490
+Exchange duration: 350
+Time taken for load last slot: 50 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 50
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 770
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 1030
+Exchange duration: 370
+Time taken for load last slot: 30 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 800
+Exchange duration: 30
+Time taken for load last slot: 390 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 1050
+Exchange duration: 340
+Time taken for load last slot: 340 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 1090
+Exchange duration: 400
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 470
+Exchange duration: 30
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 590
+Exchange duration: 470
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 30
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 720
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 800
+Exchange duration: 30
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 40
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 750
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 140
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 770
+Exchange duration: 350
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1040
+Exchange duration: 350
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 1080
+Exchange duration: 340
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 770
+Exchange duration: 30
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 340
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 320
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 340
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 320
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 340
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 320
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 500
+Exchange duration: 30
+Time taken for load last slot: 380 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 470
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 340
+Time taken for load last slot: 30 ns
+Release phase duration: 340
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 790
+Exchange duration: 40
+Time taken for load last slot: 360 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 340
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 340
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 30
+Time taken for load last slot: 350 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 720
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 1300
+Exchange duration: 340
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 430
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 730
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 330
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 330
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 460
+Exchange duration: 30
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 770
+Exchange duration: 360
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 740
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 530
+Exchange duration: 420
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 420
+Exchange duration: 30
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 750
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 470
+Exchange duration: 40
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 740
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 760
+Exchange duration: 340
+Time taken for load last slot: 330 ns
+Release phase duration: 20
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 780
+Exchange duration: 360
+Time taken for load last slot: 340 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 560
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 20
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 40
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 640
+Exchange duration: 530
+Time taken for load last slot: 20 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 780
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 450
+Exchange duration: 40
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 760
+Exchange duration: 340
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 480
+Exchange duration: 360
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 350
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 450
+Exchange duration: 30
+Time taken for load last slot: 330 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 150
+Exchange duration: 30
+Time taken for load last slot: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 40
+Time taken for load last slot: 310 ns
+Release phase duration: 30
+Process phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 440
+Exchange duration: 30
+Time taken for load last slot: 320 ns
+Release phase duration: 30
+Process phase duration: 30
+scheduler loop time: 8339910
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+No pending work!
+Add to list of waiters
+Locking Scheduler.
+Unlock Scheduler lock
+Sleep
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+No pending work!
+Locking Scheduler done
+Locking Scheduler.
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+No pending work!
+Pausing
+Add to list of waiters
+Locking Scheduler.
+No pending work!
+Locking Scheduler.
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Awake!
+Awake!
+Locking Scheduler.
+Awake!
+Locking Scheduler.
+Teardown: all threads beginning teardown
+Awake!
+Awake!
+Awake!
+Awake!
+Locking Scheduler done
+Locking Scheduler.
+Destroying core 2
+Locking Scheduler.
+Locking Scheduler.
+Locking Scheduler.
+Unpausing
+Unlock Scheduler lock
+Locking Scheduler done
+Locking Scheduler.
+Unpausing
+Unlock Scheduler lock
+Destroying core 6
+Locking Scheduler done
+Unpausing
+Unlock Scheduler lock
+Destroying core 7
+Locking Scheduler done
+Unpausing
+Unlock Scheduler lock
+Locking Scheduler done
+Destroying core 5
+Unpausing
+Destroying core 1
+Unlock Scheduler lock
+Locking Scheduler done
+Unpausing
+Unlock Scheduler lock
+Destroying core 3
+Destroying core 4
+Locking Scheduler done
+Unpausing
+Unlock Scheduler lock
+Destroying core 8
+All threads stopped
+All threads deallocated
+[report]: insert_run_time_ns : 8629240
+[report]: insert_overall_operation_number : 1024
+[report]: insert_overall_throughput : 118666.302015

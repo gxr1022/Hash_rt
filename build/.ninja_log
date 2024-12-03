@@ -1,8 +1,8 @@
 # ninja log v5
 0	12	0	clean	a31eedcededa8236
-4741	4795	1732811770728428104	hash_rt	4a789ef49c646cec
+3595	3705	1733222444488480091	hash_rt	7892e6628411b4c4
 0	7	0	/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/CMakeFiles/cmake.verify_globs	320a4a10d304801d
-2	4741	1732811770676428203	CMakeFiles/hash_rt.dir/src/hash_main.cpp.o	64901334ce635280
-0	9	0	/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/CMakeFiles/cmake.verify_globs	320a4a10d304801d
-2	3647	1732812095131803144	CMakeFiles/hash_rt.dir/src/hash_main.cpp.o	9822be0dd34d1f09
-3647	3758	1732812095247802919	hash_rt	7892e6628411b4c4
+2	3595	1733222444376480320	CMakeFiles/hash_rt.dir/src/hash_main.cpp.o	9822be0dd34d1f09
+0	7	0	/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/CMakeFiles/cmake.verify_globs	320a4a10d304801d
+2	3483	1733222488252390231	CMakeFiles/hash_rt.dir/src/hash_main.cpp.o	9822be0dd34d1f09
+3483	3590	1733222488364390000	hash_rt	7892e6628411b4c4

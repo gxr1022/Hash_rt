@@ -4,11 +4,11 @@
 #include <verona-rt/src/rt/verona.h>
 #include <cstring>
 
-DEFINE_uint64(num_ops, 100, "the number of insert operations");
+DEFINE_uint64(num_ops, 1000000, "the number of insert operations");
 DEFINE_uint64(str_key_size, 8, "size of key (bytes)");
 DEFINE_uint64(str_value_size, 100, "size of value (bytes)");
 DEFINE_uint64(num_threads_client, 8, "the number of threads");
-DEFINE_uint64(num_threads_worker, 8, "the number of threads");
+DEFINE_uint64(num_threads_worker, 32, "the number of threads");
 DEFINE_uint64(time_interval, 10, "the time interval of insert operations");
 DEFINE_string(report_prefix, "[report]: ", "prefix of report data");
 DEFINE_bool(first_mode, true, "fist mode start multiply clients on the same key value server");
@@ -24,20 +24,30 @@ void benchmark_report(const std::string benchmark_prefix, const std::string &nam
     standard_report(benchmark_prefix, name, value);
 }
 
-int main(int argc, char **argv)
+class BenchmarkTest
 {
-    Logging::enable_logging();
-    google::ParseCommandLineFlags(&argc, &argv, false);
-    size_t num_ops = FLAGS_num_ops;
-    size_t scheduler_cores = FLAGS_num_threads_worker;
-    size_t client_threads = FLAGS_num_threads_client;
+public:
+    friend HashTableServer;
+    friend HashTableClient;
+    friend HashRequest;
+    size_t num_ops;
+    size_t num_scheduler_threads;
+    size_t num_client_threads;
+    double worker_time;
+    void runBenchmark();
 
-    std::vector<std::thread> ext_threads;
+    BenchmarkTest() : num_ops(FLAGS_num_ops), num_scheduler_threads(FLAGS_num_threads_worker), num_client_threads(FLAGS_num_threads_client) {
+       worker_time = 0;
+    }
+};
+
+void BenchmarkTest::runBenchmark()
+{
 
     // init worker thread pool
     auto &sched = verona::rt::Scheduler::get();
     sched.set_fair(true);
-    sched.init(scheduler_cores);
+    sched.init(num_scheduler_threads);
 
     // init server
     HashTableServer *server = new HashTableServer(num_ops);
@@ -45,16 +55,25 @@ int main(int argc, char **argv)
     // init scheduler thread
     std::thread scheduler_thread([&server]()
                                  { server->scheduler_loop(); 
-                                 cpu::set_affinity(0);    
-                                 });
+                                 cpu::set_affinity(0); });
+
     // init client threads
     std::vector<std::unique_ptr<HashTableClient>> clients;
-
-    for (size_t i = 0; i < client_threads; i++)
+    std::vector<std::thread> client_threads;
+    for (size_t i = 0; i < num_client_threads; i++)
     {
         clients.push_back(std::make_unique<HashTableClient>(i, *server));
-        ext_threads.emplace_back([&clients, i]()
-                                 { clients[i]->run(); });
+        client_threads.emplace_back([&clients, i]()
+                                    { clients[i]->run(); });
+    }
+
+    // start worker threads
+    if (server->is_first_batch.load())
+    {
+        // auto run_start = std::chrono::steady_clock::now();
+        sched.run();
+        // auto run_end = std::chrono::steady_clock::now();
+        // worker_time = std::chrono::duration_cast<std::chrono::nanoseconds>(run_end - run_start).count();
     }
 
     if (!server->is_running())
@@ -62,16 +81,9 @@ int main(int argc, char **argv)
         scheduler_thread.join();
     }
 
-    // std::this_thread::sleep_for(std::chrono::microseconds(1000000));
-
-    auto run_start = std::chrono::steady_clock::now();
-    sched.run();
-    auto run_end = std::chrono::steady_clock::now();
-    auto run_time = std::chrono::duration_cast<std::chrono::nanoseconds>(run_end - run_start).count();
-
     if (!server->is_running())
     {
-        for (auto &client : ext_threads)
+        for (auto &client : client_threads)
         {
             client.join();
         }
@@ -84,15 +96,23 @@ int main(int argc, char **argv)
     // std::cout << "Teardown: all threads stopped" << std::endl;
 
     // size_t completed_inserts = server->hash_table->get_completed_inserts();
-    // double throughput = completed_inserts / (run_time / 1e9);
-    // double avg_insert_time = run_time / completed_inserts;
+    // double throughput = completed_inserts / (worker_time / 1e9);
+    // double avg_insert_time = worker_time / completed_inserts;
     // benchmark_report("insert", "overall_duration_ns", std::to_string(duration_ns));
-    // benchmark_report("insert", "run_time_ns", std::to_string(run_time));
+    // benchmark_report("insert", "worker_time_ns", std::to_string(worker_time));
     // benchmark_report("insert", "overall_operation_number", std::to_string(completed_inserts));
     // benchmark_report("insert", "overall_throughput", std::to_string(throughput));
 
     // benchmark_report("scheduler", "avg_when_time_ns", std::to_string(avg_when_time));
     // benchmark_report("insert", "avg_insert_time_ns", std::to_string(avg_insert_time));
+    return;
+}
 
+int main(int argc, char **argv)
+{
+    Logging::enable_logging();
+    google::ParseCommandLineFlags(&argc, &argv, false);
+    BenchmarkTest benchmark;
+    benchmark.runBenchmark();
     return 0;
 }

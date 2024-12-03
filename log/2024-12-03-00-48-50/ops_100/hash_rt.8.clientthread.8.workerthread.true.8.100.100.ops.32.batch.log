@@ -1,0 +1,1188 @@
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt --num_threads_client=8 --num_threads_worker=8 --str_key_size=8 --str_value_size=100 --num_ops=100 --first_mode=true --work_usec=0 --batch_size=32
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:112498979
+Prepare phase duration: 140
+Acquire phase duration: 220
+Exchange duration: 140
+Release phase duration: 40
+Process phase duration: 140
+LIFO scheduling work 0x7efed1cc8000 onto 8
+LIFO scheduled work 0x7efed1cc8000 onto 8
+Resolve phase duration: 6480
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8060 onto 7
+LIFO scheduled work 0x7efed1cc8060 onto 7
+Resolve phase duration: 1540
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc80c0 onto 6
+LIFO scheduled work 0x7efed1cc80c0 onto 6
+Resolve phase duration: 1600
+Prepare phase duration: 40
+Acquire phase duration: 320
+Exchange duration: 260
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc8120 onto 5
+LIFO scheduled work 0x7efed1cc8120 onto 5
+Resolve phase duration: 1510
+Prepare phase duration: 40
+Acquire phase duration: 420
+Exchange duration: 360
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8180 onto 4
+LIFO scheduled work 0x7efed1cc8180 onto 4
+Resolve phase duration: 1520
+Prepare phase duration: 30
+Acquire phase duration: 220
+Exchange duration: 160
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc81e0 onto 3
+LIFO scheduled work 0x7efed1cc81e0 onto 3
+Resolve phase duration: 1490
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8240 onto 2
+LIFO scheduled work 0x7efed1cc8240 onto 2
+Resolve phase duration: 1500
+Prepare phase duration: 40
+Acquire phase duration: 220
+Exchange duration: 160
+Release phase duration: 20
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc82a0 onto 1
+LIFO scheduled work 0x7efed1cc82a0 onto 1
+Resolve phase duration: 1600
+Prepare phase duration: 40
+Acquire phase duration: 220
+Exchange duration: 160
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8300 onto 8
+LIFO scheduled work 0x7efed1cc8300 onto 8
+Resolve phase duration: 1530
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8360 onto 7
+LIFO scheduled work 0x7efed1cc8360 onto 7
+Resolve phase duration: 1510
+Prepare phase duration: 30
+Acquire phase duration: 480
+Exchange duration: 420
+Release phase duration: 40
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc83c0 onto 6
+LIFO scheduled work 0x7efed1cc83c0 onto 6
+Resolve phase duration: 1510
+Prepare phase duration: 30
+Acquire phase duration: 260
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc8420 onto 5
+LIFO scheduled work 0x7efed1cc8420 onto 5
+Resolve phase duration: 1540
+Prepare phase duration: 30
+Acquire phase duration: 210
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8480 onto 4
+LIFO scheduled work 0x7efed1cc8480 onto 4
+Resolve phase duration: 1570
+Prepare phase duration: 30
+Acquire phase duration: 230
+Exchange duration: 170
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc84e0 onto 3
+LIFO scheduled work 0x7efed1cc84e0 onto 3
+Resolve phase duration: 1580
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 150
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8540 onto 2
+LIFO scheduled work 0x7efed1cc8540 onto 2
+Resolve phase duration: 1480
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc85a0 onto 1
+LIFO scheduled work 0x7efed1cc85a0 onto 1
+Resolve phase duration: 1500
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc8600 onto 8
+LIFO scheduled work 0x7efed1cc8600 onto 8
+Resolve phase duration: 1520
+Prepare phase duration: 40
+Acquire phase duration: 180
+Exchange duration: 120
+Release phase duration: 20
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8660 onto 7
+LIFO scheduled work 0x7efed1cc8660 onto 7
+Resolve phase duration: 1510
+Prepare phase duration: 30
+Acquire phase duration: 140
+Exchange duration: 80
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc86c0 onto 6
+LIFO scheduled work 0x7efed1cc86c0 onto 6
+Resolve phase duration: 1470
+Prepare phase duration: 40
+Acquire phase duration: 130
+Exchange duration: 80
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc8720 onto 5
+LIFO scheduled work 0x7efed1cc8720 onto 5
+Resolve phase duration: 1560
+Prepare phase duration: 30
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8780 onto 4
+LIFO scheduled work 0x7efed1cc8780 onto 4
+Resolve phase duration: 1480
+Prepare phase duration: 40
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc87e0 onto 3
+LIFO scheduled work 0x7efed1cc87e0 onto 3
+Resolve phase duration: 1490
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc8840 onto 2
+LIFO scheduled work 0x7efed1cc8840 onto 2
+Resolve phase duration: 1550
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc88a0 onto 1
+LIFO scheduled work 0x7efed1cc88a0 onto 1
+Resolve phase duration: 1460
+Prepare phase duration: 40
+Acquire phase duration: 490
+Exchange duration: 430
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8900 onto 8
+LIFO scheduled work 0x7efed1cc8900 onto 8
+Resolve phase duration: 1690
+Prepare phase duration: 30
+Acquire phase duration: 220
+Exchange duration: 160
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8960 onto 7
+LIFO scheduled work 0x7efed1cc8960 onto 7
+Resolve phase duration: 1510
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc89c0 onto 6
+LIFO scheduled work 0x7efed1cc89c0 onto 6
+Resolve phase duration: 1480
+Prepare phase duration: 30
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8a20 onto 5
+LIFO scheduled work 0x7efed1cc8a20 onto 5
+Resolve phase duration: 1570
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc8a80 onto 4
+LIFO scheduled work 0x7efed1cc8a80 onto 4
+Resolve phase duration: 1620
+Prepare phase duration: 40
+Acquire phase duration: 180
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8ae0 onto 3
+LIFO scheduled work 0x7efed1cc8ae0 onto 3
+Resolve phase duration: 1600
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 150
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc8b40 onto 2
+LIFO scheduled work 0x7efed1cc8b40 onto 2
+Resolve phase duration: 1550
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8ba0 onto 1
+LIFO scheduled work 0x7efed1cc8ba0 onto 1
+Resolve phase duration: 1560
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 20
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc8c00 onto 8
+LIFO scheduled work 0x7efed1cc8c00 onto 8
+Resolve phase duration: 2020
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc8c60 onto 7
+LIFO scheduled work 0x7efed1cc8c60 onto 7
+Resolve phase duration: 1540
+Prepare phase duration: 30
+Acquire phase duration: 210
+Exchange duration: 150
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc8cc0 onto 6
+LIFO scheduled work 0x7efed1cc8cc0 onto 6
+Resolve phase duration: 1490
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8d20 onto 5
+LIFO scheduled work 0x7efed1cc8d20 onto 5
+Resolve phase duration: 1480
+Prepare phase duration: 30
+Acquire phase duration: 250
+Exchange duration: 190
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8d80 onto 4
+LIFO scheduled work 0x7efed1cc8d80 onto 4
+Resolve phase duration: 1460
+Prepare phase duration: 30
+Acquire phase duration: 170
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc8de0 onto 3
+LIFO scheduled work 0x7efed1cc8de0 onto 3
+Resolve phase duration: 1500
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 20
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8e40 onto 2
+LIFO scheduled work 0x7efed1cc8e40 onto 2
+Resolve phase duration: 1480
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc8ea0 onto 1
+LIFO scheduled work 0x7efed1cc8ea0 onto 1
+Resolve phase duration: 1500
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8f00 onto 8
+LIFO scheduled work 0x7efed1cc8f00 onto 8
+Resolve phase duration: 1740
+Prepare phase duration: 30
+Acquire phase duration: 210
+Exchange duration: 150
+Starting all threads
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8f60 onto 7
+LIFO scheduled work 0x7efed1cc8f60 onto 7
+Resolve phase duration: 1560
+Prepare phase duration: 30
+Acquire phase duration: 110
+Exchange duration: 50
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc8fc0 onto 6
+LIFO scheduled work 0x7efed1cc8fc0 onto 6
+Resolve phase duration: 1510
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9020 onto 5
+LIFO scheduled work 0x7efed1cc9020 onto 5
+Resolve phase duration: 1510
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9080 onto 4
+LIFO scheduled work 0x7efed1cc9080 onto 4
+Resolve phase duration: 1490
+Prepare phase duration: 30
+Acquire phase duration: 220
+Exchange duration: 160
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc90e0 onto 3
+LIFO scheduled work 0x7efed1cc90e0 onto 3
+Resolve phase duration: 1510
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc9140 onto 2
+LIFO scheduled work 0x7efed1cc9140 onto 2
+Resolve phase duration: 1500
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc91a0 onto 1
+LIFO scheduled work 0x7efed1cc91a0 onto 1
+Resolve phase duration: 1500
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9200 onto 8
+LIFO scheduled work 0x7efed1cc9200 onto 8
+Resolve phase duration: 1550
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc9260 onto 7
+LIFO scheduled work 0x7efed1cc9260 onto 7
+Resolve phase duration: 1530
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc92c0 onto 6
+LIFO scheduled work 0x7efed1cc92c0 onto 6
+Resolve phase duration: 1490
+Prepare phase duration: 30
+Acquire phase duration: 260
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc9320 onto 5
+LIFO scheduled work 0x7efed1cc9320 onto 5
+Resolve phase duration: 1500
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9380 onto 4
+LIFO scheduled work 0x7efed1cc9380 onto 4
+Resolve phase duration: 1490
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc93e0 onto 3
+LIFO scheduled work 0x7efed1cc93e0 onto 3
+Resolve phase duration: 1480
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 20
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc9440 onto 2
+LIFO scheduled work 0x7efed1cc9440 onto 2
+Resolve phase duration: 1480
+Prepare phase duration: 40
+Acquire phase duration: 130
+Exchange duration: 70
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc94a0 onto 1
+LIFO scheduled work 0x7efed1cc94a0 onto 1
+Resolve phase duration: 1480
+Prepare phase duration: 30
+Acquire phase duration: 210
+Exchange duration: 150
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9500 onto 8
+LIFO scheduled work 0x7efed1cc9500 onto 8
+Resolve phase duration: 1470
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9560 onto 7
+LIFO scheduled work 0x7efed1cc9560 onto 7
+Resolve phase duration: 1530
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc95c0 onto 6
+LIFO scheduled work 0x7efed1cc95c0 onto 6
+Resolve phase duration: 1500
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9620 onto 5
+LIFO scheduled work 0x7efed1cc9620 onto 5
+Resolve phase duration: 1500
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 720
+LIFO scheduling work 0x7efed1cc9680 onto 4
+LIFO scheduled work 0x7efed1cc9680 onto 4
+Resolve phase duration: 2100
+Prepare phase duration: 30
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc96e0 onto 3
+LIFO scheduled work 0x7efed1cc96e0 onto 3
+Resolve phase duration: 1800
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9740 onto 2
+LIFO scheduled work 0x7efed1cc9740 onto 2
+Resolve phase duration: 2080
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc97a0 onto 1
+LIFO scheduled work 0x7efed1cc97a0 onto 1
+Resolve phase duration: 1840
+Prepare phase duration: 30
+Acquire phase duration: 210
+Exchange duration: 150
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9800 onto 8
+LIFO scheduled work 0x7efed1cc9800 onto 8
+Resolve phase duration: 1870
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9860 onto 7
+LIFO scheduled work 0x7efed1cc9860 onto 7
+Resolve phase duration: 2650
+Prepare phase duration: 30
+Acquire phase duration: 180
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc98c0 onto 6
+LIFO scheduled work 0x7efed1cc98c0 onto 6
+Resolve phase duration: 1510
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9920 onto 5
+LIFO scheduled work 0x7efed1cc9920 onto 5
+Resolve phase duration: 1900
+Prepare phase duration: 30
+Acquire phase duration: 210
+Exchange duration: 150
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc9980 onto 4
+LIFO scheduled work 0x7efed1cc9980 onto 4
+Resolve phase duration: 2140
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 20
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc99e0 onto 3
+LIFO scheduled work 0x7efed1cc99e0 onto 3
+Resolve phase duration: 1920
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9a40 onto 2
+LIFO scheduled work 0x7efed1cc9a40 onto 2
+Resolve phase duration: 1480
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc9aa0 onto 1
+LIFO scheduled work 0x7efed1cc9aa0 onto 1
+Resolve phase duration: 1480
+Prepare phase duration: 30
+Acquire phase duration: 180
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc9b00 onto 8
+LIFO scheduled work 0x7efed1cc9b00 onto 8
+Resolve phase duration: 1490
+Prepare phase duration: 30
+Acquire phase duration: 210
+Exchange duration: 150
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc9b60 onto 7
+LIFO scheduled work 0x7efed1cc9b60 onto 7
+Resolve phase duration: 2560
+Prepare phase duration: 40
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9bc0 onto 6
+LIFO scheduled work 0x7efed1cc9bc0 onto 6
+Resolve phase duration: 2130
+Prepare phase duration: 40
+Acquire phase duration: 230
+Exchange duration: 170
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc9c20 onto 5
+LIFO scheduled work 0x7efed1cc9c20 onto 5
+Resolve phase duration: 2110
+Prepare phase duration: 30
+Acquire phase duration: 189
+Exchange duration: 129
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9c80 onto 4
+LIFO scheduled work 0x7efed1cc9c80 onto 4
+Resolve phase duration: 1830
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc9ce0 onto 3
+LIFO scheduled work 0x7efed1cc9ce0 onto 3
+Resolve phase duration: 1810
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9d40 onto 2
+LIFO scheduled work 0x7efed1cc9d40 onto 2
+Resolve phase duration: 1500
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9da0 onto 1
+LIFO scheduled work 0x7efed1cc9da0 onto 1
+Resolve phase duration: 1510
+Prepare phase duration: 30
+Acquire phase duration: 170
+Exchange duration: 110
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9e00 onto 8
+LIFO scheduled work 0x7efed1cc9e00 onto 8
+Resolve phase duration: 1480
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9e60 onto 7
+LIFO scheduled work 0x7efed1cc9e60 onto 7
+Resolve phase duration: 2350
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cc9ec0 onto 6
+LIFO scheduled work 0x7efed1cc9ec0 onto 6
+Resolve phase duration: 1530
+Prepare phase duration: 30
+Acquire phase duration: 210
+Exchange duration: 150
+Release phase duration: 20
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc9f20 onto 5
+LIFO scheduled work 0x7efed1cc9f20 onto 5
+Resolve phase duration: 1500
+Prepare phase duration: 30
+Acquire phase duration: 260
+Exchange duration: 200
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc9f80 onto 4
+LIFO scheduled work 0x7efed1cc9f80 onto 4
+Resolve phase duration: 1510
+Prepare phase duration: 30
+Acquire phase duration: 370
+Exchange duration: 310
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cc9fe0 onto 3
+LIFO scheduled work 0x7efed1cc9fe0 onto 3
+Resolve phase duration: 1510
+Prepare phase duration: 30
+Acquire phase duration: 210
+Exchange duration: 150
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca040 onto 2
+LIFO scheduled work 0x7efed1cca040 onto 2
+Resolve phase duration: 1490
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca0a0 onto 1
+LIFO scheduled work 0x7efed1cca0a0 onto 1
+Resolve phase duration: 1490
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cca100 onto 8
+LIFO scheduled work 0x7efed1cca100 onto 8
+Resolve phase duration: 1500
+Prepare phase duration: 40
+Acquire phase duration: 260
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca160 onto 7
+LIFO scheduled work 0x7efed1cca160 onto 7
+Resolve phase duration: 1490
+Prepare phase duration: 30
+Acquire phase duration: 180
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca1c0 onto 6
+LIFO scheduled work 0x7efed1cca1c0 onto 6
+Resolve phase duration: 1500
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca220 onto 5
+LIFO scheduled work 0x7efed1cca220 onto 5
+Resolve phase duration: 1510
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cca280 onto 4
+LIFO scheduled work 0x7efed1cca280 onto 4
+Resolve phase duration: 1510
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca2e0 onto 3
+LIFO scheduled work 0x7efed1cca2e0 onto 3
+Resolve phase duration: 1510
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 150
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca340 onto 2
+LIFO scheduled work 0x7efed1cca340 onto 2
+Resolve phase duration: 1500
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca3a0 onto 1
+LIFO scheduled work 0x7efed1cca3a0 onto 1
+Resolve phase duration: 1510
+Prepare phase duration: 30
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca400 onto 8
+LIFO scheduled work 0x7efed1cca400 onto 8
+Resolve phase duration: 1520
+Prepare phase duration: 30
+Acquire phase duration: 180
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca460 onto 7
+LIFO scheduled work 0x7efed1cca460 onto 7
+Resolve phase duration: 1490
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca4c0 onto 6
+LIFO scheduled work 0x7efed1cca4c0 onto 6
+Resolve phase duration: 1490
+Prepare phase duration: 60
+Acquire phase duration: 180
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca520 onto 5
+LIFO scheduled work 0x7efed1cca520 onto 5
+Resolve phase duration: 1520
+Prepare phase duration: 40
+Acquire phase duration: 950
+Exchange duration: 890
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca580 onto 4
+LIFO scheduled work 0x7efed1cca580 onto 4
+Fast-steal work 0x7efed1cc8cc0 from 6
+Fast-steal work 0x7efed1cc9920 from 5
+Resolve phase duration: 9890
+Prepare phase duration: 40
+Acquire phase duration: 340
+Exchange duration: 290
+Release phase duration: 30
+Fast-steal work 0x7efed1cc9980 from 4
+Fast-steal work 0x7efed1cca520 from 5
+Fast-steal work 0x7efed1cca580 from 4
+current thread: 7 stole work 0x7efed1cc99e0 from 3
+Process phase duration: 40
+current thread: 6 stole work 0x7efed1cc9a40 from 2
+Fast-steal work 0x7efed1cc8c60 from 7
+LIFO scheduling work 0x7efed1cca5e0 onto 3
+current thread: 7 stole work 0x7efed1cc9aa0 from 1
+LIFO scheduled work 0x7efed1cca5e0 onto 3
+Resolve phase duration: 11540
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 140
+current thread: 6 stole work 0x7efed1cca400 from 8
+Release phase duration: 40
+Process phase duration: 40
+current thread: 6 stole work 0x7efed1cc9620 from 5
+LIFO scheduling work 0x7efed1cca640 onto 2
+current thread: 7 stole work 0x7efed1cc9680 from 4
+Fast-steal work 0x7efed1cca2e0 from 3
+current thread: 6 stole work 0x7efed1cca340 from 2
+Fast-steal work 0x7efed1cca3a0 from 1
+Fast-steal work 0x7efed1cc8900 from 8
+current thread: 7 stole work 0x7efed1cc8ba0 from 6
+current thread: 7 stole work 0x7efed1cc9320 from 5
+LIFO scheduled work 0x7efed1cca640 onto 2
+current thread: 6 stole work 0x7efed1cc9f80 from 4
+Resolve phase duration: 32910
+current thread: 5 stole work 0x7efed1cca640 from 2
+Prepare phase duration: 40
+current thread: 5 stole work 0x7efed1cc9440 from 6
+Acquire phase duration: 190
+current thread: 8 stole work 0x7efed1cca5e0 from 3
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+current thread: 7 stole work 0x7efed1cc9fe0 from 3
+current thread: 6 stole work 0x7efed1cca040 from 2
+current thread: 7 stole work 0x7efed1cca0a0 from 1
+LIFO scheduling work 0x7efed1cca6a0 onto 1
+current thread: 8 stole work 0x7efed1cc94a0 from 7
+current thread: 5 stole work 0x7efed1cc8840 from 6
+LIFO scheduled work 0x7efed1cca6a0 onto 1
+current thread: 4 stole work 0x7efed1cc88a0 from 7
+current thread: 7 stole work 0x7efed1cc9ce0 from 3
+current thread: 8 stole work 0x7efed1cc90e0 from 7
+Fast-steal work 0x7efed1cc9d40 from 2
+Resolve phase duration: 27400
+Prepare phase duration: 30
+Acquire phase duration: 110
+Exchange duration: 50
+Release phase duration: 20
+Process phase duration: 30
+Fast-steal work 0x7efed1cc9da0 from 1
+current thread: 4 stole work 0x7efed1cc91a0 from 7
+Fast-steal work 0x7efed1cc8540 from 7
+current thread: 6 stole work 0x7efed1cc85a0 from 7
+LIFO scheduling work 0x7efed1cca700 onto 8
+LIFO scheduled work 0x7efed1cca700 onto 8
+Resolve phase duration: 9620
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+current thread: 3 stole work 0x7efed1cca6a0 from 1
+LIFO scheduling work 0x7efed1cca760 onto 7
+LIFO scheduled work 0x7efed1cca760 onto 7
+Resolve phase duration: 22170
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca7c0 onto 6
+LIFO scheduled work 0x7efed1cca7c0 onto 6
+Resolve phase duration: 3100
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 150
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1cca820 onto 5
+LIFO scheduled work 0x7efed1cca820 onto 5
+Resolve phase duration: 2650
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 150
+Release phase duration: 20
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca880 onto 4
+LIFO scheduled work 0x7efed1cca880 onto 4
+Resolve phase duration: 3230
+Prepare phase duration: 40
+Acquire phase duration: 210
+Exchange duration: 150
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca8e0 onto 3
+LIFO scheduled work 0x7efed1cca8e0 onto 3
+Resolve phase duration: 3320
+Prepare phase duration: 30
+Acquire phase duration: 140
+Exchange duration: 80
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca940 onto 2
+LIFO scheduled work 0x7efed1cca940 onto 2
+current thread: 7 stole work 0x7efed1cca940 from 2
+Resolve phase duration: 4570
+Prepare phase duration: 30
+Acquire phase duration: 890
+Exchange duration: 530
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1cca9a0 onto 1
+LIFO scheduled work 0x7efed1cca9a0 onto 1
+Resolve phase duration: 3260
+Prepare phase duration: 30
+Acquire phase duration: 220
+Exchange duration: 160
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1ccaa00 onto 8
+LIFO scheduled work 0x7efed1ccaa00 onto 8
+current thread: 7 stole work 0x7efed1ccaa00 from 8
+Resolve phase duration: 4240
+Prepare phase duration: 30
+Acquire phase duration: 590
+Exchange duration: 530
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1ccaa60 onto 7
+LIFO scheduled work 0x7efed1ccaa60 onto 7
+Resolve phase duration: 4230
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1ccaac0 onto 6
+LIFO scheduled work 0x7efed1ccaac0 onto 6
+current thread: 2 stole work 0x7efed1cca9a0 from 1
+Resolve phase duration: 3730
+current thread: 1 stole work 0x7efed1ccaa60 from 7
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1ccab20 onto 5
+LIFO scheduled work 0x7efed1ccab20 onto 5
+Resolve phase duration: 2460
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1ccab80 onto 4
+LIFO scheduled work 0x7efed1ccab80 onto 4
+Resolve phase duration: 3330
+Prepare phase duration: 40
+Acquire phase duration: 180
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1ccabe0 onto 3
+LIFO scheduled work 0x7efed1ccabe0 onto 3
+Resolve phase duration: 8790
+Prepare phase duration: 30
+Acquire phase duration: 710
+Exchange duration: 650
+Release phase duration: 30
+Process phase duration: 30
+current thread: 6 stole work 0x7efed1ccabe0 from 3
+LIFO scheduling work 0x7efed1ccac40 onto 2
+LIFO scheduled work 0x7efed1ccac40 onto 2
+Resolve phase duration: 17770
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1ccaca0 onto 1
+LIFO scheduled work 0x7efed1ccaca0 onto 1
+Resolve phase duration: 1830
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1ccad00 onto 8
+LIFO scheduled work 0x7efed1ccad00 onto 8
+Resolve phase duration: 4600
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 20
+Process phase duration: 30
+LIFO scheduling work 0x7efed1ccad60 onto 7
+LIFO scheduled work 0x7efed1ccad60 onto 7
+Resolve phase duration: 3510
+Prepare phase duration: 30
+Acquire phase duration: 630
+Exchange duration: 570
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1ccadc0 onto 6
+LIFO scheduled work 0x7efed1ccadc0 onto 6
+Resolve phase duration: 4660
+current thread: 7 stole work 0x7efed1ccadc0 from 6
+Prepare phase duration: 30
+Acquire phase duration: 520
+Exchange duration: 160
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1ccae20 onto 5
+LIFO scheduled work 0x7efed1ccae20 onto 5
+Resolve phase duration: 2850
+current thread: 4 stole work 0x7efed1ccae20 from 5
+Prepare phase duration: 30
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1ccae80 onto 4
+LIFO scheduled work 0x7efed1ccae80 onto 4
+Resolve phase duration: 6160
+Prepare phase duration: 40
+Acquire phase duration: 360
+Exchange duration: 280
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1ccaee0 onto 3
+LIFO scheduled work 0x7efed1ccaee0 onto 3
+Resolve phase duration: 3090
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+LIFO scheduling work 0x7efed1ccaf40 onto 2
+LIFO scheduled work 0x7efed1ccaf40 onto 2
+Resolve phase duration: 3210
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 40
+LIFO scheduling work 0x7efed1ccafa0 onto 1
+LIFO scheduled work 0x7efed1ccafa0 onto 1
+Resolve phase duration: 1820
+scheduler loop time: 1609587
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Awake!
+Awake!
+Locking Scheduler.
+Locking Scheduler.
+Locking Scheduler done
+Teardown: all threads beginning teardown
+Awake!
+Awake!
+Awake!
+Destroying core 1
+Locking Scheduler.
+Unpausing
+Locking Scheduler.
+Awake!
+Unlock Scheduler lock
+Locking Scheduler done
+Destroying core 7
+Unpausing
+Awake!
+Locking Scheduler.
+Locking Scheduler.
+Unlock Scheduler lock
+Locking Scheduler done
+Unpausing
+Unlock Scheduler lock
+Destroying core 2
+Locking Scheduler done
+Unpausing
+Unlock Scheduler lock
+Locking Scheduler done
+Destroying core 3
+Unpausing
+Unlock Scheduler lock
+Locking Scheduler done
+Destroying core 4
+Unpausing
+Unlock Scheduler lock
+Destroying core 5
+Destroying core 6
+Locking Scheduler.
+Locking Scheduler done
+Unpausing
+Unlock Scheduler lock
+Destroying core 8
+All threads stopped
+All threads deallocated
+[report]: insert_run_time_ns : 1836826
+[report]: insert_overall_operation_number : 128
+[report]: insert_overall_throughput : 69685.424749

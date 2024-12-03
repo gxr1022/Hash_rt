@@ -9,7 +9,6 @@
 
 DEFINE_uint64(batch_size, 32, "the size of batch");
 
-
 class HashTableServer
 {
 public:
@@ -18,6 +17,8 @@ public:
     std::atomic<bool> running{true};
     std::atomic<size_t> completed_ops{0};
     size_t target_ops;
+
+    std::atomic<bool> is_first_batch{false};
 
     ExtendibleHash *hash_table;
 
@@ -71,7 +72,6 @@ public:
 
         start_idx = (current_idx + 1) % MAX_CLIENTS;
 
-        batch->remaining_requests.store(batch->requests.size(), std::memory_order_relaxed);
         return batch;
     }
 
@@ -80,16 +80,25 @@ public:
         auto start = std::chrono::high_resolution_clock::now();
         while (running && completed_ops < target_ops)
         {
-            auto *batch = prepare_new_batch();
+            auto *batch = prepare_new_batch(); // prepare a new batch of requests from clients
             current_batch.store(batch, std::memory_order_relaxed);
             if (!batch->requests.empty())
             {
-                for (const auto &req : batch->requests)
+                size_t cur_batch_size = batch->requests.size();
+                char *key[cur_batch_size];
+                char *value[cur_batch_size];
+                for (size_t i = 0; i < cur_batch_size; i++)
                 {
-                    hash_table->insert(req.key, req.value);
-                    completed_ops++;
+                    key[i] = batch->requests[i].key;
+                    value[i] = batch->requests[i].value;
                 }
+                hash_table->insert_batch(key, value, cur_batch_size);
+                completed_ops += cur_batch_size;
                 batch->requests.clear();
+                if (current_batch_id.load() == 1)
+                {
+                    is_first_batch.store(true, std::memory_order_relaxed);
+                }
             }
             else
             {

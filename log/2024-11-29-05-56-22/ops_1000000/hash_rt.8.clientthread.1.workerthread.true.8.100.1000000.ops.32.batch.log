@@ -1,0 +1,6 @@
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt --num_threads_client=8 --num_threads_worker=1 --str_key_size=8 --str_value_size=100 --num_ops=1000000 --first_mode=true --work_usec=0 --batch_size=32
+Init time:2012950728
+[report]: insert_run_time_ns : 1013966662
+[report]: insert_overall_operation_number : 700960
+[report]: insert_overall_throughput : 691304.779802
+timeout: the monitored command dumped core

@@ -1,0 +1,889 @@
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt --num_threads_client=8 --num_threads_worker=8 --str_key_size=8 --str_value_size=100 --num_ops=100 --first_mode=true --work_usec=0 --batch_size=32
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:121743752
+Prepare phase duration: 150
+Acquire phase duration: 130
+Exchange duration: 60
+Release phase duration: 40
+Process phase duration: 160
+Resolve phase duration: 230
+Prepare phase duration: 30
+Acquire phase duration: 380
+Exchange duration: 320
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 150
+Prepare phase duration: 30
+Acquire phase duration: 220
+Exchange duration: 160
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 130
+Prepare phase duration: 40
+Acquire phase duration: 570
+Exchange duration: 510
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 350
+Exchange duration: 290
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 230
+Exchange duration: 170
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 50
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 230
+Exchange duration: 160
+Release phase duration: 20
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 310
+Exchange duration: 250
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 300
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 50
+Prepare phase duration: 30
+Acquire phase duration: 300
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 190
+Prepare phase duration: 30
+Acquire phase duration: 270
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 360
+Exchange duration: 300
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 470
+Exchange duration: 410
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 130
+Exchange duration: 70
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 50
+Prepare phase duration: 40
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 110
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 20
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 130
+Exchange duration: 70
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 370
+Exchange duration: 320
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 130
+Exchange duration: 70
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 250
+Prepare phase duration: 30
+Acquire phase duration: 120
+Exchange duration: 70
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 110
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 320
+Exchange duration: 260
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 210
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 340
+Exchange duration: 280
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 100
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+Starting all threads
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 60
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 330
+Exchange duration: 270
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 230
+Prepare phase duration: 40
+Acquire phase duration: 130
+Exchange duration: 70
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 210
+Exchange duration: 150
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 220
+Exchange duration: 160
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 60
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 20
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 20
+Process phase duration: 30
+Resolve phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 50
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 110
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 260
+Exchange duration: 200
+Release phase duration: 20
+Process phase duration: 30
+Resolve phase duration: 60
+Prepare phase duration: 30
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 90
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 110
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 270
+Exchange duration: 200
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 60
+Prepare phase duration: 30
+Acquire phase duration: 170
+Exchange duration: 110
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 390
+Exchange duration: 330
+Release phase duration: 20
+Process phase duration: 40
+Resolve phase duration: 390
+Prepare phase duration: 30
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 3530
+Prepare phase duration: 40
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 1050
+Prepare phase duration: 40
+Acquire phase duration: 260
+Exchange duration: 200
+Release phase duration: 40
+Process phase duration: 40
+Resolve phase duration: 1230
+Prepare phase duration: 30
+Acquire phase duration: 260
+Exchange duration: 200
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 70
+Prepare phase duration: 30
+Acquire phase duration: 180
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 230
+Exchange duration: 170
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 40
+Process phase duration: 30
+Resolve phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 440
+Prepare phase duration: 30
+Acquire phase duration: 110
+Exchange duration: 50
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 390
+Prepare phase duration: 30
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 20
+Process phase duration: 30
+Resolve phase duration: 370
+Prepare phase duration: 40
+Acquire phase duration: 110
+Exchange duration: 50
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 440
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 370
+Prepare phase duration: 40
+Acquire phase duration: 300
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 30
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 200
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 220
+Exchange duration: 150
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 380
+Prepare phase duration: 30
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 180
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 390
+Prepare phase duration: 30
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 390
+Prepare phase duration: 30
+Acquire phase duration: 270
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 380
+Prepare phase duration: 30
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 30
+Prepare phase duration: 30
+Acquire phase duration: 210
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 50
+Prepare phase duration: 40
+Acquire phase duration: 260
+Exchange duration: 200
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 50
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 390
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 50
+Prepare phase duration: 40
+Acquire phase duration: 120
+Exchange duration: 50
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 50
+Prepare phase duration: 40
+Acquire phase duration: 430
+Exchange duration: 370
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 40
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 40
+Prepare phase duration: 30
+Acquire phase duration: 190
+Exchange duration: 130
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 780
+Prepare phase duration: 40
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 410
+Prepare phase duration: 40
+Acquire phase duration: 170
+Exchange duration: 110
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 660
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 850
+Prepare phase duration: 40
+Acquire phase duration: 180
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 3300
+Prepare phase duration: 40
+Acquire phase duration: 200
+Exchange duration: 140
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 1050
+Prepare phase duration: 40
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 690
+Prepare phase duration: 30
+Acquire phase duration: 260
+Exchange duration: 200
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 490
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 720
+Prepare phase duration: 30
+Acquire phase duration: 820
+Exchange duration: 760
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 1310
+Prepare phase duration: 40
+Acquire phase duration: 260
+Exchange duration: 200
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 740
+Prepare phase duration: 40
+Acquire phase duration: 260
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 960
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 20
+Process phase duration: 40
+Resolve phase duration: 1210
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 320
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 1320
+Prepare phase duration: 40
+Acquire phase duration: 180
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 750
+Prepare phase duration: 40
+Acquire phase duration: 540
+Exchange duration: 160
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 800
+Prepare phase duration: 40
+Acquire phase duration: 180
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 490
+Resolve phase duration: 1110
+Prepare phase duration: 30
+Acquire phase duration: 810
+Exchange duration: 430
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 1080
+Prepare phase duration: 30
+Acquire phase duration: 500
+Exchange duration: 440
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 730
+Prepare phase duration: 40
+Acquire phase duration: 120
+Exchange duration: 60
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 690
+Prepare phase duration: 30
+Acquire phase duration: 130
+Exchange duration: 70
+Release phase duration: 30
+Process phase duration: 40
+Resolve phase duration: 750
+Prepare phase duration: 40
+Acquire phase duration: 550
+Exchange duration: 490
+Release phase duration: 30
+Process phase duration: 30
+Resolve phase duration: 720
+Prepare phase duration: 40
+Acquire phase duration: 260
+Exchange duration: 200
+Release phase duration: 40
+Process phase duration: 30
+Resolve phase duration: 430
+scheduler loop time: 1098437
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+No pending work!
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+Locking Scheduler.
+Locking Scheduler done
+No pending work!
+Pausing
+No pending work!
+Add to list of waiters
+Locking Scheduler.
+Locking Scheduler.
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Awake!
+Awake!
+Awake!
+Locking Scheduler.
+Awake!
+Awake!
+Locking Scheduler.
+Locking Scheduler.
+Locking Scheduler done
+Locking Scheduler.
+Awake!
+Locking Scheduler.
+Unpausing
+Unlock Scheduler lock
+Locking Scheduler done
+Unpausing
+Unlock Scheduler lock
+Locking Scheduler done
+Unpausing
+Unlock Scheduler lock
+Locking Scheduler done
+Unpausing
+Unlock Scheduler lock
+Destroying core 4
+Destroying core 6
+Destroying core 2
+Locking Scheduler done
+Destroying core 7
+Unpausing
+Unlock Scheduler lock
+Destroying core 8
+Teardown: all threads beginning teardown
+Destroying core 1
+Locking Scheduler.
+Locking Scheduler done
+Unpausing
+Unlock Scheduler lock
+Destroying core 3
+Awake!
+Locking Scheduler.
+Locking Scheduler done
+Unpausing
+Unlock Scheduler lock
+Destroying core 5
+All threads stopped
+All threads deallocated
+[report]: insert_run_time_ns : 1781786
+[report]: insert_overall_operation_number : 128
+[report]: insert_overall_throughput : 71838.032177

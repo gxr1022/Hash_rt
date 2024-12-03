@@ -1,0 +1,260 @@
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt --num_threads_client=8 --num_threads_worker=12 --str_key_size=8 --str_value_size=100 --num_ops=200 --first_mode=true --work_usec=0 --batch_size=32
+Init time:500135589
+scheduler loop time: 421949
+thread id: 12 work duration: 8550
+thread id: 12 work duration: 680
+thread id: 12 work duration: 690
+thread id: 11 work duration: 20850
+thread id: 11 work duration: 700
+thread id: 10 work duration: 12580
+thread id: 10 work duration: 680
+thread id: 10 work duration: 660
+thread id: 10 work duration: 680
+thread id: 10 work duration: thread id: 12thread id: 67011 work duration: 
+590
+ work duration: 540
+thread id: thread id: 10 work duration: 630
+12thread id: thread id: 9thread id: 10 work duration: 770
+ work duration: 700
+thread id: 12thread id: 10 work duration: 530
+ work duration: thread id: 1110 work duration:  work duration: thread id: 6508
+ work duration:  work duration: 16570750
+
+680
+11980thread id: 12 work duration: 
+730
+thread id: thread id: 10 work duration: thread id: thread id: 11 work duration: 5608 work duration: 710610
+
+12thread id: 
+ work duration: 560
+thread id: thread id: 1011 work duration: 790thread id: thread id: 12 work duration: 98
+ work duration: thread id: 7 work duration: 550
+thread id: 12 work duration: 690
+ work duration: 680
+thread id: 8008 work duration:  work duration: thread id: 72011 work duration: 680
+66016460
+
+thread id: thread id: 6 work duration: 12550
+thread id: thread id: thread id: 812 work duration: 11
+ work duration: 520
+thread id: 6
+9 work duration: thread id: 11 work duration: 550thread id:  work duration: 7590
+
+600thread id: 10 work duration:  work duration:  work duration: 530540
+
+740thread id: 62011thread id: 
+6 work duration: thread id: 
+
+thread id: thread id: 95 work duration: 4855912thread id:  work duration: 7thread id: thread id: 8 work duration: 740
+
+thread id: 5 work duration:  work duration: 560
+ work duration: 1120
+ work duration: thread id: 600
+thread id: thread id: 8570
+10 work duration: 470
+thread id: 10 work duration: thread id: 8206thread id: 480thread id: 9 work duration: 780thread id: 5304
+ work duration: 560
+3
+7 work duration: 
+710thread id:  work duration: 2thread id:  work duration: 11thread id:  work duration: 12
+ work duration:  work duration: 580530
+
+17350thread id: thread id: 8 work duration: thread id: 1 work duration: 12450
+ work duration: 580
+thread id: 11 work duration: thread id: 790911760
+5 work duration: 13100
+thread id: 12 work duration: 490
+
+thread id: 4 work duration: 590
+
+thread id:  work duration: 690
+thread id: 10 work duration: 580
+thread id: 1 work duration: 590
+thread id: 5 work duration: 580
+thread id: 6thread id: 4 work duration: 450670thread id: 8 work duration: 720
+
+570
+thread id: 75 work duration:  work duration:  work duration: 560740
+
+thread id: thread id: 4 work duration: 2570
+ work duration: thread id: 
+thread id: thread id: 10 work duration: thread id: 4806 work duration: 540450129 work duration: 580 work duration: thread id: 5901 work duration: 57011 work duration: 670
+
+thread id: 6 work duration: 
+770
+thread id: thread id: 7
+ work duration: 
+thread id: thread id: 11640
+
+4590thread id: 36thread id:  work duration: 8540 work duration: 
+thread id: 
+2 work duration: 650 work duration: 
+670
+thread id: thread id:  work duration: 9510 work duration: 
+
+710thread id: 
+thread id: thread id: 10 work duration: 1 work duration:  work duration: 570
+5602 work duration: 570thread id: thread id: 700850thread id: 
+12 work duration: 510
+
+thread id: 116 work duration:  work duration: 610550
+thread id: thread id: thread id: 38thread id: 4
+
+thread id: thread id: 79 work duration: 5510thread id: 
+ work duration: 710thread id: 
+11 work duration:  work duration: 680
+
+2 work duration: thread id:  work duration: 10560 work duration: thread id: 620 work duration: 610550500
+6thread id: 
+thread id: 8 work duration: 
+12 work duration: 560 work duration: 
+
+thread id: 12
+ work duration:  work duration: thread id: thread id: 760010
+2thread id: 5901
+ work duration: 
+ work duration: 630550thread id:  work duration: 6750 work duration: 510620
+
+
+thread id: 1011 work duration:  work duration: 40thread id: 9 work duration: 
+
+thread id: 7 work duration: 640
+680
+thread id: 
+6308
+ work duration: thread id: thread id: 9 work duration: 620thread id:  work duration: thread id: thread id: thread id: thread id: 610114thread id:  work duration: 6404605thread id:  work duration: 1310870 work duration: 
+460thread id: 
+
+ work duration: thread id: 460
+6 work duration: 
+127 work duration: 
+8 work duration: 700thread id: 530
+
+520470
+thread id:  work duration: 2 work duration:  work duration: 
+710 work duration: 
+thread id: thread id: 114480 work duration: 
+1thread id: thread id: thread id: 
+thread id: 6505 work duration: 
+620
+690810 work duration: 760
+thread id:  work duration: 550
+ work duration: thread id: 7203 work duration: 9
+ work duration:  work duration: 610thread id: 7 work duration: 
+960640thread id: 530thread id: 59010 work duration: 60
+thread id: 
+thread id: 
+
+
+thread id: 11thread id: 
+4 work duration: 5206 work duration: 940
+thread id: 6 work duration: 600thread id: 
+2thread id:  work duration: thread id: 7017thread id: 3 work duration: 12 work duration: thread id:  work duration: 84606
+ work duration: 
+560 work duration: 530630
+5 work duration: 
+thread id: thread id: 102 work duration:  work duration: 40450
+
+thread id:  work duration: 10480
+ work duration: thread id: thread id: 37 work duration: 490thread id:  work duration: 11 work duration: 150640
+710
+580
+thread id: 8 work duration: 650
+thread id: 8 work duration: 560
+thread id: 8 work duration: 40
+thread id: thread id: 730
+thread id: thread id: 
+9thread id:  work duration: 12 work duration: 
+ work duration: 4thread id:  work duration: 4701
+500
+thread id: thread id: 2
+560
+
+thread id: 4 work duration: 500
+thread id: 590
+8thread id:  work duration: 650thread id: 11 work duration: thread id: 7307thread id:  work duration: 103 work duration:  work duration: 
+ work duration: 490
+9 work duration: thread id: 59011
+ work duration: 530thread id: 
+2 work duration: thread id:  work duration: 4thread id: 740660
+
+thread id: thread id: 11 work duration: 6 work duration: 540thread id: 3490640
+thread id: 575010
+103012 work duration:  work duration: 
+180
+
+ work duration: 620
+thread id: 5 work duration: 530
+
+ work duration: 460thread id: 7 work duration: 440
+thread id: thread id: thread id: thread id: 1 work duration: 550 work duration: thread id: 770
+978 work duration: thread id: 
+
+thread id: 2thread id:  work duration: 1580 work duration:  work duration: 730
+115
+thread id: 10 work duration: 
+550
+8012 work duration: 30thread id: 600
+ work duration:  work duration: 170 work duration: 600150
+
+thread id: thread id: 619430
+
+
+
+thread id: 3 work duration:  work duration: 930
+thread id: thread id: thread id:  work duration: 5thread id: 520
+560 work duration:  work duration: 10thread id:  work duration: thread id: 111 work duration: thread id: 2610 work duration: 
+40thread id: 
+thread id:  work duration: 9470 work duration: 5108
+ work duration: 150
+30thread id: 7
+480thread id: 
+thread id: 94 work duration: thread id: 50
+
+ work duration: 44012510thread id: 
+6
+3
+ work duration:  work duration:  work duration: 10thread id: 810 work duration: thread id: thread id: 500thread id: 
+thread id: 87 work duration:  work duration: 6309
+ work duration: thread id: 11 work duration: thread id: 5 work duration: 550
+thread id: 5 work duration: 460
+1 work duration: 5701906102 work duration: 470710thread id: 
+
+190
+thread id: thread id: 3thread id:  work duration: 510
+thread id: 12 work duration: 
+thread id: 1 work duration:  work duration: 
+470 work duration: 610thread id: 
+8 work duration:  work duration: 690550
+thread id: 9thread id:  work duration: 5011
+
+
+thread id: 
+2200thread id: 
+6thread id: 4 work duration: 670
+6307 work duration:  work duration: 
+650 work duration: 550
+thread id: 401 work duration: thread id: thread id: 8 work duration: 570
+12 work duration: 190170thread id: 8 work duration: 
+
+600thread id: 
+thread id: 10thread id: 60
+thread id: 450 work duration: 
+
+ work duration: thread id: thread id: 4
+9thread id: 117 work duration:  work duration: thread id: 540
+25 work duration: 520 work duration: 
+7303
+thread id: thread id:  work duration: 1250180190
+ work duration:  work duration: 900
+200thread id:  work duration: thread id: 
+50
+8 work duration: 459
+
+
+40
+2 work duration: 240
+7 work duration: 600
+[report]: insert_run_time_ns : 2650495
+[report]: insert_overall_operation_number : 224
+[report]: insert_overall_throughput : 84512.515587

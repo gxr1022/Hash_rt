@@ -16,70 +16,86 @@
 #include <cstring>
 
 #define HASH_INIT_BUCKET_NUM (5000000)
+// #define HASH_INIT_BUCKET_NUM (100)
 #define HASH_ASSOC_NUM (2)
 #define MAX_KEY_LENGTH 8
-#define MAX_VALUE_LENGTH 100 
+#define MAX_VALUE_LENGTH 100
 
 using namespace verona::rt;
 using namespace verona::cpp;
 using namespace std;
 
-
-struct KeyValue {
+struct DataNode
+{
     char key[MAX_KEY_LENGTH];
     char value[MAX_VALUE_LENGTH];
-    bool occupied;  
-
-    KeyValue() : occupied(false) {
+    DataNode *next;
+    DataNode() : next(nullptr)
+    {
         key[0] = '\0';
         value[0] = '\0';
+    }
+
+    DataNode(const char *k, const char *v) : next(nullptr)
+    {
+        strncpy(key, k, MAX_KEY_LENGTH - 1);
+        strncpy(value, v, MAX_VALUE_LENGTH - 1);
+        key[MAX_KEY_LENGTH - 1] = '\0';
+        value[MAX_VALUE_LENGTH - 1] = '\0';
     }
 };
 
 class Bucket
 {
 public:
-    KeyValue slots[HASH_ASSOC_NUM];
-    uint64_t idx;
-    Bucket() : idx(0) {}
-    bool isFull() const
+    DataNode *head;
+    Bucket() : head(nullptr) {}
+
+    bool insert(const char *key, const char *value)
     {
-        return idx >= HASH_ASSOC_NUM;
+        if (strlen(key) >= MAX_KEY_LENGTH || strlen(value) >= MAX_VALUE_LENGTH)
+        {
+            return false;
+        }
+        DataNode *newNode = new DataNode(key, value);
+        if (newNode == nullptr)
+            return false;
+
+        newNode->next = head;
+        head = newNode;
+        return true;
     }
 
-    bool insert(const char* key, const char* value)
+    const char *find(const char *key)
     {
-        if (isFull())
+        DataNode *current = head;
+        while (current != nullptr)
         {
-            // cout << "bucket is full" << endl;
-            return false;
+            if (strcmp(current->key, key) == 0)
+            {
+                return current->value;
+            }
+            current = current->next;
         }
-
-        if (strlen(key) >= MAX_KEY_LENGTH || strlen(value) >= MAX_VALUE_LENGTH) {
-            return false;
-        }
-
-        strncpy(slots[idx].key, key, MAX_KEY_LENGTH - 1);
-        strncpy(slots[idx].value, value, MAX_VALUE_LENGTH - 1);
-        
-        slots[idx].key[MAX_KEY_LENGTH - 1] = '\0';
-        slots[idx].value[MAX_VALUE_LENGTH - 1] = '\0';
-        
-        slots[idx].occupied = true;
-        // cout << "inserted successfully:" << slots[idx].key << " value:" << slots[idx].value << endl;
-        idx++;
-        return true;
+        return nullptr;
     }
 
     ~Bucket()
     {
+        DataNode *current = head;
+        while (current != nullptr)
+        {
+            DataNode *next = current->next;
+            delete current;
+            current = next;
+        }
     }
 };
 
-static inline int hashFunction(const char* key, int dirCap)
+static inline int hashFunction(const char *key, int dirCap)
 {
     size_t key_len = strlen(key);
-    uint64_t hashValue = string_key_hash_computation(key,key_len , 0, 0);
+    uint64_t hashValue = string_key_hash_computation(key, key_len, 0, 0);
     return hashValue % dirCap;
 }
 
@@ -106,8 +122,31 @@ public:
         auto duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
         std::cout << "Init time:" << duration_ns << std::endl;
     }
+    void insert_batch(char *key[], char *value[], int batch_size)
+    {
+        int hashValue = hashFunction(key[0], dirCapacity);
+        auto batch = when(directory[hashValue])
+                     << [&](acquired_cown<Bucket> &bucketAcq)
+        {
+            bucketAcq->insert(key[0], value[0]);
+            completed_inserts.fetch_add(1);
+        };
+        
+        for (int i = 1; i < batch_size; i++)
+        {
 
-    void insert(const char* key, const char* value)
+            batch = std::move(batch) + when(directory[hashValue]) << [&, i](acquired_cown<Bucket> bucketAcq) mutable
+            {
+                bool inserted = bucketAcq->insert(key[i], value[i]);
+                if (inserted) 
+                {
+                    completed_inserts.fetch_add(1);
+                }
+            };
+        }
+        return;
+    }
+    void insert(const char *key, const char *value)
     {
         int hashValue = hashFunction(key, dirCapacity);
         bool inserted = false;
@@ -115,7 +154,7 @@ public:
         if (hashValue < directory.size())
         {
             // auto start_time = std::chrono::steady_clock::now();
-            
+
             when(directory[hashValue]) << [=](acquired_cown<Bucket> bucketAcq) mutable
             {
                 // auto end_time = std::chrono::steady_clock::now();
@@ -123,16 +162,18 @@ public:
                 //                    (end_time - start_time).count();
                 // when_schedule_time.fetch_add(schedule_time);
                 // when_schedule_count.fetch_add(1);
-                
+
                 inserted = bucketAcq->insert(key, value);
-                if (inserted) {
+                // if (inserted)
+                {
                     completed_inserts.fetch_add(1);
                 }
             };
         }
     }
 
-    std::pair<uint64_t, uint64_t> get_when_stats() const {
+    std::pair<uint64_t, uint64_t> get_when_stats() const
+    {
         return {when_schedule_time.load(), when_schedule_count.load()};
     }
 
@@ -175,9 +216,11 @@ public:
             when(directory[i]) << [i](acquired_cown<Bucket> bucketAcq) mutable
             {
                 std::stringstream output;
-                for (const auto &kv : bucketAcq->slots)
+                DataNode *current = bucketAcq->head;
+                while (current != nullptr)
                 {
-                    output << "{" << kv.key << ": " << kv.value << "} ";
+                    output << "{" << current->key << ": " << current->value << "} ";
+                    current = current->next;
                 }
                 std::cout << "Bucket " << i << ": " << output.str() << std::endl;
             };

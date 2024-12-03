@@ -1,0 +1,1047 @@
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt --num_threads_client=8 --num_threads_worker=1 --str_key_size=8 --str_value_size=100 --num_ops=128 --first_mode=true --work_usec=0 --batch_size=32
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:112147386
+Prepare phase duration: 120
+Acquire phase duration: 520
+Exchange duration: 330
+Release phase duration: 50
+Process phase duration: 160
+Time taken for schedule lifo: 320 ns
+Resolve phase duration: 1680
+Prepare phase duration: 40
+Acquire phase duration: 500
+Exchange duration: 340
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 190 ns
+Resolve phase duration: 1030
+Prepare phase duration: 30
+Acquire phase duration: 400
+Exchange duration: 330
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 800
+Prepare phase duration: 40
+Acquire phase duration: 400
+Exchange duration: 330
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 410
+Exchange duration: 340
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 800
+Prepare phase duration: 40
+Acquire phase duration: 490
+Exchange duration: 320
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 840
+Prepare phase duration: 40
+Acquire phase duration: 490
+Exchange duration: 420
+Release phase duration: 20
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 500
+Exchange duration: 340
+Release phase duration: 20
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 780
+Prepare phase duration: 40
+Acquire phase duration: 480
+Exchange duration: 340
+Release phase duration: 20
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 370
+Exchange duration: 310
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 390 ns
+Resolve phase duration: 1130
+Prepare phase duration: 30
+Acquire phase duration: 500
+Exchange duration: 340
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 300
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 380
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 480
+Exchange duration: 330
+Release phase duration: 20
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 530
+Exchange duration: 380
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 480
+Exchange duration: 330
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 860
+Prepare phase duration: 40
+Acquire phase duration: 410
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 200 ns
+Resolve phase duration: 920
+Prepare phase duration: 30
+Acquire phase duration: 400
+Exchange duration: 250
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 410
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 779
+Prepare phase duration: 40
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 780
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 850
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 940
+Prepare phase duration: 30
+Acquire phase duration: 400
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 780
+Prepare phase duration: 40
+Acquire phase duration: 410
+Exchange duration: 250
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 150 ns
+Resolve phase duration: 890
+Prepare phase duration: 30
+Acquire phase duration: 500
+Exchange duration: 350
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 750
+Prepare phase duration: 30
+Acquire phase duration: 310
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 270 ns
+Resolve phase duration: 1020
+Prepare phase duration: 40
+Acquire phase duration: 370
+Exchange duration: 320
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 780
+Prepare phase duration: 40
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 750
+Prepare phase duration: 40
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 750
+Prepare phase duration: 40
+Acquire phase duration: 300
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 330
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 870
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 370
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 780
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 40
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 500
+Exchange duration: 340
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 780
+Prepare phase duration: 30
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 510
+Exchange duration: 350
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 460
+Exchange duration: 300
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 790
+Prepare phase duration: 30
+Acquire phase duration: 400
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 750
+Prepare phase duration: 30
+Acquire phase duration: 400
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 750
+Prepare phase duration: 40
+Starting all threads
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 390 ns
+Resolve phase duration: 1150
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 400
+Exchange duration: 250
+Release phase duration: 20
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 790
+Prepare phase duration: 40
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 80
+Acquire phase duration: 380
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 750
+Prepare phase duration: 40
+Acquire phase duration: 400
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 400
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 410
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 310
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 750
+Prepare phase duration: 40
+Acquire phase duration: 390
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 400
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 740
+Prepare phase duration: 40
+Acquire phase duration: 540
+Exchange duration: 380
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 750
+Prepare phase duration: 30
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 780
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 120
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 310
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 780
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 590
+Exchange duration: 430
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 380
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 750
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 400
+Exchange duration: 250
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 780
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 400
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 750
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 200
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 830
+Prepare phase duration: 40
+Acquire phase duration: 370
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 400
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 500
+Exchange duration: 340
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 370
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 399
+Exchange duration: 239
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 410
+Exchange duration: 250
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 790
+Prepare phase duration: 40
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 790
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 870
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 800
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 20
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 790
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 780
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 410
+Exchange duration: 260
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 780
+Prepare phase duration: 30
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 780
+Prepare phase duration: 30
+Acquire phase duration: 380
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 1030
+Prepare phase duration: 30
+Acquire phase duration: 400
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 660
+Exchange duration: 500
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 780
+Prepare phase duration: 40
+Acquire phase duration: 300
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 580
+Exchange duration: 510
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 260
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 540
+Exchange duration: 480
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 750
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 780
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 400
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 750
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 30
+Acquire phase duration: 380
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 850
+Prepare phase duration: 30
+Acquire phase duration: 400
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 770
+Prepare phase duration: 40
+Acquire phase duration: 370
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 420
+Exchange duration: 260
+Release phase duration: 30
+Process phase duration: 30
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 40
+Acquire phase duration: 300
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 30 ns
+Resolve phase duration: 760
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for schedule lifo: 40 ns
+Resolve phase duration: 760
+scheduler loop time: 1094968
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Teardown: all threads beginning teardown
+Destroying core 1
+All threads stopped
+All threads deallocated
+[report]: insert_run_time_ns : 1717186
+[report]: insert_overall_operation_number : 128
+[report]: insert_overall_throughput : 74540.556469

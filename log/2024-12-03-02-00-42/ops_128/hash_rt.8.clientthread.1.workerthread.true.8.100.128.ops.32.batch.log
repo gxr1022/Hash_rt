@@ -1,0 +1,919 @@
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt --num_threads_client=8 --num_threads_worker=1 --str_key_size=8 --str_value_size=100 --num_ops=128 --first_mode=true --work_usec=0 --batch_size=32
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:115634341
+Prepare phase duration: 130
+Acquire phase duration: 510
+Exchange duration: 350
+Release phase duration: 50
+Process phase duration: 150
+Enqueue time taken for schedule lifo: 180 ns
+Prepare phase duration: 40
+Acquire phase duration: 600
+Exchange duration: 430
+Release phase duration: 30
+Process phase duration: 50
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 350
+Exchange duration: 260
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 50
+Acquire phase duration: 400
+Exchange duration: 340
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 60 ns
+Prepare phase duration: 40
+Acquire phase duration: 520
+Exchange duration: 350
+Release phase duration: 30
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 490
+Exchange duration: 340
+Release phase duration: 40
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 270 ns
+Prepare phase duration: 30
+Acquire phase duration: 410
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 50
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 300
+Exchange duration: 220
+Release phase duration: 40
+Process phase duration: 50
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 510
+Exchange duration: 350
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 70
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 510
+Exchange duration: 340
+Release phase duration: 40
+Process phase duration: 50
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 60
+Acquire phase duration: 370
+Exchange duration: 300
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 700
+Exchange duration: 620
+Release phase duration: 40
+Process phase duration: 80
+Enqueue time taken for schedule lifo: 289 ns
+Prepare phase duration: 40
+Acquire phase duration: 310
+Exchange duration: 250
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 260 ns
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 310
+Release phase duration: 40
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 290
+Exchange duration: 240
+Release phase duration: 60
+Process phase duration: 80
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 210
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 300
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 420
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 510
+Exchange duration: 350
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 50
+Acquire phase duration: 310
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 70
+Enqueue time taken for schedule lifo: 300 ns
+Prepare phase duration: 50
+Acquire phase duration: 410
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 50
+Acquire phase duration: 280
+Exchange duration: 210
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 300
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 60
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 60
+Acquire phase duration: 450
+Exchange duration: 380
+Release phase duration: 50
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 320
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 50
+Acquire phase duration: 310
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 390 ns
+Prepare phase duration: 40
+Acquire phase duration: 300
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 530
+Exchange duration: 450
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 200
+Release phase duration: 60
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 330
+Exchange duration: 260
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Starting all threads
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 210
+Release phase duration: 50
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 150 ns
+Prepare phase duration: 70
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 40
+Process phase duration: 90
+Enqueue time taken for schedule lifo: 280 ns
+Prepare phase duration: 50
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 200
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 50
+Acquire phase duration: 310
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 90
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 60
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 320
+Exchange duration: 250
+Release phase duration: 30
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 420
+Exchange duration: 260
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 200
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 390
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 80
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 300
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 200
+Release phase duration: 60
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 300
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 50
+Acquire phase duration: 280
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 40
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 320
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 670 ns
+Prepare phase duration: 60
+Acquire phase duration: 390
+Exchange duration: 320
+Release phase duration: 40
+Process phase duration: 50
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 50
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 40
+Acquire phase duration: 310
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 60
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 40
+Acquire phase duration: 410
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 300
+Exchange duration: 140
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 50
+Acquire phase duration: 300
+Exchange duration: 220
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 420
+Exchange duration: 260
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 50
+Acquire phase duration: 370
+Exchange duration: 290
+Release phase duration: 40
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 50
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 70
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 60
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 40
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 80
+Acquire phase duration: 280
+Exchange duration: 200
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 300
+Exchange duration: 230
+Release phase duration: 40
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 60
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 60
+Acquire phase duration: 300
+Exchange duration: 240
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 300
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 300
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 40
+Acquire phase duration: 420
+Exchange duration: 260
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 40
+Process phase duration: 50
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 50
+Acquire phase duration: 330
+Exchange duration: 260
+Release phase duration: 30
+Process phase duration: 60
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 400
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 550
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 310
+Time taken for compare_exchange_strong: 40 ns
+Exchange duration: 240
+Release phase duration: 40
+Process phase duration: 70
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 50
+Acquire phase duration: 590
+Exchange duration: 520
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 40
+Acquire phase duration: 320
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 50
+Acquire phase duration: 270
+Exchange duration: 210
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 1110 ns
+Prepare phase duration: 50
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Acquire phase duration: 650
+Time taken for compare_exchange_strong: 30 ns
+Exchange duration: 490
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 350 ns
+Prepare phase duration: 30
+Acquire phase duration: 270
+Time taken for compare_exchange_strong: 30 ns
+Exchange duration: 210
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Release phase duration: 30
+Time taken for compare_exchange_strong: 30 ns
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 400 ns
+Prepare phase duration: 40
+Acquire phase duration: 300
+Time taken for compare_exchange_strong: 30 ns
+Exchange duration: 240
+Time taken for compare_exchange_strong: 40 ns
+Release phase duration: 40
+Process phase duration: 50
+Enqueue time taken for schedule lifo: 370 ns
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 220
+Time taken for compare_exchange_strong: 40 ns
+Release phase duration: 330
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Process phase duration: 70
+Enqueue time taken for schedule lifo: 370 ns
+Prepare phase duration: 30
+Acquire phase duration: 310
+Exchange duration: 240
+Release phase duration: 30
+Time taken for compare_exchange_strong: 40 ns
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 40
+Acquire phase duration: 390
+Exchange duration: 230
+Release phase duration: 30
+Time taken for compare_exchange_strong: 40 ns
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 670 ns
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 210
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 40 ns
+Prepare phase duration: 40
+Time taken for compare_exchange_strong: 40 ns
+Acquire phase duration: 500
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Exchange duration: 340
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Release phase duration: 30
+Time taken for compare_exchange_strong: 30 ns
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 350 ns
+Prepare phase duration: 30
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 380
+Time taken for compare_exchange_strong: 30 ns
+Process phase duration: 380
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Enqueue time taken for schedule lifo: 360 ns
+Time taken for compare_exchange_strong: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 310
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 400
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Exchange duration: 240
+Time taken for compare_exchange_strong: 30 ns
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 350 ns
+Prepare phase duration: 30
+Acquire phase duration: 270
+Exchange duration: 200
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Release phase duration: 40
+Time taken for compare_exchange_strong: 40 ns
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 350 ns
+Prepare phase duration: 30
+Time taken for compare_exchange_strong: 40 ns
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 680 ns
+Prepare phase duration: 40
+Acquire phase duration: 300
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 40
+Time taken for compare_exchange_strong: 30 ns
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 350 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Prepare phase duration: 30
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Acquire phase duration: 570
+Time taken for compare_exchange_strong: 30 ns
+Exchange duration: 230
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Release phase duration: 30
+Process phase duration: 40
+Time taken for compare_exchange_strong: 30 ns
+Enqueue time taken for schedule lifo: 350 ns
+Prepare phase duration: 30
+Acquire phase duration: 300
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Time taken for compare_exchange_strong: 40 ns
+Enqueue time taken for schedule lifo: 360 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 40
+Acquire phase duration: 190
+Exchange duration: 120
+Release phase duration: 40
+Process phase duration: 30
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Enqueue time taken for schedule lifo: 380 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 310
+Exchange duration: 230
+Time taken for compare_exchange_strong: 40 ns
+Release phase duration: 30
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Process phase duration: 50
+Enqueue time taken for schedule lifo: 340 ns
+Prepare phase duration: 60
+Acquire phase duration: 310
+Time taken for compare_exchange_strong: 30 ns
+Exchange duration: 240
+Release phase duration: 50
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 360 ns
+Time taken for compare_exchange_strong: 40 ns
+Prepare phase duration: 50
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Acquire phase duration: 390
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Exchange duration: 230
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Release phase duration: 30
+Process phase duration: 80
+Enqueue time taken for schedule lifo: 360 ns
+Time taken for compare_exchange_strong: 40 ns
+Prepare phase duration: 30
+Time taken for compare_exchange_strong: 40 ns
+Acquire phase duration: 530
+Exchange duration: 450
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Release phase duration: 40
+Process phase duration: 40
+Time taken for compare_exchange_strong: 40 ns
+Enqueue time taken for schedule lifo: 420 ns
+Prepare phase duration: 30
+Time taken for compare_exchange_strong: 40 ns
+Acquire phase duration: 280
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Exchange duration: 210
+Time taken for compare_exchange_strong: 30 ns
+Release phase duration: 350
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 360 ns
+Prepare phase duration: 50
+Acquire phase duration: 280
+Time taken for compare_exchange_strong: 30 ns
+Exchange duration: 210
+Release phase duration: 30
+Time taken for compare_exchange_strong: 40 ns
+Process phase duration: 670
+Time taken for compare_exchange_strong: 40 ns
+Enqueue time taken for schedule lifo: 340 ns
+Prepare phase duration: 60
+Time taken for compare_exchange_strong: 30 ns
+Acquire phase duration: 390
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 40 ns
+Exchange duration: 230
+Time taken for compare_exchange_strong: 30 ns
+Release phase duration: 70
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 370 ns
+Prepare phase duration: 40
+Time taken for compare_exchange_strong: 40 ns
+Acquire phase duration: 290
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Exchange duration: 210
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 40 ns
+Time taken for compare_exchange_strong: 30 ns
+Release phase duration: 60
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 380 ns
+Prepare phase duration: 30
+Time taken for compare_exchange_strong: 30 ns
+Time taken for compare_exchange_strong: 30 ns
+Acquire phase duration: 400
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 680 ns
+Time taken for compare_exchange_strong: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 360
+Exchange duration: 250
+Release phase duration: 50
+Process phase duration: 50
+Enqueue time taken for schedule lifo: 380 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 70
+Acquire phase duration: 430
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 360 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 200
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 390 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 40
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 50
+Enqueue time taken for schedule lifo: 370 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 60
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 380 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 50
+Acquire phase duration: 450
+Exchange duration: 250
+Release phase duration: 70
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 360 ns
+Time taken for compare_exchange_strong: 40 ns
+Prepare phase duration: 50
+Acquire phase duration: 540
+Exchange duration: 450
+Release phase duration: 30
+Process phase duration: 90
+Enqueue time taken for schedule lifo: 350 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 40
+Acquire phase duration: 400
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 500 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 60
+Acquire phase duration: 320
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 630 ns
+Time taken for compare_exchange_strong: 40 ns
+Prepare phase duration: 50
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 40
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 350 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 290
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 350 ns
+Time taken for compare_exchange_strong: 40 ns
+Prepare phase duration: 30
+Acquire phase duration: 420
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 340 ns
+Time taken for compare_exchange_strong: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 330
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 350 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 50
+Acquire phase duration: 190
+Exchange duration: 120
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 350 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 60
+Acquire phase duration: 340
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 370 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 50
+Acquire phase duration: 310
+Exchange duration: 240
+Release phase duration: 40
+Process phase duration: 50
+Enqueue time taken for schedule lifo: 340 ns
+Time taken for compare_exchange_strong: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 330
+Exchange duration: 240
+Release phase duration: 30
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 370 ns
+Time taken for compare_exchange_strong: 40 ns
+Prepare phase duration: 60
+Acquire phase duration: 320
+Exchange duration: 240
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 360 ns
+Time taken for compare_exchange_strong: 40 ns
+Prepare phase duration: 40
+Acquire phase duration: 620
+Exchange duration: 220
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 390 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 620
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 360 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 30
+Acquire phase duration: 310
+Exchange duration: 240
+Release phase duration: 40
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 380 ns
+Time taken for compare_exchange_strong: 40 ns
+Prepare phase duration: 60
+Acquire phase duration: 310
+Exchange duration: 230
+Release phase duration: 50
+Process phase duration: 40
+Enqueue time taken for schedule lifo: 26200 ns
+Time taken for compare_exchange_strong: 30 ns
+Prepare phase duration: 50
+Acquire phase duration: 320
+Exchange duration: 250
+Release phase duration: 30
+Process phase duration: 30
+Enqueue time taken for schedule lifo: 870 ns
+scheduler loop time: 2391845
+Time taken for compare_exchange_strong: 30 ns
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Teardown: all threads beginning teardown
+Destroying core 1
+All threads stopped
+All threads deallocated
+[report]: insert_run_time_ns : 2472344
+[report]: insert_overall_operation_number : 128
+[report]: insert_overall_throughput : 51772.730656
