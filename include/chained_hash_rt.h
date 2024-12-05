@@ -14,6 +14,7 @@
 #include <utility>
 #include <string_view>
 #include <cstring>
+#include <functional>
 
 #define HASH_INIT_BUCKET_NUM (5000000)
 // #define HASH_INIT_BUCKET_NUM (100)
@@ -110,6 +111,21 @@ private:
     static inline std::atomic<uint64_t> when_schedule_count{0};
 
 public:
+    // struct UpdateBehaviour
+    // {
+    //     char *key;
+    //     char *value;
+    //     void operator()()
+    //     {
+    //         int hashValue = hashFunction(key, dirCapacity);
+    //         when(directory[hashValue]) << [=](acquired_cown<Bucket> bucketAcq) mutable
+    //         {
+    //             bucketAcq->insert(key, value);
+    //             completed_inserts.fetch_add(1);
+    //         }
+    //     }
+    // };
+
     ExtendibleHash(int dirCap, int bucketCap) : dirCapacity(dirCap), bucketCapacity(bucketCap)
     {
         directory.resize(dirCapacity);
@@ -122,30 +138,28 @@ public:
         auto duration_ns = std::chrono::duration_cast<std::chrono::nanoseconds>(current_time - start_time).count();
         std::cout << "Init time:" << duration_ns << std::endl;
     }
-    void insert_batch(char *key[], char *value[], int batch_size)
+
+    void insert_batch(char **keys, char **values, int batch_size)
     {
-        int hashValue = hashFunction(key[0], dirCapacity);
-        auto batch = when(directory[hashValue])
-                     << [&](acquired_cown<Bucket> &bucketAcq)
+        if (batch_size == 0)
+            return;
+
+        auto combined_when = when(directory[hashFunction(keys[0], dirCapacity)])
+                             << [=](acquired_cown<Bucket> bucketAcq)
         {
-            bucketAcq->insert(key[0], value[0]);
-            completed_inserts.fetch_add(1);
+            bucketAcq->insert(keys[0], values[0]);
         };
-        
+
         for (int i = 1; i < batch_size; i++)
         {
-
-            batch = std::move(batch) + when(directory[hashValue]) << [&, i](acquired_cown<Bucket> bucketAcq) mutable
-            {
-                bool inserted = bucketAcq->insert(key[i], value[i]);
-                if (inserted) 
-                {
-                    completed_inserts.fetch_add(1);
-                }
-            };
+            combined_when +
+                    when(directory[hashFunction(keys[i], dirCapacity)])
+                        << [=](acquired_cown<Bucket> bucketAcq)
+                    { bucketAcq->insert(keys[i], values[i]); };
         }
         return;
     }
+
     void insert(const char *key, const char *value)
     {
         int hashValue = hashFunction(key, dirCapacity);

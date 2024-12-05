@@ -25,7 +25,7 @@ popd
 
 pushd ${BINARY_PATH}
 
-gdb ./hash_rt
+./hash_rt
 
 # TEST_PATH=${BINARY_PATH}
 
