@@ -7,7 +7,7 @@
 
 #define QUEUE_SIZE 1048576 // 2^20, closest power of 2 above 1024000
 
-DEFINE_uint64(batch_size, 32, "the size of batch");
+DEFINE_uint64(batch_size, 4, "the size of batch");
 
 class HashTableServer
 {
@@ -18,7 +18,7 @@ public:
     std::atomic<size_t> completed_ops{0};
     size_t target_ops;
 
-    std::atomic<bool> is_first_batch{false};
+    // std::atomic<bool> is_first_batch{false};
 
     ExtendibleHash *hash_table;
 
@@ -80,25 +80,29 @@ public:
         auto start = std::chrono::high_resolution_clock::now();
         while (running && completed_ops < target_ops)
         {
-            auto *batch = prepare_new_batch(); // prepare a new batch of requests from clients
+            auto *batch = prepare_new_batch();
             current_batch.store(batch, std::memory_order_relaxed);
             if (!batch->requests.empty())
             {
-                size_t cur_batch_size = batch->requests.size();
-                char *key[cur_batch_size];
-                char *value[cur_batch_size];
-                for (size_t i = 0; i < cur_batch_size; i++)
+                while (!Scheduler::get().producer_start.load())
                 {
-                    key[i] = batch->requests[i].key;
-                    value[i] = batch->requests[i].value;
+                    std::this_thread::yield();
                 }
-                hash_table->insert_batch(key, value, cur_batch_size);
-                completed_ops += cur_batch_size;
+                for (const auto &req : batch->requests)
+                {
+                    hash_table->insert(req.key, req.value);
+                    completed_ops++;
+                }
+                Scheduler::get().producer_start.store(false);
+
+                // wait 
+                while (Scheduler::get().completed_count_last_batch.load() != 0)
+                {
+                    std::this_thread::yield();
+                }
+                Scheduler::get().completed_count_last_batch.fetch_add(MAX_BATCH_SIZE);
+
                 batch->requests.clear();
-                if (current_batch_id.load() == 1)
-                {
-                    is_first_batch.store(true, std::memory_order_relaxed);
-                }
             }
             else
             {
@@ -112,7 +116,7 @@ public:
         Scheduler::get().has_scheduling = false;
         running = false;
     }
-    
+
 public:
     HashTableServer(size_t num_ops)
     {

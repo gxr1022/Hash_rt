@@ -1,0 +1,113 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1774403544
+[New Thread 0x7fbfdf3e8640 (LWP 1042616)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1042617)]
+[New Thread 0x7fbfde3e6640 (LWP 1042618)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 730
+Acquire phase duration: 590
+Exchange duration: 290
+Release phase duration: 80
+Process phase duration: 820
+BehaviourCore::schedule_many1
+Prepare phase duration: 190
+Acquire phase duration: 310
+Exchange duration: 170
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 270
+Exchange duration: 160
+Release phase duration: 60
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 380
+Exchange duration: 260
+Release phase duration: 50
+Process phase duration: 150
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1042618, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) b schedulerthread.h:246
+[?2004lBreakpoint 1 at 0x5555555d31c7: file /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h, line 246.
+[?2004h(gdb) r
+[?2004l[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) y
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1777575177
+[New Thread 0x7fbfdf3e8640 (LWP 1042893)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1042894)]
+[New Thread 0x7fbfde3e6640 (LWP 1042895)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 700
+Acquire phase duration: 840
+Exchange duration: 400
+Release phase duration: 80
+Process phase duration: 650
+BehaviourCore::schedule_many1
+Prepare phase duration: 200
+Acquire phase duration: 520
+Exchange duration: 400
+Release phase duration: 40
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 470
+Exchange duration: 380
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 400
+Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 170
+[Switching to Thread 0x7fbfde3e6640 (LWP 1042895)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561cef0, startup=0x5555555ad33d <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:246
+246	        if (Scheduler::get().completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l250	        while (Scheduler::get().completed_count_last_batch.load() == 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l252	          std::this_thread::yield();
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1042870] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

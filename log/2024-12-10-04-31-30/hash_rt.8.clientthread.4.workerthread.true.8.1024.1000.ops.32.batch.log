@@ -1,0 +1,64 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1963206509
+[New Thread 0x7fbfdf3e8640 (LWP 1068707)]
+[New Thread 0x7fbfdebe7640 (LWP 1068708)]
+[New Thread 0x7fbfde3e6640 (LWP 1068709)]
+[New Thread 0x7fbfddbe5640 (LWP 1068710)]
+scheduler loop time: 1231168
+[Thread 0x7fbfdebe7640 (LWP 1068708) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1068707) exited]
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1068709, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) bt
+[?2004l#0  __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1068709, 
+    futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=128, abstime=0x0, clockid=0, expected=1068709, 
+    futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7fbfde3e6910, expected=1068709, 
+    clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=128) at ./nptl/futex-internal.c:139
+#3  0x00007ffff7b94624 in __pthread_clockjoin_ex (threadid=140462044112448, thread_return=0x0, clockid=0, 
+    abstime=0x0, block=<optimized out>) at ./nptl/pthread_join_common.c:105
+#4  0x00007ffff7e232c7 in std::thread::join() () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#5  0x00005555555adc2d in verona::rt::ThreadPoolBuilder::~ThreadPoolBuilder (this=0x7fffffffd920, 
+    __in_chrg=<optimized out>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/../pal/threadpoolbuilder.h:82
+#6  0x00005555555c41a3 in verona::rt::ThreadPool<verona::rt::SchedulerThread>::run_with_startup<>(void (*)()) (
+    this=0x5555556090c0 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool>, 
+    startup=0x5555555adcef <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:271
+#7  0x00005555555bafae in verona::rt::ThreadPool<verona::rt::SchedulerThread>::run (
+    this=0x5555556090c0 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:249
+#8  0x00005555555a421b in BenchmarkTest::runBenchmark (this=0x7fffffffdaf0)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:72
+#9  0x00005555555a49af in main (argc=1, argv=0x7fffffffdc38)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:106
+[?2004h(gdb) q[Kq
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1068663] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

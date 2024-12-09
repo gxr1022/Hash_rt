@@ -1,0 +1,72 @@
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt --num_threads_client=8 --num_threads_worker=2 --str_key_size=8 --str_value_size=100 --num_ops=1000 --first_mode=true --work_usec=0 --batch_size=32
+Init time:1856063960
+thread id: thread id: 12 get work duration: get work duration:77309280
+
+thread id: thread id: 12 get work duration: get work duration:550
+590thread id: 1 get work duration:
+thread id: 2 get work duration:170
+420
+thread id: 2 get work duration:120
+thread id: 1 get work duration:440
+thread id: 2 get work duration:170
+thread id: 1 get work duration:180
+thread id: 2 get work duration:760
+thread id: 1 get work duration:370thread id: 
+2 get work duration:thread id: 1 get work duration:490
+140thread id: 
+2 get work duration:thread id: 1201
+ get work duration:thread id: 2 get work duration:130
+200
+thread id: thread id: 2 get work duration:1 get work duration:130240
+
+thread id: 2 get work duration:thread id: 1150 get work duration:
+140
+thread id: 2 get work duration:150
+thread id: 1 get work duration:thread id: 2140 get work duration:
+120thread id: 
+1 get work duration:180
+thread id: 2 get work duration:thread id: 1 get work duration:130
+140
+thread id: 2 get work duration:thread id: 1 get work duration:180
+140thread id: 
+2 get work duration:thread id: 1501
+ get work duration:520
+thread id: 2 get work duration:1540
+thread id: 1 get work duration:790
+thread id: 1 get work duration:thread id: 1060
+2 get work duration:thread id: 1 get work duration:1500
+770
+thread id: 2 get work duration:790
+thread id: thread id: 2 get work duration:1 get work duration:760
+760thread id: 
+2 get work duration:760
+thread id: 1 get work duration:thread id: 2 get work duration:520
+770
+thread id: 1 get work duration:thread id: 2 get work duration:750
+760
+thread id: 1 get work duration:470
+thread id: 2 get work duration:850
+thread id: 1 get work duration:1050
+thread id: 2 get work duration:100
+thread id: 1 get work duration:120
+thread id: 2 get work duration:1080
+thread id: 1 get work duration:1050
+thread id: 2 get work duration:440
+thread id: 1 get work duration:110
+thread id: 2 get work duration:880
+thread id: 1 get work duration:140
+thread id: 2 get work duration:120
+thread id: 1 get work duration:1100
+thread id: 2 get work duration:790
+thread id: 1 get work duration:110
+thread id: 2 get work duration:140
+thread id: 1 get work duration:thread id: 10602
+ get work duration:530thread id: 1 get work duration:
+1080
+thread id: 2 get work duration:thread id: 25201
+ get work duration:1710
+thread id: 2 get work duration:1700
+thread id: 1 get work duration:780
+thread id: 2 get work duration:460
+thread id: 1 get work duration:260
+thread id: 2 get work duration:170

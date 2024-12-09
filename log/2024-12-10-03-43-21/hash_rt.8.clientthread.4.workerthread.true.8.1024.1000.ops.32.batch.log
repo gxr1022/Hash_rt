@@ -1,0 +1,850 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1802934202
+[New Thread 0x7fbfdf3e8640 (LWP 1056417)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1056418)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 570
+Acquire phase duration: 460
+[New Thread 0x7fbfde3e6640 (LWP 1056419)]
+Exchange duration: 160
+Release phase duration: 110
+Process phase duration: 670
+BehaviourCore::schedule_many1
+Prepare phase duration: 230
+Acquire phase duration: 400
+Exchange duration: 230
+Release phase duration: 50
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 260
+Exchange duration: 150
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 370
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 210
+Exchange duration: 70
+Release phase duration: 60
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 280
+Exchange duration: 150
+Release phase duration: 50
+Process phase duration: 160
+thread id: BehaviourCore::schedule_many1
+Prepare phase duration: 140
+1Acquire phase duration: 270
+ get work duration:Exchange duration: 140
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 340
+Exchange duration: 220
+Release phase duration: 50
+Process phase duration: 130
+8000
+Schedule work 0x7fbfe03ec180
+work run: 0x7fbfe03ec180
+thread id: 1 work duration: 106550
+completed_count_last_batch: 3
+thread id: 1 get work duration:640
+Schedule work 0x7fbfe03ec2a0
+work run: 0x7fbfe03ec2a0
+thread id: 1 work duration: 3280
+completed_count_last_batch: 2
+thread id: 1 get work duration:140
+Schedule work 0x7fbfe03ec240
+work run: 0x7fbfe03ec240
+thread id: 1 work duration: 2930
+completed_count_last_batch: 1
+thread id: 1 get work duration:120
+Schedule work 0x7fbfe03ec1e0
+work run: 0x7fbfe03ec1e0
+thread id: 1 work duration: 5460
+completed_count_last_batch: 0
+thread id: 1 get work duration:120
+Schedule work 0x7fbfe03ec120
+work run: 0x7fbfe03ec120
+thread id: 1 work duration: 3240
+BehaviourCore::schedule_many1
+completed_count_last_batch: 3
+thread id: 1 get work duration:490
+Schedule work 0x7fbfe03ec0c0
+work run: 0x7fbfe03ec0c0
+thread id: 1 work duration: 4290
+Prepare phase duration: 170
+completed_count_last_batch: 2
+thread id: 1 get work duration:460
+Schedule work 0x7fbfe03ec060
+work run: 0x7fbfe03ec060
+thread id: 1 work duration: 6550
+completed_count_last_batch: 1
+thread id: 1 get work duration:390
+Schedule work 0x7fbfe03ec000
+work run: 0x7fbfe03ec000
+Acquire phase duration: 290
+thread id: 1 work duration: 10970
+completed_count_last_batch: 0
+Exchange duration: 160
+Release phase duration: 50
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 270
+Exchange duration: 160
+Release phase duration: 50
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 280
+Exchange duration: 150
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 300
+Exchange duration: 140
+Release phase duration: 60
+Process phase duration: 130
+scheduler loop time: 1487957
+thread id: 1 get work duration:780
+Schedule work 0x7fbfe03ec420
+work run: 0x7fbfe03ec420
+thread id: 1 work duration: 3750
+completed_count_last_batch: 3
+thread id: 1 get work duration:450
+Schedule work 0x7fbfe03ec3c0
+work run: 0x7fbfe03ec3c0
+thread id: 1 work duration: 3180
+completed_count_last_batch: 2
+thread id: 1 get work duration:440
+Schedule work 0x7fbfe03ec360
+work run: 0x7fbfe03ec360
+thread id: 1 work duration: 3890
+completed_count_last_batch: 1
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec300
+work run: 0x7fbfe03ec300
+thread id: 1 work duration: 3830
+completed_count_last_batch: 0
+work run: 0x7fbff7a04000
+get work: 0x7fbff7a04000
+[Thread 0x7fbfdebe7640 (LWP 1056418) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1056417) exited]
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Teardown: all threads beginning teardown
+Destroying core 1
+All threads stopped
+All threads deallocated
+work run: 0x7fbff7a04000
+[Thread 0x7fbfde3e6640 (LWP 1056419) exited]
+[Inferior 1 (process 1056401) exited normally]
+[?2004h[?2004l[?2004h(gdb) b schedulerthread.h:294
+[?2004lBreakpoint 1 at 0x5555555d36ca: file /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h, line 294.
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1796095326
+[New Thread 0x7fbfdf3e8640 (LWP 1056647)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1056648)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 720
+Acquire phase duration: 710
+[New Thread 0x7fbfde3e6640 (LWP 1056649)]
+Exchange duration: 410
+Release phase duration: 90
+Process phase duration: 1560
+BehaviourCore::schedule_many1
+Prepare phase duration: 180
+Acquire phase duration: 400
+Exchange duration: 280
+Release phase duration: 70
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 500
+Exchange duration: 380
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 500
+Exchange duration: 370
+Release phase duration: 40
+Process phase duration: 120
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 380
+Exchange duration: 280
+Release phase duration: 800
+Process phase duration: 120
+thread id: BehaviourCore::schedule_many1
+1 get work duration:Prepare phase duration: 140
+Acquire phase duration: 530
+Exchange duration: 410
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 500
+Exchange duration: 380
+Release phase duration: 60
+Process phase duration: 130
+6950BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 400
+
+Exchange duration: 290
+Release phase duration: 40
+Process phase duration: 130
+Schedule work 0x7fbfe03ec120
+work run: 0x7fbfe03ec120
+thread id: 1 work duration: 94710
+completed_count_last_batch: 3
+thread id: 1 get work duration:610
+Schedule work 0x7fbfe03ec2a0
+work run: 0x7fbfe03ec2a0
+thread id: 1 work duration: 2940
+completed_count_last_batch: 2
+thread id: 1 get work duration:420
+Schedule work 0x7fbfe03ec240
+work run: 0x7fbfe03ec240
+thread id: 1 work duration: 3490
+completed_count_last_batch: 1
+thread id: 1 get work duration:410
+Schedule work 0x7fbfe03ec1e0
+work run: 0x7fbfe03ec1e0
+thread id: 1 work duration: 6150
+completed_count_last_batch: 0
+thread id: 1 get work duration:400
+Schedule work 0x7fbfe03ec180
+work run: 0x7fbfe03ec180
+thread id: 1 work duration: 3490
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 360
+completed_count_last_batch: 3
+Exchange duration: 250
+thread id: 1 get work duration:490
+Schedule work 0x7fbfe03ec0c0
+Release phase duration: 100
+Process phase duration: 140
+work run: 0x7fbfe03ec0c0
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 370
+thread id: 1 work duration: 27650
+Exchange duration: 250
+Release phase duration: 50
+Process phase duration: 160
+completed_count_last_batch: 2
+thread id: 1 get work duration:510
+Schedule work 0x7fbfe03ec300
+work run: 0x7fbfe03ec300
+thread id: 1 work duration: 4720
+completed_count_last_batch: 1
+BehaviourCore::schedule_many1
+thread id: 1 get work duration:Prepare phase duration: 130
+Acquire phase duration: 530
+430Exchange duration: 400
+
+Release phase duration: 50
+Process phase duration: 130
+Schedule work 0x7fbfe03ec360
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 520
+work run: 0x7fbfe03ec360
+Exchange duration: 410
+Release phase duration: 90
+Process phase duration: 130
+thread id: 1 work duration: 23720
+completed_count_last_batch: 0
+scheduler loop time: thread id: 14884671
+ get work duration:780
+Schedule work 0x7fbfe03ec420
+work run: 0x7fbfe03ec420
+thread id: 1 work duration: 3610
+completed_count_last_batch: 3
+thread id: 1 get work duration:440
+Schedule work 0x7fbfe03ec3c0
+work run: 0x7fbfe03ec3c0
+thread id: 1 work duration: 2690
+completed_count_last_batch: 2
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec060
+work run: 0x7fbfe03ec060
+thread id: 1 work duration: 3360
+completed_count_last_batch: 1
+thread id: 1 get work duration:560
+Schedule work 0x7fbfe03ec000
+work run: 0x7fbfe03ec000
+thread id: 1 work duration: 3460
+completed_count_last_batch: 0
+[Thread 0x7fbfdebe7640 (LWP 1056648) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1056647) exited]
+[Switching to Thread 0x7fbfde3e6640 (LWP 1056649)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561cef0, startup=0x5555555ad3a9 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:294
+294	        work->run();
+[?2004h[?2004l[?2004h(gdb) s
+[?2004lverona::rt::Work::run (this=0x7fbff7a04000) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/work.h:32
+32	    void run()
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l34	      f(this);
+[?2004h[?2004l[?2004h(gdb) r
+[?2004l[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) 
+[?2004lPlease answer y or n.
+[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) n
+[?2004lProgram not restarted.
+[?2004h(gdb) n
+[?2004l35	      Logging::cout() << "work run: " << this << Logging::endl;
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+work run: 0x7fbff7a04000
+get work: 0x7fbff7a04000
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Teardown: all threads beginning teardown
+Destroying core 1
+All threads stopped
+All threads deallocated
+work run: 0x7fbff7a04000
+[Thread 0x7fbfde3e6640 (LWP 1056649) exited]
+[Inferior 1 (process 1056608) exited normally]
+[?2004h[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1797588053
+[New Thread 0x7fbfdf3e8640 (LWP 1057110)]
+Starting all threads
+[New Thread 0x7fbfd73e5640 (LWP 1057111)]
+[New Thread 0x7fbfd6be4640 (LWP 1057112)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 570
+Acquire phase duration: 620
+Exchange duration: 310
+Release phase duration: 80
+Process phase duration: 740
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 400
+Exchange duration: 290
+Release phase duration: 80
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 390
+Exchange duration: 270
+Release phase duration: 60
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 510
+Exchange duration: 390
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 190
+Acquire phase duration: 350
+Exchange duration: 230
+Release phase duration: 80
+Process phase duration: 150
+thread id: BehaviourCore::schedule_many1
+1 get work duration:Prepare phase duration: 130
+Acquire phase duration: 510
+Exchange duration: 400
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 470
+Exchange duration: 380
+Release phase duration: 40
+Process phase duration: 120
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 390
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 120
+4840
+Schedule work 0x7fbfe03ec120
+work run: 0x7fbfe03ec120
+thread id: 1 work duration: 85170
+completed_count_last_batch: 3
+thread id: 1 get work duration:470
+Schedule work 0x7fbfe03ec2a0
+work run: 0x7fbfe03ec2a0
+thread id: 1 work duration: 2930
+completed_count_last_batch: 2
+thread id: 1 get work duration:420
+Schedule work 0x7fbfe03ec240
+work run: 0x7fbfe03ec240
+thread id: 1 work duration: 3080
+completed_count_last_batch: 1
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec1e0
+work run: 0x7fbfe03ec1e0
+thread id: 1 work duration: 5670
+completed_count_last_batch: 0
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec180
+work run: 0x7fbfe03ec180
+thread id: 1 work duration: 2770
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 520
+Exchange duration: 390
+Release phase duration: 50
+Process phase duration: 130
+completed_count_last_batch: 3
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 380
+thread id: 1 get work duration:790
+Schedule work 0x7fbfe03ec300
+Exchange duration: 280
+work run: 0x7fbfe03ec300
+thread id: 1 work duration: 19160
+Release phase duration: 810
+Process phase duration: 120
+completed_count_last_batch: 2
+BehaviourCore::schedule_many1
+thread id: Prepare phase duration: 130
+Acquire phase duration: 940
+Exchange duration: 820
+Release phase duration: 50
+Process phase duration: 120
+1BehaviourCore::schedule_many1
+ get work duration:Prepare phase duration: 130
+Acquire phase duration: 760
+Exchange duration: 650
+Release phase duration: 70
+860Process phase duration: 170
+
+Schedule work 0x7fbfe03ec360
+work run: 0x7fbfe03ec360
+thread id: 1 work duration: 2960
+completed_count_last_batch: 1
+thread id: 1 get work duration:710
+Schedule work 0x7fbfe03ec420
+work run: 0x7fbfe03ec420
+thread id: 1 work duration: 3170
+completed_count_last_batch: 0
+scheduler loop time: thread id: 14510271
+ get work duration:430
+Schedule work 0x7fbfe03ec3c0
+work run: 0x7fbfe03ec3c0
+thread id: 1 work duration: 2820
+completed_count_last_batch: 3
+thread id: 1 get work duration:420
+Schedule work 0x7fbfe03ec0c0
+work run: 0x7fbfe03ec0c0
+thread id: 1 work duration: 3010
+completed_count_last_batch: 2
+thread id: 1 get work duration:510
+Schedule work 0x7fbfe03ec060
+work run: 0x7fbfe03ec060
+thread id: 1 work duration: 2700
+completed_count_last_batch: 1
+thread id: 1 get work duration:400
+Schedule work 0x7fbfe03ec000
+work run: 0x7fbfe03ec000
+thread id: 1 work duration: 3120
+completed_count_last_batch: 0
+[Thread 0x7fbfd73e5640 (LWP 1057111) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1057110) exited]
+[Switching to Thread 0x7fbfd6be4640 (LWP 1057112)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561cef0, startup=0x5555555ad3a9 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:294
+294	        work->run();
+[?2004h[?2004l[?2004h(gdb) s[Ks
+[?2004lverona::rt::Work::run (this=0x7fbff7a04000) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/work.h:32
+32	    void run()
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l34	      f(this);
+[?2004h[?2004l[?2004h(gdb) s
+[?2004lverona::rt::Closure::invoke<verona::rt::Core::token_work::{lambda(verona::rt::Work*)#1}>(verona::rt::Work) (w=0x7fbff7a04000) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/work.h:65
+65	      T* t = snmalloc::pointer_offset<T>(w, sizeof(Work));
+[?2004h[?2004l[?2004h(gdb) s
+[?2004lsnmalloc::pointer_offset<verona::rt::Core::token_work::{lambda(verona::rt::Work*)#1}, verona::rt::Core::token_work>(verona::rt::Core::token_work*, unsigned long) (diff=16, base=0x7fbff7a04000)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/_deps/snmalloc-src/src/snmalloc/backend_helpers/../mem/../ds_core/../aal/address.h:29
+29	    SNMALLOC_ASSERT(base != nullptr); /* Avoid UB */
+[?2004h(gdb) s
+[?2004l31	      unsafe_to_uintptr<T>(base) + static_cast<uintptr_t>(diff));
+[?2004h[?2004l[?2004h(gdb) s
+[?2004lsnmalloc::unsafe_to_uintptr<verona::rt::Work> (p=0x7fbff7a04000)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/_deps/snmalloc-src/src/snmalloc/backend_helpers/../mem/../ds_core/ptrwrap.h:24
+24	    return reinterpret_cast<uintptr_t>(p);
+[?2004h(gdb) n
+[?2004lsnmalloc::pointer_offset<verona::rt::Core::token_work::{lambda(verona::rt::Work*)#1}, verona::rt::Core::token_work>(verona::rt::Core::token_work*, unsigned long) (diff=16, base=0x7fbff7a04000) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/_deps/snmalloc-src/src/snmalloc/backend_helpers/../mem/../ds_core/../aal/address.h:30
+30	    return unsafe_from_uintptr<U>(
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l31	      unsafe_to_uintptr<T>(base) + static_cast<uintptr_t>(diff));
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lverona::rt::Closure::invoke<verona::rt::Core::token_work::{lambda(verona::rt::Work*)#1}>(verona::rt::Work) (w=0x7fbff7a04000) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/work.h:65
+65	      T* t = snmalloc::pointer_offset<T>(w, sizeof(Work));
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l66	      bool dealloc = (*t)(w);
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l67	      if (dealloc)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l72	    }
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lverona::rt::Work::run (this=0x7fbff7a04000) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/work.h:35
+35	      Logging::cout() << "work run: " << this << Logging::endl;
+[?2004h[?2004l[?2004h(gdb) b work
+work.h               worker_time          workstealingqueue.h  
+(gdb) b work.h:86
+[?2004lBreakpoint 2 at 0x5555555b71b3: file /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/work.h, line 86.
+[?2004h(gdb) r
+[?2004l[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) y
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+
+Breakpoint 2, verona::rt::Closure::make<verona::rt::Core::token_work::{lambda(verona::rt::Work*)#1}>(verona::rt::Core::token_work::{lambda(verona::rt::Work*)#1}&&) (t_param=...) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/work.h:86
+86	      void* base = heap::alloc<sizeof(Work) + sizeof(T)>();
+[?2004h[?2004l[?2004h(gdb) bt
+[?2004l#0  verona::rt::Closure::make<verona::rt::Core::token_work::{lambda(verona::rt::Work*)#1}>(verona::rt::Core::token_work::{lambda(verona::rt::Work*)#1}&&) (t_param=...)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/work.h:86
+#1  0x00005555555acb57 in verona::rt::Core::Core (this=0x55555561b8d0)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/core.h:46
+#2  0x00005555555c2d1a in verona::rt::CorePool<verona::rt::ThreadPool<verona::rt::SchedulerThread> >::init (
+    this=0x555555607170 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool+144>, 
+    count=1)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/corepool.h:35
+#3  0x00005555555b9e71 in verona::rt::ThreadPool<verona::rt::SchedulerThread>::init (
+    this=0x5555556070e0 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool>, 
+    count=1, run_at_termination=0x0)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:227
+#4  0x00005555555a405e in BenchmarkTest::runBenchmark (this=0x7fffffffdaf0)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:50
+#5  0x00005555555a4305 in main (argc=1, argv=0x7fffffffdc38)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:116
+[?2004h(gdb) b core.h:50
+[?2004lBreakpoint 3 at 0x5555555acbc4: file /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/core.h, line 50.
+[?2004h(gdb) c\[K
+[?2004lContinuing.
+Scheduler Thread created
+Runtime initialised
+Init time:1797032116
+[New Thread 0x7fbfdf3e8640 (LWP 1058626)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1058627)]
+[New Thread 0x7fbfde3e6640 (LWP 1058628)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 580
+Acquire phase duration: 449
+Exchange duration: 169
+Release phase duration: 110
+Process phase duration: 600
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 250
+Exchange duration: 140
+Release phase duration: 40
+Process phase duration: 180
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 310
+Exchange duration: 150
+Release phase duration: 70
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 250
+Exchange duration: 140
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 180
+Exchange duration: 70
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+thread id: Acquire phase duration: 340
+Exchange duration: 220
+1 get work duration:Release phase duration: 70
+Process phase duration: 120
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 320
+Exchange duration: 210
+Release phase duration: 50
+Process phase duration: 120
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+6660Acquire phase duration: 190
+
+Exchange duration: 90
+Release phase duration: 60
+Process phase duration: 120
+Schedule work 0x7fbfe03ec120
+work run: 0x7fbfe03ec120
+thread id: 1 work duration: 91650
+completed_count_last_batch: 3
+thread id: 1 get work duration:690
+Schedule work 0x7fbfe03ec2a0
+work run: 0x7fbfe03ec2a0
+thread id: 1 work duration: 4680
+completed_count_last_batch: 2
+thread id: 1 get work duration:530
+Schedule work 0x7fbfe03ec240
+work run: 0x7fbfe03ec240
+thread id: 1 work duration: 3360
+completed_count_last_batch: 1
+thread id: 1 get work duration:140
+Schedule work 0x7fbfe03ec1e0
+work run: 0x7fbfe03ec1e0
+thread id: 1 work duration: 6550
+completed_count_last_batch: 0
+thread id: 1 get work duration:120
+Schedule work 0x7fbfe03ec180
+work run: 0x7fbfe03ec180
+BehaviourCore::schedule_many1
+thread id: 1 work duration: 3690
+Prepare phase duration: 140
+Acquire phase duration: 270
+Exchange duration: 150
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+completed_count_last_batch: 3
+Prepare phase duration: 150
+Acquire phase duration: 250
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 140
+thread id: 1 get work duration:BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 270
+820Exchange duration: 150
+
+Schedule work 0x7fbfe03ec300
+work run: 0x7fbfe03ec300
+Release phase duration: 60
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 620
+Exchange duration: 240
+Release phase duration: 50
+thread id: 1 work duration: 19820
+Process phase duration: 130
+completed_count_last_batch: 2
+thread id: 1 get work duration:470
+Schedule work 0x7fbfe03ec3c0
+work run: 0x7fbfe03ec3c0
+thread id: 1 work duration: 5340
+completed_count_last_batch: 1
+thread id: 1 get work duration:480
+Schedule work 0x7fbfe03ec420
+work run: 0x7fbfe03ec420
+thread id: 1 work duration: 2740
+completed_count_last_batch: 0
+scheduler loop time: thread id: 13968271
+ get work duration:430
+Schedule work 0x7fbfe03ec360
+work run: 0x7fbfe03ec360
+thread id: 1 work duration: 3160
+completed_count_last_batch: 3
+thread id: 1 get work duration:440
+Schedule work 0x7fbfe03ec0c0
+work run: 0x7fbfe03ec0c0
+thread id: 1 work duration: 2600
+completed_count_last_batch: 2
+thread id: 1 get work duration:420
+Schedule work 0x7fbfe03ec060
+work run: 0x7fbfe03ec060
+thread id: 1 work duration: 4150
+completed_count_last_batch: 1
+thread id: 1 get work duration:420
+Schedule work 0x7fbfe03ec000
+work run: 0x7fbfe03ec000
+thread id: 1 work duration: 3600
+completed_count_last_batch: 0
+[Thread 0x7fbfdebe7640 (LWP 1058627) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1058626) exited]
+[Switching to Thread 0x7fbfde3e6640 (LWP 1058628)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561cef0, startup=0x5555555ad3a9 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:294
+294	        work->run();
+[?2004h[?2004l[?2004h(gdb) info b
+[?2004lNum     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x00005555555d36ca in verona::rt::SchedulerThread::run_inner<>(void (*)()) 
+                                                   at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:294
+	breakpoint already hit 1 time
+2       breakpoint     keep y   0x00005555555b71b3 in verona::rt::Closure::make<verona::rt::Core::token_work::{lambda(verona::rt::Work*)#1}>(verona::rt::Core::token_work::{lambda(verona::rt::Work*)#1}&&) 
+                                                   at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/work.h:86
+	breakpoint already hit 1 time
+3       breakpoint     keep y   0x00005555555acbc4 in verona::rt::Core::~Core() 
+                                                   at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/core.h:50
+[?2004h(gdb) n
+[?2004lwork run: 0x7fbff7a04000
+295	        Logging::cout() << "get work: " << work << Logging::endl;
+[?2004h[?2004l[?2004h(gdb) p o[Kwork
+[?2004l$1 = (verona::rt::Work *) 0x7fbff7a04000
+[?2004h(gdb) c
+[?2004lContinuing.
+get work: 0x7fbff7a04000
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Teardown: all threads beginning teardown
+Destroying core 1
+All threads stopped
+All threads deallocated
+[Thread 0x7fbfde3e6640 (LWP 1058628) exited]
+[Switching to Thread 0x7ffff7a13300 (LWP 1058326)]
+
+Thread 1 "hash_rt" hit Breakpoint 3, verona::rt::Core::~Core (this=0x55555561b8d0, __in_chrg=<optimized out>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/core.h:50
+50	      auto tw = token_work;
+[?2004h[?2004l[?2004h(gdb) info thread
+[?2004l  Id   Target Id                                     Frame 
+* 1    Thread 0x7ffff7a13300 (LWP 1058326) "hash_rt" verona::rt::Core::~Core (this=0x55555561b8d0, 
+    __in_chrg=<optimized out>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/core.h:50
+[?2004h(gdb) p tokf[Keq[Kn[K[K[K[K[K[K[Kp token_work 
+[?2004l$2 = (verona::rt::Work *) 0x7fbff7a04000
+[?2004h(gdb) n
+[?2004l51	      token_work = nullptr;
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l52	      tw->run();
+[?2004h[?2004l[?2004h(gdb) s
+[?2004lverona::rt::Work::run (this=0x7fbff7a04000) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/work.h:32
+32	    void run()
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l34	      f(this);
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l35	      Logging::cout() << "work run: " << this << Logging::endl;
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lwork run: 0x7fbff7a04000
+36	    }
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lverona::rt::Core::~Core (this=0x55555561b8d0, __in_chrg=<optimized out>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/core.h:53
+53	    }
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lverona::rt::CorePool<verona::rt::ThreadPool<verona::rt::SchedulerThread> >::clear (this=0x555555607170 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool+144>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/corepool.h:69
+69	      count++;
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l70	      first_core = nullptr;
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l71	      assert(count == core_count);
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l72	      core_count = 0;
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l73	    }
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lverona::rt::ThreadPool<verona::rt::SchedulerThread>::run_with_startup<>(void (*)()) (this=0x5555556070e0 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool>, startup=0x5555555ad3a9 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:288
+288	      SchedulerStats::dump_global(std::cout, incarnation - 2);
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l289	    }
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lverona::rt::ThreadPool<verona::rt::SchedulerThread>::run (this=0x5555556070e0 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:250
+250	    }
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lBenchmarkTest::runBenchmark (this=0x7fffffffdaf0) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:79
+79	    if (!server->is_running())
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l81	        scheduler_thread.join();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l84	    if (!server->is_running())
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l86	        for (auto &client : client_threads)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l88	            client.join();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l86	        for (auto &client : client_threads)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l108	    return;
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l109	}
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l108	    return;
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l109	}
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lmain (argc=1, argv=0x7fffffffdc38) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:117
+117	    return 0;
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l118	}
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l__libc_start_call_main (main=main@entry=0x5555555a42ae <main(int, char**)>, argc=argc@entry=1, argv=argv@entry=0x7fffffffdc38) at ../sysdeps/nptl/libc_start_call_main.h:74
+74	../sysdeps/nptl/libc_start_call_main.h: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Inferior 1 (process 1058326) exited normally]
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lThe program is not being run.
+[?2004h(gdb) q
+[?2004l

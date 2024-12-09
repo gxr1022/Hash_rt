@@ -4,11 +4,11 @@
 #include <verona-rt/src/rt/verona.h>
 #include <cstring>
 
-DEFINE_uint64(num_ops, 1000000, "the number of insert operations");
+DEFINE_uint64(num_ops, 12, "the number of insert operations");
 DEFINE_uint64(str_key_size, 8, "size of key (bytes)");
-DEFINE_uint64(str_value_size, 100, "size of value (bytes)");
-DEFINE_uint64(num_threads_client, 8, "the number of threads");
-DEFINE_uint64(num_threads_worker, 32, "the number of threads");
+DEFINE_uint64(str_value_size, 1024, "size of value (bytes)");
+DEFINE_uint64(num_threads_client, 1, "the number of threads");
+DEFINE_uint64(num_threads_worker, 2, "the number of threads");
 DEFINE_uint64(time_interval, 10, "the time interval of insert operations");
 DEFINE_string(report_prefix, "[report]: ", "prefix of report data");
 DEFINE_bool(first_mode, true, "fist mode start multiply clients on the same key value server");
@@ -49,6 +49,7 @@ void BenchmarkTest::runBenchmark()
     sched.set_fair(true);
     sched.init(num_scheduler_threads);
 
+    auto total_start_time = std::chrono::steady_clock::now();
     // init server
     HashTableServer *server = new HashTableServer(num_ops);
 
@@ -68,13 +69,8 @@ void BenchmarkTest::runBenchmark()
     }
 
     // start worker threads
-    // if (server->is_first_batch.load())
-    {
-        // auto run_start = std::chrono::steady_clock::now();
-        sched.run();
-        // auto run_end = std::chrono::steady_clock::now();
-        // worker_time = std::chrono::duration_cast<std::chrono::nanoseconds>(run_end - run_start).count();
-    }
+    sched.run();
+    
 
     if (!server->is_running())
     {
@@ -88,23 +84,17 @@ void BenchmarkTest::runBenchmark()
             client.join();
         }
     }
-    // auto [when_total_time, when_count] = server.hash_table->get_when_stats();
-    // double avg_when_time = when_count > 0 ? static_cast<double>(when_total_time) / when_count : 0;
-    // benchmark_report("scheduler", "total_when_schedules", std::to_string(when_count));
-    // benchmark_report("scheduler", "total_when_time_ns", std::to_string(when_total_time));
+    
+    size_t completed_inserts = server->hash_table->get_completed_inserts();
+    auto total_end_time = std::chrono::steady_clock::now();
+    auto total_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(total_end_time - total_start_time).count();
+    double total_throughput = completed_inserts / (total_duration / 1e9);
+    double avg_time_per_ops = total_duration / completed_inserts;
 
-    // std::cout << "Teardown: all threads stopped" << std::endl;
-
-    // size_t completed_inserts = server->hash_table->get_completed_inserts();
-    // double throughput = completed_inserts / (worker_time / 1e9);
-    // double avg_insert_time = worker_time / completed_inserts;
-    // benchmark_report("insert", "overall_duration_ns", std::to_string(duration_ns));
-    // benchmark_report("insert", "worker_time_ns", std::to_string(worker_time));
-    // benchmark_report("insert", "overall_operation_number", std::to_string(completed_inserts));
-    // benchmark_report("insert", "overall_throughput", std::to_string(throughput));
-
-    // benchmark_report("scheduler", "avg_when_time_ns", std::to_string(avg_when_time));
-    // benchmark_report("insert", "avg_insert_time_ns", std::to_string(avg_insert_time));
+    benchmark_report("overall", "duration_ns", std::to_string(total_duration));
+    benchmark_report("overall", "operation_number", std::to_string(completed_inserts));
+    benchmark_report("overall", "throughput", std::to_string(total_throughput));
+    benchmark_report("overall", "avg_time_per_ops", std::to_string(avg_time_per_ops));
     return;
 }
 

@@ -1,0 +1,332 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1822725259
+[New Thread 0x7fbfdf3e8640 (LWP 1012049)]
+Starting all threads
+[New Thread 0x7fbfd73e5640 (LWP 1012050)]
+[New Thread 0x7fbfd6be4640 (LWP 1012051)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 720
+Acquire phase duration: 710
+Exchange duration: 380
+Release phase duration: 100
+Process phase duration: 650
+BehaviourCore::schedule_many1
+Prepare phase duration: 190
+Acquire phase duration: 520
+Exchange duration: 400
+Release phase duration: 40
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 470
+Exchange duration: 360
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 410
+Exchange duration: 280
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 500
+Exchange duration: 380
+Release phase duration: 60
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 510
+Exchange duration: 380
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 540
+Exchange duration: 400
+Release phase duration: 50
+Process phase duration: 120
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 370
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 370
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 520
+Exchange duration: 400
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 390
+Exchange duration: 260
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 400
+Exchange duration: 280
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 490
+Exchange duration: 360
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 490
+Exchange duration: 390
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 390
+Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 370
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 120
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 500
+Exchange duration: 380
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 490
+Exchange duration: 360
+Release phase duration: 40
+Process phase duration: 120
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 380
+Exchange duration: 250
+Release phase duration: 50
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 390
+Exchange duration: 280
+Release phase duration: 50
+Process phase duration: 120
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 510
+Exchange duration: 400
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 380
+Exchange duration: 280
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 490
+Exchange duration: 380
+Release phase duration: 50
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 480
+Exchange duration: 380
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 370
+Exchange duration: 260
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 400
+Exchange duration: 290
+Release phase duration: 30
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 390
+Exchange duration: 260
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 380
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 350
+Exchange duration: 250
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 380
+Exchange duration: 260
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 400
+Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 390
+Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 120
+scheduler loop time: 1332438
+thread id: 1 get work duration:7220
+Schedule work 0x7fbfe03ecba0
+[Thread 0x7fbfd73e5640 (LWP 1012050) exited]
+thread id: 1 work duration: 33100
+thread id: 1 get work duration:750
+Schedule work 0x7fbfe03ecb40
+thread id: 1 work duration: 3560
+thread id: 1 get work duration:680
+Schedule work 0x7fbfe03ecae0
+thread id: 1 work duration: 3300
+thread id: 1 get work duration:460
+Schedule work 0x7fbfe03eca80
+thread id: 1 work duration: 9150
+thread id: 1 get work duration:500
+Schedule work 0x7fbfe03eca20
+thread id: 1 work duration: 1730
+thread id: 1 get work duration:640
+Schedule work 0x7fbfe03ec9c0
+thread id: 1 work duration: 2860
+thread id: 1 get work duration:700
+Schedule work 0x7fbfe03ec960
+thread id: 1 work duration: 2400
+thread id: 1 get work duration:460
+Schedule work 0x7fbfe03ec900
+thread id: 1 work duration: 2100
+thread id: 1 get work duration:420
+Schedule work 0x7fbfe03ec8a0
+thread id: 1 work duration: 2380
+thread id: 1 get work duration:430
+Schedule work 0x7fbfe03ec840
+thread id: 1 work duration: 1880
+thread id: 1 get work duration:420
+Schedule work 0x7fbfe03ec7e0
+thread id: 1 work duration: 2060
+thread id: 1 get work duration:890
+Schedule work 0x7fbfe03ec780
+thread id: 1 work duration: 1720
+thread id: 1 get work duration:450
+Schedule work 0x7fbfe03ec720
+thread id: 1 work duration: 2220
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec6c0
+thread id: 1 work duration: 2210
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec660
+thread id: 1 work duration: 2460
+thread id: 1 get work duration:420
+Schedule work 0x7fbfe03ec600
+thread id: 1 work duration: 1710
+thread id: 1 get work duration:430
+Schedule work 0x7fbfe03ec5a0
+[Thread 0x7fbfdf3e8640 (LWP 1012049) exited]
+thread id: 1 work duration: 2020
+thread id: 1 get work duration:420
+Schedule work 0x7fbfe03ec540
+thread id: 1 work duration: 1770
+thread id: 1 get work duration:430
+Schedule work 0x7fbfe03ec4e0
+thread id: 1 work duration: 1380
+thread id: 1 get work duration:480
+Schedule work 0x7fbfe03ec480
+thread id: 1 work duration: 1370
+thread id: 1 get work duration:400
+Schedule work 0x7fbfe03ec420
+thread id: 1 work duration: 2060
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec3c0
+thread id: 1 work duration: 1710
+thread id: 1 get work duration:130
+Schedule work 0x7fbfe03ec360
+thread id: 1 work duration: 1680
+thread id: 1 get work duration:100
+Schedule work 0x7fbfe03ec300
+thread id: 1 work duration: 1460
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec2a0
+thread id: 1 work duration: 1640
+thread id: 1 get work duration:420
+Schedule work 0x7fbfe03ec240
+thread id: 1 work duration: 1280
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec1e0
+thread id: 1 work duration: 1330
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec180
+thread id: 1 work duration: 1310
+thread id: 1 get work duration:100
+Schedule work 0x7fbfe03ec120
+thread id: 1 work duration: 1660
+thread id: 1 get work duration:140
+Schedule work 0x7fbfe03ec0c0
+thread id: 1 work duration: 1390
+thread id: 1 get work duration:120
+Schedule work 0x7fbfe03ec060
+thread id: 1 work duration: 1410
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec000
+thread id: 1 work duration: 2450
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1012051, futex_word=0x7fbfd6be4910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) q[Kq
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1012017] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

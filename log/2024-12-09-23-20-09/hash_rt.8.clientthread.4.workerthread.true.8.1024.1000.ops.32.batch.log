@@ -1,0 +1,81 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1751739487
+[New Thread 0x7fbfdf3e8640 (LWP 1024923)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1024924)]
+[New Thread 0x7fbfde3e6640 (LWP 1024925)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 810
+Acquire phase duration: 570
+Exchange duration: 180
+Release phase duration: 110
+Process phase duration: 710
+BehaviourCore::schedule_many1
+Prepare phase duration: 190
+Acquire phase duration: 280
+Exchange duration: 160
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 270
+Exchange duration: 160
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 260
+Exchange duration: 150
+Release phase duration: 1030
+Process phase duration: 140
+scheduler loop time: 1046798
+thread id: 1 get work duration:7940
+Schedule work 0x7fbfe03ec0c0
+[Thread 0x7fbfdebe7640 (LWP 1024924) exited]
+thread id: 1 work duration: 100980
+thread id: 1 get work duration:200
+Schedule work 0x7fbfe03ec120
+thread id: 1 work duration: 2110
+thread id: 1 get work duration:130
+Schedule work 0x7fbfe03ec060
+thread id: 1 work duration: 2540
+thread id: 1 get work duration:120
+Schedule work 0x7fbfe03ec000
+thread id: 1 work duration: 7470
+thread id: 1 get work duration:100
+Schedule work 0x7fbff7a04000
+[Thread 0x7fbfdf3e8640 (LWP 1024923) exited]
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1024925, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1024907] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

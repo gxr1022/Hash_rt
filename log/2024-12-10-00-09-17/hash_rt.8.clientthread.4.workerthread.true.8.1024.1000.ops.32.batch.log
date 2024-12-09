@@ -1,0 +1,125 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1846172978
+[New Thread 0x7fbfdf3e8640 (LWP 1033379)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1033380)]
+[New Thread 0x7fbfde3e6640 (LWP 1033381)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 780
+Acquire phase duration: 440
+Exchange duration: 100
+Release phase duration: 120
+Process phase duration: 490
+BehaviourCore::schedule_many1
+Prepare phase duration: 210
+Acquire phase duration: 290
+Exchange duration: 160
+Release phase duration: 60
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 250
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 290
+Exchange duration: 180
+Release phase duration: 50
+Process phase duration: 130
+thread id: 1 get work duration:7390
+Schedule work 0x7fbfe03ec120
+thread id: 1 work duration: 95060
+completed_count_last_batch: 3
+thread id: 1 get work duration:820
+Schedule work 0x7fbfe03ec0c0
+thread id: 1 work duration: 2030
+completed_count_last_batch: 2
+thread id: 1 get work duration:140
+Schedule work 0x7fbfe03ec060
+thread id: 1 work duration: 2170
+completed_count_last_batch: 1
+thread id: 1 get work duration:430
+Schedule work 0x7fbfe03ec000
+thread id: 1 work duration: 4750
+completed_count_last_batch: 0
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 280
+Exchange duration: 160
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 250
+Exchange duration: 140
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 370
+Exchange duration: 260
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 260
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 130
+scheduler loop time: 1401067
+thread id: 1 get work duration:800
+Schedule work 0x7fbfe03ec2a0
+thread id: 1 work duration: 2170
+completed_count_last_batch: 3
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec1e0
+thread id: 1 work duration: 2210
+completed_count_last_batch: 2
+thread id: 1 get work duration:90
+Schedule work 0x7fbff7a04000
+thread id: 1 work duration: 750
+completed_count_last_batch: 1
+[Thread 0x7fbfdebe7640 (LWP 1033380) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1033379) exited]
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Teardown: all threads beginning teardown
+Destroying core 1
+All threads stopped
+All threads deallocated
+[Thread 0x7fbfde3e6640 (LWP 1033381) exited]
+[Inferior 1 (process 1033336) exited normally]
+[?2004h[?2004l[?2004h(gdb) Q[Kq
+[?2004l

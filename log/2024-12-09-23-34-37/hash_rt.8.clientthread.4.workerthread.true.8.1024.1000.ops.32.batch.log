@@ -1,0 +1,129 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1784991093
+[New Thread 0x7fbfdf3e8640 (LWP 1029559)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1029560)]
+[New Thread 0x7fbfde3e6640 (LWP 1029561)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 850
+Acquire phase duration: 520
+Exchange duration: 180
+Release phase duration: 100
+Process phase duration: 680
+BehaviourCore::schedule_many1
+Prepare phase duration: 190
+Acquire phase duration: 180
+Exchange duration: 80
+Release phase duration: 50
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 280
+Exchange duration: 170
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 290
+Exchange duration: 180
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 390
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 270
+Exchange duration: 140
+thread id: Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+1Prepare phase duration: 170
+Acquire phase duration: 180
+Exchange duration: 60
+Release phase duration: 80
+Process phase duration: 140
+ get work duration:BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 340
+Exchange duration: 230
+Release phase duration: 40
+Process phase duration: 130
+scheduler loop time: 1103408
+8750
+Schedule work 0x7fbfe03ec120
+thread id: 1 work duration: 31910
+completed_count_last_batch: 7
+thread id: 1 get work duration:860
+Schedule work 0x7fbfe03ec2a0
+thread id: 1 work duration: 2690
+completed_count_last_batch: 6
+thread id: 1 get work duration:460
+Schedule work 0x7fbfe03ec240
+thread id: 1 work duration: 1460
+completed_count_last_batch: 5
+thread id: 1 get work duration:100
+Schedule work 0x7fbfe03ec1e0
+thread id: 1 work duration: 5250
+completed_count_last_batch: 4
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec180
+thread id: 1 work duration: 1430
+completed_count_last_batch: 3
+thread id: 1 get work duration:470
+Schedule work 0x7fbfe03ec0c0
+thread id: 1 work duration: 1390
+completed_count_last_batch: 2
+thread id: 1 get work duration:440
+Schedule work 0x7fbfe03ec060
+thread id: 1 work duration: 1960
+completed_count_last_batch: 1
+thread id: 1 get work duration:410
+Schedule work 0x7fbfe03ec000
+thread id: 1 work duration: 2920
+completed_count_last_batch: 0
+[Thread 0x7fbfdebe7640 (LWP 1029560) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1029559) exited]
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1029561, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[?2004h(gdb) 
+[?2004l[?2004h(gdb) 
+[?2004l[?2004h(gdb) 
+[?2004l[?2004h(gdb) 
+[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1029526] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

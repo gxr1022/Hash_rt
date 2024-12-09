@@ -1,0 +1,154 @@
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1783384875
+Starting all threads
+BehaviourCore::schedule_many1
+Prepare phase duration: 610
+Acquire phase duration: 470
+Exchange duration: 160
+Release phase duration: 140
+Process phase duration: 720
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 290
+Exchange duration: 170
+Release phase duration: 40
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 230
+Exchange duration: 70
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 280
+Exchange duration: 160
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 250
+Exchange duration: 140
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 180
+Exchange duration: 90
+Release phase duration: 40
+Process phase duration: 140
+thread id: BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 270
+Exchange duration: 150
+1 get work duration:Release phase duration: 70
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 360
+Exchange duration: 240
+Release phase duration: 50
+Process phase duration: 150
+9130
+Schedule work 0x7f7fa455c180
+work run: 0x7f7fa455c180
+thread id: 1 work duration: 114349
+completed_count_last_batch: 3
+thread id: 1 get work duration:500
+Schedule work 0x7f7fa455c2a0
+work run: 0x7f7fa455c2a0
+thread id: 1 work duration: 3870
+completed_count_last_batch: 2
+thread id: 1 get work duration:460
+Schedule work 0x7f7fa455c240
+work run: 0x7f7fa455c240
+thread id: 1 work duration: 2650
+completed_count_last_batch: 1
+thread id: 1 get work duration:110
+Schedule work 0x7f7fa455c1e0
+work run: 0x7f7fa455c1e0
+thread id: 1 work duration: 6260
+completed_count_last_batch: 0
+thread id: 1 get work duration:150
+Schedule work 0x7f7fa455c120
+work run: 0x7f7fa455c120
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 290
+Exchange duration: 160
+thread id: 1 work duration: 4360
+Release phase duration: 40
+completed_count_last_batch: 3
+thread id: 1 get work duration:Process phase duration: 190
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 370
+510Exchange duration: 240
+
+Release phase duration: 50
+Schedule work 0x7f7fa455c0c0
+work run: 0x7f7fa455c0c0
+thread id: 1 work duration: 6490
+completed_count_last_batch: 2
+thread id: 1 get work duration:430
+Schedule work 0x7f7fa455c300
+work run: 0x7f7fa455c300
+Process phase duration: 180
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 270
+Exchange duration: 170
+Release phase duration: 330
+Process phase duration: 160
+thread id: 1 work duration: 24290
+completed_count_last_batch: 1
+thread id: 1 get work duration:1050
+BehaviourCore::schedule_many1
+Schedule work 0x7f7fa455c3c0
+Prepare phase duration: 160
+Acquire phase duration: 360
+Exchange duration: 250
+work run: 0x7f7fa455c3c0
+Release phase duration: 460
+Process phase duration: 420
+thread id: 1 work duration: 14970
+completed_count_last_batch: 0
+scheduler loop time: 1656626
+thread id: 1 get work duration:440
+Schedule work 0x7f7fa455c420
+work run: 0x7f7fa455c420
+thread id: 1 work duration: 4040
+completed_count_last_batch: 3
+thread id: 1 get work duration:490
+Schedule work 0x7f7fa455c360
+work run: 0x7f7fa455c360
+thread id: 1 work duration: 2760
+completed_count_last_batch: 2
+thread id: 1 get work duration:440
+Schedule work 0x7f7fa455c060
+work run: 0x7f7fa455c060
+thread id: 1 work duration: 3170
+completed_count_last_batch: 1
+thread id: 1 get work duration:390
+Schedule work 0x7f7fa455c000
+work run: 0x7f7fa455c000
+thread id: 1 work duration: 4440
+completed_count_last_batch: 0
+work run: 0x7f7fbbb74000
+get work: 0x7f7fbbb74000
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Teardown: all threads beginning teardown
+Destroying core 1
+All threads stopped
+All threads deallocated
+work run: 0x7f7fbbb74000

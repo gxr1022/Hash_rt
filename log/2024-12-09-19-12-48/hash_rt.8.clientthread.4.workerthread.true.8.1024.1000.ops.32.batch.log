@@ -1,0 +1,370 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1777490271
+[New Thread 0x7fbfdf3e8640 (LWP 1002934)]
+Starting all threads
+[New Thread 0x7fbfd73e5640 (LWP 1002935)]
+[New Thread 0x7fbfd6be4640 (LWP 1002936)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 1090
+Acquire phase duration: 690
+Exchange duration: 370
+Release phase duration: 90
+Process phase duration: 730
+BehaviourCore::schedule_many1
+Prepare phase duration: 200
+Acquire phase duration: 390
+Exchange duration: 270
+Release phase duration: 50
+Process phase duration: 150
+thread id: 1 get work duration:7130
+Schedule work 0x7fbfe03ec000
+thread id: 1 work duration: 87179
+thread id: 1 get work duration:580
+BehaviourCore::schedule_many1
+Schedule work 0x7fbfe03ec060
+Prepare phase duration: 150
+Acquire phase duration: 510
+thread id: 1 work duration: 2110
+thread id: 1 get work duration:440
+Exchange duration: 370
+Schedule work 0x7fbff7a04000
+Release phase duration: 50
+Process phase duration: 130
+thread id: 1 work duration: 810
+thread id: 1 get work duration:680
+BehaviourCore::schedule_many1
+Schedule work 0x7fbfe03ec0c0
+Prepare phase duration: 140
+thread id: 1 work duration: 2210
+Acquire phase duration: 400
+thread id: 1 get work duration:Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 130
+140
+Schedule work 0x7fbff7a04000
+thread id: 1 work duration: 380
+thread id: 1 get work duration:640
+Schedule work 0x7fbfe03ec120
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 470
+thread id: 1 work duration: 4600
+thread id: 1 get work duration:110
+Schedule work 0x7fbff7a04000
+thread id: 1 work duration: 50
+Exchange duration: 380
+Release phase duration: 50
+Process phase duration: 140
+thread id: 1 get work duration:9290
+Schedule work 0x7fbfe03ec180
+thread id: 1 work duration: 1800
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 400
+Exchange duration: 280
+Release phase duration: 50
+Process phase duration: 130
+thread id: 1 get work duration:15410
+Schedule work 0x7fbfe03ec1e0
+thread id: 1 work duration: 2080
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 390
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 130
+thread id: 1 get work duration:14070
+Schedule work 0x7fbfe03ec240
+thread id: 1 work duration: 1970
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 500
+Exchange duration: 380
+Release phase duration: 40
+Process phase duration: 140
+thread id: 1 get work duration:15140
+Schedule work 0x7fbfe03ec2a0
+thread id: 1 work duration: 2070
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 370
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 140
+thread id: 1 get work duration:14210
+Schedule work 0x7fbfe03ec300
+thread id: 1 work duration: 1710
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 370
+Exchange duration: 260
+Release phase duration: 40
+Process phase duration: 150
+thread id: 1 get work duration:14440
+Schedule work 0x7fbfe03ec360
+thread id: 1 work duration: 1720
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 520
+Exchange duration: 400
+Release phase duration: 40
+Process phase duration: 130
+thread id: 1 get work duration:15430
+Schedule work 0x7fbfe03ec3c0
+thread id: 1 work duration: 2050
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 500
+Exchange duration: 360
+Release phase duration: 40
+Process phase duration: 140
+thread id: 1 get work duration:14660
+Schedule work 0x7fbfe03ec420
+thread id: 1 work duration: 1730
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 390
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 130
+thread id: 1 get work duration:14330
+Schedule work 0x7fbfe03ec480
+thread id: 1 work duration: 1440
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 250
+Exchange duration: 130
+Release phase duration: 40
+Process phase duration: 130
+thread id: 1 get work duration:14220
+Schedule work 0x7fbfe03ec4e0
+thread id: 1 work duration: 2080
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 700
+Exchange duration: 590
+Release phase duration: 50
+Process phase duration: 130
+thread id: 1 get work duration:16840
+Schedule work 0x7fbfe03ec540
+thread id: 1 work duration: 2080
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 540
+Exchange duration: 380
+Release phase duration: 50
+Process phase duration: 140
+thread id: 1 get work duration:14780
+Schedule work 0x7fbfe03ec5a0
+thread id: 1 work duration: 2520
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 520
+Exchange duration: 410
+Release phase duration: 40
+Process phase duration: 120
+thread id: 1 get work duration:14320
+Schedule work 0x7fbfe03ec600
+thread id: 1 work duration: 2010
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 410
+Exchange duration: 290
+Release phase duration: 40
+Process phase duration: 120
+thread id: 1 get work duration:18430
+Schedule work 0x7fbfe03ec660
+thread id: 1 work duration: 1990
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 370
+Exchange duration: 280
+Release phase duration: 50
+Process phase duration: 140
+thread id: 1 get work duration:14400
+Schedule work 0x7fbfe03ec6c0
+thread id: 1 work duration: 1410
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 390
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 130
+thread id: 1 get work duration:14480
+Schedule work 0x7fbfe03ec720
+thread id: 1 work duration: 1690
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 360
+Exchange duration: 260
+Release phase duration: 50
+Process phase duration: 150
+thread id: 1 get work duration:14420
+Schedule work 0x7fbfe03ec780
+thread id: 1 work duration: 1730
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 410
+Exchange duration: 280
+Release phase duration: 50
+Process phase duration: 130
+thread id: 1 get work duration:14620
+Schedule work 0x7fbfe03ec7e0
+thread id: 1 work duration: 1670
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 520
+Exchange duration: 390
+Release phase duration: 40
+Process phase duration: 130
+thread id: 1 get work duration:14520
+Schedule work 0x7fbfe03ec840
+thread id: 1 work duration: 2060
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 370
+Exchange duration: 280
+Release phase duration: 50
+Process phase duration: 150
+thread id: 1 get work duration:14660
+Schedule work 0x7fbfe03ec8a0
+thread id: 1 work duration: 2160
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 380
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 130
+thread id: 1 get work duration:13960
+Schedule work 0x7fbfe03ec900
+thread id: 1 work duration: 1690
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 390
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 130
+thread id: 1 get work duration:14590
+Schedule work 0x7fbfe03ec960
+thread id: 1 work duration: 1680
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 420
+Exchange duration: 300
+Release phase duration: 50
+Process phase duration: 130
+thread id: 1 get work duration:15220
+Schedule work 0x7fbfe03ec9c0
+thread id: 1 work duration: 2000
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 380
+Exchange duration: 260
+Release phase duration: 40
+Process phase duration: 160
+thread id: 1 get work duration:15290
+Schedule work 0x7fbfe03eca20
+thread id: 1 work duration: 1700
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 360
+Exchange duration: 260
+Release phase duration: 40
+Process phase duration: 120
+thread id: 1 get work duration:14370
+Schedule work 0x7fbfe03eca80
+thread id: 1 work duration: 1710
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 400
+Exchange duration: 270
+Release phase duration: 50
+Process phase duration: 130
+thread id: 1 get work duration:14720
+Schedule work 0x7fbfe03ecae0
+thread id: 1 work duration: 1680
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 550
+Exchange duration: 430
+Release phase duration: 40
+Process phase duration: 130
+thread id: 1 get work duration:13010
+Schedule work 0x7fbfe03ecb40
+thread id: 1 work duration: 1830
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 380
+Exchange duration: 260
+Release phase duration: 40
+Process phase duration: 130
+thread id: scheduler loop time: 2097956
+1 get work duration:14510
+Schedule work 0x7fbfe03ecba0
+thread id: 1 work duration: 1840
+Destroying core 1
+All threads stopped
+All threads deallocated
+[Thread 0x7fbfd73e5640 (LWP 1002935) exited]
+[Thread 0x7fbfd6be4640 (LWP 1002936) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1002934) exited]
+[Inferior 1 (process 1002902) exited normally]
+[?2004h[?2004l[?2004h(gdb) b schedulet[Krthread.h:[C245
+[?2004lBreakpoint 1 at 0x5555555d3170: file /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h, line 245.
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1772702044
+[New Thread 0x7fbfdf3e8640 (LWP 1003228)]
+Starting all threads
+[New Thread 0x7fbfd73e5640 (LWP 1003229)]
+[New Thread 0x7fbfd6be4640 (LWP 1003230)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 760
+Acquire phase duration: 780
+Exchange duration: 430
+Release phase duration: 120
+Process phase duration: 770
+[Switching to Thread 0x7fbfd6be4640 (LWP 1003230)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561cef0, startup=0x5555555ad33d <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:245
+245	        while (Scheduler::get().completed_count_last_batch.load() == 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l249	        Scheduler::get().producer_start.store(true);
+[?2004h[?2004l[?2004h(gdb) p [7mScheduler::get().completed_count_last_batch.load() == 0[27m[C[C[C[C[C[C[C[CScheduler::get().completed_count_last_batch.load() == 0
+[?2004lNo symbol "Scheduler" in current context.
+[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1003196] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

@@ -139,25 +139,6 @@ public:
         std::cout << "Init time:" << duration_ns << std::endl;
     }
 
-    void insert_batch(char **keys, char **values, int batch_size)
-    {
-        if (batch_size == 0)
-            return;
-
-        auto combined_when = when(directory[hashFunction(keys[0], dirCapacity)])
-                             << [=](acquired_cown<Bucket> bucketAcq)
-        {
-            bucketAcq->insert(keys[0], values[0]);
-        };
-
-        for (int i = 1; i < batch_size; i++)
-        {
-            combined_when.add_batch(when(directory[hashFunction(keys[i], dirCapacity)])
-                        << [=](acquired_cown<Bucket> bucketAcq)
-                    { bucketAcq->insert(keys[i], values[i]); });
-        }
-        return;
-    }
 
     void insert(const char *key, const char *value)
     {

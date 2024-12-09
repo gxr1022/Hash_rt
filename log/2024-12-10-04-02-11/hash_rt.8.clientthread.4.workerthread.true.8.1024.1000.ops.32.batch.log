@@ -1,0 +1,139 @@
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1788014138
+Starting all threads
+BehaviourCore::schedule_many1
+Prepare phase duration: 930
+Acquire phase duration: 660
+Exchange duration: 390
+Release phase duration: 80
+Process phase duration: 710
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 260
+Exchange duration: 150
+Release phase duration: 50
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 510
+Exchange duration: 400
+Release phase duration: 50
+Process phase duration: 120
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 350
+Exchange duration: 240
+Release phase duration: 50
+Process phase duration: 120
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 540
+Exchange duration: 410
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 500
+Exchange duration: 390
+Release phase duration: 50
+Process phase duration: 120
+thread id: BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 490
+Exchange duration: 390
+1 get work duration:Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 380
+Exchange duration: 250
+Release phase duration: 60
+Process phase duration: 120
+8640
+Schedule work 0x7eecbc75c180
+thread id: 1 work duration: 101510
+completed_count_last_batch: 3
+thread id: 1 get work duration:870
+Schedule work 0x7eecbc75c2a0
+thread id: 1 work duration: 2210
+completed_count_last_batch: 2
+thread id: 1 get work duration:500
+Schedule work 0x7eecbc75c240
+thread id: 1 work duration: 1480
+completed_count_last_batch: 1
+thread id: 1 get work duration:110
+Schedule work 0x7eecbc75c1e0
+thread id: 1 work duration: 4120
+completed_count_last_batch: 0
+thread id: 1 get work duration:130
+Schedule work 0x7eecbc75c120
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 410
+Exchange duration: 280
+Release phase duration: 50
+thread id: 1 work duration: 2370
+Process phase duration: 140
+completed_count_last_batch: 3
+thread id: 1 get work duration:480
+Schedule work 0x7eecbc75c0c0
+thread id: 1 work duration: 1590
+completed_count_last_batch: 2
+thread id: BehaviourCore::schedule_many1
+1Prepare phase duration: 140
+Acquire phase duration: 390
+Exchange duration: 260
+Release phase duration: 40
+Process phase duration: 150
+ get work duration:810
+Schedule work 0x7eecbc75c300
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+thread id: 1 work duration: 3260
+Acquire phase duration: 380
+Exchange duration: 270
+Release phase duration: 50
+Process phase duration: 120
+completed_count_last_batch: 1
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 350
+Exchange duration: 240
+Release phase duration: 50
+Process phase duration: 120
+thread id: 1 get work duration:870
+Schedule work 0x7eecbc75c3c0
+thread id: 1 work duration: 2200
+completed_count_last_batch: 0
+thread id: scheduler loop time: 1373927
+1 get work duration:460
+Schedule work 0x7eecbc75c420
+thread id: 1 work duration: 1750
+completed_count_last_batch: 3
+thread id: 1 get work duration:120
+Schedule work 0x7eecbc75c360
+thread id: 1 work duration: 1520
+completed_count_last_batch: 2
+thread id: 1 get work duration:440
+Schedule work 0x7eecbc75c060
+thread id: 1 work duration: 1490
+completed_count_last_batch: 1
+thread id: 1 get work duration:570
+Schedule work 0x7eecbc75c000
+thread id: 1 work duration: 2320
+completed_count_last_batch: 0
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Teardown: all threads beginning teardown
+Destroying core 1
+All threads stopped
+All threads deallocated

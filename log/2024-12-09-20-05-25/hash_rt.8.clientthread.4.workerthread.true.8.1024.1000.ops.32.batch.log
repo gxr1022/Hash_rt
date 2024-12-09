@@ -1,0 +1,213 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) b schedulerthread.h:156
+[?2004lBreakpoint 1 at 0x598a9: file /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h, line 156.
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1775440469
+[New Thread 0x7fbfdf3e8640 (LWP 1019721)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1019722)]
+[New Thread 0x7fbfde3e6640 (LWP 1019723)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 790
+Acquire phase duration: 510
+Exchange duration: 180
+Release phase duration: 100
+Process phase duration: 690
+BehaviourCore::schedule_many1
+Prepare phase duration: 180
+Acquire phase duration: 620
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 169
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 270
+Exchange duration: 160
+Release phase duration: 50
+Process phase duration: 120
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 260
+Exchange duration: 170
+Release phase duration: 50
+Process phase duration: 130
+Work:0
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 280
+Exchange duration: 160
+Release phase duration: 60
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 270
+Exchange duration: 140
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 350
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 300
+Exchange duration: 170
+Release phase duration: 40
+Process phase duration: 130
+[Switching to Thread 0x7fbfde3e6640 (LWP 1019723)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::get_work (this=0x55555561cef0, batch=@0x7fbfde3e4048: 100) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:156
+156	      if (next_work != nullptr && batch != 0)
+[?2004h[?2004l[?2004h(gdb) bt
+[?2004l#0  verona::rt::SchedulerThread::get_work (this=0x55555561cef0, batch=@0x7fbfde3e4048: 100)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:156
+#1  0x00005555555d3235 in verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561cef0, 
+    startup=0x5555555ad33d <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:261
+#2  0x00005555555cccf9 in verona::rt::SchedulerThread::run<>(verona::rt::SchedulerThread*, void (*)()) (
+    t=0x55555561cef0, startup=0x5555555ad33d <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:135
+#3  0x00005555555d35a0 in verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()> (
+    affinity=1, body=0x5555555cccd2 <verona::rt::SchedulerThread::run<>(verona::rt::SchedulerThread*, void (*)())>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/../pal/threadpoolbuilder.h:39
+#4  0x00005555555e6b45 in std::__invoke_impl<void, void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> (
+    __f=@0x55555561d5f8: 0x5555555d3564 <verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()>(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)())>) at /usr/include/c++/11/bits/invoke.h:61
+#5  0x00005555555e69d8 in std::__invoke<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> (
+    __fn=@0x55555561d5f8: 0x5555555d3564 <verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()>(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)())>) at /usr/include/c++/11/bits/invoke.h:96
+#6  0x00005555555e6877 in std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> >::_M_invoke<0ul, 1ul, 2ul, 3ul, 4ul> (this=0x55555561d5d8)
+    at /usr/include/c++/11/bits/std_thread.h:259
+#7  0x00005555555e67d8 in std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> >::operator() (this=0x55555561d5d8)
+    at /usr/include/c++/11/bits/std_thread.h:266
+#8  0x00005555555e67b8 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> > >::_M_run (this=0x55555561d5d0)
+    at /usr/include/c++/11/bits/std_thread.h:211
+#9  0x00007ffff7e23253 in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#10 0x00007ffff7b92ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#11 0x00007ffff7c24850 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+[?2004h(gdb) n
+[?2004l162	      batch = BATCH_SIZE;
+[?2004h[?2004l[?2004h(gdb)  [Kp next_work
+[?2004l$1 = (verona::rt::Work *) 0x0
+[?2004h(gdb) n
+[?2004l164	      if (core->should_steal_for_fairness)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l169	        if (!core->q.is_empty())
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l171	          auto work = try_steal();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l174	          core->should_steal_for_fairness = false;
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l176	          core->q.enqueue(core->token_work);
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l177	          if (work != nullptr)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l185	      auto work = core->q.dequeue();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l186	      if (work != nullptr)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l188	        return_next_work();
+[?2004h[?2004l[?2004h(gdb) p work
+[?2004l$2 = (verona::rt::Work *) 0x7fbfe03ec2a0
+[?2004h(gdb) n
+[?2004l189	        return work;
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l216	    }
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lverona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561cef0, startup=0x5555555ad33d <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:261
+261	        work = get_work(batch);
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+thread id: 1 get work duration:5.06248e+11
+Schedule work 0x7fbfe03ec2a0
+thread id: 1 work duration: 117689
+Work:0x7fbfe03ec2a0
+BehaviourCore::schedule_many1
+Prepare phase duration: 1010
+Acquire phase duration: 980
+Exchange duration: 340
+Release phase duration: 70
+Process phase duration: 1130
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 700
+Exchange duration: 590
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 690
+Exchange duration: 580
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 690
+Exchange duration: 590
+Release phase duration: 50
+Process phase duration: 130
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::get_work (this=0x55555561cef0, batch=@0x7fbfde3e4048: 100) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:156
+156	      if (next_work != nullptr && batch != 0)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+thread id: 1 get work duration:3.06886e+10
+Schedule work 0x7fbfe03ec420
+thread id: 1 work duration: 21570
+Work:0x7fbfe03ec420
+BehaviourCore::schedule_many1
+Prepare phase duration: 610
+Acquire phase duration: 590
+Exchange duration: 370
+Release phase duration: 170
+Process phase duration: 630
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 690
+Exchange duration: 580
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 450
+Exchange duration: 350
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 460
+Exchange duration: 340
+Release phase duration: 40
+Process phase duration: 130
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::get_work (this=0x55555561cef0, batch=@0x7fbfde3e4048: 100) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:156
+156	      if (next_work != nullptr && batch != 0)
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1019696] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

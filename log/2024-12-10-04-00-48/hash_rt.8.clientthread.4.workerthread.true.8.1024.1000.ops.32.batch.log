@@ -1,0 +1,144 @@
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1748658363
+Starting all threads
+BehaviourCore::schedule_many1
+Prepare phase duration: 830
+Acquire phase duration: 740
+Exchange duration: 410
+Release phase duration: 90
+Process phase duration: 830
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 440
+Exchange duration: 290
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 400
+Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 480
+Exchange duration: 360
+Release phase duration: 60
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 480
+Exchange duration: 360
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 400
+Exchange duration: 280
+thread id: 1 get work duration:Release phase duration: 50
+Process phase duration: 180
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 490
+Exchange duration: 380
+7950Release phase duration: 50
+
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 720
+Exchange duration: 570
+Release phase duration: 40
+Process phase duration: 160
+Schedule work 0x7f40f1fb8120
+work run: 0x7f40f1fb8120
+thread id: 1 work duration: 110089
+completed_count_last_batch: 3
+thread id: 1 get work duration:530
+Schedule work 0x7f40f1fb82a0
+work run: 0x7f40f1fb82a0
+thread id: 1 work duration: 3650
+completed_count_last_batch: 2
+thread id: 1 get work duration:460
+Schedule work 0x7f40f1fb8240
+work run: 0x7f40f1fb8240
+thread id: 1 work duration: 3130
+completed_count_last_batch: 1
+thread id: 1 get work duration:110
+Schedule work 0x7f40f1fb81e0
+work run: 0x7f40f1fb81e0
+thread id: 1 work duration: 6430
+completed_count_last_batch: 0
+thread id: 1 get work duration:110
+Schedule work 0x7f40f1fb8180
+work run: 0x7f40f1fb8180
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 370
+thread id: 1 work duration: 3190
+Exchange duration: 240
+completed_count_last_batch: 3
+thread id: 1 get work duration:150
+Schedule work 0x7f40f1fb80c0
+work run: 0x7f40f1fb80c0
+Release phase duration: 70
+Process phase duration: 130
+BehaviourCore::schedule_many1
+thread id: 1 work duration: 15700
+Prepare phase duration: 140
+Acquire phase duration: 710
+Exchange duration: 590
+Release phase duration: 60
+Process phase duration: 140
+BehaviourCore::schedule_many1
+completed_count_last_batch: 2
+Prepare phase duration: 140
+Acquire phase duration: 390
+Exchange duration: 250
+thread id: 1 get work duration:760
+Schedule work 0x7f40f1fb8360
+work run: 0x7f40f1fb8360
+thread id: 1 work duration: 9170
+completed_count_last_batch: 1
+Release phase duration: 80
+Process phase duration: 480
+thread id: 1 get work duration:460
+Schedule work 0x7f40f1fb8300
+work run: 0x7f40f1fb8300
+thread id: 1 work duration: 8150
+completed_count_last_batch: 0
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 360
+Exchange duration: 230
+Release phase duration: 70
+Process phase duration: 210
+scheduler loop time: 1401827
+thread id: 1 get work duration:740
+Schedule work 0x7f40f1fb8420
+work run: 0x7f40f1fb8420
+thread id: 1 work duration: 2840
+completed_count_last_batch: 3
+thread id: 1 get work duration:430
+Schedule work 0x7f40f1fb83c0
+work run: 0x7f40f1fb83c0
+thread id: 1 work duration: 2560
+completed_count_last_batch: 2
+thread id: 1 get work duration:530
+Schedule work 0x7f40f1fb8060
+work run: 0x7f40f1fb8060
+thread id: 1 work duration: 5560
+completed_count_last_batch: 1
+thread id: 1 get work duration:470
+Schedule work 0x7f40f1fb8000
+work run: 0x7f40f1fb8000
+thread id: 1 work duration: 4350
+completed_count_last_batch: 0
+Destroying core 1
+All threads stopped
+All threads deallocated
+work run: 0x7f40f45ec000
+hash_rt: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/mpmcq.h:220: verona::rt::MPMCQ<T>::~MPMCQ() [with T = verona::rt::Work]: Assertion `is_empty()' failed.

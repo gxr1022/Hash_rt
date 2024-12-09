@@ -1,0 +1,205 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:1811107445
+[New Thread 0x7fbfdf3e8640 (LWP 1079203)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1079204)]
+[New Thread 0x7fbfde3e6640 (LWP 1079205)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 880
+Acquire phase duration: 770
+Exchange duration: 420
+Release phase duration: 90
+Process phase duration: 740
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 430
+Exchange duration: 300
+Release phase duration: 60
+Process phase duration: 190
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 520
+Exchange duration: 390
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 400
+Exchange duration: 290
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 520
+Exchange duration: 410
+Release phase duration: 360
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 530
+Exchange duration: 400
+Release phase duration: 50
+[New Thread 0x7fbfddbe5640 (LWP 1079206)]
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 530
+Exchange duration: 400
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 530
+Exchange duration: 410
+Release phase duration: 60
+Process phase duration: 140
+Fast-steal work 0x7fbfe03ec060 from 1
+Fast-steal work 0x7fbfe03ec000 from 2
+get work duration: 169660
+get work duration: 113980
+thread id: 2 Schedule work 0x7fbfe03ec060
+thread id: 1 Schedule work 0x7fbfe03ec000
+thread id: 2 work duration: 101229
+thread id: 1 work duration: 94299
+completed_count_last_batch: 3
+get work duration: 220
+completed_count_last_batch: 2
+get work duration: 260
+thread id: 1 Schedule work 0x7fbfe03ec2a0
+thread id: 2 Schedule work 0x7fbfe03ec240
+thread id: 1 work duration: 2780
+completed_count_last_batch: 1
+thread id: 2 work duration: 2440
+get work duration: 190
+thread id: 1 Schedule work 0x7fbfe03ec1e0
+completed_count_last_batch: 0
+thread id: 1 work duration: 2170
+get work duration: 210
+thread id: 2 Schedule work 0x7fbfe03ec180
+BehaviourCore::schedule_many1
+completed_count_last_batch: 3
+thread id: 2 work duration: 2770
+Prepare phase duration: 170
+Acquire phase duration: 420
+Exchange duration: 300
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+completed_count_last_batch: 2
+Prepare phase duration: 150
+Acquire phase duration: 410
+Exchange duration: 280
+get work duration: 190
+get work duration: 780
+Release phase duration: 50
+thread id: 1 Schedule work 0x7fbfe03ec120
+thread id: 2 Schedule work 0x7fbfe03ec300
+thread id: 1 work duration: 4700
+completed_count_last_batch: 1
+get work duration: 480
+thread id: 2 work duration: 6740
+Process phase duration: 160
+thread id: 1 Schedule work 0x7fbff7a04020
+thread id: 1 work duration: 780
+BehaviourCore::schedule_many1
+completed_count_last_batch: 18446744073709551615
+completed_count_last_batch: 0
+get work duration: 820
+get work duration: 1500
+thread id: 1 Schedule work 0x7fbfe03ec360
+thread id: 2 Schedule work 0x7fbfe03ec0c0
+thread id: 1 work duration: 1940
+completed_count_last_batch: 18446744073709551614
+thread id: 2 work duration: 1690
+get work duration: 150
+Prepare phase duration: 140
+thread id: 1 Schedule work 0x7fbff7a04020
+completed_count_last_batch: 18446744073709551613
+Acquire phase duration: 770
+Exchange duration: 620
+Release phase duration: 50
+get work duration: 210
+Process phase duration: 170
+thread id: 1 work duration: 70
+thread id: 2 Schedule work 0x7fbff7a04000
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 410
+Exchange duration: 290
+Release phase duration: 60
+Process phase duration: 150
+thread id: 2 work duration: 450
+completed_count_last_batch: 18446744073709551611
+completed_count_last_batch: 18446744073709551611
+Fast-steal work 0x7fbfe03ec3c0 from 2
+current thread: 2 stole work 0x7fbfe03ec420 from 1
+get work duration: 4690
+get work duration: 3760
+thread id: 2 Schedule work 0x7fbfe03ec420
+thread id: 1 Schedule work 0x7fbfe03ec3c0
+thread id: 1 work duration: 1900
+thread id: 2 work duration: 2170
+completed_count_last_batch: 18446744073709551609
+completed_count_last_batch: 18446744073709551610
+current thread: 2 stole work 0x7fbff7a04020 from 1
+get work duration: 2060
+thread id: 2 Schedule work 0x7fbff7a04020
+thread id: 2 work duration: 100
+completed_count_last_batch: 18446744073709551608
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+No pending work!
+Pausing
+Add to list of waiters
+Locking Scheduler.
+Unlock Scheduler lock
+Sleep
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Teardown: all threads beginning teardown
+Awake!
+Locking Scheduler.
+Locking Scheduler done
+Unpausing
+Unlock Scheduler lock
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1079205, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1079178] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

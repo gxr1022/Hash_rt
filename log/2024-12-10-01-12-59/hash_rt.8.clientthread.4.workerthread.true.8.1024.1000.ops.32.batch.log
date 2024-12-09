@@ -1,0 +1,161 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1795694515
+[New Thread 0x7fbfdf3e8640 (LWP 1047606)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1047607)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 720
+[New Thread 0x7fbfde3e6640 (LWP 1047608)]
+Acquire phase duration: 500
+Exchange duration: 200
+Release phase duration: 100
+Process phase duration: 590
+BehaviourCore::schedule_many1
+Prepare phase duration: 180
+Acquire phase duration: 620
+Exchange duration: 490
+Release phase duration: 60
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 420
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 280
+Exchange duration: 150
+Release phase duration: 60
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 420
+Exchange duration: 280
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 280
+Exchange duration: 160
+Release phase duration: 70
+Process phase duration: 130
+thread id: BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 280
+1 get work duration:Exchange duration: 160
+Release phase duration: 60
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 280
+Exchange duration: 160
+Release phase duration: 40
+Process phase duration: 120
+8020
+Schedule work 0x7fbfe03ec120
+thread id: 1 work duration: 106570
+completed_count_last_batch: 3
+thread id: 1 get work duration:580
+Schedule work 0x7fbfe03ec2a0
+thread id: 1 work duration: 2760
+completed_count_last_batch: 2
+thread id: 1 get work duration:130
+Schedule work 0x7fbfe03ec240
+thread id: 1 work duration: 1880
+completed_count_last_batch: 1
+thread id: 1 get work duration:420
+Schedule work 0x7fbfe03ec1e0
+thread id: 1 work duration: 4710
+completed_count_last_batch: 0
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec180
+thread id: 1 work duration: 2200
+completed_count_last_batch: 3
+thread id: 1 get work duration:BehaviourCore::schedule_many1
+430Prepare phase duration: 120
+Acquire phase duration: 290
+Exchange duration: 170
+
+Release phase duration: 40
+Schedule work 0x7fbfe03ec0c0
+thread id: 1 work duration: 1820
+completed_count_last_batch: 2
+thread id: 1 get work duration:Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 310
+130Exchange duration: 170
+
+Schedule work 0x7fbfe03ec060
+thread id: 1 work duration: 2210
+completed_count_last_batch: 1
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 280
+Exchange duration: 160
+Release phase duration: 60
+thread id: 1Process phase duration: 160
+BehaviourCore::schedule_many1
+ get work duration:Prepare phase duration: 160
+830Acquire phase duration: 300
+Exchange duration: 160
+Release phase duration: 40
+
+Process phase duration: 130
+Schedule work 0x7fbfe03ec360
+thread id: 1 work duration: 2320
+scheduler loop time: 1551746
+completed_count_last_batch: 0
+thread id: 1 get work duration:470
+Schedule work 0x7fbfe03ec3c0
+thread id: 1 work duration: 2050
+completed_count_last_batch: 3
+thread id: 1 get work duration:110
+Schedule work 0x7fbfe03ec000
+thread id: 1 work duration: 1900
+completed_count_last_batch: 2
+[Thread 0x7fbfdebe7640 (LWP 1047607) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1047606) exited]
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Teardown: all threads beginning teardown
+Destroying core 1
+All threads stopped
+All threads deallocated
+[Thread 0x7fbfde3e6640 (LWP 1047608) exited]
+[Inferior 1 (process 1047573) exited normally]
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l

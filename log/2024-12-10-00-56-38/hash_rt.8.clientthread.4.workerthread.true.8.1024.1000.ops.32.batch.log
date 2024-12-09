@@ -1,0 +1,251 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1802308571
+[New Thread 0x7fbfdf3e8640 (LWP 1044622)]
+Starting all threads
+[New Thread 0x7fbfd73e5640 (LWP 1044623)]
+[New Thread 0x7fbfd6be4640 (LWP 1044624)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 670
+Acquire phase duration: 750
+Exchange duration: 430
+Release phase duration: 90
+Process phase duration: 910
+BehaviourCore::schedule_many1
+Prepare phase duration: 220
+Acquire phase duration: 450
+Exchange duration: 350
+Release phase duration: 60
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 340
+Exchange duration: 230
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 430
+Exchange duration: 340
+Release phase duration: 40
+Process phase duration: 130
+thread id: 1 get work duration:6470
+Schedule work 0x7fbfe03ec120
+thread id: 1 work duration: 84560
+completed_count_last_batch: 3
+thread id: 1 get work duration:600
+Schedule work 0x7fbfe03ec0c0
+thread id: 1 work duration: 2210
+completed_count_last_batch: 2
+thread id: 1 get work duration:410
+Schedule work 0x7fbfe03ec060
+thread id: 1 work duration: 1900
+completed_count_last_batch: 1
+thread id: 1 get work duration:100
+Schedule work 0x7fbfe03ec000
+thread id: 1 work duration: 4670
+completed_count_last_batch: 0
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1044624, futex_word=0x7fbfd6be4910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) b hash_server.h:99
+[?2004lBreakpoint 1 at 0x5555555b2ba8: file /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h, line 99.
+[?2004h(gdb) r
+[?2004l[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) y
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1795600754
+[New Thread 0x7fbfdf3e8640 (LWP 1045420)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1045421)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 700
+Acquire phase duration: 470
+[New Thread 0x7fbfde3e6640 (LWP 1045422)]
+Exchange duration: 170
+Release phase duration: 90
+Process phase duration: 790
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 290
+Exchange duration: 160
+Release phase duration: 60
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 280
+Exchange duration: 170
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 260
+Exchange duration: 160
+Release phase duration: 60
+Process phase duration: 130
+[Switching to Thread 0x7fbfdf3e8640 (LWP 1045420)]
+
+Thread 2 "hash_rt" hit Breakpoint 1, HashTableServer::scheduler_loop (this=0x55555561d180) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h:99
+warning: Source file is more recent than executable.
+99	                while (Scheduler::get().completed_count_last_batch.load() != 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l103	                Scheduler::get().completed_count_last_batch.fetch_add(MAX_BATCH_SIZE);
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lthread id: 1 get work duration:9130
+Schedule work 0x7fbfe03ec120
+thread id: 1 work duration: 86849
+completed_count_last_batch: 3
+thread id: 1 get work duration:530
+Schedule work 0x7fbfe03ec0c0
+thread id: 1 work duration: 2300
+105	                batch->requests.clear();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lcompleted_count_last_batch: 2
+thread id: 1 get work duration:2740
+Schedule work 0x7fbfe03ec060
+thread id: 1 work duration: 14400
+completed_count_last_batch: 1
+thread id: 1 get work duration:480
+Schedule work 0x7fbfe03ec000
+thread id: 1 work duration: 25580
+completed_count_last_batch: 0
+81	        while (running && completed_ops < target_ops)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l83	            auto *batch = prepare_new_batch();
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l84	            current_batch.store(batch, std::memory_order_relaxed);
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l85	            if (!batch->requests.empty())
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l87	                while (!Scheduler::get().producer_start.load())
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l89	                    std::this_thread::yield();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l87	                while (!Scheduler::get().producer_start.load())
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l89	                    std::this_thread::yield();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l87	                while (!Scheduler::get().producer_start.load())
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l89	                    std::this_thread::yield();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l87	                while (!Scheduler::get().producer_start.load())
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l89	                    std::this_thread::yield();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l87	                while (!Scheduler::get().producer_start.load())
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l89	                    std::this_thread::yield();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l87	                while (!Scheduler::get().producer_start.load())
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l89	                    std::this_thread::yield();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l87	                while (!Scheduler::get().producer_start.load())
+[?2004h[?2004l[?2004h(gdb) info thread
+[?2004l  Id   Target Id                                     Frame 
+  1    Thread 0x7ffff7a13300 (LWP 1045406) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, 
+    expected=1045422, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+* 2    Thread 0x7fbfdf3e8640 (LWP 1045420) "hash_rt" HashTableServer::scheduler_loop (this=0x55555561d180)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h:87
+  3    Thread 0x7fbfdebe7640 (LWP 1045421) "hash_rt" 0x00005555555b2feb in HashTableClient::generate_random_string (this=0x7fbfd07fe040, 
+    buffer=0x7fbfdebe5140 "ftkbikkjczpeatccikhqfhnihnbycrkqpccsoqiwzdszruyyqxkzlhegmvzmexxcsyrsezqgipyiucmadgrobsvqgbxohrdmtkn", 
+    length=100) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_client.h:19
+  4    Thread 0x7fbfde3e6640 (LWP 1045422) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+[?2004h(gdb) n
+[?2004l89	                    std::this_thread::yield();
+[?2004h[?2004l[?2004h(gdb) r
+[?2004l[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) y
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Runtime initialised
+Init time:1794071721
+[New Thread 0x7fbfdf3e8640 (LWP 1046429)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1046430)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 720
+Acquire phase duration: 540
+[New Thread 0x7fbfde3e6640 (LWP 1046431)]
+Exchange duration: 250
+Release phase duration: 90
+Process phase duration: 660
+BehaviourCore::schedule_many1
+Prepare phase duration: 230
+Acquire phase duration: 280
+Exchange duration: 160
+Release phase duration: 40
+Process phase duration: 180
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 360
+Exchange duration: 240
+Release phase duration: 60
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 290
+Exchange duration: 160
+Release phase duration: 60
+Process phase duration: 120
+[Switching to Thread 0x7fbfdf3e8640 (LWP 1046429)]
+
+Thread 2 "hash_rt" hit Breakpoint 1, HashTableServer::scheduler_loop (this=0x55555561d180) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h:99
+99	                while (Scheduler::get().completed_count_last_batch.load() != 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l103	                Scheduler::get().completed_count_last_batch.fetch_add(MAX_BATCH_SIZE);
+[?2004h[?2004l[?2004h(gdb) infro[K[Ko thread
+[?2004l  Id   Target Id                                     Frame 
+  1    Thread 0x7ffff7a13300 (LWP 1046388) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, 
+    expected=1046431, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+* 2    Thread 0x7fbfdf3e8640 (LWP 1046429) "hash_rt" HashTableServer::scheduler_loop (this=0x55555561d180)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h:103
+  3    Thread 0x7fbfdebe7640 (LWP 1046430) "hash_rt" 0x00005555555b2fdb in HashTableClient::generate_random_string (this=0x7fbfcf3e6040, 
+    buffer=0x7fbfdebe5140 "iwxxwxevyedtbfjlhbnynucbennibvxcfopkofxzckeysnppsmtqipbewxrqycrkqflsjpucmqptghroxcyjytfnhyysvuncuue", 
+    length=100) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_client.h:19
+  4    Thread 0x7fbfde3e6640 (LWP 1046431) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+[?2004h(gdb) n
+[?2004lthread id: 1 get work duration:8240
+Schedule work 0x7fbfe03ec120
+105	                batch->requests.clear();
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1046388] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l
