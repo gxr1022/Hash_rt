@@ -112,7 +112,7 @@ public:
         Scheduler::get().has_scheduling = false;
         running = false;
     }
-
+    
 public:
     HashTableServer(size_t num_ops)
     {
