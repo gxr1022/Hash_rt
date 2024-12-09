@@ -1,0 +1,148 @@
+~/Myhash_boc/Hash_rt/build ~/Myhash_boc/Hash_rt/script/run_hash_rt_parl
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test SNMALLOC_LINKER_SUPPORT_NOSTDLIBXX
+-- Performing Test SNMALLOC_LINKER_SUPPORT_NOSTDLIBXX - Failed
+-- Performing Test CONST_QUALIFIED_MALLOC_USABLE_SIZE
+-- Performing Test CONST_QUALIFIED_MALLOC_USABLE_SIZE - Success
+-- Performing Test SNMALLOC_PLATFORM_HAS_GETENTROPY
+-- Performing Test SNMALLOC_PLATFORM_HAS_GETENTROPY - Success
+-- Looking for C++ include linux/random.h
+-- Looking for C++ include linux/random.h - found
+-- Looking for C++ include pthread.h
+-- Looking for C++ include pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Performing Test SNMALLOC_COMPILER_SUPPORT_MCX16
+-- Performing Test SNMALLOC_COMPILER_SUPPORT_MCX16 - Success
+-- Looking for backtrace
+-- Looking for backtrace - found
+-- backtrace facility detected in default set of libraries
+-- Found Backtrace: /usr/include  
+-- Performing Test SNMALLOC_LINKER_SUPPORT_NO_ALLOW_SHLIB_UNDEF
+-- Performing Test SNMALLOC_LINKER_SUPPORT_NO_ALLOW_SHLIB_UNDEF - Success
+-- The C compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build
+[0/2] Re-checking globbed directories...
+[1/2] Building CXX object CMakeFiles/hash_rt.dir/src/hash_main.cpp.o
+FAILED: CMakeFiles/hash_rt.dir/src/hash_main.cpp.o 
+/usr/bin/c++ -DGFLAGS_IS_A_DLL=0 -DMALLOC_USABLE_SIZE_QUALIFIER=const -DSNMALLOC_BACKTRACE_HEADER=\"execinfo.h\" -DSNMALLOC_CHEAP_CHECKS -DSNMALLOC_HAS_LINUX_RANDOM_H -DSNMALLOC_NO_REALLOCARR -DSNMALLOC_NO_REALLOCARRAY -DSNMALLOC_PLATFORM_HAS_GETENTROPY -DSNMALLOC_USE_CXX17 -I/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include -I/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/. -I/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/_deps/snmalloc-src/src -g -mcx16 -MD -MT CMakeFiles/hash_rt.dir/src/hash_main.cpp.o -MF CMakeFiles/hash_rt.dir/src/hash_main.cpp.o.d -o CMakeFiles/hash_rt.dir/src/hash_main.cpp.o -c /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp
+In file included from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/chained_hash_rt.h:2,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h:3,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:1:
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h: In instantiation of ‘verona::cpp::Batch<Args>& verona::cpp::Batch<Args>::operator=(verona::cpp::Batch<Args2 ...>&&) [with OtherArgs = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; Args = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’:
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h:257:13:   required from ‘void verona::cpp::Batch<Args>::add_batch(verona::cpp::Batch<Args2 ...>&&) [with Args2 = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; Args = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/chained_hash_rt.h:155:36:   required from here
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h:241:20: error: no match for ‘operator=’ (operand types are ‘std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >’ and ‘std::remove_reference<std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >&>::type’ {aka ‘std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >’})
+  241 |         when_batch = std::move(other.when_batch);
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/11/functional:54,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../object/../debug/../ds/barrier.h:14,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../object/../debug/../ds/asymlock.h:4,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../object/../debug/logging.h:26,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../object/object.h:5,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/behaviourcore.h:6,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/behaviour.h:5,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h:5,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/chained_hash_rt.h:2,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h:3,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:1:
+/usr/include/c++/11/tuple:921:9: note: candidate: ‘template<class ... _UElements> std::__enable_if_t<__assignable<const _UElements& ...>(), std::tuple<_Elements>&> std::tuple<_Elements>::operator=(const std::tuple<_Args1 ...>&) [with _UElements = {_UElements ...}; _Elements = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+  921 |         operator=(const tuple<_UElements...>& __in)
+      |         ^~~~~~~~
+/usr/include/c++/11/tuple:921:9: note:   template argument deduction/substitution failed:
+/usr/include/c++/11/tuple: In substitution of ‘template<class ... _UElements> std::__enable_if_t<__assignable<const _UElements& ...>(), std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >&> std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >::operator=<_UElements ...>(const std::tuple<_Tps ...>&) [with _UElements = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’:
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h:241:20:   required from ‘verona::cpp::Batch<Args>& verona::cpp::Batch<Args>::operator=(verona::cpp::Batch<Args2 ...>&&) [with OtherArgs = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; Args = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h:257:13:   required from ‘void verona::cpp::Batch<Args>::add_batch(verona::cpp::Batch<Args2 ...>&&) [with Args2 = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; Args = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/chained_hash_rt.h:155:36:   required from here
+/usr/include/c++/11/tuple:920:57: error: no matching function for call to ‘std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >::__assignable<const verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >&, const verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >&>()’
+  920 |         __enable_if_t<__assignable<const _UElements&...>(), tuple&>
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/usr/include/c++/11/tuple:643:9: note: candidate: ‘template<class ... _UElements> static constexpr std::__enable_if_t<(sizeof... (_UElements) == sizeof... (_Elements)), bool> std::tuple<_Elements>::__assignable() [with _UElements = {_UElements ...}; _Elements = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+  643 |         __assignable()
+      |         ^~~~~~~~~~~~
+/usr/include/c++/11/tuple:643:9: note:   template argument deduction/substitution failed:
+In file included from /usr/include/c++/11/bits/move.h:57,
+                 from /usr/include/c++/11/bits/stl_pair.h:59,
+                 from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/string:40,
+                 from /usr/local/include/gflags/gflags.h:81,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h:2,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:1:
+/usr/include/c++/11/type_traits: In substitution of ‘template<bool _Cond, class _Tp> using __enable_if_t = typename std::enable_if::type [with bool _Cond = false; _Tp = bool]’:
+/usr/include/c++/11/tuple:643:2:   required by substitution of ‘template<class ... _UElements> static constexpr std::__enable_if_t<(sizeof... (_UElements) == 1), bool> std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >::__assignable<_UElements ...>() [with _UElements = {const verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >&, const verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >&}]’
+/usr/include/c++/11/tuple:920:50:   required by substitution of ‘template<class ... _UElements> std::__enable_if_t<__assignable<const _UElements& ...>(), std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >&> std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >::operator=<_UElements ...>(const std::tuple<_Tps ...>&) [with _UElements = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h:241:20:   required from ‘verona::cpp::Batch<Args>& verona::cpp::Batch<Args>::operator=(verona::cpp::Batch<Args2 ...>&&) [with OtherArgs = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; Args = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h:257:13:   required from ‘void verona::cpp::Batch<Args>::add_batch(verona::cpp::Batch<Args2 ...>&&) [with Args2 = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; Args = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/chained_hash_rt.h:155:36:   required from here
+/usr/include/c++/11/type_traits:2205:11: error: no type named ‘type’ in ‘struct std::enable_if<false, bool>’
+ 2205 |     using __enable_if_t = typename enable_if<_Cond, _Tp>::type;
+      |           ^~~~~~~~~~~~~
+In file included from /usr/include/c++/11/functional:54,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../object/../debug/../ds/barrier.h:14,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../object/../debug/../ds/asymlock.h:4,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../object/../debug/logging.h:26,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../object/object.h:5,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/behaviourcore.h:6,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/behaviour.h:5,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h:5,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/chained_hash_rt.h:2,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h:3,
+                 from /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:1:
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h: In instantiation of ‘verona::cpp::Batch<Args>& verona::cpp::Batch<Args>::operator=(verona::cpp::Batch<Args2 ...>&&) [with OtherArgs = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; Args = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’:
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h:257:13:   required from ‘void verona::cpp::Batch<Args>::add_batch(verona::cpp::Batch<Args2 ...>&&) [with Args2 = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; Args = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/chained_hash_rt.h:155:36:   required from here
+/usr/include/c++/11/tuple:931:9: note: candidate: ‘template<class ... _UElements> std::__enable_if_t<__assignable<_UElements ...>(), std::tuple<_Elements>&> std::tuple<_Elements>::operator=(std::tuple<_Args1 ...>&&) [with _UElements = {_UElements ...}; _Elements = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+  931 |         operator=(tuple<_UElements...>&& __in)
+      |         ^~~~~~~~
+/usr/include/c++/11/tuple:931:9: note:   template argument deduction/substitution failed:
+/usr/include/c++/11/tuple: In substitution of ‘template<class ... _UElements> std::__enable_if_t<__assignable<_UElements ...>(), std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >&> std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >::operator=<_UElements ...>(std::tuple<_Tps ...>&&) [with _UElements = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’:
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h:241:20:   required from ‘verona::cpp::Batch<Args>& verona::cpp::Batch<Args>::operator=(verona::cpp::Batch<Args2 ...>&&) [with OtherArgs = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; Args = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h:257:13:   required from ‘void verona::cpp::Batch<Args>::add_batch(verona::cpp::Batch<Args2 ...>&&) [with Args2 = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; Args = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/chained_hash_rt.h:155:36:   required from here
+/usr/include/c++/11/tuple:930:50: error: no matching function for call to ‘std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >::__assignable<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >()’
+  930 |         __enable_if_t<__assignable<_UElements...>(), tuple&>
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/usr/include/c++/11/tuple:643:9: note: candidate: ‘template<class ... _UElements> static constexpr std::__enable_if_t<(sizeof... (_UElements) == sizeof... (_Elements)), bool> std::tuple<_Elements>::__assignable() [with _UElements = {_UElements ...}; _Elements = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+  643 |         __assignable()
+      |         ^~~~~~~~~~~~
+/usr/include/c++/11/tuple:643:9: note:   template argument deduction/substitution failed:
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h: In instantiation of ‘verona::cpp::Batch<Args>& verona::cpp::Batch<Args>::operator=(verona::cpp::Batch<Args2 ...>&&) [with OtherArgs = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; Args = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’:
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/when.h:257:13:   required from ‘void verona::cpp::Batch<Args>::add_batch(verona::cpp::Batch<Args2 ...>&&) [with Args2 = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; Args = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}]’
+/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/chained_hash_rt.h:155:36:   required from here
+/usr/include/c++/11/tuple:898:7: note: candidate: ‘std::tuple<_Elements>& std::tuple<_Elements>::operator=(typename std::conditional<__assignable<const _Elements& ...>(), const std::tuple<_Elements>&, const std::__nonesuch&>::type) [with _Elements = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; typename std::conditional<__assignable<const _Elements& ...>(), const std::tuple<_Elements>&, const std::__nonesuch&>::type = const std::__nonesuch&]’
+  898 |       operator=(typename conditional<__assignable<const _Elements&...>(),
+      |       ^~~~~~~~
+/usr/include/c++/11/tuple:900:63: note:   no known conversion for argument 1 from ‘std::remove_reference<std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >&>::type’ {aka ‘std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >’} to ‘std::conditional<false, const std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >&, const std::__nonesuch&>::type’ {aka ‘const std::__nonesuch&’}
+  898 |       operator=(typename conditional<__assignable<const _Elements&...>(),
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  899 |                                      const tuple&,
+      |                                      ~~~~~~~~~~~~~             
+  900 |                                      const __nonesuch&>::type __in)
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/usr/include/c++/11/tuple:909:7: note: candidate: ‘std::tuple<_Elements>& std::tuple<_Elements>::operator=(typename std::conditional<__assignable<_Elements ...>(), std::tuple<_Elements>&&, std::__nonesuch&&>::type) [with _Elements = {verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >}; typename std::conditional<__assignable<_Elements ...>(), std::tuple<_Elements>&&, std::__nonesuch&&>::type = std::__nonesuch&&]’
+  909 |       operator=(typename conditional<__assignable<_Elements...>(),
+      |       ^~~~~~~~
+/usr/include/c++/11/tuple:911:58: note:   no known conversion for argument 1 from ‘std::remove_reference<std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >&>::type’ {aka ‘std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> >, verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >’} to ‘std::conditional<false, std::tuple<verona::cpp::When<ExtendibleHash::insert_batch(char**, char**, int)::<lambda(verona::cpp::acquired_cown<Bucket>)>, verona::cpp::Access<Bucket> > >&&, std::__nonesuch&&>::type’ {aka ‘std::__nonesuch&&’}
+  909 |       operator=(typename conditional<__assignable<_Elements...>(),
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  910 |                                      tuple&&,
+      |                                      ~~~~~~~~             
+  911 |                                      __nonesuch&&>::type __in)
+      |                                      ~~~~~~~~~~~~~~~~~~~~^~~~
+ninja: build stopped: subcommand failed.
+~/Myhash_boc/Hash_rt/script/run_hash_rt_parl
+~/Myhash_boc/Hash_rt/build ~/Myhash_boc/Hash_rt/script/run_hash_rt_parl

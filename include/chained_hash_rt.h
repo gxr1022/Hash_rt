@@ -152,10 +152,9 @@ public:
 
         for (int i = 1; i < batch_size; i++)
         {
-            combined_when +
-                    when(directory[hashFunction(keys[i], dirCapacity)])
+            combined_when.add_batch(when(directory[hashFunction(keys[i], dirCapacity)])
                         << [=](acquired_cown<Bucket> bucketAcq)
-                    { bucketAcq->insert(keys[i], values[i]); };
+                    { bucketAcq->insert(keys[i], values[i]); });
         }
         return;
     }

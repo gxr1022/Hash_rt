@@ -68,7 +68,7 @@ void BenchmarkTest::runBenchmark()
     }
 
     // start worker threads
-    if (server->is_first_batch.load())
+    // if (server->is_first_batch.load())
     {
         // auto run_start = std::chrono::steady_clock::now();
         sched.run();
