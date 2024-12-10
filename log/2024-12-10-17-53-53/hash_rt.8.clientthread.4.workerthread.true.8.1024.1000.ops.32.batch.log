@@ -1,0 +1,1451 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:1805672204
+[New Thread 0x7fbfdf3e8640 (LWP 1116414)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1116415)]
+[New Thread 0x7fbfde3e6640 (LWP 1116416)]
+[New Thread 0x7fbfddbe5640 (LWP 1116417)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 710
+Acquire phase duration: 760
+Exchange duration: 410
+Release phase duration: 90
+Process phase duration: 760
+BehaviourCore::schedule_many1
+Prepare phase duration: 180
+Acquire phase duration: 440
+Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 440
+Exchange duration: 300
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 530
+Exchange duration: 390
+Release phase duration: 40
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 420
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 260
+Exchange duration: 110
+Release phase duration: 40
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 540
+Exchange duration: 400
+Release phase duration: 40
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 540
+Exchange duration: 400
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 500
+Exchange duration: 360
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 380
+Exchange duration: 260
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 400
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 380
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 380
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 610
+Exchange duration: 490
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 430
+Exchange duration: 300
+Release phase duration: 40
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 670
+Exchange duration: 540
+Release phase duration: 40
+Process phase duration: 180
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 500
+Exchange duration: 370
+Release phase duration: 40
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 420
+Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 520
+Exchange duration: 400
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 410
+Exchange duration: 270
+Release phase duration: 70
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 430
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 530
+Exchange duration: 390
+Release phase duration: 40
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 490
+Exchange duration: 360
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 500
+Exchange duration: 370
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 400
+Exchange duration: 260
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 500
+Exchange duration: 370
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 280
+Exchange duration: 150
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 360
+Exchange duration: 230
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 360
+Exchange duration: 230
+Release phase duration: 60
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 360
+Exchange duration: 230
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 260
+Exchange duration: 130
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 440
+Exchange duration: 310
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 380
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 520
+Exchange duration: 390
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 410
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 530
+Exchange duration: 380
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 410
+Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 390
+Exchange duration: 250
+Release phase duration: 70
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 380
+Exchange duration: 250
+Release phase duration: 70
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 420
+Exchange duration: 290
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 390
+Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 310
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 420
+Exchange duration: 290
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 400
+Exchange duration: 270
+Release phase duration: 70
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 380
+Exchange duration: 240
+Release phase duration: 50
+Process phase duration: 180
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 360
+Exchange duration: 220
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 360
+Exchange duration: 230
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 360
+Exchange duration: 240
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 370
+Exchange duration: 230
+Release phase duration: 50
+Process phase duration: 180
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 370
+Exchange duration: 260
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 390
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 410
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 400
+Exchange duration: 270
+Release phase duration: 60
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 380
+Exchange duration: 250
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 420
+Exchange duration: 280
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 410
+Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 420
+Exchange duration: 290
+Release phase duration: 60
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 430
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 410
+Exchange duration: 280
+Release phase duration: 70
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 500
+Exchange duration: 350
+Release phase duration: 60
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 500
+Exchange duration: 370
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 390
+Exchange duration: 260
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 420
+Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 390
+Exchange duration: 250
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 380
+Exchange duration: 230
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 400
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 410
+Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 430
+Exchange duration: 280
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 380
+Exchange duration: 240
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 370
+Exchange duration: 230
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 470
+Exchange duration: 330
+Release phase duration: 40
+Process phase duration: 200
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 370
+Exchange duration: 240
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 400
+Exchange duration: 280
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 380
+Exchange duration: 220
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 360
+Exchange duration: 220
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 510
+Exchange duration: 380
+Release phase duration: 40
+Process phase duration: 450
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 370
+get work duration: 3660
+Exchange duration: 230
+get work duration: 3600
+Release phase duration: 400
+thread id: 1 Schedule work 0x7fbfe03ed7a0
+the total count of insert: 1
+Process phase duration: 180
+thread id: 2 Schedule work 0x7fbfe03ed740
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 370
+Exchange duration: 240
+Release phase duration: 380
+Process phase duration: 160
+the total count of insert: 2
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 380
+Exchange duration: 260
+Release phase duration: 70
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 400
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 440
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 400
+Exchange duration: 260
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 960
+Exchange duration: 800
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 360
+Exchange duration: 220
+thread id: 2 work duration: 58760
+thread id: 1 work duration: 99700
+Release phase duration: 680
+completed_count_last_batch: 63
+Process phase duration: 420
+get work duration: 630
+BehaviourCore::schedule_many1
+completed_count_last_batch: 62
+thread id: 2 Schedule work 0x7fbfe03ede00
+Prepare phase duration: 130
+the total count of insert: 3
+Acquire phase duration: 390
+Exchange duration: 250
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+get work duration: 890
+thread id: 2 work duration: 22710
+Acquire phase duration: 740
+thread id: 1 Schedule work 0x7fbfe03edf20
+completed_count_last_batch: 61
+the total count of insert: 4
+get work duration: 740
+thread id: 2 Schedule work 0x7fbfe03edec0
+thread id: 1 work duration: 4890
+the total count of insert: 5
+Exchange duration: 280
+completed_count_last_batch: 60
+get work duration: 180
+thread id: 2 work duration: 13680
+completed_count_last_batch: 59
+thread id: 1 Schedule work 0x7fbfe03ede60
+the total count of insert: 6
+get work duration: 470
+thread id: 2 Schedule work 0x7fbfe03edd40
+thread id: 1 work duration: 2570
+Release phase duration: 330
+completed_count_last_batch: 58
+Process phase duration: 520
+the total count of insert: 7
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 410
+Exchange duration: 270
+Release phase duration: 50
+thread id: 2 work duration: 46489
+Process phase duration: 620
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+completed_count_last_batch: 57
+get work duration: 150
+get work duration: 810
+thread id: 2 Schedule work 0x7fbfe03edf80
+the total count of insert: 8
+Acquire phase duration: 260
+thread id: 2 work duration: 3030
+completed_count_last_batch: 56
+Exchange duration: 120
+thread id: 1 Schedule work 0x7fbfe03edda0
+the total count of insert: 9
+Release phase duration: 720
+thread id: 1 work duration: 6520
+get work duration: 410
+thread id: 2 Schedule work 0x7fbfe03edc80
+the total count of insert: 10
+Process phase duration: 140
+thread id: 2 work duration: 5070
+completed_count_last_batch: 54
+completed_count_last_batch: 55
+get work duration: 1200
+thread id: 2 Schedule work 0x7fbfe03ee040
+the total count of insert: 11
+get work duration: 470
+thread id: 2 work duration: 2450
+BehaviourCore::schedule_many1
+thread id: 1 Schedule work 0x7fbfe03edfe0
+the total count of insert: 12
+completed_count_last_batch: 53
+get work duration: 660
+thread id: 1 work duration: 14260
+thread id: 2 Schedule work 0x7fbfe03edbc0
+Prepare phase duration: 130
+completed_count_last_batch: 52
+get work duration: 520
+Acquire phase duration: 300
+the total count of insert: 13
+Exchange duration: 130
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+thread id: 1 Schedule work 0x7fbfe03edce0
+the total count of insert: 14
+thread id: 1 work duration: 3230
+completed_count_last_batch: 51
+Prepare phase duration: 130
+Acquire phase duration: 720
+Exchange duration: 570
+get work duration: 780
+thread id: 2 work duration: 26010
+completed_count_last_batch: 50
+thread id: 1 Schedule work 0x7fbfe03ee0a0
+the total count of insert: 15
+get work duration: 1230
+thread id: 2 Schedule work 0x7fbfe03edb00
+Release phase duration: 560
+the total count of insert: 16
+Process phase duration: 410
+thread id: 1 work duration: 2410
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 670
+thread id: 2 work duration: 25020
+completed_count_last_batch: 48
+Exchange duration: 250
+completed_count_last_batch: 49
+Release phase duration: 50
+Process phase duration: 150
+get work duration: 850
+thread id: 2 Schedule work 0x7fbfe03ee100
+the total count of insert: 17
+get work duration: 280
+thread id: 1 Schedule work 0x7fbfe03ee160
+thread id: 2 work duration: 2310
+the total count of insert: 18
+BehaviourCore::schedule_many1
+completed_count_last_batch: 47
+get work duration: 490
+Prepare phase duration: 130
+thread id: 2 Schedule work 0x7fbfe03eda40
+thread id: 1 work duration: 9780
+the total count of insert: 19
+completed_count_last_batch: 46
+Acquire phase duration: 880
+get work duration: 130
+thread id: 2 work duration: 4250
+completed_count_last_batch: 45
+get work duration: 440
+thread id: 1 Schedule work 0x7fbfe03edc20
+the total count of insert: 20
+thread id: 2 Schedule work 0x7fbfe03ed980
+thread id: 1 work duration: 2670
+Exchange duration: 420
+completed_count_last_batch: 44
+the total count of insert: 21
+Release phase duration: 90
+get work duration: 130
+Process phase duration: 160
+thread id: 1 Schedule work 0x7fbfe03edb60
+thread id: 2 work duration: 4610
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+the total count of insert: 22
+completed_count_last_batch: 43
+get work duration: 1080
+thread id: 2 Schedule work 0x7fbfe03ee1c0
+Acquire phase duration: 390
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 140
+thread id: 1 work duration: 24660
+completed_count_last_batch: 42
+get work duration: 770
+BehaviourCore::schedule_many1
+thread id: 1 Schedule work 0x7fbfe03ee220
+the total count of insert: 23
+Prepare phase duration: 130
+the total count of insert: 24
+Acquire phase duration: 700
+Exchange duration: 230
+thread id: 2 work duration: 26310
+thread id: 1 work duration: 22860
+completed_count_last_batch: 41
+completed_count_last_batch: 40
+get work duration: 430
+get work duration: 140
+thread id: 1 Schedule work 0x7fbfe03edaa0
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 400
+Exchange duration: 280
+thread id: 2 Schedule work 0x7fbfe03ed8c0
+Release phase duration: 40
+Process phase duration: 140
+the total count of insert: 26
+thread id: 2 work duration: 5740
+completed_count_last_batch: 39
+get work duration: 410
+thread id: 2 Schedule work 0x7fbfe03ee280
+the total count of insert: 27
+the total count of insert: 25
+BehaviourCore::schedule_many1
+thread id: 2 work duration: 3240
+completed_count_last_batch: 38
+Prepare phase duration: 140
+Acquire phase duration: 730
+thread id: 1 work duration: 56590
+get work duration: 790
+thread id: 2 Schedule work 0x7fbfe03ed800
+the total count of insert: 28
+completed_count_last_batch: 37
+thread id: 2 work duration: 3500
+Exchange duration: 280
+get work duration: 510
+Release phase duration: 90
+Process phase duration: 440
+completed_count_last_batch: 36
+BehaviourCore::schedule_many1
+thread id: 1 Schedule work 0x7fbfe03ee2e0
+Prepare phase duration: 140
+Acquire phase duration: 730
+Exchange duration: 270
+the total count of insert: 29
+get work duration: 1050
+thread id: 2 Schedule work 0x7fbfe03ee340
+the total count of insert: 30
+thread id: 1 work duration: 9230
+thread id: 2 work duration: 2490
+completed_count_last_batch: 34
+Release phase duration: 50
+get work duration: 160
+completed_count_last_batch: 35
+thread id: 2 Schedule work 0x7fbfe03ed680
+get work duration: 580
+the total count of insert: 31
+thread id: 1 Schedule work 0x7fbfe03ed9e0
+Process phase duration: 140
+the total count of insert: 32
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 250
+Exchange duration: 130
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+thread id: 2 work duration: 8520
+thread id: 1 work duration: 36390
+Prepare phase duration: 130
+completed_count_last_batch: 33
+completed_count_last_batch: 32
+Acquire phase duration: 400
+get work duration: 830
+thread id: 1 Schedule work 0x7fbfe03ee3a0
+the total count of insert: 33
+thread id: 1 work duration: 2590
+completed_count_last_batch: 31
+Exchange duration: 240
+get work duration: 170
+thread id: 1 Schedule work 0x7fbfe03ed920
+the total count of insert: 34
+thread id: 1 work duration: 2580
+completed_count_last_batch: 30
+Release phase duration: 780
+Process phase duration: 330
+get work duration: 750
+thread id: 2 Schedule work 0x7fbfe03ee400
+the total count of insert: 35
+get work duration: 160
+BehaviourCore::schedule_many1
+thread id: 2 work duration: 2850
+thread id: 1 Schedule work 0x7fbfe03ed860
+the total count of insert: 36
+thread id: 1 work duration: 2670
+completed_count_last_batch: 29
+get work duration: 420
+completed_count_last_batch: 28
+thread id: 1 Schedule work 0x7fbfe03ee460
+the total count of insert: 37
+Prepare phase duration: 190
+thread id: 1 work duration: 2310
+completed_count_last_batch: 27
+Acquire phase duration: 390
+Exchange duration: 220
+get work duration: 1220
+get work duration: 140
+thread id: 2 Schedule work 0x7fbfe03ed5c0
+thread id: 1 Schedule work 0x7fbfe03ed6e0
+the total count of insert: 38
+Release phase duration: 330
+thread id: 1 work duration: 5870
+completed_count_last_batch: 26
+Process phase duration: 180
+BehaviourCore::schedule_many1
+get work duration: 540
+Prepare phase duration: 140
+Acquire phase duration: 420
+Exchange duration: 250
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+the total count of insert: 39
+thread id: 1 Schedule work 0x7fbfe03ed620
+the total count of insert: 40
+thread id: 2 work duration: 9780
+completed_count_last_batch: 25
+thread id: 1 work duration: 2460
+completed_count_last_batch: 24
+get work duration: 440
+Prepare phase duration: 140
+get work duration: 520
+thread id: 2 Schedule work 0x7fbfe03ee4c0
+Acquire phase duration: 340
+Exchange duration: 210
+Release phase duration: 40
+Process phase duration: 140
+the total count of insert: 41
+thread id: 1 Schedule work 0x7fbfe03ee520
+BehaviourCore::schedule_many1
+the total count of insert: 42
+thread id: 1 work duration: 2950
+thread id: 2 work duration: 4470
+Prepare phase duration: 130
+Acquire phase duration: 540
+completed_count_last_batch: 23
+completed_count_last_batch: 22
+get work duration: 500
+get work duration: 770
+thread id: 2 Schedule work 0x7fbfe03ee580
+thread id: 1 Schedule work 0x7fbfe03ed560
+Exchange duration: 210
+Release phase duration: 100
+the total count of insert: 43
+thread id: 1 work duration: 7200
+completed_count_last_batch: 21
+get work duration: 440
+thread id: 1 Schedule work 0x7fbfe03ed4a0
+the total count of insert: 44
+Process phase duration: 170
+the total count of insert: 45
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 380
+Exchange duration: 220
+thread id: 1 work duration: 17850
+thread id: 2 work duration: 14920
+completed_count_last_batch: 20
+completed_count_last_batch: 19
+get work duration: 430
+get work duration: 810
+thread id: 2 Schedule work 0x7fbfe03ed500
+Release phase duration: 50
+thread id: 1 Schedule work 0x7fbfe03ee5e0
+the total count of insert: 46
+Process phase duration: 440
+BehaviourCore::schedule_many1
+the total count of insert: 47
+thread id: 1 work duration: 3940
+completed_count_last_batch: 18
+thread id: 2 work duration: 5920
+get work duration: 510
+Prepare phase duration: 160
+thread id: 1 Schedule work 0x7fbfe03ed3e0
+the total count of insert: 48
+completed_count_last_batch: 17
+Acquire phase duration: 390
+Exchange duration: 240
+Release phase duration: 50
+get work duration: 430
+thread id: 2 Schedule work 0x7fbfe03ee640
+the total count of insert: 49
+thread id: 1 work duration: 25510
+completed_count_last_batch: 16
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 350
+get work duration: 790
+Exchange duration: 210
+Release phase duration: 310
+Process phase duration: 160
+BehaviourCore::schedule_many1
+thread id: 2 work duration: 2380
+thread id: 1 Schedule work 0x7fbfe03ed320
+Prepare phase duration: 140
+Acquire phase duration: 350
+Exchange duration: 220
+Release phase duration: 50
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 340
+completed_count_last_batch: 15
+the total count of insert: 50
+get work duration: 740
+thread id: 2 Schedule work 0x7fbfe03ee700
+thread id: 1 work duration: 4450
+the total count of insert: 51
+Exchange duration: 220
+Release phase duration: 50
+Process phase duration: 180
+completed_count_last_batch: 14
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+get work duration: 610
+thread id: 2 work duration: 21610
+thread id: 1 Schedule work 0x7fbfe03ee760
+the total count of insert: 52
+completed_count_last_batch: 13
+get work duration: 490
+thread id: 1 work duration: 3030
+completed_count_last_batch: 12
+get work duration: 460
+thread id: 2 Schedule work 0x7fbfe03ee7c0
+Acquire phase duration: 670
+the total count of insert: 53
+thread id: 2 work duration: 7080
+thread id: 1 Schedule work 0x7fbfe03ee6a0
+Exchange duration: 220
+completed_count_last_batch: 11
+Release phase duration: 300
+get work duration: 760
+Process phase duration: 170
+thread id: 2 Schedule work 0x7fbfe03ed440
+the total count of insert: 54
+the total count of insert: 55
+thread id: 2 work duration: 2250
+completed_count_last_batch: 10
+thread id: 1 work duration: 22420
+get work duration: 400
+completed_count_last_batch: 9
+thread id: 2 Schedule work 0x7fbfe03ed380
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 360
+Exchange duration: 220
+the total count of insert: 56
+Release phase duration: 60
+get work duration: 700
+thread id: 2 work duration: 8920
+thread id: 1 Schedule work 0x7fbfe03ee820
+the total count of insert: 57
+completed_count_last_batch: 8
+Process phase duration: 150
+get work duration: 1110
+thread id: 2 Schedule work 0x7fbfe03ed2c0
+the total count of insert: 58
+thread id: 1 work duration: 2300
+thread id: 2 work duration: 3320
+completed_count_last_batch: 7
+completed_count_last_batch: 6
+get work duration: 810
+BehaviourCore::schedule_many1
+thread id: 2 Schedule work 0x7fbfe03ee880
+the total count of insert: 59
+Prepare phase duration: 140
+Acquire phase duration: 270
+Exchange duration: 100
+Release phase duration: 40
+Process phase duration: 150
+get work duration: 470
+thread id: 1 Schedule work 0x7fbfe03ed260
+the total count of insert: 60
+BehaviourCore::schedule_many1
+thread id: 1 work duration: 3260
+thread id: 2 work duration: 27990
+completed_count_last_batch: 5
+get work duration: 430
+thread id: 1 Schedule work 0x7fbfe03ee8e0
+completed_count_last_batch: 4
+the total count of insert: 61
+get work duration: 430
+Prepare phase duration: 130
+thread id: 2 Schedule work 0x7fbfe03ed200
+the total count of insert: 62
+thread id: 1 work duration: 12420
+completed_count_last_batch: 3
+thread id: 2 work duration: 7010
+completed_count_last_batch: 2
+get work duration: 520
+Acquire phase duration: 380
+Exchange duration: 240
+Release phase duration: 40
+get work duration: 1100
+thread id: 2 Schedule work 0x7fbfe03ed140
+the total count of insert: 63
+Process phase duration: 140
+thread id: 1 Schedule work 0x7fbfe03ed1a0
+the total count of insert: 64
+thread id: 1 work duration: 3050
+completed_count_last_batch: 1
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+thread id: 2 work duration: 2650
+Acquire phase duration: 380
+completed_count_last_batch: 0
+get work duration: 460
+Exchange duration: 250
+thread id: 1 Schedule work 0x7fbfe03ed0e0
+the total count of insert: 65
+Release phase duration: 50
+Process phase duration: 160
+thread id: 1 work duration: 25820
+completed_count_last_batch: 18446744073709551615
+get work duration: 730
+get work duration: 410
+BehaviourCore::schedule_many1
+thread id: 1 Schedule work 0x7fbfe03ee9a0
+the total count of insert: 66
+thread id: 2 Schedule work 0x7fbfe03ee940
+Prepare phase duration: 140
+the total count of insert: 67
+thread id: 2 work duration: 6830
+completed_count_last_batch: 18446744073709551614
+Acquire phase duration: 690
+get work duration: 420
+thread id: 1 work duration: 33000
+completed_count_last_batch: 18446744073709551613
+get work duration: 750
+thread id: 1 Schedule work 0x7fbfe03ed020
+thread id: 2 Schedule work 0x7fbfe03ed080
+the total count of insert: 69
+Exchange duration: 240
+thread id: 2 work duration: 6080
+completed_count_last_batch: 18446744073709551612
+Release phase duration: 60
+the total count of insert: 68
+get work duration: 400
+Process phase duration: 180
+thread id: 2 Schedule work 0x7fbfe03ecfc0
+the total count of insert: 70
+thread id: 1 work duration: 32409
+thread id: 2 work duration: 3950
+completed_count_last_batch: 18446744073709551610
+completed_count_last_batch: 18446744073709551611
+BehaviourCore::schedule_many1
+get work duration: 1020
+Prepare phase duration: 140
+Acquire phase duration: 380
+Exchange duration: 240
+get work duration: 520
+thread id: 2 Schedule work 0x7fbfe03eea00
+the total count of insert: 71
+thread id: 1 Schedule work 0x7fbfe03ecf60
+Release phase duration: 350
+thread id: 2 work duration: 6110
+the total count of insert: 72
+completed_count_last_batch: 18446744073709551609
+Process phase duration: 200
+BehaviourCore::schedule_many1
+thread id: 1 work duration: 16100
+Prepare phase duration: 130
+get work duration: 410
+Acquire phase duration: 1120
+completed_count_last_batch: 18446744073709551608
+thread id: 2 Schedule work 0x7fbfe03ecf00
+the total count of insert: 73
+get work duration: 750
+thread id: 2 work duration: 5280
+Exchange duration: 460
+thread id: 1 Schedule work 0x7fbfe03eea60
+the total count of insert: 74
+Release phase duration: 50
+completed_count_last_batch: 18446744073709551607
+get work duration: 1070
+thread id: 1 work duration: 12990
+thread id: 2 Schedule work 0x7fbfe03ece40
+Process phase duration: 450
+the total count of insert: 75
+completed_count_last_batch: 18446744073709551606
+thread id: 2 work duration: 7030
+get work duration: 170
+completed_count_last_batch: 18446744073709551605
+get work duration: 730
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+thread id: 1 Schedule work 0x7fbfe03ecea0
+Acquire phase duration: 370
+thread id: 2 Schedule work 0x7fbfe03eeac0
+the total count of insert: 76
+thread id: 2 work duration: 5210
+the total count of insert: 77
+Exchange duration: 240
+Release phase duration: 330
+Process phase duration: 140
+completed_count_last_batch: 18446744073709551604
+thread id: 1 work duration: 10120
+get work duration: 1100
+thread id: 2 Schedule work 0x7fbfe03ecd80
+the total count of insert: 78
+completed_count_last_batch: 18446744073709551603
+thread id: 2 work duration: 7560
+completed_count_last_batch: 18446744073709551602
+get work duration: 450
+BehaviourCore::schedule_many1
+get work duration: 760
+thread id: 1 Schedule work 0x7fbfe03eeb20
+thread id: 2 Schedule work 0x7fbfe03eccc0
+Prepare phase duration: 150
+the total count of insert: 80
+Acquire phase duration: 870
+the total count of insert: 79
+thread id: 1 work duration: 11220
+completed_count_last_batch: 18446744073709551601
+get work duration: 130
+thread id: 1 Schedule work 0x7fbfe03ecde0
+the total count of insert: 81
+thread id: 2 work duration: 16690
+completed_count_last_batch: 18446744073709551600
+thread id: 1 work duration: 6980
+Exchange duration: 430
+completed_count_last_batch: 18446744073709551599
+Release phase duration: 540
+Process phase duration: 170
+get work duration: 520
+get work duration: 430
+BehaviourCore::schedule_many1
+thread id: 2 Schedule work 0x7fbfe03ecc00
+thread id: 1 Schedule work 0x7fbfe03ecd20
+the total count of insert: 82
+the total count of insert: 83
+thread id: 2 work duration: 5630
+Prepare phase duration: 130
+thread id: 1 work duration: 9950
+completed_count_last_batch: 18446744073709551598
+get work duration: 490
+Acquire phase duration: 670
+thread id: 2 Schedule work 0x7fbfe03eeb80
+completed_count_last_batch: 18446744073709551597
+get work duration: 170
+thread id: 1 Schedule work 0x7fbfe03ecc60
+the total count of insert: 84
+thread id: 1 work duration: 2570
+completed_count_last_batch: 18446744073709551596
+get work duration: 460
+thread id: 1 Schedule work 0x7fbfe03ecba0
+Exchange duration: 240
+Release phase duration: 50
+the total count of insert: 85
+the total count of insert: 86
+thread id: 1 work duration: 19110
+thread id: 2 work duration: 25610
+Process phase duration: 170
+completed_count_last_batch: 18446744073709551595
+get work duration: 440
+completed_count_last_batch: 18446744073709551594
+thread id: 1 Schedule work 0x7fbfe03ecae0
+the total count of insert: 87
+thread id: 1 work duration: 4990
+completed_count_last_batch: 18446744073709551593
+BehaviourCore::schedule_many1
+get work duration: 760
+get work duration: 740
+thread id: 2 Schedule work 0x7fbfe03ecb40
+the total count of insert: 88
+thread id: 1 Schedule work 0x7fbfe03eebe0
+thread id: 2 work duration: 3830
+Prepare phase duration: 130
+the total count of insert: 89
+completed_count_last_batch: 18446744073709551592
+get work duration: 480
+Acquire phase duration: 680
+thread id: 1 work duration: 14540
+completed_count_last_batch: 18446744073709551591
+thread id: 2 Schedule work 0x7fbfe03eca80
+Exchange duration: 250
+get work duration: 770
+the total count of insert: 90
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+thread id: 2 work duration: 14080
+completed_count_last_batch: 18446744073709551590
+get work duration: 450
+thread id: 2 Schedule work 0x7fbfe03eec40
+thread id: 1 Schedule work 0x7fbfe03eca20
+Prepare phase duration: 130
+Acquire phase duration: 380
+the total count of insert: 91
+Exchange duration: 240
+Release phase duration: 410
+thread id: 2 work duration: 16300
+Process phase duration: 430
+the total count of insert: 92
+completed_count_last_batch: 18446744073709551589
+thread id: 1 work duration: 11620
+completed_count_last_batch: 18446744073709551588
+get work duration: 420
+get work duration: 710
+thread id: 2 Schedule work 0x7fbfe03ec9c0
+the total count of insert: 93
+thread id: 2 work duration: 2640
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+thread id: 1 Schedule work 0x7fbfe03eeca0
+the total count of insert: 94
+thread id: 1 work duration: 3030
+completed_count_last_batch: 18446744073709551587
+Acquire phase duration: 360
+completed_count_last_batch: 18446744073709551586
+get work duration: 460
+get work duration: 440
+thread id: 2 Schedule work 0x7fbfe03ec900
+Exchange duration: 200
+the total count of insert: 95
+thread id: 1 Schedule work 0x7fbfe03ec960
+the total count of insert: 96
+thread id: 1 work duration: 2970
+completed_count_last_batch: 18446744073709551585
+Release phase duration: 40
+thread id: 2 work duration: 23240
+completed_count_last_batch: 18446744073709551584
+Process phase duration: 150
+BehaviourCore::schedule_many1
+get work duration: 390
+get work duration: 770
+Prepare phase duration: 130
+thread id: 2 Schedule work 0x7fbfe03eed00
+thread id: 1 Schedule work 0x7fbfe03ec8a0
+the total count of insert: 97
+the total count of insert: 98
+thread id: 1 work duration: 2910
+completed_count_last_batch: 18446744073709551583
+get work duration: 440
+thread id: 1 Schedule work 0x7fbfe03ec7e0
+the total count of insert: 99
+Acquire phase duration: 390
+thread id: 2 work duration: 12410
+Exchange duration: 250
+Release phase duration: 50
+Process phase duration: 150
+thread id: 1 work duration: 5420
+BehaviourCore::schedule_many1
+completed_count_last_batch: 18446744073709551582
+get work duration: 700
+thread id: 1 Schedule work 0x7fbfe03eed60
+the total count of insert: 100
+completed_count_last_batch: 18446744073709551581
+thread id: 1 work duration: 3680
+Prepare phase duration: 140
+completed_count_last_batch: 18446744073709551580
+Acquire phase duration: 660
+get work duration: 760
+get work duration: 800
+thread id: 1 Schedule work 0x7fbfe03ec720
+the total count of insert: 101
+thread id: 1 work duration: 2810
+completed_count_last_batch: 18446744073709551579
+Exchange duration: 210
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+thread id: 2 Schedule work 0x7fbfe03ec840
+Prepare phase duration: 130
+get work duration: 420
+Acquire phase duration: 690
+thread id: 1 Schedule work 0x7fbfe03ec660
+the total count of insert: 102
+thread id: 2 work duration: 3220
+Exchange duration: 540
+Release phase duration: 40
+Process phase duration: 180
+completed_count_last_batch: 18446744073709551578
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+the total count of insert: 103
+get work duration: 850
+thread id: 2 Schedule work 0x7fbfe03eedc0
+thread id: 1 work duration: 8210
+completed_count_last_batch: 18446744073709551577
+Acquire phase duration: 410
+Exchange duration: 270
+Release phase duration: 50
+the total count of insert: 104
+Process phase duration: 140
+get work duration: 420
+thread id: 2 work duration: 25540
+BehaviourCore::schedule_many1
+completed_count_last_batch: 18446744073709551576
+get work duration: 440
+thread id: 2 Schedule work 0x7fbfe03eee80
+the total count of insert: 105
+thread id: 2 work duration: 2930
+completed_count_last_batch: 18446744073709551575
+Prepare phase duration: 140
+get work duration: 400
+thread id: 1 Schedule work 0x7fbfe03eee20
+the total count of insert: 106
+thread id: 2 Schedule work 0x7fbfe03ec780
+the total count of insert: 107
+thread id: 1 work duration: 6280
+completed_count_last_batch: 18446744073709551574
+Acquire phase duration: 360
+thread id: 2 work duration: 2280
+Exchange duration: 240
+Release phase duration: 380
+completed_count_last_batch: 18446744073709551573
+get work duration: 430
+thread id: 1 Schedule work 0x7fbfe03ec5a0
+the total count of insert: 108
+thread id: 1 work duration: 5100
+Process phase duration: 160
+get work duration: 480
+BehaviourCore::schedule_many1
+thread id: 2 Schedule work 0x7fbfe03ec6c0
+the total count of insert: 109
+thread id: 2 work duration: 3680
+completed_count_last_batch: 18446744073709551571
+get work duration: 430
+thread id: 2 Schedule work 0x7fbfe03ec600
+Prepare phase duration: 150
+the total count of insert: 110
+Acquire phase duration: 360
+thread id: 2 work duration: 5770
+completed_count_last_batch: 18446744073709551572
+completed_count_last_batch: 18446744073709551570
+get work duration: 1090
+thread id: 2 Schedule work 0x7fbfe03ec540
+get work duration: 800
+thread id: 1 Schedule work 0x7fbfe03eeee0
+the total count of insert: 112
+Exchange duration: 220
+thread id: 1 work duration: 3170
+completed_count_last_batch: 18446744073709551569
+Release phase duration: 80
+the total count of insert: 111
+get work duration: 430
+thread id: 1 Schedule work 0x7fbfe03ec4e0
+the total count of insert: 113
+thread id: 1 work duration: 7320
+completed_count_last_batch: 18446744073709551568
+get work duration: 780
+thread id: 1 Schedule work 0x7fbfe03ec420
+the total count of insert: 114
+thread id: 1 work duration: 2900
+completed_count_last_batch: 18446744073709551567
+Process phase duration: 150
+get work duration: 430
+thread id: 2 work duration: 25300
+thread id: 1 Schedule work 0x7fbfe03ec360
+the total count of insert: 115
+thread id: 1 work duration: 3980
+completed_count_last_batch: 18446744073709551565
+completed_count_last_batch: 18446744073709551566
+get work duration: 480
+thread id: 1 Schedule work 0x7fbfe03ec2a0
+the total count of insert: 116
+thread id: 1 work duration: 5610
+completed_count_last_batch: 18446744073709551564
+get work duration: 780
+BehaviourCore::schedule_many1
+get work duration: 500
+thread id: 2 Schedule work 0x7fbfe03eef40
+Prepare phase duration: 130
+the total count of insert: 117
+thread id: 1 Schedule work 0x7fbfe03ec1e0
+the total count of insert: 118
+thread id: 2 work duration: 9170
+completed_count_last_batch: 18446744073709551563
+thread id: 1 work duration: 5900
+get work duration: 160
+thread id: 2 Schedule work 0x7fbfe03ec480
+the total count of insert: 119
+completed_count_last_batch: 18446744073709551562
+thread id: 2 work duration: 3080
+completed_count_last_batch: 18446744073709551561
+get work duration: 1070
+get work duration: 530
+thread id: 2 Schedule work 0x7fbfe03ec3c0
+Acquire phase duration: 770
+the total count of insert: 120
+Exchange duration: 300
+thread id: 1 Schedule work 0x7fbfe03ec120
+the total count of insert: 121
+thread id: 2 work duration: 8100
+Release phase duration: 400
+thread id: 1 work duration: 4580
+completed_count_last_batch: 18446744073709551560
+completed_count_last_batch: 18446744073709551559
+get work duration: 440
+thread id: 1 Schedule work 0x7fbfe03ec060
+get work duration: 410
+the total count of insert: 122
+Process phase duration: 170
+thread id: 1 work duration: 7550
+completed_count_last_batch: 18446744073709551558
+thread id: 2 Schedule work 0x7fbfe03ec300
+get work duration: 690
+thread id: 1 Schedule work 0x7fbfe03eefa0
+the total count of insert: 123
+thread id: 1 work duration: 3460
+completed_count_last_batch: 18446744073709551557
+the total count of insert: 124
+thread id: 2 work duration: 6620
+completed_count_last_batch: 18446744073709551556
+get work duration: 1090
+thread id: 2 Schedule work 0x7fbfe03ec240
+the total count of insert: 125
+thread id: 2 work duration: 2110
+completed_count_last_batch: 18446744073709551555
+get work duration: 440
+thread id: 2 Schedule work 0x7fbfe03ec180
+the total count of insert: 126
+thread id: 2 work duration: 2160
+completed_count_last_batch: 18446744073709551554
+get work duration: 400
+thread id: 2 Schedule work 0x7fbfe03ec0c0
+the total count of insert: 127
+thread id: 2 work duration: 2480
+completed_count_last_batch: 18446744073709551553
+get work duration: 380
+thread id: 2 Schedule work 0x7fbfe03ec000
+the total count of insert: 128
+thread id: 2 work duration: 2820
+completed_count_last_batch: 18446744073709551552
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1116416, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1116381] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

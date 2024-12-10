@@ -84,6 +84,7 @@ public:
             current_batch.store(batch, std::memory_order_relaxed);
             if (!batch->requests.empty())
             {
+                size_t batch_size = batch->requests.size();
                 while (!Scheduler::get().producer_start.load())
                 {
                     std::this_thread::yield();
@@ -100,7 +101,7 @@ public:
                 {
                     std::this_thread::yield();
                 }
-                Scheduler::get().completed_count_last_batch.fetch_add(MAX_BATCH_SIZE);
+                Scheduler::get().completed_count_last_batch.fetch_add(batch_size);
 
                 batch->requests.clear();
             }
