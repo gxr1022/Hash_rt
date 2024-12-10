@@ -1,0 +1,116 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:1779213305
+[New Thread 0x7fbfdf3e8640 (LWP 1157762)]
+Starting all threads
+[New Thread 0x7fbfd73e5640 (LWP 1157763)]
+BehaviourCore::schedule_many1
+[New Thread 0x7fbfd6be4640 (LWP 1157764)]
+Prepare phase duration: 610
+Acquire phase duration: 660
+Exchange duration: 340
+Release phase duration: 100
+Process phase duration: 910
+BehaviourCore::schedule_many1
+Prepare phase duration: 180
+Acquire phase duration: 470
+Exchange duration: 340
+Release phase duration: 60
+Process phase duration: 230
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 450
+Exchange duration: 330
+Release phase duration: 40
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 440
+Exchange duration: 320
+Release phase duration: 40
+Process phase duration: 140
+[New Thread 0x7fbfd63e3640 (LWP 1157765)]
+get work duration: 550
+get work duration: 3530
+get body duration: 1150
+get body duration: 190
+run body duration: 7720
+run body duration: 5320
+release cown duration: 5100
+release cown duration: 1000
+dealloc behaviour duration: 30
+dealloc behaviour duration: 30
+dealloc work duration: 78220
+dealloc work duration: 76520
+get work duration: 540
+get body duration: 40
+run body duration: 1610
+get work duration: 230
+release cown duration: 440
+dealloc behaviour duration: 20
+dealloc work duration: 260
+get body duration: 50
+run body duration: 2000
+release cown duration: 430
+dealloc behaviour duration: 30
+dealloc work duration: 290
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1157764, futex_word=0x7fbfd6be4910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) 吧[Kb hash_server.h:88
+[?2004lBreakpoint 1 at 0x5555555b30dd: file /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h, line 88.
+[?2004h(gdb) r
+[?2004l[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) y
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:1774479028
+[New Thread 0x7fbfdf3e8640 (LWP 1159134)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1159135)]
+[New Thread 0x7fbfde3e6640 (LWP 1159136)]
+[Switching to Thread 0x7fbfdf3e8640 (LWP 1159134)]
+
+Thread 2 "hash_rt" hit Breakpoint 1, HashTableServer::scheduler_loop (this=0x55555561f290) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h:88
+warning: Source file is more recent than executable.
+88	                while (!Scheduler::get().producer_start.load())
+[?2004h[?2004l[?2004h(gdb) p [7mThreadPool<SchedulerThread>[27m[C[C[C[C[C[C[C[CThreadPool<SchedulerThread>::get().producer_start_load()
+[?2004lNo symbol "ThreadPool<SchedulerThread>" in current context.
+[?2004h(gdb) q[Kq
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1159120] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

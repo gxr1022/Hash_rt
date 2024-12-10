@@ -1,0 +1,70 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) b schedu[Kulethrea[K[K[K[K[Krthread.h:206
+[?2004lBreakpoint 1 at 0x7f6b0: file /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h, line 206.
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:1758749796
+[New Thread 0x7fbfdf3e8640 (LWP 1169532)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1169533)]
+[New Thread 0x7fbfde3e6640 (LWP 1169534)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 640
+Acquire phase duration: 730
+Exchange duration: 400
+Release phase duration: 80
+Process phase duration: 820
+BehaviourCore::schedule_many1
+Prepare phase duration: 180
+Acquire phase duration: 410
+Exchange duration: 290
+Release phase duration: 50
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 530
+Exchange duration: 400
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 410
+Exchange duration: 290
+Release phase duration: 40
+Process phase duration: 150
+[New Thread 0x7fbfddbe5640 (LWP 1169535)]
+[Switching to Thread 0x7fbfde3e6640 (LWP 1169534)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:206
+206	        while (Scheduler::get().completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) p [7mScheduler::get().completed_count_last_batch.load()[27m[C[C[C[C[C[C[C[CScheduler::get().completed_count_last_batch.load()
+[?2004lNo symbol "Scheduler" in current context.
+[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1169512] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

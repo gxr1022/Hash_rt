@@ -1,0 +1,102 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:1773079962
+[New Thread 0x7fbfdf3e8640 (LWP 1148141)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1148142)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 800
+Acquire phase duration: 770
+[New Thread 0x7fbfde3e6640 (LWP 1148143)]
+Exchange duration: 390
+Release phase duration: 170
+Process phase duration: 840
+BehaviourCore::schedule_many1
+Prepare phase duration: 290
+Acquire phase duration: 430
+Exchange duration: 270
+Release phase duration: 60
+Process phase duration: 250
+BehaviourCore::schedule_many1
+Prepare phase duration: 230
+Acquire phase duration: 530
+Exchange duration: 370
+Release phase duration: 50
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 500
+Exchange duration: 370
+Release phase duration: 40
+Process phase duration: 210
+[New Thread 0x7fbfddbe5640 (LWP 1148144)]
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1148143, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) bt
+[?2004l#0  __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1148143, 
+    futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=128, abstime=0x0, clockid=0, expected=1148143, 
+    futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7fbfde3e6910, expected=1148143, 
+    clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=128) at ./nptl/futex-internal.c:139
+#3  0x00007ffff7b94624 in __pthread_clockjoin_ex (threadid=140462044112448, thread_return=0x0, clockid=0, abstime=0x0, 
+    block=<optimized out>) at ./nptl/pthread_join_common.c:105
+#4  0x00007ffff7e232c7 in std::thread::join() () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#5  0x00005555555adacd in verona::rt::ThreadPoolBuilder::~ThreadPoolBuilder (this=0x7fffffffd920, __in_chrg=<optimized out>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/../pal/threadpoolbuilder.h:82
+#6  0x00005555555c3621 in verona::rt::ThreadPool<verona::rt::SchedulerThread>::run_with_startup<>(void (*)()) (
+    this=0x555555608ec0 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool>, 
+    startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:274
+#7  0x00005555555ba900 in verona::rt::ThreadPool<verona::rt::SchedulerThread>::run (
+    this=0x555555608ec0 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:252
+#8  0x00005555555a4207 in BenchmarkTest::runBenchmark (this=0x7fffffffdaf0)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:72
+#9  0x00005555555a49ee in main (argc=1, argv=0x7fffffffdc38) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:106
+[?2004h(gdb) info thread
+[?2004l  Id   Target Id                                     Frame 
+* 1    Thread 0x7ffff7a13300 (LWP 1148109) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, 
+    op=265, expected=1148143, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+  2    Thread 0x7fbfdf3e8640 (LWP 1148141) "hash_rt" 0x00007ffff7c06c9b in sched_yield ()
+    at ../sysdeps/unix/syscall-template.S:120
+  3    Thread 0x7fbfdebe7640 (LWP 1148142) "hash_rt" 0x00005555555b3802 in HashTableClient::submit_request (
+    this=0x7fbfd07fe040, key=0x7fbfdebe5138 "cjwigxs", 
+    value=0x7fbfdebe5140 "snttzxpjmthmwogqpaucaupedockyngcwgmcoctivsysmieqmhchdqpgmjdyqkyiibmqqdnzgytfufybylzzevuptmasxxwevcl") at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_client.h:39
+  4    Thread 0x7fbfde3e6640 (LWP 1148143) "hash_rt" 0x00007ffff7c06c9b in sched_yield ()
+    at ../sysdeps/unix/syscall-template.S:120
+  5    Thread 0x7fbfddbe5640 (LWP 1148144) "hash_rt" 0x00007ffff7c06c9b in sched_yield ()
+    at ../sysdeps/unix/syscall-template.S:120
+[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1148109] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

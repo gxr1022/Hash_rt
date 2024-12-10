@@ -1,0 +1,99 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:1841863208
+[New Thread 0x7fbfdf3e8640 (LWP 1189660)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1189661)]
+ batch_size: 4
+[New Thread 0x7fbfde3e6640 (LWP 1189662)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 830
+Acquire phase duration: 700
+Exchange duration: 390
+Release phase duration: 90
+Process phase duration: 780
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 370
+Exchange duration: 250
+Release phase duration: 70
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 490
+Exchange duration: 400
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 550
+Exchange duration: 420
+Release phase duration: 70
+Process phase duration: 150
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+[New Thread 0x7fbfddbe5640 (LWP 1189663)]
+ batch_size: 4
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 2 completed_count_last_batch: 2
+get work duration: 2510
+get work duration: 3260
+get body duration: 1320
+get body duration: 180
+run body duration: 7940
+run body duration: 5310
+release cown duration: 6660
+release cown duration: 6750
+dealloc behaviour duration: 20
+dealloc behaviour duration: 30
+dealloc work duration: 82629
+dealloc work duration: 86089
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 0
+get work duration: 450
+get work duration: 190
+get body duration: 50
+get body duration: 30
+run body duration: 1790
+release cown duration: 440
+dealloc behaviour duration: 30
+dealloc work duration: 340
+run body duration: 1470
+release cown duration: 470
+dealloc behaviour duration: 20
+dealloc work duration: 370
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1189662, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) r[Kq
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1189643] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

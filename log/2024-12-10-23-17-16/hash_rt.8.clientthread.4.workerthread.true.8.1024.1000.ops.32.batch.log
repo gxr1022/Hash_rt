@@ -1,0 +1,99 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:1763727483
+[New Thread 0x7fbfdf3e8640 (LWP 1153151)]
+Starting all threads
+[New Thread 0x7fbfd73e5640 (LWP 1153152)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 660
+Acquire phase duration: 790
+[New Thread 0x7fbfd6be4640 (LWP 1153153)]
+Exchange duration: 430
+Release phase duration: 80
+Process phase duration: 780
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 390
+Exchange duration: 290
+Release phase duration: 40
+Process phase duration: 180
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 390
+Exchange duration: 280
+Release phase duration: 50
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 470
+Exchange duration: 380
+Release phase duration: 50
+Process phase duration: 140
+[New Thread 0x7fbfd63e3640 (LWP 1153154)]
+get work duration: 3920
+get work duration: 760
+get body duration: 1250
+get body duration: 210
+run body duration: 8140
+run body duration: 4450
+release cown duration: 6010
+dealloc behaviour duration: 30
+release cown duration: 1080
+dealloc behaviour duration: 30
+dealloc work duration: 79830
+dealloc work duration: 77540
+get work duration: 190
+get body duration: 40
+get work duration: 590
+run body duration: 1750
+release cown duration: 380
+dealloc behaviour duration: 30
+dealloc work duration: 260
+get body duration: 70
+run body duration: 1480
+release cown duration: 440
+dealloc behaviour duration: 30
+dealloc work duration: 300
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1153153, futex_word=0x7fbfd6be4910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) info b[Kthread
+[?2004l  Id   Target Id                                     Frame 
+* 1    Thread 0x7ffff7a13300 (LWP 1153135) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, 
+    expected=1153153, futex_word=0x7fbfd6be4910) at ./nptl/futex-internal.c:57
+  2    Thread 0x7fbfdf3e8640 (LWP 1153151) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+
+      3    Thread 0x7fbfd73e5640 (LWP 1153152) "hash_rt" std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand (this=0x7fbfdebe60d0) at /usr/include/c++/11/bits/random.tcc:403
+  4    Thread 0x7fbfd6be4640 (LWP 1153153) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  5    Thread 0x7fbfd63e3640 (LWP 1153154) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+[?2004h(gdb) info thread[K[K[K[K[K[K[K[K[K[K[Kq[Kr[Kq
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1153135] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

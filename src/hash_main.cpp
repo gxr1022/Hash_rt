@@ -1,10 +1,11 @@
 #include "hash_server.h"
 #include "hash_client.h"
+#include "verona-rt/src/rt/sched/schedulerthread.h"
 // #include "/users/Xuran/hash_rt/include/verona-rt/src/rt/debug/harness.h"
 #include <verona-rt/src/rt/verona.h>
 #include <cstring>
 
-DEFINE_uint64(num_ops, 20, "the number of insert operations");
+DEFINE_uint64(num_ops, 40, "the number of insert operations");
 DEFINE_uint64(str_key_size, 8, "size of key (bytes)");
 DEFINE_uint64(str_value_size, 100, "size of value (bytes)");
 DEFINE_uint64(num_threads_client, 1, "the number of threads");

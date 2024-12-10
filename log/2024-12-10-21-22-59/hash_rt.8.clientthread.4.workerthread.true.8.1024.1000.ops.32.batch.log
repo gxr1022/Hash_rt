@@ -1,0 +1,113 @@
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:117055570
+Starting all threads
+BehaviourCore::schedule_many1
+Prepare phase duration: 230
+Acquire phase duration: 310
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 180
+BehaviourCore::schedule_many1
+Prepare phase duration: 40
+Acquire phase duration: 310
+Exchange duration: 250
+Release phase duration: 30
+Process phase duration: 40
+BehaviourCore::schedule_many1
+Prepare phase duration: 70
+Acquire phase duration: 410
+Exchange duration: 350
+Release phase duration: 30
+Process phase duration: 40
+BehaviourCore::schedule_many1
+Prepare phase duration: 70
+Acquire phase duration: 410
+Exchange duration: 350
+Release phase duration: 30
+Process phase duration: 30
+BehaviourCore::schedule_many1
+Prepare phase duration: 40
+Acquire phase duration: 280
+Exchange duration: 220
+Release phase duration: 30
+Process phase duration: 40
+BehaviourCore::schedule_many1
+Prepare phase duration: 70
+Acquire phase duration: 390
+Exchange duration: 330
+Release phase duration: 30
+Process phase duration: 40
+BehaviourCore::schedule_many1
+Prepare phase duration: 70
+Acquire phase duration: 400
+Exchange duration: 340
+Release phase duration: 20
+Process phase duration: 30
+BehaviourCore::schedule_many1
+Prepare phase duration: 70
+Acquire phase duration: 320
+Exchange duration: 260
+Release phase duration: 30
+Process phase duration: 30
+get work duration: 2810
+get work duration: 1190
+thread id: 2 work duration: 39300
+thread id: 1 work duration: 36000
+get work duration: 670
+get work duration: 360
+thread id: 1 work duration: 890
+thread id: 2 work duration: 1340
+get work duration: 1010
+get work duration: 350
+BehaviourCore::schedule_many1
+thread id: 1 work duration: 1580
+thread id: 2 work duration: 2110
+get work duration: 400
+Prepare phase duration: 50
+Acquire phase duration: 400
+get work duration: 330
+Exchange duration: 340
+thread id: 1 work duration: 4160
+thread id: 2 work duration: 4580
+Release phase duration: 30
+Process phase duration: 40
+BehaviourCore::schedule_many1
+Prepare phase duration: 80
+Acquire phase duration: 600
+Exchange duration: 540
+Release phase duration: 30
+Process phase duration: 30
+BehaviourCore::schedule_many1
+Prepare phase duration: 70
+Acquire phase duration: 290
+Exchange duration: 230
+Release phase duration: 30
+Process phase duration: 30
+BehaviourCore::schedule_many1
+Prepare phase duration: 70
+Acquire phase duration: 390
+Exchange duration: 330
+Release phase duration: 30
+Process phase duration: 40
+scheduler loop time: 602449
+get work duration: 880
+get work duration: 750
+thread id: 1 work duration: 1940
+thread id: 2 work duration: 1940
+get work duration: 390
+get work duration: 120
+thread id: 1 work duration: 960
+Destroying core 1
+thread id: 2 work duration: 1630
+Destroying core 2
+All threads stopped
+All threads deallocated
+the total count of insert: 0
+[report]: overall_duration_ns : 131031359
+[report]: overall_operation_number : 12
+[report]: overall_throughput : 91.581131
+[report]: overall_avg_time_per_ops : 10919279.000000

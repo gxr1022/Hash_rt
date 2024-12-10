@@ -1,0 +1,627 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r[Kb schedulerthread.h:207
+[?2004lBreakpoint 1 at 0x7f6be: file /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h, line 207.
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:1850859734
+[New Thread 0x7fbfdf3e8640 (LWP 1171322)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1171323)]
+[New Thread 0x7fbfde3e6640 (LWP 1171324)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 660
+Acquire phase duration: 520
+Exchange duration: 180
+Release phase duration: 80
+Process phase duration: 690
+BehaviourCore::schedule_many1
+Prepare phase duration: 190
+Acquire phase duration: 290
+Exchange duration: 170
+Release phase duration: 50
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 290
+Exchange duration: 170
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 310
+Exchange duration: 180
+Release phase duration: 40
+Process phase duration: 150
+[New Thread 0x7fbfddbe5640 (LWP 1171325)]
+[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+warning: Source file is more recent than executable.
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) p [7mscheduler.completed_count_last_batch[27m[C[C[C[C[C[C[C[Cscheduler.completed_count_last_batch
+[?2004l$1 = std::atomic<unsigned long> = { 4 }
+[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lBehaviourCore::schedule_many1
+Prepare phase duration: 790
+Acquire phase duration: 590
+Exchange duration: 280
+Release phase duration: 90
+Process phase duration: 900
+BehaviourCore::schedule_many1
+Prepare phase duration: 190
+Acquire phase duration: 480
+Exchange duration: 350
+Release phase duration: 60
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 460
+Exchange duration: 350
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 460
+Exchange duration: 330
+Release phase duration: 50
+Process phase duration: 140
+[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) bt
+[?2004l#0  verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, 
+    startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+#1  0x00005555555cd0ad in verona::rt::SchedulerThread::run<>(verona::rt::SchedulerThread*, void (*)()) (
+    t=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:134
+#2  0x00005555555d3b72 in verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()> (
+    affinity=2, body=0x5555555cd086 <verona::rt::SchedulerThread::run<>(verona::rt::SchedulerThread*, void (*)())>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/../pal/threadpoolbuilder.h:39
+#3  0x00005555555e73b7 in std::__invoke_impl<void, void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> (
+    __f=@0x55555561f708: 0x5555555d3b36 <verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()>(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)())>) at /usr/include/c++/11/bits/invoke.h:61
+#4  0x00005555555e724a in std::__invoke<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> (
+    __fn=@0x55555561f708: 0x5555555d3b36 <verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()>(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)())>) at /usr/include/c++/11/bits/invoke.h:96
+#5  0x00005555555e70e9 in std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> >::_M_invoke<0ul, 1ul, 2ul, 3ul, 4ul> (this=0x55555561f6e8)
+    at /usr/include/c++/11/bits/std_thread.h:259
+#6  0x00005555555e704a in std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> >::operator() (this=0x55555561f6e8)
+    at /usr/include/c++/11/bits/std_thread.h:266
+#7  0x00005555555e702a in std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> > >::_M_run (this=0x55555561f6e0)
+    at /usr/include/c++/11/bits/std_thread.h:211
+#8  0x00007ffff7e23253 in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#9  0x00007ffff7b92ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#10 0x00007ffff7c24850 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+[?2004h(gdb) thread 4
+[?2004l[Switching to thread 4 (Thread 0x7fbfde3e6640 (LWP 1171324))]
+#0  verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, 
+    startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) info thread
+[?2004l  Id   Target Id                                     Frame 
+  1    Thread 0x7ffff7a13300 (LWP 1171293) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, 
+    abstime=0x0, op=265, expected=1171324, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+  2    Thread 0x7fbfdf3e8640 (LWP 1171322) "hash_rt" HashTableServer::scheduler_loop (this=0x55555561f290)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h:109
+  3    Thread 0x7fbfdebe7640 (LWP 1171323) "hash_rt" 0x00005555555b36aa in HashTableClient::generate_random_string (
+    this=0x7fbfd07fe040, buffer=0x7fbfdebe5138 "glugpgr", length=8)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_client.h:19
+* 4    Thread 0x7fbfde3e6640 (LWP 1171324) "hash_rt" verona::rt::SchedulerThread::run_inner<>(void (*)()) (
+    this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+  5    Thread 0x7fbfddbe5640 (LWP 1171325) "hash_rt" 0x00005555555d36cf in verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+[Switching to Thread 0x7fbfde3e6640 (LWP 1171324)]
+
+Thread 4 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+[Switching to Thread 0x7fbfddbe5640 (LWP 1171325)]
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) thread 5
+[?2004l[Switching to thread 5 (Thread 0x7fbfddbe5640 (LWP 1171325))]
+#0  verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, 
+    startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h(gdb) [7mset scheduler-locking on [27m[C[C[C[C[C[Cset scheduler-locking on 
+[?2004l[?2004h(gdb) a[Kn
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) info [K[K[K[K[Kthr[K[K[Kinfor[K thred[Kad
+[?2004l  Id   Target Id                                     Frame 
+  1    Thread 0x7ffff7a13300 (LWP 1171293) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, 
+    abstime=0x0, op=265, expected=1171324, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+  2    Thread 0x7fbfdf3e8640 (LWP 1171322) "hash_rt" std::operator& (__m=std::memory_order_seq_cst, 
+    __mod=std::__memory_order_mask) at /usr/include/c++/11/bits/atomic_base.h:107
+  3    Thread 0x7fbfdebe7640 (LWP 1171323) "hash_rt" 0x00005555555b3681 in HashTableClient::generate_random_string (
+    this=0x7fbfd07fe040, 
+    buffer=0x7fbfdebe5140 "tfppdxpetuwjxhkytoresptqtjituethozyqdlgnwhorpmbdglxrgyucnyrjejgzfqgkyjlcrlenkbmfvrhlczotxuwojvkszih", length=100) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_client.h:19
+  4    Thread 0x7fbfde3e6640 (LWP 1171324) "hash_rt" 0x00005555555d36c5 in verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+* 5    Thread 0x7fbfddbe5640 (LWP 1171325) "hash_rt" verona::rt::SchedulerThread::run_inner<>(void (*)()) (
+    this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) info thread
+[?2004l  Id   Target Id                                     Frame 
+  1    Thread 0x7ffff7a13300 (LWP 1171293) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, 
+    abstime=0x0, op=265, expected=1171324, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+  2    Thread 0x7fbfdf3e8640 (LWP 1171322) "hash_rt" std::operator& (__m=std::memory_order_seq_cst, 
+    __mod=std::__memory_order_mask) at /usr/include/c++/11/bits/atomic_base.h:107
+  3    Thread 0x7fbfdebe7640 (LWP 1171323) "hash_rt" 0x00005555555b3681 in HashTableClient::generate_random_string (
+    this=0x7fbfd07fe040, 
+    buffer=0x7fbfdebe5140 "tfppdxpetuwjxhkytoresptqtjituethozyqdlgnwhorpmbdglxrgyucnyrjejgzfqgkyjlcrlenkbmfvrhlczotxuwojvkszih", length=100) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_client.h:19
+  4    Thread 0x7fbfde3e6640 (LWP 1171324) "hash_rt" 0x00005555555d36c5 in verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+* 5    Thread 0x7fbfddbe5640 (LWP 1171325) "hash_rt" verona::rt::SchedulerThread::run_inner<>(void (*)()) (
+    this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+[?2004h(gdb) thread 2
+[?2004l[Switching to thread 2 (Thread 0x7fbfdf3e8640 (LWP 1171322))]
+#0  std::operator& (__m=std::memory_order_seq_cst, __mod=std::__memory_order_mask)
+    at /usr/include/c++/11/bits/atomic_base.h:107
+107	  }
+[?2004h(gdb) n
+[?2004lstd::__atomic_base<unsigned long>::load (__m=std::memory_order_seq_cst, this=0x555555608f70 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool+176>) at /usr/include/c++/11/bits/atomic_base.h:488
+488		return __atomic_load_n(&_M_i, int(__m));
+[?2004h[?2004l[?2004h(gdb) n
+[?2004lHashTableServer::scheduler_loop (this=0x55555561f290) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h:108
+108	                    auto current_count = Scheduler::get().completed_count_last_batch.load();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l109	                    if (current_count == 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l108	                    auto current_count = Scheduler::get().completed_count_last_batch.load();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l109	                    if (current_count == 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l108	                    auto current_count = Scheduler::get().completed_count_last_batch.load();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l109	                    if (current_count == 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l108	                    auto current_count = Scheduler::get().completed_count_last_batch.load();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l109	                    if (current_count == 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l108	                    auto current_count = Scheduler::get().completed_count_last_batch.load();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l109	                    if (current_count == 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l108	                    auto current_count = Scheduler::get().completed_count_last_batch.load();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l109	                    if (current_count == 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l108	                    auto current_count = Scheduler::get().completed_count_last_batch.load();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l109	                    if (current_count == 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l108	                    auto current_count = Scheduler::get().completed_count_last_batch.load();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l109	                    if (current_count == 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l108	                    auto current_count = Scheduler::get().completed_count_last_batch.load();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l109	                    if (current_count == 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l108	                    auto current_count = Scheduler::get().completed_count_last_batch.load();
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l109	                    if (current_count == 0)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l108	                    auto current_count = Scheduler::get().completed_count_last_batch.load();
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 2 "hash_rt" received signal SIGINT, Interrupt.
+0x00005555555b31ea in std::__atomic_base<unsigned long>::load (__m=std::memory_order_seq_cst, this=0x555555608f70 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool+176>) at /usr/include/c++/11/bits/atomic_base.h:484
+484		  = __m & __memory_order_mask;
+[?2004h[?2004l[?2004h(gdb) bt
+[?2004l#0  0x00005555555b31ea in std::__atomic_base<unsigned long>::load (__m=std::memory_order_seq_cst, 
+    this=0x555555608f70 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool+176>)
+    at /usr/include/c++/11/bits/atomic_base.h:484
+#1  HashTableServer::scheduler_loop (this=0x55555561f290)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_server.h:108
+#2  0x00005555555a401c in operator() (__closure=0x55555561f398)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:59
+#3  0x00005555555a59ba in std::__invoke_impl<void, BenchmarkTest::runBenchmark()::<lambda()> >(std::__invoke_other, struct {...} &&) (__f=...) at /usr/include/c++/11/bits/invoke.h:61
+#4  0x00005555555a5940 in std::__invoke<BenchmarkTest::runBenchmark()::<lambda()> >(struct {...} &&) (__fn=...)
+    at /usr/include/c++/11/bits/invoke.h:96
+#5  0x00005555555a589a in std::thread::_Invoker<std::tuple<BenchmarkTest::runBenchmark()::<lambda()> > >::_M_invoke<0>(std::_Index_tuple<0>) (this=0x55555561f398) at /usr/include/c++/11/bits/std_thread.h:259
+#6  0x00005555555a5842 in std::thread::_Invoker<std::tuple<BenchmarkTest::runBenchmark()::<lambda()> > >::operator()(void) (this=0x55555561f398) at /usr/include/c++/11/bits/std_thread.h:266
+#7  0x00005555555a580a in std::thread::_State_impl<std::thread::_Invoker<std::tuple<BenchmarkTest::runBenchmark()::<lambda()> > > >::_M_run(void) (this=0x55555561f390) at /usr/include/c++/11/bits/std_thread.h:211
+#8  0x00007ffff7e23253 in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#9  0x00007ffff7b92ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#10 0x00007ffff7c24850 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+[?2004h(gdb) thread 5
+[?2004l[Switching to thread 5 (Thread 0x7fbfddbe5640 (LWP 1171325))]
+#0  verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, 
+    startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) p [7mscheduler.completed_count_last_batch.load()[27m[C[C[C[C[C[C[C[Cscheduler.completed_count_last_batch.load()
+[?2004lCannot evaluate function -- may be inlined
+[?2004h(gdb) p scheduler.completed_count_last_batch.load()[K[K[K[K[K[K[K
+[?2004l$2 = std::atomic<unsigned long> = { 4 }
+[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 5 "hash_rt" hit Breakpoint 1, verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) d
+[?2004l[?2004hDelete all breakpoints? (y or n) y
+[?2004l[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) info thread
+[?2004l  Id   Target Id                                     Frame 
+  1    Thread 0x7ffff7a13300 (LWP 1171293) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, 
+    abstime=0x0, op=265, expected=1171324, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+  2    Thread 0x7fbfdf3e8640 (LWP 1171322) "hash_rt" 0x00005555555b31ea in std::__atomic_base<unsigned long>::load (
+    __m=std::memory_order_seq_cst, 
+    this=0x555555608f70 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool+176>)
+    at /usr/include/c++/11/bits/atomic_base.h:484
+  3    Thread 0x7fbfdebe7640 (LWP 1171323) "hash_rt" 0x00005555555b3681 in HashTableClient::generate_random_string (
+    this=0x7fbfd07fe040, 
+    buffer=0x7fbfdebe5140 "tfppdxpetuwjxhkytoresptqtjituethozyqdlgnwhorpmbdglxrgyucnyrjejgzfqgkyjlcrlenkbmfvrhlczotxuwojvkszih", length=100) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/hash_client.h:19
+  4    Thread 0x7fbfde3e6640 (LWP 1171324) "hash_rt" 0x00005555555d36c5 in verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561ef80, startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:207
+* 5    Thread 0x7fbfddbe5640 (LWP 1171325) "hash_rt" verona::rt::SchedulerThread::run_inner<>(void (*)()) (
+    this=0x55555561f210, startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:209
+[?2004h(gdb) [7m(gdb) set scheduler-locking off[27m[C[C[C[C[C[C(gdb) set scheduler-locking off
+[?2004lUndefined command: "".  Try "help".
+[?2004h(gdb) (gdb) set scheduler-locking off[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P
+[?2004l[?2004h(gdb) n
+[?2004l207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l207	        while (scheduler.completed_count_last_batch.load() == MAXBATCHSIZE)
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l209	          scheduler.producer_start.store(true);  
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+[Switching to Thread 0x7ffff7a13300 (LWP 1171293)]
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1171324, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) bt
+[?2004l#0  __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1171324, 
+    futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=128, abstime=0x0, clockid=0, expected=1171324, 
+    futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7fbfde3e6910, expected=1171324, 
+    clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=128) at ./nptl/futex-internal.c:139
+#3  0x00007ffff7b94624 in __pthread_clockjoin_ex (threadid=140462044112448, thread_return=0x0, clockid=0, 
+    abstime=0x0, block=<optimized out>) at ./nptl/pthread_join_common.c:105
+#4  0x00007ffff7e232c7 in std::thread::join() () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#5  0x00005555555adacd in verona::rt::ThreadPoolBuilder::~ThreadPoolBuilder (this=0x7fffffffd920, 
+    __in_chrg=<optimized out>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/../pal/threadpoolbuilder.h:82
+#6  0x00005555555c36b7 in verona::rt::ThreadPool<verona::rt::SchedulerThread>::run_with_startup<>(void (*)()) (
+    this=0x555555608ec0 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool>, 
+    startup=0x5555555adb76 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:274
+#7  0x00005555555ba996 in verona::rt::ThreadPool<verona::rt::SchedulerThread>::run (
+    this=0x555555608ec0 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:252
+#8  0x00005555555a4207 in BenchmarkTest::runBenchmark (this=0x7fffffffdaf0)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:73
+#9  0x00005555555a49ee in main (argc=1, argv=0x7fffffffdc38)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:107
+[?2004h(gdb) info thread
+[?2004l  Id   Target Id                                     Frame 
+* 1    Thread 0x7ffff7a13300 (LWP 1171293) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, 
+    abstime=0x0, op=265, expected=1171324, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+  2    Thread 0x7fbfdf3e8640 (LWP 1171322) "hash_rt" std::__atomic_base<unsigned long>::load (
+    __m=std::memory_order_seq_cst, 
+    this=0x555555608f70 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool+176>)
+    at /usr/include/c++/11/bits/atomic_base.h:488
+  3    Thread 0x7fbfdebe7640 (LWP 1171323) "hash_rt" std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand (
+    this=0x7fbfd7ffe0d0) at /usr/include/c++/11/bits/random.tcc:401
+  4    Thread 0x7fbfde3e6640 (LWP 1171324) "hash_rt" std::atomic<bool>::store (
+    this=0x555555608f78 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool+184>, 
+    __i=true, __m=std::memory_order_seq_cst) at /usr/include/c++/11/atomic:104
+  5    Thread 0x7fbfddbe5640 (LWP 1171325) "hash_rt" std::__atomic_base<bool>::store (__m=std::memory_order_seq_cst, 
+    __i=true, 
+    this=0x555555608f78 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool+184>)
+    at /usr/include/c++/11/bits/atomic_base.h:465
+[?2004h(gdb) c
+[?2004lContinuing.
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1171324, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+57	in ./nptl/futex-internal.c
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1171293] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

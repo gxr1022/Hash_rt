@@ -1,0 +1,2077 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:1820140034
+[New Thread 0x7fbfdf3e8640 (LWP 1195311)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1195312)]
+ batch_size: 4
+BehaviourCore::schedule_many1
+Prepare phase duration: 820
+Acquire phase duration: 530
+[New Thread 0x7fbfde3e6640 (LWP 1195313)]
+Exchange duration: 170
+Release phase duration: 120
+Process phase duration: 710
+BehaviourCore::schedule_many1
+Prepare phase duration: 180
+Acquire phase duration: 280
+Exchange duration: 170
+Release phase duration: 40
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 270
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 370
+Exchange duration: 260
+Release phase duration: 50
+Process phase duration: 140
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+ batch_size: 4
+[New Thread 0x7fbfddbe5640 (LWP 1195314)]
+this thread id: 1 producer start: 0
+this thread id: 2 producer start: 0
+this thread id: 1 producer start: 1
+this thread id: 1 current_count: 4
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 370
+Exchange duration: 250
+Release phase duration: 40
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 1 completed_count_last_batch: 3
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 650
+Exchange duration: 150
+Release phase duration: 60
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 430
+Exchange duration: 320
+Release phase duration: 40
+Process phase duration: 130
+get work duration: 4270
+BehaviourCore::schedule_many1
+get body duration: 1210
+Prepare phase duration: 140
+Acquire phase duration: 270
+Exchange duration: 160
+Release phase duration: 40
+Process phase duration: 170
+run body duration: 11670
+release cown duration: 6140
+dealloc behaviour duration: 30
+this thread id: 2 producer start: 1
+this thread id: 2 current_count: 3
+this thread id: 2 completed_count_last_batch: 2
+this thread id: 2 completed_count_last_batch: 2
+dealloc work duration: 89700
+get work duration: 2070
+this thread id: 1 current_count: 2
+get body duration: 160
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 1
+run body duration: 2940
+get work duration: 160
+get body duration: 60
+release cown duration: 1100
+run body duration: 1380
+dealloc behaviour duration: 30
+release cown duration: 440
+dealloc behaviour duration: 30
+dealloc work duration: 340
+this thread id: 1 current_count: 1
+this thread id: 1 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 1 completed_count_last_batch: 0
+ batch_size: 4
+get work duration: 790
+dealloc work duration: 38520
+this thread id: 2 producer start: 1
+get body duration: 50
+this thread id: 2 producer start: 1
+BehaviourCore::schedule_many1
+this thread id: 2 current_count: 4
+Prepare phase duration: 150
+this thread id: 2 completed_count_last_batch: 3
+run body duration: 2440
+this thread id: 2 completed_count_last_batch: 3
+Acquire phase duration: 260
+get work duration: 190
+Exchange duration: 160
+Release phase duration: 50
+Process phase duration: 170
+release cown duration: 360
+BehaviourCore::schedule_many1
+dealloc behaviour duration: 30
+dealloc work duration: 280
+this thread id: 1 current_count: 3
+Prepare phase duration: 140
+get body duration: 70
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 2
+run body duration: 1420
+get work duration: 140
+Acquire phase duration: 280
+get body duration: 50
+Exchange duration: 160
+run body duration: 4610
+Release phase duration: 690
+release cown duration: 440
+dealloc behaviour duration: 30
+release cown duration: 330
+dealloc behaviour duration: 30
+dealloc work duration: 270
+dealloc work duration: 390
+Process phase duration: 140
+this thread id: 1 current_count: 2
+this thread id: 2 current_count: 2
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 2 completed_count_last_batch: 1
+BehaviourCore::schedule_many1
+this thread id: 1 completed_count_last_batch: 1
+Prepare phase duration: 130
+this thread id: 1 current_count: 1
+Acquire phase duration: 260
+get work duration: 760
+get body duration: 50
+Exchange duration: 160
+Release phase duration: 700
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+run body duration: 1710
+Acquire phase duration: 180
+this thread id: 1 completed_count_last_batch: 0
+release cown duration: 370
+dealloc behaviour duration: 30
+this thread id: 1 completed_count_last_batch: 0
+Exchange duration: 80
+Release phase duration: 50
+Process phase duration: 150
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+ batch_size: 4
+dealloc work duration: 580
+this thread id: 2 producer start: 0
+get work duration: 840
+this thread id: 2 producer start: 1
+BehaviourCore::schedule_many1
+this thread id: 2 current_count: 4
+Prepare phase duration: 140
+Acquire phase duration: 200
+Exchange duration: 60
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+this thread id: 2 completed_count_last_batch: 3
+get body duration: 60
+Prepare phase duration: 130
+this thread id: 2 completed_count_last_batch: 3
+Acquire phase duration: 330
+Exchange duration: 160
+Release phase duration: 50
+Process phase duration: 150
+get work duration: 800
+BehaviourCore::schedule_many1
+run body duration: 1900
+get body duration: 60
+release cown duration: 320
+dealloc behaviour duration: 30
+dealloc work duration: 260
+Prepare phase duration: 460
+run body duration: 3460
+Acquire phase duration: 290
+Exchange duration: 140
+Release phase duration: 50
+Process phase duration: 150
+release cown duration: 360
+BehaviourCore::schedule_many1
+dealloc behaviour duration: 30
+this thread id: 1 current_count: 3
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 2
+get work duration: 430
+Prepare phase duration: 160
+dealloc work duration: 520
+Acquire phase duration: 280
+get body duration: 60
+this thread id: 2 current_count: 2
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 2 completed_count_last_batch: 1
+run body duration: 1350
+get work duration: 160
+release cown duration: 320
+get body duration: 50
+Exchange duration: 160
+Release phase duration: 690
+Process phase duration: 140
+dealloc behaviour duration: 30
+run body duration: 1690
+release cown duration: 350
+dealloc work duration: 310
+dealloc behaviour duration: 30
+dealloc work duration: 260
+this thread id: 2 current_count: 1
+this thread id: 1 current_count: 1
+this thread id: 2 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 1 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 1 producer start: 0
+this thread id: 2 completed_count_last_batch: 0
+this thread id: 1 producer start: 1
+get work duration: 1090
+this thread id: 1 current_count: 4
+this thread id: 1 completed_count_last_batch: 3
+get body duration: 40
+this thread id: 1 completed_count_last_batch: 3
+run body duration: 1920
+get work duration: 460
+release cown duration: 320
+ batch_size: 4
+dealloc behaviour duration: 30
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 270
+get body duration: 60
+dealloc work duration: 240
+this thread id: 2 current_count: 3
+this thread id: 2 completed_count_last_batch: 2
+run body duration: 1310
+Exchange duration: 150
+this thread id: 2 completed_count_last_batch: 2
+Release phase duration: 50
+release cown duration: 320
+Process phase duration: 150
+dealloc behaviour duration: 30
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 250
+Exchange duration: 160
+Release phase duration: 50
+get work duration: 440
+Process phase duration: 140
+get body duration: 40
+BehaviourCore::schedule_many1
+dealloc work duration: 310
+run body duration: 1050
+this thread id: 1 current_count: 2
+release cown duration: 320
+dealloc behaviour duration: 30
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 1
+dealloc work duration: 210
+get work duration: 730
+Prepare phase duration: 130
+this thread id: 2 current_count: 1
+get body duration: 50
+Acquire phase duration: 490
+run body duration: 970
+this thread id: 2 completed_count_last_batch: 0
+this thread id: 2 completed_count_last_batch: 0
+get work duration: 710
+get body duration: 50
+release cown duration: 310
+run body duration: 1380
+Exchange duration: 150
+dealloc behaviour duration: 30
+release cown duration: 320
+Release phase duration: 710
+Process phase duration: 150
+dealloc behaviour duration: 30
+dealloc work duration: 240
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 260
+Exchange duration: 150
+Release phase duration: 50
+dealloc work duration: 550
+Process phase duration: 160
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 2 producer start: 0
+this thread id: 2 producer start: 1
+this thread id: 1 producer start: 0
+this thread id: 2 current_count: 4
+ batch_size: 4
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 370
+this thread id: 2 completed_count_last_batch: 3
+Exchange duration: 260
+this thread id: 1 producer start: 1
+this thread id: 1 current_count: 3
+this thread id: 1 completed_count_last_batch: 2
+Release phase duration: 50
+Process phase duration: 450
+this thread id: 1 completed_count_last_batch: 2
+get work duration: 810
+get body duration: 60
+this thread id: 2 completed_count_last_batch: 2
+BehaviourCore::schedule_many1
+get work duration: 1190
+Prepare phase duration: 130
+get body duration: 60
+run body duration: 1530
+Acquire phase duration: 660
+run body duration: 1890
+Exchange duration: 240
+release cown duration: 310
+dealloc behaviour duration: 30
+dealloc work duration: 230
+release cown duration: 350
+this thread id: 1 current_count: 2
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 1
+Release phase duration: 1040
+dealloc behaviour duration: 20
+dealloc work duration: 230
+Process phase duration: 150
+get work duration: 470
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+this thread id: 2 current_count: 1
+this thread id: 2 completed_count_last_batch: 0
+Acquire phase duration: 260
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 160
+this thread id: 2 completed_count_last_batch: 0
+get body duration: 50
+run body duration: 1640
+release cown duration: 310
+get work duration: 1120
+get body duration: 50
+dealloc behaviour duration: 30
+BehaviourCore::schedule_many1
+dealloc work duration: 240
+Prepare phase duration: 670
+Acquire phase duration: 410
+Exchange duration: 270
+Release phase duration: 40
+run body duration: 1420
+release cown duration: 360
+dealloc behaviour duration: 30
+dealloc work duration: 260
+Process phase duration: 150
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 2 producer start: 0
+this thread id: 1 producer start: 0
+ batch_size: 4
+this thread id: 2 producer start: 1
+BehaviourCore::schedule_many1
+this thread id: 2 current_count: 4
+Prepare phase duration: 130
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 1 producer start: 1
+Acquire phase duration: 400
+this thread id: 1 current_count: 3
+this thread id: 1 completed_count_last_batch: 2
+Exchange duration: 250
+get work duration: 1240
+this thread id: 1 completed_count_last_batch: 2
+get body duration: 40
+get work duration: 790
+get body duration: 60
+run body duration: 1320
+release cown duration: 310
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+run body duration: 1360
+dealloc behaviour duration: 30
+release cown duration: 580
+Prepare phase duration: 130
+Acquire phase duration: 260
+Exchange duration: 150
+Release phase duration: 50
+Process phase duration: 150
+dealloc work duration: 250
+dealloc behaviour duration: 30
+dealloc work duration: 260
+this thread id: 2 current_count: 2
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 1 current_count: 2
+BehaviourCore::schedule_many1
+this thread id: 1 completed_count_last_batch: 1
+Prepare phase duration: 130
+get work duration: 780
+get body duration: 60
+Acquire phase duration: 370
+this thread id: 1 current_count: 1
+this thread id: 1 completed_count_last_batch: 0
+this thread id: 1 completed_count_last_batch: 0
+get work duration: 730
+get body duration: 50
+run body duration: 920
+run body duration: 1040
+release cown duration: 300
+Exchange duration: 260
+Release phase duration: 50
+Process phase duration: 150
+release cown duration: 320
+BehaviourCore::schedule_many1
+dealloc behaviour duration: 30
+dealloc behaviour duration: 20
+Prepare phase duration: 140
+Acquire phase duration: 360
+Exchange duration: 270
+Release phase duration: 40
+Process phase duration: 140
+dealloc work duration: 210
+this thread id: 140462060897856 completed_count_last_batch: 0
+dealloc work duration: 490
+this thread id: 1 producer start: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 1 producer start: 1
+this thread id: 1 current_count: 4
+this thread id: 2 producer start: 1
+this thread id: 2 producer start: 1
+this thread id: 2 current_count: 3
+this thread id: 2 completed_count_last_batch: 2
+this thread id: 2 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 3
+get work duration: 1390
+get body duration: 50
+this thread id: 1 completed_count_last_batch: 2
+run body duration: 1690
+get work duration: 470
+release cown duration: 300
+get body duration: 50
+run body duration: 1410
+release cown duration: 320
+dealloc behaviour duration: 30
+dealloc work duration: 200
+dealloc behaviour duration: 30
+this thread id: 1 current_count: 2
+ batch_size: 4
+BehaviourCore::schedule_many1
+dealloc work duration: 230
+Prepare phase duration: 180
+this thread id: 2 current_count: 1
+this thread id: 1 completed_count_last_batch: 1
+Acquire phase duration: 290
+this thread id: 2 completed_count_last_batch: 0
+this thread id: 2 completed_count_last_batch: 0
+this thread id: 1 completed_count_last_batch: 0
+get work duration: 470
+get body duration: 50
+Exchange duration: 160
+Release phase duration: 40
+Process phase duration: 160
+run body duration: 1270
+BehaviourCore::schedule_many1
+get work duration: 760
+get body duration: 50
+Prepare phase duration: 150
+release cown duration: 640
+dealloc behaviour duration: 30
+run body duration: 1700
+dealloc work duration: 210
+release cown duration: 310
+Acquire phase duration: 580
+dealloc behaviour duration: 30
+Exchange duration: 160
+dealloc work duration: 240
+Release phase duration: 420
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 260
+Exchange duration: 150
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 270
+Exchange duration: 160
+Release phase duration: 50
+Process phase duration: 140
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 1 producer start: 0
+this thread id: 2 producer start: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 2 producer start: 1
+this thread id: 2 current_count: 4
+ batch_size: 4
+this thread id: 1 producer start: 1
+this thread id: 2 completed_count_last_batch: 3
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 270
+Exchange duration: 160
+this thread id: 1 current_count: 3
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 1 completed_count_last_batch: 2
+get work duration: 760
+get body duration: 60
+this thread id: 1 completed_count_last_batch: 2
+Release phase duration: 60
+Process phase duration: 140
+BehaviourCore::schedule_many1
+run body duration: 1730
+Prepare phase duration: 160
+get work duration: 460
+Acquire phase duration: 860
+release cown duration: 600
+dealloc behaviour duration: 30
+get body duration: 60
+run body duration: 1030
+release cown duration: 310
+dealloc behaviour duration: 30
+dealloc work duration: 240
+Exchange duration: 240
+Release phase duration: 40
+Process phase duration: 140
+dealloc work duration: 220
+this thread id: 1 current_count: 2
+this thread id: 2 current_count: 2
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 2 completed_count_last_batch: 1
+get work duration: 470
+get body duration: 50
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 current_count: 1
+run body duration: 1310
+this thread id: 1 completed_count_last_batch: 0
+release cown duration: 300
+BehaviourCore::schedule_many1
+this thread id: 1 completed_count_last_batch: 0
+get work duration: 760
+get body duration: 50
+Prepare phase duration: 130
+run body duration: 1300
+release cown duration: 300
+dealloc behaviour duration: 40
+Acquire phase duration: 360
+dealloc work duration: 1160
+dealloc behaviour duration: 30
+dealloc work duration: 250
+Exchange duration: 240
+Release phase duration: 50
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 370
+Exchange duration: 250
+Release phase duration: 60
+Process phase duration: 140
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 2 producer start: 0
+this thread id: 1 producer start: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 2 producer start: 1
+this thread id: 2 current_count: 4
+this thread id: 2 completed_count_last_batch: 3
+ batch_size: 4
+this thread id: 2 completed_count_last_batch: 3
+get work duration: 780
+get body duration: 50
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 270
+Exchange duration: 160
+this thread id: 1 producer start: 1
+run body duration: 1330
+release cown duration: 350
+dealloc behaviour duration: 30
+Release phase duration: 580
+dealloc work duration: 200
+this thread id: 1 current_count: 3
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 2
+get work duration: 480
+this thread id: 2 current_count: 2
+get body duration: 60
+run body duration: 1330
+this thread id: 2 completed_count_last_batch: 1
+release cown duration: 320
+dealloc behaviour duration: 30
+dealloc work duration: 250
+Process phase duration: 180
+BehaviourCore::schedule_many1
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 1 current_count: 1
+Prepare phase duration: 150
+get work duration: 1190
+get body duration: 50
+run body duration: 990
+this thread id: 1 completed_count_last_batch: 0
+release cown duration: 310
+Acquire phase duration: 340
+Exchange duration: 180
+Release phase duration: 40
+Process phase duration: 130
+dealloc behaviour duration: 30
+BehaviourCore::schedule_many1
+dealloc work duration: 220
+Prepare phase duration: 130
+Acquire phase duration: 390
+Exchange duration: 260
+this thread id: 1 completed_count_last_batch: 0
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+get work duration: 780
+Prepare phase duration: 140
+get body duration: 60
+run body duration: 1320
+release cown duration: 300
+dealloc behaviour duration: 20
+dealloc work duration: 230
+Acquire phase duration: 1050
+Exchange duration: 480
+Release phase duration: 380
+Process phase duration: 140
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 1 producer start: 0
+this thread id: 2 producer start: 0
+this thread id: 1 producer start: 1
+this thread id: 1 current_count: 4
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 140462060897856 completed_count_last_batch: 4
+scheduler loop time: 3182615
+get work duration: 750
+get body duration: 30
+this thread id: 2 producer start: 1
+run body duration: 1560
+release cown duration: 320
+dealloc behaviour duration: 30
+dealloc work duration: 220
+this thread id: 2 current_count: 3
+this thread id: 1 current_count: 3
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 2 completed_count_last_batch: 2
+this thread id: 2 current_count: 2
+this thread id: 2 completed_count_last_batch: 1
+get work duration: 490
+this thread id: 2 completed_count_last_batch: 1
+get body duration: 40
+run body duration: 960
+release cown duration: 290
+get work duration: 180
+dealloc behaviour duration: 50
+dealloc work duration: 210
+this thread id: 1 current_count: 1
+this thread id: 1 completed_count_last_batch: 0
+get body duration: 60
+run body duration: 1420
+this thread id: 1 completed_count_last_batch: 0
+release cown duration: 310
+Destroying core 1
+dealloc behaviour duration: 30
+dealloc work duration: 240
+Destroying core 2
+[Thread 0x7fbfdebe7640 (LWP 1195312) exited]
+All threads stopped
+All threads deallocated
+the total count of insert: 0
+[report]: overall_duration_ns : 1875595285
+[report]: overall_operation_number : 39
+[report]: overall_throughput : 20.793398
+[report]: overall_avg_time_per_ops : 48092186.000000
+[Thread 0x7fbfddbe5640 (LWP 1195314) exited]
+[Thread 0x7fbfde3e6640 (LWP 1195313) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1195311) exited]
+[Inferior 1 (process 1195279) exited normally]
+[?2004h[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:1792791127
+[New Thread 0x7fbfdf3e8640 (LWP 1195394)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1195395)]
+ batch_size: 4
+[New Thread 0x7fbfde3e6640 (LWP 1195396)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 1440
+Acquire phase duration: 400
+Exchange duration: 80
+Release phase duration: 90
+Process phase duration: 680
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 360
+Exchange duration: 260
+Release phase duration: 50
+Process phase duration: 180
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 260
+Exchange duration: 150
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 260
+Exchange duration: 160
+Release phase duration: 50
+Process phase duration: 170
+this thread id: 140462060897856 completed_count_last_batch: 0
+[New Thread 0x7fbfddbe5640 (LWP 1195397)]
+this thread id: 140462060897856 completed_count_last_batch: 4
+ batch_size: 4
+this thread id: 2 producer start: 0
+this thread id: 1 producer start: 0
+this thread id: 2 producer start: 1
+BehaviourCore::schedule_many1
+this thread id: 2 current_count: 4
+this thread id: 1 producer start: 1
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 1 current_count: 3
+Prepare phase duration: 130
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 2
+Acquire phase duration: 290
+get work duration: 3200
+get work duration: 1050
+Exchange duration: 160
+get body duration: 550
+Release phase duration: 60
+Process phase duration: 170
+get body duration: 130
+run body duration: 7050
+release cown duration: 3950
+BehaviourCore::schedule_many1
+dealloc behaviour duration: 20
+run body duration: 3240
+release cown duration: 750
+dealloc behaviour duration: 30
+Prepare phase duration: 140
+Acquire phase duration: 250
+Exchange duration: 140
+Release phase duration: 50
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 300
+Exchange duration: 170
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 250
+Exchange duration: 150
+Release phase duration: 50
+Process phase duration: 150
+dealloc work duration: 60209
+dealloc work duration: 66509
+this thread id: 1 current_count: 2
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 2 current_count: 1
+this thread id: 2 completed_count_last_batch: 0
+this thread id: 1 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 2 completed_count_last_batch: 0
+get work duration: 530
+ batch_size: 4
+get body duration: 60
+run body duration: 1480
+release cown duration: 360
+get work duration: 570
+dealloc behaviour duration: 30
+get body duration: 60
+dealloc work duration: 300
+run body duration: 1390
+this thread id: 1 producer start: 0
+this thread id: 1 producer start: 1
+this thread id: 1 current_count: 4
+BehaviourCore::schedule_many1
+release cown duration: 650
+this thread id: 1 completed_count_last_batch: 3
+Prepare phase duration: 140
+Acquire phase duration: 280
+Exchange duration: 160
+Release phase duration: 50
+Process phase duration: 170
+BehaviourCore::schedule_many1
+dealloc behaviour duration: 30
+this thread id: 1 completed_count_last_batch: 3
+dealloc work duration: 350
+get work duration: 480
+get body duration: 50
+Prepare phase duration: 130
+this thread id: 2 current_count: 3
+run body duration: 1960
+Acquire phase duration: 550
+Exchange duration: 170
+Release phase duration: 50
+Process phase duration: 170
+this thread id: 2 completed_count_last_batch: 2
+release cown duration: 320
+BehaviourCore::schedule_many1
+dealloc behaviour duration: 30
+Prepare phase duration: 180
+Acquire phase duration: 340
+Exchange duration: 240
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+this thread id: 2 completed_count_last_batch: 2
+dealloc work duration: 260
+this thread id: 1 current_count: 2
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 1
+get work duration: 450
+get body duration: 60
+run body duration: 4900
+release cown duration: 320
+dealloc behaviour duration: 30
+get work duration: 140
+get body duration: 60
+Acquire phase duration: 320
+Exchange duration: 160
+dealloc work duration: 290
+this thread id: 1 current_count: 1
+this thread id: 1 completed_count_last_batch: 0
+this thread id: 1 completed_count_last_batch: 0
+run body duration: 1690
+Release phase duration: 50
+Process phase duration: 140
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+get work duration: 800
+release cown duration: 640
+ batch_size: 4
+dealloc behaviour duration: 30
+get body duration: 60
+dealloc work duration: 290
+this thread id: 2 producer start: 0
+this thread id: 2 producer start: 1
+run body duration: 1770
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 280
+release cown duration: 310
+dealloc behaviour duration: 30
+dealloc work duration: 270
+this thread id: 1 producer start: 1
+this thread id: 1 producer start: 1
+Exchange duration: 150
+this thread id: 1 current_count: 4
+this thread id: 2 current_count: 4
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 1 completed_count_last_batch: 3
+get work duration: 480
+this thread id: 2 completed_count_last_batch: 3
+get body duration: 50
+Release phase duration: 50
+Process phase duration: 170
+this thread id: 2 current_count: 3
+run body duration: 1780
+BehaviourCore::schedule_many1
+this thread id: 2 completed_count_last_batch: 2
+Prepare phase duration: 160
+release cown duration: 670
+this thread id: 2 completed_count_last_batch: 2
+Acquire phase duration: 270
+Exchange duration: 150
+get work duration: 460
+dealloc behaviour duration: 30
+Release phase duration: 350
+get body duration: 60
+Process phase duration: 140
+run body duration: 4190
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 300
+Exchange duration: 170
+Release phase duration: 280
+Process phase duration: 130
+release cown duration: 320
+BehaviourCore::schedule_many1
+dealloc work duration: 280
+this thread id: 1 current_count: 2
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 1
+get work duration: 760
+Prepare phase duration: 130
+Acquire phase duration: 280
+get body duration: 40
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 140
+dealloc behaviour duration: 20
+run body duration: 1080
+release cown duration: 330
+dealloc behaviour duration: 30
+dealloc work duration: 340
+this thread id: 1 current_count: 1
+dealloc work duration: 330
+this thread id: 1 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 1 completed_count_last_batch: 0
+get work duration: 740
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 2 producer start: 0
+get body duration: 50
+ batch_size: 4
+run body duration: 1410
+release cown duration: 300
+dealloc behaviour duration: 20
+dealloc work duration: 230
+this thread id: 2 producer start: 1
+this thread id: 2 current_count: 4
+this thread id: 1 producer start: 1
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 1 producer start: 1
+this thread id: 2 completed_count_last_batch: 3
+get work duration: 790
+get body duration: 50
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 180
+Exchange duration: 70
+this thread id: 1 current_count: 3
+run body duration: 2040
+Release phase duration: 40
+release cown duration: 650
+Process phase duration: 140
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 1 current_count: 2
+BehaviourCore::schedule_many1
+Prepare phase duration: 180
+Acquire phase duration: 270
+Exchange duration: 160
+Release phase duration: 50
+this thread id: 1 completed_count_last_batch: 1
+Process phase duration: 160
+this thread id: 1 completed_count_last_batch: 1
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 480
+dealloc behaviour duration: 30
+Exchange duration: 370
+Release phase duration: 40
+dealloc work duration: 230
+this thread id: 2 current_count: 1
+this thread id: 2 completed_count_last_batch: 0
+this thread id: 2 completed_count_last_batch: 0
+get work duration: 420
+get body duration: 40
+Process phase duration: 180
+get work duration: 750
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 260
+run body duration: 1370
+Exchange duration: 150
+release cown duration: 320
+get body duration: 60
+run body duration: 980
+release cown duration: 310
+dealloc behaviour duration: 20
+dealloc work duration: 270
+Release phase duration: 40
+Process phase duration: 150
+this thread id: 140462060897856 completed_count_last_batch: 0
+dealloc behaviour duration: 30
+this thread id: 1 producer start: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+dealloc work duration: 250
+this thread id: 1 producer start: 1
+this thread id: 1 current_count: 4
+ batch_size: 4
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 1 completed_count_last_batch: 3
+BehaviourCore::schedule_many1
+this thread id: 2 current_count: 3
+get work duration: 810
+this thread id: 2 completed_count_last_batch: 2
+this thread id: 2 completed_count_last_batch: 2
+Prepare phase duration: 160
+get work duration: 130
+get body duration: 60
+Acquire phase duration: 290
+run body duration: 1970
+release cown duration: 320
+dealloc behaviour duration: 30
+dealloc work duration: 220
+this thread id: 1 current_count: 2
+this thread id: 1 completed_count_last_batch: 1
+get body duration: 50
+Exchange duration: 150
+this thread id: 1 completed_count_last_batch: 1
+run body duration: 2060
+release cown duration: 320
+this thread id: 1 current_count: 1
+dealloc behaviour duration: 20
+dealloc work duration: 280
+Release phase duration: 350
+this thread id: 1 completed_count_last_batch: 0
+this thread id: 1 completed_count_last_batch: 0
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 250
+Exchange duration: 150
+Release phase duration: 60
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 120
+Acquire phase duration: 370
+Exchange duration: 250
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 160
+Acquire phase duration: 270
+Exchange duration: 160
+Release phase duration: 40
+Process phase duration: 140
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 1 producer start: 0
+this thread id: 2 producer start: 0
+this thread id: 1 producer start: 1
+ batch_size: 4
+this thread id: 1 current_count: 4
+this thread id: 2 producer start: 1
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 270
+this thread id: 1 completed_count_last_batch: 3
+Exchange duration: 150
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 2 current_count: 3
+get work duration: 860
+get body duration: 60
+run body duration: 1480
+this thread id: 2 completed_count_last_batch: 2
+release cown duration: 320
+dealloc behaviour duration: 30
+dealloc work duration: 210
+this thread id: 1 current_count: 2
+this thread id: 2 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 1
+get work duration: 490
+this thread id: 1 completed_count_last_batch: 1
+get body duration: 60
+Release phase duration: 50
+get work duration: 420
+get body duration: 50
+Process phase duration: 740
+run body duration: 1580
+run body duration: 1590
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 290
+release cown duration: 360
+Exchange duration: 190
+dealloc behaviour duration: 20
+release cown duration: 320
+dealloc work duration: 540
+this thread id: 2 current_count: 1
+this thread id: 2 completed_count_last_batch: 0
+this thread id: 2 completed_count_last_batch: 0
+dealloc behaviour duration: 30
+get work duration: 460
+get body duration: 50
+dealloc work duration: 230
+run body duration: 1010
+release cown duration: 330
+Release phase duration: 80
+dealloc behaviour duration: 30
+dealloc work duration: 190
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 260
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 270
+Exchange duration: 160
+Release phase duration: 40
+Process phase duration: 180
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 1 producer start: 0
+this thread id: 1 producer start: 1
+ batch_size: 4
+this thread id: 1 current_count: 4
+this thread id: 2 producer start: 0
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 270
+Exchange duration: 160
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 290
+Exchange duration: 160
+this thread id: 1 completed_count_last_batch: 3
+Release phase duration: 40
+this thread id: 2 producer start: 1
+this thread id: 2 current_count: 3
+Process phase duration: 140
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 2 completed_count_last_batch: 2
+BehaviourCore::schedule_many1
+get work duration: 750
+Prepare phase duration: 140
+get body duration: 60
+run body duration: 1720
+release cown duration: 290
+this thread id: 2 completed_count_last_batch: 2
+Acquire phase duration: 310
+get work duration: 860
+dealloc behaviour duration: 30
+get body duration: 50
+dealloc work duration: 270
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 430
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 260
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 140
+run body duration: 1450
+release cown duration: 360
+this thread id: 1 current_count: 2
+dealloc behaviour duration: 30
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 1
+dealloc work duration: 230
+this thread id: 2 current_count: 1
+get work duration: 800
+this thread id: 2 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 0
+get body duration: 50
+this thread id: 2 completed_count_last_batch: 0
+run body duration: 1400
+this thread id: 140462060897856 completed_count_last_batch: 4
+release cown duration: 320
+get work duration: 1060
+ batch_size: 4
+dealloc behaviour duration: 30
+get body duration: 40
+run body duration: 1090
+dealloc work duration: 230
+this thread id: 1 producer start: 0
+release cown duration: 330
+this thread id: 1 producer start: 1
+this thread id: 1 current_count: 4
+dealloc behaviour duration: 30
+dealloc work duration: 560
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 2 current_count: 3
+BehaviourCore::schedule_many1
+this thread id: 1 completed_count_last_batch: 3
+Prepare phase duration: 130
+this thread id: 2 completed_count_last_batch: 2
+get work duration: 1230
+this thread id: 2 completed_count_last_batch: 2
+get work duration: 440
+Acquire phase duration: 310
+Exchange duration: 140
+Release phase duration: 40
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 170
+Exchange duration: 60
+Release phase duration: 40
+get body duration: 60
+Process phase duration: 130
+get body duration: 40
+BehaviourCore::schedule_many1
+run body duration: 1420
+run body duration: 1210
+Prepare phase duration: 150
+release cown duration: 340
+dealloc behaviour duration: 30
+dealloc work duration: 230
+this thread id: 1 current_count: 2
+release cown duration: 340
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 1
+get work duration: 760
+get body duration: 50
+Acquire phase duration: 260
+Exchange duration: 160
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+dealloc behaviour duration: 30
+dealloc work duration: 240
+this thread id: 2 current_count: 1
+this thread id: 2 completed_count_last_batch: 0
+this thread id: 2 completed_count_last_batch: 0
+Prepare phase duration: 140
+get work duration: 440
+get body duration: 50
+run body duration: 1340
+run body duration: 1580
+Acquire phase duration: 540
+release cown duration: 300
+dealloc behaviour duration: 30
+dealloc work duration: 230
+release cown duration: 320
+Exchange duration: 390
+dealloc behaviour duration: 30
+dealloc work duration: 240
+Release phase duration: 40
+Process phase duration: 140
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 2 producer start: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 1 producer start: 0
+this thread id: 2 producer start: 1
+this thread id: 1 producer start: 1
+this thread id: 2 current_count: 4
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 1 current_count: 3
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 2
+get work duration: 760
+get body duration: 60
+run body duration: 1340
+release cown duration: 300
+dealloc behaviour duration: 30
+this thread id: 2 completed_count_last_batch: 2
+ batch_size: 4
+dealloc work duration: 240
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 290
+Exchange duration: 150
+Release phase duration: 60
+Process phase duration: 150
+get work duration: 570
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+this thread id: 1 current_count: 2
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 1
+Acquire phase duration: 470
+get work duration: 420
+get body duration: 60
+Exchange duration: 370
+run body duration: 1370
+get body duration: 50
+release cown duration: 330
+run body duration: 1050
+dealloc behaviour duration: 30
+release cown duration: 310
+dealloc behaviour duration: 30
+dealloc work duration: 250
+Release phase duration: 100
+this thread id: 1 current_count: 1
+Process phase duration: 140
+dealloc work duration: 260
+this thread id: 1 completed_count_last_batch: 0
+this thread id: 1 completed_count_last_batch: 0
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 260
+Exchange duration: 150
+Release phase duration: 50
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 250
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 150
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 1 producer start: 0
+this thread id: 2 producer start: 0
+this thread id: 2 producer start: 1
+this thread id: 2 current_count: 4
+this thread id: 1 producer start: 1
+this thread id: 1 current_count: 3
+this thread id: 140462060897856 completed_count_last_batch: 4
+scheduler loop time: 2981175
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 2 completed_count_last_batch: 2
+get work duration: 470
+get body duration: 50
+this thread id: 1 completed_count_last_batch: 2
+get work duration: 450
+run body duration: 1590
+release cown duration: 370
+get body duration: 60
+dealloc behaviour duration: 30
+dealloc work duration: 280
+this thread id: 2 current_count: 2
+this thread id: 2 completed_count_last_batch: 1
+run body duration: 1110
+release cown duration: 330
+dealloc behaviour duration: 30
+dealloc work duration: 220
+this thread id: 1 current_count: 1
+this thread id: 2 completed_count_last_batch: 1
+get work duration: 600
+get body duration: 50
+this thread id: 1 completed_count_last_batch: 0
+run body duration: 1860
+this thread id: 1 completed_count_last_batch: 0
+get work duration: 140
+release cown duration: 320
+dealloc behaviour duration: 30
+dealloc work duration: 250
+get body duration: 30
+Destroying core 2
+run body duration: 1380
+release cown duration: 299
+dealloc behaviour duration: 30
+dealloc work duration: 210
+Destroying core 1
+[Thread 0x7fbfdebe7640 (LWP 1195395) exited]
+All threads stopped
+All threads deallocated
+the total count of insert: 0
+[report]: overall_duration_ns : 1847858819
+[report]: overall_operation_number : 36
+[report]: overall_throughput : 19.482008
+[report]: overall_avg_time_per_ops : 51329411.000000
+[Thread 0x7fbfddbe5640 (LWP 1195397) exited]
+[Thread 0x7fbfde3e6640 (LWP 1195396) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1195394) exited]
+[Inferior 1 (process 1195364) exited normally]
+[?2004h[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:1817105520
+[New Thread 0x7fbfdf3e8640 (LWP 1195423)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1195424)]
+ batch_size: 4
+[New Thread 0x7fbfde3e6640 (LWP 1195425)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 580
+Acquire phase duration: 600
+Exchange duration: 300
+Release phase duration: 100
+Process phase duration: 600
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 270
+Exchange duration: 160
+Release phase duration: 40
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 460
+Exchange duration: 350
+Release phase duration: 40
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 300
+Exchange duration: 190
+Release phase duration: 40
+Process phase duration: 150
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+[New Thread 0x7fbfddbe5640 (LWP 1195426)]
+ batch_size: 4
+this thread id: 2 producer start: 0
+this thread id: 1 producer start: 0
+this thread id: 1 producer start: 1
+BehaviourCore::schedule_many1
+this thread id: 1 current_count: 4
+this thread id: 1 completed_count_last_batch: 3
+Prepare phase duration: 140
+this thread id: 1 completed_count_last_batch: 3
+Acquire phase duration: 330
+Exchange duration: 160
+Release phase duration: 60
+Process phase duration: 150
+get work duration: 1720
+BehaviourCore::schedule_many1
+get body duration: 120
+Prepare phase duration: 150
+run body duration: 3880
+Acquire phase duration: 680
+release cown duration: 2120
+dealloc behaviour duration: 30
+Exchange duration: 250
+Release phase duration: 650
+Process phase duration: 180
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 180
+Exchange duration: 70
+Release phase duration: 60
+Process phase duration: 160
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 270
+Exchange duration: 160
+Release phase duration: 40
+Process phase duration: 130
+dealloc work duration: 50860
+this thread id: 1 current_count: 3
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 2 producer start: 1
+get work duration: 440
+get body duration: 40
+this thread id: 2 current_count: 2
+this thread id: 2 completed_count_last_batch: 1
+run body duration: 2600
+this thread id: 2 completed_count_last_batch: 1
+release cown duration: 430
+get work duration: 850
+get body duration: 140
+dealloc behaviour duration: 30
+dealloc work duration: 300
+run body duration: 2120
+this thread id: 1 current_count: 1
+this thread id: 1 completed_count_last_batch: 0
+release cown duration: 830
+this thread id: 140462060897856 completed_count_last_batch: 0
+dealloc behaviour duration: 30
+this thread id: 1 completed_count_last_batch: 0
+get work duration: 780
+get body duration: 40
+run body duration: 1690
+this thread id: 140462060897856 completed_count_last_batch: 4
+release cown duration: 300
+dealloc behaviour duration: 30
+dealloc work duration: 210
+this thread id: 1 producer start: 1
+ batch_size: 4
+BehaviourCore::schedule_many1
+this thread id: 1 producer start: 1
+dealloc work duration: 35030
+this thread id: 2 producer start: 1
+this thread id: 2 producer start: 1
+this thread id: 1 current_count: 4
+this thread id: 2 current_count: 4
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 2 completed_count_last_batch: 3
+get work duration: 470
+get body duration: 70
+this thread id: 1 completed_count_last_batch: 3
+run body duration: 1700
+Prepare phase duration: 130
+release cown duration: 320
+this thread id: 1 current_count: 3
+Acquire phase duration: 530
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 2
+Exchange duration: 70
+dealloc behaviour duration: 30
+get work duration: 450
+dealloc work duration: 290
+get body duration: 60
+run body duration: 4489
+release cown duration: 310
+Release phase duration: 400
+dealloc behaviour duration: 30
+this thread id: 2 current_count: 2
+dealloc work duration: 230
+Process phase duration: 170
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 1 current_count: 1
+this thread id: 1 completed_count_last_batch: 0
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 620
+Exchange duration: 260
+this thread id: 2 completed_count_last_batch: 0
+Release phase duration: 70
+Process phase duration: 680
+get work duration: 770
+this thread id: 1 completed_count_last_batch: 0
+BehaviourCore::schedule_many1
+get work duration: 740
+Prepare phase duration: 180
+get body duration: 60
+run body duration: 1740
+release cown duration: 440
+dealloc behaviour duration: 30
+dealloc work duration: 230
+get body duration: 50
+run body duration: 1380
+Acquire phase duration: 390
+release cown duration: 310
+Exchange duration: 250
+Release phase duration: 50
+Process phase duration: 140
+dealloc behaviour duration: 30
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 250
+Exchange duration: 160
+Release phase duration: 40
+dealloc work duration: 270
+Process phase duration: 140
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 1 producer start: 0
+this thread id: 2 producer start: 0
+ batch_size: 4
+this thread id: 2 producer start: 1
+this thread id: 1 producer start: 1
+this thread id: 1 current_count: 4
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 1 completed_count_last_batch: 3
+get work duration: 720
+BehaviourCore::schedule_many1
+get body duration: 50
+this thread id: 2 current_count: 3
+run body duration: 1700
+release cown duration: 330
+dealloc behaviour duration: 20
+Prepare phase duration: 160
+Acquire phase duration: 300
+Exchange duration: 140
+Release phase duration: 40
+dealloc work duration: 590
+this thread id: 1 current_count: 2
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 current_count: 1
+this thread id: 1 completed_count_last_batch: 0
+Process phase duration: 160
+this thread id: 2 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 0
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 310
+Exchange duration: 190
+Release phase duration: 60
+Process phase duration: 150
+this thread id: 2 completed_count_last_batch: 0
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 240
+Exchange duration: 150
+Release phase duration: 350
+get work duration: 810
+Process phase duration: 440
+get body duration: 60
+run body duration: 4840
+BehaviourCore::schedule_many1
+release cown duration: 930
+Prepare phase duration: 160
+Acquire phase duration: 270
+Exchange duration: 160
+Release phase duration: 40
+dealloc behaviour duration: 30
+Process phase duration: 170
+dealloc work duration: 270
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 2 producer start: 0
+ batch_size: 4
+this thread id: 2 producer start: 1
+BehaviourCore::schedule_many1
+this thread id: 1 producer start: 0
+this thread id: 2 current_count: 4
+this thread id: 1 producer start: 1
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 1 current_count: 3
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 2
+Prepare phase duration: 170
+this thread id: 2 completed_count_last_batch: 3
+Acquire phase duration: 320
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 440
+get work duration: 780
+get work duration: 460
+BehaviourCore::schedule_many1
+Prepare phase duration: 170
+Acquire phase duration: 250
+Exchange duration: 140
+Release phase duration: 50
+Process phase duration: 140
+get body duration: 40
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 260
+Exchange duration: 160
+Release phase duration: 50
+run body duration: 1510
+Process phase duration: 150
+get body duration: 50
+release cown duration: 310
+dealloc behaviour duration: 30
+dealloc work duration: 300
+this thread id: 1 current_count: 2
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 1
+run body duration: 1080
+BehaviourCore::schedule_many1
+release cown duration: 340
+get work duration: 750
+dealloc behaviour duration: 30
+dealloc work duration: 240
+this thread id: 2 current_count: 1
+Prepare phase duration: 120
+Acquire phase duration: 490
+Exchange duration: 380
+get body duration: 40
+run body duration: 1280
+release cown duration: 310
+dealloc behaviour duration: 20
+Release phase duration: 50
+dealloc work duration: 220
+this thread id: 2 completed_count_last_batch: 0
+Process phase duration: 150
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 1 producer start: 0
+ batch_size: 4
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+this thread id: 1 producer start: 1
+Acquire phase duration: 260
+this thread id: 1 current_count: 4
+Exchange duration: 160
+this thread id: 1 completed_count_last_batch: 3
+Release phase duration: 410
+Process phase duration: 140
+BehaviourCore::schedule_many1
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 2 completed_count_last_batch: 4
+Prepare phase duration: 150
+get work duration: 810
+get work duration: 1120
+get body duration: 50
+get body duration: 40
+Acquire phase duration: 590
+Exchange duration: 150
+run body duration: 1480
+Release phase duration: 420
+release cown duration: 340
+run body duration: 1740
+release cown duration: 620
+dealloc behaviour duration: 30
+dealloc work duration: 240
+this thread id: 1 current_count: 3
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 2
+Process phase duration: 150
+get work duration: 150
+dealloc behaviour duration: 30
+BehaviourCore::schedule_many1
+get body duration: 40
+dealloc work duration: 230
+run body duration: 1030
+release cown duration: 320
+dealloc behaviour duration: 30
+dealloc work duration: 210
+this thread id: 1 current_count: 2
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 1
+Prepare phase duration: 130
+this thread id: 2 current_count: 1
+this thread id: 2 completed_count_last_batch: 0
+this thread id: 2 completed_count_last_batch: 0
+get work duration: 520
+get body duration: 40
+Acquire phase duration: 390
+get work duration: 770
+run body duration: 1620
+release cown duration: 320
+dealloc behaviour duration: 20
+get body duration: 40
+run body duration: 1310
+dealloc work duration: 240
+release cown duration: 330
+dealloc behaviour duration: 30
+dealloc work duration: 240
+Exchange duration: 250
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 260
+Exchange duration: 140
+Release phase duration: 40
+Process phase duration: 150
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 1 producer start: 0
+this thread id: 2 producer start: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+ batch_size: 4
+this thread id: 2 producer start: 1
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 250
+this thread id: 2 current_count: 4
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 2 completed_count_last_batch: 3
+get work duration: 460
+get body duration: 50
+Exchange duration: 150
+Release phase duration: 70
+Process phase duration: 170
+this thread id: 1 producer start: 1
+BehaviourCore::schedule_many1
+run body duration: 980
+release cown duration: 340
+Prepare phase duration: 140
+this thread id: 1 current_count: 3
+dealloc behaviour duration: 30
+this thread id: 1 completed_count_last_batch: 2
+this thread id: 1 completed_count_last_batch: 2
+dealloc work duration: 250
+get work duration: 150
+this thread id: 2 current_count: 2
+this thread id: 2 completed_count_last_batch: 1
+get body duration: 60
+this thread id: 2 completed_count_last_batch: 1
+run body duration: 1030
+get work duration: 430
+release cown duration: 330
+Acquire phase duration: 240
+get body duration: 30
+dealloc behaviour duration: 30
+dealloc work duration: 260
+this thread id: 1 current_count: 1
+run body duration: 1040
+this thread id: 1 completed_count_last_batch: 0
+Exchange duration: 150
+this thread id: 1 completed_count_last_batch: 0
+release cown duration: 320
+dealloc behaviour duration: 20
+dealloc work duration: 220
+Release phase duration: 620
+Process phase duration: 180
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 290
+Exchange duration: 170
+Release phase duration: 40
+Process phase duration: 130
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 250
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 150
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 1 producer start: 0
+this thread id: 2 producer start: 0
+this thread id: 1 producer start: 1
+this thread id: 2 producer start: 1
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 2 current_count: 4
+this thread id: 1 current_count: 4
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 2 completed_count_last_batch: 3
+get work duration: 460
+ batch_size: 4
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 270
+get body duration: 60
+run body duration: 1480
+release cown duration: 320
+dealloc behaviour duration: 30
+dealloc work duration: 220
+this thread id: 2 current_count: 3
+Exchange duration: 150
+Release phase duration: 330
+this thread id: 2 completed_count_last_batch: 2
+this thread id: 1 current_count: 2
+Process phase duration: 410
+BehaviourCore::schedule_many1
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 1
+get work duration: 760
+Prepare phase duration: 150
+get body duration: 50
+get work duration: 430
+Acquire phase duration: 270
+run body duration: 960
+Exchange duration: 150
+Release phase duration: 60
+Process phase duration: 130
+release cown duration: 340
+BehaviourCore::schedule_many1
+get body duration: 50
+dealloc behaviour duration: 50
+dealloc work duration: 250
+run body duration: 1410
+this thread id: 2 current_count: 1
+this thread id: 2 completed_count_last_batch: 0
+this thread id: 2 completed_count_last_batch: 0
+get work duration: 430
+get body duration: 40
+run body duration: 1350
+release cown duration: 300
+release cown duration: 340
+dealloc behaviour duration: 30
+dealloc behaviour duration: 30
+Prepare phase duration: 150
+dealloc work duration: 220
+Acquire phase duration: 270
+dealloc work duration: 210
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 170
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 530
+Exchange duration: 430
+Release phase duration: 40
+Process phase duration: 150
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 1 producer start: 0
+this thread id: 2 producer start: 0
+this thread id: 2 producer start: 1
+this thread id: 1 producer start: 1
+ batch_size: 4
+this thread id: 1 current_count: 4
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 1 completed_count_last_batch: 3
+get work duration: 460
+BehaviourCore::schedule_many1
+this thread id: 2 current_count: 3
+this thread id: 2 completed_count_last_batch: 2
+this thread id: 2 completed_count_last_batch: 2
+Prepare phase duration: 140
+get body duration: 50
+Acquire phase duration: 250
+Exchange duration: 140
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+run body duration: 1750
+get work duration: 440
+release cown duration: 1290
+Prepare phase duration: 130
+get body duration: 70
+run body duration: 1370
+dealloc behaviour duration: 30
+release cown duration: 320
+dealloc work duration: 250
+this thread id: 1 current_count: 2
+Acquire phase duration: 280
+Exchange duration: 150
+Release phase duration: 40
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 270
+Exchange duration: 150
+dealloc behaviour duration: 30
+Release phase duration: 50
+dealloc work duration: 270
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 1
+this thread id: 2 current_count: 1
+get work duration: 790
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 280
+Exchange duration: 150
+Release phase duration: 60
+this thread id: 2 completed_count_last_batch: 0
+get body duration: 50
+this thread id: 2 completed_count_last_batch: 0
+get work duration: 500
+run body duration: 1340
+Process phase duration: 570
+get body duration: 40
+this thread id: 140462060897856 completed_count_last_batch: 0
+run body duration: 2020
+release cown duration: 360
+dealloc behaviour duration: 40
+dealloc work duration: 250
+this thread id: 140462060897856 completed_count_last_batch: 4
+ batch_size: 4
+release cown duration: 380
+dealloc behaviour duration: 20
+this thread id: 2 producer start: 0
+dealloc work duration: 220
+this thread id: 1 producer start: 0
+this thread id: 1 producer start: 1
+this thread id: 2 producer start: 1
+this thread id: 1 current_count: 4
+BehaviourCore::schedule_many1
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 2 current_count: 3
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 2 completed_count_last_batch: 2
+get work duration: 130
+Prepare phase duration: 170
+get body duration: 60
+this thread id: 2 completed_count_last_batch: 2
+Acquire phase duration: 530
+Exchange duration: 140
+get work duration: 430
+run body duration: 1630
+get body duration: 60
+run body duration: 1380
+release cown duration: 380
+dealloc behaviour duration: 30
+release cown duration: 370
+dealloc work duration: 230
+this thread id: 2 current_count: 2
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 2 completed_count_last_batch: 1
+dealloc behaviour duration: 40
+get work duration: 770
+get body duration: 40
+dealloc work duration: 250
+run body duration: 960
+this thread id: 1 current_count: 1
+release cown duration: 320
+this thread id: 1 completed_count_last_batch: 0
+Release phase duration: 40
+this thread id: 1 completed_count_last_batch: 0
+get work duration: 430
+dealloc behaviour duration: 30
+dealloc work duration: 230
+get body duration: 40
+Process phase duration: 160
+run body duration: 1030
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+release cown duration: 340
+Acquire phase duration: 510
+Exchange duration: 150
+Release phase duration: 50
+Process phase duration: 140
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 240
+dealloc behaviour duration: 30
+Exchange duration: 140
+Release phase duration: 60
+Process phase duration: 140
+BehaviourCore::schedule_many1
+dealloc work duration: 260
+Prepare phase duration: 160
+Acquire phase duration: 270
+Exchange duration: 170
+Release phase duration: 40
+Process phase duration: 150
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 1 producer start: 0
+this thread id: 2 producer start: 0
+this thread id: 1 producer start: 1
+this thread id: 1 current_count: 4
+this thread id: 2 producer start: 1
+this thread id: 1 completed_count_last_batch: 3
+this thread id: 1 completed_count_last_batch: 3
+scheduler loop time: 3031665
+this thread id: 2 current_count: 3
+this thread id: 2 completed_count_last_batch: 2
+this thread id: 2 completed_count_last_batch: 2
+get work duration: 440
+get body duration: 40
+run body duration: 1370
+release cown duration: 300
+dealloc behaviour duration: 30
+dealloc work duration: 260
+get work duration: 150
+this thread id: 2 current_count: 2
+this thread id: 2 completed_count_last_batch: 1
+get body duration: 50
+run body duration: 1090
+release cown duration: 330
+dealloc behaviour duration: 30
+dealloc work duration: 280
+this thread id: 1 current_count: 1
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 0
+this thread id: 1 completed_count_last_batch: 0
+get work duration: 480
+get body duration: 30
+get work duration: 800
+run body duration: 1430
+release cown duration: 280
+dealloc behaviour duration: 30
+dealloc work duration: 190
+Destroying core 1
+get body duration: 50
+run body duration: 2200
+release cown duration: 330
+dealloc behaviour duration: 30
+dealloc work duration: 260
+Destroying core 2
+[Thread 0x7fbfdebe7640 (LWP 1195424) exited]
+All threads stopped
+All threads deallocated
+the total count of insert: 0
+[report]: overall_duration_ns : 1872073820
+[report]: overall_operation_number : 37
+[report]: overall_throughput : 19.764178
+[report]: overall_avg_time_per_ops : 50596589.000000
+[Thread 0x7fbfddbe5640 (LWP 1195426) exited]
+[Thread 0x7fbfde3e6640 (LWP 1195425) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1195423) exited]
+[Inferior 1 (process 1195409) exited normally]
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[?2004h(gdb) qq
+[?2004lUndefined command: "qq".  Try "help".
+[?2004h(gdb) 
+[?2004lUndefined command: "qq".  Try "help".
+[?2004h(gdb) q
+[?2004l

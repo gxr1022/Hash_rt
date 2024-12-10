@@ -12,6 +12,7 @@ DEFINE_uint64(batch_size, 4, "the size of batch");
 class HashTableServer
 {
 public:
+    using Scheduler = ThreadPool<SchedulerThread>;
     size_t MAX_BATCH_SIZE;
     std::atomic<size_t> current_batch_id{0};
     std::atomic<bool> running{true};
@@ -77,6 +78,7 @@ public:
 
     void scheduler_loop()
     {
+        auto& scheduler = Scheduler::get();
         auto start = std::chrono::high_resolution_clock::now();
         while (running && completed_ops < target_ops)
         {
@@ -85,7 +87,8 @@ public:
             if (!batch->requests.empty())
             {
                 size_t batch_size = batch->requests.size();
-                while (!Scheduler::get().producer_start.load())
+                Logging::cout() << " batch_size: " << batch_size << Logging::endl;
+                while (!scheduler.producer_start.load())
                 {
                     std::this_thread::yield();
                 }
@@ -94,15 +97,29 @@ public:
                     hash_table->insert(req.key, req.value);
                     completed_ops++;
                 }
+                
                 Scheduler::get().producer_start.store(false);
-
                 // wait 
-                while (Scheduler::get().completed_count_last_batch.load() != 0)
+                // while (Scheduler::get().completed_count_last_batch.load() != 0)
+                // {
+                //     std::this_thread::yield();
+                // }
+                while(1)
                 {
-                    std::this_thread::yield();
+                    auto current_count = Scheduler::get().completed_count_last_batch.load();
+                    if (current_count == 0)
+                    {
+                        Logging::cout() << "this thread id: " <<  std::this_thread::get_id() << " completed_count_last_batch: " <<scheduler.completed_count_last_batch.load() << Logging::endl;
+                        bool suc = Scheduler::get().completed_count_last_batch.compare_exchange_strong(current_count, batch_size);
+                        Logging::cout() << "this thread id: " <<  std::this_thread::get_id() << " completed_count_last_batch: " <<scheduler.completed_count_last_batch.load() << Logging::endl;
+                        if (suc)
+                        {
+                            goto next1;
+                        }
+                    }
                 }
-                Scheduler::get().completed_count_last_batch.fetch_add(batch_size);
 
+                next1:
                 batch->requests.clear();
             }
             else

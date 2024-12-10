@@ -1,0 +1,147 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:1792064566
+[New Thread 0x7fbfdf3e8640 (LWP 1151128)]
+Starting all threads
+[New Thread 0x7fbfdebe7640 (LWP 1151129)]
+BehaviourCore::schedule_many1
+Prepare phase duration: 700
+Acquire phase duration: 770
+[New Thread 0x7fbfde3e6640 (LWP 1151130)]
+Exchange duration: 360
+Release phase duration: 80
+Process phase duration: 850
+BehaviourCore::schedule_many1
+Prepare phase duration: 150
+Acquire phase duration: 490
+Exchange duration: 370
+Release phase duration: 50
+Process phase duration: 180
+BehaviourCore::schedule_many1
+Prepare phase duration: 130
+Acquire phase duration: 460
+Exchange duration: 350
+Release phase duration: 70
+Process phase duration: 150
+BehaviourCore::schedule_many1
+Prepare phase duration: 140
+Acquire phase duration: 390
+Exchange duration: 280
+Release phase duration: 70
+Process phase duration: 170
+[New Thread 0x7fbfddbe5640 (LWP 1151131)]
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1151130, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) info
+[?2004lList of info subcommands:
+
+info address -- Describe where symbol SYM is stored.
+info all-registers -- List of all registers and their contents, for selected stack frame.
+info args -- All argument variables of current stack frame or those matching REGEXPs.
+info auto-load -- Print current status of auto-loaded files.
+info auxv -- Display the inferior's auxiliary vector.
+info bookmarks -- Status of user-settable bookmarks.
+info breakpoints, info b -- Status of specified breakpoints (all user-settable breakpoints if no argument).
+info checkpoints -- IDs of currently known checkpoints.
+info classes -- All Objective-C classes, or those matching REGEXP.
+info common -- Print out the values contained in a Fortran COMMON block.
+info connections -- Target connections in use.
+info copying -- Conditions for redistributing copies of GDB.
+info dcache -- Print information on the dcache performance.
+info display -- Expressions to display when program stops, with code numbers.
+info exceptions -- List all Ada exception names.
+info extensions -- All filename extensions associated with a source language.
+info files -- Names of targets and files being debugged.
+info float -- Print the status of the floating point unit.
+info frame, info f -- All about the selected stack frame.
+info frame-filter -- List all registered Python frame-filters.
+info functions -- All function names or those matching REGEXPs.
+info guile, info gu -- Prefix command for Guile info displays.
+info inferiors -- Print a list of inferiors being managed.
+info line -- Core addresses of the code for a source line.
+info locals -- All local variables of current stack frame or those matching REGEXPs.
+info macro -- Show the definition of MACRO, and it's source location.
+info macros -- Show the definitions of all macros at LINESPEC, or the current source location.
+info mem -- Memory region attributes.
+info module -- Print information about modules.
+info modules -- All module names, or those matching REGEXP.
+info os -- Show OS data ARG.
+info pretty-printer -- GDB command to list all registered pretty-printers.
+info probes -- Show available static probes.
+info proc -- Show additional information about a process.
+info program -- Execution status of the program.
+info record, info rec -- Info record options.
+info registers, info r -- List of integer registers and their contents, for selected stack frame.
+info scope -- List the variables local to a scope.
+info selectors -- All Objective-C selectors, or those matching REGEXP.
+info sharedlibrary, info dll -- Status of loaded shared object libraries.
+info signals, info handle -- What debugger does when program gets various signals.
+info skip -- Display the status of skips.
+info source -- Information about the current source file.
+info sources -- All source files in the program or those matching REGEXP.
+info stack, info s -- Backtrace of the stack, or innermost COUNT frames.
+info static-tracepoint-markers -- List target static tracepoints markers.
+info symbol -- Describe what symbol is at location ADDR.
+info target -- Names of targets and files being debugged.
+info tasks -- Provide information about all known Ada tasks.
+info terminal -- Print inferior's saved terminal status.
+info threads -- Display currently known threads.
+info tracepoints, info tp -- Status of specified tracepoints (all tracepoints if no argument).
+info tvariables -- Status of trace state variables and their values.
+info type-printers -- GDB command to list all registered type-printers.
+info types -- All type names, or those matching REGEXP.
+info unwinder -- GDB command to list unwinders.
+info variables -- All global and static variable names or those matching REGEXPs.
+info vector -- Print the status of the vector unit.
+info vtbl -- Show the virtual function table for a C++ object.
+info warranty -- Various kinds of warranty you do not have.
+info watchpoints -- Status of specified watchpoints (all watchpoints if no argument).
+info win -- List of all displayed windows.
+info xmethod -- GDB command to list registered xmethod matchers.
+
+Type "help info" followed by info subcommand name for full documentation.
+Type "apropos word" to search for commands related to "word".
+Type "apropos -v word" for full documentation of commands related to "word".
+Command name abbreviations are allowed if unambiguous.
+[?2004h(gdb) info thread
+[?2004l  Id   Target Id                                     Frame 
+* 1    Thread 0x7ffff7a13300 (LWP 1151112) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, 
+    expected=1151130, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+  2    Thread 0x7fbfdf3e8640 (LWP 1151128) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+
+      3    Thread 0x7fbfdebe7640 (LWP 1151129) "hash_rt" std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator() (this=0x7fbfd6be60d0) at /usr/include/c++/11/bits/random.tcc:461
+  4    Thread 0x7fbfde3e6640 (LWP 1151130) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  5    Thread 0x7fbfddbe5640 (LWP 1151131) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1151112] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

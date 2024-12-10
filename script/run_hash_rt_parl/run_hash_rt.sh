@@ -27,8 +27,8 @@ pushd ${BINARY_PATH}
 
 this_log_path=${LOG_PATH}/hash_rt.8.clientthread.4.workerthread.true.8.1024.1000.ops.32.batch.log
 
+# gdb ./hash_rt 2>&1 | tee -a ${this_log_path}
 gdb ./hash_rt 2>&1 | tee -a ${this_log_path}
-# ./hash_rt 2>&1 | tee -a ${this_log_path}
 
 
 # TEST_PATH=${BINARY_PATH}
