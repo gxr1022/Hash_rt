@@ -75,10 +75,10 @@ void BenchmarkTest::runBenchmark()
     // auto client_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(client_end - client_start).count();
 
     // start worker threads
-    // auto run_start = std::chrono::steady_clock::now();
-    // sched.run();
-    // auto run_end = std::chrono::steady_clock::now();
-    // auto run_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(run_end - run_start).count();
+    auto run_start = std::chrono::steady_clock::now();
+    sched.run();
+    auto run_end = std::chrono::steady_clock::now();
+    auto run_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(run_end - run_start).count();
 
     // auto join_start = std::chrono::steady_clock::now();
     if (!server->is_running())
