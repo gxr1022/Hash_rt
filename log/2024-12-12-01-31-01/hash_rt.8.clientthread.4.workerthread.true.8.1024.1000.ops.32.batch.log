@@ -1,0 +1,42 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1781699862
+scheduler loop time: 458989
+[New Thread 0x7fbfd7be6640 (LWP 1314673)]
+[New Thread 0x7fbfd73e5640 (LWP 1314674)]
+[Thread 0x7fbfd7be6640 (LWP 1314673) exited]
+[New Thread 0x7fbfd6be4640 (LWP 1314675)]
+[New Thread 0x7fbfd63e3640 (LWP 1314676)]
+hash_rt: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/../pal/threadpoolbuilder.h:77: verona::rt::ThreadPoolBuilder::~ThreadPoolBuilder(): Assertion `index == thread_count' failed.
+[Thread 0x7fbfd63e3640 (LWP 1314676) exited]
+[Thread 0x7fbfd6be4640 (LWP 1314675) exited]
+[Thread 0x7fbfd73e5640 (LWP 1314674) exited]
+
+Thread 1 "hash_rt" received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737347924736) at ./nptl/pthread_kill.c:44
+44	./nptl/pthread_kill.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1314656] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

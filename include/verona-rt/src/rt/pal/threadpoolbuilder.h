@@ -20,15 +20,15 @@ namespace verona::rt
     template<typename... Args>
     void add_thread_impl(void (*body)(Args...), Args... args)
     {
-      // if (index != thread_count)
+      if (index != thread_count)
       {
         threads.emplace_back(body, args...);
       }
-      // else
-      // {
-      //   Systematic::start();
-      //   body(args...);
-      // }
+      else
+      {
+        Systematic::start();
+        body(args...);
+      }
     }
 
     template<typename... Args>
@@ -42,8 +42,8 @@ namespace verona::rt
   public:
     ThreadPoolBuilder(size_t thread_count)
     {
-      // this->thread_count = thread_count - 1;
-      this->thread_count = thread_count;
+      this->thread_count = thread_count - 1;
+      // this->thread_count = thread_count;
     }
 
     /**
@@ -73,8 +73,8 @@ namespace verona::rt
      */
     ~ThreadPoolBuilder()
     {
-      // assert(index == thread_count + 1);
-      assert(index == thread_count);
+      assert(index == thread_count + 1);
+      // assert(index == thread_count);
 
       while (!threads.empty())
       {

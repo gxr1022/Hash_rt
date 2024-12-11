@@ -1,0 +1,39 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1828100888
+
+Program received signal SIGINT, Interrupt.
+0x00005555555b3808 in HashTableServer::prepare_new_batch (this=0x555555620230) at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/hash_server.h:49
+49	        while (batch->requests.size() < MAX_BATCH_SIZE && clients_checked < MAX_CLIENTS)
+[?2004h[?2004l[?2004h(gdb) 
+[?2004l[?2004h(gdb) p Ma[KAX_Ba[KATCH_SIZE [K [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kp [7mbatch->requests.size()[27m[C[C[C[C[C[C[C[Cbatch->requests.size()
+[?2004l$1 = 0
+[?2004h(gdb) n
+[?2004l51	            if (active_clients[current_idx])
+[?2004h[?2004l[?2004h(gdb) n
+[?2004l64	            current_idx = (current_idx + 1) % MAX_CLIENTS;
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1310007] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

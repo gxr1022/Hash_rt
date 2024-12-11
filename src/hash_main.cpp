@@ -5,7 +5,7 @@
 #include <verona-rt/src/rt/verona.h>
 #include <cstring>
 
-DEFINE_uint64(num_ops, 40, "the number of insert operations");
+DEFINE_uint64(num_ops, 100, "the number of insert operations");
 DEFINE_uint64(str_key_size, 8, "size of key (bytes)");
 DEFINE_uint64(str_value_size, 100, "size of value (bytes)");
 DEFINE_uint64(num_threads_client, 1, "the number of threads");
@@ -49,17 +49,17 @@ void BenchmarkTest::runBenchmark()
     sched.set_fair(true);
     sched.init(num_scheduler_threads);
 
+    cpu::set_affinity(0);
     // init server
     HashTableServer *server = new HashTableServer(num_ops);
 
     auto total_start_time = std::chrono::steady_clock::now();
-    // auto server_start = std::chrono::steady_clock::now();
     // init scheduler thread
-    std::thread scheduler_thread([&server]()
-                                 { server->scheduler_loop(); 
-                                 cpu::set_affinity(0); });
-    // auto server_end = std::chrono::steady_clock::now();
-    // auto server_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(server_end - server_start).count();
+    auto server_start = std::chrono::steady_clock::now();
+    server->scheduler_loop();
+
+    auto server_end = std::chrono::steady_clock::now();
+    auto server_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(server_end - server_start).count();
 
     // init client threads
     // auto client_start = std::chrono::steady_clock::now();
@@ -107,8 +107,8 @@ void BenchmarkTest::runBenchmark()
     benchmark_report("overall", "throughput", std::to_string(total_throughput));
     benchmark_report("overall", "avg_time_per_ops", std::to_string(avg_time_per_ops));
     benchmark_report("overall", "run_duration", std::to_string(run_duration));
+    benchmark_report("overall", "server_duration", std::to_string(server_duration));
     // benchmark_report("overall", "client_duration", std::to_string(client_duration));
-    // benchmark_report("overall", "server_duration", std::to_string(server_duration));
     // benchmark_report("overall", "join_duration", std::to_string(join_duration));
     return;
 }

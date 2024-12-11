@@ -27,6 +27,18 @@ public:
     std::array<SPSCQueue<HashRequest, QUEUE_SIZE> *, MAX_CLIENTS> client_queues{};
     std::atomic<bool> active_clients[MAX_CLIENTS]{}; // Track active clients
 
+    std::mt19937 rng;
+
+    void generate_random_string(char* buffer, size_t length) 
+    {
+        static const char charset[] = "abcdefghijklmnopqrstuvwxyz";
+        for (size_t i = 0; i < length - 1; ++i) {
+            buffer[i] = charset[rng() % (sizeof(charset) - 1)];
+        }
+        buffer[length - 1] = '\0';
+    }
+
+
     struct Batch
     {
         std::vector<HashRequest> requests;
@@ -41,36 +53,16 @@ public:
     Batch *prepare_new_batch()
     {
         auto *batch = new Batch(current_batch_id.fetch_add(1));
-
-        static size_t start_idx = 0;
-        size_t current_idx = start_idx;
-        size_t clients_checked = 0;
-
-        while (batch->requests.size() < MAX_BATCH_SIZE && clients_checked < MAX_CLIENTS)
+        
+        while( batch->requests.size() < MAX_BATCH_SIZE)
         {
-            if (active_clients[current_idx])
-            {
-                auto *queue = client_queues[current_idx];
-                if (queue)
-                {
-                    HashRequest req;
-                    if (queue->try_pop(req))
-                    {
-                        batch->requests.push_back(std::move(req));
-                    }
-                }
-            }
-
-            current_idx = (current_idx + 1) % MAX_CLIENTS;
-            clients_checked++;
-
-            if (clients_checked == MAX_CLIENTS && batch->requests.size() < MAX_BATCH_SIZE)
-            {
-                clients_checked = 0;
-            }
+            char key[MAX_KEY_LENGTH];
+            char value[MAX_VALUE_LENGTH];
+            // strcpy(key, "1234568"); 
+            generate_random_string(key, MAX_KEY_LENGTH);
+            generate_random_string(value, MAX_VALUE_LENGTH);
+            batch->requests.push_back(HashRequest(key, value, 0));
         }
-
-        start_idx = (current_idx + 1) % MAX_CLIENTS;
 
         return batch;
     }
@@ -109,7 +101,7 @@ public:
     }
 
 public:
-    HashTableServer(size_t num_ops)
+    HashTableServer(size_t num_ops):rng(std::random_device{}())
     {
         MAX_BATCH_SIZE = Scheduler::get().batch_size;
         target_ops = num_ops;
