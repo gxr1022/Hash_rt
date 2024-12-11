@@ -145,7 +145,6 @@ namespace verona::rt
     static constexpr size_t BATCH_SIZE = 100;
     Work* get_work(size_t& batch)
     {
-      // auto start_time = std::chrono::steady_clock::now();
       // Check if we have a thread-local work item to use that is not subject
       // to work stealing.  This is batched, and should not happen more than
       // BATCH_SIZE times in a row.
@@ -157,7 +156,37 @@ namespace verona::rt
 
       batch = BATCH_SIZE;
 
+      if (core->should_steal_for_fairness)
+      {
+        // Check if we have some work. We should only reschedule the token
+        // if we do have some work.  Otherwise, the token will be rescheduled
+        // and we will fail to reach quicescence.
+        if (!core->q.is_empty())
+        {
+          auto work = try_steal();
+          // Set the flag before rescheduling the token so that we don't have
+          // a race.
+          core->should_steal_for_fairness = false;
+          // Reschedule the token.
+          core->q.enqueue(core->token_work);
+          if (work != nullptr)
+          {
+            return_next_work();
+            return work;
+          }
+        }
+      }
+
       auto work = core->q.dequeue();
+      if (work != nullptr)
+      {
+        return_next_work();
+        return work;
+      }
+
+      // Our queue is effectively empty, so this is like receiving a token,
+      // try a steal.
+      work = try_steal();
       if (work != nullptr)
       {
         return_next_work();
@@ -168,8 +197,37 @@ namespace verona::rt
       {
         return std::exchange(next_work, nullptr);
       }
-      return nullptr;
+
+      return steal();
     }
+
+    // Work* get_work(size_t& batch)
+    // {
+    //   // auto start_time = std::chrono::steady_clock::now();
+    //   // Check if we have a thread-local work item to use that is not subject
+    //   // to work stealing.  This is batched, and should not happen more than
+    //   // BATCH_SIZE times in a row.
+    //   if (next_work != nullptr && batch != 0)
+    //   {
+    //     batch--;
+    //     return std::exchange(next_work, nullptr);
+    //   }
+
+    //   batch = BATCH_SIZE;
+
+    //   auto work = core->q.dequeue();
+    //   if (work != nullptr)
+    //   {
+    //     return_next_work();
+    //     return work;
+    //   }
+
+    //   if (next_work != nullptr)
+    //   {
+    //     return std::exchange(next_work, nullptr);
+    //   }
+    //   return nullptr;
+    // }
 
     
     /**
@@ -197,62 +255,9 @@ namespace verona::rt
       // auto loop_start_time = std::chrono::steady_clock::now();
       // double total_work_time = 0;
       double get_duration;
-      auto& scheduler = Scheduler::get();
-      while (Scheduler::get().has_scheduling ||
-             Scheduler::get().completed_count_last_batch.load() != 0)
+      // auto& scheduler = Scheduler::get();
+      while ((work = get_work(batch)))
       {
-  
-        loop_start:
-        while (scheduler.completed_count_last_batch.load() == 0 && Scheduler::get().has_scheduling)
-        {
-          std::this_thread::yield();
-        }
-        if(scheduler.completed_count_last_batch.load() == scheduler.batch_size)
-        {
-          // std::cout<< "this thread id: " << core->affinity << " producer start" << scheduler.producer_start.load() << std::endl;
-          scheduler.producer_start.store(true);  
-          // std::cout<< "this thread id: " << core->affinity << " producer start" << scheduler.producer_start.load() << std::endl;
-        }
-        
-        while(1)
-        {
-          auto current_count = scheduler.completed_count_last_batch.load();
-          if (current_count > 0)
-          {
-            //  std::cout<< "this thread id: " << core->affinity << " completed_count_last_batch: " << current_count << "the total count of insert: " << scheduler.total_count.load()<< std::endl;
-             bool suc = scheduler.completed_count_last_batch.compare_exchange_strong(current_count, current_count - 1);
-             if (suc)
-             {
-            //  std::cout<< "this thread id: " << core->affinity << " completed_count_last_batch: " << scheduler.completed_count_last_batch.load() << "the total count of insert: " << scheduler.total_count.fetch_add(1) << std::endl;
-               goto next;
-             }
-          }
-          else if(scheduler.has_scheduling)
-          {
-            goto loop_start;
-          }
-          else
-          {
-            break;
-          }
-        }
-
-        next:
-        auto start_time = std::chrono::steady_clock::now();
-        work = get_work(batch);
-        if (work == nullptr)
-        {
-          continue;
-        }
-        auto end_time = std::chrono::steady_clock::now();
-        get_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(
-                         end_time - start_time)
-                         .count();
-        Logging::cout() << "get work duration: " << get_duration
-                        << Logging::endl;
-        Logging::cout() << "thread id: " << core->affinity << " Schedule work "
-                        << work << Logging::endl;
-
         auto work_start = std::chrono::steady_clock::now();
         // Logging::cout() << "the total count of insert: "
         //                 << Scheduler::get().total_count.load() << Logging::endl;
@@ -280,6 +285,7 @@ namespace verona::rt
       work = get_work(batch);
       while (work != nullptr)
       {
+        work->run();
         work = get_work(batch);
       }
 

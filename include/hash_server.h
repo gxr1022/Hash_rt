@@ -86,32 +86,13 @@ public:
             if (!batch->requests.empty())
             {
                 size_t batch_size = batch->requests.size();
-                while (!scheduler.producer_start.load())
-                {
-                    std::this_thread::yield();
-                }
+                
                 for (const auto &req : batch->requests)
                 {
                     hash_table->insert(req.key, req.value);
                     completed_ops++;
                 }
-
-                Scheduler::get().producer_start.store(false);
-                while (1)
-                {
-                    auto current_count = Scheduler::get().completed_count_last_batch.load();
-                    if (current_count == 0)
-                    {
-                        // std::cout<< "this thread id: " << this_thread::get_id() << " completed_count_last_batch: " << current_count << std::endl;
-                        bool suc = Scheduler::get().completed_count_last_batch.compare_exchange_strong(current_count, batch_size);
-                        // std::cout<< "this thread id: " << this_thread::get_id() << " completed_count_last_batch: " << Scheduler::get().completed_count_last_batch.load() << std::endl;
-                        if (suc)
-                        {
-                            goto next1;
-                        }
-                    }
-                }
-
+               
             next1:
                 batch->requests.clear();
             }
