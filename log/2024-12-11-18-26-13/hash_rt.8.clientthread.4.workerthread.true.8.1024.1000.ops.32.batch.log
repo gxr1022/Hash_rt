@@ -1,0 +1,41 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1811848053
+[New Thread 0x7fbfdf3e8640 (LWP 1224566)]
+[New Thread 0x7fbfdebe7640 (LWP 1224567)]
+[New Thread 0x7fbfde3e6640 (LWP 1224568)]
+[New Thread 0x7fbfddbe5640 (LWP 1224569)]
+[New Thread 0x7fbfdd3e4640 (LWP 1224570)]
+scheduler loop time: 1337388
+[Thread 0x7fbfde3e6640 (LWP 1224568) exited]
+[Thread 0x7fbfdebe7640 (LWP 1224567) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1224566) exited]
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1224569, futex_word=0x7fbfddbe5910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1224532] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

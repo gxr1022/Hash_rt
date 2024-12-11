@@ -158,10 +158,7 @@ public:
                 // when_schedule_count.fetch_add(1);
 
                 inserted = bucketAcq->insert(key, value);
-                // if (inserted)
-                {
-                    completed_inserts.fetch_add(1);
-                }
+                completed_inserts.fetch_add(1);
             };
         }
     }

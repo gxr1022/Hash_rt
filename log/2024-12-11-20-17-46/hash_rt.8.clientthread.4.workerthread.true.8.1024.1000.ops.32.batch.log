@@ -1,0 +1,113 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1776906964
+[New Thread 0x7fbfdf3e8640 (LWP 1242226)]
+[New Thread 0x7fbfd73e5640 (LWP 1242227)]
+[New Thread 0x7fbfd6be4640 (LWP 1242228)]
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 4 completed_count_last_batch: 3the total count of insert: 0
+[New Thread 0x7fbfd63e3640 (LWP 1242229)]
+this thread id: 3 completed_count_last_batch: 2the total count of insert: 1
+this thread id: this thread id: 4 completed_count_last_batch: 30 completed_count_last_batch: the total count of insert: 02
+this thread id: 140462060897856 completed_count_last_batch: 0
+the total count of insert: this thread id: this thread id: 14046206089785634
+ completed_count_last_batch: 3the total count of insert: 4
+this thread id: 4 completed_count_last_batch: 2the total count of insert: 5
+this thread id: 4 completed_count_last_batch: 1the total count of insert: 6
+this thread id: 4 completed_count_last_batch: 0the total count of insert: 7
+ completed_count_last_batch: 0
+[New Thread 0x7fbfd5be2640 (LWP 1242230)]
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: 43 completed_count_last_batch: 2
+ completed_count_last_batch: 2the total count of insert: 8
+this thread id: 2 completed_count_last_batch: 12the total count of insert: the total count of insert: 109
+
+this thread id: 4 completed_count_last_batch: 0the total count of insert: 11
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: 3 completed_count_last_batch: 2the total count of insert: 12
+4 completed_count_last_batch: 2the total count of insert: 13
+2this thread id: 
+4 completed_count_last_batch: 0the total count of insert: 14
+this thread id: 3 completed_count_last_batch: 0the total count of insert: 15
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: 2
+3 completed_count_last_batch: 2the total count of insert: 16
+[New Thread 0x7fbfd53e1640 (LWP 1242231)]
+this thread id: 4 completed_count_last_batch: 2the total count of insert: 17
+this thread id: this thread id: 2 completed_count_last_batch: 0the total count of insert: 318
+ completed_count_last_batch: 0the total count of insert: 19
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: this thread id: 4 completed_count_last_batch: 0the total count of insert: 20
+3 completed_count_last_batch: 0the total count of insert: 21
+this thread id: 12 completed_count_last_batch: 0the total count of insert: 22
+
+1 completed_count_last_batch: 0the total count of insert: 23
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: 232 completed_count_last_batch: 
+this thread id: 4 completed_count_last_batch: 1the total count of insert:  completed_count_last_batch: 241the total count of insert: 
+25
+this thread id: 41 completed_count_last_batch: the total count of insert: 0the total count of insert: 26
+27this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: 1
+
+this thread id: 21 completed_count_last_batch:  completed_count_last_batch: 1the total count of insert: 1the total count of insert: 2829
+
+this thread id: 4 completed_count_last_batch: 0the total count of insert: 30
+3 completed_count_last_batch: 0the total count of insert: 31
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: 331this thread id: 
+this thread id:  completed_count_last_batch:  completed_count_last_batch: 0the total count of insert: 402 completed_count_last_batch: 0the total count of insert: 33
+ completed_count_last_batch: 320
+the total count of insert: 34
+the total count of insert: 35
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: this thread id: 4 completed_count_last_batch: 223 completed_count_last_batch: this thread id: 0the total count of insert:  completed_count_last_batch: 3600the total count of insert: the total count of insert: 37
+
+1 completed_count_last_batch: 38scheduler loop time: 
+0
+the total count of insert: 39
+1647916
+[Thread 0x7fbfd73e5640 (LWP 1242227) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1242226) exited]
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1242228, futex_word=0x7fbfd6be4910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) info thread
+[?2004l  Id   Target Id                                     Frame 
+* 1    Thread 0x7ffff7a13300 (LWP 1242194) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1242228, 
+    futex_word=0x7fbfd6be4910) at ./nptl/futex-internal.c:57
+  4    Thread 0x7fbfd6be4640 (LWP 1242228) "hash_rt" 0x00005555555d393f in verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561e030, 
+    startup=0x5555555adb9b <verona::rt::nop()>) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:212
+  5    Thread 0x7fbfd63e3640 (LWP 1242229) "hash_rt" 0x00005555555d3972 in std::__atomic_base<unsigned long>::load (__m=std::memory_order_seq_cst, 
+    this=0x555555608f70 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool+176>) at /usr/include/c++/11/bits/atomic_base.h:484
+  6    Thread 0x7fbfd5be2640 (LWP 1242230) "hash_rt" 0x00005555555a612a in std::atomic<bool>::operator bool (
+    this=0x555555608f68 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool+168>) at /usr/include/c++/11/atomic:86
+  7    Thread 0x7fbfd53e1640 (LWP 1242231) "hash_rt" std::atomic<bool>::operator bool (
+    this=0x555555608f68 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool+168>) at /usr/include/c++/11/atomic:86
+[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1242194] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

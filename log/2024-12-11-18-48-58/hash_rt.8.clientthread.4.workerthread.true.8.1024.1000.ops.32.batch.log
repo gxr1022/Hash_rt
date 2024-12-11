@@ -1,0 +1,207 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1826111311
+[New Thread 0x7fbfdf3e8640 (LWP 1232722)]
+[New Thread 0x7fbfdebe7640 (LWP 1232723)]
+[New Thread 0x7fbfde3e6640 (LWP 1232724)]
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 3 producer start0
+this thread id: 3 producer start1
+this thread id: 3 completed_count_last_batch: 4
+[New Thread 0x7fbfddbe5640 (LWP 1232725)]
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 2 completed_count_last_batch: this thread id: 23
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 2 producer start0
+this thread id: 2 producer start1 completed_count_last_batch: 
+1this thread id: 2 completed_count_last_batch: 4
+
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 3 completed_count_last_batch: 2
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: 2 producer start4
+[New Thread 0x7fbfdd3e4640 (LWP 1232726)]
+this thread id: 1 producer start0
+this thread id: 1 producer start1
+1
+this thread id: this thread id: 12 producer start3 completed_count_last_batch: 4
+ producer start1
+this thread id: 13 producer start1
+this thread id: 3 completed_count_last_batch: 3
+
+this thread id: 2 completed_count_last_batch: 2
+this thread id: 3 completed_count_last_batch: 1
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: 342 producer start producer start00
+
+
+this thread id: 2this thread id:  producer start31 producer start1
+
+this thread id: 2 completed_count_last_batch: 4
+this thread id: 2 completed_count_last_batch: 3
+this thread id: 3 completed_count_last_batch: 2
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: 43 producer start
+this thread id: 2 producer startthis thread id: 01 producer start
+0this thread id: 2 producer start1
+this thread id: 
+2 completed_count_last_batch: 4
+this thread id: 1 producer start1
+this thread id: 2 completed_count_last_batch: 3
+0this thread id: 
+this thread id: 1this thread id:  completed_count_last_batch: 3 producer start2
+2 completed_count_last_batch: 1
+1
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 2 producer start0
+this thread id: 2 producer startthis thread id: 1
+this thread id: 2 completed_count_last_batch: 4
+this thread id: this thread id: 2 completed_count_last_batch: 3
+3 producer start1
+this thread id: 3 producer start1
+this thread id: 3 completed_count_last_batch: 1
+this thread id: 2 completed_count_last_batch: 2
+1 producer start1
+this thread id: this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 1this thread id: 42
+this thread id:  producer start0
+3this thread id:  producer start10 completed_count_last_batch: 4
+ producer start0
+this thread id: this thread id: 
+this thread id: 13 completed_count_last_batch:  producer start3
+2 producer startthis thread id: 1
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 1140462060897856 completed_count_last_batch: 10
+this thread id: 140462060897856 completed_count_last_batch: this thread id: 4 completed_count_last_batch: 
+2
+2 producer start0
+this thread id: 2 producer start1
+this thread id: 2 completed_count_last_batch: 4
+
+this thread id: this thread id: 13 completed_count_last_batch: this thread id: 3
+ producer start1
+this thread id: 1 producer start1
+this thread id: 3 completed_count_last_batch: 1
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: this thread id: this thread id: 1 producer start032 producer start0 completed_count_last_batch: 
+2this thread id: 3 producer start1
+140462060897856
+ completed_count_last_batch: this thread id: 2 producer start1
+this thread id: 2 producer start1
+this thread id: this thread id: 2 completed_count_last_batch: 3
+
+this thread id: 3this thread id: 1 producer start completed_count_last_batch: 1
+4this thread id: 1 completed_count_last_batch: 2
+4
+this thread id: 1 completed_count_last_batch: 12 completed_count_last_batch: 
+3
+
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: 42
+this thread id:  producer startscheduler loop time: 1629096
+13 producer start0 producer start
+this thread id: 1 producer start1
+this thread id: 1 completed_count_last_batch: 4
+0
+this thread id: 2 producer start1
+this thread id: 2 completed_count_last_batch: 3
+0
+this thread id: 3 producer start1
+this thread id: 2 completed_count_last_batch: 1
+this thread id: 1 completed_count_last_batch: 2
+[Thread 0x7fbfdd3e4640 (LWP 1232726) exited]
+[Thread 0x7fbfddbe5640 (LWP 1232725) exited]
+[Thread 0x7fbfdebe7640 (LWP 1232723) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1232722) exited]
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1232724, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) ifno[K[Kf[K[Knfo thread
+[?2004l  Id   Target Id                                     Frame 
+* 1    Thread 0x7ffff7a13300 (LWP 1232705) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1232724, 
+    futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+  4    Thread 0x7fbfde3e6640 (LWP 1232724) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+[?2004h(gdb) thread 4
+[?2004l[Switching to thread 4 (Thread 0x7fbfde3e6640 (LWP 1232724))]
+#0  0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+120	../sysdeps/unix/syscall-template.S: No such file or directory.
+[?2004h(gdb) bt
+[?2004l#0  0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+#1  0x00005555555a5aef in __gthread_yield () at /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:693
+#2  0x00005555555a81ca in std::this_thread::yield () at /usr/include/c++/11/bits/std_thread.h:329
+#3  0x00005555555d386f in verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561dfa0, startup=0x5555555adb9b <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:209
+#4  0x00005555555cd275 in verona::rt::SchedulerThread::run<>(verona::rt::SchedulerThread*, void (*)()) (t=0x55555561dfa0, startup=0x5555555adb9b <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:133
+#5  0x00005555555d3ec8 in verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()> (affinity=3, 
+    body=0x5555555cd24e <verona::rt::SchedulerThread::run<>(verona::rt::SchedulerThread*, void (*)())>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/../pal/threadpoolbuilder.h:39
+#6  0x00005555555e770d in std::__invoke_impl<void, void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> (
+    __f=@0x55555561f578: 0x5555555d3e8c <verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()>(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)())>) at /usr/include/c++/11/bits/invoke.h:61
+#7  0x00005555555e75a0 in std::__invoke<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> (
+    __fn=@0x55555561f578: 0x5555555d3e8c <verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()>(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)())>) at /usr/include/c++/11/bits/invoke.h:96
+#8  0x00005555555e743f in std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> >::_M_invoke<0ul, 1ul, 2ul, 3ul, 4ul> (
+    this=0x55555561f558) at /usr/include/c++/11/bits/std_thread.h:259
+#9  0x00005555555e73a0 in std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> >::operator() (this=0x55555561f558)
+    at /usr/include/c++/11/bits/std_thread.h:266
+#10 0x00005555555e7380 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> > >::_M_run (
+    this=0x55555561f550) at /usr/include/c++/11/bits/std_thread.h:211
+#11 0x00007ffff7e23253 in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#12 0x00007ffff7b92ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#13 0x00007ffff7c24850 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+[?2004h(gdb) 
+[?2004l#0  0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+#1  0x00005555555a5aef in __gthread_yield () at /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:693
+#2  0x00005555555a81ca in std::this_thread::yield () at /usr/include/c++/11/bits/std_thread.h:329
+#3  0x00005555555d386f in verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561dfa0, startup=0x5555555adb9b <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:209
+#4  0x00005555555cd275 in verona::rt::SchedulerThread::run<>(verona::rt::SchedulerThread*, void (*)()) (t=0x55555561dfa0, startup=0x5555555adb9b <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:133
+#5  0x00005555555d3ec8 in verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()> (affinity=3, 
+    body=0x5555555cd24e <verona::rt::SchedulerThread::run<>(verona::rt::SchedulerThread*, void (*)())>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/../pal/threadpoolbuilder.h:39
+#6  0x00005555555e770d in std::__invoke_impl<void, void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> (
+    __f=@0x55555561f578: 0x5555555d3e8c <verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()>(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)())>) at /usr/include/c++/11/bits/invoke.h:61
+#7  0x00005555555e75a0 in std::__invoke<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> (
+    __fn=@0x55555561f578: 0x5555555d3e8c <verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()>(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)())>) at /usr/include/c++/11/bits/invoke.h:96
+#8  0x00005555555e743f in std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> >::_M_invoke<0ul, 1ul, 2ul, 3ul, 4ul> (
+    this=0x55555561f558) at /usr/include/c++/11/bits/std_thread.h:259
+#9  0x00005555555e73a0 in std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> >::operator() (this=0x55555561f558)
+    at /usr/include/c++/11/bits/std_thread.h:266
+#10 0x00005555555e7380 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> > >::_M_run (
+    this=0x55555561f550) at /usr/include/c++/11/bits/std_thread.h:211
+#11 0x00007ffff7e23253 in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#12 0x00007ffff7b92ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#13 0x00007ffff7c24850 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1232705] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

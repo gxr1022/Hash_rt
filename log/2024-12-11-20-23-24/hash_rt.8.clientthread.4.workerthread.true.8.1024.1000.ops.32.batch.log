@@ -1,0 +1,102 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1785398152
+[New Thread 0x7fbfdf3e8640 (LWP 1243262)]
+[New Thread 0x7fbfd73e5640 (LWP 1243263)]
+[New Thread 0x7fbfd6be4640 (LWP 1243264)]
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 4 completed_count_last_batch: 3the total count of insert: 0
+[New Thread 0x7fbfd63e3640 (LWP 1243265)]
+this thread id: 3 completed_count_last_batch: 2the total count of insert: 1
+this thread id: 3 completed_count_last_batch: 1the total count of insert: this thread id: 24
+ completed_count_last_batch: 0this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: 3the total count of insert: 3
+3 completed_count_last_batch: 3the total count of insert: 4
+this thread id: 4 completed_count_last_batch: 2the total count of insert: this thread id: 
+5
+[New Thread 0x7fbfd5be2640 (LWP 1243266)]
+this thread id: 3this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+ completed_count_last_batch: 3the total count of insert: 6
+this thread id: 2 completed_count_last_batch: this thread id: 2the total count of insert: 437 completed_count_last_batch:  completed_count_last_batch: 
+2the total count of insert: 8
+2the total count of insert: 9
+this thread id: 3 completed_count_last_batch: 1the total count of insert: 10
+this thread id: 4 completed_count_last_batch: 0the total count of insert: 11this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: 3
+this thread id: 4 completed_count_last_batch: 2the total count of insert: 12
+
+3 completed_count_last_batch: 1the total count of insert: 13
+this thread id: 3 completed_count_last_batch: 0the total count of insert: 14
+this thread id: 4 completed_count_last_batch: 0the total count of insert: 15
+this thread id: 140462060897856 completed_count_last_batch: 0
+[New Thread 0x7fbfd53e1640 (LWP 1243267)]
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: this thread id: 4 completed_count_last_batch: 1the total count of insert: 16
+this thread id: 3 completed_count_last_batch: 1the total count of insert: 17
+this thread id: 3 completed_count_last_batch: 0the total count of insert: 18
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: 3this thread id: this thread id: 4 completed_count_last_batch: 1the total count of insert: 192
+ completed_count_last_batch: 
+31the total count of insert: 20
+ completed_count_last_batch: 0the total count of insert: 21
+this thread id: 4 completed_count_last_batch: 0the total count of insert: 22
+1 completed_count_last_batch: 0the total count of insert: 23
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: 24 completed_count_last_batch: 1the total count of insert: this thread id: 24
+this thread id: 4 completed_count_last_batch: 0the total count of insert: 25
+3 completed_count_last_batch: 0the total count of insert: 26
+2 completed_count_last_batch: 0the total count of insert: 27
+
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: this thread id: 2 completed_count_last_batch: 4this thread id: 30 completed_count_last_batch: 0 completed_count_last_batch: 0the total count of insert: 28
+the total count of insert: 29
+1 completed_count_last_batch: 0the total count of insert: 30
+the total count of insert: 31
+3
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: this thread id: 4 completed_count_last_batch: 0the total count of insert: 32
+2
+2 completed_count_last_batch: 0the total count of insert: 33
+this thread id: 3 completed_count_last_batch: 0the total count of insert: 34
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: 2this thread id: 14 completed_count_last_batch: 31the total count of insert:  completed_count_last_batch: 1352 completed_count_last_batch: 
+the total count of insert: 36
+ completed_count_last_batch: this thread id: 2 completed_count_last_batch: 0the total count of insert: 037the total count of insert: 
+1the total count of insert: 39
+38
+
+scheduler loop time: 1684316
+the total count of insert: 40
+[report]: overall_duration_ns : 1852180268
+[report]: overall_operation_number : 32
+[report]: overall_throughput : 17.276936
+[report]: overall_avg_time_per_ops : 57880633.000000
+[Thread 0x7fbfd53e1640 (LWP 1243267) exited]
+[Thread 0x7fbfd5be2640 (LWP 1243266) exited]
+[Thread 0x7fbfd63e3640 (LWP 1243265) exited]
+[Thread 0x7fbfd6be4640 (LWP 1243264) exited]
+[Thread 0x7fbfd73e5640 (LWP 1243263) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1243262) exited]
+[Inferior 1 (process 1243246) exited normally]
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l

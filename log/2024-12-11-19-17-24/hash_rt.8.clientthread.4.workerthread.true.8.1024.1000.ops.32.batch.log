@@ -1,0 +1,220 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1805319812
+[New Thread 0x7fbfdf3e8640 (LWP 1237670)]
+[New Thread 0x7fbfd73e5640 (LWP 1237671)]
+[New Thread 0x7fbfd6be4640 (LWP 1237672)]
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+this thread id: 4 completed_count_last_batch: 4the total count of insert: 0
+this thread id: 4 completed_count_last_batch: 3the total count of insert: 0
+[New Thread 0x7fbfd63e3640 (LWP 1237673)]
+this thread id: 3 completed_count_last_batch: 3the total count of insert: 1
+this thread id: 3 completed_count_last_batch: 2the total count of insert: 1
+this thread id: this thread id: 43 completed_count_last_batch: 2the total count of insert: 2 completed_count_last_batch: 2
+the total count of insert: 2
+this thread id: 4 completed_count_last_batch: 1the total count of insert: 2
+this thread id: 3 completed_count_last_batch: 1the total count of insert: 3
+this thread id: this thread id: 34 completed_count_last_batch: 1the total count of insert:  completed_count_last_batch: 4
+this thread id: 3 completed_count_last_batch: 0the total count of insert: 4
+this thread id: 140462060897856 completed_count_last_batch: 0
+1the total count of insert: 5
+this thread id: 4 completed_count_last_batch: 0the total count of insert: 5
+this thread id: this thread id: this thread id: 140462060897856 completed_count_last_batch: 4
+[New Thread 0x7fbfd5be2640 (LWP 1237674)]
+4 completed_count_last_batch: 4the total count of insert: 6
+this thread id: 4 completed_count_last_batch: 3the total count of insert: 6
+this thread id: 4 completed_count_last_batch: 3the total count of insert: 7
+3this thread id: 4 completed_count_last_batch:  completed_count_last_batch: 24the total count of insert: 7the total count of insert: 
+7
+this thread id: 4 completed_count_last_batch: 2the total count of insert: 8
+this thread id: this thread id: 4 completed_count_last_batch: 3 completed_count_last_batch: 11the total count of insert: the total count of insert: 8
+this thread id: 4 completed_count_last_batch: 1the total count of insert: 10
+this thread id: 4 completed_count_last_batch: 0the total count of insert: 10
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: 4this thread id: 
+2 completed_count_last_batch: 4the total count of insert: 11
+this thread id: 2 completed_count_last_batch: 3the total count of insert: 911
+4 completed_count_last_batch: 4the total count of insert: 12
+
+this thread id: 3 completed_count_last_batch: 3the total count of insert: 12
+this thread id: this thread id: 3 completed_count_last_batch: 2the total count of insert: 4 completed_count_last_batch: 12
+2the total count of insert: 13
+this thread id: 4 completed_count_last_batch: 2the total count of insert: 14
+this thread id: 4 completed_count_last_batch: 1the total count of insert: this thread id: 14
+3 completed_count_last_batch: 2the total count of insert: 15
+this thread id: 3 completed_count_last_batch: 1the total count of insert: 15
+this thread id: 3 completed_count_last_batch: 1the total count of insert: 16
+this thread id: 4 completed_count_last_batch: 1the total count of insert: this thread id: 163this thread id: 140462060897856 completed_count_last_batch: 0
+
+ completed_count_last_batch: this thread id: 4 completed_count_last_batch: 0the total count of insert: 16
+0the total count of insert: 17
+this thread id: this thread id: this thread id: 3 completed_count_last_batch: 4140462060897856 completed_count_last_batch: 4
+4 completed_count_last_batch: 4the total count of insert: 18
+the total count of insert: this thread id: 4 completed_count_last_batch: this thread id: 183
+this thread id: 3 completed_count_last_batch: 3the total count of insert: 18
+this thread id: 3 completed_count_last_batch: 3the total count of insert: 19
+this thread id: 3 completed_count_last_batch: 2the total count of insert: 19
+the total count of insert: 20
+this thread id: 3 completed_count_last_batch: 2the total count of insert: 21
+this thread id: 3 completed_count_last_batch: 1the total count of insert: 21
+this thread id: 3 completed_count_last_batch: 1the total count of insert: 22
+2 completed_count_last_batch: 3the total count of insert: 22this thread id: 3
+ completed_count_last_batch: this thread id: this thread id: 2 completed_count_last_batch: 0the total count of insert: 22
+4 completed_count_last_batch: 1the total count of insert: 23
+0the total count of insert: 23
+this thread id: 4 completed_count_last_batch: 0the total count of insert: 24
+this thread id: 140462060897856 completed_count_last_batch: 0
+[New Thread 0x7fbfd53e1640 (LWP 1237675)]
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: 42 completed_count_last_batch: 4the total count of insert: 25
+this thread id: 2 completed_count_last_batch: 3the total count of insert: 25
+this thread id: 2 completed_count_last_batch: 3the total count of insert: 26
+this thread id: 2 completed_count_last_batch: 2the total count of insert: 26
+this thread id: 4 completed_count_last_batch: 4the total count of insert: 27
+this thread id: 3this thread id: 4 completed_count_last_batch: 2the total count of insert: 27
+2this thread id:  completed_count_last_batch: 4this thread id: 1 completed_count_last_batch: 4the total count of insert: 28
+ completed_count_last_batch: 
+this thread id: 1 completed_count_last_batch: 2the total count of insert: 28
+this thread id: 1 completed_count_last_batch: 2the total count of insert: 29
+ completed_count_last_batch: 2the total count of insert: 29
+this thread id: 4 completed_count_last_batch: 1the total count of insert: 29
+42the total count of insert: 30
+the total count of insert: this thread id: 30
+this thread id: 4 completed_count_last_batch: this thread id: 13the total count of insert:  completed_count_last_batch: 301the total count of insert: 
+1this thread id: this thread id: 4 completed_count_last_batch: 0the total count of insert: 231 completed_count_last_batch: 
+30 completed_count_last_batch: 
+0the total count of insert: 32
+0this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: the total count of insert: this thread id: 342this thread id:  completed_count_last_batch: 4 completed_count_last_batch: 4the total count of insert: 34
+33
+4the total count of insert: 34
+
+this thread id: 3 completed_count_last_batch: 3the total count of insert: 34
+this thread id: 3 completed_count_last_batch: 3the total count of insert: 35
+this thread id:  completed_count_last_batch: 43the total count of insert:  completed_count_last_batch: 2the total count of insert: 3535
+this thread id: 2 completed_count_last_batch: 2the total count of insert: 36
+this thread id: 2 completed_count_last_batch: 2the total count of insert: 37
+this thread id: 2 completed_count_last_batch: 1the total count of insert: this thread id: 37
+4 completed_count_last_batch: 1the total count of insert: 38
+this thread id: 2 completed_count_last_batch: 1the total count of insert: 39
+
+this thread id: this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: 3 completed_count_last_batch: 4the total count of insert: 39
+42 completed_count_last_batch:  completed_count_last_batch: 44the total count of insert: the total count of insert: 3940
+
+this thread id: 3 completed_count_last_batch: 3the total count of insert: 40
+this thread id: this thread id: 3 completed_count_last_batch: 3the total count of insert: 414this thread id: 1 completed_count_last_batch: 2 completed_count_last_batch: 33
+this thread id: 
+4 completed_count_last_batch: 3the total count of insert: 41
+this thread id: this thread id: 3 completed_count_last_batch: 24the total count of insert: the total count of insert: 42
+this thread id: 2 completed_count_last_batch: 2the total count of insert: 42
+42this thread id: 
+ completed_count_last_batch: this thread id: 1 completed_count_last_batch: 2the total count of insert: 43
+2this thread id: 1 completed_count_last_batch: 2the total count of insert:  completed_count_last_batch: 44
+2the total count of insert: 44
+3the total count of insert: 44
+the total count of insert: this thread id: 4 completed_count_last_batch: 1the total count of insert: 4445
+
+this thread id: 4 completed_count_last_batch: 1the total count of insert: 46
+this thread id: this thread id: 4 completed_count_last_batch: 0the total count of insert: 3 completed_count_last_batch: 1the total count of insert: this thread id: this thread id: this thread id: 146 completed_count_last_batch: 247140462060897856
+0the total count of insert:  completed_count_last_batch:  completed_count_last_batch: 0047
+
+
+the total count of insert: this thread id: 3 completed_count_last_batch: 0the total count of insert: 4849
+
+this thread id: 140462060897856this thread id: this thread id: this thread id: 2 completed_count_last_batch: 4the total count of insert: 50
+this thread id: 2 completed_count_last_batch: 3the total count of insert: 50
+3 completed_count_last_batch: 4the total count of insert: 51
+this thread id: 4this thread id: 3 completed_count_last_batch: 3the total count of insert:  completed_count_last_batch: 51
+2 completed_count_last_batch: 3the total count of insert: 52
+this thread id: 3this thread id:  completed_count_last_batch: 32the total count of insert:  completed_count_last_batch: 2the total count of insert: 52this thread id: 
+1this thread id: 3 completed_count_last_batch: 4the total count of insert:  completed_count_last_batch: 4252
+the total count of insert: 53
+
+ completed_count_last_batch: this thread id: 153 completed_count_last_batch: 2the total count of insert: 
+this thread id: 4 completed_count_last_batch: 2the total count of insert: 54
+this thread id: 4 completed_count_last_batch: 2the total count of insert: 55
+53
+this thread id: 2this thread id: 12 completed_count_last_batch: 1the total count of insert: 55
+this thread id: 2 completed_count_last_batch: 0the total count of insert: 55
+the total count of insert: 56
+this thread id: 4 completed_count_last_batch: 0the total count of insert: 57
+ completed_count_last_batch: 1the total count of insert: 58
+this thread id: 1 completed_count_last_batch: 0the total count of insert: 58
+this thread id: 140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: this thread id: this thread id: 423
+this thread id: this thread id: 1 completed_count_last_batch:  completed_count_last_batch: 4the total count of insert: 59
+4this thread id: 2 completed_count_last_batch: 3the total count of insert: the total count of insert:  completed_count_last_batch: 44the total count of insert:  completed_count_last_batch: 594
+the total count of insert: this thread id: 3 completed_count_last_batch: 3the total count of insert: 60
+this thread id: 3 completed_count_last_batch: 3the total count of insert: 61
+this thread id: 360 completed_count_last_batch: 2the total count of insert: 61
+59
+
+this thread id: 594 completed_count_last_batch: 
+this thread id: 3 completed_count_last_batch: 2the total count of insert: 62
+this thread id: 3 completed_count_last_batch: 1the total count of insert: 62
+this thread id: 2 completed_count_last_batch: 2the total count of insert: 63this thread id: 
+23 completed_count_last_batch: this thread id: 2 completed_count_last_batch: 1the total count of insert: 63
+1this thread id: the total count of insert: 264
+this thread id: 3 completed_count_last_batch: 0the total count of insert: 64 completed_count_last_batch: this thread id: 1the total count of insert: the total count of insert: 65
+65
+140462060897856 completed_count_last_batch: 0
+this thread id: 140462060897856 completed_count_last_batch: 4
+scheduler loop time: 
+1971407
+this thread id: 4 completed_count_last_batch: 4the total count of insert: 66
+this thread id: 4 completed_count_last_batch: 3the total count of insert: 66
+this thread id: 2 completed_count_last_batch: 3the total count of insert: 67
+this thread id: 2 completed_count_last_batch: 3the total count of insert: 68
+this thread id: 2 completed_count_last_batch: 2the total count of insert: 68
+this thread id: 1 completed_count_last_batch: 2the total count of insert: 69
+this thread id: this thread id: 1 completed_count_last_batch: 2the total count of insert: 270 completed_count_last_batch: 
+this thread id: 4this thread id: this thread id:  completed_count_last_batch: 133the total count of insert: 70 completed_count_last_batch: 
+1 completed_count_last_batch: this thread id: 4 completed_count_last_batch: 1the total count of insert: 70
+this thread id: 4 completed_count_last_batch: 1the total count of insert: 71
+this thread id: 4 completed_count_last_batch: 0the total count of insert: 71
+2the total count of insert: 72
+this thread id: 3 completed_count_last_batch: 0the total count of insert: 72
+the total count of insert: 73
+2the total count of insert: 74
+this thread id: 2 completed_count_last_batch: 0the total count of insert: 74
+[Thread 0x7fbfd53e1640 (LWP 1237675) exited]
+[Thread 0x7fbfd6be4640 (LWP 1237672) exited]
+[Thread 0x7fbfd73e5640 (LWP 1237671) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1237670) exited]
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1237673, futex_word=0x7fbfd63e3910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1237637] will be killed.
+
+Quit anyway? (y or n) 
+[?2004lPlease answer y or n.
+[?2004hA debugging session is active.
+
+	Inferior 1 [process 1237637] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

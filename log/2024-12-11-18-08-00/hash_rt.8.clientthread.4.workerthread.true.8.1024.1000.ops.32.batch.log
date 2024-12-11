@@ -1,0 +1,112 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1790526038
+[New Thread 0x7fbfdf3e8640 (LWP 1219797)]
+[New Thread 0x7fbfd73e5640 (LWP 1219798)]
+[New Thread 0x7fbfd6be4640 (LWP 1219799)]
+[New Thread 0x7fbfd63e3640 (LWP 1219800)]
+[New Thread 0x7fbfd5be2640 (LWP 1219801)]
+[New Thread 0x7fbfd53e1640 (LWP 1219802)]
+scheduler loop time: 1499088
+[New Thread 0x7fbfd4be0640 (LWP 1219803)]
+[Thread 0x7fbfd73e5640 (LWP 1219798) exited]
+[Thread 0x7fbfd4be0640 (LWP 1219803) exited]
+[Thread 0x7fbfd53e1640 (LWP 1219802) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1219797) exited]
+[New Thread 0x7fbfbffff640 (LWP 1219804)]
+[New Thread 0x7fbfbf7fe640 (LWP 1219805)]
+[Thread 0x7fbfbffff640 (LWP 1219804) exited]
+[New Thread 0x7fbfbeffd640 (LWP 1219806)]
+[Thread 0x7fbfbf7fe640 (LWP 1219805) exited]
+[Thread 0x7fbfbeffd640 (LWP 1219806) exited]
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1219799, futex_word=0x7fbfd6be4910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) bt
+[?2004l#0  __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1219799, futex_word=0x7fbfd6be4910)
+    at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=128, abstime=0x0, clockid=0, expected=1219799, futex_word=0x7fbfd6be4910)
+    at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7fbfd6be4910, expected=1219799, 
+    clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=128) at ./nptl/futex-internal.c:139
+#3  0x00007ffff7b94624 in __pthread_clockjoin_ex (threadid=140461918275136, thread_return=0x0, clockid=0, abstime=0x0, 
+    block=<optimized out>) at ./nptl/pthread_join_common.c:105
+#4  0x00007ffff7e232c7 in std::thread::join() () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#5  0x00005555555adaa9 in verona::rt::ThreadPoolBuilder::~ThreadPoolBuilder (this=0x7fffffffd920, __in_chrg=<optimized out>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/../pal/threadpoolbuilder.h:82
+#6  0x00005555555c3657 in verona::rt::ThreadPool<verona::rt::SchedulerThread>::run_with_startup<>(void (*)()) (
+    this=0x555555608ec0 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool>, 
+    startup=0x5555555adb11 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:276
+#7  0x00005555555ba936 in verona::rt::ThreadPool<verona::rt::SchedulerThread>::run (
+    this=0x555555608ec0 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:254
+#8  0x00005555555a41fb in BenchmarkTest::runBenchmark (this=0x7fffffffdaf0)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:73
+#9  0x00005555555a49dd in main (argc=1, argv=0x7fffffffdc38) at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/src/hash_main.cpp:107
+[?2004h(gdb) bt[1Pr[Kinfo thread
+[?2004l  Id   Target Id                                     Frame 
+* 1    Thread 0x7ffff7a13300 (LWP 1219771) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, 
+    op=265, expected=1219799, futex_word=0x7fbfd6be4910) at ./nptl/futex-internal.c:57
+  4    Thread 0x7fbfd6be4640 (LWP 1219799) "hash_rt" 0x00007ffff7c06c9b in sched_yield ()
+    at ../sysdeps/unix/syscall-template.S:120
+  5    Thread 0x7fbfd63e3640 (LWP 1219800) "hash_rt" 0x00007ffff7c06c9b in sched_yield ()
+    at ../sysdeps/unix/syscall-template.S:120
+  6    Thread 0x7fbfd5be2640 (LWP 1219801) "hash_rt" 0x00007ffff7c06c9b in sched_yield ()
+    at ../sysdeps/unix/syscall-template.S:120
+[?2004h(gdb) frame [K[K[K[K[K[Ktt[Kht[Kread 4
+[?2004l[Switching to thread 4 (Thread 0x7fbfd6be4640 (LWP 1219799))]
+#0  0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+120	../sysdeps/unix/syscall-template.S: No such file or directory.
+[?2004h(gdb) bt
+[?2004l#0  0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+#1  0x00005555555a5acf in __gthread_yield () at /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:693
+#2  0x00005555555a8140 in std::this_thread::yield () at /usr/include/c++/11/bits/std_thread.h:329
+#3  0x00005555555d3647 in verona::rt::SchedulerThread::run_inner<>(void (*)()) (this=0x55555561e270, 
+    startup=0x5555555adb11 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:214
+#4  0x00005555555cd04d in verona::rt::SchedulerThread::run<>(verona::rt::SchedulerThread*, void (*)()) (t=0x55555561e270, 
+    startup=0x5555555adb11 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:133
+#5  0x00005555555d3b1f in verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()> (affinity=8, 
+    body=0x5555555cd026 <verona::rt::SchedulerThread::run<>(verona::rt::SchedulerThread*, void (*)())>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/../pal/threadpoolbuilder.h:39
+#6  0x00005555555e7363 in std::__invoke_impl<void, void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> (
+    __f=@0x55555561fac8: 0x5555555d3ae3 <verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()>(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)())>)
+    at /usr/include/c++/11/bits/invoke.h:61
+#7  0x00005555555e71f6 in std::__invoke<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> (
+    __fn=@0x55555561fac8: 0x5555555d3ae3 <verona::rt::ThreadPoolBuilder::run_with_affinity<verona::rt::SchedulerThread*, void (*)()>(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)())>)
+    at /usr/include/c++/11/bits/invoke.h:96
+#8  0x00005555555e7095 in std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> >::_M_invoke<0ul, 1ul, 2ul, 3ul, 4ul> (this=0x55555561faa8) at /usr/include/c++/11/bits/std_thread.h:259
+#9  0x00005555555e6ff6 in std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> >::operator() (this=0x55555561faa8) at /usr/include/c++/11/bits/std_thread.h:266
+#10 0x00005555555e6fd6 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()), unsigned long, void (*)(verona::rt::SchedulerThread*, void (*)()), verona::rt::SchedulerThread*, void (*)()> > >::_M_run (this=0x55555561faa0) at /usr/include/c++/11/bits/std_thread.h:211
+#11 0x00007ffff7e23253 in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#12 0x00007ffff7b92ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#13 0x00007ffff7c24850 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 1219771] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

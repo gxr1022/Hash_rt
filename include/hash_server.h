@@ -7,7 +7,6 @@
 
 #define QUEUE_SIZE 1048576 // 2^20, closest power of 2 above 1024000
 
-DEFINE_uint64(batch_size, 4, "the size of batch");
 
 class HashTableServer
 {
@@ -78,7 +77,7 @@ public:
 
     void scheduler_loop()
     {
-        auto& scheduler = Scheduler::get();
+        auto &scheduler = Scheduler::get();
         auto start = std::chrono::high_resolution_clock::now();
         while (running && completed_ops < target_ops)
         {
@@ -87,7 +86,6 @@ public:
             if (!batch->requests.empty())
             {
                 size_t batch_size = batch->requests.size();
-                Logging::cout() << " batch_size: " << batch_size << Logging::endl;
                 while (!scheduler.producer_start.load())
                 {
                     std::this_thread::yield();
@@ -97,21 +95,16 @@ public:
                     hash_table->insert(req.key, req.value);
                     completed_ops++;
                 }
-                
+
                 Scheduler::get().producer_start.store(false);
-                // wait 
-                // while (Scheduler::get().completed_count_last_batch.load() != 0)
-                // {
-                //     std::this_thread::yield();
-                // }
-                while(1)
+                while (1)
                 {
                     auto current_count = Scheduler::get().completed_count_last_batch.load();
                     if (current_count == 0)
                     {
-                        Logging::cout() << "this thread id: " <<  std::this_thread::get_id() << " completed_count_last_batch: " <<scheduler.completed_count_last_batch.load() << Logging::endl;
+                        // std::cout<< "this thread id: " << this_thread::get_id() << " completed_count_last_batch: " << current_count << std::endl;
                         bool suc = Scheduler::get().completed_count_last_batch.compare_exchange_strong(current_count, batch_size);
-                        Logging::cout() << "this thread id: " <<  std::this_thread::get_id() << " completed_count_last_batch: " <<scheduler.completed_count_last_batch.load() << Logging::endl;
+                        // std::cout<< "this thread id: " << this_thread::get_id() << " completed_count_last_batch: " << Scheduler::get().completed_count_last_batch.load() << std::endl;
                         if (suc)
                         {
                             goto next1;
@@ -119,7 +112,7 @@ public:
                     }
                 }
 
-                next1:
+            next1:
                 batch->requests.clear();
             }
             else
@@ -138,7 +131,7 @@ public:
 public:
     HashTableServer(size_t num_ops)
     {
-        MAX_BATCH_SIZE = FLAGS_batch_size;
+        MAX_BATCH_SIZE = Scheduler::get().batch_size;
         target_ops = num_ops;
         hash_table = new ExtendibleHash(HASH_INIT_BUCKET_NUM, HASH_ASSOC_NUM);
     }
