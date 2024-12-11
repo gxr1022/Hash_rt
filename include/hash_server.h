@@ -92,8 +92,7 @@ public:
                     hash_table->insert(req.key, req.value);
                     completed_ops++;
                 }
-               
-            next1:
+              
                 batch->requests.clear();
             }
             else
