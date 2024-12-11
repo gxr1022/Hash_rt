@@ -105,7 +105,7 @@ void BenchmarkTest::runBenchmark()
     benchmark_report("overall", "operation_number", std::to_string(completed_inserts));
     benchmark_report("overall", "throughput", std::to_string(total_throughput));
     benchmark_report("overall", "avg_time_per_ops", std::to_string(avg_time_per_ops));
-    // benchmark_report("overall", "run_duration", std::to_string(run_duration));
+    benchmark_report("overall", "run_duration", std::to_string(run_duration));
     // benchmark_report("overall", "client_duration", std::to_string(client_duration));
     // benchmark_report("overall", "server_duration", std::to_string(server_duration));
     // benchmark_report("overall", "join_duration", std::to_string(join_duration));

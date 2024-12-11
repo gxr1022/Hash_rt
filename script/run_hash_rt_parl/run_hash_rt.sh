@@ -52,10 +52,10 @@ threads_client=(8)
 #     threads_client+=($i)
 # done
 
-threads_worker=(1)
-for ((i =2; i <= 16; i += 1)); do
-    threads_worker+=($i)
-done
+threads_worker=(16)
+# for ((i =2; i <= 16; i += 1)); do
+#     threads_worker+=($i)
+# done
 
 test_name=(hash_rt)
 for kv_size in "${kv_sizes[@]}";do
