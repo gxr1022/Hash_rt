@@ -6,7 +6,7 @@ clean_build() {
     fi
 }
 current=`date "+%Y-%m-%d-%H-%M-%S"`
-RUN_PATH="/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt"
+RUN_PATH="/mnt/nvme0/home/gxr/Myhash_boc/hash_rt"
 BINARY_PATH=${RUN_PATH}/build
 LOG_PATH=${RUN_PATH}/log/${current}
 mkdir -p ${LOG_PATH}
@@ -41,7 +41,7 @@ work_usec=(0)
 batch_size=(128) 
 kv_sizes=(
 	# "8 100"
-	"8 1024"
+	# "8 1024"
 	"8 100"
 	# "8 102400"
 	# "8 1048576"
@@ -52,10 +52,10 @@ threads_client=(8)
 #     threads_client+=($i)
 # done
 
-threads_worker=(16)
-# for ((i =2; i <= 16; i += 1)); do
-#     threads_worker+=($i)
-# done
+threads_worker=(1)
+for ((i =2; i <= 16; i += 1)); do
+    threads_worker+=($i)
+done
 
 test_name=(hash_rt)
 for kv_size in "${kv_sizes[@]}";do

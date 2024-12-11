@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/_deps/snmalloc-subbuild
+# Install script for directory: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/_deps/snmalloc-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/_deps/snmalloc-subbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/_deps/snmalloc-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

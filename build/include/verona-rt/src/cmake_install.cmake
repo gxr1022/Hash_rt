@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/include/verona-rt/src
+# Install script for directory: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/_deps/snmalloc-build/cmake_install.cmake")
-  include("/mnt/nvme0/home/gxr/Myhash_boc/Hash_rt/build/include/verona-rt/src/rt/cmake_install.cmake")
+  include("/mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/_deps/snmalloc-build/cmake_install.cmake")
+  include("/mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/include/verona-rt/src/rt/cmake_install.cmake")
 
 endif()
 
