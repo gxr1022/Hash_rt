@@ -75,10 +75,10 @@ void BenchmarkTest::runBenchmark()
     // auto client_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(client_end - client_start).count();
 
     // start worker threads
-    auto run_start = std::chrono::steady_clock::now();
-    sched.run();
-    auto run_end = std::chrono::steady_clock::now();
-    auto run_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(run_end - run_start).count();
+    // auto run_start = std::chrono::steady_clock::now();
+    // sched.run();
+    // auto run_end = std::chrono::steady_clock::now();
+    // auto run_duration = std::chrono::duration_cast<std::chrono::nanoseconds>(run_end - run_start).count();
 
     // auto join_start = std::chrono::steady_clock::now();
     if (!server->is_running())
@@ -105,7 +105,7 @@ void BenchmarkTest::runBenchmark()
     benchmark_report("overall", "operation_number", std::to_string(completed_inserts));
     benchmark_report("overall", "throughput", std::to_string(total_throughput));
     benchmark_report("overall", "avg_time_per_ops", std::to_string(avg_time_per_ops));
-    benchmark_report("overall", "run_duration", std::to_string(run_duration));
+    // benchmark_report("overall", "run_duration", std::to_string(run_duration));
     // benchmark_report("overall", "client_duration", std::to_string(client_duration));
     // benchmark_report("overall", "server_duration", std::to_string(server_duration));
     // benchmark_report("overall", "join_duration", std::to_string(join_duration));

@@ -37,12 +37,12 @@ TEST_PATH=${BINARY_PATH}
 num_of_ops_set=(1000000)
 modes=(true)
 work_usec=(0)
-batch_size=(128)
-# batch_size=(10 20 30 40 50 60 70 80 90 100) 
+# batch_size=(32 64 128 256 512 1024)
+batch_size=(128) 
 kv_sizes=(
 	# "8 100"
 	"8 1024"
-	# "8 100"
+	"8 100"
 	# "8 102400"
 	# "8 1048576"
 )
@@ -52,10 +52,10 @@ threads_client=(8)
 #     threads_client+=($i)
 # done
 
-threads_worker=(1)
-for ((i =2; i <= 16; i += 1)); do
-    threads_worker+=($i)
-done
+threads_worker=(16)
+# for ((i =2; i <= 16; i += 1)); do
+#     threads_worker+=($i)
+# done
 
 test_name=(hash_rt)
 for kv_size in "${kv_sizes[@]}";do
