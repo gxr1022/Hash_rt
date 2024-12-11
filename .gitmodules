@@ -1,6 +1,3 @@
 [submodule "build/_deps/snmalloc-src"]
 	path = build/_deps/snmalloc-src
 	url = https://github.com/microsoft/snmalloc
-[submodule "include/verona-rt"]
-	path = include/verona-rt
-	url = https://github.com/microsoft/verona-rt.git
