@@ -455,15 +455,15 @@ namespace verona::rt
      */
     void resolve(size_t n = 1, bool fifo = true)
     {
-      Logging::cout() << "Behaviour::resolve " << n << " for behaviour "
-                      << *this << Logging::endl;
+      // Logging::cout() << "Behaviour::resolve " << n << " for behaviour "
+      //                 << *this << Logging::endl;
       // Note that we don't actually perform the last decrement as it is not
       // required.
       if (
         (exec_count_down.load(std::memory_order_acquire) == n) ||
         (exec_count_down.fetch_sub(n) == n))
       {
-        Logging::cout() << "Scheduling Behaviour " << *this << Logging::endl;
+        // Logging::cout() << "Scheduling Behaviour " << *this << Logging::endl;
         Scheduler::schedule(as_work(), fifo);
       }
     }
@@ -511,9 +511,9 @@ namespace verona::rt
         return;
       }
 
-      Logging::cout() << "Acquiring addition reference count: transfer: "
-                      << transfer << " required: " << required << " on cown "
-                      << cown << Logging::endl;
+      // Logging::cout() << "Acquiring addition reference count: transfer: "
+      //                 << transfer << " required: " << required << " on cown "
+      //                 << cown << Logging::endl;
       // We didn't have enough RCs passed in, so we need to acquire the rest.
       for (int j = 0; j < required - transfer; j++)
         Cown::acquire(cown);
@@ -695,8 +695,8 @@ namespace verona::rt
      */
     static void schedule_many(BehaviourCore** bodies, size_t body_count)
     {
-      Logging::cout() << "BehaviourCore::schedule_many" << body_count
-                      << Logging::endl;
+      // Logging::cout() << "BehaviourCore::schedule_many" << body_count
+      //                 << Logging::endl;
 
       // non-unique cowns count
       size_t cown_count = 0;
@@ -756,6 +756,9 @@ namespace verona::rt
       // be prioritised over the read, but between behaviours, we should keep
       // the order the same. This means we can always ignore anything but the
       // first slot for each behaviour when building the dependency chain.
+
+      _mm_mfence();
+      uint64_t start_prepare = __rdtsc();
       auto compare = [](
                        const std::tuple<size_t, Slot*> i,
                        const std::tuple<size_t, Slot*> j) {
@@ -812,8 +815,8 @@ namespace verona::rt
         // I.e. how many moves of cown_refs there were.
         size_t transfer_count = last_slot->is_move();
 
-        Logging::cout() << "Processing " << cown << " " << body << " "
-                        << last_slot << " Index " << i << Logging::endl;
+        // Logging::cout() << "Processing " << cown << " " << body << " "
+        //                 << last_slot << " Index " << i << Logging::endl;
 
         // Detect duplicates for this cown.
         // This is required in two cases:
@@ -830,9 +833,9 @@ namespace verona::rt
             transfer_count +=
               std::get<1>(cown_to_behaviour_slot_map[i])->is_move();
 
-            Logging::cout() << "Duplicate " << cown << " for " << body
-                            << " Index " << i << Logging::endl;
-            // We need to reduce the execution count by one, as we can't wait
+            // logging::cout() << "duplicate " << cown << " for " << body
+            //                 << " index " << i << logging::endl;
+            // // We need to reduce the execution count by one, as we can't wait
             // for ourselves.
             ec[std::get<0>(cown_to_behaviour_slot_map[i])]++;
 
@@ -869,6 +872,10 @@ namespace verona::rt
         if (last_slot->is_read_only())
           last_slot->set_behaviour(body);
       }
+      _mm_mfence();
+      uint64_t end_prepare = __rdtsc();
+      uint64_t time_prepare = end_prepare - start_prepare;
+      Logging::cout() << "time_prepare: " << time_prepare << std::endl;
 
       // Second phase - Acquire phase
       for (size_t i = 0; i < chain_count; i++)
@@ -878,8 +885,14 @@ namespace verona::rt
         auto* first_body = bodies[first_body_index];
         auto* new_slot = chain_info[i].last_slot;
 
+        _mm_mfence();
+        uint64_t start_last_slot = __rdtsc();
         auto prev_slot =
           cown->last_slot.exchange(new_slot, std::memory_order_acq_rel);
+        _mm_mfence();
+        uint64_t end_last_slot = __rdtsc();
+        uint64_t time_last_slot = end_last_slot - start_last_slot;
+        Logging::cout() << "time_last_slot: " << time_last_slot << std::endl;
 
         yield();
 
@@ -910,9 +923,9 @@ namespace verona::rt
           continue;
         }
 
-        Logging::cout()
-          << " Writer waiting for cown. Set next of previous slot cown "
-          << *new_slot << " previous " << *prev_slot << Logging::endl;
+        // Logging::cout()
+        //   << " Writer waiting for cown. Set next of previous slot cown "
+        //   << *new_slot << " previous " << *prev_slot << Logging::endl;
         prev_slot->set_next_slot_writer(first_body);
         yield();
       }
@@ -920,23 +933,26 @@ namespace verona::rt
       // Third phase - Release phase.
       for (size_t i = 0; i < body_count; i++)
       {
-        Logging::cout() << "Release phase for behaviour " << bodies[i]
-                        << Logging::endl;
+        // Logging::cout() << "Release phase for behaviour " << bodies[i]
+        //                 << Logging::endl;
       }
 
       for (size_t i = 0; i < chain_count; i++)
       {
         yield();
         auto slot = chain_info[i].last_slot;
-        Logging::cout() << "Setting slot " << slot << " to ready"
-                        << Logging::endl;
+        // Logging::cout() << "Setting slot " << slot << " to ready"
+        //                 << Logging::endl;
         slot->set_ready();
 
         // TODO: We chould also set the READ_AVAILABLE here
       }
 
-      // Fourth phase - Process & Resolve
 
+
+      // Fourth phase - Process & Resolve
+      _mm_mfence();
+      uint64_t start_process_resolve   = __rdtsc();
       for (size_t i = 0; i < chain_count; i++)
       {
         auto* cown = chain_info[i].cown;
@@ -960,15 +976,15 @@ namespace verona::rt
         {
           if (cown->read_ref_count.try_write())
           {
-            Logging::cout() << " Writer at head of queue and got the cown "
-                            << *curr_slot << Logging::endl;
+            // Logging::cout() << " Writer at head of queue and got the cown "
+            //                 << *curr_slot << Logging::endl;
             ex_count++;
             yield();
           }
           else
           {
-            Logging::cout() << " Writer waiting for previous readers cown "
-                            << *curr_slot << Logging::endl;
+            // Logging::cout() << " Writer waiting for previous readers cown "
+            //                 << *curr_slot << Logging::endl;
             yield();
             cown->next_writer = first_body;
           }
@@ -977,12 +993,24 @@ namespace verona::rt
         // Process execution count
         ec[first_body_index] += ex_count;
       }
+      
+      _mm_mfence();
+      uint64_t end_process_resolve = __rdtsc();
+      uint64_t time_process_resolve = end_process_resolve - start_process_resolve;
+      Logging::cout() << "time_process_resolve: " << time_process_resolve << std::endl;
 
+      _mm_mfence();
+      uint64_t start_resolve = __rdtsc();
       for (size_t i = 0; i < body_count; i++)
       {
         yield();
         bodies[i]->resolve(ec[i]);
       }
+
+      _mm_mfence();
+      uint64_t end_resolve = __rdtsc();
+      uint64_t time_resolve = end_resolve - start_resolve;
+      Logging::cout() << "time_resolve: " << time_resolve << std::endl;
     }
 
     /**

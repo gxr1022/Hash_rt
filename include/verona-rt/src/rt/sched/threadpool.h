@@ -204,7 +204,7 @@ namespace verona::rt
         t->schedule_fifo(w);
         auto end_time = std::chrono::high_resolution_clock::now(); 
         auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time).count();
-        Logging::cout() << "Time taken for schedule fifo: " << duration << " ns" << Logging::endl;
+        // Logging::cout() << "Time taken for schedule fifo: " << duration << " ns" << Logging::endl;
 
         return;
       }

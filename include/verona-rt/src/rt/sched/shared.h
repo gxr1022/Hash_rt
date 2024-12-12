@@ -38,14 +38,14 @@ namespace verona::rt
   public:
     static void acquire(Object* o)
     {
-      Logging::cout() << "Shared " << o << " acquire" << Logging::endl;
+      // Logging::cout() << "Shared " << o << " acquire" << Logging::endl;
       assert(o->debug_is_shared());
       o->incref();
     }
 
     static void release(Shared* o)
     {
-      Logging::cout() << "Shared " << o << " release" << Logging::endl;
+      // Logging::cout() << "Shared " << o << " release" << Logging::endl;
       assert(o->debug_is_shared());
 
       // Perform decref

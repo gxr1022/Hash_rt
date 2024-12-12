@@ -115,7 +115,7 @@ void BenchmarkTest::runBenchmark()
 
 int main(int argc, char **argv)
 {
-    // Logging::enable_logging();
+    Logging::enable_logging();
     google::ParseCommandLineFlags(&argc, &argv, false);
     BenchmarkTest benchmark;
     benchmark.runBenchmark();

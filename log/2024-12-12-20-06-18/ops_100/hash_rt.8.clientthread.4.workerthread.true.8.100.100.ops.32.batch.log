@@ -1,0 +1,2390 @@
+/mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt --num_threads_client=8 --num_threads_worker=4 --str_key_size=8 --str_value_size=100 --num_ops=100 --first_mode=true --work_usec=0 --batch_size=32
+Set fair: 1
+Init runtime
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Scheduler Thread created
+Runtime initialised
+Init time:116180591
+BehaviourCore::schedule_many1
+time_prepare: 1100
+time_last_slot: 484
+Release phase for behaviour 0x7f97d7668010
+Setting slot 0x7f97d7668020 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e3423c50
+Shared 0x7f97e3423c50 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668010 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668010 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 18128
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 352
+Release phase for behaviour 0x7f97d7668070
+Setting slot 0x7f97d7668080 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97ddb11890
+Shared 0x7f97ddb11890 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668070 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668070 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 8822
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 506
+Release phase for behaviour 0x7f97d76680d0
+Setting slot 0x7f97d76680e0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97dae08a90
+Shared 0x7f97dae08a90 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76680d0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76680d0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 13156
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 858
+Release phase for behaviour 0x7f97d7668130
+Setting slot 0x7f97d7668140 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97dbbd7cd0
+Shared 0x7f97dbbd7cd0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668130 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668130 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7502
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 352
+Release phase for behaviour 0x7f97d7668190
+Setting slot 0x7f97d76681a0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e14fa350
+Shared 0x7f97e14fa350 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668190 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668190 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7502
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 484
+Release phase for behaviour 0x7f97d76681f0
+Setting slot 0x7f97d7668200 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97ee3e1fd0
+Shared 0x7f97ee3e1fd0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76681f0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76681f0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 748
+Release phase for behaviour 0x7f97d7668250
+Setting slot 0x7f97d7668260 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e46c7990
+Shared 0x7f97e46c7990 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668250 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668250 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 330
+Release phase for behaviour 0x7f97d76682b0
+Setting slot 0x7f97d76682c0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97df74c950
+Shared 0x7f97df74c950 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76682b0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76682b0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 616
+Release phase for behaviour 0x7f97d7668310
+Setting slot 0x7f97d7668320 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d83b21d0
+Shared 0x7f97d83b21d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668310 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668310 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7668370
+Setting slot 0x7f97d7668380 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e473ea10
+Shared 0x7f97e473ea10 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668370 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668370 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7788
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 330
+Release phase for behaviour 0x7f97d76683d0
+Setting slot 0x7f97d76683e0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e374fc90
+Shared 0x7f97e374fc90 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76683d0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76683d0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7480
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 506
+Release phase for behaviour 0x7f97d7668430
+Setting slot 0x7f97d7668440 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e562f810
+Shared 0x7f97e562f810 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668430 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668430 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7502
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 682
+Release phase for behaviour 0x7f97d7668490
+Setting slot 0x7f97d76684a0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e25e1d10
+Shared 0x7f97e25e1d10 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668490 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668490 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7436
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d76684f0
+Setting slot 0x7f97d7668500 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e47545d0
+Shared 0x7f97e47545d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76684f0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76684f0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7392
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 330
+Release phase for behaviour 0x7f97d7668550
+Setting slot 0x7f97d7668560 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97dcf5c450
+Shared 0x7f97dcf5c450 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668550 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668550 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 110
+Release phase for behaviour 0x7f97d76685b0
+Setting slot 0x7f97d76685c0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d7571450
+Shared 0x7f97d7571450 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76685b0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76685b0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7436
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 330
+Release phase for behaviour 0x7f97d7668610
+Setting slot 0x7f97d7668620 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97df564590
+Shared 0x7f97df564590 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668610 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668610 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7326
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d7668670
+Setting slot 0x7f97d7668680 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97ee382050
+Shared 0x7f97ee382050 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668670 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668670 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7414
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 352
+Release phase for behaviour 0x7f97d76686d0
+Setting slot 0x7f97d76686e0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e0dfe910
+Shared 0x7f97e0dfe910 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76686d0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76686d0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7458
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 264
+Release phase for behaviour 0x7f97d7668730
+Setting slot 0x7f97d7668740 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e3b04d50
+Shared 0x7f97e3b04d50 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668730 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668730 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7744
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7668790
+Setting slot 0x7f97d76687a0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e1074650
+Shared 0x7f97e1074650 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668790 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668790 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7326
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 308
+Release phase for behaviour 0x7f97d76687f0
+Setting slot 0x7f97d7668800 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e20ac9d0
+Shared 0x7f97e20ac9d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76687f0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76687f0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7458
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 330
+Release phase for behaviour 0x7f97d7668850
+Setting slot 0x7f97d7668860 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97dde77290
+Shared 0x7f97dde77290 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668850 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668850 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7458
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d76688b0
+Setting slot 0x7f97d76688c0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e1e97a10
+Shared 0x7f97e1e97a10 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76688b0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76688b0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7436
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7668910
+Setting slot 0x7f97d7668920 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e47d46d0
+Shared 0x7f97e47d46d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668910 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668910 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7668970
+Setting slot 0x7f97d7668980 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97df363750
+Shared 0x7f97df363750 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668970 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668970 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7392
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 550
+Release phase for behaviour 0x7f97d76689d0
+Setting slot 0x7f97d76689e0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e3c23590
+Shared 0x7f97e3c23590 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76689d0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76689d0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7458
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7668a30
+Setting slot 0x7f97d7668a40 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e4675790
+Shared 0x7f97e4675790 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668a30 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668a30 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7590
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 330
+Release phase for behaviour 0x7f97d7668a90
+Setting slot 0x7f97d7668aa0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e6a62410
+Shared 0x7f97e6a62410 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668a90 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668a90 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7458
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 330
+Release phase for behaviour 0x7f97d7668af0
+Setting slot 0x7f97d7668b00 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97decdb3d0
+Shared 0x7f97decdb3d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668af0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668af0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 8206
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 176
+Release phase for behaviour 0x7f97d7668b50
+Setting slot 0x7f97d7668b60 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e742c710
+Shared 0x7f97e742c710 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668b50 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668b50 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7436
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 352
+Release phase for behaviour 0x7f97d7668bb0
+Setting slot 0x7f97d7668bc0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d9eff510
+Shared 0x7f97d9eff510 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668bb0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668bb0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7436
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7668c10
+Setting slot 0x7f97d7668c20 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97dfb89450
+Shared 0x7f97dfb89450 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668c10 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668c10 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7480
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 154
+Release phase for behaviour 0x7f97d7668c70
+Setting slot 0x7f97d7668c80 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97df23b650
+Shared 0x7f97df23b650 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668c70 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668c70 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7436
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 264
+Release phase for behaviour 0x7f97d7668cd0
+Setting slot 0x7f97d7668ce0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97daed3050
+Shared 0x7f97daed3050 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668cd0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668cd0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7436
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 528
+Release phase for behaviour 0x7f97d7668d30
+Setting slot 0x7f97d7668d40 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e961b190
+Shared 0x7f97e961b190 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668d30 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668d30 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7898
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d7668d90
+Setting slot 0x7f97d7668da0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97def09650
+Shared 0x7f97def09650 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668d90 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668d90 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7668df0
+Setting slot 0x7f97d7668e00 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e74ae410
+Shared 0x7f97e74ae410 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668df0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668df0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7414
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7668e50
+Setting slot 0x7f97d7668e60 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e4616510
+Shared 0x7f97e4616510 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668e50 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668e50 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7524
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7668eb0
+Setting slot 0x7f97d7668ec0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d8551890
+Shared 0x7f97d8551890 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668eb0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668eb0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7326
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7668f10
+Setting slot 0x7f97d7668f20 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e0660a50
+Shared 0x7f97e0660a50 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668f10 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668f10 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7668f70
+Setting slot 0x7f97d7668f80 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97ddf891d0
+Shared 0x7f97ddf891d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668f70 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668f70 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7458
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 484
+Release phase for behaviour 0x7f97d7668fd0
+Setting slot 0x7f97d7668fe0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e9ccce10
+Shared 0x7f97e9ccce10 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7668fd0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7668fd0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7414
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d7669030
+Setting slot 0x7f97d7669040 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e939cd50
+Shared 0x7f97e939cd50 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669030 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669030 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7348
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7669090
+Setting slot 0x7f97d76690a0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e249b6d0
+Shared 0x7f97e249b6d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669090 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669090 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7348
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d76690f0
+Setting slot 0x7f97d7669100 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97da742790
+Shared 0x7f97da742790 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76690f0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76690f0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7414
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7669150
+Setting slot 0x7f97d7669160 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e3589210
+Shared 0x7f97e3589210 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669150 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669150 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7458
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 352
+Release phase for behaviour 0x7f97d76691b0
+Setting slot 0x7f97d76691c0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d6c63c10
+Shared 0x7f97d6c63c10 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76691b0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76691b0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7392
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 484
+Release phase for behaviour 0x7f97d7669210
+Setting slot 0x7f97d7669220 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e9b93190
+Shared 0x7f97e9b93190 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669210 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669210 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7436
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d7669270
+Setting slot 0x7f97d7669280 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97eb7d3850
+Shared 0x7f97eb7d3850 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669270 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669270 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7348
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d76692d0
+Setting slot 0x7f97d76692e0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e676c390
+Shared 0x7f97e676c390 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76692d0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76692d0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7656
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7669330
+Setting slot 0x7f97d7669340 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d7b531d0
+Shared 0x7f97d7b531d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669330 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669330 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 8030
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d7669390
+Setting slot 0x7f97d76693a0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97eb67e450
+Shared 0x7f97eb67e450 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669390 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669390 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7414
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d76693f0
+Setting slot 0x7f97d7669400 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d9ab7550
+Shared 0x7f97d9ab7550 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76693f0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76693f0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7634
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7669450
+Setting slot 0x7f97d7669460 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d7e41c90
+Shared 0x7f97d7e41c90 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669450 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669450 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7326
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d76694b0
+Setting slot 0x7f97d76694c0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d6c48110
+Shared 0x7f97d6c48110 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76694b0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76694b0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7458
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 264
+Release phase for behaviour 0x7f97d7669510
+Setting slot 0x7f97d7669520 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97dded5c50
+Shared 0x7f97dded5c50 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669510 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669510 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 484
+Release phase for behaviour 0x7f97d7669570
+Setting slot 0x7f97d7669580 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97ea0270d0
+Shared 0x7f97ea0270d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669570 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669570 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7392
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d76695d0
+Setting slot 0x7f97d76695e0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e23eced0
+Shared 0x7f97e23eced0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76695d0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76695d0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7810
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7669630
+Setting slot 0x7f97d7669640 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e0103d10
+Shared 0x7f97e0103d10 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669630 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669630 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7348
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d7669690
+Setting slot 0x7f97d76696a0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e9aef850
+Shared 0x7f97e9aef850 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669690 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669690 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7326
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 286
+Release phase for behaviour 0x7f97d76696f0
+Setting slot 0x7f97d7669700 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e65ee550
+Shared 0x7f97e65ee550 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76696f0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76696f0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7326
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 330
+Release phase for behaviour 0x7f97d7669750
+Setting slot 0x7f97d7669760 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d6cd9f90
+Shared 0x7f97d6cd9f90 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669750 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669750 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7260
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 264
+Release phase for behaviour 0x7f97d76697b0
+Setting slot 0x7f97d76697c0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e4d85150
+Shared 0x7f97e4d85150 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76697b0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76697b0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7348
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 462
+Release phase for behaviour 0x7f97d7669810
+Setting slot 0x7f97d7669820 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97eadfc250
+Shared 0x7f97eadfc250 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669810 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669810 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7458
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 462
+Release phase for behaviour 0x7f97d7669870
+Setting slot 0x7f97d7669880 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e3db8b10
+Shared 0x7f97e3db8b10 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669870 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669870 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7524
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d76698d0
+Setting slot 0x7f97d76698e0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e9f0ac50
+Shared 0x7f97e9f0ac50 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76698d0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76698d0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7612
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 462
+Release phase for behaviour 0x7f97d7669930
+Setting slot 0x7f97d7669940 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e3d48b10
+Shared 0x7f97e3d48b10 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669930 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669930 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7502
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7669990
+Setting slot 0x7f97d76699a0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97eaad6550
+Shared 0x7f97eaad6550 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669990 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669990 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7282
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 440
+Release phase for behaviour 0x7f97d76699f0
+Setting slot 0x7f97d7669a00 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e1c34d50
+Shared 0x7f97e1c34d50 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d76699f0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d76699f0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7669a50
+Setting slot 0x7f97d7669a60 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e2bfa9d0
+Shared 0x7f97e2bfa9d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669a50 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669a50 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7964
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 286
+Release phase for behaviour 0x7f97d7669ab0
+Setting slot 0x7f97d7669ac0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e05e7750
+Shared 0x7f97e05e7750 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669ab0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669ab0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7480
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 132
+Release phase for behaviour 0x7f97d7669b10
+Setting slot 0x7f97d7669b20 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97ea06c310
+Shared 0x7f97ea06c310 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669b10 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669b10 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7458
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 462
+Release phase for behaviour 0x7f97d7669b70
+Setting slot 0x7f97d7669b80 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e5091550
+Shared 0x7f97e5091550 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669b70 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669b70 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 8074
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 330
+Release phase for behaviour 0x7f97d7669bd0
+Setting slot 0x7f97d7669be0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e91e8cd0
+Shared 0x7f97e91e8cd0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669bd0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669bd0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7436
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 154
+Release phase for behaviour 0x7f97d7669c30
+Setting slot 0x7f97d7669c40 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97dd166f10
+Shared 0x7f97dd166f10 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669c30 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669c30 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7414
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 330
+Release phase for behaviour 0x7f97d7669c90
+Setting slot 0x7f97d7669ca0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e43f2b90
+Shared 0x7f97e43f2b90 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669c90 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669c90 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7436
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 286
+Release phase for behaviour 0x7f97d7669cf0
+Setting slot 0x7f97d7669d00 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d87e4e50
+Shared 0x7f97d87e4e50 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669cf0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669cf0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7392
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7669d50
+Setting slot 0x7f97d7669d60 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e4ce26d0
+Shared 0x7f97e4ce26d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669d50 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669d50 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7502
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7669db0
+Setting slot 0x7f97d7669dc0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e24f6bd0
+Shared 0x7f97e24f6bd0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669db0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669db0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7304
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 484
+Release phase for behaviour 0x7f97d7669e10
+Setting slot 0x7f97d7669e20 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e31c8010
+Shared 0x7f97e31c8010 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669e10 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669e10 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7436
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 330
+Release phase for behaviour 0x7f97d7669e70
+Setting slot 0x7f97d7669e80 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97ee44b590
+Shared 0x7f97ee44b590 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669e70 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669e70 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7414
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 242
+Release phase for behaviour 0x7f97d7669ed0
+Setting slot 0x7f97d7669ee0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e215a5d0
+Shared 0x7f97e215a5d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669ed0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669ed0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7458
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7669f30
+Setting slot 0x7f97d7669f40 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e7fd59d0
+Shared 0x7f97e7fd59d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669f30 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669f30 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7348
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 308
+Release phase for behaviour 0x7f97d7669f90
+Setting slot 0x7f97d7669fa0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97df06f8d0
+Shared 0x7f97df06f8d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669f90 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669f90 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7590
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 462
+Release phase for behaviour 0x7f97d7669ff0
+Setting slot 0x7f97d766a000 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e97ada50
+Shared 0x7f97e97ada50 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d7669ff0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d7669ff0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7260
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 506
+Release phase for behaviour 0x7f97d766a050
+Setting slot 0x7f97d766a060 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97de3c72d0
+Shared 0x7f97de3c72d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a050 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a050 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7656
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 264
+Release phase for behaviour 0x7f97d766a0b0
+Setting slot 0x7f97d766a0c0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97df059950
+Shared 0x7f97df059950 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a0b0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a0b0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7282
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 330
+Release phase for behaviour 0x7f97d766a110
+Setting slot 0x7f97d766a120 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e4a75d10
+Shared 0x7f97e4a75d10 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a110 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a110 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7590
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 440
+Release phase for behaviour 0x7f97d766a170
+Setting slot 0x7f97d766a180 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e1d76a50
+Shared 0x7f97e1d76a50 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a170 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a170 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7392
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 330
+Release phase for behaviour 0x7f97d766a1d0
+Setting slot 0x7f97d766a1e0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e6d3c590
+Shared 0x7f97e6d3c590 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a1d0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a1d0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7304
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766a230
+Setting slot 0x7f97d766a240 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e26a0090
+Shared 0x7f97e26a0090 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a230 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a230 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7348
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766a290
+Setting slot 0x7f97d766a2a0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97deae4590
+Shared 0x7f97deae4590 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a290 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a290 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766a2f0
+Setting slot 0x7f97d766a300 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e7a62950
+Shared 0x7f97e7a62950 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a2f0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a2f0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7414
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766a350
+Setting slot 0x7f97d766a360 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97dadf6bd0
+Shared 0x7f97dadf6bd0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a350 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a350 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7502
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d766a3b0
+Setting slot 0x7f97d766a3c0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e6b4d610
+Shared 0x7f97e6b4d610 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a3b0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a3b0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7898
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766a410
+Setting slot 0x7f97d766a420 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e111b910
+Shared 0x7f97e111b910 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a410 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a410 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7392
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 484
+Release phase for behaviour 0x7f97d766a470
+Setting slot 0x7f97d766a480 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e9759910
+Shared 0x7f97e9759910 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a470 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a470 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7304
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766a4d0
+Setting slot 0x7f97d766a4e0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e4409c50
+Shared 0x7f97e4409c50 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a4d0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a4d0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7304
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 462
+Release phase for behaviour 0x7f97d766a530
+Setting slot 0x7f97d766a540 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e50a8b50
+Shared 0x7f97e50a8b50 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a530 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a530 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7546
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766a590
+Setting slot 0x7f97d766a5a0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97ee717d10
+Shared 0x7f97ee717d10 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a590 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a590 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7304
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766a5f0
+Setting slot 0x7f97d766a600 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e5500310
+Shared 0x7f97e5500310 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a5f0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a5f0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7524
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766a650
+Setting slot 0x7f97d766a660 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97df77d410
+Shared 0x7f97df77d410 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a650 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a650 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7348
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 154
+Release phase for behaviour 0x7f97d766a6b0
+Setting slot 0x7f97d766a6c0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97eb146fd0
+Shared 0x7f97eb146fd0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a6b0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a6b0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766a710
+Setting slot 0x7f97d766a720 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97dfd220d0
+Shared 0x7f97dfd220d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a710 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a710 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7458
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 352
+Release phase for behaviour 0x7f97d766a770
+Setting slot 0x7f97d766a780 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97dc501590
+Shared 0x7f97dc501590 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a770 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a770 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7348
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d766a7d0
+Setting slot 0x7f97d766a7e0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e57e6750
+Shared 0x7f97e57e6750 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a7d0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a7d0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766a830
+Setting slot 0x7f97d766a840 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97de291a90
+Shared 0x7f97de291a90 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a830 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a830 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7414
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766a890
+Setting slot 0x7f97d766a8a0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97eb401a90
+Shared 0x7f97eb401a90 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a890 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a890 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7502
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 132
+Release phase for behaviour 0x7f97d766a8f0
+Setting slot 0x7f97d766a900 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97ee124410
+Shared 0x7f97ee124410 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a8f0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a8f0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7414
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 330
+Release phase for behaviour 0x7f97d766a950
+Setting slot 0x7f97d766a960 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d91b3bd0
+Shared 0x7f97d91b3bd0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a950 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a950 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7590
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 330
+Release phase for behaviour 0x7f97d766a9b0
+Setting slot 0x7f97d766a9c0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e0fbd510
+Shared 0x7f97e0fbd510 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766a9b0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766a9b0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7282
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 1056
+Release phase for behaviour 0x7f97d766aa10
+Setting slot 0x7f97d766aa20 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d7dd7dd0
+Shared 0x7f97d7dd7dd0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766aa10 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766aa10 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7502
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 836
+Release phase for behaviour 0x7f97d766aa70
+Setting slot 0x7f97d766aa80 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97da41e290
+Shared 0x7f97da41e290 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766aa70 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766aa70 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7326
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766aad0
+Setting slot 0x7f97d766aae0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e7e2d7d0
+Shared 0x7f97e7e2d7d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766aad0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766aad0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7414
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 286
+Release phase for behaviour 0x7f97d766ab30
+Setting slot 0x7f97d766ab40 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97df2d1890
+Shared 0x7f97df2d1890 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766ab30 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766ab30 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7326
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 528
+Release phase for behaviour 0x7f97d766ab90
+Setting slot 0x7f97d766aba0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e8ee0490
+Shared 0x7f97e8ee0490 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766ab90 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766ab90 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7458
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766abf0
+Setting slot 0x7f97d766ac00 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e2b014d0
+Shared 0x7f97e2b014d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766abf0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766abf0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 8008
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 154
+Release phase for behaviour 0x7f97d766ac50
+Setting slot 0x7f97d766ac60 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d867ba90
+Shared 0x7f97d867ba90 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766ac50 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766ac50 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d766acb0
+Setting slot 0x7f97d766acc0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97dc7cdf50
+Shared 0x7f97dc7cdf50 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766acb0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766acb0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766ad10
+Setting slot 0x7f97d766ad20 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d6e96a10
+Shared 0x7f97d6e96a10 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766ad10 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766ad10 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7612
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 462
+Release phase for behaviour 0x7f97d766ad70
+Setting slot 0x7f97d766ad80 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e9d03b90
+Shared 0x7f97e9d03b90 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766ad70 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766ad70 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7282
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766add0
+Setting slot 0x7f97d766ade0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97dd7c62d0
+Shared 0x7f97dd7c62d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766add0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766add0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 8140
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 264
+Release phase for behaviour 0x7f97d766ae30
+Setting slot 0x7f97d766ae40 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e562fa10
+Shared 0x7f97e562fa10 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766ae30 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766ae30 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7304
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 286
+Release phase for behaviour 0x7f97d766ae90
+Setting slot 0x7f97d766aea0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97d7b5c0d0
+Shared 0x7f97d7b5c0d0 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766ae90 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766ae90 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7414
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766aef0
+Setting slot 0x7f97d766af00 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e7077150
+Shared 0x7f97e7077150 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766aef0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766aef0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7568
+BehaviourCore::schedule_many1
+time_prepare: 22
+time_last_slot: 484
+Release phase for behaviour 0x7f97d766af50
+Setting slot 0x7f97d766af60 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97e1dd6d90
+Shared 0x7f97e1dd6d90 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766af50 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766af50 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7392
+BehaviourCore::schedule_many1
+time_prepare: 44
+time_last_slot: 308
+Release phase for behaviour 0x7f97d766afb0
+Setting slot 0x7f97d766afc0 to ready
+Acquiring addition reference count: transfer: 0 required: 1 on cown 0x7f97dcefa290
+Shared 0x7f97dcefa290 acquire
+Behaviour::resolve 2 for behaviour  Behaviour: 0x7f97d766afb0 Cowns: 1 Pending dependencies: 2 
+Scheduling Behaviour  Behaviour: 0x7f97d766afb0 Cowns: 1 Pending dependencies: 2 
+time_process_resolve: 7370
+scheduler loop time: 1146547
+Starting all threads
+Fast-steal work 0x7f97d766aa00 from 4
+Finished Behaviour  Behaviour: 0x7f97d766aa10 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766aa20 Cown ptr: 140290138406352 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766aa20 Cown ptr: 140290138406352 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97d7dd7dd0 release
+decref_shared 0x7f97d7dd7dd0
+Finished Resolving successors  Behaviour: 0x7f97d766aa10 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766afb0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766afc0 Cown ptr: 140290223481488 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766afc0 Cown ptr: 140290223481488 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97dcefa290 release
+decref_shared 0x7f97dcefa290
+Finished Resolving successors  Behaviour: 0x7f97d766afb0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766ae30 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766ae40 Cown ptr: 140290365258256 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766ae40 Cown ptr: 140290365258256 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e562fa10 release
+decref_shared 0x7f97e562fa10
+Finished Resolving successors  Behaviour: 0x7f97d766ae30 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766acb0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766acc0 Cown ptr: 140290215960400 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766acc0 Cown ptr: 140290215960400 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97dc7cdf50 release
+decref_shared 0x7f97dc7cdf50
+Finished Resolving successors  Behaviour: 0x7f97d766acb0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766ab30 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766ab40 Cown ptr: 140290261063824 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766ab40 Cown ptr: 140290261063824 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97df2d1890 release
+decref_shared 0x7f97df2d1890
+Finished Resolving successors  Behaviour: 0x7f97d766ab30 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a9b0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a9c0 Cown ptr: 140290291389712 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766a9c0 Cown ptr: 140290291389712 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e0fbd510 release
+decref_shared 0x7f97e0fbd510
+Finished Resolving successors  Behaviour: 0x7f97d766a9b0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a830 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a840 Cown ptr: 140290244024976 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766a840 Cown ptr: 140290244024976 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97de291a90 release
+decref_shared 0x7f97de291a90
+Finished Resolving successors  Behaviour: 0x7f97d766a830 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a6b0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a6c0 Cown ptr: 140290460774352 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766a6c0 Cown ptr: 140290460774352 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97eb146fd0 release
+decref_shared 0x7f97eb146fd0
+Finished Resolving successors  Behaviour: 0x7f97d766a6b0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a530 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a540 Cown ptr: 140290359462736 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766a540 Cown ptr: 140290359462736 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e50a8b50 release
+decref_shared 0x7f97e50a8b50
+Finished Resolving successors  Behaviour: 0x7f97d766a530 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a3b0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a3c0 Cown ptr: 140290387400208 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766a3c0 Cown ptr: 140290387400208 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e6b4d610 release
+decref_shared 0x7f97e6b4d610
+Finished Resolving successors  Behaviour: 0x7f97d766a3b0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a230 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a240 Cown ptr: 140290315387024 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766a240 Cown ptr: 140290315387024 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e26a0090 release
+decref_shared 0x7f97e26a0090
+Finished Resolving successors  Behaviour: 0x7f97d766a230 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a0b0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a0c0 Cown ptr: 140290258475344 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766a0c0 Cown ptr: 140290258475344 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97df059950 release
+decref_shared 0x7f97df059950
+Finished Resolving successors  Behaviour: 0x7f97d766a0b0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669f30 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669f40 Cown ptr: 140290408929744 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669f40 Cown ptr: 140290408929744 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e7fd59d0 release
+decref_shared 0x7f97e7fd59d0
+Finished Resolving successors  Behaviour: 0x7f97d7669f30 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669db0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669dc0 Cown ptr: 140290313645008 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669dc0 Cown ptr: 140290313645008 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e24f6bd0 release
+decref_shared 0x7f97e24f6bd0
+Finished Resolving successors  Behaviour: 0x7f97d7669db0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669c30 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669c40 Cown ptr: 140290226024208 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669c40 Cown ptr: 140290226024208 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97dd166f10 release
+decref_shared 0x7f97dd166f10
+Finished Resolving successors  Behaviour: 0x7f97d7669c30 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669ab0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669ac0 Cown ptr: 140290281076560 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669ac0 Cown ptr: 140290281076560 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e05e7750 release
+decref_shared 0x7f97e05e7750
+Finished Resolving successors  Behaviour: 0x7f97d7669ab0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669930 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669940 Cown ptr: 140290339146512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669940 Cown ptr: 140290339146512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e3d48b10 release
+decref_shared 0x7f97e3d48b10
+Finished Resolving successors  Behaviour: 0x7f97d7669930 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d76697b0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d76697c0 Cown ptr: 140290356171088 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d76697c0 Cown ptr: 140290356171088 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e4d85150 release
+decref_shared 0x7f97e4d85150
+Finished Resolving successors  Behaviour: 0x7f97d76697b0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669630 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669640 Cown ptr: 140290275949840 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669640 Cown ptr: 140290275949840 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e0103d10 release
+decref_shared 0x7f97e0103d10
+Finished Resolving successors  Behaviour: 0x7f97d7669630 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d76694b0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d76694c0 Cown ptr: 140290119991568 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d76694c0 Cown ptr: 140290119991568 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97d6c48110 release
+decref_shared 0x7f97d6c48110
+Finished Resolving successors  Behaviour: 0x7f97d76694b0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669330 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669340 Cown ptr: 140290135765456 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669340 Cown ptr: 140290135765456 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97d7b531d0 release
+decref_shared 0x7f97d7b531d0
+Finished Resolving successors  Behaviour: 0x7f97d7669330 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d76691b0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d76691c0 Cown ptr: 140290120104976 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d76691c0 Cown ptr: 140290120104976 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97d6c63c10 release
+decref_shared 0x7f97d6c63c10
+Finished Resolving successors  Behaviour: 0x7f97d76691b0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669030 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669040 Cown ptr: 140290429668688 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669040 Cown ptr: 140290429668688 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e939cd50 release
+decref_shared 0x7f97e939cd50
+Finished Resolving successors  Behaviour: 0x7f97d7669030 Cowns: 1 Pending dependencies: 2 
+Fast-steal work 0x7f97d766aa60 from 3
+Finished Behaviour  Behaviour: 0x7f97d7668eb0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766aa70 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766aa80 Cown ptr: 140290178540176 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d7668ec0 Cown ptr: 140290146244752 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7668ec0 Cown ptr: 140290146244752 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97d8551890 release
+decref_shared 0x7f97d8551890
+Finished Resolving successors  Behaviour: 0x7f97d7668eb0 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d766aa80 Cown ptr: 140290178540176 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Behaviour  Behaviour: 0x7f97d7668d30 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97da41e290 release
+Release slot  Slot: 0x7f97d7668d40 Cown ptr: 140290432283024 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97da41e290
+ Slot: 0x7f97d7668d40 Cown ptr: 140290432283024 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e961b190 release
+decref_shared 0x7f97e961b190
+Fast-steal work 0x7f97d766aac0 from 2
+Finished Resolving successors  Behaviour: 0x7f97d7668d30 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668bb0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7668bc0 Cown ptr: 140290173170960 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7668bc0 Cown ptr: 140290173170960 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Behaviour  Behaviour: 0x7f97d766aad0 Cowns: 1 Pending dependencies: 2 
+Fast-steal work 0x7f97d7668720 from 1
+Shared 0x7f97d9eff510 release
+Finished Resolving successors  Behaviour: 0x7f97d766aa70 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766aae0 Cown ptr: 140290407192528 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766aae0 Cown ptr: 140290407192528 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Behaviour  Behaviour: 0x7f97d766ae90 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766aea0 Cown ptr: 140290135802064 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97e7e2d7d0 release
+ Slot: 0x7f97d766aea0 Cown ptr: 140290135802064 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97d7b5c0d0 release
+decref_shared 0x7f97d7b5c0d0
+decref_shared 0x7f97d9eff510
+decref_shared 0x7f97e7e2d7d0
+Finished Resolving successors  Behaviour: 0x7f97d766ae90 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668730 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d7668bb0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766ad10 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766ad20 Cown ptr: 140290122410512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766ad20 Cown ptr: 140290122410512 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97d6e96a10 release
+Finished Behaviour  Behaviour: 0x7f97d7668a30 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97d6e96a10
+Release slot  Slot: 0x7f97d7668a40 Cown ptr: 140290348767120 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7668a40 Cown ptr: 140290348767120 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Resolving successors  Behaviour: 0x7f97d766ad10 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766ab90 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d766aad0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766aba0 Cown ptr: 140290424702096 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97e4675790 release
+decref_shared 0x7f97e4675790
+ Slot: 0x7f97d766aba0 Cown ptr: 140290424702096 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e8ee0490 release
+Finished Behaviour  Behaviour: 0x7f97d766aef0 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d7668a30 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d76688b0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766af00 Cown ptr: 140290392813904 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d76688c0 Cown ptr: 140290306963984 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d76688c0 Cown ptr: 140290306963984 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e1e97a10 release
+decref_shared 0x7f97e1e97a10
+Finished Resolving successors  Behaviour: 0x7f97d76688b0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d76685b0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d76685c0 Cown ptr: 140290129597520 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766af00 Cown ptr: 140290392813904 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e7077150 release
+decref_shared 0x7f97e7077150
+ Slot: 0x7f97d76685c0 Cown ptr: 140290129597520 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Resolving successors  Behaviour: 0x7f97d766aef0 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e8ee0490
+Shared 0x7f97d7571450 release
+Finished Resolving successors  Behaviour: 0x7f97d766ab90 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7668740 Cown ptr: 140290336771408 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97d7571450
+Finished Resolving successors  Behaviour: 0x7f97d76685b0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766ad70 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669270 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668430 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669280 Cown ptr: 140290467641424 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d7668440 Cown ptr: 140290365257744 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7668740 Cown ptr: 140290336771408 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e3b04d50 release
+ Slot: 0x7f97d7668440 Cown ptr: 140290365257744 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+ Slot: 0x7f97d7669280 Cown ptr: 140290467641424 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Release slot  Slot: 0x7f97d766ad80 Cown ptr: 140290439527312 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97e562f810 release
+decref_shared 0x7f97e562f810
+decref_shared 0x7f97e3b04d50
+Finished Resolving successors  Behaviour: 0x7f97d7668430 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97eb7d3850 release
+Finished Behaviour  Behaviour: 0x7f97d76682b0 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d766ad80 Cown ptr: 140290439527312 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+decref_shared 0x7f97eb7d3850
+Release slot  Slot: 0x7f97d76682c0 Cown ptr: 140290265762128 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97e9d03b90 release
+decref_shared 0x7f97e9d03b90
+Finished Resolving successors  Behaviour: 0x7f97d7669270 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d766ad70 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d76682c0 Cown ptr: 140290265762128 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Behaviour  Behaviour: 0x7f97d766abf0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a890 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d7668730 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a8a0 Cown ptr: 140290463636112 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d766ac00 Cown ptr: 140290319979728 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97df74c950 release
+decref_shared 0x7f97df74c950
+ Slot: 0x7f97d766ac00 Cown ptr: 140290319979728 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e2b014d0 release
+Finished Behaviour  Behaviour: 0x7f97d766af50 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e2b014d0
+Release slot  Slot: 0x7f97d766af60 Cown ptr: 140290306174352 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766a8a0 Cown ptr: 140290463636112 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+ Slot: 0x7f97d766af60 Cown ptr: 140290306174352 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Resolving successors  Behaviour: 0x7f97d76682b0 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d766abf0 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97e1dd6d90 release
+Finished Behaviour  Behaviour: 0x7f97d76692d0 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97eb401a90 release
+Finished Behaviour  Behaviour: 0x7f97d766a410 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e1dd6d90
+Finished Resolving successors  Behaviour: 0x7f97d766af50 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d76692e0 Cown ptr: 140290383332240 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Behaviour  Behaviour: 0x7f97d766add0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a420 Cown ptr: 140290292824336 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97eb401a90
+ Slot: 0x7f97d76692e0 Cown ptr: 140290383332240 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+ Slot: 0x7f97d766a420 Cown ptr: 140290292824336 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e676c390 release
+decref_shared 0x7f97e676c390
+Finished Resolving successors  Behaviour: 0x7f97d766a890 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d76692d0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a8f0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a900 Cown ptr: 140290510963728 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97e111b910 release
+Release slot  Slot: 0x7f97d766ade0 Cown ptr: 140290232705744 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Behaviour  Behaviour: 0x7f97d766a710 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d766a900 Cown ptr: 140290510963728 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97ee124410 release
+decref_shared 0x7f97ee124410
+ Slot: 0x7f97d766ade0 Cown ptr: 140290232705744 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+decref_shared 0x7f97e111b910
+Finished Resolving successors  Behaviour: 0x7f97d766a410 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669e10 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669e20 Cown ptr: 140290327085072 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Resolving successors  Behaviour: 0x7f97d766a8f0 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97dd7c62d0 release
+decref_shared 0x7f97dd7c62d0
+Finished Behaviour  Behaviour: 0x7f97d766a770 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a720 Cown ptr: 140290271879376 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669e20 Cown ptr: 140290327085072 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e31c8010 release
+ Slot: 0x7f97d766a720 Cown ptr: 140290271879376 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Release slot  Slot: 0x7f97d766a780 Cown ptr: 140290213025168 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Resolving successors  Behaviour: 0x7f97d766add0 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e31c8010
+ Slot: 0x7f97d766a780 Cown ptr: 140290213025168 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97dc501590 release
+Shared 0x7f97dfd220d0 release
+Finished Resolving successors  Behaviour: 0x7f97d7669e10 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97dc501590
+Finished Resolving successors  Behaviour: 0x7f97d766a770 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97dfd220d0
+Finished Behaviour  Behaviour: 0x7f97d766ac50 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d766a710 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a590 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a5f0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766ac60 Cown ptr: 140290147465872 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d766a5a0 Cown ptr: 140290517204240 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766ac60 Cown ptr: 140290147465872 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+ Slot: 0x7f97d766a5a0 Cown ptr: 140290517204240 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97d867ba90 release
+Release slot  Slot: 0x7f97d766a600 Cown ptr: 140290364015376 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97ee717d10 release
+decref_shared 0x7f97d867ba90
+Finished Resolving successors  Behaviour: 0x7f97d766ac50 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d766a600 Cown ptr: 140290364015376 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Fast-steal work 0x7f97eef90000 from 4
+decref_shared 0x7f97ee717d10
+Finished Behaviour  Behaviour: 0x7f97d7669810 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a950 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d766a590 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669820 Cown ptr: 140290457322064 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669820 Cown ptr: 140290457322064 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97eadfc250 release
+decref_shared 0x7f97eadfc250
+Finished Resolving successors  Behaviour: 0x7f97d7669810 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668c10 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7668c20 Cown ptr: 140290270205008 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7668c20 Cown ptr: 140290270205008 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97dfb89450 release
+decref_shared 0x7f97dfb89450
+Finished Resolving successors  Behaviour: 0x7f97d7668c10 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668610 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7668620 Cown ptr: 140290263762320 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7668620 Cown ptr: 140290263762320 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97df564590 release
+decref_shared 0x7f97df564590
+Finished Resolving successors  Behaviour: 0x7f97d7668610 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668010 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7668020 Cown ptr: 140290329558096 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7668020 Cown ptr: 140290329558096 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e3423c50 release
+decref_shared 0x7f97e3423c50
+Finished Resolving successors  Behaviour: 0x7f97d7668010 Cowns: 1 Pending dependencies: 2 
+Fast-steal work 0x7f97eef90020 from 3
+Finished Behaviour  Behaviour: 0x7f97d766a290 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a960 Cown ptr: 140290159229904 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+current thread: 1 stole work 0x7f97d7669c80 from 4
+ Slot: 0x7f97d766a960 Cown ptr: 140290159229904 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e5500310 release
+Shared 0x7f97d91b3bd0 release
+decref_shared 0x7f97d91b3bd0
+decref_shared 0x7f97e5500310
+Release slot  Slot: 0x7f97d766a2a0 Cown ptr: 140290252752272 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Resolving successors  Behaviour: 0x7f97d766a950 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669c90 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a7d0 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d766a5f0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a7e0 Cown ptr: 140290367055696 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766a2a0 Cown ptr: 140290252752272 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Fast-steal work 0x7f97d7668480 from 1
+Release slot  Slot: 0x7f97d7669ca0 Cown ptr: 140290346134416 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Behaviour  Behaviour: 0x7f97d7668490 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d766a7e0 Cown ptr: 140290367055696 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97deae4590 release
+decref_shared 0x7f97deae4590
+Release slot  Slot: 0x7f97d76684a0 Cown ptr: 140290314607888 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97e57e6750 release
+ Slot: 0x7f97d76684a0 Cown ptr: 140290314607888 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+ Slot: 0x7f97d7669ca0 Cown ptr: 140290346134416 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+decref_shared 0x7f97e57e6750
+Shared 0x7f97e25e1d10 release
+Finished Resolving successors  Behaviour: 0x7f97d766a290 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d766a7d0 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e25e1d10
+Finished Behaviour  Behaviour: 0x7f97d766a650 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a110 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a660 Cown ptr: 140290265961488 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97e43f2b90 release
+Release slot  Slot: 0x7f97d766a120 Cown ptr: 140290352962832 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766a660 Cown ptr: 140290265961488 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Resolving successors  Behaviour: 0x7f97d7668490 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e43f2b90
+Finished Resolving successors  Behaviour: 0x7f97d7669c90 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d766a120 Cown ptr: 140290352962832 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e4a75d10 release
+decref_shared 0x7f97e4a75d10
+Finished Resolving successors  Behaviour: 0x7f97d766a110 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97df77d410 release
+Finished Behaviour  Behaviour: 0x7f97d7669690 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97df77d410
+Finished Resolving successors  Behaviour: 0x7f97d766a650 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669f90 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a2f0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a350 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d76696a0 Cown ptr: 140290437347408 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d766a360 Cown ptr: 140290188864464 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d76696a0 Cown ptr: 140290437347408 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e9aef850 release
+Release slot  Slot: 0x7f97d7669fa0 Cown ptr: 140290258565328 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d766a300 Cown ptr: 140290403215696 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97e9aef850
+ Slot: 0x7f97d766a300 Cown ptr: 140290403215696 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+ Slot: 0x7f97d766a360 Cown ptr: 140290188864464 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Resolving successors  Behaviour: 0x7f97d7669690 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97e7a62950 release
+Finished Behaviour  Behaviour: 0x7f97d7669090 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7669fa0 Cown ptr: 140290258565328 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97df06f8d0 release
+decref_shared 0x7f97e7a62950
+decref_shared 0x7f97df06f8d0
+Shared 0x7f97dadf6bd0 release
+Release slot  Slot: 0x7f97d76690a0 Cown ptr: 140290313270992 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Resolving successors  Behaviour: 0x7f97d7669f90 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97dadf6bd0
+Finished Resolving successors  Behaviour: 0x7f97d766a2f0 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d766a350 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669b10 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a170 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a1d0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a180 Cown ptr: 140290305780304 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d76690a0 Cown ptr: 140290313270992 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e249b6d0 release
+decref_shared 0x7f97e249b6d0
+Release slot  Slot: 0x7f97d7669b20 Cown ptr: 140290443100944 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766a180 Cown ptr: 140290305780304 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Resolving successors  Behaviour: 0x7f97d7669090 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97e1d76a50 release
+ Slot: 0x7f97d7669b20 Cown ptr: 140290443100944 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Release slot  Slot: 0x7f97d766a1e0 Cown ptr: 140290389427600 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97e1d76a50
+Finished Behaviour  Behaviour: 0x7f97d7668a90 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d766a1e0 Cown ptr: 140290389427600 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Resolving successors  Behaviour: 0x7f97d766a170 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97e6d3c590 release
+Shared 0x7f97ea06c310 release
+decref_shared 0x7f97e6d3c590
+decref_shared 0x7f97ea06c310
+Finished Behaviour  Behaviour: 0x7f97d7669ff0 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d7669b10 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d766a1d0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a000 Cown ptr: 140290433931856 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Behaviour  Behaviour: 0x7f97d7669990 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7668aa0 Cown ptr: 140290386437136 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Behaviour  Behaviour: 0x7f97d766a050 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a060 Cown ptr: 140290245292752 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766a000 Cown ptr: 140290433931856 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+ Slot: 0x7f97d766a060 Cown ptr: 140290245292752 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97de3c72d0 release
+Release slot  Slot: 0x7f97d76699a0 Cown ptr: 140290454021456 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97e97ada50 release
+ Slot: 0x7f97d7668aa0 Cown ptr: 140290386437136 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+decref_shared 0x7f97de3c72d0
+Shared 0x7f97e6a62410 release
+ Slot: 0x7f97d76699a0 Cown ptr: 140290454021456 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97eaad6550 release
+decref_shared 0x7f97e6a62410
+Finished Resolving successors  Behaviour: 0x7f97d7668a90 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d766a050 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97eaad6550
+decref_shared 0x7f97e97ada50
+Finished Behaviour  Behaviour: 0x7f97d7669d50 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d7669ff0 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d7669990 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a470 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669510 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669520 Cown ptr: 140290240109648 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669520 Cown ptr: 140290240109648 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Behaviour  Behaviour: 0x7f97d7669cf0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a480 Cown ptr: 140290433587472 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d7669d00 Cown ptr: 140290148945488 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669d00 Cown ptr: 140290148945488 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+ Slot: 0x7f97d766a480 Cown ptr: 140290433587472 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Release slot  Slot: 0x7f97d7669d60 Cown ptr: 140290355504848 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97dded5c50 release
+ Slot: 0x7f97d7669d60 Cown ptr: 140290355504848 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e9759910 release
+Shared 0x7f97d87e4e50 release
+decref_shared 0x7f97e9759910
+Shared 0x7f97e4ce26d0 release
+decref_shared 0x7f97d87e4e50
+Finished Resolving successors  Behaviour: 0x7f97d766a470 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d7669cf0 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97dded5c50
+Finished Behaviour  Behaviour: 0x7f97d7669b70 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669b80 Cown ptr: 140290359366992 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Resolving successors  Behaviour: 0x7f97d7669510 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668c70 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e4ce26d0
+ Slot: 0x7f97d7669b80 Cown ptr: 140290359366992 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e5091550 release
+decref_shared 0x7f97e5091550
+Finished Resolving successors  Behaviour: 0x7f97d7669b70 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669390 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d76699f0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669a00 Cown ptr: 140290304462160 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669a00 Cown ptr: 140290304462160 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e1c34d50 release
+Release slot  Slot: 0x7f97d76693a0 Cown ptr: 140290466243664 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97e1c34d50
+Finished Resolving successors  Behaviour: 0x7f97d76699f0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d76696f0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669700 Cown ptr: 140290381768016 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Resolving successors  Behaviour: 0x7f97d7669d50 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7669700 Cown ptr: 140290381768016 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Release slot  Slot: 0x7f97d7668c80 Cown ptr: 140290260448848 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Behaviour  Behaviour: 0x7f97d7669bd0 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d76693a0 Cown ptr: 140290466243664 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e65ee550 release
+Shared 0x7f97eb67e450 release
+decref_shared 0x7f97eb67e450
+decref_shared 0x7f97e65ee550
+Finished Resolving successors  Behaviour: 0x7f97d76696f0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669570 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d7669390 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7668c80 Cown ptr: 140290260448848 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Release slot  Slot: 0x7f97d7669be0 Cown ptr: 140290427882704 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97df23b650 release
+decref_shared 0x7f97df23b650
+Finished Resolving successors  Behaviour: 0x7f97d7668c70 Cowns: 1 Pending dependencies: 2 
+current thread: 1 stole work 0x7f97d76690e0 from 3
+Finished Behaviour  Behaviour: 0x7f97d76690f0 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7669be0 Cown ptr: 140290427882704 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Release slot  Slot: 0x7f97d7669100 Cown ptr: 140290181834640 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669100 Cown ptr: 140290181834640 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97da742790 release
+Fast-steal work 0x7f97d7668ae0 from 1
+Shared 0x7f97e91e8cd0 release
+Finished Behaviour  Behaviour: 0x7f97d7668af0 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e91e8cd0
+Release slot  Slot: 0x7f97d7668b00 Cown ptr: 140290254812112 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d7669580 Cown ptr: 140290442817744 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Resolving successors  Behaviour: 0x7f97d7669bd0 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97da742790
+ Slot: 0x7f97d7668b00 Cown ptr: 140290254812112 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Resolving successors  Behaviour: 0x7f97d76690f0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669a50 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d76684f0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669a60 Cown ptr: 140290321000912 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97decdb3d0 release
+ Slot: 0x7f97d7669580 Cown ptr: 140290442817744 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+ Slot: 0x7f97d7669a60 Cown ptr: 140290321000912 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e2bfa9d0 release
+Shared 0x7f97ea0270d0 release
+Release slot  Slot: 0x7f97d7668500 Cown ptr: 140290349680080 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97e2bfa9d0
+decref_shared 0x7f97decdb3d0
+Finished Resolving successors  Behaviour: 0x7f97d7668af0 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97ea0270d0
+Finished Resolving successors  Behaviour: 0x7f97d7669a50 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668f10 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7668500 Cown ptr: 140290349680080 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Behaviour  Behaviour: 0x7f97d7669750 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7668f20 Cown ptr: 140290281572944 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d7669760 Cown ptr: 140290120589200 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Resolving successors  Behaviour: 0x7f97d7669570 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d76693f0 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7669760 Cown ptr: 140290120589200 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97d6cd9f90 release
+decref_shared 0x7f97d6cd9f90
+ Slot: 0x7f97d7668f20 Cown ptr: 140290281572944 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Resolving successors  Behaviour: 0x7f97d7669750 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97e0660a50 release
+Finished Behaviour  Behaviour: 0x7f97d76695d0 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97e47545d0 release
+Release slot  Slot: 0x7f97d7669400 Cown ptr: 140290168681808 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97e47545d0
+ Slot: 0x7f97d7669400 Cown ptr: 140290168681808 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+decref_shared 0x7f97e0660a50
+Shared 0x7f97d9ab7550 release
+Finished Resolving successors  Behaviour: 0x7f97d76684f0 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97d9ab7550
+Finished Resolving successors  Behaviour: 0x7f97d76693f0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d766a4d0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d76695e0 Cown ptr: 140290312556240 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Resolving successors  Behaviour: 0x7f97d7668f10 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d766a4e0 Cown ptr: 140290346228816 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Behaviour  Behaviour: 0x7f97d7668d90 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7668da0 Cown ptr: 140290257098320 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d766a4e0 Cown ptr: 140290346228816 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+ Slot: 0x7f97d7668da0 Cown ptr: 140290257098320 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97def09650 release
+Finished Behaviour  Behaviour: 0x7f97d7668f70 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d76695e0 Cown ptr: 140290312556240 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e4409c50 release
+decref_shared 0x7f97def09650
+Release slot  Slot: 0x7f97d7668f80 Cown ptr: 140290240844240 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97e4409c50
+Shared 0x7f97e23eced0 release
+Finished Resolving successors  Behaviour: 0x7f97d766a4d0 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e23eced0
+Finished Behaviour  Behaviour: 0x7f97d7668cd0 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d76695d0 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d7668d90 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669450 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7668ce0 Cown ptr: 140290189766736 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Behaviour  Behaviour: 0x7f97d7668910 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7668f80 Cown ptr: 140290240844240 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Release slot  Slot: 0x7f97d7669460 Cown ptr: 140290138840208 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7668ce0 Cown ptr: 140290189766736 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97ddf891d0 release
+ Slot: 0x7f97d7669460 Cown ptr: 140290138840208 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+decref_shared 0x7f97ddf891d0
+Shared 0x7f97d7e41c90 release
+Finished Resolving successors  Behaviour: 0x7f97d7668f70 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97daed3050 release
+decref_shared 0x7f97d7e41c90
+Finished Resolving successors  Behaviour: 0x7f97d7669450 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669150 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668df0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669160 Cown ptr: 140290331021840 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d7668e00 Cown ptr: 140290397234192 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97daed3050
+ Slot: 0x7f97d7668e00 Cown ptr: 140290397234192 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Resolving successors  Behaviour: 0x7f97d7668cd0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7668920 Cown ptr: 140290350204624 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97e74ae410 release
+current thread: 1 stole work 0x7f97d7668b40 from 2
+ Slot: 0x7f97d7669160 Cown ptr: 140290331021840 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+decref_shared 0x7f97e74ae410
+ Slot: 0x7f97d7668920 Cown ptr: 140290350204624 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e3589210 release
+decref_shared 0x7f97e3589210
+Finished Behaviour  Behaviour: 0x7f97d7668b50 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d7669150 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97e47d46d0 release
+Finished Resolving successors  Behaviour: 0x7f97d7668df0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668fd0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668970 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7668980 Cown ptr: 140290261661520 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d7668fe0 Cown ptr: 140290439302672 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7668fe0 Cown ptr: 140290439302672 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e9ccce10 release
+Release slot  Slot: 0x7f97d7668b60 Cown ptr: 140290396702480 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97e9ccce10
+decref_shared 0x7f97e47d46d0
+ Slot: 0x7f97d7668b60 Cown ptr: 140290396702480 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+ Slot: 0x7f97d7668980 Cown ptr: 140290261661520 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Resolving successors  Behaviour: 0x7f97d7668fd0 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d7668910 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668790 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668e50 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d76687a0 Cown ptr: 140290292139600 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d7668e60 Cown ptr: 140290348377360 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7668e60 Cown ptr: 140290348377360 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97df363750 release
+decref_shared 0x7f97df363750
+Finished Resolving successors  Behaviour: 0x7f97d7668970 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d76687a0 Cown ptr: 140290292139600 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e4616510 release
+Finished Behaviour  Behaviour: 0x7f97d76687f0 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e4616510
+Shared 0x7f97e742c710 release
+Release slot  Slot: 0x7f97d7668800 Cown ptr: 140290309147088 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97e742c710
+Finished Resolving successors  Behaviour: 0x7f97d7668b50 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668550 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7668800 Cown ptr: 140290309147088 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e20ac9d0 release
+decref_shared 0x7f97e20ac9d0
+Finished Resolving successors  Behaviour: 0x7f97d76687f0 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97e1074650 release
+Release slot  Slot: 0x7f97d7668560 Cown ptr: 140290223883344 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97e1074650
+Finished Resolving successors  Behaviour: 0x7f97d7668790 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7668560 Cown ptr: 140290223883344 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Behaviour  Behaviour: 0x7f97d7668310 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97dcf5c450 release
+Finished Resolving successors  Behaviour: 0x7f97d7668e50 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7668320 Cown ptr: 140290144543184 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Behaviour  Behaviour: 0x7f97d76689d0 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97dcf5c450
+Release slot  Slot: 0x7f97d76689e0 Cown ptr: 140290337944976 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Behaviour  Behaviour: 0x7f97d7668370 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d76689e0 Cown ptr: 140290337944976 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e3c23590 release
+Finished Resolving successors  Behaviour: 0x7f97d7668550 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7668320 Cown ptr: 140290144543184 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Release slot  Slot: 0x7f97d7668380 Cown ptr: 140290349591056 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Shared 0x7f97d83b21d0 release
+ Slot: 0x7f97d7668380 Cown ptr: 140290349591056 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+decref_shared 0x7f97e3c23590
+Finished Behaviour  Behaviour: 0x7f97d7668130 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97d83b21d0
+Finished Resolving successors  Behaviour: 0x7f97d7668310 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97e473ea10 release
+Finished Behaviour  Behaviour: 0x7f97d7668190 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e473ea10
+Finished Resolving successors  Behaviour: 0x7f97d76689d0 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d7668370 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d76681f0 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d76681a0 Cown ptr: 140290296882000 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d76681a0 Cown ptr: 140290296882000 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e14fa350 release
+decref_shared 0x7f97e14fa350
+Release slot  Slot: 0x7f97d7668140 Cown ptr: 140290203417808 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Behaviour  Behaviour: 0x7f97d7668850 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7668860 Cown ptr: 140290239722128 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Resolving successors  Behaviour: 0x7f97d7668190 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7668860 Cown ptr: 140290239722128 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97dde77290 release
+Finished Behaviour  Behaviour: 0x7f97d7669e70 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d7669e80 Cown ptr: 140290514269584 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669e80 Cown ptr: 140290514269584 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97ee44b590 release
+ Slot: 0x7f97d7668140 Cown ptr: 140290203417808 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Release slot  Slot: 0x7f97d7668200 Cown ptr: 140290513838032 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97dde77290
+Shared 0x7f97dbbd7cd0 release
+decref_shared 0x7f97ee44b590
+decref_shared 0x7f97dbbd7cd0
+ Slot: 0x7f97d7668200 Cown ptr: 140290513838032 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Resolving successors  Behaviour: 0x7f97d7668130 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97ee3e1fd0 release
+current thread: 1 stole work 0x7f97d7668660 from 4
+decref_shared 0x7f97ee3e1fd0
+Finished Resolving successors  Behaviour: 0x7f97d7668850 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d7669e70 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d76683d0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7668670 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669870 Cowns: 1 Pending dependencies: 2 
+Release slot  Slot: 0x7f97d76683e0 Cown ptr: 140290332884112 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d7669880 Cown ptr: 140290339605264 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d76683e0 Cown ptr: 140290332884112 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+ Slot: 0x7f97d7669880 Cown ptr: 140290339605264 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Release slot  Slot: 0x7f97d7668680 Cown ptr: 140290513444944 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Resolving successors  Behaviour: 0x7f97d76681f0 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7668680 Cown ptr: 140290513444944 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e374fc90 release
+decref_shared 0x7f97e374fc90
+Shared 0x7f97e3db8b10 release
+Finished Resolving successors  Behaviour: 0x7f97d76683d0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d7669ed0 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e3db8b10
+Release slot  Slot: 0x7f97d7669ee0 Cown ptr: 140290309858768 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d7669ee0 Cown ptr: 140290309858768 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e215a5d0 release
+Finished Resolving successors  Behaviour: 0x7f97d7669870 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e215a5d0
+Finished Behaviour  Behaviour: 0x7f97d7668070 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97ee382050 release
+Release slot  Slot: 0x7f97d7668080 Cown ptr: 140290236160144 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Behaviour  Behaviour: 0x7f97d7668250 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7668080 Cown ptr: 140290236160144 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+decref_shared 0x7f97ee382050
+Release slot  Slot: 0x7f97d7668260 Cown ptr: 140290349103504 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Resolving successors  Behaviour: 0x7f97d7668670 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97ddb11890 release
+Finished Resolving successors  Behaviour: 0x7f97d7669ed0 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d7668260 Cown ptr: 140290349103504 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97e46c7990 release
+current thread: 1 stole work 0x7f97d76686c0 from 3
+decref_shared 0x7f97ddb11890
+decref_shared 0x7f97e46c7990
+Finished Resolving successors  Behaviour: 0x7f97d7668070 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d76686d0 Cowns: 1 Pending dependencies: 2 
+Finished Behaviour  Behaviour: 0x7f97d76698d0 Cowns: 1 Pending dependencies: 2 
+current thread: 4 stole work 0x7f97eef90020 from 3
+Release slot  Slot: 0x7f97d76686e0 Cown ptr: 140290289559824 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Release slot  Slot: 0x7f97d76698e0 Cown ptr: 140290441653328 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+ Slot: 0x7f97d76686e0 Cown ptr: 140290289559824 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+current thread: 4 stole work 0x7f97d7669200 from 2
+Finished Behaviour  Behaviour: 0x7f97d7669210 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97e0dfe910 release
+Release slot  Slot: 0x7f97d7669220 Cown ptr: 140290438017424 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+decref_shared 0x7f97e0dfe910
+Finished Resolving successors  Behaviour: 0x7f97d76686d0 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d76698e0 Cown ptr: 140290441653328 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+current thread: 1 stole work 0x7f97d76680c0 from 3
+ Slot: 0x7f97d7669220 Cown ptr: 140290438017424 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Finished Resolving successors  Behaviour: 0x7f97d7668250 Cowns: 1 Pending dependencies: 2 
+Shared 0x7f97e9f0ac50 release
+Finished Behaviour  Behaviour: 0x7f97d76680d0 Cowns: 1 Pending dependencies: 2 
+decref_shared 0x7f97e9f0ac50
+Shared 0x7f97e9b93190 release
+decref_shared 0x7f97e9b93190
+current thread: 2 stole work 0x7f97eef90040 from 4
+Release slot  Slot: 0x7f97d76680e0 Cown ptr: 140290188937872 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+
+Finished Resolving successors  Behaviour: 0x7f97d7669210 Cowns: 1 Pending dependencies: 2 
+Finished Resolving successors  Behaviour: 0x7f97d76698d0 Cowns: 1 Pending dependencies: 2 
+ Slot: 0x7f97d76680e0 Cown ptr: 140290188937872 2PL ready bit: 1 Is_reader bit: 0 Is_read_available: 0 Next pointer: 0 Is_next_reader: 0
+ CAS Success No more work for cown 
+Shared 0x7f97dae08a90 release
+decref_shared 0x7f97dae08a90
+Finished Resolving successors  Behaviour: 0x7f97d76680d0 Cowns: 1 Pending dependencies: 2 
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+No pending work!
+Sleep
+No pending work!
+Locking Scheduler.
+No pending work!
+Locking Scheduler.
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Locking Scheduler.
+Sleep
+Locking Scheduler done
+Pausing
+Add to list of waiters
+Unlock Scheduler lock
+Sleep
+Locking Scheduler done
+Teardown beginning
+Teardown: all threads stopped
+cv_notify_all() for teardown
+Unlock Scheduler lock
+Pending unpause
+Teardown: all threads beginning teardown
+Awake!
+Awake!
+Locking Scheduler.
+Locking Scheduler.
+Locking Scheduler done
+Destroying core 3
+Unpausing
+Unlock Scheduler lock
+Locking Scheduler done
+Destroying core 1
+Awake!
+Unpausing
+Locking Scheduler.
+Unlock Scheduler lock
+Locking Scheduler done
+Destroying core 2
+Unpausing
+Unlock Scheduler lock
+Destroying core 4
+All threads stopped
+All threads deallocated
+[report]: overall_duration_ns : 3281043
+[report]: overall_operation_number : 128
+[report]: overall_throughput : 39011.984908
+[report]: overall_avg_time_per_ops : 25633.000000
+[report]: overall_run_duration : 1775636
+[report]: overall_server_duration : 1148087
+terminate called without an active exception
