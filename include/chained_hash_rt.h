@@ -26,6 +26,28 @@ using namespace verona::rt;
 using namespace verona::cpp;
 using namespace std;
 
+void busy_lp(size_t u_sec)
+{
+  auto wait = [](size_t step_u_sec) {
+    std::chrono::microseconds usec(step_u_sec);
+    auto start = std::chrono::steady_clock::now();
+    auto end = start + usec;
+
+    // spin
+    while (std::chrono::steady_clock::now() <= end)
+      ;
+  };
+
+  size_t it_count = u_sec / 10;
+  // Break into multiple shorter waits so that pre-emption can be detected.
+  // This is not perfect, but it is good enough for benchmarking.
+  for (size_t j = 0; j < it_count; j++)
+  {
+    wait(10);
+  }
+  wait(u_sec % 10);
+}
+
 struct DataNode
 {
     char key[MAX_KEY_LENGTH];
@@ -64,6 +86,7 @@ public:
 
         newNode->next = head;
         head = newNode;
+        // busy_lp(10);
         return true;
     }
 
@@ -109,7 +132,6 @@ private:
     static inline std::atomic<uint64_t> completed_inserts{0};
     static inline std::atomic<uint64_t> when_schedule_time{0};
     static inline std::atomic<uint64_t> when_schedule_count{0};
-
 public:
     // struct UpdateBehaviour
     // {

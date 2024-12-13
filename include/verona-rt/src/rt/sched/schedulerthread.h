@@ -156,26 +156,26 @@ namespace verona::rt
 
       batch = BATCH_SIZE;
 
-      if (core->should_steal_for_fairness)
-      {
-        // Check if we have some work. We should only reschedule the token
-        // if we do have some work.  Otherwise, the token will be rescheduled
-        // and we will fail to reach quicescence.
-        if (!core->q.is_empty())
-        {
-          auto work = try_steal();
-          // Set the flag before rescheduling the token so that we don't have
-          // a race.
-          core->should_steal_for_fairness = false;
-          // Reschedule the token.
-          core->q.enqueue(core->token_work);
-          if (work != nullptr)
-          {
-            return_next_work();
-            return work;
-          }
-        }
-      }
+      // if (core->should_steal_for_fairness)
+      // {
+      //   // Check if we have some work. We should only reschedule the token
+      //   // if we do have some work.  Otherwise, the token will be rescheduled
+      //   // and we will fail to reach quicescence.
+      //   if (!core->q.is_empty())
+      //   {
+      //     auto work = try_steal();
+      //     // Set the flag before rescheduling the token so that we don't have
+      //     // a race.
+      //     core->should_steal_for_fairness = false;
+      //     // Reschedule the token.
+      //     core->q.enqueue(core->token_work);
+      //     if (work != nullptr)
+      //     {
+      //       return_next_work();
+      //       return work;
+      //     }
+      //   }
+      // }
 
       auto work = core->q.dequeue();
       if (work != nullptr)
@@ -186,19 +186,19 @@ namespace verona::rt
 
       // Our queue is effectively empty, so this is like receiving a token,
       // try a steal.
-      work = try_steal();
-      if (work != nullptr)
-      {
-        return_next_work();
-        return work;
-      }
+      // work = try_steal();
+      // if (work != nullptr)
+      // {
+      //   return_next_work();
+      //   return work;
+      // }
 
       if (next_work != nullptr)
       {
         return std::exchange(next_work, nullptr);
       }
-
-      return steal();
+      // steal();
+      return nullptr;
     }
 
     // Work* get_work(size_t& batch)

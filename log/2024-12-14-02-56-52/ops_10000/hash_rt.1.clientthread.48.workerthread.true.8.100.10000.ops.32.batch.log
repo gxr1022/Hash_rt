@@ -1,0 +1,10 @@
+/mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt --num_threads_client=1 --num_threads_worker=48 --str_key_size=8 --str_value_size=100 --num_ops=10000 --first_mode=true --work_usec=0 --batch_size=32
+Init time:116561892
+scheduler loop time: 15531876
+[report]: overall_duration_ns : 20423456
+[report]: overall_operation_number : 10016
+[report]: overall_throughput : 490416.509331
+[report]: overall_avg_time_per_ops : 2039.000000
+[report]: overall_run_duration : 4771730
+[report]: overall_server_duration : 15541116
+terminate called without an active exception
