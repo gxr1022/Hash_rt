@@ -1,0 +1,278 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1857576340
+[New Thread 0x7fbfdf3e8640 (LWP 1470308)]
+[New Thread 0x7fbfd73e5640 (LWP 1470309)]
+[New Thread 0x7fbfd6be4640 (LWP 1470310)]
+[New Thread 0x7fbfd63e3640 (LWP 1470311)]
+[New Thread 0x7fbfd5be2640 (LWP 1470312)]
+[New Thread 0x7fbfd53e1640 (LWP 1470313)]
+[New Thread 0x7fbfd4be0640 (LWP 1470314)]
+[New Thread 0x7fbfbffff640 (LWP 1470315)]
+[New Thread 0x7fbfbf7fe640 (LWP 1470316)]
+[New Thread 0x7fbfbeffd640 (LWP 1470317)]
+scheduler loop time: 134710407
+[Thread 0x7fbfd73e5640 (LWP 1470309) exited]
+[report]: overall_duration_ns : 135496686
+[report]: overall_operation_number : 9983
+[Thread 0x7fbfbeffd640 (LWP 1470317) exited]
+[Thread 0x7fbfbf7fe640 (LWP 1470316) exited]
+[Thread 0x7fbfbffff640 (LWP 1470315) exited]
+[Thread 0x7fbfd4be0640 (LWP 1470314) exited]
+[Thread 0x7fbfd53e1640 (LWP 1470313) exited]
+[Thread 0x7fbfd5be2640 (LWP 1470312) exited]
+[Thread 0x7fbfd63e3640 (LWP 1470311) exited]
+[Thread 0x7fbfd6be4640 (LWP 1470310) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1470308) exited]
+[report]: overall_throughput : 73677.078715
+[report]: overall_avg_time_per_ops : 13572.000000
+[report]: overall_run_duration : 134412308
+[Inferior 1 (process 1470266) exited normally]
+[?2004h[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1863023320
+[New Thread 0x7fbfdf3e8640 (LWP 1470396)]
+[New Thread 0x7fbfdebe7640 (LWP 1470397)]
+[New Thread 0x7fbfde3e6640 (LWP 1470398)]
+[New Thread 0x7fbfddbe5640 (LWP 1470399)]
+[New Thread 0x7fbfdd3e4640 (LWP 1470400)]
+[New Thread 0x7fbfdcbe3640 (LWP 1470401)]
+[New Thread 0x7fbfc3fff640 (LWP 1470402)]
+[New Thread 0x7fbfc37fe640 (LWP 1470403)]
+[New Thread 0x7fbfc2ffd640 (LWP 1470404)]
+[New Thread 0x7fbfc27fc640 (LWP 1470405)]
+scheduler loop time: 134869817
+[Thread 0x7fbfdebe7640 (LWP 1470397) exited]
+[Thread 0x7fbfc27fc640 (LWP 1470405) exited]
+[Thread 0x7fbfc2ffd640 (LWP 1470404) exited]
+[Thread 0x7fbfc37fe640 (LWP 1470403) exited]
+[Thread 0x7fbfc3fff640 (LWP 1470402) exited]
+[Thread 0x7fbfdcbe3640 (LWP 1470401) exited]
+[Thread 0x7fbfdd3e4640 (LWP 1470400) exited]
+[Thread 0x7fbfddbe5640 (LWP 1470399) exited]
+[Thread 0x7fbfde3e6640 (LWP 1470398) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1470396) exited]
+[report]: overall_duration_ns : 135560245
+[report]: overall_operation_number : 9978
+[report]: overall_throughput : 73605.650388
+[report]: overall_avg_time_per_ops : 13585.000000
+[report]: overall_run_duration : 134467087
+[Inferior 1 (process 1470379) exited normally]
+[?2004h[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1861852333
+[New Thread 0x7fbfdf3e8640 (LWP 1470499)]
+[New Thread 0x7fbfdebe7640 (LWP 1470500)]
+[New Thread 0x7fbfde3e6640 (LWP 1470501)]
+[New Thread 0x7fbfddbe5640 (LWP 1470502)]
+[New Thread 0x7fbfdd3e4640 (LWP 1470503)]
+[New Thread 0x7fbfdcbe3640 (LWP 1470504)]
+[New Thread 0x7fbfd7fff640 (LWP 1470505)]
+[New Thread 0x7fbfd77fe640 (LWP 1470506)]
+[New Thread 0x7fbfcf3e5640 (LWP 1470507)]
+[New Thread 0x7fbfcebe4640 (LWP 1470508)]
+scheduler loop time: 134672007
+[Thread 0x7fbfdebe7640 (LWP 1470500) exited]
+[Thread 0x7fbfcebe4640 (LWP 1470508) exited]
+[Thread 0x7fbfcf3e5640 (LWP 1470507) exited]
+[Thread 0x7fbfd77fe640 (LWP 1470506) exited]
+[Thread 0x7fbfd7fff640 (LWP 1470505) exited]
+[Thread 0x7fbfdcbe3640 (LWP 1470504) exited]
+[Thread 0x7fbfdd3e4640 (LWP 1470503) exited]
+[Thread 0x7fbfddbe5640 (LWP 1470502) exited]
+[Thread 0x7fbfde3e6640 (LWP 1470501) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1470499) exited]
+[report]: overall_duration_ns : 135390746
+[report]: overall_operation_number : 9977
+[report]: overall_throughput : 73690.413080
+[report]: overall_avg_time_per_ops : 13570.000000
+[report]: overall_run_duration : 134325367
+[Inferior 1 (process 1470474) exited normally]
+[?2004h[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1861698714
+[New Thread 0x7fbfdf3e8640 (LWP 1470583)]
+[New Thread 0x7fbfdebe7640 (LWP 1470584)]
+[New Thread 0x7fbfde3e6640 (LWP 1470585)]
+[New Thread 0x7fbfddbe5640 (LWP 1470586)]
+[New Thread 0x7fbfdd3e4640 (LWP 1470587)]
+[New Thread 0x7fbfdcbe3640 (LWP 1470588)]
+[New Thread 0x7fbfc3fff640 (LWP 1470589)]
+[New Thread 0x7fbfc37fe640 (LWP 1470590)]
+[New Thread 0x7fbfc2ffd640 (LWP 1470591)]
+[New Thread 0x7fbfc27fc640 (LWP 1470592)]
+
+Thread 2 "hash_rt" received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0x7fbfdf3e8640 (LWP 1470583)]
+std::__atomic_base<verona::rt::Work*>::load (__m=std::memory_order_seq_cst, this=0xfffffffffffffffe) at /usr/include/c++/11/bits/atomic_base.h:820
+820		return __atomic_load_n(&_M_p, int(__m));
+[?2004h[?2004l[?2004h(gdb) bt
+[?2004l#0  std::__atomic_base<verona::rt::Work*>::load (__m=std::memory_order_seq_cst, this=0xfffffffffffffffe) at /usr/include/c++/11/bits/atomic_base.h:820
+#1  std::atomic<verona::rt::Work*>::load (this=0xfffffffffffffffe, __m=std::memory_order_seq_cst) at /usr/include/c++/11/atomic:578
+#2  0x00005555555cbab0 in verona::rt::MPMCQ<verona::rt::Work>::enqueue_segment (this=0x55555561f1f0, ls=...)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/mpmcq.h:118
+#3  0x00005555555cb927 in verona::rt::MPMCQ<verona::rt::Work>::enqueue (this=0x55555561f1f0, node=0x7fbfe03c3240)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/mpmcq.h:124
+#4  0x00005555555c1a06 in verona::rt::MPMCQ<verona::rt::Work>::enqueue_front (this=0x55555561f1f0, node=0x7fbfe03c3240)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/mpmcq.h:133
+#5  0x00005555555b8c34 in verona::rt::WorkStealingQueue<4ul>::enqueue_front (this=0x55555561f1e8, work=0x7fbfe03c3240)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/workstealingqueue.h:50
+#6  0x00005555555ae1b2 in verona::rt::SchedulerThread::schedule_lifo (c=0x55555561f1e0, w=0x7fbfe03c3240)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:111
+#7  0x00005555555b9453 in verona::rt::ThreadPool<verona::rt::SchedulerThread>::schedule (w=0x7fbfe03c3240, fifo=true)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:214
+#8  0x00005555555b0566 in verona::rt::BehaviourCore::resolve (this=0x7fbfe03c3250, n=2, fifo=true)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/behaviourcore.h:467
+#9  0x00005555555b1ae2 in verona::rt::BehaviourCore::schedule_many (bodies=0x7fbfdf3e5ff0, body_count=1)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/behaviourcore.h:984
+#10 0x00005555555ba6e5 in verona::cpp::Batch<verona::cpp::When<ExtendibleHash::insert(char const*, char const*)::{lambda(verona::cpp::acquired_cown<Bucket>)#1}, verona::cpp::Access<Bucket> > >::~Batch() (this=0x7fbfdf3e6080, __in_chrg=<optimized out>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/when.h:206
+#11 0x00005555555b3480 in ExtendibleHash::insert (this=0x55555561e850, key=0x7fbfd8048818 "pmttgjz", 
+    value=0x7fbfd8048820 "elepsdmctitjhssrtgbtctnnunqhezlopjzlrbfgkvbqpdcfaloohyhscranygzpvdntdmosvnsoovbyxsmzqrrzinukamvnrer")
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/chained_hash_rt.h:189
+#12 0x00005555555b3a4b in HashTableServer::scheduler_loop (this=0x55555561f670) at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/hash_server.h:95
+#13 0x00005555555a4152 in operator() (__closure=0x555555620788) at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/src/hash_main.cpp:59
+#14 0x00005555555a5c28 in std::__invoke_impl<void, BenchmarkTest::runBenchmark()::<lambda()> >(std::__invoke_other, struct {...} &&) (__f=...)
+    at /usr/include/c++/11/bits/invoke.h:61
+#15 0x00005555555a5bae in std::__invoke<BenchmarkTest::runBenchmark()::<lambda()> >(struct {...} &&) (__fn=...) at /usr/include/c++/11/bits/invoke.h:96
+#16 0x00005555555a5b08 in std::thread::_Invoker<std::tuple<BenchmarkTest::runBenchmark()::<lambda()> > >::_M_invoke<0>(std::_Index_tuple<0>) (this=0x555555620788)
+    at /usr/include/c++/11/bits/std_thread.h:259
+#17 0x00005555555a5ab0 in std::thread::_Invoker<std::tuple<BenchmarkTest::runBenchmark()::<lambda()> > >::operator()(void) (this=0x555555620788)
+    at /usr/include/c++/11/bits/std_thread.h:266
+#18 0x00005555555a5a78 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<BenchmarkTest::runBenchmark()::<lambda()> > > >::_M_run(void) (
+    this=0x555555620780) at /usr/include/c++/11/bits/std_thread.h:211
+#19 0x00007ffff7e23253 in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#20 0x00007ffff7b92ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#21 0x00007ffff7c24850 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+[?2004h(gdb) info thread
+[?2004l  Id   Target Id                                     Frame 
+  1    Thread 0x7ffff7a13300 (LWP 1470547) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1470585, 
+    futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+* 2    Thread 0x7fbfdf3e8640 (LWP 1470583) "hash_rt" std::__atomic_base<verona::rt::Work*>::load (__m=std::memory_order_seq_cst, this=0xfffffffffffffffe)
+    at /usr/include/c++/11/bits/atomic_base.h:820
+  3    Thread 0x7fbfdebe7640 (LWP 1470584) "hash_rt" std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand (this=0x7fbfd7ffe0d0) at /usr/include/c++/11/bits/random.tcc:409
+  4    Thread 0x7fbfde3e6640 (LWP 1470585) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  5    Thread 0x7fbfddbe5640 (LWP 1470586) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  6    Thread 0x7fbfdd3e4640 (LWP 1470587) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  7    Thread 0x7fbfdcbe3640 (LWP 1470588) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  8    Thread 0x7fbfc3fff640 (LWP 1470589) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  9    Thread 0x7fbfc37fe640 (LWP 1470590) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  10   Thread 0x7fbfc2ffd640 (LWP 1470591) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  11   Thread 0x7fbfc27fc640 (LWP 1470592) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+[?2004h(gdb) 
+[?2004l  Id   Target Id                                     Frame 
+  1    Thread 0x7ffff7a13300 (LWP 1470547) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1470585, 
+    futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+* 2    Thread 0x7fbfdf3e8640 (LWP 1470583) "hash_rt" std::__atomic_base<verona::rt::Work*>::load (__m=std::memory_order_seq_cst, this=0xfffffffffffffffe)
+    at /usr/include/c++/11/bits/atomic_base.h:820
+  3    Thread 0x7fbfdebe7640 (LWP 1470584) "hash_rt" std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand (this=0x7fbfd7ffe0d0) at /usr/include/c++/11/bits/random.tcc:409
+  4    Thread 0x7fbfde3e6640 (LWP 1470585) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  5    Thread 0x7fbfddbe5640 (LWP 1470586) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  6    Thread 0x7fbfdd3e4640 (LWP 1470587) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  7    Thread 0x7fbfdcbe3640 (LWP 1470588) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  8    Thread 0x7fbfc3fff640 (LWP 1470589) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  9    Thread 0x7fbfc37fe640 (LWP 1470590) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  10   Thread 0x7fbfc2ffd640 (LWP 1470591) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  11   Thread 0x7fbfc27fc640 (LWP 1470592) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+[?2004h(gdb) thread 2
+[?2004l[Switching to thread 2 (Thread 0x7fbfdf3e8640 (LWP 1470583))]
+#0  std::__atomic_base<verona::rt::Work*>::load (__m=std::memory_order_seq_cst, this=0xfffffffffffffffe) at /usr/include/c++/11/bits/atomic_base.h:820
+820		return __atomic_load_n(&_M_p, int(__m));
+[?2004h(gdb) bt
+[?2004l#0  std::__atomic_base<verona::rt::Work*>::load (__m=std::memory_order_seq_cst, this=0xfffffffffffffffe) at /usr/include/c++/11/bits/atomic_base.h:820
+#1  std::atomic<verona::rt::Work*>::load (this=0xfffffffffffffffe, __m=std::memory_order_seq_cst) at /usr/include/c++/11/atomic:578
+#2  0x00005555555cbab0 in verona::rt::MPMCQ<verona::rt::Work>::enqueue_segment (this=0x55555561f1f0, ls=...)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/mpmcq.h:118
+#3  0x00005555555cb927 in verona::rt::MPMCQ<verona::rt::Work>::enqueue (this=0x55555561f1f0, node=0x7fbfe03c3240)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/mpmcq.h:124
+#4  0x00005555555c1a06 in verona::rt::MPMCQ<verona::rt::Work>::enqueue_front (this=0x55555561f1f0, node=0x7fbfe03c3240)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/mpmcq.h:133
+#5  0x00005555555b8c34 in verona::rt::WorkStealingQueue<4ul>::enqueue_front (this=0x55555561f1e8, work=0x7fbfe03c3240)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/workstealingqueue.h:50
+#6  0x00005555555ae1b2 in verona::rt::SchedulerThread::schedule_lifo (c=0x55555561f1e0, w=0x7fbfe03c3240)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/schedulerthread.h:111
+#7  0x00005555555b9453 in verona::rt::ThreadPool<verona::rt::SchedulerThread>::schedule (w=0x7fbfe03c3240, fifo=true)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:214
+#8  0x00005555555b0566 in verona::rt::BehaviourCore::resolve (this=0x7fbfe03c3250, n=2, fifo=true)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/behaviourcore.h:467
+#9  0x00005555555b1ae2 in verona::rt::BehaviourCore::schedule_many (bodies=0x7fbfdf3e5ff0, body_count=1)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/behaviourcore.h:984
+#10 0x00005555555ba6e5 in verona::cpp::Batch<verona::cpp::When<ExtendibleHash::insert(char const*, char const*)::{lambda(verona::cpp::acquired_cown<Bucket>)#1}, verona::cpp::Access<Bucket> > >::~Batch() (this=0x7fbfdf3e6080, __in_chrg=<optimized out>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/when.h:206
+#11 0x00005555555b3480 in ExtendibleHash::insert (this=0x55555561e850, key=0x7fbfd8048818 "pmttgjz", 
+    value=0x7fbfd8048820 "elepsdmctitjhssrtgbtctnnunqhezlopjzlrbfgkvbqpdcfaloohyhscranygzpvdntdmosvnsoovbyxsmzqrrzinukamvnrer")
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/chained_hash_rt.h:189
+#12 0x00005555555b3a4b in HashTableServer::scheduler_loop (this=0x55555561f670) at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/hash_server.h:95
+#13 0x00005555555a4152 in operator() (__closure=0x555555620788) at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/src/hash_main.cpp:59
+#14 0x00005555555a5c28 in std::__invoke_impl<void, BenchmarkTest::runBenchmark()::<lambda()> >(std::__invoke_other, struct {...} &&) (__f=...)
+    at /usr/include/c++/11/bits/invoke.h:61
+#15 0x00005555555a5bae in std::__invoke<BenchmarkTest::runBenchmark()::<lambda()> >(struct {...} &&) (__fn=...) at /usr/include/c++/11/bits/invoke.h:96
+#16 0x00005555555a5b08 in std::thread::_Invoker<std::tuple<BenchmarkTest::runBenchmark()::<lambda()> > >::_M_invoke<0>(std::_Index_tuple<0>) (this=0x555555620788)
+    at /usr/include/c++/11/bits/std_thread.h:259
+#17 0x00005555555a5ab0 in std::thread::_Invoker<std::tuple<BenchmarkTest::runBenchmark()::<lambda()> > >::operator()(void) (this=0x555555620788)
+    at /usr/include/c++/11/bits/std_thread.h:266
+#18 0x00005555555a5a78 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<BenchmarkTest::runBenchmark()::<lambda()> > > >::_M_run(void) (
+    this=0x555555620780) at /usr/include/c++/11/bits/std_thread.h:211
+#19 0x00007ffff7e23253 in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#20 0x00007ffff7b92ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#21 0x00007ffff7c24850 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+[?2004h(gdb) q[Kbtthread 2[K[K[K[K[K[K[K[Kr
+[?2004l[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) y
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1854992647
+[New Thread 0x7fbfdf3e8640 (LWP 1472145)]
+[New Thread 0x7fbfdebe7640 (LWP 1472146)]
+[New Thread 0x7fbfde3e6640 (LWP 1472147)]
+[New Thread 0x7fbfddbe5640 (LWP 1472148)]
+[New Thread 0x7fbfdd3e4640 (LWP 1472149)]
+[New Thread 0x7fbfdcbe3640 (LWP 1472150)]
+[New Thread 0x7fbfd7fff640 (LWP 1472151)]
+[New Thread 0x7fbfd77fe640 (LWP 1472152)]
+[New Thread 0x7fbfcf3e5640 (LWP 1472153)]
+[New Thread 0x7fbfcebe4640 (LWP 1472154)]
+scheduler loop time: 134699959
+[Thread 0x7fbfdebe7640 (LWP 1472146) exited]
+[Thread 0x7fbfcebe4640 (LWP 1472154) exited]
+[Thread 0x7fbfcf3e5640 (LWP 1472153) exited]
+[Thread 0x7fbfd77fe640 (LWP 1472152) exited]
+[Thread 0x7fbfd7fff640 (LWP 1472151) exited]
+[Thread 0x7fbfdcbe3640 (LWP 1472150) exited]
+[Thread 0x7fbfdd3e4640 (LWP 1472149) exited]
+[Thread 0x7fbfddbe5640 (LWP 1472148) exited]
+[Thread 0x7fbfde3e6640 (LWP 1472147) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1472145) exited]
+[report]: overall_duration_ns : 135347767
+[report]: overall_operation_number : 9975
+[report]: overall_throughput : 73699.036350
+[report]: overall_avg_time_per_ops : 13568.000000
+[report]: overall_run_duration : 134292079
+[Inferior 1 (process 1472104) exited normally]
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l

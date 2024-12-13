@@ -5,11 +5,11 @@
 #include <verona-rt/src/rt/verona.h>
 #include <cstring>
 
-DEFINE_uint64(num_ops, 40, "the number of insert operations");
+DEFINE_uint64(num_ops, 10000, "the number of insert operations");
 DEFINE_uint64(str_key_size, 8, "size of key (bytes)");
 DEFINE_uint64(str_value_size, 100, "size of value (bytes)");
 DEFINE_uint64(num_threads_client, 1, "the number of threads");
-DEFINE_uint64(num_threads_worker, 4, "the number of threads");
+DEFINE_uint64(num_threads_worker, 8, "the number of threads");
 DEFINE_uint64(time_interval, 10, "the time interval of insert operations");
 DEFINE_string(report_prefix, "[report]: ", "prefix of report data");
 DEFINE_bool(first_mode, true, "fist mode start multiply clients on the same key value server");

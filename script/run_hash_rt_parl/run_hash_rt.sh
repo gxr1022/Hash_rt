@@ -34,7 +34,7 @@ cmake --build .
 TEST_PATH=${BINARY_PATH}
 
 # num_of_ops_set=(1000 10000 100000 1000000)
-num_of_ops_set=(1000000)
+num_of_ops_set=(10000)
 modes=(true)
 work_usec=(0)
 # batch_size=(32 64 128 256 512 1024)
@@ -47,15 +47,15 @@ kv_sizes=(
 	# "8 1048576"
 )
 
-threads_client=(8)
+threads_client=(1)
 # for ((i =9; i <= 32; i += 1)); do
 #     threads_client+=($i)
 # done
 
-threads_worker=(16)
-# for ((i =2; i <= 16; i += 1)); do
-#     threads_worker+=($i)
-# done
+threads_worker=(1)
+for ((i =8; i <=64; i += 8)); do
+    threads_worker+=($i)
+done
 
 test_name=(hash_rt)
 for kv_size in "${kv_sizes[@]}";do

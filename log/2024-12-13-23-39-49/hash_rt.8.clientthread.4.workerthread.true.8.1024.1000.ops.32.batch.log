@@ -1,0 +1,116 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) 
+[?2004l[?2004h(gdb) 
+[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1835529923
+[New Thread 0x7fbfdf3e8640 (LWP 1465072)]
+[New Thread 0x7fbfd73e5640 (LWP 1465073)]
+[New Thread 0x7fbfd6be4640 (LWP 1465074)]
+[New Thread 0x7fbfd63e3640 (LWP 1465075)]
+[New Thread 0x7fbfd5be2640 (LWP 1465076)]
+[New Thread 0x7fbfd53e1640 (LWP 1465077)]
+[New Thread 0x7fbfd4be0640 (LWP 1465078)]
+[New Thread 0x7fbfbffff640 (LWP 1465079)]
+[New Thread 0x7fbfbf7fe640 (LWP 1465080)]
+scheduler loop time: 1802347
+[New Thread 0x7fbfbeffd640 (LWP 1465081)]
+[Thread 0x7fbfd53e1640 (LWP 1465077) exited]
+[Thread 0x7fbfbeffd640 (LWP 1465081) exited]
+[Thread 0x7fbfbf7fe640 (LWP 1465080) exited]
+[Thread 0x7fbfbffff640 (LWP 1465079) exited]
+[Thread 0x7fbfd4be0640 (LWP 1465078) exited]
+[Thread 0x7fbfd5be2640 (LWP 1465076) exited]
+[Thread 0x7fbfd63e3640 (LWP 1465075) exited]
+[Thread 0x7fbfd6be4640 (LWP 1465074) exited]
+[Thread 0x7fbfd73e5640 (LWP 1465073) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1465072) exited]
+[report]: overall_duration_ns : 2716175
+[report]: overall_operation_number : 26
+[report]: overall_throughput : 9572.284555
+[report]: overall_avg_time_per_ops : 104468.000000
+[report]: overall_run_duration : 1626377
+[Inferior 1 (process 1465056) exited normally]
+[?2004h[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1827739592
+[New Thread 0x7fbfdf3e8640 (LWP 1465207)]
+[New Thread 0x7fbfdebe7640 (LWP 1465208)]
+[New Thread 0x7fbfde3e6640 (LWP 1465209)]
+[New Thread 0x7fbfddbe5640 (LWP 1465210)]
+[New Thread 0x7fbfdd3e4640 (LWP 1465211)]
+[New Thread 0x7fbfdcbe3640 (LWP 1465212)]
+[New Thread 0x7fbfc3fff640 (LWP 1465213)]
+[New Thread 0x7fbfc37fe640 (LWP 1465214)]
+[New Thread 0x7fbfc2ffd640 (LWP 1465215)]
+scheduler loop time: 1779926
+[New Thread 0x7fbfc27fc640 (LWP 1465216)]
+[Thread 0x7fbfdebe7640 (LWP 1465208) exited]
+[report]: overall_duration_ns : 2380006
+[report]: overall_operation_number : 24
+[report]: overall_throughput : 10084.008192
+[report]: overall_avg_time_per_ops : 99166.000000
+[report]: overall_run_duration : 1420688
+[Thread 0x7fbfc27fc640 (LWP 1465216) exited]
+[Thread 0x7fbfc2ffd640 (LWP 1465215) exited]
+[Thread 0x7fbfc37fe640 (LWP 1465214) exited]
+[Thread 0x7fbfc3fff640 (LWP 1465213) exited]
+[Thread 0x7fbfdcbe3640 (LWP 1465212) exited]
+[Thread 0x7fbfdd3e4640 (LWP 1465211) exited]
+[Thread 0x7fbfddbe5640 (LWP 1465210) exited]
+[Thread 0x7fbfde3e6640 (LWP 1465209) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1465207) exited]
+[Inferior 1 (process 1465176) exited normally]
+[?2004h[?2004l[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1828107175
+[New Thread 0x7fbfdf3e8640 (LWP 1465336)]
+[New Thread 0x7fbfdebe7640 (LWP 1465337)]
+[New Thread 0x7fbfde3e6640 (LWP 1465338)]
+[New Thread 0x7fbfddbe5640 (LWP 1465339)]
+[New Thread 0x7fbfdd3e4640 (LWP 1465340)]
+[New Thread 0x7fbfdcbe3640 (LWP 1465341)]
+[New Thread 0x7fbfc3fff640 (LWP 1465342)]
+[New Thread 0x7fbfc37fe640 (LWP 1465343)]
+[New Thread 0x7fbfc2ffd640 (LWP 1465344)]
+scheduler loop time: 1740327
+[New Thread 0x7fbfc27fc640 (LWP 1465345)]
+[Thread 0x7fbfdebe7640 (LWP 1465337) exited]
+[report]: overall_duration_ns : 2382955
+[report]: overall_operation_number : 23
+[Thread 0x7fbfc27fc640 (LWP 1465345) exited]
+[Thread 0x7fbfc2ffd640 (LWP 1465344) exited]
+[Thread 0x7fbfc37fe640 (LWP 1465343) exited]
+[Thread 0x7fbfc3fff640 (LWP 1465342) exited]
+[Thread 0x7fbfdcbe3640 (LWP 1465341) exited]
+[Thread 0x7fbfdd3e4640 (LWP 1465340) exited]
+[Thread 0x7fbfddbe5640 (LWP 1465339) exited]
+[Thread 0x7fbfde3e6640 (LWP 1465338) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1465336) exited]
+[report]: overall_throughput : 9651.881802
+[report]: overall_avg_time_per_ops : 103606.000000
+[report]: overall_run_duration : 1314148
+[Inferior 1 (process 1465295) exited normally]
+[?2004h[?2004l[?2004h(gdb) q[Kr[Kq
+[?2004l

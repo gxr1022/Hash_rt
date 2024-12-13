@@ -1,0 +1,129 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./hash_rt...
+[?2004h(gdb) r
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1893313436
+[New Thread 0x7fbfdf3e8640 (LWP 1466630)]
+[New Thread 0x7fbfdebe7640 (LWP 1466631)]
+[New Thread 0x7fbfde3e6640 (LWP 1466632)]
+[New Thread 0x7fbfddbe5640 (LWP 1466633)]
+[New Thread 0x7fbfdd3e4640 (LWP 1466634)]
+[New Thread 0x7fbfdcbe3640 (LWP 1466635)]
+[New Thread 0x7fbfc3fff640 (LWP 1466636)]
+[New Thread 0x7fbfc37fe640 (LWP 1466637)]
+[New Thread 0x7fbfc2ffd640 (LWP 1466638)]
+[New Thread 0x7fbfc27fc640 (LWP 1466639)]
+
+Thread 1 "hash_rt" received signal SIGINT, Interrupt.
+__futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1466632, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+57	./nptl/futex-internal.c: No such file or directory.
+[?2004h[?2004l[?2004h(gdb) bt
+[?2004l#0  __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1466632, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+#1  __futex_abstimed_wait_common (cancel=true, private=128, abstime=0x0, clockid=0, expected=1466632, futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0x7fbfde3e6910, expected=1466632, clockid=clockid@entry=0, abstime=abstime@entry=0x0, 
+    private=private@entry=128) at ./nptl/futex-internal.c:139
+#3  0x00007ffff7b94624 in __pthread_clockjoin_ex (threadid=140462044112448, thread_return=0x0, clockid=0, abstime=0x0, block=<optimized out>)
+    at ./nptl/pthread_join_common.c:105
+#4  0x00007ffff7e232c7 in std::thread::join() () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#5  0x00005555555ade29 in verona::rt::ThreadPoolBuilder::~ThreadPoolBuilder (this=0x7fffffffd900, __in_chrg=<optimized out>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/../pal/threadpoolbuilder.h:82
+#6  0x00005555555c40eb in verona::rt::ThreadPool<verona::rt::SchedulerThread>::run_with_startup<>(void (*)()) (
+    this=0x555555609ec0 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool>, startup=0x5555555ade91 <verona::rt::nop()>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:275
+#7  0x00005555555bb318 in verona::rt::ThreadPool<verona::rt::SchedulerThread>::run (
+    this=0x555555609ec0 <verona::rt::ThreadPool<verona::rt::SchedulerThread>::get()::global_thread_pool>)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/verona-rt/src/rt/./cpp/../sched/../sched/threadpool.h:253
+#8  0x00005555555a4349 in BenchmarkTest::runBenchmark (this=0x7fffffffdaf0) at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/src/hash_main.cpp:79
+#9  0x00005555555a4c5c in main (argc=1, argv=0x7fffffffdc38) at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/src/hash_main.cpp:120
+[?2004h(gdb) info thread
+[?2004l  Id   Target Id                                     Frame 
+* 1    Thread 0x7ffff7a13300 (LWP 1466572) "hash_rt" __futex_abstimed_wait_common64 (private=128, cancel=true, abstime=0x0, op=265, expected=1466632, 
+    futex_word=0x7fbfde3e6910) at ./nptl/futex-internal.c:57
+  2    Thread 0x7fbfdf3e8640 (LWP 1466630) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  3    Thread 0x7fbfdebe7640 (LWP 1466631) "hash_rt" std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand (this=0x7fbfd7ffe0d0) at /usr/include/c++/11/bits/random.tcc:403
+  4    Thread 0x7fbfde3e6640 (LWP 1466632) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  5    Thread 0x7fbfddbe5640 (LWP 1466633) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  6    Thread 0x7fbfdd3e4640 (LWP 1466634) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  7    Thread 0x7fbfdcbe3640 (LWP 1466635) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  8    Thread 0x7fbfc3fff640 (LWP 1466636) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  9    Thread 0x7fbfc37fe640 (LWP 1466637) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  10   Thread 0x7fbfc2ffd640 (LWP 1466638) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+  11   Thread 0x7fbfc27fc640 (LWP 1466639) "hash_rt" 0x00007ffff7c06c9b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+[?2004h(gdb) ghread 3
+[?2004lUndefined command: "ghread".  Try "help".
+[?2004h(gdb) thread 3
+[?2004l[Switching to thread 3 (Thread 0x7fbfdebe7640 (LWP 1466631))]
+#0  std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand (this=0x7fbfd7ffe0d0) at /usr/include/c++/11/bits/random.tcc:403
+403		  _UIntType __y = ((_M_x[__k] & __upper_mask)
+[?2004h(gdb) bt
+[?2004l#0  std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand (this=0x7fbfd7ffe0d0) at /usr/include/c++/11/bits/random.tcc:403
+#1  0x00005555555bac2d in std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator() (this=0x7fbfd7ffe0d0) at /usr/include/c++/11/bits/random.tcc:456
+#2  0x00005555555b3f48 in HashTableClient::generate_random_string (this=0x7fbfd07fe040, 
+    buffer=0x7fbfdebe5140 "rjznjxxibrsmjpplvyjngrrjmdujyluorvxaqzaxbmfjgbqvombukeocsljrtfdyxlaqdspgzyubililpzjsmuonfqgnlfkhnav", length=100)
+    at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/hash_client.h:19
+#3  0x00005555555b4265 in HashTableClient::run (this=0x7fbfd07fe040) at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/include/hash_client.h:53
+#4  0x00005555555a4196 in operator() (__closure=0x555555620928) at /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/src/hash_main.cpp:72
+#5  0x00005555555a5beb in std::__invoke_impl<void, BenchmarkTest::runBenchmark()::<lambda()> >(std::__invoke_other, struct {...} &&) (__f=...)
+    at /usr/include/c++/11/bits/invoke.h:61
+#6  0x00005555555a5b5b in std::__invoke<BenchmarkTest::runBenchmark()::<lambda()> >(struct {...} &&) (__fn=...) at /usr/include/c++/11/bits/invoke.h:96
+#7  0x00005555555a5adc in std::thread::_Invoker<std::tuple<BenchmarkTest::runBenchmark()::<lambda()> > >::_M_invoke<0>(std::_Index_tuple<0>) (this=0x555555620928)
+    at /usr/include/c++/11/bits/std_thread.h:259
+#8  0x00005555555a5a94 in std::thread::_Invoker<std::tuple<BenchmarkTest::runBenchmark()::<lambda()> > >::operator()(void) (this=0x555555620928)
+    at /usr/include/c++/11/bits/std_thread.h:266
+#9  0x00005555555a5a54 in std::thread::_State_impl<std::thread::_Invoker<std::tuple<BenchmarkTest::runBenchmark()::<lambda()> > > >::_M_run(void) (
+    this=0x555555620920) at /usr/include/c++/11/bits/std_thread.h:211
+#10 0x00007ffff7e23253 in ?? () from /lib/x86_64-linux-gnu/libstdc++.so.6
+#11 0x00007ffff7b92ac3 in start_thread (arg=<optimized out>) at ./nptl/pthread_create.c:442
+#12 0x00007ffff7c24850 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81
+[?2004h(gdb) q[Kr
+[?2004l[?2004hThe program being debugged has been started already.
+Start it from the beginning? (y or n) y
+[?2004lStarting program: /mnt/nvme0/home/gxr/Myhash_boc/hash_rt/build/hash_rt 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Init time:1883536924
+[New Thread 0x7fbfdf3e8640 (LWP 1467987)]
+[New Thread 0x7fbfdebe7640 (LWP 1467990)]
+[New Thread 0x7fbfde3e6640 (LWP 1467991)]
+[New Thread 0x7fbfddbe5640 (LWP 1467992)]
+[New Thread 0x7fbfdd3e4640 (LWP 1467993)]
+[New Thread 0x7fbfdcbe3640 (LWP 1467994)]
+[New Thread 0x7fbfd7fff640 (LWP 1467996)]
+[New Thread 0x7fbfd77fe640 (LWP 1467997)]
+[New Thread 0x7fbfcf3e5640 (LWP 1467998)]
+[New Thread 0x7fbfcebe4640 (LWP 1467999)]
+scheduler loop time: 134472306
+[Thread 0x7fbfdebe7640 (LWP 1467990) exited]
+[report]: overall_duration_ns : 135172035
+[report]: overall_operation_number : 9981
+[Thread 0x7fbfcebe4640 (LWP 1467999) exited]
+[Thread 0x7fbfcf3e5640 (LWP 1467998) exited]
+[Thread 0x7fbfd77fe640 (LWP 1467997) exited]
+[Thread 0x7fbfd7fff640 (LWP 1467996) exited]
+[Thread 0x7fbfdcbe3640 (LWP 1467994) exited]
+[Thread 0x7fbfdd3e4640 (LWP 1467993) exited]
+[Thread 0x7fbfddbe5640 (LWP 1467992) exited]
+[Thread 0x7fbfde3e6640 (LWP 1467991) exited]
+[Thread 0x7fbfdf3e8640 (LWP 1467987) exited]
+[report]: overall_throughput : 73839.237532
+[report]: overall_avg_time_per_ops : 13542.000000
+[report]: overall_run_duration : 134146456
+[Inferior 1 (process 1467946) exited normally]
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l
